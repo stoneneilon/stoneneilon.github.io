@@ -3,8 +3,8 @@ title: "Data 1 & 2"
 description: "Combined notes from Data 1 & 2 with Anand Sokhey and Andy Phillips"
 author:
   - name: Stone Neilon
-    url: https://samanthacsik.github.io/
-    orcid: 0000-0002-5300-3075
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
     affiliation: PhD student of political science @ The University of Colorado Boulder
     affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
 date: 05-15-2024

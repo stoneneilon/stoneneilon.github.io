@@ -1,18 +1,17 @@
 ---
-title: "American Institutions"
-description: "Notes from American Institutions class with Chinnu"
+title: "American Politics Core"
 author:
   - name: Stone Neilon
     url: https://stoneneilon.github.io/
     orcid: 0009-0006-6026-4384
     affiliation: PhD student of political science @ The University of Colorado Boulder
     affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
-date: 12-15-2024
-categories: [2023, American, Fall] # self-defined categories
+date: 08-26-2024
+categories: [2024, American] # self-defined categories
 citation: 
   url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
-image: flag.png
+image: trisha.webp
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-In progress.
+# Week 1

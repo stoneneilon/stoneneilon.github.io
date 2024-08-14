@@ -2,10 +2,10 @@
 title: "ICPSR - Introduction to Python"
 author:
   - name: Stone Neilon
-    url: https://samanthacsik.github.io/
-    orcid: 0000-0002-5300-3075
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
     affiliation: PhD student of political science @ The University of Colorado Boulder
-    affiliation-url: https://ucsb-meds.github.io/ 
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
 date: 06-10-2024
 categories: [Summer, ICPSR, 2024, Methods] # self-defined categories
 citation: 
