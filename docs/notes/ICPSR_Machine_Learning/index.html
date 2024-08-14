@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stone Neilon">
+<meta name="dcterms.date" content="2024-06-10">
+
+<title>Stone Neilon - Machine Learning: Applications in Social Science Research (ICPSR)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Stone Neilon</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://drive.google.com/file/d/1wwwiFFiVu-k76M6oixKugPFjESA0g4Is/view?usp=sharing"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <ul class="collapse">
+  <li><a href="#files-for-download" id="toc-files-for-download" class="nav-link" data-scroll-target="#files-for-download">Files for Download</a>
+  <ul class="collapse">
+  <li><a href="#module-1-files" id="toc-module-1-files" class="nav-link" data-scroll-target="#module-1-files">Module 1 Files</a></li>
+  <li><a href="#module-2-files" id="toc-module-2-files" class="nav-link" data-scroll-target="#module-2-files">Module 2 Files</a></li>
+  <li><a href="#module-3-files" id="toc-module-3-files" class="nav-link" data-scroll-target="#module-3-files">Module 3 Files</a></li>
+  <li><a href="#module-4-files" id="toc-module-4-files" class="nav-link" data-scroll-target="#module-4-files">Module 4 Files</a></li>
+  </ul></li>
+  <li><a href="#required-reading" id="toc-required-reading" class="nav-link" data-scroll-target="#required-reading">Required reading</a></li>
+  <li><a href="#coding-software" id="toc-coding-software" class="nav-link" data-scroll-target="#coding-software">Coding Software</a></li>
+  </ul></li>
+  <li><a href="#module-1-motivation-and-foundations" id="toc-module-1-motivation-and-foundations" class="nav-link" data-scroll-target="#module-1-motivation-and-foundations">Module 1: Motivation and Foundations</a>
+  <ul class="collapse">
+  <li><a href="#history-of-machine-learning-in-social-science" id="toc-history-of-machine-learning-in-social-science" class="nav-link" data-scroll-target="#history-of-machine-learning-in-social-science">History of Machine Learning in Social Science</a>
+  <ul class="collapse">
+  <li><a href="#the-people-machine" id="toc-the-people-machine" class="nav-link" data-scroll-target="#the-people-machine">The People-Machine</a></li>
+  <li><a href="#statistical-modeling-the-two-cultures---leo-breiman-2001" id="toc-statistical-modeling-the-two-cultures---leo-breiman-2001" class="nav-link" data-scroll-target="#statistical-modeling-the-two-cultures---leo-breiman-2001">Statistical Modeling: The Two Cultures - Leo Breiman (2001)</a></li>
+  </ul></li>
+  <li><a href="#parametric-vs.-non-parametric-models" id="toc-parametric-vs.-non-parametric-models" class="nav-link" data-scroll-target="#parametric-vs.-non-parametric-models">Parametric vs.&nbsp;Non-Parametric models</a>
+  <ul class="collapse">
+  <li><a href="#parametric-methods" id="toc-parametric-methods" class="nav-link" data-scroll-target="#parametric-methods">Parametric Methods</a></li>
+  <li><a href="#non-parametric-methods" id="toc-non-parametric-methods" class="nav-link" data-scroll-target="#non-parametric-methods">Non-Parametric Methods</a></li>
+  <li><a href="#prediction-accuracy-and-model-interpretability" id="toc-prediction-accuracy-and-model-interpretability" class="nav-link" data-scroll-target="#prediction-accuracy-and-model-interpretability">Prediction Accuracy and Model Interpretability</a></li>
+  <li><a href="#supervised-versus-unsupervised-learning" id="toc-supervised-versus-unsupervised-learning" class="nav-link" data-scroll-target="#supervised-versus-unsupervised-learning">Supervised versus Unsupervised Learning</a></li>
+  </ul></li>
+  <li><a href="#overfitting" id="toc-overfitting" class="nav-link" data-scroll-target="#overfitting">Overfitting</a></li>
+  <li><a href="#the-bias---variance-trade-off" id="toc-the-bias---variance-trade-off" class="nav-link" data-scroll-target="#the-bias---variance-trade-off">The Bias - Variance Trade Off</a>
+  <ul class="collapse">
+  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">Variance</a></li>
+  <li><a href="#bias" id="toc-bias" class="nav-link" data-scroll-target="#bias">Bias</a></li>
+  </ul></li>
+  <li><a href="#model-error" id="toc-model-error" class="nav-link" data-scroll-target="#model-error">Model Error</a>
+  <ul class="collapse">
+  <li><a href="#reducible-error" id="toc-reducible-error" class="nav-link" data-scroll-target="#reducible-error">Reducible error</a></li>
+  <li><a href="#irreducible-error" id="toc-irreducible-error" class="nav-link" data-scroll-target="#irreducible-error">Irreducible error</a></li>
+  </ul></li>
+  <li><a href="#cross-validation" id="toc-cross-validation" class="nav-link" data-scroll-target="#cross-validation">Cross-Validation</a>
+  <ul class="collapse">
+  <li><a href="#training-error" id="toc-training-error" class="nav-link" data-scroll-target="#training-error">Training Error:</a></li>
+  <li><a href="#testing-error" id="toc-testing-error" class="nav-link" data-scroll-target="#testing-error">Testing Error:</a></li>
+  <li><a href="#how-do-we-estimate-these-errors" id="toc-how-do-we-estimate-these-errors" class="nav-link" data-scroll-target="#how-do-we-estimate-these-errors">How do we estimate these errors?</a></li>
+  <li><a href="#k-fold-cross-validation" id="toc-k-fold-cross-validation" class="nav-link" data-scroll-target="#k-fold-cross-validation">K-fold Cross-Validation</a></li>
+  </ul></li>
+  <li><a href="#multivariate-adaptive-regression-splines-mars" id="toc-multivariate-adaptive-regression-splines-mars" class="nav-link" data-scroll-target="#multivariate-adaptive-regression-splines-mars">Multivariate Adaptive Regression Splines (MARS)</a></li>
+  <li><a href="#classification-problems" id="toc-classification-problems" class="nav-link" data-scroll-target="#classification-problems">Classification problems</a></li>
+  <li><a href="#curse-of-dimensionality" id="toc-curse-of-dimensionality" class="nav-link" data-scroll-target="#curse-of-dimensionality">Curse of Dimensionality</a></li>
+  <li><a href="#receiver-operator-characteristic-curves" id="toc-receiver-operator-characteristic-curves" class="nav-link" data-scroll-target="#receiver-operator-characteristic-curves">Receiver-operator characteristic curves</a></li>
+  <li><a href="#shrinkage-and-regularization" id="toc-shrinkage-and-regularization" class="nav-link" data-scroll-target="#shrinkage-and-regularization">Shrinkage and Regularization</a>
+  <ul class="collapse">
+  <li><a href="#ridge-regression-l2" id="toc-ridge-regression-l2" class="nav-link" data-scroll-target="#ridge-regression-l2">Ridge Regression (L2)</a></li>
+  <li><a href="#lasso-l1" id="toc-lasso-l1" class="nav-link" data-scroll-target="#lasso-l1">Lasso (L1)</a></li>
+  </ul></li>
+  <li><a href="#simulations" id="toc-simulations" class="nav-link" data-scroll-target="#simulations">Simulations</a></li>
+  <li><a href="#bootstrapping" id="toc-bootstrapping" class="nav-link" data-scroll-target="#bootstrapping">Bootstrapping</a></li>
+  </ul></li>
+  <li><a href="#meeting-with-sam-fuller-ta-0624" id="toc-meeting-with-sam-fuller-ta-0624" class="nav-link" data-scroll-target="#meeting-with-sam-fuller-ta-0624">Meeting with Sam Fuller (TA) 06/24</a></li>
+  <li><a href="#module-2-3-trees" id="toc-module-2-3-trees" class="nav-link" data-scroll-target="#module-2-3-trees">Module 2-3: Trees</a>
+  <ul class="collapse">
+  <li><a href="#trees" id="toc-trees" class="nav-link" data-scroll-target="#trees">Trees</a>
+  <ul class="collapse">
+  <li><a href="#depth" id="toc-depth" class="nav-link" data-scroll-target="#depth">Depth</a></li>
+  <li><a href="#benefits-of-trees" id="toc-benefits-of-trees" class="nav-link" data-scroll-target="#benefits-of-trees">Benefits of trees:</a></li>
+  <li><a href="#entropy" id="toc-entropy" class="nav-link" data-scroll-target="#entropy">Entropy</a></li>
+  <li><a href="#bagging" id="toc-bagging" class="nav-link" data-scroll-target="#bagging">Bagging</a></li>
+  <li><a href="#random-forrest" id="toc-random-forrest" class="nav-link" data-scroll-target="#random-forrest">Random Forrest</a></li>
+  <li><a href="#boosting" id="toc-boosting" class="nav-link" data-scroll-target="#boosting">Boosting</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#module-4-interpretability" id="toc-module-4-interpretability" class="nav-link" data-scroll-target="#module-4-interpretability">Module 4: Interpretability</a>
+  <ul class="collapse">
+  <li><a href="#interpretability-usefulness" id="toc-interpretability-usefulness" class="nav-link" data-scroll-target="#interpretability-usefulness">Interpretability Usefulness</a></li>
+  <li><a href="#local-interpretation-v.-global-interpretation" id="toc-local-interpretation-v.-global-interpretation" class="nav-link" data-scroll-target="#local-interpretation-v.-global-interpretation">Local Interpretation v. Global Interpretation</a>
+  <ul class="collapse">
+  <li><a href="#global-interpretation" id="toc-global-interpretation" class="nav-link" data-scroll-target="#global-interpretation">Global Interpretation:</a></li>
+  <li><a href="#local-interpretation" id="toc-local-interpretation" class="nav-link" data-scroll-target="#local-interpretation">Local Interpretation:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#module-5-neural-nets-and-deep-learning" id="toc-module-5-neural-nets-and-deep-learning" class="nav-link" data-scroll-target="#module-5-neural-nets-and-deep-learning">Module 5: Neural Nets and Deep Learning</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Machine Learning: Applications in Social Science Research (ICPSR)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Summer</div>
+    <div class="quarto-category">ICPSR</div>
+    <div class="quarto-category">2024</div>
+    <div class="quarto-category">Methods</div>
+  </div>
+  </div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://samanthacsik.github.io/">Stone Neilon</a> <a href="https://orcid.org/0000-0002-5300-3075" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colorado.edu/polisci/people/graduate-students/stone-neilon">
+            PhD student of political science @ The University of Colorado Boulder
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 10, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="preface" class="level1">
+<h1>Preface</h1>
+<p>Professor: Christopher Hare</p>
+<p>Affiliation: UC Davis</p>
+<p>THESE ARE NOTES! These do not and cannot replace learning the material through a classroom setting.</p>
+<section id="files-for-download" class="level2">
+<h2 class="anchored" data-anchor-id="files-for-download">Files for Download</h2>
+<section id="module-1-files" class="level3">
+<h3 class="anchored" data-anchor-id="module-1-files">Module 1 Files</h3>
+</section>
+<section id="module-2-files" class="level3">
+<h3 class="anchored" data-anchor-id="module-2-files">Module 2 Files</h3>
+</section>
+<section id="module-3-files" class="level3">
+<h3 class="anchored" data-anchor-id="module-3-files">Module 3 Files</h3>
+</section>
+<section id="module-4-files" class="level3">
+<h3 class="anchored" data-anchor-id="module-4-files">Module 4 Files</h3>
+</section>
+</section>
+<section id="required-reading" class="level2">
+<h2 class="anchored" data-anchor-id="required-reading">Required reading</h2>
+<ol type="1">
+<li><p>James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. An Introduction<br>
+to Statistical Learning with Applications in R. 2nd ed.&nbsp;New York: Springer. https://www.<br>
+statlearning.com/</p></li>
+<li><p>Boehmke, Bradley and Brandon Greenwell. 2019. Hands-On Machine Learning with R. Boca<br>
+Raton, FL: CRC Press. https://koalaverse.github.io/homlr/</p></li>
+<li><p>Chollet, Francois, J.J. Allaire, and Tomasz Kalinowski. 2022. Deep Learning with R. 2nd ed.<br>
+Shelter Island, NY: Manning.</p></li>
+</ol>
+</section>
+<section id="coding-software" class="level2">
+<h2 class="anchored" data-anchor-id="coding-software">Coding Software</h2>
+<p>This course teaches machine learning through R. R is pretty good with machine learning and covers everything we need to. Python is good but in the interest of time, we focus on R.</p>
+</section>
+</section>
+<section id="module-1-motivation-and-foundations" class="level1">
+<h1>Module 1: Motivation and Foundations</h1>
+<section id="history-of-machine-learning-in-social-science" class="level2">
+<h2 class="anchored" data-anchor-id="history-of-machine-learning-in-social-science">History of Machine Learning in Social Science</h2>
+<section id="the-people-machine" class="level3">
+<h3 class="anchored" data-anchor-id="the-people-machine">The People-Machine</h3>
+<p>In the 1950/1960s, some researchers put together a model for Kennedy’s presidential campaign. The attempt was to predict voter turnout based on issue salience. Specifically, if anti-Catholicism became more salient near the election, how would that influence voter turnout? The idea was to simulate human behavior.</p>
+<p>The point of this reading is to draw that lineage of social science and machine learning. This field is <strong>not</strong> new.</p>
+</section>
+<section id="statistical-modeling-the-two-cultures---leo-breiman-2001" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-modeling-the-two-cultures---leo-breiman-2001">Statistical Modeling: The Two Cultures - Leo Breiman (2001)</h3>
+<p>Very important reading. If there is any reading you should do, it should be this one - Professor Hare</p>
+<ul>
+<li><p>Data modeling culture</p>
+<ul>
+<li><p>specify the data generating process between X and y</p></li>
+<li><p>focus on inference from model parameters</p></li>
+<li><p>more emphasis on <strong>deductive</strong> reasoning</p></li>
+</ul></li>
+<li><p>Algorithmic modeling culture</p>
+<ul>
+<li><p>Capture the black box process between X and y</p></li>
+<li><p>rather than specifying the relationship (i.e.&nbsp;the effect is linear, education’s effect is quadratic, etc), we let the model specify or figure it out.</p></li>
+<li><p>Focus is on the quality of model predictions</p></li>
+<li><p>No true model: more emphasis on <strong>inductive reasoning</strong>/learning from data</p>
+<ul>
+<li><p>lets let the data guide the model</p>
+<ul>
+<li>contrast this with letting theory guide the model.</li>
+</ul></li>
+<li><p>No one is saying inductive &gt; deductive <strong>or</strong> deductive &gt; inductive</p>
+<ul>
+<li><p>Isaac Asimov: “The most exciting phrase to hear in science, the one that heralds new discoveries, is not ‘Eureka’ but ‘That’s funny’…”</p></li>
+<li><p>Karl Popper emphasized deductive reasoning, but creating or discovering new theories is a necessarily inductive process (no deductive “machinery” is possible for theory building).</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="parametric-vs.-non-parametric-models" class="level2">
+<h2 class="anchored" data-anchor-id="parametric-vs.-non-parametric-models">Parametric vs.&nbsp;Non-Parametric models</h2>
+<p>Our goal is to use data to estimate f(x) (this is the line or true relationship). We want to find a function <span class="math inline">\(\hat{f}\)</span> such that <span class="math inline">\(Y\approx \hat{f}(\textbf{X})\)</span> for any observation (X, Y). So how do we estimate f(X) (the line/relationship)? We can use either a parametric or non-parametric approach/model. Up until now, I have only been taught parametric (this being linear regression, etc.).</p>
+<p>So which is better, parametric or non-parametric? The answer is simple: <em>the parametric approach will outperform the non-parametric approach if the parametric form that has been selected is close to the true form of</em> <span class="math inline">\(f\)</span><em>.</em></p>
+<section id="parametric-methods" class="level3">
+<h3 class="anchored" data-anchor-id="parametric-methods">Parametric Methods</h3>
+<ol type="1">
+<li><p>We make an assumption about the functional form, or shape of f (the function/line). Usually this assumption is that <span class="math inline">\(f\)</span> is linear.</p></li>
+<li><p>We then need to fit or train the model. This means we need to estimate the parameters (<span class="math inline">\(\beta_1,\beta_2,...,\beta_p\)</span>).</p>
+<ol type="1">
+<li><p>the most common approach and the one we have been trained extensively is ordinary least squares (OLS).</p>
+<ol type="1">
+<li><p>OLS is one of the many possible ways to fit the linear model</p>
+<ol type="1">
+<li>We use OLS because when the assumptions are met, it is BLUE.</li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><p>One potential downside of a parametric approach is that the model we choose will usually not match the true unknown form of <span class="math inline">\(f\)</span>.</p>
+<ol type="1">
+<li><p>we want to be careful about over-fitting the data.</p>
+<ol type="1">
+<li><p>this means they follow the errors, or noise, too closely.</p></li>
+<li><p>this is bad because your model will struggle to estimate responses on new observations that were not part of the original training data set.</p></li>
+</ol></li>
+</ol></li>
+<li><p>Maybe the true relationship has some curvature (it isn’t linear) <em>but</em> the linear model we create gets us reasonably close to describing the relationship between the X and Y variables.</p></li>
+</ol>
+</section>
+<section id="non-parametric-methods" class="level3">
+<h3 class="anchored" data-anchor-id="non-parametric-methods">Non-Parametric Methods</h3>
+<ol type="1">
+<li><p>We <strong>do not</strong> make assumptions about the functional form of <span class="math inline">\(f\)</span>.</p>
+<ol type="1">
+<li><p>non-parametric approaches estimate <span class="math inline">\(f\)</span> as close to the data points as possible without being too rough or wiggly</p>
+<ol type="1">
+<li>lower residuals</li>
+</ol></li>
+</ol></li>
+<li><p>One major disadvantage of non-parametric approaches is that a lot more observations are needed to get an accurate estimate for <span class="math inline">\(f\)</span>.</p></li>
+<li><p>You can still over fit a non parametric model.</p></li>
+</ol>
+</section>
+<section id="prediction-accuracy-and-model-interpretability" class="level3">
+<h3 class="anchored" data-anchor-id="prediction-accuracy-and-model-interpretability">Prediction Accuracy and Model Interpretability</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="flex_inter_tradeoff.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ul>
+<li><p>An obvious question that follows is: Why would we ever chose a more restrictive method instead of a very flexible approach? Wouldn’t more flexibility get us closer to the true <span class="math inline">\(f\)</span>?</p>
+<ul>
+<li><p>restrictive models are easier to interpret</p>
+<ul>
+<li><p>the relationship is straightforward and easy to understand!</p></li>
+<li><p>OLS is not only really good (it is the best when assumptions are met) but it is super easy to interpret.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="supervised-versus-unsupervised-learning" class="level3">
+<h3 class="anchored" data-anchor-id="supervised-versus-unsupervised-learning">Supervised versus Unsupervised Learning</h3>
+<section id="supervised" class="level4">
+<h4 class="anchored" data-anchor-id="supervised">Supervised</h4>
+<ul>
+<li><p>Pretty much all the models I have used thus far (and listed prior) use supervised learning.</p>
+<ul>
+<li>each observation of the predictor measurement has an associated response measurement for <span class="math inline">\(x_i\)</span> there is an associated <span class="math inline">\(y_i\)</span> value.</li>
+</ul></li>
+<li><p>Goal: prediction and inference (both involve modeling the relationship between predictors and outcome of interest)</p></li>
+<li><p><strong>The goal of supervised learning is to learn a predictive model that maps features of the data (e.g.&nbsp;house size, location, floor type, …) to an output (e.g.&nbsp;house price). If the output is categorical, the task is called classification, and if it is numerical, it is called regression.</strong></p></li>
+</ul>
+</section>
+<section id="unsupervised" class="level4">
+<h4 class="anchored" data-anchor-id="unsupervised">Unsupervised</h4>
+<ul>
+<li><p>More challenging</p></li>
+<li><p>not focused on in this workshop.</p></li>
+<li><p>Goal: search for simple structure underlying data set (what are the relationships between variables)</p></li>
+<li><p>You have a bunch of dependent variables and you think there is some cause underlying them. We are trying to back out an X.</p></li>
+<li><p>for every observation we observe a <em>vector</em> of measurements <span class="math inline">\(x_i\)</span> but no associated response <span class="math inline">\(y_i\)</span></p>
+<ul>
+<li>like going in blind</li>
+</ul></li>
+<li><p>called unsupervised because we lack a response variable that can supervise our analysis.</p></li>
+<li><p>One type is called cluster analysis.</p></li>
+</ul>
+</section>
+<section id="semi-supervised-learning" class="level4">
+<h4 class="anchored" data-anchor-id="semi-supervised-learning">Semi-supervised learning</h4>
+<ul>
+<li><p>more rare</p></li>
+<li><p>kind of in between the two.</p></li>
+<li><p>don’t worry about this, we don’t go over it.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="overfitting" class="level2">
+<h2 class="anchored" data-anchor-id="overfitting">Overfitting</h2>
+<ul>
+<li><p>Very important concept in machine learning.</p></li>
+<li><p><strong>Overfitting occurs when a model starts to memorize the aspects of the training set and in turn loses the ability to generalize.</strong></p></li>
+<li><p>Overfitting is reducing bias at a tremendous cost to variance.</p></li>
+<li><p>We want a balance that gets us as close as possible.</p>
+<ul>
+<li><p>what is the right amount of complexity for our model?</p>
+<ul>
+<li>this bleeds into “tuning” our parameters.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="the-bias---variance-trade-off" class="level2">
+<h2 class="anchored" data-anchor-id="the-bias---variance-trade-off">The Bias - Variance Trade Off</h2>
+<ul>
+<li><p>We need to find a balance between overfitting and underfitting our model. This balance is the bias-variance trade off.</p></li>
+<li><p>When we are estimating <span class="math inline">\(f\)</span>, we don’t want to ignore true nonlinear complexities, but we also want parsimonious models of social/behavioral phenomena that <em>generalize</em> well.</p></li>
+<li><p>Our estimated function <span class="math inline">\(\hat{f}\)</span> should be an approximation to <span class="math inline">\(f\)</span> (i.e., the true data generating process) that minimizes bias and variance.</p></li>
+<li><p>This is referred to as a trade-of because it is easy to obtain a method with extremely low bias but high variance (for instance, by drawing a curve that passes through every single training observation) or a method with very low variance but high bias (by ftting a horizontal line to the data). The challenge lies in finding a method for which both the variance and the squared bias are low.</p></li>
+</ul>
+<section id="variance" class="level3">
+<h3 class="anchored" data-anchor-id="variance">Variance</h3>
+<ol type="1">
+<li><p>Variance refers to the amount by which <span class="math inline">\(\hat{f}\)</span> would change if we estimated it using a different training data set.</p>
+<ol type="1">
+<li><p>remember that we are trying to estimate <span class="math inline">\(f\)</span> using our sample. There is uncertainty around it. Different data may give us a different <span class="math inline">\(\hat{f}\)</span>.</p>
+<ol type="1">
+<li><p>We can use one sample to estimate the variance around the estimate.</p>
+<ol type="1">
+<li>this of course is called Standard Error. If a method has high variance then small changes in the training data can result in large changes in <span class="math inline">\(\hat{f}\)</span>.</li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><p>In general more flexible statistical methods have higher variance.</p></li>
+</ol>
+</section>
+<section id="bias" class="level3">
+<h3 class="anchored" data-anchor-id="bias">Bias</h3>
+<ol type="1">
+<li><p>refers to the coefficient.</p></li>
+<li><p>As a general rule, as we use more flexible methods, the variance will increase and the bias will decrease.</p></li>
+<li><p>Overfitting a model reduces the bias as much as possible at the expense of variance.</p></li>
+<li><p>Does our estimate <span class="math inline">\(\approx\)</span> the true population estimate</p></li>
+</ol>
+</section>
+</section>
+<section id="model-error" class="level2">
+<h2 class="anchored" data-anchor-id="model-error">Model Error</h2>
+<p>The goal is to reduce both of these errors. But it is a bit more complex. How do we know the level of error is reducible or irreducible? The answer is gauge its predictive power. You do this through the error of your test sample. The section on cross validation will clear this up a bit more (hopefully). We want to minimize the test error.</p>
+<section id="reducible-error" class="level3">
+<h3 class="anchored" data-anchor-id="reducible-error">Reducible error</h3>
+<ul>
+<li><p>Error due to disparities between <span class="math inline">\(\hat{f}\)</span> and <span class="math inline">\(f\)</span>.</p></li>
+<li><p>This relates to the functional form.</p></li>
+<li><p>Do we include all of the relevant parameters (variables)?</p></li>
+<li><p>is it linear or quadratic?</p></li>
+<li><p>these are the elements we can control</p></li>
+</ul>
+</section>
+<section id="irreducible-error" class="level3">
+<h3 class="anchored" data-anchor-id="irreducible-error">Irreducible error</h3>
+<ul>
+<li><p>Error due to stochastic elements that is built into Y, separate from data-generating process of <span class="math inline">\(f\)</span>.</p></li>
+<li><p>This is error that we cannot model.</p>
+<ul>
+<li>it is the “randomness” of the observations.</li>
+</ul></li>
+<li><p>Think about people. We can try to model them but every human is different for infinite reasons. We can’t model that and thus, that is irreducible error.</p></li>
+<li><p>there will still be error remaining even if we approximate <span class="math inline">\(f\)</span> exactly.</p></li>
+</ul>
+</section>
+</section>
+<section id="cross-validation" class="level2">
+<h2 class="anchored" data-anchor-id="cross-validation">Cross-Validation</h2>
+<p>Before diving into cross-validation and what it is, we need to continue the thread started above on model error. We need to estimate two kinds of model error to deal with bias-variance trade off.</p>
+<section id="training-error" class="level3">
+<h3 class="anchored" data-anchor-id="training-error">Training Error:</h3>
+<ol type="1">
+<li><p>Error rate produced when model is applied to <strong>in-sample</strong> data</p>
+<ol type="1">
+<li>The error rate for the data used to estimate the model: how well does the model fit to existing data?</li>
+</ol></li>
+</ol>
+</section>
+<section id="testing-error" class="level3">
+<h3 class="anchored" data-anchor-id="testing-error">Testing Error:</h3>
+<ol type="1">
+<li><p>The average error that results from using a statistical learning method to predict the response of new, <strong>out of sample</strong> observation.</p>
+<ol type="1">
+<li>The error rate for outside data: how well does the model fit <strong>new</strong> data.</li>
+</ol></li>
+</ol>
+<p>These two types of error are quite different: in particular, the training error rate can drastically understate the test error rate.</p>
+</section>
+<section id="how-do-we-estimate-these-errors" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-estimate-these-errors">How do we estimate these errors?</h3>
+<p>We use cross-validation! What is it?</p>
+<section id="cross-validation-explanation" class="level4">
+<h4 class="anchored" data-anchor-id="cross-validation-explanation">Cross-validation explanation</h4>
+<ol type="1">
+<li><p>Randomly divide the available set of samples into two parts: a training set and a test or hold-out set.</p>
+<ol type="1">
+<li><p>keep 80% of the data for training and then use 20% of the data for testing</p>
+<ol type="1">
+<li>this ratio can range. Could use 70-30, 50-50, etc.</li>
+</ol></li>
+</ol></li>
+<li><p>Estimate the model using the remaining of the data.</p>
+<ol type="1">
+<li>Apply the model to the observations in that subset, generating predictions <span class="math inline">\((\hat{Y}_{test}=\hat{f}(X_{test}))\)</span> and residuals <span class="math inline">\(Y_{test}-\hat{Y}_{test}\)</span> to estimate testing error.</li>
+</ol></li>
+<li><p>One issue in doing this: we lose data.</p>
+<ol type="1">
+<li><p>Maybe we have very little data…we don’t want to give up some of that data! What do we do?</p>
+<ol type="1">
+<li>To get around this, we use K-fold cross-validation.</li>
+</ol></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="k-fold-cross-validation" class="level3">
+<h3 class="anchored" data-anchor-id="k-fold-cross-validation">K-fold Cross-Validation</h3>
+<ol type="1">
+<li><p>Randomly divide the data into K equal sized parts. We leave out part k, fit the model to the other K-1 parts (combined), and then obtain predictions for the left-out kth part.</p></li>
+<li><p>Imagine we have all the data and we bin it into 4 compartments/sections. This would be called 4-fold cross validation.</p>
+<ol type="1">
+<li><p>Imagine we use the first three compartments to train and then the last section to test</p>
+<ol type="1">
+<li><p>then do it again but use 3 different compartments and a different section to test.</p>
+<ol type="1">
+<li><p>keep going through the permutations.</p>
+<ol type="1">
+<li><p>you average across all</p>
+<ol type="1">
+<li>all the data is used.</li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><p>You can then compare which method/model does a better job at prediction.</p></li>
+</ol></li>
+<li><p>The amount of folds you chose is arbitrary</p>
+<ol type="1">
+<li>most popular is 5 or 10.</li>
+</ol></li>
+<li><p>You do this for any ML model.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="k_fold_CV.png" class="img-fluid figure-img"></p>
+<figcaption>k-fold Cross Validation Visualized</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="multivariate-adaptive-regression-splines-mars" class="level2">
+<h2 class="anchored" data-anchor-id="multivariate-adaptive-regression-splines-mars">Multivariate Adaptive Regression Splines (MARS)</h2>
+<ol type="1">
+<li><p>Imagine doing a regression BUT instead of one line, you can add a bunch to fit the data.</p></li>
+<li><p>Allow for nonlinearities and automate feature selection within the linear regression framework by searching for optimal hinge points or knots.</p>
+<ol type="1">
+<li>this produces a series of hinge functions h(x-a), where a denotes the location of the knot and h is a regression coefficient.</li>
+</ol></li>
+<li><p>more flexible than regression (duh)</p></li>
+<li><p>We are concerned with tuning, not really the variables.</p></li>
+<li><p>We just throw a bunch of Xs and specify our dependent variable and we just let the machine figure it out.</p></li>
+<li><p>coefficients are not attached to variables but regions.</p></li>
+<li><p>See mars.r for example code and more discussion.</p></li>
+</ol>
+</section>
+<section id="classification-problems" class="level2">
+<h2 class="anchored" data-anchor-id="classification-problems">Classification problems</h2>
+<ol type="1">
+<li><p>When we move from regression problems (where y is continuous) to classification problems (where y is categorical), we need to assess model performance differently</p></li>
+<li><p>Include different kind of fit statistics in your MLE model.</p></li>
+<li><p>Confusion matrix:</p>
+<ol type="1">
+<li>more to discuss here. TK 06/20/24</li>
+</ol></li>
+</ol>
+</section>
+<section id="curse-of-dimensionality" class="level2">
+<h2 class="anchored" data-anchor-id="curse-of-dimensionality">Curse of Dimensionality</h2>
+<ol type="1">
+<li><p>Including a large number of predictor variables introduces data sparsity.</p>
+<ol type="1">
+<li>this seems to relate (at least to me) as degrees of freedom (might be wrong)</li>
+</ol></li>
+<li><p>Shrinkage or regularization methods purposefully bias the coefficients (towards zero) in such a way that improves overall predictive performance by navigating the bias-variance trade-off.</p></li>
+<li><p>This is more of a conceptual problem. Every additional independent variable we include increases the space exponentially: the space that we’re operating in for DV ~ IV1 + IV2 + IV3 is exponentially larger than DV ~ IV1 + IV2.</p>
+<ol type="1">
+<li><p>And so we’ll end up in cases where we don’t have observations in unique combinations of IV1, 2, and 3. A parametric model, like OLS, will fit a line through the middle of the space (to minimize error) but it will end up giving us predictions for observations that don’t exist</p>
+<ol type="1">
+<li><p>e.g., if we are predicting vote choice using race (white, black, Asian) and partisanship (democrat, independent, republican), if we have 1,000 observations we should observe every combination of those IVs. However, if we add additional covariates, like income, gender, state of residence etc., we are likely to end up with situations where we have no observations with a given combination of covariate values (e.g., perhaps we have no black, female, republicans who make &gt;$100k, and live in Alaska)</p>
+<ol type="1">
+<li>This is a problem ML field cares about but the political science field does not give this issue much attention (they should).</li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
+</section>
+<section id="receiver-operator-characteristic-curves" class="level2">
+<h2 class="anchored" data-anchor-id="receiver-operator-characteristic-curves">Receiver-operator characteristic curves</h2>
+<ul>
+<li><p>navan.name/roc/</p>
+<ul>
+<li><p>good explanation of ROC.</p>
+<ul>
+<li>the more we separate the sets of outcomes (blue and red pdfs), the better our model is.</li>
+</ul></li>
+</ul></li>
+<li><p>True positive rate against the False positive rate</p></li>
+<li><p>Binary Classification method</p></li>
+<li><p>seems popular in health.</p></li>
+<li><p>Area under the Curve (AUC) - we want to maximize this value.</p></li>
+<li><p>I think we use to evaluate different models?????????</p></li>
+</ul>
+</section>
+<section id="shrinkage-and-regularization" class="level2">
+<h2 class="anchored" data-anchor-id="shrinkage-and-regularization">Shrinkage and Regularization</h2>
+<p>I’m confused about this…still not clear. Why would we need this when we have k-fold cross validation…doesn’t that minimize bias? How do we know when to use these methods? Answer from 06/21 - we apply cross validation to these methods to determine what amount of shrinkage we want.</p>
+<ul>
+<li><p>Our end-goal is an accurate model (as measured by out-of-sample or test set performance)</p>
+<ul>
+<li><p>We can use shrinkage and regularization to help us.</p>
+<ul>
+<li>helps us prevennt over fitting.</li>
+</ul></li>
+</ul></li>
+<li><p>Shrinkage pulls coefficients closer to zero as the regularization parameter increases.</p></li>
+</ul>
+<section id="ridge-regression-l2" class="level3">
+<h3 class="anchored" data-anchor-id="ridge-regression-l2">Ridge Regression (L2)</h3>
+<ul>
+<li><p>AKA penalized least squares or penalized likelihood) is another shrinkage method that penalizes large magnitude values of beta coefficients in regression models.</p></li>
+<li><p>we add bias to our coefficients</p>
+<ul>
+<li><p>why would we do that?</p>
+<ul>
+<li><p>push our regression parameters closer to zero.</p>
+<ul>
+<li><p><strong>helps our variance</strong>.</p>
+<ul>
+<li>bias-variance trade off to maximize fit for out of sample observations.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Literally a regression model, just adding a penalization function. (square the beta)</p></li>
+<li><p>Shrinkage: when you have less data shrink to the overall mean.</p>
+<ul>
+<li>think of batting averages - Hank Aaron vs.&nbsp;some random guy who had one at bat and has a perfect batting average.</li>
+</ul></li>
+<li><p><span class="math inline">\(\lambda\)</span> is important</p>
+<ul>
+<li><p>can be any value between zero and infinity</p></li>
+<li><p>if zero then the ridge regression penalty will equal the same line as the OLS line.</p></li>
+<li><p>the larger the value, the greater the penalty</p>
+<ul>
+<li>think of the slope of the line changing.</li>
+</ul></li>
+<li><p>How do we figure out which <span class="math inline">\(\lambda\)</span> is the most optimal?</p>
+<ul>
+<li><p>We use cross-validation!</p>
+<ul>
+<li>to determine what <span class="math inline">\(\lambda\)</span> produces lowest variance</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Can also be used if IV is discrete.</p>
+<ul>
+<li>and logistic regression.</li>
+</ul></li>
+</ul>
+</section>
+<section id="lasso-l1" class="level3">
+<h3 class="anchored" data-anchor-id="lasso-l1">Lasso (L1)</h3>
+</section>
+</section>
+<section id="simulations" class="level2">
+<h2 class="anchored" data-anchor-id="simulations">Simulations</h2>
+<ol type="1">
+<li><p>Simulations are most of what we do here.</p></li>
+<li><p>Re-sampling to estimate uncertainty intervals</p></li>
+<li><p>Bootstrapping to estimate uncertainty intervals</p></li>
+<li><p>Monte Carlo experiments to learn about the properties of an estimator, uncover predictor effects, and evaluate counterfactual/future scenarios.</p></li>
+</ol>
+</section>
+<section id="bootstrapping" class="level2">
+<h2 class="anchored" data-anchor-id="bootstrapping">Bootstrapping</h2>
+<ol type="1">
+<li><p>We can make a whole bunch of new samples with the original sample.</p></li>
+<li><p>We can’t see the population parameter, but we can estimate it using repeated samples via bootstrapping.</p>
+<ol type="1">
+<li>we can get pretty damn close to it!</li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="meeting-with-sam-fuller-ta-0624" class="level1">
+<h1>Meeting with Sam Fuller (TA) 06/24</h1>
+<ol type="1">
+<li><p>By minimizing the test error, we can discriminate between reducible and irreducible error. Correct?</p></li>
+<li><p>these algorithms are really good at fitting data</p></li>
+<li><p>you must cross validate - basically.</p>
+<ol type="1">
+<li>very useful</li>
+</ol></li>
+<li><p>Parametric v. non-parametric difference</p>
+<ol type="1">
+<li><p>ML land is focused on prediction - we don’t care about the black box</p>
+<ol type="1">
+<li>we just care about how good it is.</li>
+</ol></li>
+<li><p>in parametric land we care about the variable - not really R^2</p></li>
+<li><p>Maybe this division outlined above is not ideal</p>
+<ol type="1">
+<li>distinction without a difference.</li>
+</ol></li>
+<li><p>Parametric models are not perfect and not necessarily the best for causal inference - Sam.</p></li>
+</ol></li>
+<li><p>Read Breiman</p></li>
+<li><p>The issue is with this method is that you will get pushback from people who don’t understand.</p></li>
+<li><p>still need to know what and how to measure - this is where the theory comes from.</p></li>
+<li><p>How do we know which models to use.</p>
+<ol type="1">
+<li><p>Sam thinks MARS and regularization are lipstick on a pig</p>
+<ol type="1">
+<li>still using parametric assumptions but using ML</li>
+</ol></li>
+</ol></li>
+<li><p>Inference vs ML</p>
+<ol type="1">
+<li>Sam thinks interpretation is better than inference.</li>
+</ol></li>
+<li><p>Random forests is the meet of the class.</p>
+<ol type="1">
+<li>dumb decision trees but when we sum them all together we get close to the truth.</li>
+</ol></li>
+</ol>
+</section>
+<section id="module-2-3-trees" class="level1">
+<h1>Module 2-3: Trees</h1>
+<p>Think of the game Guess Who?</p>
+<section id="trees" class="level2">
+<h2 class="anchored" data-anchor-id="trees">Trees</h2>
+<ul>
+<li><p>Decision trees use splitting rules to stratify or segment the predictor space into a number of simple regions, either for regression or classification problems</p></li>
+<li><p>Can be applied to both regression and classification problems (continuous and discrete).</p></li>
+<li><p>We can present these rules in tree form</p></li>
+<li><p>It is important to remember that what trees are doing is <strong>recursive partitioning</strong> the feature space (X) with binary (yes/no) splits.</p></li>
+<li><p>Their goal is to specify regions of the covariate space such that the outcome is homogeneous and the number of observations in each region is sufficiently large, yet where the regions themselves are sufficiently numerous and unstructured to allow for complex relationships between covariates and the outcome.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dtree.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="562"></p>
+</figure>
+</div>
+<ul>
+<li><p>The tree above has two internal nodes and three terminal nodes (or leaves)</p></li>
+<li><p>We need to know one tree and then we can get more and more trees and create a forest.</p>
+<ul>
+<li>this will be very powerful</li>
+</ul></li>
+<li><p>Tree-based methods to be very useful for making accurate predictions when the underlying Data Generating Process (DGP) includes nonlinearities, discontinuities, and interactions among many covariates.</p>
+<ul>
+<li><p>appropriate to use when researchers’ primary goal is to correctly capture the nuances of a potentially complex but known DGP in a setting with many potential predictors related in nonlinear and interactive ways to the outcome.</p>
+<ul>
+<li>TREES SHOULD NOT BE USED FOR THEORY TESTING BUT FOR BETTER <strong>PREDICTION</strong>.</li>
+</ul></li>
+</ul></li>
+<li><p>The power of trees becomes apparent when we add a bunch together.</p></li>
+<li><p>Trying to find splits in nodes that have the largest differences between means.</p></li>
+<li><p>Trees split based on maximizing the information gain.</p>
+<ul>
+<li>we want pure nodes</li>
+</ul></li>
+<li><p>Individual trees are very sensitive.</p></li>
+<li><p>Model is GREEDY</p>
+<ul>
+<li><p>it does not backtrack</p>
+<ul>
+<li>it finds the best split and then moves on.</li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="depth" class="level3">
+<h3 class="anchored" data-anchor-id="depth">Depth</h3>
+<ul>
+<li><p>How deep do we want a tree? The deeper the tree, the more complex.</p>
+<ul>
+<li><p>Greater depth may lead to an overfit.</p></li>
+<li><p><img src="deep-overfit-tree-1.png" class="img-fluid" width="625"></p>
+<ul>
+<li><p>This is what an overly complex tree looks like.</p>
+<ul>
+<li>we need a balance b/c this is overfitting.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>The shallower the tree -&gt; less variance.</p>
+<ul>
+<li>but we need to find a balance so that the tree can at least capture nuances and potential interactions within the data.</li>
+</ul></li>
+<li><p>We control this by either limiting how deep it can go OR pruning the tree</p></li>
+</ul>
+<section id="early-stopping" class="level4">
+<h4 class="anchored" data-anchor-id="early-stopping">Early Stopping</h4>
+<ul>
+<li><p>Early stopping refers to specifying how many terminal nodes the tree will have.</p>
+<ul>
+<li>will it have 2, 3, 4, etc.</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>The shallower the tree -&gt; less variance.</p>
+<ul>
+<li><p>but too shallow and we have bias</p>
+<ul>
+<li>we need to find a balance so that the tree can at least capture nuances and potential interactions within the data.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="pruning" class="level4">
+<h4 class="anchored" data-anchor-id="pruning">Pruning</h4>
+<ul>
+<li><p>Another method to specify the depth of the tree</p></li>
+<li><p>we find an optimal sub-tree to</p></li>
+<li><p>basically determine where we can optimally set splits. (see below for an example)</p></li>
+<li><p><img src="pruning.png" class="img-fluid"></p></li>
+</ul>
+</section>
+</section>
+<section id="benefits-of-trees" class="level3">
+<h3 class="anchored" data-anchor-id="benefits-of-trees">Benefits of trees:</h3>
+<ul>
+<li><p>Allows p&gt;&gt;n</p></li>
+<li><p>straightforward interpretation</p></li>
+<li><p>naturally models interaction effects</p></li>
+<li><p>implicitly conducts feature selection.</p></li>
+<li><p>When we combine individual trees and average - they are spooky good</p></li>
+</ul>
+</section>
+<section id="entropy" class="level3">
+<h3 class="anchored" data-anchor-id="entropy">Entropy</h3>
+<ul>
+<li><p>Very important for decision trees.</p></li>
+<li><p>Quantifies similarities and differences</p></li>
+<li><p>we want to minimize entropy.</p></li>
+<li><p>How do we decide to divide the data?</p></li>
+<li><p>Formula:</p></li>
+</ul>
+</section>
+<section id="bagging" class="level3">
+<h3 class="anchored" data-anchor-id="bagging">Bagging</h3>
+<ul>
+<li><p>Bootstrap aggregating</p>
+<ul>
+<li>bootstrap original dataset -&gt; create a bunch of individual trees -&gt; aggregate and average the individual trees.</li>
+</ul></li>
+<li><p>because we are bootstrapping from the original sample, they are all somewhat similar.</p></li>
+<li><p>Although usually applied to decision tree methods, it can be used with any type of method.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="bagging example.png" class="img-fluid figure-img" width="718"></p>
+<figcaption>Drawn in class by Prof.&nbsp;Hare</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>Still one problem:</p>
+<ul>
+<li><p>Although the model building steps are independent, the trees in bagging are not completely independent of each other since all the original features are considered at every split of every tree.</p>
+<ul>
+<li><p>Rather, trees from different bootstrap samples typically have similar structure to each other (especially at the top of the tree) due to any underlying strong relationships.</p>
+<ul>
+<li><p>in layman terms, the independent trees we create. Look very similar.</p>
+<ul>
+<li><p>this means these independent trees have a high degree of correlation with each other.</p>
+<ul>
+<li>Random forrests do a better job by reducing this correlation and improve the accuracy of the model.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="random-forrest" class="level3">
+<h3 class="anchored" data-anchor-id="random-forrest">Random Forrest</h3>
+<ul>
+<li><p>Still do bagging but add a new rule:</p>
+<ul>
+<li>every time a split is considered, only consider a random subset of prediction variables in which to split.</li>
+</ul></li>
+<li><p>Forces trees to be different from each other</p>
+<ul>
+<li>individual trees become “dumber”.</li>
+</ul></li>
+<li><p>We want diverse exploration</p>
+<ul>
+<li>trees are exploring different components of the data generating process that may not be as obvious.</li>
+</ul></li>
+<li><p>The individual trees lack complete understanding but if we put them together, we can get a more comprehensive account of the data generating process.</p>
+<ul>
+<li><p>“Rashomon effect”</p>
+<ul>
+<li>Breimen uses this example.</li>
+</ul></li>
+</ul></li>
+<li><p>Honda civic of machine learning</p>
+<ul>
+<li>neural networks are spaceships</li>
+</ul></li>
+<li><p>Still optimizing out of sample data.</p></li>
+</ul>
+</section>
+<section id="boosting" class="level3">
+<h3 class="anchored" data-anchor-id="boosting">Boosting</h3>
+<ul>
+<li><p>Fit a single tree to the entire data</p>
+<ul>
+<li><p>then take the residuals from the result</p>
+<ul>
+<li><p>now, fit another tree to the residuals.</p>
+<ul>
+<li><p>keep going.</p>
+<ul>
+<li>it is SEQUENTIAL.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Still have an overfitting problem</p></li>
+<li><p>people like boosting &gt; random forest</p></li>
+<li><p>VERY POWERFUL!</p>
+<ul>
+<li><p>best tree based method</p>
+<ul>
+<li>and tree based methods are good for tabular data.</li>
+</ul></li>
+</ul></li>
+<li><p>Partial Dependence Plot - no idea what this is</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="module-4-interpretability" class="level1">
+<h1>Module 4: Interpretability</h1>
+<ul>
+<li><p>What is interpretability?</p>
+<ul>
+<li><p><strong>Interpretability is the degree to which a human can understand the cause of a decision.</strong></p>
+<ul>
+<li>the easier it is for someone to comprehend why certain decisions or predictions have been made.</li>
+</ul></li>
+</ul></li>
+<li><p>These ML models are usually known as a “black box”.</p>
+<ul>
+<li><p>goal of interpretability = look inside that black box</p>
+<ul>
+<li><em>why is it making these predictions.</em></li>
+</ul></li>
+</ul></li>
+<li><p>Do we care solely about the prediction being made or do we want to know <strong>why</strong> a prediction was made</p>
+<ul>
+<li><p>this distinction leads us to make some decisions about our model.</p>
+<ul>
+<li>the WHAT vs.&nbsp;the WHY</li>
+</ul></li>
+</ul></li>
+<li><p>Think about why OLS is so popular.</p>
+<ul>
+<li><p>it is easy to interpret!</p>
+<ul>
+<li>it is also powerful.</li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="interpretability-usefulness" class="level2">
+<h2 class="anchored" data-anchor-id="interpretability-usefulness">Interpretability Usefulness</h2>
+<ul>
+<li><p>Interpretability is useful for detecting bias</p>
+<ul>
+<li><p>If we know why it gave a prediction, we can tune it and fix any bias</p>
+<ul>
+<li>This is important for racial bias issues.</li>
+</ul></li>
+</ul></li>
+<li><p>Interpretability can helps us extract insights and actionable information from ML models.</p>
+<ul>
+<li><p>Questions like such can be answered with more interpretability:</p>
+<ul>
+<li><p><em>What are the most important customer attributes driving behavior?</em></p></li>
+<li><p><em>How are these attributes related to the behavior output?</em></p></li>
+<li><p><em>Do multiple attributes interact to drive different behavior among customers?</em></p></li>
+<li><p><em>Why do we expect a customer to make a particular decision?</em></p></li>
+<li><p><em>Are the decisions we are making based on predicted results fair and reliable?</em></p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="local-interpretation-v.-global-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="local-interpretation-v.-global-interpretation">Local Interpretation v. Global Interpretation</h2>
+<section id="global-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="global-interpretation">Global Interpretation:</h3>
+<ol type="1">
+<li><p>understanding how the model makes predictions, based on a holistic view of its features and how they influence the underlying model structure.</p>
+<ol type="1">
+<li><p>think of a zoomed out view</p></li>
+<li><p>Describe how features affect the prediction <strong>on average.</strong></p></li>
+</ol></li>
+<li><p>Global model interpretability helps to understand the relationship between the response variable and the individual features (or subsets thereof).</p></li>
+<li><p>Very hard to do in practice.</p>
+<ol type="1">
+<li><p>we usually have hundreds of variables (even millions).</p>
+<ol type="1">
+<li>We can get an idea of what variables are the most powerful but to the extent that we can <strong>fully</strong> grasp the model from a zoomed out view is extremely difficult.</li>
+</ol></li>
+</ol></li>
+<li><p>Since they describe average behavior, they are good for the modeler when we want to understand the general mechanisms in the data or debug a model.</p></li>
+</ol>
+<section id="types-of-global-interpretation-methods" class="level4">
+<h4 class="anchored" data-anchor-id="types-of-global-interpretation-methods">Types of Global Interpretation Methods:</h4>
+<ol type="1">
+<li><p>Partial Dependence Plot</p></li>
+<li><p>Accumulated Local Effects Plot</p></li>
+</ol>
+</section>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section"></h4>
+</section>
+</section>
+<section id="local-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="local-interpretation">Local Interpretation:</h3>
+<ol type="1">
+<li><p>Global interpretation can be deceptive. It may tell us what variable is important <strong>BUT</strong> that is not necessarily true for all observations.</p>
+<ol type="1">
+<li><p><strong>Local interpretation helps us understand what features are influencing the predicted response for a given observation (or small group of observations).</strong></p>
+<ol type="1">
+<li>Helps us understand why our model is making a specific prediction for THAT (or a group of) observation</li>
+</ol></li>
+</ol></li>
+<li><p>Aims to explain individual predictions</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="module-5-neural-nets-and-deep-learning" class="level1">
+<h1>Module 5: Neural Nets and Deep Learning</h1>
+<ol type="1">
+<li><p>Social scientists mostly work with tabular data</p>
+<ol type="1">
+<li>Because of this, other ML methods are usually better (more simpler) for our needs.</li>
+</ol></li>
+</ol>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,
+  author = {Neilon, Stone},
+  title = {Machine {Learning:} {Applications} in {Social} {Science}
+    {Research} {(ICPSR)}},
+  date = {2024-06-10},
+  url = {https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-neilon2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Neilon, Stone. 2024. <span>“Machine Learning: Applications in Social
+Science Research (ICPSR).”</span> June 10, 2024. <a href="https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/">https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

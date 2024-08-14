@@ -11,13 +11,13 @@ website:
             - text: "CV"
               href: https://drive.google.com/file/d/1wwwiFFiVu-k76M6oixKugPFjESA0g4Is/view?usp=sharing
             - text: "Blog"
-              href: posts.qmd
+              href: posts.html
             - text: "Teaching" 
-              href: teaching.qmd
+              href: teaching.html
             - text: "Research"
-              href: research.qmd
+              href: research.html
             - text: "Notes" 
-              href: notes.qmd
+              href: notes.html
 
 format:
   html:

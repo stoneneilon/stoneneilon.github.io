@@ -1,0 +1,39 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/about.html",
+      "/notes/American_Institutions/index.html",
+      "/notes.html",
+      "/notes/Comparative_Behavior/index.html",
+      "/notes/Data/index.html",
+      "/notes/ICPSR_Intro_to_Python/index.html",
+      "/notes/ICPSR_Math_Review/index.html",
+      "/notes/ICPSR_Machine_Learning/index.html",
+      "/posts.html",
+      "/posts/2024-05-28-first-blog-test/index.html",
+      "/research.html",
+      "/notes/Rule_of_Law/index.html",
+      "/index.html",
+      "/teaching.html"
+    ]
+  },
+  {
+    "listing": "/notes.html",
+    "items": [
+      "/notes/Rule_of_Law/index.html",
+      "/notes/ICPSR_Machine_Learning/index.html",
+      "/notes/ICPSR_Math_Review/index.html",
+      "/notes/ICPSR_Intro_to_Python/index.html",
+      "/notes/Data/index.html",
+      "/notes/Comparative_Behavior/index.html",
+      "/notes/American_Institutions/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2024-05-28-first-blog-test/index.html"
+    ]
+  }
+]

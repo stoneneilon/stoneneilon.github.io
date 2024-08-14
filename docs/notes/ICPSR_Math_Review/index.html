@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stone Neilon">
+
+<title>Stone Neilon - ICPSR - Math For Social Science (workshop)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Stone Neilon</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://drive.google.com/file/d/1wwwiFFiVu-k76M6oixKugPFjESA0g4Is/view?usp=sharing"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#day-1" id="toc-day-1" class="nav-link" data-scroll-target="#day-1">Day 1</a>
+  <ul class="collapse">
+  <li><a href="#matrix-addition-and-subtraction" id="toc-matrix-addition-and-subtraction" class="nav-link" data-scroll-target="#matrix-addition-and-subtraction">Matrix Addition and Subtraction</a></li>
+  <li><a href="#matrix-multiplication" id="toc-matrix-multiplication" class="nav-link" data-scroll-target="#matrix-multiplication">Matrix Multiplication</a></li>
+  </ul></li>
+  <li><a href="#day-2" id="toc-day-2" class="nav-link" data-scroll-target="#day-2">Day 2</a>
+  <ul class="collapse">
+  <li><a href="#determinant" id="toc-determinant" class="nav-link" data-scroll-target="#determinant">Determinant</a></li>
+  <li><a href="#identity-matrix" id="toc-identity-matrix" class="nav-link" data-scroll-target="#identity-matrix">Identity Matrix</a></li>
+  <li><a href="#inverse-matrices" id="toc-inverse-matrices" class="nav-link" data-scroll-target="#inverse-matrices">Inverse Matrices</a></li>
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a>
+  <ul class="collapse">
+  <li><a href="#dot-product" id="toc-dot-product" class="nav-link" data-scroll-target="#dot-product">Dot Product</a></li>
+  </ul></li>
+  <li><a href="#idempotent" id="toc-idempotent" class="nav-link" data-scroll-target="#idempotent">Idempotent</a></li>
+  <li><a href="#order-of-operations" id="toc-order-of-operations" class="nav-link" data-scroll-target="#order-of-operations">Order of Operations</a></li>
+  <li><a href="#rank-of-matrix" id="toc-rank-of-matrix" class="nav-link" data-scroll-target="#rank-of-matrix">Rank of Matrix</a></li>
+  <li><a href="#trace" id="toc-trace" class="nav-link" data-scroll-target="#trace">Trace</a></li>
+  <li><a href="#eigenvalues-and-eigenvectors" id="toc-eigenvalues-and-eigenvectors" class="nav-link" data-scroll-target="#eigenvalues-and-eigenvectors">Eigenvalues and Eigenvectors</a>
+  <ul class="collapse">
+  <li><a href="#definite" id="toc-definite" class="nav-link" data-scroll-target="#definite">Definite</a></li>
+  </ul></li>
+  <li><a href="#variance-inflation-factor-vif" id="toc-variance-inflation-factor-vif" class="nav-link" data-scroll-target="#variance-inflation-factor-vif">Variance Inflation Factor (VIF)</a></li>
+  </ul></li>
+  <li><a href="#day-3" id="toc-day-3" class="nav-link" data-scroll-target="#day-3">Day 3</a>
+  <ul class="collapse">
+  <li><a href="#differentiation" id="toc-differentiation" class="nav-link" data-scroll-target="#differentiation">Differentiation</a>
+  <ul class="collapse">
+  <li><a href="#derivative" id="toc-derivative" class="nav-link" data-scroll-target="#derivative">Derivative</a></li>
+  <li><a href="#how-do-we-write-a-derivative" id="toc-how-do-we-write-a-derivative" class="nav-link" data-scroll-target="#how-do-we-write-a-derivative">How do we write a derivative?</a></li>
+  <li><a href="#differentiation-formulas" id="toc-differentiation-formulas" class="nav-link" data-scroll-target="#differentiation-formulas">Differentiation formulas</a></li>
+  </ul></li>
+  <li><a href="#integration" id="toc-integration" class="nav-link" data-scroll-target="#integration">Integration</a></li>
+  <li><a href="#calculus-in-statistics" id="toc-calculus-in-statistics" class="nav-link" data-scroll-target="#calculus-in-statistics">Calculus in Statistics</a>
+  <ul class="collapse">
+  <li><a href="#probability-density-function-pdf" id="toc-probability-density-function-pdf" class="nav-link" data-scroll-target="#probability-density-function-pdf">Probability Density Function (pdf)</a></li>
+  <li><a href="#cumulative-density-function-cdf" id="toc-cumulative-density-function-cdf" class="nav-link" data-scroll-target="#cumulative-density-function-cdf">Cumulative Density Function (cdf)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#day-4" id="toc-day-4" class="nav-link" data-scroll-target="#day-4">Day 4</a>
+  <ul class="collapse">
+  <li><a href="#continuous-probability-distributions" id="toc-continuous-probability-distributions" class="nav-link" data-scroll-target="#continuous-probability-distributions">Continuous Probability Distributions</a></li>
+  <li><a href="#uniform-distribution" id="toc-uniform-distribution" class="nav-link" data-scroll-target="#uniform-distribution">Uniform Distribution</a></li>
+  <li><a href="#normal-distribution-gaussian" id="toc-normal-distribution-gaussian" class="nav-link" data-scroll-target="#normal-distribution-gaussian">Normal Distribution (Gaussian)</a>
+  <ul class="collapse">
+  <li><a href="#standard-normal-z" id="toc-standard-normal-z" class="nav-link" data-scroll-target="#standard-normal-z">Standard Normal (Z):</a></li>
+  </ul></li>
+  <li><a href="#gamma-distribution" id="toc-gamma-distribution" class="nav-link" data-scroll-target="#gamma-distribution">Gamma Distribution</a>
+  <ul class="collapse">
+  <li><a href="#exponential-distribution" id="toc-exponential-distribution" class="nav-link" data-scroll-target="#exponential-distribution">Exponential Distribution</a></li>
+  </ul></li>
+  <li><a href="#chi-squared-distribution" id="toc-chi-squared-distribution" class="nav-link" data-scroll-target="#chi-squared-distribution">Chi-squared Distribution</a></li>
+  <li><a href="#day-5" id="toc-day-5" class="nav-link" data-scroll-target="#day-5">Day 5</a>
+  <ul class="collapse">
+  <li><a href="#discrete-probability-distributions" id="toc-discrete-probability-distributions" class="nav-link" data-scroll-target="#discrete-probability-distributions">Discrete Probability Distributions</a></li>
+  <li><a href="#bernoulli-random-variable" id="toc-bernoulli-random-variable" class="nav-link" data-scroll-target="#bernoulli-random-variable">Bernoulli Random Variable</a></li>
+  <li><a href="#geometric-random-variable" id="toc-geometric-random-variable" class="nav-link" data-scroll-target="#geometric-random-variable">Geometric Random Variable</a></li>
+  <li><a href="#binomial-distribution" id="toc-binomial-distribution" class="nav-link" data-scroll-target="#binomial-distribution">Binomial Distribution</a></li>
+  <li><a href="#negative-binomial" id="toc-negative-binomial" class="nav-link" data-scroll-target="#negative-binomial">Negative Binomial</a></li>
+  <li><a href="#poisson-distribution" id="toc-poisson-distribution" class="nav-link" data-scroll-target="#poisson-distribution">Poisson Distribution</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">ICPSR - Math For Social Science (workshop)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stone Neilon </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="preface" class="level1">
+<h1>Preface</h1>
+<p>These are notes from the ICPSR workshop, “Math for Social Science” with Prof.&nbsp;Sara Tomek. The purpose of this workshop was to review mathematical concepts already taught. Much of the information in here is taken from the lectures and handouts provided.</p>
+</section>
+<section id="day-1" class="level1">
+<h1>Day 1</h1>
+<p>Day 1 mostly consisted of a basic review of Matrix algebra.</p>
+<section id="matrix-addition-and-subtraction" class="level2">
+<h2 class="anchored" data-anchor-id="matrix-addition-and-subtraction">Matrix Addition and Subtraction</h2>
+<p>Matrices must have the same dimensions to be added or subtracted.</p>
+<ul>
+<li>This means they must have the same rows x columns.</li>
+</ul>
+</section>
+<section id="matrix-multiplication" class="level2">
+<h2 class="anchored" data-anchor-id="matrix-multiplication">Matrix Multiplication</h2>
+<p>TK (Just add a cheat sheet for how to do these)</p>
+</section>
+</section>
+<section id="day-2" class="level1">
+<h1>Day 2</h1>
+<section id="determinant" class="level2">
+<h2 class="anchored" data-anchor-id="determinant">Determinant</h2>
+<p>The determinant is a scalar number that comprises information on the matrix. The information it comprises tells us whether we can take the inverse of the matrix. If the determinant of a matrix is zero, then we <strong>cannot</strong> take the inverse of that matrix. In a sense, the determinant “summaries” the information in the matrix. A specific type of information from a matrix. It is easier to talk about a single number than the whole data.</p>
+<ul>
+<li><p>Determinants measure the factor of how much the area of a given region increases or decreases in space.</p>
+<ul>
+<li><p>how much does the transformation stretch or squish “things”.</p>
+<ul>
+<li><p>the determinant tells us the factor of how much a given area stretches or squishes.</p>
+<ul>
+<li>in 3 dimensions this tells us the factor of change in <em>volume</em></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>If the determinant is zero, it is squishes all of space onto a line or single point. Since then, the area of any region would be zero.</p></li>
+<li><p>Determinants are non-zero if the matrix has full rank</p></li>
+<li><p><strong>only</strong> a square matrix can have a determinant.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="determinant.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ul>
+<li><p>If an inverse is badly scaled or ill-conditioned, then the inverse is <em>unstable.</em> This means a tiny change in just one of the elements of the original matrix can result in HUGE changes in many (or all) of the elements of its inverse.</p></li>
+<li><p>Knowing how it is calculated isn’t super important. You can just google this if needed. Our computers can do this all as it gets much more tedious when we increase the # of dimensions.</p></li>
+<li><p>You can compute a negative determinant (pre absolute value). This would tell you orientation and that the space has been inverted. If you still take the absolute value of the determinant, that still gives you the factor in which the space changed.</p></li>
+</ul>
+</section>
+<section id="identity-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="identity-matrix">Identity Matrix</h2>
+<p>A square matrix, <strong>I,</strong> with ones on the main diagonal and zeros everywhere else.</p>
+<ul>
+<li><p>If the size of <strong>I</strong> is not specified, then it is assumed to be conformable and as big as necessary.</p></li>
+<li><p>The identity matrix is analogous to the number 1.</p></li>
+<li><p>If you multiple any matrix with a conformable identity matrix, the result will be the same matrix (or vector).</p></li>
+</ul>
+</section>
+<section id="inverse-matrices" class="level2">
+<h2 class="anchored" data-anchor-id="inverse-matrices">Inverse Matrices</h2>
+<ul>
+<li><p>There is no way to divide a matrix.</p></li>
+<li><p>we instead take the inverse of a matrix and multiply it by itself.</p></li>
+<li><p><span class="math inline">\(\textbf{A}^{-1}\)</span> raising to the power of negative 1 indicates we are taking the inverse of a matrix.</p></li>
+<li><p>We need to make sure the matrix can be inverted.</p>
+<ul>
+<li><p>it is invertible if it is non-singluar.</p></li>
+<li><p>The matrix times its inverse will return an identity matrix.</p></li>
+</ul></li>
+<li><p>Determinate has to be non-zero.</p>
+<ul>
+<li>Need to have full rank for this.</li>
+</ul></li>
+</ul>
+</section>
+<section id="vectors" class="level2">
+<h2 class="anchored" data-anchor-id="vectors">Vectors</h2>
+<ul>
+<li><p>Vectors are matrices with only one row or columns.</p></li>
+<li><p><span class="math inline">\(x'x = \sum x^2_i\)</span></p>
+<ul>
+<li>This is the sum of squares.</li>
+</ul></li>
+<li><p>Vectors are one variable</p></li>
+<li><p>matrices are multiple variables.</p></li>
+</ul>
+<section id="dot-product" class="level3">
+<h3 class="anchored" data-anchor-id="dot-product">Dot Product</h3>
+<ul>
+<li><p>For example, if A = [5, -2, 1] and B = [3, 0, 4] then A • B = (5)(3) + (-2)(0) + (1)(4) = 15 + 0 + 4 = 19 .<br>
+So the Dot Product of A and B is 19.</p></li>
+<li><p>If the dot product of two vectors is equal to zero then those two vectors are <strong>Orthogonal</strong>, which implies that the<br>
+angle between them is 90° (i.e., they are perpendicular) and they are independent of each other.</p>
+<ul>
+<li><p>orthogonal means independent.</p>
+<ul>
+<li>The dot product tells us how closely two vectors align.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="idempotent" class="level2">
+<h2 class="anchored" data-anchor-id="idempotent">Idempotent</h2>
+<ul>
+<li><p>A square matrix, <strong>P</strong> is idempotent if when multiplied by itself, yields itself. PP=P</p></li>
+<li><p>The trace of an idempotent matrix is equal to the rank.</p></li>
+<li><p>1 X 1 = 1 - this is idempotent</p></li>
+</ul>
+</section>
+<section id="order-of-operations" class="level2">
+<h2 class="anchored" data-anchor-id="order-of-operations">Order of Operations</h2>
+<ul>
+<li><p>Matrix multiplication is <strong>non-communicative</strong>. <span class="math inline">\(AB \neq BA\)</span></p></li>
+<li><p>Matrix multiplication is associative. As long as the order stays the same. <span class="math inline">\((AB)C = A(BC)\)</span></p></li>
+</ul>
+</section>
+<section id="rank-of-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="rank-of-matrix">Rank of Matrix</h2>
+<ul>
+<li><p>Thank rank of a matrix is the maximal number of linearly independent rows or columns.</p></li>
+<li><p>rank = number dimensions in the output.</p></li>
+<li><p>The columns in a matrix should be independent of each other.</p></li>
+<li><p>How much information can we actually get out of a matrix that is independent of each other.</p></li>
+<li><p>Max rank will be equal to the number of columns in the matrix.</p></li>
+<li><p>Not full rank means some variables are linearly dependent on each other.</p>
+<ul>
+<li>classic example is male and female. Perhaps your matrix includes a dummy variable for male (0 = female, 1 = male). If you include another variable for female where (0 = male, 1 = female) - this is a dummy variable trap. The female variable is perfectly dependent on the male variable. They give the exact same information. The female variable is <strong>determined</strong> by the male variable.</li>
+</ul></li>
+<li><p>Kind of similar to degrees of freedom.</p></li>
+<li><p>If a square matrix is of full rank then it is nonsingular (i.e., it does have an inverse).</p></li>
+<li><p>If a square matrix is not of full rank then it is singular (i.e., it does not have an inverse).</p></li>
+</ul>
+</section>
+<section id="trace" class="level2">
+<h2 class="anchored" data-anchor-id="trace">Trace</h2>
+<ul>
+<li><p>sum of the diagonal elements.</p></li>
+<li><p>Let’s say we have a VCV matrix.</p>
+<ul>
+<li><p>the variance of each element along the main diagonal represents variance for that variable.</p>
+<ul>
+<li><p>If you were to take the trace of the main diagonal in a VCV, you would get the variance across all variables together (non-weighted).</p>
+<ul>
+<li>VCV’s are always square matrices.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="eigenvalues-and-eigenvectors" class="level2">
+<h2 class="anchored" data-anchor-id="eigenvalues-and-eigenvectors">Eigenvalues and Eigenvectors</h2>
+<ul>
+<li><p>Let’s say we have a matrix, <strong>A,</strong> that is square and nxn.</p>
+<ul>
+<li><p>Eigenvectors have a special relationship with this matrix</p>
+<ul>
+<li><p>such that when you multiply <span class="math inline">\(\textbf{A}\overrightarrow{x}\)</span> you get <span class="math inline">\(\lambda \overrightarrow{x}\)</span></p>
+<ul>
+<li><p>the <span class="math inline">\(\overrightarrow{x}\)</span> is the eigenvector.</p></li>
+<li><p><strong>A</strong> is a matrix. The <span class="math inline">\(\lambda\)</span> is an EIGENVALUE and is a SCALAR.</p></li>
+</ul></li>
+<li><p>When you multiply <strong>A</strong> times the eigenvector x, you get back that same vector, multiplied by a scalar, lambda. These scalars are called eigenvalues.</p></li>
+</ul></li>
+</ul></li>
+<li><p>From reddit:</p>
+<ul>
+<li><p><em>“I’m not aware of how it’s used, if at all, in statistics. It comes from linear algebra.</em></p>
+<p><em>Say you have a shape. You can apply a transformation to it - rotate it, stretch bits, squash bits, etc. If you paint an arrow on the shape, after the transformation the arrow will most likely be pointing a different direction.</em></p>
+<p><em>But sometimes the transformation you apply conspires to make so that the arrow doesn’t change direction. Maybe it gets stretched or squished, but it still points in the same direction. From the arrow’s perspective, all you did was scale it up or down in size by some amount.</em></p>
+<p><em>If that happens, the arrow is called an eigenvector of the transformation, and the amount it gets scaled by is its associated eigenvalue. They are properties of the transformation itself, not the shape you apply it to.”</em></p></li>
+</ul></li>
+<li><p>A matrix can have multiple eigenvalues BUT no more than its <strong>number or rows/columns.</strong></p></li>
+<li><p>Each eigenvalue is associate with a specific eigenvector.</p></li>
+<li><p>You can get negative eigenvalues but they are not good for us in statistics.</p></li>
+</ul>
+<section id="definite" class="level3">
+<h3 class="anchored" data-anchor-id="definite">Definite</h3>
+<ul>
+<li><p><strong>eigenvalues are closely related to definiteness.</strong></p></li>
+<li><p>Why do we care about definiteness?</p>
+<ul>
+<li><p>It is useful for establishing if a (multivariate) function has a maximum, minimum or neither at a critical point.</p>
+<ul>
+<li>this is important for regression (OLS). We are trying to find the line that minimizes the squared difference.</li>
+</ul></li>
+</ul></li>
+<li><p>We want positive definiteness.</p>
+<ul>
+<li><p>To have positive definiteness we need our matrix to satisfy the following:</p>
+<ul>
+<li><p>symmetric</p></li>
+<li><p>all eigenvalues are positive</p></li>
+<li><p>all the subdeterminants are positive</p></li>
+<li><p>you could also just calculate the quadratic form and check its positiveness</p></li>
+</ul></li>
+<li><p>if the quadratic form is &gt; 0 then it is positive definiteness.</p></li>
+<li><p>we want a positive definite matrix because it is good for interpretation.</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="variance-inflation-factor-vif" class="level2">
+<h2 class="anchored" data-anchor-id="variance-inflation-factor-vif">Variance Inflation Factor (VIF)</h2>
+<ul>
+<li><p>metric that measures how much overlap we have between our independent variables.</p></li>
+<li><p>If we created a correlation matrix we can find the VIF easily.</p></li>
+</ul>
+<p>END DAY 2!</p>
+</section>
+</section>
+<section id="day-3" class="level1">
+<h1>Day 3</h1>
+<section id="differentiation" class="level2">
+<h2 class="anchored" data-anchor-id="differentiation">Differentiation</h2>
+<section id="derivative" class="level3">
+<h3 class="anchored" data-anchor-id="derivative">Derivative</h3>
+<p>The instantaneous rate of change. Finding the slope of a single point. The tangent line of the curve.</p>
+</section>
+<section id="how-do-we-write-a-derivative" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-write-a-derivative">How do we write a derivative?</h3>
+<p>Derivatives are represented by either:</p>
+<ul>
+<li><p>f’(x)</p></li>
+<li><p><span class="math inline">\(\frac{\textit{d}}{\textit{dx}}f(x)\)</span></p></li>
+</ul>
+<p>We are saying to take the derivative of x</p>
+</section>
+<section id="differentiation-formulas" class="level3">
+<h3 class="anchored" data-anchor-id="differentiation-formulas">Differentiation formulas</h3>
+<ul>
+<li><p>the derivative of a constant is 0</p>
+<ul>
+<li><p><span class="math inline">\(\frac{\textit{d}}{\textit{du}}c=0\)</span></p>
+<ul>
+<li><p>example: <span class="math inline">\(\frac{\textit{d}}{\textit{du}}7\)</span></p>
+<ul>
+<li>if we take the derivative of just 7, we get zero.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>The derivative of a sum is the sum of the derivatives.</p>
+<ul>
+<li><span class="math inline">\(\frac{\textit{d}}{\textit{dt}}(t+4) = \frac{\textit{d}}{\textit{dt}}(t)+\frac{\textit{d}}{\textit{dt}}(4)=1+0=1\)</span></li>
+</ul></li>
+<li><p>The derivative of u to a constant power (use this one a lot)</p>
+<ul>
+<li><span class="math inline">\(\frac{\textit{d}}{\textit{du}}u^n=n*u^{n-1}du\)</span></li>
+<li><span class="math inline">\(\frac{\textit{d}}{\textit{dx}}3x^3=3*3x^{2}=9x^2\)</span></li>
+</ul></li>
+<li><p>The derivative of log:</p>
+<ul>
+<li><p><span class="math inline">\(\frac{\textit{d}}{\textit{du}}log(u)=\frac{1}{u}du\)</span></p>
+<ul>
+<li><span class="math inline">\(\frac{\textit{d}}{\textit{dy}}3log(x)=3*\frac{1}{x}*\frac{\textit{d}}{\textit{dx}}x=\frac{3}{x}\)</span></li>
+</ul></li>
+</ul></li>
+<li><p>The derivative of e:</p>
+<ul>
+<li><p><span class="math inline">\(\frac{\textit{d}}{\textit{du}}e^u=e^udu\)</span></p>
+<ul>
+<li><span class="math inline">\(\frac{\textit{d}}{\textit{dy}}e^{4y}=e^{4y}*\frac{\textit{d}}{\textit{dy}}4y=e^{4y}*4=4^{4y}\)</span></li>
+</ul></li>
+</ul></li>
+<li><p>There is also the Product and Quotient rules</p>
+<ul>
+<li>put those here TK.</li>
+</ul></li>
+</ul>
+<section id="the-chain-rule" class="level4">
+<h4 class="anchored" data-anchor-id="the-chain-rule">The Chain Rule</h4>
+<ul>
+<li><p>The chain rule allows you to combine any of the differentiation rules we have already covered</p></li>
+<li><p>first do the derivative of the outside and then do the derivative of the inside.</p>
+<ul>
+<li><span class="math inline">\(\frac{\textit{d}}{\textit{du}}f(g(u))=f'(g(u))*g'(u)*du\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="partial-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="partial-derivatives">Partial derivatives</h4>
+<p>Partial derivatives are a way to derive functions that have more than one independent variable.</p>
+<p>Partial derivatives use a notation that is intentionally similar to that of regular derivatives. Their overall format is the same but the shorthand symbols, such as “dx,” are replaced by their stylized version of the letter d: <span class="math inline">\(\partial\)</span>. Partial derivatives should be labeled as <span class="math inline">\(\frac{\partial}{\partial x}\)</span> or <span class="math inline">\(\frac{\partial}{\partial y}\)</span>, depending on the variable being derived.</p>
+<p>The two derivatives should be read as “The partial derivative, with respect to x,” and “The partial derivative, with respect to y.”</p>
+<ul>
+<li><p>When taking a partial derivative with respect to a particular variable, treat all other variables as though they are constants.</p>
+<ul>
+<li>When deriving with respect to x, treat y as a constant, and do not derive the y.</li>
+</ul></li>
+</ul>
+<section id="example" class="level5">
+<h5 class="anchored" data-anchor-id="example">Example:</h5>
+<p><span class="math inline">\(f(x,y)=x^2y+2x^3\)</span></p>
+<p><span class="math inline">\(f(x,y)=xy^2+x^3\)</span></p>
+<ul>
+<li><p><span class="math inline">\(\frac{\partial}{\partial x}=\frac{\partial}{\partial x}(x)y^2+\frac{\partial}{\partial x}(x^3)=y^2 +3x^2\)</span></p>
+<ul>
+<li><p>take the partial derivative, with respect to x.</p>
+<ul>
+<li><p>hold y constant.</p></li>
+<li><p>the <span class="math inline">\(y^2+3x^2\)</span> is the <strong>rate of change</strong> for the function.</p></li>
+</ul></li>
+</ul></li>
+<li><p><span class="math inline">\(\frac{\partial}{\partial y}=\frac{\partial}{\partial y}x(y^2)+\frac{\partial}{\partial y}x^3=2xy+0=2xy\)</span></p>
+<ul>
+<li><p>take the partial derivative, with respect to y.</p>
+<ul>
+<li><p>hold x constant. `</p></li>
+<li><p>the <span class="math inline">\(2xy\)</span> is the <strong>rate of change</strong> for the function.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+<section id="integration" class="level2">
+<h2 class="anchored" data-anchor-id="integration">Integration</h2>
+<ul>
+<li><p>The integral provides us with information about the area under the function.</p></li>
+<li><p>The indefinite integral of a function is a function, but the definite integral may be a number.</p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p>the integral of the rate of function is the distance function</p></li>
+<li><p>integrating over a specified time tells us how far we’ve gone.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Two forms of integration:</p>
+<ul>
+<li><p>indefinite (anti-derivative)</p>
+<ul>
+<li><p><span class="math inline">\(\int f(x)dx\)</span></p>
+<ul>
+<li>integrate the whole thing.</li>
+</ul></li>
+<li><p>When doing an indefinite integral, we must add a constant to our function</p></li>
+</ul></li>
+<li><p>definite</p>
+<ul>
+<li><p><span class="math inline">\(\int_{a}^{b}f(x)dx\)</span></p>
+<ul>
+<li><p>notice the integral sign (the a and b). These serve as limits and tell us what values to integrate over.</p></li>
+<li><p>the integration is going over a lower end to a positive end.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>TK TK TK TK MORE ON INTEGRALS HERE + FORMULAS</p>
+</section>
+<section id="calculus-in-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="calculus-in-statistics">Calculus in Statistics</h2>
+<p>We use calculus in many ways, some include:</p>
+<ul>
+<li><p>continuous density functions</p></li>
+<li><p>finding the expected value (mean) of a distribution</p></li>
+<li><p>finding the variance (standard deviation) of a distribution</p></li>
+<li><p>finding the median of a distribution</p></li>
+</ul>
+<section id="probability-density-function-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="probability-density-function-pdf">Probability Density Function (pdf)</h3>
+<ul>
+<li><p>The probability density function of a variable tells us the probability of a certain event when a continuum of events is possible.</p></li>
+<li><p>The pdf of x is usually noted by the lowercase, f, i.e.&nbsp;f(x).</p></li>
+<li><p>The probability of events at a particular point.</p></li>
+<li><p>The area under a probability density function is 1.</p>
+<ul>
+<li><p>the integral of the pdf over <strong>all</strong> events is 1.</p>
+<ul>
+<li><p>think about what this looks like.</p>
+<ul>
+<li>if you were to shade in the pdf, you would color the whole thing!</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="cumulative-density-function-cdf" class="level3">
+<h3 class="anchored" data-anchor-id="cumulative-density-function-cdf">Cumulative Density Function (cdf)</h3>
+<ul>
+<li><p>The cdf measures the area under the pdf.</p>
+<ul>
+<li>cdf is the integral of the pdf.</li>
+</ul></li>
+<li><p>denoted with a capital F, i.e.&nbsp;F(x)</p></li>
+</ul>
+<p>END DAY 3!</p>
+</section>
+</section>
+</section>
+<section id="day-4" class="level1">
+<h1>Day 4</h1>
+<section id="continuous-probability-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="continuous-probability-distributions">Continuous Probability Distributions</h2>
+<ul>
+<li><p>Continuous random variables can take on an <em>infinite</em> number of possible values, corresponding to every value in an interval.</p></li>
+<li><p>values where the curve is high = higher probability of occurring.</p></li>
+<li><p>we model a continuous random variable with a curve f(x), called a probability density function (pdf).</p>
+<ul>
+<li><p>f(x) represents the height of the curve at point x</p></li>
+<li><p>for continuous random variables probabilities are <em>areas under the curve.</em></p></li>
+</ul></li>
+<li><p>The probability that a random value of x is exactly equal to one specific value is ZERO</p>
+<ul>
+<li><p>this is because the variable is continuous.</p></li>
+<li><p>the value can be an infinitely small value.</p>
+<ul>
+<li><p>so we use ranges. (Pa&lt;X&lt;b)</p>
+<ul>
+<li>need to find area between an interval.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Total area under the curve is always 1.</p></li>
+<li><p>What are continuous probability distributions?</p>
+<ul>
+<li><p>they describe the probabilities of a continuous random variable’s possible values.</p></li>
+<li><p>There a couple distributions we should know:</p>
+<ul>
+<li>Uniform, Normal (Gaussian), Standardized normal, Gamma,</li>
+</ul></li>
+</ul></li>
+<li><p>Probabilities and percentiles are found by integrating the probability density function.</p>
+<ul>
+<li>Deriving the mean and variance also requires integration.</li>
+</ul></li>
+</ul>
+</section>
+<section id="uniform-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="uniform-distribution">Uniform Distribution</h2>
+<ul>
+<li><p>often called the rectangular distribution.</p></li>
+<li><p>Function of x; A, B</p>
+<ul>
+<li><p>where X is a random variable</p></li>
+<li><p>where A and B are the known values of the lower bound and upper bound</p></li>
+</ul></li>
+<li><p>Represented mathematically as:</p>
+<ul>
+<li><p><span class="math inline">\(\frac{1}{B-A}\)</span></p>
+<ul>
+<li>the pdf will be the function above. Elsewhere it will be 0.</li>
+</ul></li>
+</ul></li>
+<li><p>How the Uniform Distribution looks:</p>
+<ul>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="uniform_distribution.png" class="img-fluid figure-img"></p>
+<figcaption>Uniform Distribution (visual)</figcaption>
+</figure>
+</div></li>
+</ul></li>
+</ul>
+</section>
+<section id="normal-distribution-gaussian" class="level2">
+<h2 class="anchored" data-anchor-id="normal-distribution-gaussian">Normal Distribution (Gaussian)</h2>
+<ul>
+<li><p>Most important continuous probability distribution in the entire field of statistics</p></li>
+<li><p>Approximately describes many phenomena that occur in nature, industry, and research. For example, physical measurements in areas such as meteorological experiments, rainfall studies, and measurements of manufactured parts.</p></li>
+<li><p>This distribution is our assumption in regression</p>
+<ul>
+<li>we assume normal distribution.</li>
+</ul></li>
+<li><p>Bell-shaped.</p></li>
+<li><p>The highest probability of events to occur will happen around the mean.</p>
+<ul>
+<li>farther from the mean = less probability of event occurring.</li>
+</ul></li>
+<li><p>Mean = median = mode</p></li>
+<li><p><strong>The beauty of the normal curve:</strong></p>
+<ul>
+<li><p><strong>No matter what</strong> <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span> are, the area between <span class="math inline">\(\mu-\sigma\)</span> and <span class="math inline">\(\mu+\sigma\)</span> is about 68%; the area between <span class="math inline">\(\mu-2\sigma\)</span> and <span class="math inline">\(u+2\sigma\)</span> is about 95%; and the area between <span class="math inline">\(\mu-3\sigma\)</span> and <span class="math inline">\(\mu+3\sigma\)</span> is about 99.7%. Almost all values fall within 3 standard deviations.</p>
+<ul>
+<li>changing the variance simply moves away how far away that 99.7% is. Think: how spread affects the shape of the distribution and subsequently the area under the curve.</li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="standard-normal-z" class="level3">
+<h3 class="anchored" data-anchor-id="standard-normal-z">Standard Normal (Z):</h3>
+<ul>
+<li><p>similar to the normal distribution</p>
+<ul>
+<li><p>we are just standardizing.</p>
+<ul>
+<li><p>normal distribution can have any mean and standard deviation</p></li>
+<li><p>the standard normal distribution has a mean of 0 and a standard deviation to 1.</p>
+<ul>
+<li><p>makes it easier to interpret and solve</p></li>
+<li><p>Standard normal distribution simply translates the normal distribution using z-scores.</p>
+<ul>
+<li>will give us the same area under the curve.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>z-scores represent the area under the curve from a value of negative infinity to the z-score.</p>
+<ul>
+<li>if z-score is 0, then we get .5 = which means = .5 area under the curve.</li>
+</ul></li>
+<li><p>Below is an image that shows the difference between the normal distribution and the standard normal.</p>
+<ul>
+<li>notice the mean and standard deviation values.</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="normal_gaussian_comparison.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="401"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="gamma-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="gamma-distribution">Gamma Distribution</h2>
+<ul>
+<li><p>The gamma function is only for positive values.</p>
+<ul>
+<li><p>we are using it for only values that can be positive.</p>
+<ul>
+<li>use for something that cannot be negative (time).</li>
+</ul></li>
+</ul></li>
+<li><p>Basically can get us a bunch of other distributions.</p></li>
+</ul>
+<section id="exponential-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="exponential-distribution">Exponential Distribution</h3>
+<ul>
+<li><p>Poisson distribution is used to compute the probability of specific numbers of events during a particular period of time or span of space.</p>
+<ul>
+<li><p>looking across a time period or space.</p></li>
+<li><p>count data.</p></li>
+</ul></li>
+<li><p>just need to know lambda to define shape of distribution.</p></li>
+</ul>
+</section>
+</section>
+<section id="chi-squared-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="chi-squared-distribution">Chi-squared Distribution</h2>
+<ul>
+<li><p>A special case of the gamma distribution.</p></li>
+<li><p>all we need to know is the degrees of freedom.</p></li>
+</ul>
+<p>END DAY 4.</p>
+</section>
+<section id="day-5" class="level2">
+<h2 class="anchored" data-anchor-id="day-5">Day 5</h2>
+<section id="discrete-probability-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="discrete-probability-distributions">Discrete Probability Distributions</h3>
+<ul>
+<li><p>Not continuous (duh).</p></li>
+<li><p>have to be a whole number!</p>
+<ul>
+<li><p>we treat these different.</p></li>
+<li><p>count data!</p></li>
+</ul></li>
+<li><p>We don’t have to integrate</p></li>
+<li><p>instead of looking at a PDF, we look at a probability mass function. (PMF)</p></li>
+<li><p>We can get a probability for an exact value!</p></li>
+<li><p>summation instead of integration</p></li>
+<li><p>REMEMBER: X IS NOW COUNTABLE - MUST BE A WHOLE NUMBER TO USE THESE DISTRIBUTIONS!</p></li>
+<li><p>Discrete random variable:</p>
+<ul>
+<li>values consitute a finite or countably infinite set</li>
+</ul></li>
+</ul>
+</section>
+<section id="bernoulli-random-variable" class="level3">
+<h3 class="anchored" data-anchor-id="bernoulli-random-variable">Bernoulli Random Variable</h3>
+<ul>
+<li><p>any random variable whose only possible values are 0 and 1 is called a Bernoulli random variable.</p></li>
+<li><p>binary, yes or no, right or wrong, True or False.</p></li>
+<li><p>Each trial is independent.</p></li>
+<li><p>What we count is called a success</p>
+<ul>
+<li>everything else is called a failure</li>
+</ul></li>
+<li><p>P(success) = p</p>
+<ul>
+<li>P(failure) = 1 - p</li>
+</ul></li>
+<li><p>Let X = 1 if a success occurs, and X = 0 if a failure occurs.</p>
+<ul>
+<li><p>Then X has a Bernoulli distribution</p>
+<ul>
+<li><p><span class="math inline">\(P(X=x)=p^x(1-p)^{1-x}\)</span></p>
+<ul>
+<li>this is referred to the mass function of the Bernoulli distribution.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Why is the Bernoulli important?</p>
+<ul>
+<li><p>some other common discrete probability distributions are built on the assumption of independent Bernoulli trials.</p>
+<ul>
+<li>Binomial, geometric, negative binomial</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="geometric-random-variable" class="level3">
+<h3 class="anchored" data-anchor-id="geometric-random-variable">Geometric Random Variable</h3>
+<ul>
+<li><p><strong>Distribution of the number of trials to get the first success in n Bernoulli trials.</strong></p></li>
+<li><p>Similar in the sense that it is also a specific value BUT we are interested in the count of how long it takes us to achieve a success.</p></li>
+</ul>
+</section>
+<section id="binomial-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="binomial-distribution">Binomial Distribution</h3>
+<ul>
+<li><p><strong>Distribution of the number of success in n independent Bernoulli Trials.</strong></p></li>
+<li></li>
+</ul>
+</section>
+<section id="negative-binomial" class="level3">
+<h3 class="anchored" data-anchor-id="negative-binomial">Negative Binomial</h3>
+<ul>
+<li><strong>The distribution of the number of trials to get the r<em>th</em> success in independent Bernoulli Trials.</strong></li>
+</ul>
+</section>
+<section id="poisson-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="poisson-distribution">Poisson Distribution</h3>
+<ul>
+<li><p>Poisson can either be continuous or discrete.</p></li>
+<li><p>this section focuses on discrete version of poisson distribution.</p></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
