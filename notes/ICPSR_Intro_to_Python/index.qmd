@@ -1,0 +1,1053 @@
+---
+title: "ICPSR - Introduction to Python"
+author:
+  - name: Stone Neilon
+    url: https://samanthacsik.github.io/
+    orcid: 0000-0002-5300-3075
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://ucsb-meds.github.io/ 
+date: 06-10-2024
+categories: [Summer, ICPSR, 2024, Methods] # self-defined categories
+citation: 
+  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+image: python.png.webp
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Preface
+
+Introduction to Python with Professor Sarah Hunter was a workshop taken at ICPSR in the summer of 2024. You cannot memorize this. Practice makes perfect. You must use it or you will lose it. This course covers the absolute *basics*.
+
+# Software
+
+Google Colab is main software used - **this is the one used during class.**
+
+-   be careful with the google AI that helps you with the code. It's cool but not very accurate as of right now.
+
+Optional: Spyder - Spyder is an IDE that makes it similar to an interface like R studio.
+
+Optional: Jupyter Notebooks
+
+If you want to work with data that is sensitive or private, do NOT upload it to any cloud service. In this case, use Spyder and download/work with the data locally.
+
+# Day 1 - Introduction and Language Basics
+
+If I want to download Python locally, talk to a TA.
+
+## Getting to know Python
+
+-   Python is more flexible and general than R.
+-   Object oriented
+    -   R is also object oriented.
+-   R is very similar to Python.
+    -   basic syntax is similar.
+-   Why learn python?
+    -   its the most popular programming language
+
+    -   Python is used a lot by data analyst
+
+        -   text analysis, machine learning, and AI are big on Python.
+
+    -   Web scraping very big on Python
+
+    -   Accessing APIs with Python good as well.
+
+        -   APIs are just a way to access data easily.
+-   General-purpose language. Not a statistical language
+-   Free and open source
+-   User created packages
+-   Steep learning curve
+-   different paths to the "correct" answer
+-   Nat Silver apparently does everything in Stata (gross)
+
+## Basic Syntax
+
+command(object)
+
+ex: print("Hello World")
+
+There are different types of objects.
+
+-   Objects are assigned with =
+
+    -   in R it is \<-
+
+-   Objects are defined by type:
+
+    -   scalar (cannot be subdivided)
+
+        -   int - integer, e.g. 3 or 142
+        -   float - real numbers, e.g. 4.2 or -3.5
+        -   bool - Boolean, known as logical in some languages, True or False
+        -   NoneType - a special type with on possible value, none. Basically means NULL.
+
+    -   non-scalar (has an internal structure that can be assessed)
+
+        -   vector, data frame, list.
+
+    -   Can find type in Python with type()
+
+        -   in R it is class()
+
+-   We can convert different types to other types
+
+    -   just be careful!
+
+Expressions = objects + operators
+
+-   akin to taking words and making sentences
+
+What are operators?
+
+-   Additions +
+-   Subtraction -
+-   Multiplication \*
+-   Division /
+-   Modulus %
+-   Exponentiation \*\*
+-   Floor division // - rare
+
+Python knows order of operations
+
+Example code chunk:
+
+```{python}
+# this is an example of assigning an object and adding operators to the objects. 
+pi = 3.14159
+radius = 5 
+area = pi * radius**2 # pi is an object * another object (radius) raised to the second power
+print(area)
+```
+
+We can "rebind". This assigns a new value to the object of the same name. The object is getting a new value. So be careful when you rebind!
+
+*note*: need to use the print command. In R you could just type the object and it would print. This is not the same in Python.
+
+```{python}
+# Rebinding example 
+pi = 3.14
+radius = 10 
+circumference = 2 * pi * radius 
+print(circumference)
+```
+
+END DAY 1!
+
+# Day 2
+
+## Exercise: Describe how to make coffee in as much detail as possible
+
+To make coffee I first grab a Keurig coffee cup and put it in my Keurig . Once starting the Keurig , I wait for it to heat up and it begins filling the cup. After, I put my sugar free vanilla creamer inside the the mug. I then mix it up and it is ready to be served.
+
+-   What is the point of this?
+
+    -   Think about how many different tasks you have to go through.
+
+        -   Learning Python is similar. It is a series of small tasks.
+
+            -   we need to spell out each of those tasks that we do without thinking.
+
+                -   they need to be in our code.
+
+                    -   Any big tasks we want Python to do, we need to have it do all those small tasks to make it do that one large task...this is called **control flow.**
+
+## Strings
+
+-   Strings must be in quotes.
+
+-   defined: text, letter, character, space, digits, etc.
+
+-   Use triple quotes for multiple lines of strings.
+
+```{python}
+greeting = "Hello! How are you"
+who = 'Anastasia' 
+print(greeting)
+print(greeting + who + '?') # this is concatenating. notice the output. 
+print(greeting + " " + who + '?') # this is one way to fix the spacing issue
+# we could also add a space to the object. 
+```
+
+Let's try an example of a multi line string:
+
+```{python}
+my_string = '''
+This is a string. It is 
+spanning multiple lines. 
+''' 
+print(my_string)
+```
+
+We can combine strings with integers.
+
+```{python}
+n_apples = 3 
+print("I ate", n_apples, "apples.") # this is NOT a concatination. The n_apples is still an integer. 
+
+print("I ate", str( n_apples), "apples.") # this is a concatination. We convert the int to a string. 
+
+# now try to assign a new object
+sentence=("I ate ", n_apples, "apples.") 
+print(sentence)
+type(sentence) # notice the type is not a string. We will discuss tuples later.   
+```
+
+### Input
+
+Allows a user to input a response.
+
+Example:
+
+```{python}
+#| eval: false
+# note this code won't run on this website. But you can copy it somewhere else and it will execute. 
+text = input("Tell me something…")
+print("So you are saying", text) 
+```
+
+We can go further:
+
+```{python}
+#| eval: false
+# this will give you your age. Pretty fun. Note this code will not run on this website. 
+birth_yr = input("Type in your birth year:")
+print('You are ' + str(2024 - int(birth_yr)) + ' years old.') # if we were to assign this to an object, we would return a string because the middle input is wrapped in a str() function. So it will convert our input which is originally an integer, to a string. 
+```
+
+## Boolean
+
+-   Used to compare to variables to one another
+
+-   Used for binary outcomes. True or False?
+
+    -   var1 \< var2
+
+    -   var1 \>= var2
+
+    -   var1 \> var2
+
+    -   var1 \<= var2
+
+    -   var1 == var2
+
+    -   var1 != var2
+
+-   These will help once we start talking about control flow of a model.
+
+-   Logical operators on Booleans
+
+    -   **not, or , and** are special words for logical operators
+
+    -   **not a**
+
+    -   **a or b**
+
+    -   **a and b**
+
+-   Examples:
+
+    ```{python}
+    hours = 20 
+    # more than a day   
+    print(hours>24) # this will return FALSE. The boolean operator is ">"
+    ```
+
+```{python}
+from pickle import TRUE # this is just a package. the prof originally wrote TRUE but thats for R. Python likes True.
+# how did you commute? 
+bike=True
+bus=False
+print(bike or bus)
+print(bike and bus)
+```
+
+### Control Flow: Branching
+
+Example: (four) spaces
+
+if \<condition\>:
+
+\<expression\>
+
+\<expression\>
+
+-   Spaces/ white space matters in python!
+
+-   the expressions should be (by convention) be indented by 4 spaces or a Tab
+
+-   that's how Python understands that those are the expression to be run if the condition is True
+
+-   once indented is removed, it'll be back to evaluating everything.
+
+```{python}
+#| eval: false
+if <condition>:
+  <expression1> # evaluate expression1 if condition is True, otherwise evaluate expression2. 
+else: 
+  <expression> # notice all the white space. This matters in Python! 
+```
+
+Let's use the modulus boolean as an example:
+
+```{python}
+number=12 # change this number and see how the output changes! 
+if number % 2 == 0: # if the number after being divided by 2 has a remainder of zero then it is even. 
+  print("Number is even.")
+else: 
+  print("Number is odd.")
+```
+
+### if statements
+
+Longer example of control flow:
+
+-   elif is short for else if
+
+-   if condition 1 is true, evaluate expression 1
+
+-   if condition 1 is not true but condition 2 is true, evaluate expression 2.
+
+-   Last expression is evaluated only if all the other conditions are False.
+
+-   Basically Python hits the first condition that returns as True.
+
+```{python}
+#| eval: false
+if <condition1>:
+  <expression1> 
+elif <condition2>: 
+  <expression2> 
+elif <condition3>: 
+  <expression3> 
+else: 
+  <expression4>
+# Basically start from the top. If not this condition then move to next one until condition is met. you can have as many elif 
+```
+
+Further example:
+
+```{python}
+number=0 # change this number and notice how the output changes. 
+if number > 0: 
+  print("positive number")
+elif number == 0: 
+  print("Zero")
+else: 
+  print("Negative number")
+  
+print("This statement is always executed") # notice the white space 
+```
+
+**Beware the Nested Statements!**
+
+-   how do you know which else belongs to which if?
+
+    -   Answer: Indention
+
+    ```{python}
+    number=72 # change this number to see how the output changes! 
+    if number % 2 == 0:
+      print("Number is even.")
+      if number % 3 == 0: 
+        print("Number is divisible by 6.")
+      else: 
+        print("Number is not divisable by 6.")
+    else: 
+      print("Number is odd.")
+    ```
+
+### while statements
+
+-   Keeps running as long as condition is True
+
+```{python}
+#| eval: false
+
+```
+
+Examples:
+
+```{python}
+# program to display numbers from 1 to 5
+# intialize the variable 
+i=1
+n=5
+# while loop from i = 1 to 5 
+while i <= n: 
+  print(i)
+  i=i+1 # see what happens when you take this part of the function out. (its not good)
+```
+
+```{python}
+number=700
+# this function below keeps adding 1 until the number is divisible by 13.
+while not number %13==0: #notice the not function
+  print(number, "is not divisible by 13.")
+  number=number+1 
+
+print(number, "is divisible by 13.")
+```
+
+### for statements
+
+-   useful for when number of iterations are known
+
+-   Its function can be achieved by a while loop, but for loop is easier
+
+-   every time through the loop, \<variable\> assumes a new value (iterating through \<iterable\>)
+
+```{python}
+#| eval: false
+for <variable> in <iterable>: 
+  <expression>
+  <expression>
+```
+
+-   iterable is usually range (\<some_num\>)
+
+-   can also be a list
+
+-   range(start, stop, step)
+
+-   start =0 and step = 1
+
+-   only stop is required
+
+-   it will start at 0, loop until stop-1.
+
+-   **Python starts counting at ZERO NOT at one!**
+
+```{python}
+for i in range(5):
+  print(i)
+```
+
+```{python}
+for i in range(11, 15):
+  print(i)
+```
+
+```{python}
+for i in range(10, 30, 5):
+  print(i)
+```
+
+```{python}
+for char in 'MICHIGAN':
+  print(char+ "!") # this iterates through strings. 
+  # we use i for integers usually, so we are using char to denote string. 
+```
+
+```{python}
+for i in range(10, 30, 5):
+  print(i%10)
+```
+
+### Break statements
+
+-   exits the loop it is in
+
+-   remaining expressions are not evaluated
+
+-   in nested loops, only innermost loops exited
+
+```{python}
+for i in range(1,4):
+  for j in range(1,4):
+    if i==2 and j==2: 
+      break
+    print(i,j)
+```
+
+-   continue statement is similar but continues the loop over the specific iteration.
+
+```{python}
+var=7
+while var>0:
+  var-=1
+  if var==5: #this will skip 5 
+    continue
+  if var==2: # this will terminate the loop at 2
+    break
+  print("current variable value", var)
+  
+print("goodbye!")
+```
+
+## Lists
+
+-   lists are on of four built-in data types to store collections of data
+
+-   the other are tuples, dictionaries, and sets.
+
+-   used to store items in a single variable.
+
+```{python}
+my_list=["apple", "orange", "banana", "cherry"]
+type(my_list)
+my_list[2]
+```
+
+-   large lists require more computer power.
+
+-   lists always start with a square bracket
+
+    -   parenthesis create a tuple.
+
+-   items in a list don't need to be of the same type.
+
+```{python}
+#| eval: false 
+# quarot doesn't like empty lists for some reason. So this code won't run on here.
+misc_list=["apple", 3, False, None]
+empty_list[ ]
+print(misc_list)
+print(empty_list)
+```
+
+-   lists are **ORDERED**
+
+-   lists contain the same elements.
+
+## Methods
+
+-   in Python, "methods" are functions that belong to an object
+
+-   they only work with that object
+
+-   Some list methods include:
+
+    -   append - adds element to end.
+
+    -   insert - adds an element at the specified position
+
+    -   reverse - reverses the order of the list
+
+    -   sort - sorts the list - object type determines method of sort.
+
+    -   index - returns the index of the first element with the specified value
+
+    -   sorted
+
+    -   extend - adds the elements of a list (or any interable), to the end of the current list
+
+    -   \+ add lists together without modifying original lists.
+
+    -   del - remove an element from a list.
+
+```{python}
+cars=["Ford", "BMW"]
+cars.append('Mazda')
+print(cars)
+```
+
+-   note that no re-assignment is necessary
+
+-   once append() is run, the list is modified in memory.
+
+-   avoid "." (dots) in the naming of objects because they have usage in python.
+
+END DAY 2
+
+# Day 3
+
+## Review
+
+Write a script that checks whether a number is even.
+
+```{python}
+#| eval: false 
+number = int(input("choose any number ")) # we wrap in int() b/c input returns a string.
+if number % 2 == 0: 
+  print(number, "is even.")
+else:
+  print(number, "is odd.")
+
+print("Goodbye!")
+```
+
+## Slicing
+
+Lists can be sliced with the following syntax:
+
+-   \[start:stop:step\]
+
+    -   start at start (default is zero)
+
+    -   stop one step before stop (default is length of list)
+
+    -   step specifies how many indices to jump.
+
+        ```{python}
+        numbers = [1,2,3,4,5,6,7,8]
+        numbers[:3] # count and stop at 2 
+        # or 
+        numbers [::2] # move in steps of 2 
+        ```
+
+## Tuples
+
+-   ordered sequence of items
+
+-   a type of object.
+
+-   unlike lists, tuples are immutable
+
+    -   immutable means the values cannot be changed after it has been created.
+
+-   They are typically created with parenthesis ()
+
+-   Example:
+
+    ```{python}
+    tpl = ('a',5,True)
+    print(tpl)
+    ```
+
+### Why use tuples?
+
+-   used to conveniently swap variable values
+
+-   used to return more than one value from a function, since it conveniently packages many values of different type into one object.
+
+-   not super common TBH. Probably won't use much. But they are just something to be aware of.
+
+-   Tuples have two methods
+
+    -   count()
+
+    -   index()
+
+    ```{python}
+    tpl=('a','b','a')
+    print(tpl.count('a'))
+    print(tpl.index('b'))
+    ```
+
+## Sets
+
+-   Sets do not order items
+
+-   sets store unique elements - **no duplicates**
+
+-   uses hashing to efficiently store and retrieve
+
+-   great for quick lookup (does not take much time/RAM)
+
+-   sets created with curly {} braces
+
+    ```{python}
+    my_set={15,'a',4,'k'}
+    my_empty_set=set() # creates an empty set
+    ```
+
+Additional Set example:
+
+```{python}
+flight_banned = {"Jane", "Josh", "John", "Jess"}
+"John" in flight_banned
+```
+
+Difference between sets and Lists:
+
+-   Sets:
+
+    -   will only check the memory location where item could be
+
+-   Lists:
+
+    -   it will check all of the lists one by one, till the end if necessary.
+
+## Strings
+
+-   Defined: text, letter, character, space, digits, etc.
+
+-   create. with single or double quotes (needs to be consistent use)
+
+-   strings can also be created with triple quotes.
+
+    -   these handle multi-line strings.
+
+### String Methods
+
+-   startswith()
+
+-   endswith()
+
+-   capitalize() capitalizes the first character
+
+-   title() capitalizes the first character in every word
+
+-   upper() capitalizes everything
+
+-   lower() converts string to all lowercase.
+
+```{python}
+example_string = "the New York Times"
+example_string.upper() # can also wrap this in a print() function. 
+```
+
+## Dictionaries
+
+-   Dictionaries are objects in Python that contain both **key** and **value** pairs:
+
+    ```{python}
+    salary = {"Jane":100, "Jess":150, "Janet": 200}
+    salary["Jane"] #notice the value returned.  
+    ```
+
+-   Values
+
+    -   any type (mutable and immutable)
+
+    -   can be duplicates
+
+    -   can be lists, other dictionaries, any type
+
+-   keys
+
+    -   must be unique
+
+    -   must be immutable type (int, float, string, tuple, bool)
+
+-   no order to keys (and thus values), just like there is no order in a set.
+
+-   \[key:value, key:value, key:value...\]
+
+### Dictionary methods
+
+-   .index
+
+-   .keys
+
+-   .values
+
+```{python}
+salary = {"Jane":100, "Jess":150, "Janet": 200}
+salary["Jane"] #find Jane's salary 
+salary["Jess"] = 175 # change Jess' salary 
+salary["Allison"] = 130 #adding allison to dictionary 
+```
+
+#### Iterating over a dictionary
+
+```{python}
+grades = {"Ali" : "A+", "Bella" : "A+", "Rose" : "A", "Sam" : "B+"}
+for person in grades:
+  print(person + "'s grade is " + grades[person]+".")
+```
+
+## Functions
+
+-   reusable pieces of code
+
+-   functions are not run until they are called/invoked somewhere.
+
+-   function characteristics:
+
+    -   has a name
+
+    -   has parameters
+
+    -   has a docstring (optional but recommended)
+
+        -   help file for your function. Tells you what the function does basically.
+
+    -   has a body
+
+    -   returns something
+
+-   Saving bits of code to be used later.
+
+-   "def" is the keyword used to define the function
+
+-   name of function comes after "def"
+
+-   then, in (), comes the parameters/arguments
+
+    ```{python}
+    def is_even(i): # is_even is name of function. i is what we input for the function to evaluate. 
+      """
+      Input: i is a positive integer
+      Returns True if i is even, otherwise False
+      """
+      return i % 2 == 0 
+    is_even(5) # we are saying use the function is_even, which checks to see if we have a remainder after dividing by 2. If we do not, then it is even. 
+    # returns a boolean (False or True) based on the input. 
+    is_even(4)
+    ```
+
+-   the docstring, enclosed in """, provides info on how to use the function to the end user.
+
+-   the docstring can be called with help()
+
+-   Be cautious of the variable scope issue.
+
+#### Returns in Functions
+
+-   returns can only be used inside a function
+
+-   there can be multiple returns in a function
+
+-   only of them will be used each time function is invoked
+
+-   once return is hit, function's scope is exited and nothing else in the function is run
+
+```{python}
+def check_number(number):
+  if number > 0:
+    return "positive"
+  elif number < 0: 
+    return "negative"
+  else: 
+    return "zero"
+  
+check_number(5)
+check_number(0)
+check_number(-3)
+```
+
+#### Test my knowledge:
+
+Write a function that tests if number is divisible by 6:
+
+```{python}
+def divisible_check(x):
+  if x % 6 == 0: 
+    return "this number is divisble by 6"
+  elif x % 6 != 0: 
+    return "this number is not divisible by 6"
+  else:
+    return "undefined"  
+
+divisible_check(108) # change the number in the parenthesis to test the output. 
+```
+
+Write a function that creates a dictionary within the function. This function will take a sentence, assign each word as a key, and the value will correspond with the number of times that word appears in sentence.
+
+```{python}
+def word_freq(sentence):
+  words_list=sentence.split()
+  freq={}
+  for word in words_list:
+    if word in freq:
+      freq[word] += 1
+    else:
+      freq[word] = 1
+  return freq
+
+quote = '''Let me tell you the story when the level 600 school gyatt walked 
+passed me, I was in class drinking my grimace rizz shake from ohio during my 
+rizzonomics class when all of the sudden this crazy ohio bing chilling gyatt got 
+sturdy, past my class. I was watching kai cenat hit the griddy on twitch. 
+This is when I let my rizz take over and I became the rizzard of oz. I screamed, 
+look at this bomboclat gyatt'''
+word_freq(quote)
+```
+
+-   Why do we use the lm() command in R?
+
+    -   why not just use the formula (X'X)\^-1 X'y?
+
+        -   the lm command is a function.
+
+            -   its easier to use as it executes the formula.
+
+## Modules
+
+-   python modules are files (.py) that (mainly) contain function definitions
+
+-   they allow us to organize, distribute code; to share and reuse others' code.
+
+-   keep code coherent and self-contained.
+
+-   one can import modules or some functions from modules.
+
+### example:
+
+instead of below
+
+```{python}
+def add(a,b):
+  return a+b
+```
+
+we could create a module that contains this function:
+
+```{python}
+#| eval: false 
+# use math_operations.py
+# note this code did not work. Skip for now
+import math_operations 
+mat_operations.add(3,5)
+```
+
+Try this example instead:
+
+```{python}
+from datetime import date
+today = date.today()
+print("Today's date:", today)
+```
+
+We are basically bringing in packages and incorporating the functions contained within them to use for our code.
+
+## Comprehensions
+
+-   short hand code to replace for/while loops and if/else statements
+
+-   **comprehensions** provide simple syntax to achieve it in a single line.
+
+-   can be used for lists, sets, and dictionaries
+
+-   Overall: makes code shorter and easier to read
+
+#### Example:
+
+With for loop:
+
+```{python}
+numbers = [1,2,3,4,5,6,7,8,9,10]
+new_list=[]
+for number in numbers: 
+  new_list.append(number)
+print(new_list)
+```
+
+with list comprehension:
+
+```{python}
+numbers = [1,2,3,4,5,6,7,8,9,10]
+new_list = [num for num in numbers] # this is the exact same thing as the loop above. Just more condensed 
+print(new_list)
+```
+
+END DAY 3!
+
+# Day 4
+
+## Review:
+
+Write a function that, given dictionary consisting of vehicles and their weights in kilograms, constructs a list of the names of vehicles with weight below 2000 kilograms. Use list comprehension to achieve this.
+
+With list comprehension:
+
+```{python}
+d={"Sedan": 1500, "SUV":2000, "Pickup": 2500, "Minivan":1600, "Van":2400, "Semi":13600, "Bicycle":7, "Motorcycle":110}
+get_lighter_vehicles=[weight for weight in d if d[weight]<2000]
+print(get_lighter_vehicles)
+```
+
+Without list comprehension:
+
+```{python}
+d={"Sedan": 1500, "SUV":2000, "Pickup": 2500, "Minivan":1600, "Van":2400, "Semi":13600, "Bicycle":7, "Motorcycle":110}
+for weight in d:
+  if d[weight]<2000:
+    print(weight)
+```
+
+## Requests and APIs
+
+-   Let's first talk about how the internet works.
+
+    -   Clients & Servers:
+
+        -   data (web pages) lives on servers
+
+        -   browsers, apps, etc. are clients
+
+        -   clients send requests to servers
+
+        -   servers serve the necessary files to users
+
+-   To request data from these servers we use the "requests" library in Python
+
+    -   allows us to send requests to servers
+
+    -   need internet connection
+
+Example:
+
+```{python}
+import requests
+r = requests.get('https://www.python.org/')
+r.status_code
+# you should get 200
+# if you get anything else. Something is wrong and is not working. 
+```
+
+If I were to run the following code:
+
+```{python}
+#| eval: false
+print(r.text) # this gives you all the html code of the page. 
+```
+
+This would print out the html code for the entire webpage. While this may seem scary, this is actually great! Because html is another coding language, by knowing just a little of html, I can pick and choose what parts of the webpage I want. Below is some basic code and information for html documents:
+
+-   style information, including links to CSS files
+
+-   Javascript scripts and links to javascript files
+
+-   html tags (just add "\<\>" around these head, li, div, img, etc)
+
+-   classes, ids, toggle buttons, many more
+
+-   navigation bar, side bar, footer.
+
+How do parse through all of this code? We use a **parser.**
+
+-   a parser is a software that recognizes the structure of an HTML document
+
+-   allows the extraction of certain parts of the code
+
+-   the "BeautifulSoup" library serves that purpose
+
+### APIs
+
+-   Application Programming Interface (API) provide structured data.
+
+    -   structured basically means csv files, etc.
+
+-   they allow for the building of applications
+
+-   separate design from content
+
+-   access the data directly
+
+#### Requests to APIs:
+
+-   GET (get/retrieve data from server)
+
+    -   *We only looked at this for the workshop.*
+
+-   POST (update data on server)
+
+-   PUT (add data to server)
+
+-   DELETE (delete data from server)
+
+Many governmental agencies, newspapers, and common data sources have public APIs that can be accessed from R or Python
+
+-   you might need a key (permission) to access the data.
+
+### GET requests to an API
+
+-   requests typically start with an endpoint defined by the host (server)
+
+-   For example:
+
+    -   Wikipedia provides one endpoint
+
+    -   YouTube provides many endpoints, depending on what one is working with.
+
+-   Format of parameters
+
+    -   ?param1=value1&param2=value2&param3=value3...
+
+    -   parameters is how we define what we want from the API.
+
+-   Follow example in pdf documentation for class.
+
+END DAY 4!

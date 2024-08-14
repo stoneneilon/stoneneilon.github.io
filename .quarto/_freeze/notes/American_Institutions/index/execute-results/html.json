@@ -1,0 +1,15 @@
+{
+  "hash": "95dcb08a9738f6e948ff2eebb6535188",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"American Institutions\"\ndescription: \"Notes from American Institutions class with Chinnu\"\nauthor:\n  - name: Stone Neilon\n    url: https://samanthacsik.github.io/\n    orcid: 0000-0002-5300-3075\n    affiliation: PhD student of political science @ The University of Colorado Boulder\n    affiliation-url: https://ucsb-meds.github.io/ \ndate: 12-15-2024\ncategories: [2023, American, Fall] # self-defined categories\ncitation: \n  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ \nimage: flag.png\ndraft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!\n---\n\n\nTEST TEST TEST\\\nTEST TEST TEST\\\nTEST TEST TEST\n\nTEST TEST TEST\n\n\\\n\nTEST TEST TEST\n\nTEST TEST TEST\n\nTEST TEST TEST\n\nv\\\nv\n\n\\\nTEST TEST TEST\\\nv\n\n\\\nTEST TEST TEST\\\nTEST TEST TEST\\\nTEST TEST TEST\\\nTEST TEST TEST\\\nTEST TEST TEST\\\n\\\nTEST TEST TEST\\\nTEST TEST TEST\\\n\nTEST TEST TEST\\\nTEST TEST TEST\\\n\nTEST TEST TEST\\\nTEST TEST TEST\\\n\\\nTEST TEST TEST\\\nTEST TEST TEST\\\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1+1 \n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n\nTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST\n\nTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

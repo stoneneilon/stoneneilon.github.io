@@ -1,0 +1,64 @@
+---
+title: "American Institutions"
+description: "Notes from American Institutions class with Chinnu"
+author:
+  - name: Stone Neilon
+    url: https://samanthacsik.github.io/
+    orcid: 0000-0002-5300-3075
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://ucsb-meds.github.io/ 
+date: 12-15-2024
+categories: [2023, American, Fall] # self-defined categories
+citation: 
+  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+image: flag.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+TEST TEST TEST\
+TEST TEST TEST\
+TEST TEST TEST
+
+TEST TEST TEST
+
+\
+
+TEST TEST TEST
+
+TEST TEST TEST
+
+TEST TEST TEST
+
+v\
+v
+
+\
+TEST TEST TEST\
+v
+
+\
+TEST TEST TEST\
+TEST TEST TEST\
+TEST TEST TEST\
+TEST TEST TEST\
+TEST TEST TEST\
+\
+TEST TEST TEST\
+TEST TEST TEST\
+
+TEST TEST TEST\
+TEST TEST TEST\
+
+TEST TEST TEST\
+TEST TEST TEST\
+\
+TEST TEST TEST\
+TEST TEST TEST\
+
+```{r}
+1+1 
+```
+
+TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST
+
+TEST TEST TESTTEST TEST TESTTEST TEST TESTTEST TEST TEST

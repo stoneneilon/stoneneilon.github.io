@@ -1,0 +1,62 @@
+{
+  "index.qmd": {
+    "index.html": "3f28bc42"
+  },
+  "about.qmd": {
+    "about.html": "f5ba7d33"
+  },
+  "blog.qmd": {
+    "blog.html": "9ba93c0d"
+  },
+  "teaching.qmd": {
+    "teaching.html": "bdf5e95e"
+  },
+  "research.qmd": {
+    "research.html": "31be606f"
+  },
+  "posts/test.qmd": {
+    "test.html": "6fc2341d"
+  },
+  "posts.qmd": {
+    "posts.html": "4a0d62c3"
+  },
+  "posts/2024-05-28-TEST-2.qmd": {
+    "2024-05-28-TEST-2.html": "40a0c1b5"
+  },
+  "posts/2024-05-28-first-blog-test/index.qmd": {
+    "index.html": "0e7be3f0"
+  },
+  "notes.qmd": {
+    "notes.html": "505c8c44"
+  },
+  "notes/American_Institutions/test123.qmd": {
+    "test123.html": "c1b51fcd"
+  },
+  "notes/American_Institutions/index.qmd": {
+    "index.html": "a1e5b076"
+  },
+  "notes/Rule_of_Law/rule_of_law.qmd": {
+    "rule_of_law.html": "b23c849d"
+  },
+  "notes/Comparative_Behavior/comparative_behavior.qmd": {
+    "comparative_behavior.html": "3802a610"
+  },
+  "notes/Comparative_Behavior/index.qmd": {
+    "index.html": "74601d9c"
+  },
+  "notes/Data/index.qmd": {
+    "index.html": "e6f65809"
+  },
+  "notes/Rule_of_Law/index.qmd": {
+    "index.html": "acbb251d"
+  },
+  "notes/ICPSR_Intro_to_Python/index.qmd": {
+    "index.html": "893e9c6d"
+  },
+  "notes/ICPSR_Math_Review/index.qmd": {
+    "index.html": "e55f16aa"
+  },
+  "notes/ICPSR_Machine_Learning/index.qmd": {
+    "index.html": "6403a3f2"
+  }
+}

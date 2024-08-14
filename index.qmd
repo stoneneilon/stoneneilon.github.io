@@ -1,0 +1,30 @@
+---
+title: "Welcome!"
+about:
+  template: trestles
+  image: IMG_0123.jpeg
+  links:
+    - icon: linkedin
+      text: linkedin
+      href: https://www.linkedin.com/in/stone-neilon/
+---
+
+## About Me
+
+I am a political science PhD student at the University of Colorado Boulder. I study american politics and methodology. I am primarily interested in the political implications of the built environment. When not studying, you can find me at a music festival, building legos, or attempting to stay fit.
+
+## Education
+
+University of Colorado Boulder \| Boulder, CO \| PhD Student in Political Science \| August 2023 - Present
+
+University of California, Los Angeles \| Los Angeles, CA \| B.A in Political Science \| Graduated December 2020
+
+College of the Desert \| Palm Desert, CA \| AA-T in Political Science \| Graduated May 2018
+
+## Fellowship
+
+Institute of Behavioral Science \| 2024 - Present
+
+Race, Ethnicity, and Politics (REP) Lab \| 2024 - Present
+
+American Political Research Lab (APRL) \| 2023 - Present

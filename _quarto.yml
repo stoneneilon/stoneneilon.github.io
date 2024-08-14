@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+    title: "Stone Neilon"
+    navbar:
+        background: primary
+        search: true
+        left:
+            - text: "CV"
+              href: https://drive.google.com/file/d/1wwwiFFiVu-k76M6oixKugPFjESA0g4Is/view?usp=sharing
+            - text: "Blog"
+              href: posts.qmd
+            - text: "Teaching" 
+              href: teaching.qmd
+            - text: "Research"
+              href: research.qmd
+            - text: "Notes" 
+              href: notes.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

@@ -1,0 +1,20 @@
+---
+title: "My first blog!"
+description: "Test blog to make sure everything is working."
+author:
+  - name: Stone Neilon
+    url: https://samanthacsik.github.io/
+    orcid: 0000-0002-5300-3075
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 10-24-2022
+categories: [2024, Blog, Personal] # self-defined categories
+citation: 
+  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+image: preview-image.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# My First Blog!
+
+As a recovering twitter addict, the need to voice my opinion has grown in my time away. Now, no longer restricted to 180 characters, I have the power to annoy in a longer format! No one is safe, Dobby is free.

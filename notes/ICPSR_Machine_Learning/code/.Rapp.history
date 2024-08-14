@@ -1,0 +1,2 @@
+load("/Users/stoneneilon/Stone_Website/notes/ICPSR_Machine_Learning/code/consumer.Rda")
+load("/Users/stoneneilon/Downloads/ANES2016_abbreviated.Rda")
