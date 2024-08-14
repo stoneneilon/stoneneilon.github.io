@@ -10,7 +10,7 @@ date: 06-10-2024
 categories: [Summer, ICPSR, 2024, Methods] # self-defined categories
 citation: 
   url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
-image: python.png.webp
+image: terminator.jpeg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
