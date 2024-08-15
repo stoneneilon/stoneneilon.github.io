@@ -3,5 +3,3 @@ title: "Research"
 ---
 
 In Progress
-
-TEST TEST TEST

@@ -1,5 +1,5 @@
 ---
-title: "Text as Data""
+title: "Text as Data"
 author:
   - name: Stone Neilon
     url: https://stoneneilon.github.io/
