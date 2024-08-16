@@ -1,6 +1,18 @@
 ---
 title: "ICPSR - Math For Social Science (workshop)"
-author: "Stone Neilon"
+description: "Math For Social Science (workshop) with Sara Tomek"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 05-15-2024
+categories: [Spring, 2024, American] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/ICPSR_Math_Review/
+image: dawg.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
 # Preface
