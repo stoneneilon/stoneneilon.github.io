@@ -10,7 +10,7 @@ author:
 date: 12-15-2024
 categories: [2023, American, Fall] # self-defined categories
 citation: 
-  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+  url: https://stoneneilon.github.io/notes/American_Institutions/
 image: flag.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---

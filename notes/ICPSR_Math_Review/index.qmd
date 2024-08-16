@@ -416,7 +416,7 @@ END DAY 3!
 
     -   Deriving the mean and variance also requires integration.
 
-## Uniform Distribution 
+## Uniform Distribution
 
 -   often called the rectangular distribution.
 
@@ -434,7 +434,9 @@ END DAY 3!
 
 -   How the Uniform Distribution looks:
 
-    -   ![Uniform Distribution (visual)](uniform_distribution.png)
+    -   
+
+        ![Uniform Distribution (visual)](uniform_distribution.png)
 
 ## Normal Distribution (Gaussian)
 
@@ -460,7 +462,7 @@ END DAY 3!
 
         -   changing the variance simply moves away how far away that 99.7% is. Think: how spread affects the shape of the distribution and subsequently the area under the curve.
 
-### Standard Normal (Z): 
+### Standard Normal (Z):
 
 -   similar to the normal distribution
 
@@ -496,7 +498,7 @@ END DAY 3!
 
 -   Basically can get us a bunch of other distributions.
 
-### Exponential Distribution 
+### Exponential Distribution
 
 -   Poisson distribution is used to compute the probability of specific numbers of events during a particular period of time or span of space.
 
@@ -514,7 +516,7 @@ END DAY 3!
 
 END DAY 4.
 
-## Day 5 
+## Day 5
 
 ### Discrete Probability Distributions
 
@@ -540,7 +542,7 @@ END DAY 4.
 
     -   values consitute a finite or countably infinite set
 
-### Bernoulli Random Variable 
+### Bernoulli Random Variable
 
 -   any random variable whose only possible values are 0 and 1 is called a Bernoulli random variable.
 
@@ -570,19 +572,19 @@ END DAY 4.
 
         -   Binomial, geometric, negative binomial
 
-### Geometric Random Variable 
+### Geometric Random Variable
 
 -   **Distribution of the number of trials to get the first success in n Bernoulli trials.**
 
 -   Similar in the sense that it is also a specific value BUT we are interested in the count of how long it takes us to achieve a success.
 
-### Binomial Distribution 
+### Binomial Distribution
 
 -   **Distribution of the number of success in n independent Bernoulli Trials.**
 
 -   
 
-### Negative Binomial 
+### Negative Binomial
 
 -   **The distribution of the number of trials to get the r*th* success in independent Bernoulli Trials.**
 

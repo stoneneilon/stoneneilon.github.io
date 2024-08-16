@@ -1,5 +1,6 @@
 ---
 title: "Text as Data"
+description: "Text as Data with Alex Siegel"
 author:
   - name: Stone Neilon
     url: https://stoneneilon.github.io/
@@ -7,9 +8,9 @@ author:
     affiliation: PhD student of political science @ The University of Colorado Boulder
     affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
 date: 08-26-2024
-categories: [2024, Methods] # self-defined categories
+categories: [2024, Fall, Methods] # self-defined categories
 citation: 
-  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+  url: https://stoneneilon.github.io/notes/Text_Data/
 image: word_image.jpeg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---

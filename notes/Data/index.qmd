@@ -10,7 +10,7 @@ author:
 date: 05-15-2024
 categories: [Spring, Fall, 2024, Methods, 2023] # self-defined categories
 citation: 
-  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+  url: https://stoneneilon.github.io/notes/Data/
 image: oppy.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---

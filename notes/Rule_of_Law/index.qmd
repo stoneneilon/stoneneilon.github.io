@@ -3,14 +3,14 @@ title: "Rule of Law"
 description: "Rule of Law with Josh Strayhorn"
 author:
   - name: Stone Neilon
-    url: https://samanthacsik.github.io/
+    url: https://stoneneilon.github.io/
     orcid: 0009-0006-6026-4384
     affiliation: PhD student of political science @ The University of Colorado Boulder
-    affiliation-url: https://ucsb-meds.github.io/ 
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
 date: 05-15-2024
 categories: [Spring, 2024, American] # self-defined categories
 citation: 
-  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+  url: https://stoneneilon.github.io/notes/Rule_of_Law/
 image: lobster.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
