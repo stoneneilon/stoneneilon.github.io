@@ -926,7 +926,7 @@
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
-    "title": "teaching",
+    "title": "Teaching",
     "section": "",
     "text": "In Progress."
   },
@@ -942,7 +942,7 @@
     "href": "posts/2024-05-28-first-blog-test/index.html",
     "title": "My first blog!",
     "section": "",
-    "text": "My First Blog!\nAs a recovering twitter addict, the need to voice my opinion has grown in my time away. Now, no longer restricted to 180 characters, I have the power to annoy in a longer format! No one is safe, Dobby is free.\n\n\n\n\nCitationBibTeX citation:@online{neilon2022,\n  author = {Neilon, Stone},\n  title = {My First Blog!},\n  date = {2022-10-24},\n  url = {https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nNeilon, Stone. 2022. “My First Blog!” October 24, 2022. https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/."
+    "text": "My First Blog!\nAs a recovering twitter addict, the need to voice my opinion has grown in my time away. Now, no longer restricted to 180 characters, I have the power to annoy in a longer format! No one is safe, Dobby is free.\n\n\n\n\nCitationBibTeX citation:@online{neilon2024,\n  author = {Neilon, Stone},\n  title = {My First Blog!},\n  date = {2024-05-28},\n  url = {https://stoneneilon.github.io/posts/2024-05-28-my-blog-post/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nNeilon, Stone. 2024. “My First Blog!” May 28, 2024. https://stoneneilon.github.io/posts/2024-05-28-my-blog-post/."
   },
   {
     "objectID": "about.html",
@@ -1369,7 +1369,7 @@
     "href": "posts.html",
     "title": "My Blog",
     "section": "",
-    "text": "My first blog!\n\n\n\n2024\n\n\nBlog\n\n\nPersonal\n\n\n\nTest blog to make sure everything is working.\n\n\n\nStone Neilon\n\n\nOct 24, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "My first blog!\n\n\n\n2024\n\n\nBlog\n\n\nPersonal\n\n\n\nTest blog to make sure everything is working.\n\n\n\nStone Neilon\n\n\nMay 28, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "notes/Text_Data/index.html",

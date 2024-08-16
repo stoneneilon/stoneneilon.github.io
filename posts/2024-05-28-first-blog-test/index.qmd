@@ -7,10 +7,10 @@ author:
     orcid: 0009-0006-6026-4384
     affiliation: PhD student of political science @ The University of Colorado Boulder
     affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
-date: 10-24-2022
+date: 05-28-2024
 categories: [2024, Blog, Personal] # self-defined categories
 citation: 
-  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+  url: https://stoneneilon.github.io/posts/2024-05-28-my-blog-post/ 
 image: preview-image.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
