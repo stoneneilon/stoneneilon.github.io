@@ -1,5 +1,6 @@
 ---
 title: "ICPSR - Introduction to Python"
+description: "Introduction to Python with Sarah Hunter. Taken at ICPSR in summer 2024."
 author:
   - name: Stone Neilon
     url: https://stoneneilon.github.io/
@@ -16,7 +17,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 # Preface
 
-Introduction to Python with Professor Sarah Hunter was a workshop taken at ICPSR in the summer of 2024. You cannot memorize this. Practice makes perfect. You must use it or you will lose it. This course covers the absolute *basics*.
+Introduction to Python with Professor Sarah Hunter was a workshop taken at ICPSR in the summer of 2024. This course covers the absolute *basics*.
 
 # Software
 

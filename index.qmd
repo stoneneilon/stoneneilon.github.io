@@ -5,8 +5,14 @@ about:
   image: IMG_0123.jpeg
   links:
     - icon: linkedin
-      text: linkedin
+      text: LinkedIn
       href: https://www.linkedin.com/in/stone-neilon/
+    - icon: github
+      text: GitHub
+      href: https://github.com/stoneneilon
+    - icon: envelope
+      text: Email
+      href: "mailto:stone.neilon@colorado.edu"
 ---
 
 ## About Me
