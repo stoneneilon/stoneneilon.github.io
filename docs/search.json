@@ -928,7 +928,7 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "In Progress."
+    "text": "PSCI 2075 - Quantitive Research Methods - Fall 2024\n\n\n\nFall\n\n\n2024\n\n\nMethods\n\n\n\nProfessor: Steven Beard. This is Stone’s central hub for PSCI 2075 recitations.\n\n\n\nStone Neilon\n\n\nAug 26, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "research.html",
@@ -1433,5 +1433,313 @@
     "title": "Comparative Behavior",
     "section": "NEED TO ADD WESTHOLM",
     "text": "NEED TO ADD WESTHOLM"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html",
+    "href": "teaching/PSCI-2075_Fall_24/index.html",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "",
+    "text": "This page is my own personal recitation website. I will post both course material and anything we go over in recitation. This is simply a central hub that you can use to help you throughout the semester.\nThis does not replace the lecture, canvas, or your notes.\nIn previous years, I have used slide shows. This website is an effort to have a more organized and central workflow that is more accessible."
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#please-read-first",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#please-read-first",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "",
+    "text": "This page is my own personal recitation website. I will post both course material and anything we go over in recitation. This is simply a central hub that you can use to help you throughout the semester.\nThis does not replace the lecture, canvas, or your notes.\nIn previous years, I have used slide shows. This website is an effort to have a more organized and central workflow that is more accessible."
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#required-texts",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#required-texts",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Required Texts:",
+    "text": "Required Texts:\n\nPollock, Philip H. and Barry C. Edwards. 2020. The Essentials of Political Analysis. 6th Edition. CQ Press. (EPA)\nPollock, Philip H. and Barry C. Edwards. 2023. An R Companion to Political Analysis. 3rd Edition. CQ Press. (RCPA)"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#computer",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#computer",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Computer:",
+    "text": "Computer:\nThis class requires the use of a computer. Not an iPad! You are expected to bring it to lecture and recitation regularly."
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#software",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#software",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Software:",
+    "text": "Software:\nMuch of this class revolves around the statistical software known as “R”. R is free and open source. It is widely used in academia and industry. We will discuss how to install R soon.\nRstudio download link"
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#inglehart-ronald-and-pippa-norris.-2003.-rising-tide-gender-equality-and-cultural-change-around-the-world.-cambridge-university-press.-ch.-12.",
+    "href": "notes/Comparative_Behavior/index.html#inglehart-ronald-and-pippa-norris.-2003.-rising-tide-gender-equality-and-cultural-change-around-the-world.-cambridge-university-press.-ch.-12.",
+    "title": "Comparative Behavior",
+    "section": "Inglehart, Ronald, and Pippa Norris. 2003. Rising Tide: Gender Equality and Cultural Change around the World. Cambridge University Press. Ch. 1&2.",
+    "text": "Inglehart, Ronald, and Pippa Norris. 2003. Rising Tide: Gender Equality and Cultural Change around the World. Cambridge University Press. Ch. 1&2."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#iverson-torben-and-frances-rosenbluth.-2006.-the-political-economy-of-gender-explaining-cross-national-variation-in-the-gender-division-of-labor-and-the-gender-voting-gap.-american-journal-of-political-science-501-1-19.",
+    "href": "notes/Comparative_Behavior/index.html#iverson-torben-and-frances-rosenbluth.-2006.-the-political-economy-of-gender-explaining-cross-national-variation-in-the-gender-division-of-labor-and-the-gender-voting-gap.-american-journal-of-political-science-501-1-19.",
+    "title": "Comparative Behavior",
+    "section": "Iverson, Torben, and Frances Rosenbluth. 2006. “The Political Economy of Gender: Explaining Cross-National Variation in the Gender Division of Labor and the Gender Voting Gap.” American Journal of Political Science 50(1): 1-19.",
+    "text": "Iverson, Torben, and Frances Rosenbluth. 2006. “The Political Economy of Gender: Explaining Cross-National Variation in the Gender Division of Labor and the Gender Voting Gap.” American Journal of Political Science 50(1): 1-19."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#lijphart-arend.-1979.-religious-vs.-linguistic-vs.-class-voting-the-crucial-experiment-of-comparing-belgium-canada-south-africa-and-switzerland.-american-political-science-review-732-442-458.",
+    "href": "notes/Comparative_Behavior/index.html#lijphart-arend.-1979.-religious-vs.-linguistic-vs.-class-voting-the-crucial-experiment-of-comparing-belgium-canada-south-africa-and-switzerland.-american-political-science-review-732-442-458.",
+    "title": "Comparative Behavior",
+    "section": "Lijphart, Arend. 1979. “Religious vs. Linguistic vs. Class Voting: The ‘Crucial Experiment’ of Comparing Belgium, Canada, South Africa and Switzerland.” American Political Science Review 73(2): 442-458.",
+    "text": "Lijphart, Arend. 1979. “Religious vs. Linguistic vs. Class Voting: The ‘Crucial Experiment’ of Comparing Belgium, Canada, South Africa and Switzerland.” American Political Science Review 73(2): 442-458."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#lyons-j.-utych-s.m.-2023.-youre-not-from-here-the-consequences-of-urban-and-rural-identities.-political-behavior-45-75101.",
+    "href": "notes/Comparative_Behavior/index.html#lyons-j.-utych-s.m.-2023.-youre-not-from-here-the-consequences-of-urban-and-rural-identities.-political-behavior-45-75101.",
+    "title": "Comparative Behavior",
+    "section": "Lyons, J., Utych, S.M. 2023. “You’re Not From Here!: The Consequences of Urban and Rural Identities.” Political Behavior 45: 75–101.",
+    "text": "Lyons, J., Utych, S.M. 2023. “You’re Not From Here!: The Consequences of Urban and Rural Identities.” Political Behavior 45: 75–101."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#posner-daniel-n.-2004.-the-political-salience-of-cultural-difference-why-chewas-and-tumbukas-are-allies-in-zambia-and-adversaries-in-malawi.-american-political-science-review-984-529-545.",
+    "href": "notes/Comparative_Behavior/index.html#posner-daniel-n.-2004.-the-political-salience-of-cultural-difference-why-chewas-and-tumbukas-are-allies-in-zambia-and-adversaries-in-malawi.-american-political-science-review-984-529-545.",
+    "title": "Comparative Behavior",
+    "section": "Posner, Daniel N. 2004. “The Political Salience of Cultural Difference: Why Chewas and Tumbukas Are Allies in Zambia and Adversaries in Malawi.” American Political Science Review 98(4): 529-545.",
+    "text": "Posner, Daniel N. 2004. “The Political Salience of Cultural Difference: Why Chewas and Tumbukas Are Allies in Zambia and Adversaries in Malawi.” American Political Science Review 98(4): 529-545."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#dalton-russell-alix-van-sickle-and-steven-weldon.-2009.-the-individual-institutional-nexus-of-protest-behavior.-british-journal-of-political-science-401-51-73.",
+    "href": "notes/Comparative_Behavior/index.html#dalton-russell-alix-van-sickle-and-steven-weldon.-2009.-the-individual-institutional-nexus-of-protest-behavior.-british-journal-of-political-science-401-51-73.",
+    "title": "Comparative Behavior",
+    "section": "Dalton, Russell, Alix Van Sickle and Steven Weldon. 2009. “The Individual-Institutional Nexus of Protest Behavior.” British Journal of Political Science 40(1): 51-73.",
+    "text": "Dalton, Russell, Alix Van Sickle and Steven Weldon. 2009. “The Individual-Institutional Nexus of Protest Behavior.” British Journal of Political Science 40(1): 51-73."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#klandermans-bert.-2002.-how-group-identification-helps-to-overcome-the-dilemma-of-collective-action.-american-behavioral-scientist-455-887-900.",
+    "href": "notes/Comparative_Behavior/index.html#klandermans-bert.-2002.-how-group-identification-helps-to-overcome-the-dilemma-of-collective-action.-american-behavioral-scientist-455-887-900.",
+    "title": "Comparative Behavior",
+    "section": "Klandermans, Bert. 2002. “How Group Identification Helps to Overcome the Dilemma of Collective Action.” American Behavioral Scientist 45(5): 887-900.",
+    "text": "Klandermans, Bert. 2002. “How Group Identification Helps to Overcome the Dilemma of Collective Action.” American Behavioral Scientist 45(5): 887-900."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#koopmans-ruud.-2009.-social-movements.-ohpb.-ch.-37-693-707.",
+    "href": "notes/Comparative_Behavior/index.html#koopmans-ruud.-2009.-social-movements.-ohpb.-ch.-37-693-707.",
+    "title": "Comparative Behavior",
+    "section": "Koopmans, Ruud. 2009. “Social Movements.” OHPB. Ch. 37: 693-707.",
+    "text": "Koopmans, Ruud. 2009. “Social Movements.” OHPB. Ch. 37: 693-707."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#thomas-jakana-l.-and-kanisha-d.-bond.-2015.-womens-participation-in-violent-political-organizations.-american-political-science-review-1093-488-506.",
+    "href": "notes/Comparative_Behavior/index.html#thomas-jakana-l.-and-kanisha-d.-bond.-2015.-womens-participation-in-violent-political-organizations.-american-political-science-review-1093-488-506.",
+    "title": "Comparative Behavior",
+    "section": "Thomas, Jakana L., and Kanisha D. Bond. 2015. “Women’s Participation in Violent Political Organizations.” American Political Science Review 109(3): 488-506.",
+    "text": "Thomas, Jakana L., and Kanisha D. Bond. 2015. “Women’s Participation in Violent Political Organizations.” American Political Science Review 109(3): 488-506."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#tufekci-zeynep-and-christopher-wilson.-2012.-social-media-and-the-decision-to-participate-in-political-protest-observations-from-tahrir-square.-journal-of-communication-622-363-379.",
+    "href": "notes/Comparative_Behavior/index.html#tufekci-zeynep-and-christopher-wilson.-2012.-social-media-and-the-decision-to-participate-in-political-protest-observations-from-tahrir-square.-journal-of-communication-622-363-379.",
+    "title": "Comparative Behavior",
+    "section": "Tufekci, Zeynep, and Christopher Wilson. 2012. “Social Media and the Decision to Participate in Political Protest: Observations from Tahrir Square.” Journal of Communication 62(2): 363-379.",
+    "text": "Tufekci, Zeynep, and Christopher Wilson. 2012. “Social Media and the Decision to Participate in Political Protest: Observations from Tahrir Square.” Journal of Communication 62(2): 363-379."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#hopkins-daniel-j.-2010.-politicized-places-explaining-where-and-when-immigrants-provoke-local-opposition.-american-political-science-review-1041-40-60.",
+    "href": "notes/Comparative_Behavior/index.html#hopkins-daniel-j.-2010.-politicized-places-explaining-where-and-when-immigrants-provoke-local-opposition.-american-political-science-review-1041-40-60.",
+    "title": "Comparative Behavior",
+    "section": "Hopkins, Daniel J. 2010. “Politicized Places: Explaining Where and When Immigrants Provoke Local Opposition.” American Political Science Review 104(1): 40-60.",
+    "text": "Hopkins, Daniel J. 2010. “Politicized Places: Explaining Where and When Immigrants Provoke Local Opposition.” American Political Science Review 104(1): 40-60."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#kalyvas-stathis.-1999.-wanton-and-senseless-the-logic-of-massacres-in-algeria.-rationality-and-society-113-243-285.",
+    "href": "notes/Comparative_Behavior/index.html#kalyvas-stathis.-1999.-wanton-and-senseless-the-logic-of-massacres-in-algeria.-rationality-and-society-113-243-285.",
+    "title": "Comparative Behavior",
+    "section": "Kalyvas, Stathis. 1999. “Wanton and Senseless? The Logic of Massacres in Algeria.” Rationality and Society 11(3): 243-285.",
+    "text": "Kalyvas, Stathis. 1999. “Wanton and Senseless? The Logic of Massacres in Algeria.” Rationality and Society 11(3): 243-285."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#hjerm-m.-eger-m.a.-bohman-a.-2020.-a-new-approach-to-the-study-of-tolerance-conceptualizing-and-measuring-acceptance-respect-and-appreciation-of-difference.-social-indicators-research-147-897919.",
+    "href": "notes/Comparative_Behavior/index.html#hjerm-m.-eger-m.a.-bohman-a.-2020.-a-new-approach-to-the-study-of-tolerance-conceptualizing-and-measuring-acceptance-respect-and-appreciation-of-difference.-social-indicators-research-147-897919.",
+    "title": "Comparative Behavior",
+    "section": "Hjerm, M., Eger, M.A., Bohman, A. 2020. A New Approach to the Study of Tolerance: Conceptualizing and Measuring Acceptance, Respect, and Appreciation of Difference. Social Indicators Research 147: 897–919.",
+    "text": "Hjerm, M., Eger, M.A., Bohman, A. 2020. A New Approach to the Study of Tolerance: Conceptualizing and Measuring Acceptance, Respect, and Appreciation of Difference. Social Indicators Research 147: 897–919."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#sears-david-o.-and-christia-brown.-2013.-childhood-and-adult-political-development.-ch.-3-in-leonie-huddy-david-o.-sears-and-jack-s.-levy-eds.-the-oxford-handbook-of-political-psychology-2nd-edition.-oxford-university-press.",
+    "href": "notes/Comparative_Behavior/index.html#sears-david-o.-and-christia-brown.-2013.-childhood-and-adult-political-development.-ch.-3-in-leonie-huddy-david-o.-sears-and-jack-s.-levy-eds.-the-oxford-handbook-of-political-psychology-2nd-edition.-oxford-university-press.",
+    "title": "Comparative Behavior",
+    "section": "Sears, David O., and Christia Brown. 2013. “Childhood and Adult Political Development.” Ch. 3 in Leonie Huddy, David O. Sears and Jack S. Levy, Eds., The Oxford Handbook of Political Psychology, 2nd edition. Oxford University Press.",
+    "text": "Sears, David O., and Christia Brown. 2013. “Childhood and Adult Political Development.” Ch. 3 in Leonie Huddy, David O. Sears and Jack S. Levy, Eds., The Oxford Handbook of Political Psychology, 2nd edition. Oxford University Press."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#tajfel-henri.-1982.-social-psychology-of-intergroup-relations.-annual-review-of-psychology-331-1-39.",
+    "href": "notes/Comparative_Behavior/index.html#tajfel-henri.-1982.-social-psychology-of-intergroup-relations.-annual-review-of-psychology-331-1-39.",
+    "title": "Comparative Behavior",
+    "section": "Tajfel, Henri. 1982. “Social Psychology of Intergroup Relations.” Annual Review of Psychology 33(1): 1-39.",
+    "text": "Tajfel, Henri. 1982. “Social Psychology of Intergroup Relations.” Annual Review of Psychology 33(1): 1-39."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#almond-gabriel-a.-and-sidney-verba.-1963.-the-civic-culture-political-attitudes-and-democracy-in-five-nations.-princeton-university-press.-ch.-1-3.",
+    "href": "notes/Comparative_Behavior/index.html#almond-gabriel-a.-and-sidney-verba.-1963.-the-civic-culture-political-attitudes-and-democracy-in-five-nations.-princeton-university-press.-ch.-1-3.",
+    "title": "Comparative Behavior",
+    "section": "Almond, Gabriel A., and Sidney Verba. 1963. The Civic Culture: Political Attitudes and Democracy in Five Nations. Princeton University Press. Ch. 1-3.",
+    "text": "Almond, Gabriel A., and Sidney Verba. 1963. The Civic Culture: Political Attitudes and Democracy in Five Nations. Princeton University Press. Ch. 1-3."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#avdeenko-alexandra-and-michael-j.-gilligan.-2015.-international-interventions-to-build-social-capital-evidence-from-a-field-experiment-in-sudan.-american-political-science-review-1093-427-449.",
+    "href": "notes/Comparative_Behavior/index.html#avdeenko-alexandra-and-michael-j.-gilligan.-2015.-international-interventions-to-build-social-capital-evidence-from-a-field-experiment-in-sudan.-american-political-science-review-1093-427-449.",
+    "title": "Comparative Behavior",
+    "section": "Avdeenko, Alexandra, and Michael J. Gilligan. 2015. “International Interventions to Build Social Capital: Evidence from a Field Experiment in Sudan.” American Political Science Review 109(3): 427-449.",
+    "text": "Avdeenko, Alexandra, and Michael J. Gilligan. 2015. “International Interventions to Build Social Capital: Evidence from a Field Experiment in Sudan.” American Political Science Review 109(3): 427-449."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#howard-marc-morjé.-2003.-the-weakness-of-civil-society-in-post-communist-europe.-cambridge-university-press.-ch.-intro.-5.",
+    "href": "notes/Comparative_Behavior/index.html#howard-marc-morjé.-2003.-the-weakness-of-civil-society-in-post-communist-europe.-cambridge-university-press.-ch.-intro.-5.",
+    "title": "Comparative Behavior",
+    "section": "Howard, Marc Morjé. 2003. The Weakness of Civil Society in Post-Communist Europe. Cambridge University Press. Ch. Intro. & 5.",
+    "text": "Howard, Marc Morjé. 2003. The Weakness of Civil Society in Post-Communist Europe. Cambridge University Press. Ch. Intro. & 5."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#varshney-ashutosh.-2002.-ethnic-conflict-and-civil-society-india-and-beyond.-world-politics-533-362-398.",
+    "href": "notes/Comparative_Behavior/index.html#varshney-ashutosh.-2002.-ethnic-conflict-and-civil-society-india-and-beyond.-world-politics-533-362-398.",
+    "title": "Comparative Behavior",
+    "section": "Varshney, Ashutosh. 2002. “Ethnic Conflict and Civil Society: India and Beyond.” World Politics 53(3): 362-398.",
+    "text": "Varshney, Ashutosh. 2002. “Ethnic Conflict and Civil Society: India and Beyond.” World Politics 53(3): 362-398."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#zhu-yushu.-2022.-interests-driven-or-socially-mobilized-place-attachment-social-capital-and-neighborhoodparticipation-in-urban-china.-journal-of-urban-affairs-448-1136-1153.",
+    "href": "notes/Comparative_Behavior/index.html#zhu-yushu.-2022.-interests-driven-or-socially-mobilized-place-attachment-social-capital-and-neighborhoodparticipation-in-urban-china.-journal-of-urban-affairs-448-1136-1153.",
+    "title": "Comparative Behavior",
+    "section": "Zhu, Yushu. 2022. “Interests driven or socially mobilized? Place attachment, social capital, and neighborhoodparticipation in urban China.” Journal of Urban Affairs 44(8): 1136-1153.",
+    "text": "Zhu, Yushu. 2022. “Interests driven or socially mobilized? Place attachment, social capital, and neighborhoodparticipation in urban China.” Journal of Urban Affairs 44(8): 1136-1153."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#anderson-christopher-j.-and-christine-a.-guillory.-1997.-political-institutions-and-satisfaction-with-democracy-a-cross-national-analysis-of-consensus-and-majoritarian-systems.-american-political-science-review-911-66-82.",
+    "href": "notes/Comparative_Behavior/index.html#anderson-christopher-j.-and-christine-a.-guillory.-1997.-political-institutions-and-satisfaction-with-democracy-a-cross-national-analysis-of-consensus-and-majoritarian-systems.-american-political-science-review-911-66-82.",
+    "title": "Comparative Behavior",
+    "section": "Anderson, Christopher J., and Christine A. Guillory. 1997. “Political Institutions and Satisfaction with Democracy: A Cross-National Analysis of Consensus and Majoritarian Systems.” American Political Science Review 91(1): 66-82.",
+    "text": "Anderson, Christopher J., and Christine A. Guillory. 1997. “Political Institutions and Satisfaction with Democracy: A Cross-National Analysis of Consensus and Majoritarian Systems.” American Political Science Review 91(1): 66-82."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#bailard-catie-snow.-2012.-a-field-experiment-on-the-internets-effect-in-an-african-election-savvier-citizens-disaffected-voters-or-both-journal-of-communication-622-330-344.",
+    "href": "notes/Comparative_Behavior/index.html#bailard-catie-snow.-2012.-a-field-experiment-on-the-internets-effect-in-an-african-election-savvier-citizens-disaffected-voters-or-both-journal-of-communication-622-330-344.",
+    "title": "Comparative Behavior",
+    "section": "Bailard, Catie Snow. 2012. “A Field Experiment on the Internet’s Effect in an African Election: Savvier Citizens, Disaffected Voters, or Both?” Journal of Communication 62(2): 330-344.",
+    "text": "Bailard, Catie Snow. 2012. “A Field Experiment on the Internet’s Effect in an African Election: Savvier Citizens, Disaffected Voters, or Both?” Journal of Communication 62(2): 330-344."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#mishler-william-and-richard-rose.-2001.-what-are-the-origins-of-political-trust-testing-institutional-and-cultural-theories-in-post-communist-societies.-comparative-political-studies-341-30-62.",
+    "href": "notes/Comparative_Behavior/index.html#mishler-william-and-richard-rose.-2001.-what-are-the-origins-of-political-trust-testing-institutional-and-cultural-theories-in-post-communist-societies.-comparative-political-studies-341-30-62.",
+    "title": "Comparative Behavior",
+    "section": "Mishler, William, and Richard Rose. 2001. “What are the origins of Political Trust? Testing Institutional and Cultural Theories in Post-communist Societies.” Comparative Political Studies 34(1): 30-62.",
+    "text": "Mishler, William, and Richard Rose. 2001. “What are the origins of Political Trust? Testing Institutional and Cultural Theories in Post-communist Societies.” Comparative Political Studies 34(1): 30-62."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#mutz-diana-c.-and-byron-reeves.-2005.-the-new-videomalaise-effects-of-televised-incivility-on-political-trust.-american-political-science-review-99-11-15.",
+    "href": "notes/Comparative_Behavior/index.html#mutz-diana-c.-and-byron-reeves.-2005.-the-new-videomalaise-effects-of-televised-incivility-on-political-trust.-american-political-science-review-99-11-15.",
+    "title": "Comparative Behavior",
+    "section": "Mutz, Diana C., and Byron Reeves. 2005. “The New Videomalaise: Effects of Televised Incivility on Political Trust.” American Political Science Review 99 (1):1-15.",
+    "text": "Mutz, Diana C., and Byron Reeves. 2005. “The New Videomalaise: Effects of Televised Incivility on Political Trust.” American Political Science Review 99 (1):1-15."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#orhan-yunus-emre.-2022.-the-relationship-between-affective-polarization-and-democratic-backsliding-comparative-evidence.-democratization-294-714-735.",
+    "href": "notes/Comparative_Behavior/index.html#orhan-yunus-emre.-2022.-the-relationship-between-affective-polarization-and-democratic-backsliding-comparative-evidence.-democratization-294-714-735.",
+    "title": "Comparative Behavior",
+    "section": "Orhan, Yunus Emre. 2022. “The relationship between affective polarization and democratic backsliding: comparative evidence.” Democratization 29(4): 714-735.",
+    "text": "Orhan, Yunus Emre. 2022. “The relationship between affective polarization and democratic backsliding: comparative evidence.” Democratization 29(4): 714-735."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#baptista-joão-pedro-and-anabela-gradim.-2022.-who-believes-in-fake-news-identification-of-political-asymmetries.-social-sciences-1110-460.",
+    "href": "notes/Comparative_Behavior/index.html#baptista-joão-pedro-and-anabela-gradim.-2022.-who-believes-in-fake-news-identification-of-political-asymmetries.-social-sciences-1110-460.",
+    "title": "Comparative Behavior",
+    "section": "Baptista, João Pedro, and Anabela Gradim. 2022. “Who Believes in Fake News? Identification of Political (A)Symmetries.” Social Sciences 11(10): 460.",
+    "text": "Baptista, João Pedro, and Anabela Gradim. 2022. “Who Believes in Fake News? Identification of Political (A)Symmetries.” Social Sciences 11(10): 460."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#gordon-stacy-b.-and-gary-m.-segura.-1997.-cross-national-variation-in-the-political-sophistication-of-individuals-capability-or-choice-journal-of-politics-591-126-147.",
+    "href": "notes/Comparative_Behavior/index.html#gordon-stacy-b.-and-gary-m.-segura.-1997.-cross-national-variation-in-the-political-sophistication-of-individuals-capability-or-choice-journal-of-politics-591-126-147.",
+    "title": "Comparative Behavior",
+    "section": "Gordon, Stacy B., and Gary M. Segura. 1997. “Cross-national Variation in the Political Sophistication of Individuals: Capability or Choice?” Journal of Politics 59(1): 126-147.",
+    "text": "Gordon, Stacy B., and Gary M. Segura. 1997. “Cross-national Variation in the Political Sophistication of Individuals: Capability or Choice?” Journal of Politics 59(1): 126-147."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#iyengar-shanto-et-al.-2010.-cross-national-versus-individual-level-differences-in-political-information-a-media-systems-perspective.-journal-of-elections-public-opinion-and-parties.-203-291-309.",
+    "href": "notes/Comparative_Behavior/index.html#iyengar-shanto-et-al.-2010.-cross-national-versus-individual-level-differences-in-political-information-a-media-systems-perspective.-journal-of-elections-public-opinion-and-parties.-203-291-309.",
+    "title": "Comparative Behavior",
+    "section": "Iyengar, Shanto, et al. 2010. “Cross-National versus Individual-Level Differences in Political Information: A Media Systems Perspective.” Journal of Elections, Public Opinion and Parties. 20(3): 291-309.",
+    "text": "Iyengar, Shanto, et al. 2010. “Cross-National versus Individual-Level Differences in Political Information: A Media Systems Perspective.” Journal of Elections, Public Opinion and Parties. 20(3): 291-309."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#mutz-diana-c.-2006.-hearing-the-other-side-deliberative-versus-participatory-democracy.-cambridge-university-press.-ch.-12.",
+    "href": "notes/Comparative_Behavior/index.html#mutz-diana-c.-2006.-hearing-the-other-side-deliberative-versus-participatory-democracy.-cambridge-university-press.-ch.-12.",
+    "title": "Comparative Behavior",
+    "section": "Mutz, Diana C. 2006. Hearing the Other Side: Deliberative versus Participatory Democracy. Cambridge University Press. Ch. 1&2.",
+    "text": "Mutz, Diana C. 2006. Hearing the Other Side: Deliberative versus Participatory Democracy. Cambridge University Press. Ch. 1&2."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#winkler-stephen.-2021.-medias-influence-on-lbgtq-support-across-africa.-british-journal-of-political-science-512-807-826.",
+    "href": "notes/Comparative_Behavior/index.html#winkler-stephen.-2021.-medias-influence-on-lbgtq-support-across-africa.-british-journal-of-political-science-512-807-826.",
+    "title": "Comparative Behavior",
+    "section": "Winkler, Stephen. 2021. “Media’s Influence on LBGTQ Support Across Africa.” British Journal of Political Science 51(2): 807-826.",
+    "text": "Winkler, Stephen. 2021. “Media’s Influence on LBGTQ Support Across Africa.” British Journal of Political Science 51(2): 807-826."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#aguilar-edwin-eloy-and-alexander-pacek.-2000.-macroeconomic-conditions-voter-turnout-and-the-working-classeconomically-disadvantaged-party-vote-in-developing-countries.-comparative-political-studies-338-995-1017.",
+    "href": "notes/Comparative_Behavior/index.html#aguilar-edwin-eloy-and-alexander-pacek.-2000.-macroeconomic-conditions-voter-turnout-and-the-working-classeconomically-disadvantaged-party-vote-in-developing-countries.-comparative-political-studies-338-995-1017.",
+    "title": "Comparative Behavior",
+    "section": "Aguilar, Edwin Eloy, and Alexander Pacek. 2000. “Macroeconomic Conditions, Voter Turnout, and the Working Class/Economically Disadvantaged Party Vote in Developing Countries.” Comparative Political Studies 33(8): 995-1017.",
+    "text": "Aguilar, Edwin Eloy, and Alexander Pacek. 2000. “Macroeconomic Conditions, Voter Turnout, and the Working Class/Economically Disadvantaged Party Vote in Developing Countries.” Comparative Political Studies 33(8): 995-1017."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#aldrich-john-h.-1993.-rational-choice-and-turnout.-american-journal-of-political-science-371-246-278.",
+    "href": "notes/Comparative_Behavior/index.html#aldrich-john-h.-1993.-rational-choice-and-turnout.-american-journal-of-political-science-371-246-278.",
+    "title": "Comparative Behavior",
+    "section": "Aldrich, John H. 1993. “Rational Choice and Turnout.” American Journal of Political Science 37(1): 246-278.",
+    "text": "Aldrich, John H. 1993. “Rational Choice and Turnout.” American Journal of Political Science 37(1): 246-278."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#blais-andré.-2009.-turnout-in-elections.-ohpb.-ch.-33-621-635.",
+    "href": "notes/Comparative_Behavior/index.html#blais-andré.-2009.-turnout-in-elections.-ohpb.-ch.-33-621-635.",
+    "title": "Comparative Behavior",
+    "section": "Blais, André. 2009. “Turnout in Elections.” OHPB. Ch. 33: 621-635.",
+    "text": "Blais, André. 2009. “Turnout in Elections.” OHPB. Ch. 33: 621-635."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#franklin-mark-n.-2004.-voter-turnout-and-the-dynamics-of-electoral-competition.-cambridge-univ.-press.-ch.-45.",
+    "href": "notes/Comparative_Behavior/index.html#franklin-mark-n.-2004.-voter-turnout-and-the-dynamics-of-electoral-competition.-cambridge-univ.-press.-ch.-45.",
+    "title": "Comparative Behavior",
+    "section": "Franklin, Mark N. 2004. Voter Turnout and the Dynamics of Electoral Competition. Cambridge Univ. Press. Ch. 4&5.",
+    "text": "Franklin, Mark N. 2004. Voter Turnout and the Dynamics of Electoral Competition. Cambridge Univ. Press. Ch. 4&5."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#nickerson-david-w.-2008.-is-voting-contagious-evidence-from-two-field-experiments.-american-political-science-review-1021-49-57.",
+    "href": "notes/Comparative_Behavior/index.html#nickerson-david-w.-2008.-is-voting-contagious-evidence-from-two-field-experiments.-american-political-science-review-1021-49-57.",
+    "title": "Comparative Behavior",
+    "section": "Nickerson, David W. 2008. “Is Voting Contagious? Evidence from Two Field Experiments.” American Political Science Review 102(1): 49-57.",
+    "text": "Nickerson, David W. 2008. “Is Voting Contagious? Evidence from Two Field Experiments.” American Political Science Review 102(1): 49-57."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#elçi-ezgi.-2022.-politics-of-nostalgia-and-populism-evidence-from-turkey.-british-journal-of-political-science-522-697-714.",
+    "href": "notes/Comparative_Behavior/index.html#elçi-ezgi.-2022.-politics-of-nostalgia-and-populism-evidence-from-turkey.-british-journal-of-political-science-522-697-714.",
+    "title": "Comparative Behavior",
+    "section": "Elçi, Ezgi. 2022. “Politics of nostalgia and populism: Evidence from Turkey.” British Journal of Political Science 52(2): 697-714.",
+    "text": "Elçi, Ezgi. 2022. “Politics of nostalgia and populism: Evidence from Turkey.” British Journal of Political Science 52(2): 697-714."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#fitzgerald-jennifer.-2018.-close-to-home-local-ties-and-voting-radical-right-in-europe.-cambridge-university-press.-chapters-tbd.",
+    "href": "notes/Comparative_Behavior/index.html#fitzgerald-jennifer.-2018.-close-to-home-local-ties-and-voting-radical-right-in-europe.-cambridge-university-press.-chapters-tbd.",
+    "title": "Comparative Behavior",
+    "section": "Fitzgerald, Jennifer. 2018. Close to Home: Local Ties and Voting Radical Right in Europe. Cambridge University Press. Chapters TBD.",
+    "text": "Fitzgerald, Jennifer. 2018. Close to Home: Local Ties and Voting Radical Right in Europe. Cambridge University Press. Chapters TBD."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#mudde-cas-and-christóbol-rovira-kaltwasser.-2013.-exclusionary-vs.-inclusionary-populism-comparing-contemporary-europe-and-latin-america.-government-and-opposition-482-147-174.",
+    "href": "notes/Comparative_Behavior/index.html#mudde-cas-and-christóbol-rovira-kaltwasser.-2013.-exclusionary-vs.-inclusionary-populism-comparing-contemporary-europe-and-latin-america.-government-and-opposition-482-147-174.",
+    "title": "Comparative Behavior",
+    "section": "Mudde, Cas, and Christóbol Rovira Kaltwasser. 2013. “Exclusionary vs. Inclusionary Populism: Comparing Contemporary Europe and Latin America.” Government and Opposition 48(2): 147-174.",
+    "text": "Mudde, Cas, and Christóbol Rovira Kaltwasser. 2013. “Exclusionary vs. Inclusionary Populism: Comparing Contemporary Europe and Latin America.” Government and Opposition 48(2): 147-174."
+  },
+  {
+    "objectID": "notes/Comparative_Behavior/index.html#off-gefjon.-2023.-gender-equality-salience-backlash-and-radical-right-voting-in-the-gender-equal-context-of-sweden.-west-european-politics-463-451-476.",
+    "href": "notes/Comparative_Behavior/index.html#off-gefjon.-2023.-gender-equality-salience-backlash-and-radical-right-voting-in-the-gender-equal-context-of-sweden.-west-european-politics-463-451-476.",
+    "title": "Comparative Behavior",
+    "section": "Off, Gefjon. 2023. “Gender equality salience, backlash and radical right voting in the gender-equal context of Sweden.” West European Politics 46(3): 451-476.",
+    "text": "Off, Gefjon. 2023. “Gender equality salience, backlash and radical right voting in the gender-equal context of Sweden.” West European Politics 46(3): 451-476."
   }
 ]

@@ -1,0 +1,46 @@
+---
+title: "PSCI 2075 - Quantitive Research Methods - Fall 2024"
+description: "Professor: Steven Beard. This is Stone's central hub for PSCI 2075 recitations."
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 08-26-2024
+categories: [Fall, 2024, Methods] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/ICPSR_Math_Review/
+image: southpark.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Welcome! 
+
+## Please Read First: 
+
+-   This page is my own personal recitation website. I will post both course material and anything we go over in recitation. This is simply a central hub that you can use to help you throughout the semester.
+
+-   **This does not replace the lecture, canvas, or your notes.**
+
+-   In previous years, I have used slide shows. This website is an effort to have a more organized and central workflow that is more accessible.
+
+# Week 1 
+
+## Required Texts: 
+
+-   Pollock, Philip H. and Barry C. Edwards. 2020. *The Essentials of Political Analysis.* 6th Edition. CQ Press. (EPA)
+
+-   Pollock, Philip H. and Barry C. Edwards. 2023. *An R Companion to Political Analysis.* 3^rd^ Edition. CQ Press. (RCPA)
+
+## Computer:
+
+This class requires the use of a computer. **Not an iPad!** You are expected to bring it to lecture and recitation regularly.
+
+## Software: 
+
+Much of this class revolves around the statistical software known as "R". R is free and open source. It is widely used in academia and industry. We will discuss how to install R soon.
+
+[Rstudio download link](https://posit.co/download/rstudio-desktop/)
+
+## 

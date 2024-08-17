@@ -37,5 +37,11 @@
     "items": [
       "/posts/2024-05-28-first-blog-test/index.html"
     ]
+  },
+  {
+    "listing": "/teaching.html",
+    "items": [
+      "/teaching/PSCI-2075_Fall_24/index.html"
+    ]
   }
 ]
