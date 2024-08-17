@@ -15,13 +15,15 @@ image: masses.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-# Week 1: General Introductions
+# Week 1: General Introductions & Syllabus
 
 This week was primarily introductions from other classmates and the professor. Some discussion included expectations and what the class would look like.
 
+## [Syllabus](https://drive.google.com/file/d/1fDbGJ_HzVtpydbdeUMRbpTZNPgaeWZ31/view?usp=sharing)
+
 # Week 2: Intro to Comparative Political Behavior
 
-## Anderson, Christopher J. 2009. "Interaction of Structures and Voter Behavior." *OHPB* CH. 31: 589-609.
+## [Anderson, Christopher J. 2009. "Interaction of Structures and Voter Behavior." *OHPB* CH. 31: 589-609.](https://drive.google.com/file/d/1_r2COqkW84tVFqgxXIKMjUnhQR01NM6w/view?usp=sharing)
 
 **Bumper Sticker: Rules & context influence and are influenced by behaviour!** (British spelling)
 
@@ -80,11 +82,11 @@ This week was primarily introductions from other classmates and the professor. S
         -   Institutions shape the responses of winners and losers; citizen attitudes toward democratic institutions shaped by country's political context
 -   "At the end of the day, what is particularly noteworthy about cross-level investigations of behavioural politics is that they hold the promise of producing a more nuanced and contextualized understanding of political life by connected hitherto unconnected streams of scholarship in the areas of institutions, political economy, policy, and behaviour and allowing us a better and more complex empirical and theoretical handle on the hows and whys of citizen politics" (690).
 
-## Chong, Dennis. 2013. "Degrees of Rationality in Politics." Ch. 4 in Leonie Huddy, David O. Sears and Jack S. Levy, Eds., *The Oxford Handbook of Political Psychology*, 2nd edition. Oxford University Press
+## [Chong, Dennis. 2013. "Degrees of Rationality in Politics." Ch. 4 in Leonie Huddy, David O. Sears and Jack S. Levy, Eds., *The Oxford Handbook of Political Psychology*, 2nd edition. Oxford University Press](https://drive.google.com/file/d/1CEct2jGYhakcU5Ge7YtQc8dMdcP6FK7-/view?usp=sharing)
 
-rieghfjiewaojri
+### NEED TO UPDATE!
 
-## Lipset, Seymour Martin. 1959. "Democracy and Working-Class Authoritarianism." *American Sociological Review* 24(4): 482-501.
+## [Lipset, Seymour Martin. 1959. "Democracy and Working-Class Authoritarianism." *American Sociological Review* 24(4): 482-501.](https://drive.google.com/file/d/1JebXcziTNKSfEBVWfNtfRipiBGyKJQfy/view?usp=sharing)
 
 ### Dependent Variable: Support for democracy 
 
@@ -152,7 +154,7 @@ Following evidence and psychological research on personality traits of  differe
 
 -   Educational attainment is an essential "Social Requisites of Democracy" (Lipset, 1959). 
 
-## Zuckerman, Alan S. 2005. "Returning to the Social Logic of Political Behavior." Ch.1 in Alan S. Zuckerman, Ed., *The Social Logic of Politics: Personal Networks as Contexts for Political Behavior.* Temple University Press.
+## [Zuckerman, Alan S. 2005. "Returning to the Social Logic of Political Behavior." Ch.1 in Alan S. Zuckerman, Ed., *The Social Logic of Politics: Personal Networks as Contexts for Political Behavior.* Temple University Press.](https://drive.google.com/file/d/11JOnLhWrS45dhsVABrvMVrr4D7xbTNJq/view?usp=sharing)
 
 ### Chapter 1: Returning to the Social Logic of Political Behavior
 
@@ -248,13 +250,9 @@ Michigan survey responses can be used to study the role of immediate social stru
 
 Ton of other research is starting to do the same thing
 
-## Stone's Motivated Thoughts
-
-Insert here.
-
 # Week 3: Political Beliefs/Political Decision-Making
 
-## Converse, Philip E. 2006 \[1964\]. "The Nature of Belief Systems in Mass Publics." Critical  Review: A Journal of Politics and Society 18(1): 1-74
+## [Converse, Philip E. 2006 \[1964\]. "The Nature of Belief Systems in Mass Publics." Critical  Review: A Journal of Politics and Society 18(1): 1-74](https://drive.google.com/file/d/16M558a3a-7_AQdWXhfvuM6Swc4BvqhbY/view?usp=sharing)
 
 ### Normative question: 
 
@@ -288,7 +286,7 @@ PICTURE HERE
 
 ### Interesting proposition: "The net result of these circumstances is that the elites of the leftist parties enjoy a"natural" numerical superiority, yet they are cursed with a clientele that is less dependable or solid in its support. The rightist elite has a natural clientele that is more limited but more dependable."
 
-## Huckfeldt, Robert. 2009. "Information, Persuasion and Political Communication." OHPB. Ch. 6: 100-122.
+## [Huckfeldt, Robert. 2009. "Information, Persuasion and Political Communication." OHPB. Ch. 6: 100-122.](https://drive.google.com/file/d/1k4UvHC7zx2u0C78JyImWnwGYRJBmzvn2/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -356,7 +354,7 @@ It is a literature review so no real data/methods.
 
 -   solutions to collective action problems can be seen as occurring within networks of relationships among strategic actors who use the information they acquire through repeated interactions to facilitate group efforts
 
-## Marcus, George, Pavlos Vasilopoulos, and Martial Foucault. 2018. "Emotional Responses to the Charlie Hebdo Attacks: Addressing the Authoritarianism Puzzle." Political Psychology 39(3): 557-575.
+## [Marcus, George, Pavlos Vasilopoulos, and Martial Foucault. 2018. "Emotional Responses to the Charlie Hebdo Attacks: Addressing the Authoritarianism Puzzle." Political Psychology 39(3): 557-575.](https://drive.google.com/file/d/1n-r7st8o6H0JMLyYxjWaECPMj-PiiCJN/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -506,9 +504,7 @@ $$
 
     -   is the event a normative violation by a familiar enemy (+anger)
 
-## Schwartz, Shalom H., et al. 2014. "Basic Personal Values Underlie and Give Coherence to Political Values: A
-
-Cross-National Study in 15 Countries." Political Behavior 36(4): 899-930.
+## [Schwartz, Shalom H., et al. 2014. "Basic Personal Values Underlie and Give Coherence to Political Values: A Cross-National Study in 15 Countries." Political Behavior 36(4): 899-930.](https://drive.google.com/file/d/12XuNANtbUQaoiO-kzaazkdD6Gkxc7CVu/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -560,7 +556,7 @@ Research question: Do political attitudes and values of the general public form 
 
 NEED TO INSERT FIGURES/PHOTOS!
 
-## Taber, Charles S., and Milton Lodge. 2006. "Motivated Skepticism in Evaluation of Political Beliefs." *American Journal of Political Science* 50(3): 755-769.
+## [Taber, Charles S., and Milton Lodge. 2006. "Motivated Skepticism in Evaluation of Political Beliefs." *American Journal of Political Science* 50(3): 755-769.](https://drive.google.com/file/d/1GfZrgjciOkE1Ffsu97of9UYHix1cSAnh/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -638,7 +634,7 @@ The authors postulate what they call a theory of affect-driven motivated reasoni
 
 # Week 4: Partisanship/Party Preference
 
-## Achen, Christopher. 2002. "Parental Socialization and Rational Party ID." Political Behavior 24(2): 151-170.
+## [Achen, Christopher. 2002. "Parental Socialization and Rational Party ID." Political Behavior 24(2): 151-170.](https://drive.google.com/file/d/1eDBfh3YzHzQ0ovR5SRV04ve3n0VbGqFr/view?usp=sharing)
 
 ### Abstract:
 
@@ -646,7 +642,7 @@ The authors postulate what they call a theory of affect-driven motivated reasoni
 
 ### Model
 
-## Bankert, Alexa, Leonie Huddy, and Martin Rosema. 2017. "Measuring Partisanship as a Social Identity in Multi-Party Systems." Political Behavior 39(1): 103-132.
+## [Bankert, Alexa, Leonie Huddy, and Martin Rosema. 2017. "Measuring Partisanship as a Social Identity in Multi-Party Systems." Political Behavior 39(1): 103-132.](https://drive.google.com/file/d/1KakFRmU4PuCmQS4ckJQ0FFGTKOzxswJe/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -731,7 +727,7 @@ The eight-item partisan identification scale: 
 
 -   better predicts in-party voting and political participation than ideological intensity measures
 
-## Campbell, Angus, Philip E. Converse, Warren E. Miller, and Donald E. Stokes. 1960. The American Voter. Ch 6 & 7.
+## [Campbell, Angus, Philip E. Converse, Warren E. Miller, and Donald E. Stokes. 1960. The American Voter. Ch 6 & 7.](https://drive.google.com/file/d/1BBkY9IDEIRD7WGmP4cBK06iDDMe1BlOX/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -753,7 +749,7 @@ What are the various impacts of individual party identification?
 
 ### 
 
-## Keele, Luke, and Jennifer Wolak. 2006. "Value conflict and volatility in party identification." British Journal of Political Science 36(4): 671-690.
+## [Keele, Luke, and Jennifer Wolak. 2006. "Value conflict and volatility in party identification." British Journal of Political Science 36(4): 671-690.](https://drive.google.com/file/d/1_Z-Dv_RltlbpiSNas8y5DCKUovCwjPAl/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -823,7 +819,7 @@ Elites identify and interpret core values to justify their policy positions 
 
 Values and ideology are traditionally distinct concepts - but values can be distributed along an ideological spectrum
 
-## Hatemi, Peter K., et al. 2008. "Is there a 'Party' in Your Genes?" Political Research Quarterly 62(3): 584-600.
+## [Hatemi, Peter K., et al. 2008. "Is there a 'Party' in Your Genes?" Political Research Quarterly 62(3): 584-600.](https://drive.google.com/file/d/1PxIstrhEiXpHenANgaUkdI35PalEo5Mg/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -963,9 +959,9 @@ BUT!
 
 # Week 5: Vote Choice - Socio-Contextual Mechanisms
 
-### Arzheimer, Kai. 2009. "Contextual Factors and the Extreme Right Vote in Western Europe, 1980-2002." *American Journal of Political Science* 53(2): 259-275.
+## [Arzheimer, Kai. 2009. "Contextual Factors and the Extreme Right Vote in Western Europe, 1980-2002." *American Journal of Political Science* 53(2): 259-275.](https://drive.google.com/file/d/1Mqi5Rv0aiySaI-2YerSWsUgSAg9C8GCM/view?usp=sharing)
 
-### Huber, John, Georgia Kernell and Eduardo Leoni. 2003. "Institutional Context, Cognitive Resources, and Party Attachments Across Democracies." *Political Analysis* 13(4): 365-386.
+## [Huber, John, Georgia Kernell and Eduardo Leoni. 2003. "Institutional Context, Cognitive Resources, and Party Attachments Across Democracies." *Political Analysis* 13(4): 365-386.](https://drive.google.com/file/d/1Mi8YaPL3zAyRYnyS26YxdRwLDhzrbC7s/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -1037,7 +1033,7 @@ Do some political systems encourage the formation of party attachments more than
 
     -   These institutions have the greatest influence on voters with the least education.
 
-### Pattie, Charles, and Ron Johnston. 2000. "People Who Talk Together Vote Together: An Exploration of Contextual Effects in Great Britain." *Annals of the Association of American Geographers* 90(1): 41-66.
+## [Pattie, Charles, and Ron Johnston. 2000. "People Who Talk Together Vote Together: An Exploration of Contextual Effects in Great Britain." *Annals of the Association of American Geographers* 90(1): 41-66.](https://drive.google.com/file/d/1ByhKxLwbVlz88LnMUuDoZoDyKc0REMOr/view?usp=sharing)
 
 ### Abstract:
 
@@ -1159,9 +1155,11 @@ Main hypothesis: Each group would be influenced by the dominant nature of electo
 
 -   Also don't know what the content of the conversations were
 
+## [NEED TO ADD WESTHOLM](https://drive.google.com/file/d/1A5n2GZVIRKNrlYdQorMoC6b32G9O5rRw/view?usp=sharing)
+
 # Week 6: Vote Choice - Economic Motivations
 
-## Bratten, Michael, and Robert Mattes. 2001. "Support for Democracy in Africa: Intrinsic or Instrumental?" British Journal of Political Science 31(3): 447-474.
+## [Bratten, Michael, and Robert Mattes. 2001. "Support for Democracy in Africa: Intrinsic or Instrumental?" British Journal of Political Science 31(3): 447-474.](https://drive.google.com/file/d/1B1mhlUPwh5ERbY-Ql4b2MICIKMQBeIl1/view?usp=sharing)
 
 ### Bumper Sticker:
 
@@ -1227,7 +1225,7 @@ Popular support for democracy in African countries similar to other Third Wave c
 
 4.  Rankings differ even within the category of political goods
 
-## Benton, A. L. (2005). "Dissatisfied Democrats or retrospective voters?", 38(4), 417--442.
+## [Benton, A. L. (2005). "Dissatisfied Democrats or retrospective voters?", 38(4), 417--442.](https://drive.google.com/file/d/1b_PeYUzXNSr8gHQEANPxDETo7pZSunk8/view?usp=sharing)
 
 ### Abstract:
 
@@ -1280,7 +1278,7 @@ economic performance as measured by the percentage change in GDP per capita duri
 ### Findings:
 
 | Hypothesis | Support | Details                                                                                                                                                                                                                                                                                     |
-|---------|---------|-------------------------------------------------------|
+|------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | H1         | Yes     | incumbent parties' support decreases with economic downturns, without regard to institutional change (p.430)                                                                                                                                                                                |
 | H2         | Yes     | when electoral laws construct institutional barriers to small parties (restrictive), groups once holding the presidency will suffer losses in support when incumbents manage economic growth; as GDP declines, parties previously in power begin to experience a surge of supprot (p.431)   |
 | H3         | Yes     | accounting for the presence of Honduras, there was no relationship between poor economic performance and punishment of former incumbents in restrictive systems; there was a relationship between poor economic performance and the punishment of incumbents in permissive systems (pg.436) |
