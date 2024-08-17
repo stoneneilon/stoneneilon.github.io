@@ -17,6 +17,9 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 # Week 1: Introduction
 
+```{=html}
+<p><a href="https://drive.google.com/file/d/19KPcMi_LEaiWcxmytWcTeKTDXDO8JtrV/view?usp=sharing" target="_blank">Rule of Law Syllabus</a></p>
+```
 # Week 2: Courts and the Rule of Law
 
 ## Carothers, Thomas. 1998. "The Rule of Law Revival", *Foreign Affairs*

@@ -8,7 +8,7 @@ author:
     affiliation: PhD student of political science @ The University of Colorado Boulder
     affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
 date: 05-15-2024
-categories: [Spring, 2024, American] # self-defined categories
+categories: [Summer, ICPSR, 2024, American] # self-defined categories
 citation: 
   url: https://stoneneilon.github.io/notes/ICPSR_Math_Review/
 image: dawg.jpg
