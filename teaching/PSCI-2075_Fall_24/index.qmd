@@ -15,9 +15,9 @@ image: southpark.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-# Welcome! 
+# Welcome!
 
-## Please Read First: 
+## Please Read First:
 
 -   This page is my own personal recitation website. I will post both course material and anything we go over in recitation. This is simply a central hub that you can use to help you throughout the semester.
 
@@ -25,9 +25,9 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 -   In previous years, I have used slide shows. This website is an effort to have a more organized and central workflow that is more accessible.
 
-# Week 1 
+# Week 1
 
-## Required Texts: 
+## Required Texts:
 
 -   Pollock, Philip H. and Barry C. Edwards. 2020. *The Essentials of Political Analysis.* 6th Edition. CQ Press. (EPA)
 
@@ -37,7 +37,9 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 This class requires the use of a computer. **Not an iPad!** You are expected to bring it to lecture and recitation regularly.
 
-## Software: 
+If you do not have a computer, the library should have some available for you to rent.
+
+## Software:
 
 Much of this class revolves around the statistical software known as "R". R is free and open source. It is widely used in academia and industry. We will discuss how to install R soon.
 
