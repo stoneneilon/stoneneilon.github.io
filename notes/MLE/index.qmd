@@ -1,0 +1,20 @@
+---
+title: "MLE - Data 3"
+description: "Professor: Andy Philips"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 08-26-2024
+categories: [2024, Methods, Fall] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/Comparative_Behavior/
+image: jamiexx.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# [Syllabus](https://www.dropbox.com/scl/fi/32ji3ucw54taatfon4ja4/MLE-syllabus.pdf?rlkey=jhqzrrb2ymqxg70s7wuwzeeyr&st=taxpe036&dl=0)
+
+# Week 1

@@ -1,0 +1,18 @@
+---
+title: "The City and You"
+description: "The political implications of the built environment"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 08-19-2024
+categories: [2024, Atomization] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/Comparative_Behavior/
+image: nighthawk.jpg
+draft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# The City and You - Why political science should focus on the design of cities.
