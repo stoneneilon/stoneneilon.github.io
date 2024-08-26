@@ -11,7 +11,7 @@ date: 08-26-2024
 categories: [2024, Methods, Fall] # self-defined categories
 citation: 
   url: https://stoneneilon.github.io/notes/Comparative_Behavior/
-image: jamiexx.jpg
+image: jamiexx.webp
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
