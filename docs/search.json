@@ -1208,7 +1208,7 @@
     "href": "notes/ICPSR_Intro_to_Python/index.html#modules",
     "title": "ICPSR - Introduction to Python",
     "section": "Modules",
-    "text": "Modules\n\npython modules are files (.py) that (mainly) contain function definitions\nthey allow us to organize, distribute code; to share and reuse others’ code.\nkeep code coherent and self-contained.\none can import modules or some functions from modules.\n\n\nexample:\ninstead of below\n\ndef add(a,b):\n  return a+b\n\nwe could create a module that contains this function:\n\n# use math_operations.py\n# note this code did not work. Skip for now\nimport math_operations \nmat_operations.add(3,5)\n\nTry this example instead:\n\nfrom datetime import date\ntoday = date.today()\nprint(\"Today's date:\", today)\n\nToday's date: 2024-08-16\n\n\nWe are basically bringing in packages and incorporating the functions contained within them to use for our code."
+    "text": "Modules\n\npython modules are files (.py) that (mainly) contain function definitions\nthey allow us to organize, distribute code; to share and reuse others’ code.\nkeep code coherent and self-contained.\none can import modules or some functions from modules.\n\n\nexample:\ninstead of below\n\ndef add(a,b):\n  return a+b\n\nwe could create a module that contains this function:\n\n# use math_operations.py\n# note this code did not work. Skip for now\nimport math_operations \nmat_operations.add(3,5)\n\nTry this example instead:\n\nfrom datetime import date\ntoday = date.today()\nprint(\"Today's date:\", today)\n\nToday's date: 2024-08-26\n\n\nWe are basically bringing in packages and incorporating the functions contained within them to use for our code."
   },
   {
     "objectID": "notes/ICPSR_Intro_to_Python/index.html#comprehensions",
