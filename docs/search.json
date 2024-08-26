@@ -1439,14 +1439,14 @@
     "href": "teaching/PSCI-2075_Fall_24/index.html",
     "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
     "section": "",
-    "text": "This page is my own personal recitation website. I will post both course material and anything we go over in recitation. This is simply a central hub that you can use to help you throughout the semester.\nThis does not replace the lecture, canvas, or your notes.\nIn previous years, I have used slide shows. This website is an effort to have a more organized and central workflow that is more accessible.\nI teach the 017 and 018 recitation. Make sure you are in the right section!\n\nSection 17 meets on Th 10:10am-11:01am Bruce Curtis Bldg E158\nSection 18 meets on Th 1:25pm-2:15pm Clare Small Arts and Sciences 104\n\nFYI Clare is an old building with no AC. It gets very stuffy and hot. Try your best to stay cool (bring a cold drink!)"
+    "text": "This page is my own personal recitation website. I will post both course material and anything we go over in recitation. This is simply a central hub that you can use to help you throughout the semester.\nThis does not replace the lecture, canvas, or your notes.\nIn previous years, I have used slide shows. This website is an effort to have a more organized and central workflow that is more accessible.\nI teach the 017 and 018 recitation. Make sure you are in the right section!\n\nSection 17 meets on Th 10:10am-11:01am Bruce Curtis Bldg E158\nSection 18 meets on Th 1:25pm-2:15pm Clare Small Arts and Sciences 104\n\nFYI Clare is an old building with no AC. It gets very stuffy and hot. Try your best to stay cool (bring a cold drink and dress accordingly)!"
   },
   {
     "objectID": "teaching/PSCI-2075_Fall_24/index.html#please-read-first",
     "href": "teaching/PSCI-2075_Fall_24/index.html#please-read-first",
     "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
     "section": "",
-    "text": "This page is my own personal recitation website. I will post both course material and anything we go over in recitation. This is simply a central hub that you can use to help you throughout the semester.\nThis does not replace the lecture, canvas, or your notes.\nIn previous years, I have used slide shows. This website is an effort to have a more organized and central workflow that is more accessible.\nI teach the 017 and 018 recitation. Make sure you are in the right section!\n\nSection 17 meets on Th 10:10am-11:01am Bruce Curtis Bldg E158\nSection 18 meets on Th 1:25pm-2:15pm Clare Small Arts and Sciences 104\n\nFYI Clare is an old building with no AC. It gets very stuffy and hot. Try your best to stay cool (bring a cold drink!)"
+    "text": "This page is my own personal recitation website. I will post both course material and anything we go over in recitation. This is simply a central hub that you can use to help you throughout the semester.\nThis does not replace the lecture, canvas, or your notes.\nIn previous years, I have used slide shows. This website is an effort to have a more organized and central workflow that is more accessible.\nI teach the 017 and 018 recitation. Make sure you are in the right section!\n\nSection 17 meets on Th 10:10am-11:01am Bruce Curtis Bldg E158\nSection 18 meets on Th 1:25pm-2:15pm Clare Small Arts and Sciences 104\n\nFYI Clare is an old building with no AC. It gets very stuffy and hot. Try your best to stay cool (bring a cold drink and dress accordingly)!"
   },
   {
     "objectID": "teaching/PSCI-2075_Fall_24/index.html#required-texts",
@@ -1775,21 +1775,21 @@
     "href": "teaching/PSCI-2075_Fall_24/index.html#office-hours",
     "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
     "section": "Office Hours:",
-    "text": "Office Hours:\nMy office hours will occur every Tuesday from 11:00 AM - 1:00 PM. If you are unable to meet at that time, please email me to schedule a time that works for you."
+    "text": "Office Hours:\nMy office hours will occur every Tuesday from 11:00 AM - 1:00 PM. If you are unable to meet at that time, please email me to schedule a time that works for you.\nMy office is Ketchum 382. The office is called the American Politics Research Lab (APRL)."
   },
   {
     "objectID": "teaching/PSCI-2075_Fall_24/index.html#attendance-policy",
     "href": "teaching/PSCI-2075_Fall_24/index.html#attendance-policy",
     "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
     "section": "Attendance Policy:",
-    "text": "Attendance Policy:\nAttendance and participation is part of your grade. Per the instructions of the professor, you are allowed to miss ONE class before it starts to count against your grade. You do NOT have to email me if you will be missing class. There is no excused or unexcused absence. You simply get one “freebe” to miss class. In the event that you have a valid reason to miss multiple classes please inform me ASAP so we can coordinate the appropriate response together."
+    "text": "Attendance Policy:\nAttendance and participation is part of your grade. Per the instructions of the professor, you are allowed to miss ONE class before it starts to count against your grade. You do NOT have to email me if you will be missing class. There is no excused or unexcused absence. You simply get one “freebe” to miss class. If you have a valid reason for missing multiple classes, please inform me as soon as possible so we can coordinate the appropriate response together. Subsequent absences after your “freebe” will result in a -10% penalty to your recitation grade. This will also impact your participation grade as you cannot participate if you are not in class."
   },
   {
     "objectID": "teaching/PSCI-2075_Fall_24/index.html#coding-concerns",
     "href": "teaching/PSCI-2075_Fall_24/index.html#coding-concerns",
     "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
     "section": "Coding Concerns:",
-    "text": "Coding Concerns:\nSome of you might have chosen to pursue a social science degree simply because you thought it would have less math. Unfortunately for you, math is not going anywhere and you need it to be successful in your career. The purpose of statistics is to use data we have, to tell us about data we do not have. This course will provide you just enough to be dangerous.\nIf you have never coded before or have very little experience with computer concepts, do not fear. In many ways, you may find coding in R to be frustrating and foreign. This is normal. I want to stress that this material is not something you can memorize like history facts. Programmers typically talk about coding as languages. Languages require practice. R will take practice. You will have errors in your code and you will get confused. I will do my best to help you understand how to read and write code using R. Additionally, there is a plethora of information online. Websites such as Stack Exchange, Youtube, Reddit, and other forums probably have solutions to issues you might encounter. I use them all the time, even for trivial stuff.\nRemember that both the Professor and I have office hours to help you, if needed. We are here to help you, so please do not be scared or intimidated to come talk to us, it’s our job. You may also schedule additional help with the department’s Methods Lab Coordinator (these are grad students that have previously TAed this course):\n\nSamantha Register - samantha.register@colorado.edu"
+    "text": "Coding Concerns:\nSome of you might have chosen to pursue a social science degree simply because you thought it would have less math. Unfortunately for you, math is not going anywhere and you need it to be successful in your career. The purpose of statistics is to use data we have, to tell us about data we do not have. This course will provide you just enough to be dangerous.\nIf you have never coded before or have very little experience with computer concepts, do not fear. In many ways, you may find coding in R to be frustrating and foreign. This is normal. I want to stress that this material is not something you can memorize like history facts. Programmers typically talk about coding as languages. Languages require practice. R will take practice. You will have errors in your code and you will get confused. I will do my best to help you understand how to read and write code using R. Additionally, there is a plethora of information online. Websites such as Stack Exchange, YouTube, Reddit, and other forums probably have solutions to issues you might encounter. I use them all the time, even for trivial stuff.\nRemember that both the Professor and I have office hours to help you, if needed. We are here to help you, so please do not be scared or intimidated to come talk to us, it’s our job. You may also schedule additional help with the department’s Methods Lab Coordinator (these are grad students that have previously TAed this course):\n\nSamantha Register - samantha.register@colorado.edu\n\nConsult this document for more information on the Methods Lab Coordinatr"
   },
   {
     "objectID": "teaching/PSCI-2075_Fall_24/index.html#goal-of-week-1",
@@ -1810,6 +1810,20 @@
     "href": "teaching/PSCI-2075_Fall_24/index.html#group-work",
     "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
     "section": "Group Work:",
-    "text": "Group Work:\nThere will be group work in this class. Please consult the syllabus for more details. I will decide how groups are broken up. I will randomly assign new groups for each homework. The rationale behind random assignment is to better encourage community and engagement within the classroom. I still talk to people I met in my undergraduate classes to this day. I found the more I engaged with others, the better I did. Don’t be shy!\nGroup work can sometimes lead to uneven work load amounts. You are expected to contribute evenly in groups. In the event you find individual(s) not pulling their weight, I will consult with the individual(s) to determine if their grade should be evaluated separately from the group. Additionally, the individual(s) participation grade may suffer. Please email me if any issues or concerns arise within groups. I will find a proper solution and consult Professor Beard if needed."
+    "text": "Group Work:\nThere will be group work in this class. Please consult the syllabus for more details. I will decide how groups are broken up. I will randomly assign new groups for each homework. The rationale behind random assignment is to better encourage community and engagement within the classroom. I still talk to people I met in my undergraduate classes to this day. I found the more I engaged with others, the better I did. Don’t be shy!\nGroup work can sometimes lead to uneven work load amounts. You are expected to contribute evenly in groups. In the event you find individual(s) not pulling their weight, I will consult with the individual(s) to determine if their grade should be evaluated separately from the group. Additionally, the individual(s) participation and homework grade may suffer. Please email me if any issues or concerns arise within groups. I will find a proper solution and consult Professor Beard if needed."
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#recitation-grade",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#recitation-grade",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Recitation Grade:",
+    "text": "Recitation Grade:\nPer the syllabus, recitation is 15% of your overall grade. Attendance accounts for 10%. Participation in recitation accounts for 5%. Showing up to class and participating is important to succeed in this class."
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#week-1-readings",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#week-1-readings",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Week 1 Readings:",
+    "text": "Week 1 Readings:\n\nSmith, Gordon C.S. and Jill P. Pell.  2003.  “Parachute use to prevent death and major trauma related to gravitational challenge:  systematic review of randomized controlled trials.”  BMJ.  327(7429):1459-61.  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC300808/\nYeh, Robert W. et al.  2018.  “Parachute use to prevent death and major trauma when jumping from aircraft:  randomized controlled trial.”  BMJ.  363:(5094).  https://www.bmj.com/content/363/bmj.k5094\nEPA “Introduction”\nRCPA “Getting Started With R”"
   }
 ]
