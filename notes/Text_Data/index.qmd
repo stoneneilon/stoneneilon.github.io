@@ -16,3 +16,25 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 ---
 
 # Week 1
+
+[Click here for syllabus](https://drive.google.com/file/d/13QYHeUt1mlQ4sIT_N1vfRtfh1ny9jAFF/view?usp=sharing)
+
+## Why should we take text as data? 
+
+-   Availability!
+
+-   Text and language are integral components of political science.
+
+-   This field is HOT right now. Very accessible.
+
+-   Opens up exciting new opportunities for measurement and inference.
+
+## What can we learn? 
+
+-   social media data gives us real-time measures of mass and elite behavior
+
+-   Text of floor speeches, press releases, supreme court briefs, and manifestos offer new measures of ideological scaling.
+
+-   Webscraping repeatedly can show us how authoritarian regimes censor content and control information.
+
+-   The language in books and magazines over time can show us how social attitudes have evolved.

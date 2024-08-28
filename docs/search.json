@@ -1376,7 +1376,7 @@
     "href": "notes/Text_Data/index.html",
     "title": "Text as Data",
     "section": "",
-    "text": "Week 1\n\n\n\n\nCitationBibTeX citation:@online{neilon2024,\n  author = {Neilon, Stone},\n  title = {Text as {Data}},\n  date = {2024-08-26},\n  url = {https://stoneneilon.github.io/notes/Text_Data/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nNeilon, Stone. 2024. “Text as Data.” August 26, 2024. https://stoneneilon.github.io/notes/Text_Data/."
+    "text": "Click here for syllabus\n\n\n\nAvailability!\nText and language are integral components of political science.\nThis field is HOT right now. Very accessible.\nOpens up exciting new opportunities for measurement and inference.\n\n\n\n\n\nsocial media data gives us real-time measures of mass and elite behavior\nText of floor speeches, press releases, supreme court briefs, and manifestos offer new measures of ideological scaling.\nWebscraping repeatedly can show us how authoritarian regimes censor content and control information.\nThe language in books and magazines over time can show us how social attitudes have evolved."
   },
   {
     "objectID": "notes/American_Politics/index.html",
@@ -1825,5 +1825,40 @@
     "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
     "section": "Week 1 Readings:",
     "text": "Week 1 Readings:\n\nSmith, Gordon C.S. and Jill P. Pell.  2003.  “Parachute use to prevent death and major trauma related to gravitational challenge:  systematic review of randomized controlled trials.”  BMJ.  327(7429):1459-61.  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC300808/\nYeh, Robert W. et al.  2018.  “Parachute use to prevent death and major trauma when jumping from aircraft:  randomized controlled trial.”  BMJ.  363:(5094).  https://www.bmj.com/content/363/bmj.k5094\nEPA “Introduction”\nRCPA “Getting Started With R”"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#codingmath-concerns",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#codingmath-concerns",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Coding/Math Concerns:",
+    "text": "Coding/Math Concerns:\nSome of you might have chosen to pursue a social science degree simply because you thought it would have less math. Unfortunately for you, math is not going anywhere and you need it to be successful in your career. The purpose of statistics is to use data we have, to tell us about data we do not have. This course will provide you just enough to be dangerous.\nIf you have never coded before or have very little experience with computer concepts, do not fear. In many ways, you may find coding in R to be frustrating and foreign. This is normal. I want to stress that this material is not something you can memorize like history facts. Programmers typically talk about coding as languages. Languages require practice. R will take practice. You will have errors in your code and you will get confused. I will do my best to help you understand how to read and write code using R. Additionally, there is a plethora of information online. Websites such as Stack Exchange, YouTube, Reddit, and other forums probably have solutions to issues you might encounter. I use them all the time, even for trivial stuff.\nRemember that both the Professor and I have office hours to help you, if needed. We are here to help you, so please do not be scared or intimidated to come talk to us, it’s our job. You may also schedule additional help with the department’s Methods Lab Coordinator (these are grad students that have previously TAed this course):\n\nSamantha Register - samantha.register@colorado.edu\n\nConsult this document for more information on the Methods Lab Coordinator"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#lecture-information",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#lecture-information",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Lecture Information:",
+    "text": "Lecture Information:\n\nHow do we know stuff?\n\nTheory + evidence\nTheory: comprehensive explanation for some phenomena.\nDeveloping a theory requires an expectation about a relationship between things.\n\nparachutes increase air resistance\nmore air resistance means slower fall\nslower fall means less acceleration on landing\nless acceleration means less chance of injury\n\nWe can test theory in multiple ways\nWith parachutes:\n\nlots of experiments with air resistance\nlots of observations about how falls cause injury.\n\n\nBasically, statistics needs theory to reach substantive inference."
+  },
+  {
+    "objectID": "notes/Text_Data/index.html#why-should-we-take-text-as-data",
+    "href": "notes/Text_Data/index.html#why-should-we-take-text-as-data",
+    "title": "Text as Data",
+    "section": "",
+    "text": "Availability!\nText and language are integral components of political science.\nThis field is HOT right now. Very accessible.\nOpens up exciting new opportunities for measurement and inference."
+  },
+  {
+    "objectID": "notes/Text_Data/index.html#what-can-we-learn",
+    "href": "notes/Text_Data/index.html#what-can-we-learn",
+    "title": "Text as Data",
+    "section": "",
+    "text": "social media data gives us real-time measures of mass and elite behavior\nText of floor speeches, press releases, supreme court briefs, and manifestos offer new measures of ideological scaling.\nWebscraping repeatedly can show us how authoritarian regimes censor content and control information.\nThe language in books and magazines over time can show us how social attitudes have evolved."
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#week-1-lecture-information",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#week-1-lecture-information",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Week 1 Lecture Information:",
+    "text": "Week 1 Lecture Information:\n\nHow do we know stuff?\n\nTheory + evidence\nTheory: comprehensive explanation for some phenomena.\nDeveloping a theory requires an expectation about a relationship between things.\n\nparachutes increase air resistance\nmore air resistance means slower fall\nslower fall means less acceleration on landing\nless acceleration means less chance of injury\n\nWe can test theory in multiple ways\nWith parachutes:\n\nlots of experiments with air resistance\nlots of observations about how falls cause injury.\n\n\nBasically, statistics needs theory to reach substantive inference."
   }
 ]

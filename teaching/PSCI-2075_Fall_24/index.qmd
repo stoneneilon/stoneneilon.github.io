@@ -77,7 +77,7 @@ Per the syllabus, recitation is 15% of your overall grade. Attendance accounts f
 
 Attendance and participation is part of your grade. Per the instructions of the professor, you are allowed to miss **ONE** class before it starts to count against your grade. You do **NOT** have to email me if you will be missing class. There is no excused or unexcused absence. You simply get one "freebe" to miss class. If you have a valid reason for missing multiple classes, please inform me as soon as possible so we can coordinate the appropriate response together. Subsequent absences after your "freebe" will result in a -10% penalty to your recitation grade. *This will also impact your participation grade as you cannot participate if you are not in class.*
 
-## Coding Concerns:
+## Coding/Math Concerns:
 
 Some of you might have chosen to pursue a social science degree simply because you thought it would have less math. Unfortunately for you, math is not going anywhere and you need it to be successful in your career. The purpose of statistics is to use data we have, to tell us about data we do not have. This course will provide you just enough to be *dangerous*.
 
@@ -87,7 +87,7 @@ Remember that both the Professor and I have office hours to help you, if needed.
 
 -   Samantha Register - samantha.register\@colorado.edu
 
-    -   Consult this [document](https://drive.google.com/file/d/1qDDT5cY4xklJ1lPe4Z5eam-M5lLVtlbG/view?usp=sharing) for more information on the Methods Lab Coordinatr
+    -   Consult this [document](https://drive.google.com/file/d/1qDDT5cY4xklJ1lPe4Z5eam-M5lLVtlbG/view?usp=sharing) for more information on the Methods Lab Coordinator
 
 ## Recitation Expectations:
 
@@ -98,6 +98,34 @@ I want to make sure you do well in the class. I do my best to make recitation fu
 There will be group work in this class. Please consult the syllabus for more details. I will decide how groups are broken up. I will randomly assign new groups for each homework. The rationale behind random assignment is to better encourage community and engagement within the classroom. I still talk to people I met in my undergraduate classes to this day. I found the more I engaged with others, the better I did. Don't be shy!
 
 Group work can sometimes lead to uneven work load amounts. **You are expected to contribute evenly in groups**. In the event you find individual(s) not pulling their weight, I will consult with the individual(s) to determine if their grade should be evaluated separately from the group. Additionally, the individual(s) participation and homework grade may suffer. Please email me if any issues or concerns arise within groups. I will find a proper solution and consult Professor Beard if needed.
+
+## Week 1 Lecture Information: 
+
+-   How do we know stuff?
+
+    -   Theory + evidence
+
+    -   Theory: comprehensive explanation for some phenomena.
+
+    -   Developing a theory requires an expectation about a relationship between things.
+
+        -   parachutes increase air resistance
+
+        -   more air resistance means slower fall
+
+        -   slower fall means less acceleration on landing
+
+        -   less acceleration means less chance of injury
+
+    -   We can test theory in multiple ways
+
+    -   With parachutes:
+
+        -   lots of experiments with air resistance
+
+        -   lots of observations about how falls cause injury.
+
+-   Basically, statistics needs theory to reach substantive inference.
 
 ## Week 1 Readings:
 
