@@ -143,9 +143,15 @@ Download R and R studio!
 
 # Week 2
 
+## Stone's Song of the Week:
+
+[![Khruangbin - Evan Finds the Third Room](khruangbinfront.jpg){fig-align="center" width="392"}](https://www.youtube.com/watch?v=5YkmBaoKBS0)
+
+I saw them at Red Rocks last week. Vibe was incredible, you just had to be there. Is this a humble brag? Yes, I am shameless. No, I will not apologize.
+
 ## What is R?
 
-R is a programming language for statistics. It was first created in 1993. R is an object oriented environment. Many of you have had exposure to Excel and it's formulas. R is somewhat similar in that it gives us the same capabilities. However, R is much more powerful and can evaluate more data than Excel. Unfortunately, what we get in power, we trade off user experience.
+R is a programming language for statistics. It was first created in 1993. R is an object oriented environment. Many of you have had exposure to Excel and it's formulas. R is somewhat similar in that it gives us the same capabilities. However, R is much more powerful, flexible, and can evaluate more data than Excel. Unfortunately, what we get in power and flexibility, we trade off in user experience as there is a bit of a learning curve.
 
 ## What is R Studio?
 
@@ -157,15 +163,25 @@ R Studio is an integrated development environment (IDE). It is an interface that
 
 -   Spaces matter
 
--   YOU SHOULD ALWAYS COMMENT YOUR CODE!
+-   Indentions do not matter (like they do in Python). HOWEVER, you should always indent your code to keep it clean and readable. R will usually automatically indent for you. This concept becomes clearer as you code more.
+
+-   R executes code from the top down.
+
+-   **YOU SHOULD ALWAYS COMMENT YOUR CODE!**
 
     -   You will forget what your code does sometimes. It is important to add comments so that you can remember what the code actually does.
 
--   "\#" allows you to comment your code. You can type anything after the \# and R studio will not execute that code (it basically skips over it).
+-   "\#" allows you to comment your code. You can type anything after the \# and R studio will not execute that code (it basically skips over it). See example below
+
+    ```{r}
+    x <- "Hello World"
+    # anything I write after the "#" will not be executed
+    print(x) # this code will tell R to print the object x. 
+    ```
 
 ## Folders and Organization:
 
-Folders and your file system within your computer is **very** important. Computers are extremely DUMB! You need to tell it EXACTLY what to do or else, it won't work. Leaving your files in your default download folder will cause you extreme headache down. To prevent this, we are going to create a new folder on your desktop (or somewhere else that works better for you). You should label it "PSCI_2075". When you download and save files for this class, you should save it within the PSCI_2075 file.
+Folders and your file system within your computer is **very** important. Computers are extremely DUMB. You need to tell it EXACTLY what to do or else, it won't work. Leaving your files in your default download folder will cause you extreme headache down the road. **To prevent this, we are going to create a new folder on your desktop (or somewhere else that works better for you). You should label it "PSCI_2075". When you download and save files for this class, you should save it within the PSCI_2075 file.**
 
 Think of folders as a [Russian Doll](https://images.app.goo.gl/C6zeW1AfC8xSy1mx7). We need our file system to be organized because we have to tell our computer what we want R to look at. This will become clearer as we start coding within R.
 
@@ -178,3 +194,261 @@ Think of folders as a [Russian Doll](https://images.app.goo.gl/C6zeW1AfC8xSy1mx7
 ![PC folder example](pc_file_example.jpg){fig-align="center"}
 
 ## Inside R Studio:
+
+![](rstudio-panes-labeled.jpeg){fig-align="center"}
+
+### Source Pane:
+
+-   The source pane is where you will write your code.
+
+-   It is essentially the word doc for R.
+
+-   It is also where the button to run code is located.
+
+    -   For mac: Command + Enter is the shortcut
+
+    -   For PC: Ctrl + Enter is the shortcut
+
+### Console Pane:
+
+-   You CAN write code straight into the console pane.
+
+    -   You generally should not do that because it will not save **ANYTHING** you write in there.
+
+-   You generally use this to see what R will do when trying different things.
+
+### Environment Pane:
+
+-   When you create an object (either in the source or console pane) that object will be appear there.
+
+-   When you end your session. Those objects will disappear (they take up a lot of RAM on your computer).
+
+    -   that is okay! Because you should have all the code you used to create those objects saved in your source pane.
+
+        -   so you can just rerun the code and those objects will repopulate.
+
+-   If you want to clear the environment, the picture of the broom in the top middle will accomplish this.
+
+-   You will also see a number with "MiB" next to it.
+
+    -   this is how much RAM R is using.
+
+        -   RAM stands for Random Access Memories (also a great Daft Punk album).
+
+        -   Think of RAM as like short term memory for your computer.
+
+        -   Don't worry about it, but it is a nice indicator that can help you understand how hard R is working - if your R studio is slow that might indicate why.
+
+### Output/File Pane:
+
+-   This pane has quite a bit of utility.
+
+-   When we start creating graphs, they will show up here (in the plot section).
+
+-   Additionally, the file section is pretty useful. Think of it as a more accessible Finder (if you are on mac) - Folder system of your entire computer.
+
+## R Basics:
+
+-   **Object:** R's way of storing data in its memory, comparable to containers for physical things. Everything that exists in R is an object.
+
+    -   How do we create an object?
+
+        -   In R, we use "\<-"
+
+            -   Try creating an object in your Source pane. What happens?
+
+-   **Functions:** perform a defined sequence of actions. Functions are like verbs, we are telling R to take some object (noun) and do something with it.
+
+    -   There are literally a million functions. You do not need to memorize them.
+
+```{r}
+x <- c(2,3,6,8,21,2,67,8) # create a numerical vector and call it "x" 
+sum(x) # sum() is the function. 
+range(x) # range() is another function. Look at the repsective outputs
+```
+
+### Arguments:
+
+-   Arguments are the parameters of the function
+
+-   The functions above are rather simple but what happens when we have functions that we need to specify a bit more?
+
+    -   we give the function arguments.
+
+```{r}
+x <- seq(from = 2, to = 20, by = 2)
+x
+# create a sequence of numbers starting at value 2, going until 20 and count by 2. Then assign it as an object "x". 
+```
+
+The code above articulates what an argument is. I am telling the function how I want it to be executed.
+
+```{r}
+y <- seq(10, 100, 5)
+y
+# note that you don't need to specific from, to, and by. The order is predetermined. Although it is good convention so you can better read what your code is doing. 
+```
+
+But Stone, how do we know what the arguments for the function are?! Good question! Every function has different arguments. The "help" section in the output/file pane will help you here. Go to that section and type in the search bar the name of your function. It will provide that arguments for you. You can also type "?seq" into the console and it will automatically take you to the help file for that function.
+
+### Types of objects:
+
+Knowing your object type/class is important. What if we have a bunch of numbers that are strings and we want to add them. We can't do that because R is treating them as characters and not numbers! There are ways to change the object type. I will introduce that concept at a later point. For now, just familiarize yourself with the object types.
+
+-   String
+
+    -   anything in between " ".
+
+        ```{r}
+        x <- "1, 2, 3, 4"
+        y <- "yee-haw"
+        z <- "1 one, 2 two, 3 three, (>_<) - words + symbols...anything between the quotes is a string."
+        x
+        y
+        z
+        ```
+
+-   Numeric
+
+    -   These are your integers (and floats - fancy way to say numbers with decimals)
+
+        ```{r}
+        num_example <- c(1,2,3,4,5,6.2,3.141592654)
+        num_example
+        ```
+
+-   Factor
+
+    -   Think binary - TRUE or FALSE.
+
+-   Vector
+
+    -   Think of a vector as a column or row.
+
+    -   I've already created a few vectors in previous examples. Can you tell me how I did that?
+
+-   Array
+
+    -   Don't worry about this right now.
+
+-   Matrix
+
+    -   Don't worry about this right now.
+
+### Libraries:
+
+R has "base" functions. Think of this in car terms, you buy a standard version and it comes with the basics. But now you want to go offroading and you need bigger tires. So, you go out and upgrade your stock car and buy bigger tires. Libraries are the same thing. Stock R might not have what we need, so we add a library that gives us new capabilities. There are libraries that you will almost always use. We will discuss what they are and what they do.
+
+#### Popular libraries:
+
+-   Tidyverse - this the one you will almost always use. It is a big library with a bunch of other smaller libraries within it.
+
+-   Haven - this will help with importing data.
+
+-   Foreign - another library used to import data.
+
+-   There are so many more but these will be the ones you probably see the most.
+
+#### Installing libraries: 
+
+-   You only have to install them once.
+
+    ```{r}
+    #| eval: false
+    install.packages("tidyverse") # run this code and you will have installed tidyverse. You will never need to run this code again. 
+
+    ```
+
+-   Just because you have it installed does not mean R will automatically recognize it. You need to call it up or "invoke" its use. Generally, you just do this at the top of your script.
+
+    ```{r}
+    #| eval: false
+    library(tidyverse)
+    ```
+
+-   Congrats! You now have the functionality of tidyverse within your R session.
+
+### Saving:
+
+-   When you are done in R studio. You need to save your work and organize it appropriately.
+
+-   Name the file 2024-09-05_R_Lab_1
+
+-   Whether you are on PC or Mac, go to File \> Save As \> Desktop \> PSCI_2075
+
+    -   your file is now stored in the folder we created earlier.
+
+-   Now close out of R completely (click no. Clicking yes is a bad habit that is clunky and uses a lot of memory for your computer)
+
+-   Reopen R by clicking the file you just saved in the folder.
+
+-   After you initially save, a simple save after you are done will suffice. (Command S is the shortcut for Mac, Ctrl S is the shortcut for PC)
+
+## Importing data:
+
+### Downloading a file:
+
+-   We first need to get data from somewhere. There are a bunch of ways to get data into R but we will focus on the simplest way.
+
+-   Download [this .csv file](https://drive.google.com/file/d/1w45yGX6lYA3ApoEt76OR6qEHptDxTFWP/view?usp=sharing) and **put it into the PSCI_2075 folder.**
+
+-   *Note:* there is known bug with downloading datasets from Safari. It doesn't happen often but if you notice anything weird about the data, it may be an issue caused by downloading from Safari.
+
+    -   to mitigate this, download the file from either Google Chrome or Firefox.
+
+### Working Directory:
+
+-   Remember how I said file organization is very important, well buckle in.
+
+-   Your computer cannot and does not think like you. It needs to be told EXACTLY what to do or else it panics.
+
+-   When we are working with data (generally a .csv file) we need to import it into R studio.
+
+-   We need to tell R studio what we want it to look at. The issue is R studio doesn't know what to do unless you tell it exactly where the file is.
+
+-   We will work through this during recitation.
+
+#### Where is R Studio working out of?
+
+1.  R Studio defaults to some folder to look at initially.
+
+2.  To figure this out type the following into the source pane:
+
+    1.  getwd()
+
+        1.  we are telling R to tell us what working directory it is looking at.
+
+        2.  each person will have their own unique working directory.
+
+    2.  setwd("...")
+
+        1.  **THIS IS IMPORTANT AND IS UNIQUE TO YOU!**
+
+        2.  We are telling R where we want it to look.
+
+        3.  We can use the File Pane to help us with this
+
+            1.  Click "home" in the file section.
+
+            2.  We want R studio to work out of that folder we created on our Desktop called "PSCI_2075"
+
+            3.  Click "Desktop"
+
+            4.  Look for the folder PSCI_2075 and click it.
+
+                1.  Now click the cog wheel with "More" written next to it.
+
+                2.  click "Copy folder path to clipboard"
+
+                3.  You then paste that within the quotes:
+
+                    1.  setwd("\~/Desktop/PSCI_2075")
+
+                        1.  Run the code
+
+                            1.  **THIS IS MY UNIQUE PATH. YOURS WILL LOOK DIFFERENT**
+                            2.  THIS IS WHERE MOST PEOPLE MESS UP!
+
+                    2.  Now check if it worked by running getwd() again.
+
+                        1.  The directory should be different now.

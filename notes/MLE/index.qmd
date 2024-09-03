@@ -23,7 +23,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 ### King Chapters 1 & 2
 
-#### Chapter 1: 
+#### Chapter 1:
 
 -   Introduction of the book. Political science methodology is disjointed and not as completely coherent as it should (and needs) to be. King seeks to organize and centralize the political science methodology.
 
@@ -47,11 +47,11 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
     -   By posing these questions, statistical modelling will be more theoretically relevant and empirically fruitful.
 
-#### Chapter 2: 
+#### Chapter 2:
 
-### Ward and Ahlquist Chapter 1: 
+### Ward and Ahlquist Chapter 1:
 
-## Lecture: 
+## Lecture:
 
 [Week 1 Slides](https://www.dropbox.com/scl/fi/n8anv7gle9cit9sp8v329/MLE-week1-Handout.pdf?rlkey=38st1zfju2yrsyh0ybgw51zw5&st=8rnk9udt&dl=0)
 
@@ -75,7 +75,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
     -   Mutually exclusive outcomes.
 
--    Theta is the only parameter we need to estimate.
+-   Theta is the only parameter we need to estimate.
 
 -   We are still specifying the distribution of the outcome variable. Is it a poisson, bernoulli, normal, etc?
 
@@ -103,6 +103,6 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
     -   We can estimate all of these using OLS but we may hit a few snags and violation assumptions.
 
-## Homework 1: 
+## Homework 1:
 
 -   "Lab 1.R"

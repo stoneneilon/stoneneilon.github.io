@@ -47,19 +47,19 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 # Week 2 - Recent Research in the Subfield
 
-## In-Class Notes: 
+## In-Class Notes:
 
 ## [Fowler, Anthony, et al. 2023. "Moderates," American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/moderates/71A6A9BD7EC7A5C94F975703417F866F)
 
-### Abstract: 
+### Abstract:
 
-Moderates are often overlooked in contemporary research on American voters. Many scholars who have examined moderates argue that these individuals are only classified as such due to a lack of political sophistication or conflicted views across issues. We develop a method to distinguish three ways an individual might be classified as moderate: having genuinely moderate views across issues, being inattentive to politics or political surveys, or holding views poorly summarized by a single liberal--conservative dimension. We find that a single ideological dimension accurately describes most, but not all, Americans\' policy views. Using the classifications from our model, we demonstrate that moderates and those whose views are not well explained by a single dimension are especially consequential for electoral selection and accountability. These results suggest a need for renewed attention to the middle of the American political spectrum.
+Moderates are often overlooked in contemporary research on American voters. Many scholars who have examined moderates argue that these individuals are only classified as such due to a lack of political sophistication or conflicted views across issues. We develop a method to distinguish three ways an individual might be classified as moderate: having genuinely moderate views across issues, being inattentive to politics or political surveys, or holding views poorly summarized by a single liberal--conservative dimension. We find that a single ideological dimension accurately describes most, but not all, Americans' policy views. Using the classifications from our model, we demonstrate that moderates and those whose views are not well explained by a single dimension are especially consequential for electoral selection and accountability. These results suggest a need for renewed attention to the middle of the American political spectrum.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 Moderates need to be classified better and deserve more focus
 
-### Research Question: 
+### Research Question:
 
 How can we better identify moderates?
 
@@ -83,7 +83,7 @@ Why (from a survey perspective) are people moderate?
 
 -   There are obvious survey issues in trying to figure out if someone is a moderate.
 
-### Method: 
+### Method:
 
 -   Sort classically identified moderates into three subgroups of moderate type:
 
@@ -117,7 +117,7 @@ Why (from a survey perspective) are people moderate?
 
             -   if they conflict with the guttman scale - that is probably not a downsian voter.
 
-### Data: 
+### Data:
 
 -   Cooperative Congressional Election Study (CCES)
 
@@ -135,7 +135,7 @@ Why (from a survey perspective) are people moderate?
 
     -   they wanted all questions to be binary.
 
-### Findings: 
+### Findings:
 
 -   Moderates are more attentive to elections (than liberals and conservatives)
 
@@ -159,21 +159,21 @@ Why (from a survey perspective) are people moderate?
 
 ## [Mehlhaff, Isaac, et al. 2024. "Where Motivated Reasoning Withers and Looms Large: Fear and Partisan Reactions to the COVID-19 Pandemic," American Journal of Political Science.](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12808)
 
-### Abstract: 
+### Abstract:
 
 Contemporary American politics has been largely characterized by hyperpartisanship and polarization, withpartisan-motivated reasoning a thematic concern. Theories of emotions in politics suggest that anxiety might interruptpartisan heuristics and encourage citizens to reason more evenhandedly---but in what domains and to what extent? We useoriginal panel data to assess how anxiety about becoming seriously ill from COVID-19 interacted with partisan attachmentsto shape political judgment during the COVID-19 pandemic. The structure of our data allows us to assess large-scaleimplications of politically relevant emotions in ways that so far have not been possible. We find large effects on policyattitudes: Republicans who were afraid of getting sick rejected signals from copartisan leaders by supporting mask mandatesand the like. Effects on vote choice for Republicans were muted in comparison, but fear's large effect on independents mayhave been pivotal.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 Fear and anxiety can influence partisanship (a little)
 
-### Research Question: 
+### Research Question:
 
 -   Why, then, did so many Republicans prefer policies starkly different from those suggested by their leaders but so few vote against those leaders?
 
 -   How did the anxiety of COVID-19 influence partisan politics?
 
-### Background: 
+### Background:
 
 -   Partisanship influences how people see, act, and listen.
 
@@ -187,7 +187,7 @@ Fear and anxiety can influence partisanship (a little)
 
 -   **Accuracy Driven Reasoning:** a processing style in which people exert more effort to reach correct conclusions. They "attend to relevant information more carefully," "process it more deeply," and "\[consider\] more alternatives"
 
-### Hypothesis: 
+### Hypothesis:
 
 1.  Fearful individuals will be more supportive of pandemic mitigation policies such as mask mandates.
 
@@ -201,7 +201,7 @@ Fear and anxiety can influence partisanship (a little)
 
 4.  Fearful Republicans should move further toward support for mitigation policies simply because their attitudes have more room to change in that direction.
 
-### Data: 
+### Data:
 
 -   Qualtrics survey in April 2020
 
@@ -225,7 +225,7 @@ Fear and anxiety can influence partisanship (a little)
 
 -   Finally, wave 4 is used to examine who the respondent will vote for in the election.
 
-### Findings: 
+### Findings:
 
 -   Anxiety about real-world events can decouple partisans' policy positions from those of their party leaders. Once citizensenter the voting booth, however, their ability to assessaccountability and mete out electoral reward or punishment remains deeply affected by partisanship even underpandemic conditions.
 
@@ -247,7 +247,7 @@ Fear and anxiety can influence partisanship (a little)
 
     ![](Melhaff_fear_results_trump.png){width="468"}
 
-### Notes: 
+### Notes:
 
 -   I don't like the way it discusses elite cues.
 
@@ -261,27 +261,27 @@ Fear and anxiety can influence partisanship (a little)
 
 I like this one!
 
-### Abstract: 
+### Abstract:
 
 While some assert that social identities have become more salient in American media coverage, existing evidence is largely anecdotal. An increased emphasis on social identities has important political implications, including for polarization and representation. We first document the rising salience of different social identities using natural language processing tools to analyze all tweets from 19 media outlets (2008--2021) alongside 553,078 URLs shared on Facebook. We then examine one potential mechanism: Outlets may highlight meaningful social identities---race/ethnicity, gender, religion, or partisanship---to attract readers through various social and psychological pathways. We find that identity cues are associated with increases in some forms of engagement on social media. To probe causality, we analyze 3,828 randomized headline experiments conducted via Upworthy. Headlines mentioning racial/ethnic identities generated more engagement than headlines that did not, with suggestive evidence for other identities. Identity-oriented media coverage is growing and rooted partly in audience demand.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 More engagement/demand with articles that include identities in headlines.
 
-### Research Question: 
+### Research Question:
 
 1.  Have social identities become more prominent in the political information environment?
 
 2.  Do the same stories generate more engagement when framed with identity-oriented language?
 
-### Hypothesis: 
+### Hypothesis:
 
 1.  Media coverage of social identities has grown in recent decades as outlets adopt identity-oriented coverage strategies (production of identity-oriented content)
 
 2.  On social media, news content referencing core social identities is especially likely to generate engagement (audience level reaction to content)
 
-### Background: 
+### Background:
 
 -   Voters may make different voting decisions when the salience of key issues changes
 
@@ -311,7 +311,7 @@ More engagement/demand with articles that include identities in headlines.
 
     -   social identity cues help individuals understand the applicable group norms in specific contexts
 
-### Data: 
+### Data:
 
 -   All tweets from 19 American media outlets (2008-2021; n = 6,235,014)
 
@@ -319,7 +319,7 @@ More engagement/demand with articles that include identities in headlines.
 
 -   News website Upworthy assigned different headlines to different people of similar stories (2013-2015)
 
-### Results: 
+### Results:
 
 -   Posts with identity-related contenthave higher levels of expressive and social engagement (measured via liking and sharing) than those without it.
 
@@ -339,15 +339,15 @@ More engagement/demand with articles that include identities in headlines.
 
 ## [Chiou, Fang-Yi and Max Goplerud. 2024. "Effective Lawmaking Across Congressional Eras," Journal of Politics.](https://mgoplerud.com/papers/CG_Eras.pdf)
 
-### Abstract: 
+### Abstract:
 
 A key concept in American legislative politics is the extent to which members are effective, i.e. have the ability to propose and advance bills on important topics in Congress. We propose a new measure of a member's legislative effectiveness that covers both chambers from 1873 to 2010 and incorporates all 1.1 million introduced bills, opening up a wide range of new opportunities for examining legislative institutions and behavior across this long historical period. To pursue this, we theorize and empirically examine how the determinants of a member's legislative effectiveness hinge on legislative institutions. While uncovering consistent results with the existing literature that has focused on the period starting in the early 1970s, we find striking differences when examining earlier periods. For instance, we find that ideological moderates have higher effectiveness relative to extremists before 1975, whereas the importance of majority-party membership increases dramatically from 1947.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 We made a new legislative efficiency score that tells us stuff about political history.
 
-### Background: 
+### Background:
 
 -   What does it mean to be an effective lawmaker?
 
@@ -359,11 +359,11 @@ We made a new legislative efficiency score that tells us stuff about political h
 
 -   Rule changes + organizational changes separate the legislative eras.
 
-### Hypothesis: 
+### Hypothesis:
 
-![Which factors the authors expect will have the most impact on legislative efficiency in different eras. ](Chiou_hyp_matrix.png){fig-align="center" width="541"}
+![Which factors the authors expect will have the most impact on legislative efficiency in different eras.](Chiou_hyp_matrix.png){fig-align="center" width="541"}
 
-### Data: 
+### Data:
 
 -   Create a member-level measure of effectiveness by considering the totality of bills that are introduced into Congress within a term.
 
@@ -373,7 +373,7 @@ We made a new legislative efficiency score that tells us stuff about political h
 
 -   1.1 million bills
 
-### Results: 
+### Results:
 
 -   Between the 1890s and 1946, we find that ideological extremism harms a members legislative effectiveness.
 
@@ -395,17 +395,17 @@ We made a new legislative efficiency score that tells us stuff about political h
 
 ## [Levendusky, Matt, et al. 2024. "Has the Supreme Court Become Just Another Political Branch? Public Perceptions of Court Approval and Legitimacy in a Post-Dobbs World," Science.](https://www.science.org/doi/10.1126/sciadv.adk9590)
 
-### Abstract: 
+### Abstract:
 
-Have perceptions of the U.S. Supreme Court polarized, much like the rest of American politics? Because of the Court\'s unique role, for many years, it remained one of the few institutions respected by both Democrats and Republicans alike. But the Court\'s dramatic shift to the right in recent years---highlighted by its *Dobbs* decision in 2022---potentially upends that logic. Using both eight waves of panel data and 18 nationally representative surveys spanning two decades, we show that while there was little evidence of partisan polarization in earlier years, in 2022 and 2023, such patterns are clear in favorability, trust, legitimacy, and support for reform. Factors that used to protect the Court---like knowledge about it and support for key democratic values---no longer do so. The Court has also become more important to voters, and will likely remain a political flashpoint, with disquieting implications for the Court\'s place in our polity.
+Have perceptions of the U.S. Supreme Court polarized, much like the rest of American politics? Because of the Court's unique role, for many years, it remained one of the few institutions respected by both Democrats and Republicans alike. But the Court's dramatic shift to the right in recent years---highlighted by its *Dobbs* decision in 2022---potentially upends that logic. Using both eight waves of panel data and 18 nationally representative surveys spanning two decades, we show that while there was little evidence of partisan polarization in earlier years, in 2022 and 2023, such patterns are clear in favorability, trust, legitimacy, and support for reform. Factors that used to protect the Court---like knowledge about it and support for key democratic values---no longer do so. The Court has also become more important to voters, and will likely remain a political flashpoint, with disquieting implications for the Court's place in our polity.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
-### Research Question: 
+### Research Question:
 
 Has the Supreme Court become politicized and lost legitimacy in recent years?
 
-### Background: 
+### Background:
 
 -   Court needs legitimacy
 
@@ -423,7 +423,7 @@ Has the Supreme Court become politicized and lost legitimacy in recent years?
 
     -   Probably the biggest decision in recent Court history.
 
-### Data: 
+### Data:
 
 -   18 nationally represented surveys spanning nearly two decades
 
@@ -431,7 +431,7 @@ Has the Supreme Court become politicized and lost legitimacy in recent years?
 
 -   8 wave panel dataset
 
-### Results: 
+### Results:
 
 -   Court has lost legitimacy and favorability
 
@@ -443,7 +443,7 @@ Has the Supreme Court become politicized and lost legitimacy in recent years?
 
 -   Increase support for court reforms.
 
-### Notes: 
+### Notes:
 
 -   This seems like the same article that Gibson wrote about the effect of Dobbs.
 

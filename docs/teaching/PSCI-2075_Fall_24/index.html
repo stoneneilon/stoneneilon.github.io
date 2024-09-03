@@ -23,6 +23,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -150,6 +184,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2">Week 2</a>
   <ul class="collapse">
+  <li><a href="#stones-song-of-the-week" id="toc-stones-song-of-the-week" class="nav-link" data-scroll-target="#stones-song-of-the-week">Stone’s Song of the Week:</a></li>
   <li><a href="#what-is-r" id="toc-what-is-r" class="nav-link" data-scroll-target="#what-is-r">What is R?</a></li>
   <li><a href="#what-is-r-studio" id="toc-what-is-r-studio" class="nav-link" data-scroll-target="#what-is-r-studio">What is R Studio?</a></li>
   <li><a href="#things-you-should-know" id="toc-things-you-should-know" class="nav-link" data-scroll-target="#things-you-should-know">Things you should know:</a></li>
@@ -158,7 +193,25 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#for-mac-example" id="toc-for-mac-example" class="nav-link" data-scroll-target="#for-mac-example">For Mac example:</a></li>
   <li><a href="#for-pc-example" id="toc-for-pc-example" class="nav-link" data-scroll-target="#for-pc-example">For PC example:</a></li>
   </ul></li>
-  <li><a href="#inside-r-studio" id="toc-inside-r-studio" class="nav-link" data-scroll-target="#inside-r-studio">Inside R Studio:</a></li>
+  <li><a href="#inside-r-studio" id="toc-inside-r-studio" class="nav-link" data-scroll-target="#inside-r-studio">Inside R Studio:</a>
+  <ul class="collapse">
+  <li><a href="#source-pane" id="toc-source-pane" class="nav-link" data-scroll-target="#source-pane">Source Pane:</a></li>
+  <li><a href="#console-pane" id="toc-console-pane" class="nav-link" data-scroll-target="#console-pane">Console Pane:</a></li>
+  <li><a href="#environment-pane" id="toc-environment-pane" class="nav-link" data-scroll-target="#environment-pane">Environment Pane:</a></li>
+  <li><a href="#outputfile-pane" id="toc-outputfile-pane" class="nav-link" data-scroll-target="#outputfile-pane">Output/File Pane:</a></li>
+  </ul></li>
+  <li><a href="#r-basics" id="toc-r-basics" class="nav-link" data-scroll-target="#r-basics">R Basics:</a>
+  <ul class="collapse">
+  <li><a href="#arguments" id="toc-arguments" class="nav-link" data-scroll-target="#arguments">Arguments:</a></li>
+  <li><a href="#types-of-objects" id="toc-types-of-objects" class="nav-link" data-scroll-target="#types-of-objects">Types of objects:</a></li>
+  <li><a href="#libraries" id="toc-libraries" class="nav-link" data-scroll-target="#libraries">Libraries:</a></li>
+  <li><a href="#saving" id="toc-saving" class="nav-link" data-scroll-target="#saving">Saving:</a></li>
+  </ul></li>
+  <li><a href="#importing-data" id="toc-importing-data" class="nav-link" data-scroll-target="#importing-data">Importing data:</a>
+  <ul class="collapse">
+  <li><a href="#downloading-a-file" id="toc-downloading-a-file" class="nav-link" data-scroll-target="#downloading-a-file">Downloading a file:</a></li>
+  <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory">Working Directory:</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -337,9 +390,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="week-2" class="level1">
 <h1>Week 2</h1>
+<section id="stones-song-of-the-week" class="level2">
+<h2 class="anchored" data-anchor-id="stones-song-of-the-week">Stone’s Song of the Week:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.youtube.com/watch?v=5YkmBaoKBS0"><img src="khruangbinfront.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="392" alt="Khruangbin - Evan Finds the Third Room"></a></p>
+</figure>
+</div>
+<figcaption>Khruangbin - Evan Finds the Third Room</figcaption>
+</figure>
+</div>
+<p>I saw them at Red Rocks last week. Vibe was incredible, you just had to be there. Is this a humble brag? Yes, I am shameless. No, I will not apologize.</p>
+</section>
 <section id="what-is-r" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-r">What is R?</h2>
-<p>R is a programming language for statistics. It was first created in 1993. R is an object oriented environment. Many of you have had exposure to Excel and it’s formulas. R is somewhat similar in that it gives us the same capabilities. However, R is much more powerful and can evaluate more data than Excel. Unfortunately, what we get in power, we trade off user experience.</p>
+<p>R is a programming language for statistics. It was first created in 1993. R is an object oriented environment. Many of you have had exposure to Excel and it’s formulas. R is somewhat similar in that it gives us the same capabilities. However, R is much more powerful, flexible, and can evaluate more data than Excel. Unfortunately, what we get in power and flexibility, we trade off in user experience as there is a bit of a learning curve.</p>
 </section>
 <section id="what-is-r-studio" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-r-studio">What is R Studio?</h2>
@@ -350,16 +417,26 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>R is case sensitive.</p></li>
 <li><p>Spaces matter</p></li>
-<li><p>YOU SHOULD ALWAYS COMMENT YOUR CODE!</p>
+<li><p>Indentions do not matter (like they do in Python). HOWEVER, you should always indent your code to keep it clean and readable. R will usually automatically indent for you. This concept becomes clearer as you code more.</p></li>
+<li><p>R executes code from the top down.</p></li>
+<li><p><strong>YOU SHOULD ALWAYS COMMENT YOUR CODE!</strong></p>
 <ul>
 <li>You will forget what your code does sometimes. It is important to add comments so that you can remember what the code actually does.</li>
 </ul></li>
-<li><p>“#” allows you to comment your code. You can type anything after the # and R studio will not execute that code (it basically skips over it).</p></li>
+<li><p>“#” allows you to comment your code. You can type anything after the # and R studio will not execute that code (it basically skips over it). See example below</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="st">"Hello World"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># anything I write after the "#" will not be executed</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x) <span class="co"># this code will tell R to print the object x. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Hello World"</code></pre>
+</div>
+</div></li>
 </ul>
 </section>
 <section id="folders-and-organization" class="level2">
 <h2 class="anchored" data-anchor-id="folders-and-organization">Folders and Organization:</h2>
-<p>Folders and your file system within your computer is <strong>very</strong> important. Computers are extremely DUMB! You need to tell it EXACTLY what to do or else, it won’t work. Leaving your files in your default download folder will cause you extreme headache down. To prevent this, we are going to create a new folder on your desktop (or somewhere else that works better for you). You should label it “PSCI_2075”. When you download and save files for this class, you should save it within the PSCI_2075 file.</p>
+<p>Folders and your file system within your computer is <strong>very</strong> important. Computers are extremely DUMB. You need to tell it EXACTLY what to do or else, it won’t work. Leaving your files in your default download folder will cause you extreme headache down the road. <strong>To prevent this, we are going to create a new folder on your desktop (or somewhere else that works better for you). You should label it “PSCI_2075”. When you download and save files for this class, you should save it within the PSCI_2075 file.</strong></p>
 <p>Think of folders as a <a href="https://images.app.goo.gl/C6zeW1AfC8xSy1mx7">Russian Doll</a>. We need our file system to be organized because we have to tell our computer what we want R to look at. This will become clearer as we start coding within R.</p>
 <section id="for-mac-example" class="level3">
 <h3 class="anchored" data-anchor-id="for-mac-example">For Mac example:</h3>
@@ -382,8 +459,289 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="inside-r-studio" class="level2">
 <h2 class="anchored" data-anchor-id="inside-r-studio">Inside R Studio:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="rstudio-panes-labeled.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<section id="source-pane" class="level3">
+<h3 class="anchored" data-anchor-id="source-pane">Source Pane:</h3>
+<ul>
+<li><p>The source pane is where you will write your code.</p></li>
+<li><p>It is essentially the word doc for R.</p></li>
+<li><p>It is also where the button to run code is located.</p>
+<ul>
+<li><p>For mac: Command + Enter is the shortcut</p></li>
+<li><p>For PC: Ctrl + Enter is the shortcut</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="console-pane" class="level3">
+<h3 class="anchored" data-anchor-id="console-pane">Console Pane:</h3>
+<ul>
+<li><p>You CAN write code straight into the console pane.</p>
+<ul>
+<li>You generally should not do that because it will not save <strong>ANYTHING</strong> you write in there.</li>
+</ul></li>
+<li><p>You generally use this to see what R will do when trying different things.</p></li>
+</ul>
+</section>
+<section id="environment-pane" class="level3">
+<h3 class="anchored" data-anchor-id="environment-pane">Environment Pane:</h3>
+<ul>
+<li><p>When you create an object (either in the source or console pane) that object will be appear there.</p></li>
+<li><p>When you end your session. Those objects will disappear (they take up a lot of RAM on your computer).</p>
+<ul>
+<li><p>that is okay! Because you should have all the code you used to create those objects saved in your source pane.</p>
+<ul>
+<li>so you can just rerun the code and those objects will repopulate.</li>
+</ul></li>
+</ul></li>
+<li><p>If you want to clear the environment, the picture of the broom in the top middle will accomplish this.</p></li>
+<li><p>You will also see a number with “MiB” next to it.</p>
+<ul>
+<li><p>this is how much RAM R is using.</p>
+<ul>
+<li><p>RAM stands for Random Access Memories (also a great Daft Punk album).</p></li>
+<li><p>Think of RAM as like short term memory for your computer.</p></li>
+<li><p>Don’t worry about it, but it is a nice indicator that can help you understand how hard R is working - if your R studio is slow that might indicate why.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="outputfile-pane" class="level3">
+<h3 class="anchored" data-anchor-id="outputfile-pane">Output/File Pane:</h3>
+<ul>
+<li><p>This pane has quite a bit of utility.</p></li>
+<li><p>When we start creating graphs, they will show up here (in the plot section).</p></li>
+<li><p>Additionally, the file section is pretty useful. Think of it as a more accessible Finder (if you are on mac) - Folder system of your entire computer.</p></li>
+</ul>
+</section>
+</section>
+<section id="r-basics" class="level2">
+<h2 class="anchored" data-anchor-id="r-basics">R Basics:</h2>
+<ul>
+<li><p><strong>Object:</strong> R’s way of storing data in its memory, comparable to containers for physical things. Everything that exists in R is an object.</p>
+<ul>
+<li><p>How do we create an object?</p>
+<ul>
+<li><p>In R, we use “&lt;-”</p>
+<ul>
+<li>Try creating an object in your Source pane. What happens?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Functions:</strong> perform a defined sequence of actions. Functions are like verbs, we are telling R to take some object (noun) and do something with it.</p>
+<ul>
+<li>There are literally a million functions. You do not need to memorize them.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">21</span>,<span class="dv">2</span>,<span class="dv">67</span>,<span class="dv">8</span>) <span class="co"># create a numerical vector and call it "x" </span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x) <span class="co"># sum() is the function. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 117</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(x) <span class="co"># range() is another function. Look at the repsective outputs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2 67</code></pre>
+</div>
+</div>
+<section id="arguments" class="level3">
+<h3 class="anchored" data-anchor-id="arguments">Arguments:</h3>
+<ul>
+<li><p>Arguments are the parameters of the function</p></li>
+<li><p>The functions above are rather simple but what happens when we have functions that we need to specify a bit more?</p>
+<ul>
+<li>we give the function arguments.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">2</span>, <span class="at">to =</span> <span class="dv">20</span>, <span class="at">by =</span> <span class="dv">2</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  2  4  6  8 10 12 14 16 18 20</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a sequence of numbers starting at value 2, going until 20 and count by 2. Then assign it as an object "x". </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The code above articulates what an argument is. I am telling the function how I want it to be executed.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">10</span>, <span class="dv">100</span>, <span class="dv">5</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80  85  90  95 100</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># note that you don't need to specific from, to, and by. The order is predetermined. Although it is good convention so you can better read what your code is doing. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>But Stone, how do we know what the arguments for the function are?! Good question! Every function has different arguments. The “help” section in the output/file pane will help you here. Go to that section and type in the search bar the name of your function. It will provide that arguments for you. You can also type “?seq” into the console and it will automatically take you to the help file for that function.</p>
+</section>
+<section id="types-of-objects" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-objects">Types of objects:</h3>
+<p>Knowing your object type/class is important. What if we have a bunch of numbers that are strings and we want to add them. We can’t do that because R is treating them as characters and not numbers! There are ways to change the object type. I will introduce that concept at a later point. For now, just familiarize yourself with the object types.</p>
+<ul>
+<li><p>String</p>
+<ul>
+<li><p>anything in between ” “.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="st">"1, 2, 3, 4"</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="st">"yee-haw"</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="st">"1 one, 2 two, 3 three, (&gt;_&lt;) - words + symbols...anything between the quotes is a string."</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "1, 2, 3, 4"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "yee-haw"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>z</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "1 one, 2 two, 3 three, (&gt;_&lt;) - words + symbols...anything between the quotes is a string."</code></pre>
+</div>
+</div></li>
+</ul></li>
+<li><p>Numeric</p>
+<ul>
+<li><p>These are your integers (and floats - fancy way to say numbers with decimals)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>num_example <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="fl">6.2</span>,<span class="fl">3.141592654</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>num_example</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.000000 2.000000 3.000000 4.000000 5.000000 6.200000 3.141593</code></pre>
+</div>
+</div></li>
+</ul></li>
+<li><p>Factor</p>
+<ul>
+<li>Think binary - TRUE or FALSE.</li>
+</ul></li>
+<li><p>Vector</p>
+<ul>
+<li><p>Think of a vector as a column or row.</p></li>
+<li><p>I’ve already created a few vectors in previous examples. Can you tell me how I did that?</p></li>
+</ul></li>
+<li><p>Array</p>
+<ul>
+<li>Don’t worry about this right now.</li>
+</ul></li>
+<li><p>Matrix</p>
+<ul>
+<li>Don’t worry about this right now.</li>
+</ul></li>
+</ul>
+</section>
+<section id="libraries" class="level3">
+<h3 class="anchored" data-anchor-id="libraries">Libraries:</h3>
+<p>R has “base” functions. Think of this in car terms, you buy a standard version and it comes with the basics. But now you want to go offroading and you need bigger tires. So, you go out and upgrade your stock car and buy bigger tires. Libraries are the same thing. Stock R might not have what we need, so we add a library that gives us new capabilities. There are libraries that you will almost always use. We will discuss what they are and what they do.</p>
+<section id="popular-libraries" class="level4">
+<h4 class="anchored" data-anchor-id="popular-libraries">Popular libraries:</h4>
+<ul>
+<li><p>Tidyverse - this the one you will almost always use. It is a big library with a bunch of other smaller libraries within it.</p></li>
+<li><p>Haven - this will help with importing data.</p></li>
+<li><p>Foreign - another library used to import data.</p></li>
+<li><p>There are so many more but these will be the ones you probably see the most.</p></li>
+</ul>
+</section>
+<section id="installing-libraries" class="level4">
+<h4 class="anchored" data-anchor-id="installing-libraries">Installing libraries:</h4>
+<ul>
+<li><p>You only have to install them once.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>) <span class="co"># run this code and you will have installed tidyverse. You will never need to run this code again. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Just because you have it installed does not mean R will automatically recognize it. You need to call it up or “invoke” its use. Generally, you just do this at the top of your script.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Congrats! You now have the functionality of tidyverse within your R session.</p></li>
+</ul>
+</section>
+</section>
+<section id="saving" class="level3">
+<h3 class="anchored" data-anchor-id="saving">Saving:</h3>
+<ul>
+<li><p>When you are done in R studio. You need to save your work and organize it appropriately.</p></li>
+<li><p>Name the file 2024-09-05_R_Lab_1</p></li>
+<li><p>Whether you are on PC or Mac, go to File &gt; Save As &gt; Desktop &gt; PSCI_2075</p>
+<ul>
+<li>your file is now stored in the folder we created earlier.</li>
+</ul></li>
+<li><p>Now close out of R completely (click no. Clicking yes is a bad habit that is clunky and uses a lot of memory for your computer)</p></li>
+<li><p>Reopen R by clicking the file you just saved in the folder.</p></li>
+<li><p>After you initially save, a simple save after you are done will suffice. (Command S is the shortcut for Mac, Ctrl S is the shortcut for PC)</p></li>
+</ul>
+</section>
+</section>
+<section id="importing-data" class="level2">
+<h2 class="anchored" data-anchor-id="importing-data">Importing data:</h2>
+<section id="downloading-a-file" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-a-file">Downloading a file:</h3>
+<ul>
+<li><p>We first need to get data from somewhere. There are a bunch of ways to get data into R but we will focus on the simplest way.</p></li>
+<li><p>Download <a href="https://drive.google.com/file/d/1w45yGX6lYA3ApoEt76OR6qEHptDxTFWP/view?usp=sharing">this .csv file</a> and <strong>put it into the PSCI_2075 folder.</strong></p></li>
+<li><p><em>Note:</em> there is known bug with downloading datasets from Safari. It doesn’t happen often but if you notice anything weird about the data, it may be an issue caused by downloading from Safari.</p>
+<ul>
+<li>to mitigate this, download the file from either Google Chrome or Firefox.</li>
+</ul></li>
+</ul>
+</section>
+<section id="working-directory" class="level3">
+<h3 class="anchored" data-anchor-id="working-directory">Working Directory:</h3>
+<ul>
+<li><p>Remember how I said file organization is very important, well buckle in.</p></li>
+<li><p>Your computer cannot and does not think like you. It needs to be told EXACTLY what to do or else it panics.</p></li>
+<li><p>When we are working with data (generally a .csv file) we need to import it into R studio.</p></li>
+<li><p>We need to tell R studio what we want it to look at. The issue is R studio doesn’t know what to do unless you tell it exactly where the file is.</p></li>
+<li><p>We will work through this during recitation.</p></li>
+</ul>
+<section id="where-is-r-studio-working-out-of" class="level4">
+<h4 class="anchored" data-anchor-id="where-is-r-studio-working-out-of">Where is R Studio working out of?</h4>
+<ol type="1">
+<li><p>R Studio defaults to some folder to look at initially.</p></li>
+<li><p>To figure this out type the following into the source pane:</p>
+<ol type="1">
+<li><p>getwd()</p>
+<ol type="1">
+<li><p>we are telling R to tell us what working directory it is looking at.</p></li>
+<li><p>each person will have their own unique working directory.</p></li>
+</ol></li>
+<li><p>setwd(“…”)</p>
+<ol type="1">
+<li><p><strong>THIS IS IMPORTANT AND IS UNIQUE TO YOU!</strong></p></li>
+<li><p>We are telling R where we want it to look.</p></li>
+<li><p>We can use the File Pane to help us with this</p>
+<ol type="1">
+<li><p>Click “home” in the file section.</p></li>
+<li><p>We want R studio to work out of that folder we created on our Desktop called “PSCI_2075”</p></li>
+<li><p>Click “Desktop”</p></li>
+<li><p>Look for the folder PSCI_2075 and click it.</p>
+<ol type="1">
+<li><p>Now click the cog wheel with “More” written next to it.</p></li>
+<li><p>click “Copy folder path to clipboard”</p></li>
+<li><p>You then paste that within the quotes:</p>
+<ol type="1">
+<li><p>setwd(“~/Desktop/PSCI_2075”)</p>
+<ol type="1">
+<li><p>Run the code</p>
+<ol type="1">
+<li><strong>THIS IS MY UNIQUE PATH. YOURS WILL LOOK DIFFERENT</strong></li>
+<li>THIS IS WHERE MOST PEOPLE MESS UP!</li>
+</ol></li>
+</ol></li>
+<li><p>Now check if it worked by running getwd() again.</p>
+<ol type="1">
+<li>The directory should be different now.</li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
 
 
+</section>
+</section>
 </section>
 </section>
 
