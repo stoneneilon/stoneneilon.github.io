@@ -15,6 +15,444 @@ image: trisha.webp
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-# Week 1
+# Week 1 - Introductions
 
-# Week 2
+-   It is important to develop our own instincts about what is good and what is not good work in the field.
+
+-   Field is generally divided by behavior and institutions.
+
+    -   behavior is really about mass behavior and how people act.
+
+    -   Institutions is behavior of elites and actual politicians.
+
+    -   Sometimes you have other areas of research that kind of link between.
+
+-   Behavior -\> institutions -\> linkages -\> other topics.
+
+## Assignments:
+
+-   Response papers - 5 of them - any week.
+
+    -   1\) identify over arching question of the week. What is big picture question?
+
+    -   2\) identify favorite and least favorite reading for week.
+
+        -   justify it.
+
+-   Propose research for a week.
+
+    -   Pick weeks that are closer to your heart.
+
+    -   Pitch to Josh a research design that adds to the literature.
+
+# Week 2 - Recent Research in the Subfield
+
+## In-Class Notes: 
+
+## [Fowler, Anthony, et al. 2023. "Moderates," American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/moderates/71A6A9BD7EC7A5C94F975703417F866F)
+
+### Abstract: 
+
+Moderates are often overlooked in contemporary research on American voters. Many scholars who have examined moderates argue that these individuals are only classified as such due to a lack of political sophistication or conflicted views across issues. We develop a method to distinguish three ways an individual might be classified as moderate: having genuinely moderate views across issues, being inattentive to politics or political surveys, or holding views poorly summarized by a single liberal--conservative dimension. We find that a single ideological dimension accurately describes most, but not all, Americans\' policy views. Using the classifications from our model, we demonstrate that moderates and those whose views are not well explained by a single dimension are especially consequential for electoral selection and accountability. These results suggest a need for renewed attention to the middle of the American political spectrum.
+
+### Bumper Sticker: 
+
+Moderates need to be classified better and deserve more focus
+
+### Research Question: 
+
+How can we better identify moderates?
+
+Why (from a survey perspective) are people moderate?
+
+### Background:
+
+-   We typically think of moderates in the following:
+
+    -   politically unsophisticated
+
+    -   uninformed
+
+    -   politically incoherent
+
+    -   secretly partisan
+
+    -   ideologically cross pressured
+
+    -   extreme, with patterns of attitudes poorly by a single ideological dimension
+
+-   There are obvious survey issues in trying to figure out if someone is a moderate.
+
+### Method: 
+
+-   Sort classically identified moderates into three subgroups of moderate type:
+
+    -   those who have genuinely centrist views that are well summarized by a single underlying ideological dimension (spatial)
+
+        -   Downsian voters
+
+    -   those who are inattentive to politics or the survey (unsophisticated)
+
+        -   random/incoherent views. The way in which they select answers has no coherence and basically makes no sense.
+
+            -   special stats here but basically if they are showing to have a .5 probability for selecting either survey response question - that is essentially random and they are probably an inattentive voter.
+
+    -   those who hold genuine views that are not well summarized by a single ideological dimension (someone whose preferences are neither unsophisticated nor well summarized by the spatial model and, second, an ideology score on the liberal--conservative dimension were the respondent to be a spatial type (#1 above).)
+
+        -   conversian respondents (named after Philip Converse)
+
+            -   genuine position holders but not well described in a left-right orientation.
+
+            -   voters that care about specific stuff -\> which might translate into a lack of a wide-ranging belief system.
+
+            -   They discriminate between thus if $\neq$ .5 relative likelihood then they are probably a conversian moderate.
+
+-   Assumes responses are perfect representations of preferences
+
+    -   The issues have been ordered such that if a Downsian gives a conservative answer on issue one, he or she will necessarily give a conservative answer on issues two and three, and so on such that the three questions divide Downsians at three points along the ideological spectrum.
+
+    -   Questions are also ordered by popularity.
+
+        -   this ordering and assumptions allows them to figure out who is a "downsian" voter
+
+            -   if they conflict with the guttman scale - that is probably not a downsian voter.
+
+### Data: 
+
+-   Cooperative Congressional Election Study (CCES)
+
+    -   All CCES survey data from 2012 - 2018
+
+    -   280k respondents
+
+-   Also use another CCES Model
+
+    -   2010
+
+    -   asked 133 policy questions to 1,300 people.
+
+-   **if the question was ordered they turned it into a binary scale.**
+
+    -   they wanted all questions to be binary.
+
+### Findings: 
+
+-   Moderates are more attentive to elections (than liberals and conservatives)
+
+    -   more responsive to incumbency
+
+    -   more responsive to candidate experience
+
+    -   more responsive to ideologies
+
+-   Most moderates appear to be downsian
+
+-   results suggest centrist voters drive the relative success of incumbents, centrists, and experienced candidates.
+
+-   Find 6.5% of CCES respondents are inattentive
+
+    -   This is a bit weird to me... Not sure how to say it. THIS IS SURVEY RESPONDENTS!
+
+        -   this seems to conflict with the general idea in the american voter that most voters are inattentive.
+
+        -   Someone that chooses to fill out a survey is probably less likely to be an inattentive voter.
+
+## [Mehlhaff, Isaac, et al. 2024. "Where Motivated Reasoning Withers and Looms Large: Fear and Partisan Reactions to the COVID-19 Pandemic," American Journal of Political Science.](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12808)
+
+### Abstract: 
+
+Contemporary American politics has been largely characterized by hyperpartisanship and polarization, withpartisan-motivated reasoning a thematic concern. Theories of emotions in politics suggest that anxiety might interruptpartisan heuristics and encourage citizens to reason more evenhandedly---but in what domains and to what extent? We useoriginal panel data to assess how anxiety about becoming seriously ill from COVID-19 interacted with partisan attachmentsto shape political judgment during the COVID-19 pandemic. The structure of our data allows us to assess large-scaleimplications of politically relevant emotions in ways that so far have not been possible. We find large effects on policyattitudes: Republicans who were afraid of getting sick rejected signals from copartisan leaders by supporting mask mandatesand the like. Effects on vote choice for Republicans were muted in comparison, but fear's large effect on independents mayhave been pivotal.
+
+### Bumper Sticker: 
+
+Fear and anxiety can influence partisanship (a little)
+
+### Research Question: 
+
+-   Why, then, did so many Republicans prefer policies starkly different from those suggested by their leaders but so few vote against those leaders?
+
+-   How did the anxiety of COVID-19 influence partisan politics?
+
+### Background: 
+
+-   Partisanship influences how people see, act, and listen.
+
+-   Anxiety can influence both information gathering and information processing.
+
+-   The COVID-19 pandemic presented an unprecedented opportunity to test the posited link between anxiety and interruption of partisan habits.
+
+-   Partisans typically listen to party elites.
+
+    -   but for many republicans during covid-19, they disagreed with the party elites.
+
+-   **Accuracy Driven Reasoning:** a processing style in which people exert more effort to reach correct conclusions. They "attend to relevant information more carefully," "process it more deeply," and "\[consider\] more alternatives"
+
+### Hypothesis: 
+
+1.  Fearful individuals will be more supportive of pandemic mitigation policies such as mask mandates.
+
+2.  Fearful individuals' accuracy motivations to be visible in the information they consult
+
+    1.  they should seek more information, including from sources they do not habitually use.
+
+3.  Fear to be associated with a greater likelihood of voting for Joe Biden
+
+    1.  why Biden? - because covid-19 mitigation information was more often endorsed by Biden.
+
+4.  Fearful Republicans should move further toward support for mitigation policies simply because their attitudes have more room to change in that direction.
+
+### Data: 
+
+-   Qualtrics survey in April 2020
+
+    -   w/ follow up interviews in June, September, and October.
+
+-   Examine support for five pandemic related policies:
+
+    -   mask mandates
+
+    -   stay at home orders
+
+    -   business lockdowns
+
+    -   monitor of public spaces by police
+
+    -   mandatory covid-19 testing
+
+-   Then assessed the influence of anxiety on information search and knowledge about Covid-19.
+
+-   Then evaluated how anxiety altered approval rates of Trump and the CDC.
+
+-   Finally, wave 4 is used to examine who the respondent will vote for in the election.
+
+### Findings: 
+
+-   Anxiety about real-world events can decouple partisans' policy positions from those of their party leaders. Once citizensenter the voting booth, however, their ability to assessaccountability and mete out electoral reward or punishment remains deeply affected by partisanship even underpandemic conditions.
+
+-   fear of gettingsick with COVID-19 can lead citizens to adopt policypositions contrary to party cues.
+
+-   the results suggest that anxiety does encourage individuals to pursue accuracy-motivated reasoning, even on a highly politicized issue
+
+-   anxiety encourages individuals to seekout new information, to eschew habitual elite cues, and process what they learn with the goal of achieving accuracy, rather than rationalizing partisan talking points.
+
+-   At the lowest levels of fear, respondents' vote intentions were strongly associated with their party identification.
+
+-   As fear increased, probability to vote Trump decreases.
+
+    -   effect is not as much as the effect of fear on policy preferences (mask mandates, etc.)
+
+-   Independents were more affected by fear.
+
+-   fear of severe illness did little to attenuate the effect of partisanship on vote choice.
+
+    ![](Melhaff_fear_results_trump.png){width="468"}
+
+### Notes: 
+
+-   I don't like the way it discusses elite cues.
+
+    -   there were so many cues from everywhere all at once.
+
+    -   There is also a potential lag going on between cues and individual.
+
+-   Very similar to the Charlie Hebdo article we read in comparative.
+
+## [Hopkins, Dan, Yphtach Lelkes and Samuel Wolken. 2024. "The Rise of and Demand for Identity-Oriented Media Coverage," American Political Science Review.](https://onlinelibrary.wiley.com/doi/10.1111/ajps.12875?af=R)
+
+I like this one!
+
+### Abstract: 
+
+While some assert that social identities have become more salient in American media coverage, existing evidence is largely anecdotal. An increased emphasis on social identities has important political implications, including for polarization and representation. We first document the rising salience of different social identities using natural language processing tools to analyze all tweets from 19 media outlets (2008--2021) alongside 553,078 URLs shared on Facebook. We then examine one potential mechanism: Outlets may highlight meaningful social identities---race/ethnicity, gender, religion, or partisanship---to attract readers through various social and psychological pathways. We find that identity cues are associated with increases in some forms of engagement on social media. To probe causality, we analyze 3,828 randomized headline experiments conducted via Upworthy. Headlines mentioning racial/ethnic identities generated more engagement than headlines that did not, with suggestive evidence for other identities. Identity-oriented media coverage is growing and rooted partly in audience demand.
+
+### Bumper Sticker: 
+
+More engagement/demand with articles that include identities in headlines.
+
+### Research Question: 
+
+1.  Have social identities become more prominent in the political information environment?
+
+2.  Do the same stories generate more engagement when framed with identity-oriented language?
+
+### Hypothesis: 
+
+1.  Media coverage of social identities has grown in recent decades as outlets adopt identity-oriented coverage strategies (production of identity-oriented content)
+
+2.  On social media, news content referencing core social identities is especially likely to generate engagement (audience level reaction to content)
+
+### Background: 
+
+-   Voters may make different voting decisions when the salience of key issues changes
+
+    -   What explains changes in salience?
+
+        -   A major argument says **the media.**
+
+-   The media may be devoting more coverage to identity driven media coverage
+
+    -   however, we don't know if that is true
+
+        -   puzzle!
+
+-   Mechanism of focus: **audience demand**
+
+-   Real time data metrics and a highly fragmented and competitive media market is in part what has led to changes in media coverage.
+
+-   Economic incentives for media companies to publish this content because it gains more engagement.
+
+-   Theory: reliance on audience metrics has increased identity-oriented media.
+
+-   Why do social identity coverage generate audience engagement?
+
+    -   Social identities serve as filters in a complex information environment, helping individuals identify relevant and actionable information.
+
+    -   social identities often serve as a foundation for coordination and collective action
+
+    -   social identity cues help individuals understand the applicable group norms in specific contexts
+
+### Data: 
+
+-   All tweets from 19 American media outlets (2008-2021; n = 6,235,014)
+
+-   Media outlet URLs shared by Facebook users (2017-2020; n = 553,078)
+
+-   News website Upworthy assigned different headlines to different people of similar stories (2013-2015)
+
+### Results: 
+
+-   Posts with identity-related contenthave higher levels of expressive and social engagement (measured via liking and sharing) than those without it.
+
+-   Different outlets are shown to invoke different identities more frequently than others.
+
+-   Since 2007, mentions of racial and partisan identities on Twitter have roughly tripled.
+
+-   Partisan identities appear in a large proportion of Facebook posts, and the prevalence of other identities in news URLs posted on Facebook is roughly 2--5 percentage points higher, depending on the identity category
+
+### Notes:
+
+-   This is an interesting article
+
+-   I think it fits nicely with other supply/demand explanations of media
+
+    -   see Kevin Munger
+
+## [Chiou, Fang-Yi and Max Goplerud. 2024. "Effective Lawmaking Across Congressional Eras," Journal of Politics.](https://mgoplerud.com/papers/CG_Eras.pdf)
+
+### Abstract: 
+
+A key concept in American legislative politics is the extent to which members are effective, i.e. have the ability to propose and advance bills on important topics in Congress. We propose a new measure of a member's legislative effectiveness that covers both chambers from 1873 to 2010 and incorporates all 1.1 million introduced bills, opening up a wide range of new opportunities for examining legislative institutions and behavior across this long historical period. To pursue this, we theorize and empirically examine how the determinants of a member's legislative effectiveness hinge on legislative institutions. While uncovering consistent results with the existing literature that has focused on the period starting in the early 1970s, we find striking differences when examining earlier periods. For instance, we find that ideological moderates have higher effectiveness relative to extremists before 1975, whereas the importance of majority-party membership increases dramatically from 1947.
+
+### Bumper Sticker: 
+
+We made a new legislative efficiency score that tells us stuff about political history.
+
+### Background: 
+
+-   What does it mean to be an effective lawmaker?
+
+    -   "The proven ability to advance a member's agenda items through the legislative process and into law" (Volden & Wiseman 2014)
+
+-   They are creating a new way to measure members' legislative efficiency
+
+-   Primarily focused on role of committee chairs, majority parties, and ideological distance to chamber medians.
+
+-   Rule changes + organizational changes separate the legislative eras.
+
+### Hypothesis: 
+
+![Which factors the authors expect will have the most impact on legislative efficiency in different eras. ](Chiou_hyp_matrix.png){fig-align="center" width="541"}
+
+### Data: 
+
+-   Create a member-level measure of effectiveness by considering the totality of bills that are introduced into Congress within a term.
+
+-   1873-2010
+
+-   Create bill level measure to weigh importance of a bill.
+
+-   1.1 million bills
+
+### Results: 
+
+-   Between the 1890s and 1946, we find that ideological extremism harms a members legislative effectiveness.
+
+-   After 1947, we find clear advantages for majority party members.
+
+-   the effect of ideological distance on legislative effectiveness disappears from the mid 1970s, coinciding with the increasingly pronounced roles of political parties and committee chairs.
+
+-   We also find that committee chairs tend to have higher effectiveness, with the effect being largest during the Textbook Congress in the House while staying stable in the Senate.
+
+-   Separate 1873-2010 into four regimes:
+
+    -   Early (1873-1888)
+
+    -   Pre-War (1889-1946)
+
+    -   Textbook Congress (1947-1974)
+
+    -   Post-Reform (1975-2010)
+
+## [Levendusky, Matt, et al. 2024. "Has the Supreme Court Become Just Another Political Branch? Public Perceptions of Court Approval and Legitimacy in a Post-Dobbs World," Science.](https://www.science.org/doi/10.1126/sciadv.adk9590)
+
+### Abstract: 
+
+Have perceptions of the U.S. Supreme Court polarized, much like the rest of American politics? Because of the Court\'s unique role, for many years, it remained one of the few institutions respected by both Democrats and Republicans alike. But the Court\'s dramatic shift to the right in recent years---highlighted by its *Dobbs* decision in 2022---potentially upends that logic. Using both eight waves of panel data and 18 nationally representative surveys spanning two decades, we show that while there was little evidence of partisan polarization in earlier years, in 2022 and 2023, such patterns are clear in favorability, trust, legitimacy, and support for reform. Factors that used to protect the Court---like knowledge about it and support for key democratic values---no longer do so. The Court has also become more important to voters, and will likely remain a political flashpoint, with disquieting implications for the Court\'s place in our polity.
+
+### Bumper Sticker: 
+
+### Research Question: 
+
+Has the Supreme Court become politicized and lost legitimacy in recent years?
+
+### Background: 
+
+-   Court needs legitimacy
+
+-   No legitimacy = no power
+
+    -   weakest branch
+
+-   Reservoir of good will over time
+
+-   However, court has lurched farther to the right and acted more politically.
+
+-   Favorability $\neq$ Legitimacy
+
+-   Dobbs overturns Roe v. Wade
+
+    -   Probably the biggest decision in recent Court history.
+
+### Data: 
+
+-   18 nationally represented surveys spanning nearly two decades
+
+-   Panel data
+
+-   8 wave panel dataset
+
+### Results: 
+
+-   Court has lost legitimacy and favorability
+
+-   Democrats see court as less legitimate and **this has persisted over time.**
+
+-   Dobbs really messed up the courts legitimacy
+
+-   People more informed and knowledgeable about courts have lost legitimacy
+
+-   Increase support for court reforms.
+
+### Notes: 
+
+-   This seems like the same article that Gibson wrote about the effect of Dobbs.
+
+    -   Improves upon the Gibson article in three ways:
+
+        -   panel data availability
+
+        -   timing of panel data allows flexibility in regards to the Dobbs leak
+
+        -   data goes into 2023 allowing study of overtime Dobbs effect rather than immediate effect.
+
+# Week 3 - Classic Readings in American Politics

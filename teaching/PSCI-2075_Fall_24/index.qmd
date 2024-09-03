@@ -99,7 +99,7 @@ There will be group work in this class. Please consult the syllabus for more det
 
 Group work can sometimes lead to uneven work load amounts. **You are expected to contribute evenly in groups**. In the event you find individual(s) not pulling their weight, I will consult with the individual(s) to determine if their grade should be evaluated separately from the group. Additionally, the individual(s) participation and homework grade may suffer. Please email me if any issues or concerns arise within groups. I will find a proper solution and consult Professor Beard if needed.
 
-## Week 1 Lecture Information: 
+## Week 1 Lecture Information:
 
 -   How do we know stuff?
 
@@ -140,3 +140,41 @@ Group work can sometimes lead to uneven work load amounts. **You are expected to
 ## Goal of Week 1:
 
 Download R and R studio!
+
+# Week 2
+
+## What is R?
+
+R is a programming language for statistics. It was first created in 1993. R is an object oriented environment. Many of you have had exposure to Excel and it's formulas. R is somewhat similar in that it gives us the same capabilities. However, R is much more powerful and can evaluate more data than Excel. Unfortunately, what we get in power, we trade off user experience.
+
+## What is R Studio?
+
+R Studio is an integrated development environment (IDE). It is an interface that basically makes R usable. R is the language, R studio what you use to write/run/organize R. There are other IDE's you can use, Jupyter Notebook is one example, but for the purposes of this class you must use R Studio.
+
+## Things you should know:
+
+-   R is case sensitive.
+
+-   Spaces matter
+
+-   YOU SHOULD ALWAYS COMMENT YOUR CODE!
+
+    -   You will forget what your code does sometimes. It is important to add comments so that you can remember what the code actually does.
+
+-   "\#" allows you to comment your code. You can type anything after the \# and R studio will not execute that code (it basically skips over it).
+
+## Folders and Organization:
+
+Folders and your file system within your computer is **very** important. Computers are extremely DUMB! You need to tell it EXACTLY what to do or else, it won't work. Leaving your files in your default download folder will cause you extreme headache down. To prevent this, we are going to create a new folder on your desktop (or somewhere else that works better for you). You should label it "PSCI_2075". When you download and save files for this class, you should save it within the PSCI_2075 file.
+
+Think of folders as a [Russian Doll](https://images.app.goo.gl/C6zeW1AfC8xSy1mx7). We need our file system to be organized because we have to tell our computer what we want R to look at. This will become clearer as we start coding within R.
+
+### For Mac example:
+
+![My mac folder system](mac_file_example.png){fig-align="center"}
+
+### For PC example:
+
+![PC folder example](pc_file_example.jpg){fig-align="center"}
+
+## Inside R Studio:

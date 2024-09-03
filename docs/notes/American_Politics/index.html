@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -92,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://drive.google.com/file/d/1wwwiFFiVu-k76M6oixKugPFjESA0g4Is/view?usp=sharing"> 
+    <a class="nav-link" href="https://drive.google.com/file/d/1eZT7KaLsqdW3k4WxoeloMPm_9cdf-9A6/view?usp=sharing"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
@@ -127,8 +156,66 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-1" id="toc-week-1" class="nav-link active" data-scroll-target="#week-1">Week 1</a></li>
-  <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2">Week 2</a></li>
+  <li><a href="#week-1---introductions" id="toc-week-1---introductions" class="nav-link active" data-scroll-target="#week-1---introductions">Week 1 - Introductions</a>
+  <ul class="collapse">
+  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments:</a></li>
+  </ul></li>
+  <li><a href="#week-2---recent-research-in-the-subfield" id="toc-week-2---recent-research-in-the-subfield" class="nav-link" data-scroll-target="#week-2---recent-research-in-the-subfield">Week 2 - Recent Research in the Subfield</a>
+  <ul class="collapse">
+  <li><a href="#in-class-notes" id="toc-in-class-notes" class="nav-link" data-scroll-target="#in-class-notes">In-Class Notes:</a></li>
+  <li><a href="#fowler-anthony-et-al.-2023.-moderates-american-political-science-review." id="toc-fowler-anthony-et-al.-2023.-moderates-american-political-science-review." class="nav-link" data-scroll-target="#fowler-anthony-et-al.-2023.-moderates-american-political-science-review.">Fowler, Anthony, et al.&nbsp;2023. “Moderates,” American Political Science Review.</a>
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract:</a></li>
+  <li><a href="#bumper-sticker" id="toc-bumper-sticker" class="nav-link" data-scroll-target="#bumper-sticker">Bumper Sticker:</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question:</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background:</a></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method:</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data:</a></li>
+  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings">Findings:</a></li>
+  </ul></li>
+  <li><a href="#mehlhaff-isaac-et-al.-2024.-where-motivated-reasoning-withers-and-looms-large-fear-and-partisan-reactions-to-the-covid-19-pandemic-american-journal-of-political-science." id="toc-mehlhaff-isaac-et-al.-2024.-where-motivated-reasoning-withers-and-looms-large-fear-and-partisan-reactions-to-the-covid-19-pandemic-american-journal-of-political-science." class="nav-link" data-scroll-target="#mehlhaff-isaac-et-al.-2024.-where-motivated-reasoning-withers-and-looms-large-fear-and-partisan-reactions-to-the-covid-19-pandemic-american-journal-of-political-science.">Mehlhaff, Isaac, et al.&nbsp;2024. “Where Motivated Reasoning Withers and Looms Large: Fear and Partisan Reactions to the COVID-19 Pandemic,” American Journal of Political Science.</a>
+  <ul class="collapse">
+  <li><a href="#abstract-1" id="toc-abstract-1" class="nav-link" data-scroll-target="#abstract-1">Abstract:</a></li>
+  <li><a href="#bumper-sticker-1" id="toc-bumper-sticker-1" class="nav-link" data-scroll-target="#bumper-sticker-1">Bumper Sticker:</a></li>
+  <li><a href="#research-question-1" id="toc-research-question-1" class="nav-link" data-scroll-target="#research-question-1">Research Question:</a></li>
+  <li><a href="#background-1" id="toc-background-1" class="nav-link" data-scroll-target="#background-1">Background:</a></li>
+  <li><a href="#hypothesis" id="toc-hypothesis" class="nav-link" data-scroll-target="#hypothesis">Hypothesis:</a></li>
+  <li><a href="#data-1" id="toc-data-1" class="nav-link" data-scroll-target="#data-1">Data:</a></li>
+  <li><a href="#findings-1" id="toc-findings-1" class="nav-link" data-scroll-target="#findings-1">Findings:</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes:</a></li>
+  </ul></li>
+  <li><a href="#hopkins-dan-yphtach-lelkes-and-samuel-wolken.-2024.-the-rise-of-and-demand-for-identity-oriented-media-coverage-american-political-science-review." id="toc-hopkins-dan-yphtach-lelkes-and-samuel-wolken.-2024.-the-rise-of-and-demand-for-identity-oriented-media-coverage-american-political-science-review." class="nav-link" data-scroll-target="#hopkins-dan-yphtach-lelkes-and-samuel-wolken.-2024.-the-rise-of-and-demand-for-identity-oriented-media-coverage-american-political-science-review.">Hopkins, Dan, Yphtach Lelkes and Samuel Wolken. 2024. “The Rise of and Demand for Identity-Oriented Media Coverage,” American Political Science Review.</a>
+  <ul class="collapse">
+  <li><a href="#abstract-2" id="toc-abstract-2" class="nav-link" data-scroll-target="#abstract-2">Abstract:</a></li>
+  <li><a href="#bumper-sticker-2" id="toc-bumper-sticker-2" class="nav-link" data-scroll-target="#bumper-sticker-2">Bumper Sticker:</a></li>
+  <li><a href="#research-question-2" id="toc-research-question-2" class="nav-link" data-scroll-target="#research-question-2">Research Question:</a></li>
+  <li><a href="#hypothesis-1" id="toc-hypothesis-1" class="nav-link" data-scroll-target="#hypothesis-1">Hypothesis:</a></li>
+  <li><a href="#background-2" id="toc-background-2" class="nav-link" data-scroll-target="#background-2">Background:</a></li>
+  <li><a href="#data-2" id="toc-data-2" class="nav-link" data-scroll-target="#data-2">Data:</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results:</a></li>
+  <li><a href="#notes-1" id="toc-notes-1" class="nav-link" data-scroll-target="#notes-1">Notes:</a></li>
+  </ul></li>
+  <li><a href="#chiou-fang-yi-and-max-goplerud.-2024.-effective-lawmaking-across-congressional-eras-journal-of-politics." id="toc-chiou-fang-yi-and-max-goplerud.-2024.-effective-lawmaking-across-congressional-eras-journal-of-politics." class="nav-link" data-scroll-target="#chiou-fang-yi-and-max-goplerud.-2024.-effective-lawmaking-across-congressional-eras-journal-of-politics.">Chiou, Fang-Yi and Max Goplerud. 2024. “Effective Lawmaking Across Congressional Eras,” Journal of Politics.</a>
+  <ul class="collapse">
+  <li><a href="#abstract-3" id="toc-abstract-3" class="nav-link" data-scroll-target="#abstract-3">Abstract:</a></li>
+  <li><a href="#bumper-sticker-3" id="toc-bumper-sticker-3" class="nav-link" data-scroll-target="#bumper-sticker-3">Bumper Sticker:</a></li>
+  <li><a href="#background-3" id="toc-background-3" class="nav-link" data-scroll-target="#background-3">Background:</a></li>
+  <li><a href="#hypothesis-2" id="toc-hypothesis-2" class="nav-link" data-scroll-target="#hypothesis-2">Hypothesis:</a></li>
+  <li><a href="#data-3" id="toc-data-3" class="nav-link" data-scroll-target="#data-3">Data:</a></li>
+  <li><a href="#results-1" id="toc-results-1" class="nav-link" data-scroll-target="#results-1">Results:</a></li>
+  </ul></li>
+  <li><a href="#levendusky-matt-et-al.-2024.-has-the-supreme-court-become-just-another-political-branch-public-perceptions-of-court-approval-and-legitimacy-in-a-post-dobbs-world-science." id="toc-levendusky-matt-et-al.-2024.-has-the-supreme-court-become-just-another-political-branch-public-perceptions-of-court-approval-and-legitimacy-in-a-post-dobbs-world-science." class="nav-link" data-scroll-target="#levendusky-matt-et-al.-2024.-has-the-supreme-court-become-just-another-political-branch-public-perceptions-of-court-approval-and-legitimacy-in-a-post-dobbs-world-science.">Levendusky, Matt, et al.&nbsp;2024. “Has the Supreme Court Become Just Another Political Branch? Public Perceptions of Court Approval and Legitimacy in a Post-Dobbs World,” Science.</a>
+  <ul class="collapse">
+  <li><a href="#abstract-4" id="toc-abstract-4" class="nav-link" data-scroll-target="#abstract-4">Abstract:</a></li>
+  <li><a href="#bumper-sticker-4" id="toc-bumper-sticker-4" class="nav-link" data-scroll-target="#bumper-sticker-4">Bumper Sticker:</a></li>
+  <li><a href="#research-question-3" id="toc-research-question-3" class="nav-link" data-scroll-target="#research-question-3">Research Question:</a></li>
+  <li><a href="#background-4" id="toc-background-4" class="nav-link" data-scroll-target="#background-4">Background:</a></li>
+  <li><a href="#data-4" id="toc-data-4" class="nav-link" data-scroll-target="#data-4">Data:</a></li>
+  <li><a href="#results-2" id="toc-results-2" class="nav-link" data-scroll-target="#results-2">Results:</a></li>
+  <li><a href="#notes-2" id="toc-notes-2" class="nav-link" data-scroll-target="#notes-2">Notes:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#week-3---classic-readings-in-american-politics" id="toc-week-3---classic-readings-in-american-politics" class="nav-link" data-scroll-target="#week-3---classic-readings-in-american-politics">Week 3 - Classic Readings in American Politics</a></li>
   </ul>
 </nav>
     </div>
@@ -185,11 +272,451 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="week-1" class="level1">
-<h1>Week 1</h1>
+<section id="week-1---introductions" class="level1">
+<h1>Week 1 - Introductions</h1>
+<ul>
+<li><p>It is important to develop our own instincts about what is good and what is not good work in the field.</p></li>
+<li><p>Field is generally divided by behavior and institutions.</p>
+<ul>
+<li><p>behavior is really about mass behavior and how people act.</p></li>
+<li><p>Institutions is behavior of elites and actual politicians.</p></li>
+<li><p>Sometimes you have other areas of research that kind of link between.</p></li>
+</ul></li>
+<li><p>Behavior -&gt; institutions -&gt; linkages -&gt; other topics.</p></li>
+</ul>
+<section id="assignments" class="level2">
+<h2 class="anchored" data-anchor-id="assignments">Assignments:</h2>
+<ul>
+<li><p>Response papers - 5 of them - any week.</p>
+<ul>
+<li><p>1) identify over arching question of the week. What is big picture question?</p></li>
+<li><p>2) identify favorite and least favorite reading for week.</p>
+<ul>
+<li>justify it.</li>
+</ul></li>
+</ul></li>
+<li><p>Propose research for a week.</p>
+<ul>
+<li><p>Pick weeks that are closer to your heart.</p></li>
+<li><p>Pitch to Josh a research design that adds to the literature.</p></li>
+</ul></li>
+</ul>
 </section>
-<section id="week-2" class="level1">
-<h1>Week 2</h1>
+</section>
+<section id="week-2---recent-research-in-the-subfield" class="level1">
+<h1>Week 2 - Recent Research in the Subfield</h1>
+<section id="in-class-notes" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-notes">In-Class Notes:</h2>
+</section>
+<section id="fowler-anthony-et-al.-2023.-moderates-american-political-science-review." class="level2">
+<h2 class="anchored" data-anchor-id="fowler-anthony-et-al.-2023.-moderates-american-political-science-review."><a href="https://www.cambridge.org/core/journals/american-political-science-review/article/moderates/71A6A9BD7EC7A5C94F975703417F866F">Fowler, Anthony, et al.&nbsp;2023. “Moderates,” American Political Science Review.</a></h2>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract:</h3>
+<p>Moderates are often overlooked in contemporary research on American voters. Many scholars who have examined moderates argue that these individuals are only classified as such due to a lack of political sophistication or conflicted views across issues. We develop a method to distinguish three ways an individual might be classified as moderate: having genuinely moderate views across issues, being inattentive to politics or political surveys, or holding views poorly summarized by a single liberal–conservative dimension. We find that a single ideological dimension accurately describes most, but not all, Americans' policy views. Using the classifications from our model, we demonstrate that moderates and those whose views are not well explained by a single dimension are especially consequential for electoral selection and accountability. These results suggest a need for renewed attention to the middle of the American political spectrum.</p>
+</section>
+<section id="bumper-sticker" class="level3">
+<h3 class="anchored" data-anchor-id="bumper-sticker">Bumper Sticker:</h3>
+<p>Moderates need to be classified better and deserve more focus</p>
+</section>
+<section id="research-question" class="level3">
+<h3 class="anchored" data-anchor-id="research-question">Research Question:</h3>
+<p>How can we better identify moderates?</p>
+<p>Why (from a survey perspective) are people moderate?</p>
+</section>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background:</h3>
+<ul>
+<li><p>We typically think of moderates in the following:</p>
+<ul>
+<li><p>politically unsophisticated</p></li>
+<li><p>uninformed</p></li>
+<li><p>politically incoherent</p></li>
+<li><p>secretly partisan</p></li>
+<li><p>ideologically cross pressured</p></li>
+<li><p>extreme, with patterns of attitudes poorly by a single ideological dimension</p></li>
+</ul></li>
+<li><p>There are obvious survey issues in trying to figure out if someone is a moderate.</p></li>
+</ul>
+</section>
+<section id="method" class="level3">
+<h3 class="anchored" data-anchor-id="method">Method:</h3>
+<ul>
+<li><p>Sort classically identified moderates into three subgroups of moderate type:</p>
+<ul>
+<li><p>those who have genuinely centrist views that are well summarized by a single underlying ideological dimension (spatial)</p>
+<ul>
+<li>Downsian voters</li>
+</ul></li>
+<li><p>those who are inattentive to politics or the survey (unsophisticated)</p>
+<ul>
+<li><p>random/incoherent views. The way in which they select answers has no coherence and basically makes no sense.</p>
+<ul>
+<li>special stats here but basically if they are showing to have a .5 probability for selecting either survey response question - that is essentially random and they are probably an inattentive voter.</li>
+</ul></li>
+</ul></li>
+<li><p>those who hold genuine views that are not well summarized by a single ideological dimension (someone whose preferences are neither unsophisticated nor well summarized by the spatial model and, second, an ideology score on the liberal–conservative dimension were the respondent to be a spatial type (#1 above).)</p>
+<ul>
+<li><p>conversian respondents (named after Philip Converse)</p>
+<ul>
+<li><p>genuine position holders but not well described in a left-right orientation.</p></li>
+<li><p>voters that care about specific stuff -&gt; which might translate into a lack of a wide-ranging belief system.</p></li>
+<li><p>They discriminate between thus if <span class="math inline">\(\neq\)</span> .5 relative likelihood then they are probably a conversian moderate.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Assumes responses are perfect representations of preferences</p>
+<ul>
+<li><p>The issues have been ordered such that if a Downsian gives a conservative answer on issue one, he or she will necessarily give a conservative answer on issues two and three, and so on such that the three questions divide Downsians at three points along the ideological spectrum.</p></li>
+<li><p>Questions are also ordered by popularity.</p>
+<ul>
+<li><p>this ordering and assumptions allows them to figure out who is a “downsian” voter</p>
+<ul>
+<li>if they conflict with the guttman scale - that is probably not a downsian voter.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="data" class="level3">
+<h3 class="anchored" data-anchor-id="data">Data:</h3>
+<ul>
+<li><p>Cooperative Congressional Election Study (CCES)</p>
+<ul>
+<li><p>All CCES survey data from 2012 - 2018</p></li>
+<li><p>280k respondents</p></li>
+</ul></li>
+<li><p>Also use another CCES Model</p>
+<ul>
+<li><p>2010</p></li>
+<li><p>asked 133 policy questions to 1,300 people.</p></li>
+</ul></li>
+<li><p><strong>if the question was ordered they turned it into a binary scale.</strong></p>
+<ul>
+<li>they wanted all questions to be binary.</li>
+</ul></li>
+</ul>
+</section>
+<section id="findings" class="level3">
+<h3 class="anchored" data-anchor-id="findings">Findings:</h3>
+<ul>
+<li><p>Moderates are more attentive to elections (than liberals and conservatives)</p>
+<ul>
+<li><p>more responsive to incumbency</p></li>
+<li><p>more responsive to candidate experience</p></li>
+<li><p>more responsive to ideologies</p></li>
+</ul></li>
+<li><p>Most moderates appear to be downsian</p></li>
+<li><p>results suggest centrist voters drive the relative success of incumbents, centrists, and experienced candidates.</p></li>
+<li><p>Find 6.5% of CCES respondents are inattentive</p>
+<ul>
+<li><p>This is a bit weird to me… Not sure how to say it. THIS IS SURVEY RESPONDENTS!</p>
+<ul>
+<li><p>this seems to conflict with the general idea in the american voter that most voters are inattentive.</p></li>
+<li><p>Someone that chooses to fill out a survey is probably less likely to be an inattentive voter.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="mehlhaff-isaac-et-al.-2024.-where-motivated-reasoning-withers-and-looms-large-fear-and-partisan-reactions-to-the-covid-19-pandemic-american-journal-of-political-science." class="level2">
+<h2 class="anchored" data-anchor-id="mehlhaff-isaac-et-al.-2024.-where-motivated-reasoning-withers-and-looms-large-fear-and-partisan-reactions-to-the-covid-19-pandemic-american-journal-of-political-science."><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12808">Mehlhaff, Isaac, et al.&nbsp;2024. “Where Motivated Reasoning Withers and Looms Large: Fear and Partisan Reactions to the COVID-19 Pandemic,” American Journal of Political Science.</a></h2>
+<section id="abstract-1" class="level3">
+<h3 class="anchored" data-anchor-id="abstract-1">Abstract:</h3>
+<p>Contemporary American politics has been largely characterized by hyperpartisanship and polarization, withpartisan-motivated reasoning a thematic concern. Theories of emotions in politics suggest that anxiety might interruptpartisan heuristics and encourage citizens to reason more evenhandedly—but in what domains and to what extent? We useoriginal panel data to assess how anxiety about becoming seriously ill from COVID-19 interacted with partisan attachmentsto shape political judgment during the COVID-19 pandemic. The structure of our data allows us to assess large-scaleimplications of politically relevant emotions in ways that so far have not been possible. We find large effects on policyattitudes: Republicans who were afraid of getting sick rejected signals from copartisan leaders by supporting mask mandatesand the like. Effects on vote choice for Republicans were muted in comparison, but fear’s large effect on independents mayhave been pivotal.</p>
+</section>
+<section id="bumper-sticker-1" class="level3">
+<h3 class="anchored" data-anchor-id="bumper-sticker-1">Bumper Sticker:</h3>
+<p>Fear and anxiety can influence partisanship (a little)</p>
+</section>
+<section id="research-question-1" class="level3">
+<h3 class="anchored" data-anchor-id="research-question-1">Research Question:</h3>
+<ul>
+<li><p>Why, then, did so many Republicans prefer policies starkly different from those suggested by their leaders but so few vote against those leaders?</p></li>
+<li><p>How did the anxiety of COVID-19 influence partisan politics?</p></li>
+</ul>
+</section>
+<section id="background-1" class="level3">
+<h3 class="anchored" data-anchor-id="background-1">Background:</h3>
+<ul>
+<li><p>Partisanship influences how people see, act, and listen.</p></li>
+<li><p>Anxiety can influence both information gathering and information processing.</p></li>
+<li><p>The COVID-19 pandemic presented an unprecedented opportunity to test the posited link between anxiety and interruption of partisan habits.</p></li>
+<li><p>Partisans typically listen to party elites.</p>
+<ul>
+<li>but for many republicans during covid-19, they disagreed with the party elites.</li>
+</ul></li>
+<li><p><strong>Accuracy Driven Reasoning:</strong> a processing style in which people exert more effort to reach correct conclusions. They “attend to relevant information more carefully,” “process it more deeply,” and “[consider] more alternatives”</p></li>
+</ul>
+</section>
+<section id="hypothesis" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis">Hypothesis:</h3>
+<ol type="1">
+<li><p>Fearful individuals will be more supportive of pandemic mitigation policies such as mask mandates.</p></li>
+<li><p>Fearful individuals’ accuracy motivations to be visible in the information they consult</p>
+<ol type="1">
+<li>they should seek more information, including from sources they do not habitually use.</li>
+</ol></li>
+<li><p>Fear to be associated with a greater likelihood of voting for Joe Biden</p>
+<ol type="1">
+<li>why Biden? - because covid-19 mitigation information was more often endorsed by Biden.</li>
+</ol></li>
+<li><p>Fearful Republicans should move further toward support for mitigation policies simply because their attitudes have more room to change in that direction.</p></li>
+</ol>
+</section>
+<section id="data-1" class="level3">
+<h3 class="anchored" data-anchor-id="data-1">Data:</h3>
+<ul>
+<li><p>Qualtrics survey in April 2020</p>
+<ul>
+<li>w/ follow up interviews in June, September, and October.</li>
+</ul></li>
+<li><p>Examine support for five pandemic related policies:</p>
+<ul>
+<li><p>mask mandates</p></li>
+<li><p>stay at home orders</p></li>
+<li><p>business lockdowns</p></li>
+<li><p>monitor of public spaces by police</p></li>
+<li><p>mandatory covid-19 testing</p></li>
+</ul></li>
+<li><p>Then assessed the influence of anxiety on information search and knowledge about Covid-19.</p></li>
+<li><p>Then evaluated how anxiety altered approval rates of Trump and the CDC.</p></li>
+<li><p>Finally, wave 4 is used to examine who the respondent will vote for in the election.</p></li>
+</ul>
+</section>
+<section id="findings-1" class="level3">
+<h3 class="anchored" data-anchor-id="findings-1">Findings:</h3>
+<ul>
+<li><p>Anxiety about real-world events can decouple partisans’ policy positions from those of their party leaders. Once citizensenter the voting booth, however, their ability to assessaccountability and mete out electoral reward or punishment remains deeply affected by partisanship even underpandemic conditions.</p></li>
+<li><p>fear of gettingsick with COVID-19 can lead citizens to adopt policypositions contrary to party cues.</p></li>
+<li><p>the results suggest that anxiety does encourage individuals to pursue accuracy-motivated reasoning, even on a highly politicized issue</p></li>
+<li><p>anxiety encourages individuals to seekout new information, to eschew habitual elite cues, and process what they learn with the goal of achieving accuracy, rather than rationalizing partisan talking points.</p></li>
+<li><p>At the lowest levels of fear, respondents’ vote intentions were strongly associated with their party identification.</p></li>
+<li><p>As fear increased, probability to vote Trump decreases.</p>
+<ul>
+<li>effect is not as much as the effect of fear on policy preferences (mask mandates, etc.)</li>
+</ul></li>
+<li><p>Independents were more affected by fear.</p></li>
+<li><p>fear of severe illness did little to attenuate the effect of partisanship on vote choice.</p>
+<p><img src="Melhaff_fear_results_trump.png" class="img-fluid" width="468"></p></li>
+</ul>
+</section>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes:</h3>
+<ul>
+<li><p>I don’t like the way it discusses elite cues.</p>
+<ul>
+<li><p>there were so many cues from everywhere all at once.</p></li>
+<li><p>There is also a potential lag going on between cues and individual.</p></li>
+</ul></li>
+<li><p>Very similar to the Charlie Hebdo article we read in comparative.</p></li>
+</ul>
+</section>
+</section>
+<section id="hopkins-dan-yphtach-lelkes-and-samuel-wolken.-2024.-the-rise-of-and-demand-for-identity-oriented-media-coverage-american-political-science-review." class="level2">
+<h2 class="anchored" data-anchor-id="hopkins-dan-yphtach-lelkes-and-samuel-wolken.-2024.-the-rise-of-and-demand-for-identity-oriented-media-coverage-american-political-science-review."><a href="https://onlinelibrary.wiley.com/doi/10.1111/ajps.12875?af=R">Hopkins, Dan, Yphtach Lelkes and Samuel Wolken. 2024. “The Rise of and Demand for Identity-Oriented Media Coverage,” American Political Science Review.</a></h2>
+<p>I like this one!</p>
+<section id="abstract-2" class="level3">
+<h3 class="anchored" data-anchor-id="abstract-2">Abstract:</h3>
+<p>While some assert that social identities have become more salient in American media coverage, existing evidence is largely anecdotal. An increased emphasis on social identities has important political implications, including for polarization and representation. We first document the rising salience of different social identities using natural language processing tools to analyze all tweets from 19 media outlets (2008–2021) alongside 553,078 URLs shared on Facebook. We then examine one potential mechanism: Outlets may highlight meaningful social identities—race/ethnicity, gender, religion, or partisanship—to attract readers through various social and psychological pathways. We find that identity cues are associated with increases in some forms of engagement on social media. To probe causality, we analyze 3,828 randomized headline experiments conducted via Upworthy. Headlines mentioning racial/ethnic identities generated more engagement than headlines that did not, with suggestive evidence for other identities. Identity-oriented media coverage is growing and rooted partly in audience demand.</p>
+</section>
+<section id="bumper-sticker-2" class="level3">
+<h3 class="anchored" data-anchor-id="bumper-sticker-2">Bumper Sticker:</h3>
+<p>More engagement/demand with articles that include identities in headlines.</p>
+</section>
+<section id="research-question-2" class="level3">
+<h3 class="anchored" data-anchor-id="research-question-2">Research Question:</h3>
+<ol type="1">
+<li><p>Have social identities become more prominent in the political information environment?</p></li>
+<li><p>Do the same stories generate more engagement when framed with identity-oriented language?</p></li>
+</ol>
+</section>
+<section id="hypothesis-1" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-1">Hypothesis:</h3>
+<ol type="1">
+<li><p>Media coverage of social identities has grown in recent decades as outlets adopt identity-oriented coverage strategies (production of identity-oriented content)</p></li>
+<li><p>On social media, news content referencing core social identities is especially likely to generate engagement (audience level reaction to content)</p></li>
+</ol>
+</section>
+<section id="background-2" class="level3">
+<h3 class="anchored" data-anchor-id="background-2">Background:</h3>
+<ul>
+<li><p>Voters may make different voting decisions when the salience of key issues changes</p>
+<ul>
+<li><p>What explains changes in salience?</p>
+<ul>
+<li>A major argument says <strong>the media.</strong></li>
+</ul></li>
+</ul></li>
+<li><p>The media may be devoting more coverage to identity driven media coverage</p>
+<ul>
+<li><p>however, we don’t know if that is true</p>
+<ul>
+<li>puzzle!</li>
+</ul></li>
+</ul></li>
+<li><p>Mechanism of focus: <strong>audience demand</strong></p></li>
+<li><p>Real time data metrics and a highly fragmented and competitive media market is in part what has led to changes in media coverage.</p></li>
+<li><p>Economic incentives for media companies to publish this content because it gains more engagement.</p></li>
+<li><p>Theory: reliance on audience metrics has increased identity-oriented media.</p></li>
+<li><p>Why do social identity coverage generate audience engagement?</p>
+<ul>
+<li><p>Social identities serve as filters in a complex information environment, helping individuals identify relevant and actionable information.</p></li>
+<li><p>social identities often serve as a foundation for coordination and collective action</p></li>
+<li><p>social identity cues help individuals understand the applicable group norms in specific contexts</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="data-2" class="level3">
+<h3 class="anchored" data-anchor-id="data-2">Data:</h3>
+<ul>
+<li><p>All tweets from 19 American media outlets (2008-2021; n = 6,235,014)</p></li>
+<li><p>Media outlet URLs shared by Facebook users (2017-2020; n = 553,078)</p></li>
+<li><p>News website Upworthy assigned different headlines to different people of similar stories (2013-2015)</p></li>
+</ul>
+</section>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">Results:</h3>
+<ul>
+<li><p>Posts with identity-related contenthave higher levels of expressive and social engagement (measured via liking and sharing) than those without it.</p></li>
+<li><p>Different outlets are shown to invoke different identities more frequently than others.</p></li>
+<li><p>Since 2007, mentions of racial and partisan identities on Twitter have roughly tripled.</p></li>
+<li><p>Partisan identities appear in a large proportion of Facebook posts, and the prevalence of other identities in news URLs posted on Facebook is roughly 2–5 percentage points higher, depending on the identity category</p></li>
+</ul>
+</section>
+<section id="notes-1" class="level3">
+<h3 class="anchored" data-anchor-id="notes-1">Notes:</h3>
+<ul>
+<li><p>This is an interesting article</p></li>
+<li><p>I think it fits nicely with other supply/demand explanations of media</p>
+<ul>
+<li>see Kevin Munger</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="chiou-fang-yi-and-max-goplerud.-2024.-effective-lawmaking-across-congressional-eras-journal-of-politics." class="level2">
+<h2 class="anchored" data-anchor-id="chiou-fang-yi-and-max-goplerud.-2024.-effective-lawmaking-across-congressional-eras-journal-of-politics."><a href="https://mgoplerud.com/papers/CG_Eras.pdf">Chiou, Fang-Yi and Max Goplerud. 2024. “Effective Lawmaking Across Congressional Eras,” Journal of Politics.</a></h2>
+<section id="abstract-3" class="level3">
+<h3 class="anchored" data-anchor-id="abstract-3">Abstract:</h3>
+<p>A key concept in American legislative politics is the extent to which members are effective, i.e.&nbsp;have the ability to propose and advance bills on important topics in Congress. We propose a new measure of a member’s legislative effectiveness that covers both chambers from 1873 to 2010 and incorporates all 1.1 million introduced bills, opening up a wide range of new opportunities for examining legislative institutions and behavior across this long historical period. To pursue this, we theorize and empirically examine how the determinants of a member’s legislative effectiveness hinge on legislative institutions. While uncovering consistent results with the existing literature that has focused on the period starting in the early 1970s, we find striking differences when examining earlier periods. For instance, we find that ideological moderates have higher effectiveness relative to extremists before 1975, whereas the importance of majority-party membership increases dramatically from 1947.</p>
+</section>
+<section id="bumper-sticker-3" class="level3">
+<h3 class="anchored" data-anchor-id="bumper-sticker-3">Bumper Sticker:</h3>
+<p>We made a new legislative efficiency score that tells us stuff about political history.</p>
+</section>
+<section id="background-3" class="level3">
+<h3 class="anchored" data-anchor-id="background-3">Background:</h3>
+<ul>
+<li><p>What does it mean to be an effective lawmaker?</p>
+<ul>
+<li>“The proven ability to advance a member’s agenda items through the legislative process and into law” (Volden &amp; Wiseman 2014)</li>
+</ul></li>
+<li><p>They are creating a new way to measure members’ legislative efficiency</p></li>
+<li><p>Primarily focused on role of committee chairs, majority parties, and ideological distance to chamber medians.</p></li>
+<li><p>Rule changes + organizational changes separate the legislative eras.</p></li>
+</ul>
+</section>
+<section id="hypothesis-2" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-2">Hypothesis:</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Chiou_hyp_matrix.png" class="img-fluid figure-img" width="541"></p>
+<figcaption>Which factors the authors expect will have the most impact on legislative efficiency in different eras.</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-3" class="level3">
+<h3 class="anchored" data-anchor-id="data-3">Data:</h3>
+<ul>
+<li><p>Create a member-level measure of effectiveness by considering the totality of bills that are introduced into Congress within a term.</p></li>
+<li><p>1873-2010</p></li>
+<li><p>Create bill level measure to weigh importance of a bill.</p></li>
+<li><p>1.1 million bills</p></li>
+</ul>
+</section>
+<section id="results-1" class="level3">
+<h3 class="anchored" data-anchor-id="results-1">Results:</h3>
+<ul>
+<li><p>Between the 1890s and 1946, we find that ideological extremism harms a members legislative effectiveness.</p></li>
+<li><p>After 1947, we find clear advantages for majority party members.</p></li>
+<li><p>the effect of ideological distance on legislative effectiveness disappears from the mid 1970s, coinciding with the increasingly pronounced roles of political parties and committee chairs.</p></li>
+<li><p>We also find that committee chairs tend to have higher effectiveness, with the effect being largest during the Textbook Congress in the House while staying stable in the Senate.</p></li>
+<li><p>Separate 1873-2010 into four regimes:</p>
+<ul>
+<li><p>Early (1873-1888)</p></li>
+<li><p>Pre-War (1889-1946)</p></li>
+<li><p>Textbook Congress (1947-1974)</p></li>
+<li><p>Post-Reform (1975-2010)</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="levendusky-matt-et-al.-2024.-has-the-supreme-court-become-just-another-political-branch-public-perceptions-of-court-approval-and-legitimacy-in-a-post-dobbs-world-science." class="level2">
+<h2 class="anchored" data-anchor-id="levendusky-matt-et-al.-2024.-has-the-supreme-court-become-just-another-political-branch-public-perceptions-of-court-approval-and-legitimacy-in-a-post-dobbs-world-science."><a href="https://www.science.org/doi/10.1126/sciadv.adk9590">Levendusky, Matt, et al.&nbsp;2024. “Has the Supreme Court Become Just Another Political Branch? Public Perceptions of Court Approval and Legitimacy in a Post-Dobbs World,” Science.</a></h2>
+<section id="abstract-4" class="level3">
+<h3 class="anchored" data-anchor-id="abstract-4">Abstract:</h3>
+<p>Have perceptions of the U.S. Supreme Court polarized, much like the rest of American politics? Because of the Court's unique role, for many years, it remained one of the few institutions respected by both Democrats and Republicans alike. But the Court's dramatic shift to the right in recent years—highlighted by its <em>Dobbs</em> decision in 2022—potentially upends that logic. Using both eight waves of panel data and 18 nationally representative surveys spanning two decades, we show that while there was little evidence of partisan polarization in earlier years, in 2022 and 2023, such patterns are clear in favorability, trust, legitimacy, and support for reform. Factors that used to protect the Court—like knowledge about it and support for key democratic values—no longer do so. The Court has also become more important to voters, and will likely remain a political flashpoint, with disquieting implications for the Court's place in our polity.</p>
+</section>
+<section id="bumper-sticker-4" class="level3">
+<h3 class="anchored" data-anchor-id="bumper-sticker-4">Bumper Sticker:</h3>
+</section>
+<section id="research-question-3" class="level3">
+<h3 class="anchored" data-anchor-id="research-question-3">Research Question:</h3>
+<p>Has the Supreme Court become politicized and lost legitimacy in recent years?</p>
+</section>
+<section id="background-4" class="level3">
+<h3 class="anchored" data-anchor-id="background-4">Background:</h3>
+<ul>
+<li><p>Court needs legitimacy</p></li>
+<li><p>No legitimacy = no power</p>
+<ul>
+<li>weakest branch</li>
+</ul></li>
+<li><p>Reservoir of good will over time</p></li>
+<li><p>However, court has lurched farther to the right and acted more politically.</p></li>
+<li><p>Favorability <span class="math inline">\(\neq\)</span> Legitimacy</p></li>
+<li><p>Dobbs overturns Roe v. Wade</p>
+<ul>
+<li>Probably the biggest decision in recent Court history.</li>
+</ul></li>
+</ul>
+</section>
+<section id="data-4" class="level3">
+<h3 class="anchored" data-anchor-id="data-4">Data:</h3>
+<ul>
+<li><p>18 nationally represented surveys spanning nearly two decades</p></li>
+<li><p>Panel data</p></li>
+<li><p>8 wave panel dataset</p></li>
+</ul>
+</section>
+<section id="results-2" class="level3">
+<h3 class="anchored" data-anchor-id="results-2">Results:</h3>
+<ul>
+<li><p>Court has lost legitimacy and favorability</p></li>
+<li><p>Democrats see court as less legitimate and <strong>this has persisted over time.</strong></p></li>
+<li><p>Dobbs really messed up the courts legitimacy</p></li>
+<li><p>People more informed and knowledgeable about courts have lost legitimacy</p></li>
+<li><p>Increase support for court reforms.</p></li>
+</ul>
+</section>
+<section id="notes-2" class="level3">
+<h3 class="anchored" data-anchor-id="notes-2">Notes:</h3>
+<ul>
+<li><p>This seems like the same article that Gibson wrote about the effect of Dobbs.</p>
+<ul>
+<li><p>Improves upon the Gibson article in three ways:</p>
+<ul>
+<li><p>panel data availability</p></li>
+<li><p>timing of panel data allows flexibility in regards to the Dobbs leak</p></li>
+<li><p>data goes into 2023 allowing study of overtime Dobbs effect rather than immediate effect.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="week-3---classic-readings-in-american-politics" class="level1">
+<h1>Week 3 - Classic Readings in American Politics</h1>
 
 
 </section>

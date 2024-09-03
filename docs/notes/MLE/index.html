@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -128,7 +157,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#syllabus" id="toc-syllabus" class="nav-link active" data-scroll-target="#syllabus">Syllabus</a></li>
-  <li><a href="#week-1" id="toc-week-1" class="nav-link" data-scroll-target="#week-1">Week 1</a></li>
+  <li><a href="#topic-1---introduction-to-probability-models" id="toc-topic-1---introduction-to-probability-models" class="nav-link" data-scroll-target="#topic-1---introduction-to-probability-models">Topic 1 - Introduction to Probability Models</a>
+  <ul class="collapse">
+  <li><a href="#required-reading" id="toc-required-reading" class="nav-link" data-scroll-target="#required-reading">Required Reading:</a>
+  <ul class="collapse">
+  <li><a href="#king-chapters-1-2" id="toc-king-chapters-1-2" class="nav-link" data-scroll-target="#king-chapters-1-2">King Chapters 1 &amp; 2</a></li>
+  <li><a href="#ward-and-ahlquist-chapter-1" id="toc-ward-and-ahlquist-chapter-1" class="nav-link" data-scroll-target="#ward-and-ahlquist-chapter-1">Ward and Ahlquist Chapter 1:</a></li>
+  </ul></li>
+  <li><a href="#lecture" id="toc-lecture" class="nav-link" data-scroll-target="#lecture">Lecture:</a></li>
+  <li><a href="#homework-1" id="toc-homework-1" class="nav-link" data-scroll-target="#homework-1">Homework 1:</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -188,10 +226,92 @@ ul.task-list li input[type="checkbox"] {
 <section id="syllabus" class="level1">
 <h1><a href="https://www.dropbox.com/scl/fi/32ji3ucw54taatfon4ja4/MLE-syllabus.pdf?rlkey=jhqzrrb2ymqxg70s7wuwzeeyr&amp;st=taxpe036&amp;dl=0">Syllabus</a></h1>
 </section>
-<section id="week-1" class="level1">
-<h1>Week 1</h1>
+<section id="topic-1---introduction-to-probability-models" class="level1">
+<h1>Topic 1 - Introduction to Probability Models</h1>
+<section id="required-reading" class="level2">
+<h2 class="anchored" data-anchor-id="required-reading">Required Reading:</h2>
+<section id="king-chapters-1-2" class="level3">
+<h3 class="anchored" data-anchor-id="king-chapters-1-2">King Chapters 1 &amp; 2</h3>
+<section id="chapter-1" class="level4">
+<h4 class="anchored" data-anchor-id="chapter-1">Chapter 1:</h4>
+<ul>
+<li><p>Introduction of the book. Political science methodology is disjointed and not as completely coherent as it should (and needs) to be. King seeks to organize and centralize the political science methodology.</p></li>
+<li><p>Statistic Model: a formal representation of the <em>process</em> by which a social system produces output.</p>
+<ul>
+<li>Since no interesting social systems generate outcomes deterministically, statistical models are assumed to have both systematic and stochastic components.</li>
+</ul></li>
+<li><p><strong>Inference:</strong> the general process by which one uses observed data to learn about the social system and its outputs.</p></li>
+<li><p><strong>Estimation:</strong> the specific procedure by which one obtains estimates of features (usually parameters) of the statistical model.</p></li>
+<li><p><strong>The important question for political science research:</strong></p>
+<ul>
+<li><p>is the underlying process that gives rise to the observed data</p>
+<ul>
+<li><p>What are the characteristics of the social system that produced these data?</p></li>
+<li><p>What changes in known features of the social system might have produced data with different characteristics?</p></li>
+<li><p>What is the specific stochastic process driving one’s results?</p></li>
+</ul></li>
+<li><p>By posing these questions, statistical modelling will be more theoretically relevant and empirically fruitful.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="chapter-2" class="level4">
+<h4 class="anchored" data-anchor-id="chapter-2">Chapter 2:</h4>
+</section>
+</section>
+<section id="ward-and-ahlquist-chapter-1" class="level3">
+<h3 class="anchored" data-anchor-id="ward-and-ahlquist-chapter-1">Ward and Ahlquist Chapter 1:</h3>
+</section>
+</section>
+<section id="lecture" class="level2">
+<h2 class="anchored" data-anchor-id="lecture">Lecture:</h2>
+<p><a href="https://www.dropbox.com/scl/fi/n8anv7gle9cit9sp8v329/MLE-week1-Handout.pdf?rlkey=38st1zfju2yrsyh0ybgw51zw5&amp;st=8rnk9udt&amp;dl=0">Week 1 Slides</a></p>
+<ul>
+<li><p>Summary: Run models that find parameters that are most likely to have generated the observed data.</p></li>
+<li><p>These models are hard to interpret.</p></li>
+<li><p>Goal: Familiarize you with a variety of MLE models used in the social sciences.</p></li>
+<li><p>Probability has to sum to 1.</p>
+<ul>
+<li>We want to find the best estimate <span class="math inline">\(\theta\)</span></li>
+</ul></li>
+<li><p>Probabilities are:</p>
+<ul>
+<li><p>Bounded between 1 and 0.</p></li>
+<li><p>Sum of probabilities equal 1.</p></li>
+<li><p>Trials -&gt; <span class="math inline">\(\infty\)</span></p></li>
+<li><p>Mutually exclusive outcomes.</p></li>
+</ul></li>
+<li><p>Theta is the only parameter we need to estimate.</p></li>
+<li><p>We are still specifying the distribution of the outcome variable. Is it a poisson, bernoulli, normal, etc?</p>
+<ul>
+<li>this will help us specify which model to use.</li>
+</ul></li>
+<li><p>L stands for “likelihood function”</p></li>
+<li><p>Our goal is to select some <span class="math inline">\(\theta\)</span>* -&gt; <span class="math inline">\(\hat{\theta}\)</span> as to maximize the likelihood of these data being generated. Ways to do this:</p>
+<ul>
+<li><p>plug in candidate <span class="math inline">\(\theta\)</span>* values</p></li>
+<li><p>look at the graph</p></li>
+<li><p>optimize function (solve for <span class="math inline">\(\theta\)</span>*)</p></li>
+</ul></li>
+<li><p>No priors! (that would be Bayesian)</p>
+<ul>
+<li><p>for our coin flip example, we know .5 is the probability but we only have a set of {H,H,T}</p></li>
+<li><p>Without anymore knowledge, the best estimate of <span class="math inline">\(\theta\)</span> is 2/3 or .66.</p></li>
+</ul></li>
+<li><p>We use ML anytime our dependent variable has a distribution that was not generated by a Gaussian (normal) process.</p>
+<ul>
+<li><p>see slide 23 for examples.</p></li>
+<li><p>We can estimate all of these using OLS but we may hit a few snags and violation assumptions.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="homework-1" class="level2">
+<h2 class="anchored" data-anchor-id="homework-1">Homework 1:</h2>
+<ul>
+<li>“Lab 1.R”</li>
+</ul>
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,
