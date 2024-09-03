@@ -221,7 +221,7 @@ Think of folders as a [Russian Doll](https://images.app.goo.gl/C6zeW1AfC8xSy1mx7
 
 -   When you create an object (either in the source or console pane) that object will be appear there.
 
--   When you end your session. Those objects will disappear (they take up a lot of RAM on your computer).
+-   When you end your session, those objects will disappear (they take up a lot of RAM on your computer).
 
     -   that is okay! Because you should have all the code you used to create those objects saved in your source pane.
 
