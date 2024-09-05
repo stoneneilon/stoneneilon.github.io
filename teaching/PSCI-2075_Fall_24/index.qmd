@@ -325,7 +325,21 @@ Knowing your object type/class is important. What if we have a bunch of numbers 
 
 -   Factor
 
-    -   Think binary - TRUE or FALSE.
+    -   Used to categorize data
+
+    -   not super intuitive - their use will become clearer overtime.
+
+    -   Maybe this code will help understand
+
+        ```{r}
+        x <- c("Dog", "Dog", "Dog", "Cat", "Cat", "Cat", "Dog")
+        x # this will just print out a character vector. 
+        as.factor(x) #now we tell R to change this from a character vector to a factor vector
+        ```
+
+    -   See how it gave you different "levels". We have now created two categories.
+
+        -   this is again may be a little fuzzy but it will get clearer over time.
 
 -   Vector
 
