@@ -256,6 +256,10 @@ window.Quarto = {
 </section>
 <section id="chapter-2" class="level4">
 <h4 class="anchored" data-anchor-id="chapter-2">Chapter 2:</h4>
+<ul>
+<li><p>Conditional probabilities: describing the uncertainty of an observed or hypothetical event given a set of assumptions about the world.</p></li>
+<li><p>Likelihood: a measure of relative uncertainty</p></li>
+</ul>
 </section>
 </section>
 <section id="ward-and-ahlquist-chapter-1" class="level3">
@@ -278,7 +282,7 @@ window.Quarto = {
 <li><p>Bounded between 1 and 0.</p></li>
 <li><p>Sum of probabilities equal 1.</p></li>
 <li><p>Trials -&gt; <span class="math inline">\(\infty\)</span></p></li>
-<li><p>Mutually exclusive outcomes.</p></li>
+<li><p>Mutually exclusive outcomes (Independent).</p></li>
 </ul></li>
 <li><p>Theta is the only parameter we need to estimate.</p></li>
 <li><p>We are still specifying the distribution of the outcome variable. Is it a poisson, bernoulli, normal, etc?</p>
@@ -301,6 +305,28 @@ window.Quarto = {
 <ul>
 <li><p>see slide 23 for examples.</p></li>
 <li><p>We can estimate all of these using OLS but we may hit a few snags and violation assumptions.</p></li>
+</ul></li>
+<li><p><strong>Working through an ML problem is as follows:</strong></p>
+<ul>
+<li><p>Build a parametric statistical model</p></li>
+<li><p>Define the probability density for <span class="math inline">\(Y_i\)</span> (uncertainty component)</p></li>
+<li><p>Define the systematic component (<span class="math inline">\(\theta\)</span>)</p></li>
+<li><p>Maximize the likelihood function, given the data.</p></li>
+<li><p>Interpret</p></li>
+</ul></li>
+<li><p>We will pretty much always use log-likelihood.</p>
+<ul>
+<li><p>why?</p></li>
+<li><p>likelihood starts to breakdown around N=1000. Log-likelihood does not. Why?</p>
+<ul>
+<li><p>Our optimization function is multiplying probabilties</p>
+<ul>
+<li><p>what happens when we multiply a bunch of probabilities?</p>
+<ul>
+<li>Multiplying thousands of probabilities together is simply not a viable approach without infinite precision.</li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </section>

@@ -195,7 +195,7 @@ Think of folders as a [Russian Doll](https://images.app.goo.gl/C6zeW1AfC8xSy1mx7
 
 ## Inside R Studio:
 
-![](rstudio-panes-labeled.jpeg){fig-align="center"}
+![You can change how these look and where they are positioned. I won't show how to do it but you can change the theme of your R Studio - they have dark mode, barbie mode, etc.](rstudio-panes-labeled.jpeg){fig-align="center"}
 
 ### Source Pane:
 
@@ -214,6 +214,8 @@ Think of folders as a [Russian Doll](https://images.app.goo.gl/C6zeW1AfC8xSy1mx7
 -   You CAN write code straight into the console pane.
 
     -   You generally should not do that because it will not save **ANYTHING** you write in there.
+
+-   Results of analysis will show up here. (not graphs)
 
 -   You generally use this to see what R will do when trying different things.
 
@@ -247,19 +249,15 @@ Think of folders as a [Russian Doll](https://images.app.goo.gl/C6zeW1AfC8xSy1mx7
 
 -   Additionally, the file section is pretty useful. Think of it as a more accessible Finder (if you are on mac) - Folder system of your entire computer.
 
+-   Also a help tab - this is useful for understanding functions/arguments.
+
 ## R Basics:
 
--   **Object:** R's way of storing data in its memory, comparable to containers for physical things. Everything that exists in R is an object.
+### **Functions:** 
 
-    -   How do we create an object?
+-   Functions perform a defined sequence of actions. Functions are like verbs, we are telling R to take some object (noun) and do something with it.
 
-        -   In R, we use "\<-"
-
-            -   Try creating an object in your Source pane. What happens?
-
--   **Functions:** perform a defined sequence of actions. Functions are like verbs, we are telling R to take some object (noun) and do something with it.
-
-    -   There are literally a million functions. You do not need to memorize them.
+-   There are literally a million functions. You do not need to memorize them.
 
 ```{r}
 x <- c(2,3,6,8,21,2,67,8) # create a numerical vector and call it "x" 
@@ -286,12 +284,20 @@ The code above articulates what an argument is. I am telling the function how I 
 ```{r}
 y <- seq(10, 100, 5)
 y
-# note that you don't need to specific from, to, and by. The order is predetermined. Although it is good convention so you can better read what your code is doing. 
+# note that you don't need to specify from, to, and by. The order is predetermined. Although it is good convention so you can better read what your code is doing. 
 ```
 
 But Stone, how do we know what the arguments for the function are?! Good question! Every function has different arguments. The "help" section in the output/file pane will help you here. Go to that section and type in the search bar the name of your function. It will provide that arguments for you. You can also type "?seq" into the console and it will automatically take you to the help file for that function.
 
 ### Types of objects:
+
+-   **Object:** R's way of storing data in its memory, comparable to containers for physical things. Everything that exists in R is an object.
+
+    -   How do we create an object?
+
+        -   In R, we use "\<-"
+
+            -   Try creating an object in your Source pane. What happens?
 
 Knowing your object type/class is important. What if we have a bunch of numbers that are strings and we want to add them. We can't do that because R is treating them as characters and not numbers! There are ways to change the object type. I will introduce that concept at a later point. For now, just familiarize yourself with the object types.
 
@@ -347,9 +353,13 @@ R has "base" functions. Think of this in car terms, you buy a standard version a
 
 -   Foreign - another library used to import data.
 
+-   Stargazer - Makes pretty tables.
+
+-   RCPA3 - Textbook library.
+
 -   There are so many more but these will be the ones you probably see the most.
 
-#### Installing libraries: 
+#### Installing libraries:
 
 -   You only have to install them once.
 
@@ -383,6 +393,23 @@ R has "base" functions. Think of this in car terms, you buy a standard version a
 -   Reopen R by clicking the file you just saved in the folder.
 
 -   After you initially save, a simple save after you are done will suffice. (Command S is the shortcut for Mac, Ctrl S is the shortcut for PC)
+
+## Creating a Heading: 
+
+-   You should create a heading for every script you create.
+
+    -   It just helps keep you organized a bit better.
+
+-   This is up to you but here is an example of a headings:
+
+    ```{r}
+    #| eval: false
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+    #~~~~~~~~~~~~~~~~~~~PSCI_2075~~~~~~~~~~~~~~~~~~~~#
+    #~~~~~~~~~~~~~~~~Recitation Lab~~~~~~~~~~~~~~~~~~#
+    #~~~~~~~~~~~~~~~~~~~09/05/24~~~~~~~~~~~~~~~~~~~~~#
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+    ```
 
 ## Importing data:
 
@@ -452,3 +479,19 @@ R has "base" functions. Think of this in car terms, you buy a standard version a
                     2.  Now check if it worked by running getwd() again.
 
                         1.  The directory should be different now.
+
+### Reading Data into R: 
+
+-   Now that we have our proper working directory, we can read our dataset into R.
+
+    ```{r}
+    #| eval: false
+    mydata <- read.csv("anes_pilot_2016.csv") #read.csv is a command specifically for reading .csv files. 
+
+    ```
+
+-   After you run the code, what happened? Did anything change?
+
+## Week 2 Reading: 
+
+-   RCPA Ch. 1

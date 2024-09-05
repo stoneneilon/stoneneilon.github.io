@@ -202,16 +202,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#r-basics" id="toc-r-basics" class="nav-link" data-scroll-target="#r-basics">R Basics:</a>
   <ul class="collapse">
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions"><strong>Functions:</strong></a></li>
   <li><a href="#arguments" id="toc-arguments" class="nav-link" data-scroll-target="#arguments">Arguments:</a></li>
   <li><a href="#types-of-objects" id="toc-types-of-objects" class="nav-link" data-scroll-target="#types-of-objects">Types of objects:</a></li>
   <li><a href="#libraries" id="toc-libraries" class="nav-link" data-scroll-target="#libraries">Libraries:</a></li>
   <li><a href="#saving" id="toc-saving" class="nav-link" data-scroll-target="#saving">Saving:</a></li>
   </ul></li>
+  <li><a href="#creating-a-heading" id="toc-creating-a-heading" class="nav-link" data-scroll-target="#creating-a-heading">Creating a Heading:</a></li>
   <li><a href="#importing-data" id="toc-importing-data" class="nav-link" data-scroll-target="#importing-data">Importing data:</a>
   <ul class="collapse">
   <li><a href="#downloading-a-file" id="toc-downloading-a-file" class="nav-link" data-scroll-target="#downloading-a-file">Downloading a file:</a></li>
   <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory">Working Directory:</a></li>
+  <li><a href="#reading-data-into-r" id="toc-reading-data-into-r" class="nav-link" data-scroll-target="#reading-data-into-r">Reading Data into R:</a></li>
   </ul></li>
+  <li><a href="#week-2-reading" id="toc-week-2-reading" class="nav-link" data-scroll-target="#week-2-reading">Week 2 Reading:</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -461,7 +465,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="inside-r-studio">Inside R Studio:</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="rstudio-panes-labeled.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="rstudio-panes-labeled.jpeg" class="img-fluid figure-img"></p>
+<figcaption>You can change how these look and where they are positioned. I won’t show how to do it but you can change the theme of your R Studio - they have dark mode, barbie mode, etc.</figcaption>
 </figure>
 </div>
 <section id="source-pane" class="level3">
@@ -483,6 +488,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>You generally should not do that because it will not save <strong>ANYTHING</strong> you write in there.</li>
 </ul></li>
+<li><p>Results of analysis will show up here. (not graphs)</p></li>
 <li><p>You generally use this to see what R will do when trying different things.</p></li>
 </ul>
 </section>
@@ -515,26 +521,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>This pane has quite a bit of utility.</p></li>
 <li><p>When we start creating graphs, they will show up here (in the plot section).</p></li>
 <li><p>Additionally, the file section is pretty useful. Think of it as a more accessible Finder (if you are on mac) - Folder system of your entire computer.</p></li>
+<li><p>Also a help tab - this is useful for understanding functions/arguments.</p></li>
 </ul>
 </section>
 </section>
 <section id="r-basics" class="level2">
 <h2 class="anchored" data-anchor-id="r-basics">R Basics:</h2>
+<section id="functions" class="level3">
+<h3 class="anchored" data-anchor-id="functions"><strong>Functions:</strong></h3>
 <ul>
-<li><p><strong>Object:</strong> R’s way of storing data in its memory, comparable to containers for physical things. Everything that exists in R is an object.</p>
-<ul>
-<li><p>How do we create an object?</p>
-<ul>
-<li><p>In R, we use “&lt;-”</p>
-<ul>
-<li>Try creating an object in your Source pane. What happens?</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><p><strong>Functions:</strong> perform a defined sequence of actions. Functions are like verbs, we are telling R to take some object (noun) and do something with it.</p>
-<ul>
-<li>There are literally a million functions. You do not need to memorize them.</li>
-</ul></li>
+<li><p>Functions perform a defined sequence of actions. Functions are like verbs, we are telling R to take some object (noun) and do something with it.</p></li>
+<li><p>There are literally a million functions. You do not need to memorize them.</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">21</span>,<span class="dv">2</span>,<span class="dv">67</span>,<span class="dv">8</span>) <span class="co"># create a numerical vector and call it "x" </span></span>
@@ -547,6 +544,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1]  2 67</code></pre>
 </div>
 </div>
+</section>
 <section id="arguments" class="level3">
 <h3 class="anchored" data-anchor-id="arguments">Arguments:</h3>
 <ul>
@@ -571,12 +569,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stdout">
 <pre><code> [1]  10  15  20  25  30  35  40  45  50  55  60  65  70  75  80  85  90  95 100</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># note that you don't need to specific from, to, and by. The order is predetermined. Although it is good convention so you can better read what your code is doing. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># note that you don't need to specify from, to, and by. The order is predetermined. Although it is good convention so you can better read what your code is doing. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>But Stone, how do we know what the arguments for the function are?! Good question! Every function has different arguments. The “help” section in the output/file pane will help you here. Go to that section and type in the search bar the name of your function. It will provide that arguments for you. You can also type “?seq” into the console and it will automatically take you to the help file for that function.</p>
 </section>
 <section id="types-of-objects" class="level3">
 <h3 class="anchored" data-anchor-id="types-of-objects">Types of objects:</h3>
+<ul>
+<li><p><strong>Object:</strong> R’s way of storing data in its memory, comparable to containers for physical things. Everything that exists in R is an object.</p>
+<ul>
+<li><p>How do we create an object?</p>
+<ul>
+<li><p>In R, we use “&lt;-”</p>
+<ul>
+<li>Try creating an object in your Source pane. What happens?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
 <p>Knowing your object type/class is important. What if we have a bunch of numbers that are strings and we want to add them. We can’t do that because R is treating them as characters and not numbers! There are ways to change the object type. I will introduce that concept at a later point. For now, just familiarize yourself with the object types.</p>
 <ul>
 <li><p>String</p>
@@ -639,6 +649,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Tidyverse - this the one you will almost always use. It is a big library with a bunch of other smaller libraries within it.</p></li>
 <li><p>Haven - this will help with importing data.</p></li>
 <li><p>Foreign - another library used to import data.</p></li>
+<li><p>Stargazer - Makes pretty tables.</p></li>
+<li><p>RCPA3 - Textbook library.</p></li>
 <li><p>There are so many more but these will be the ones you probably see the most.</p></li>
 </ul>
 </section>
@@ -671,6 +683,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>After you initially save, a simple save after you are done will suffice. (Command S is the shortcut for Mac, Ctrl S is the shortcut for PC)</p></li>
 </ul>
 </section>
+</section>
+<section id="creating-a-heading" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-heading">Creating a Heading:</h2>
+<ul>
+<li><p>You should create a heading for every script you create.</p>
+<ul>
+<li>It just helps keep you organized a bit better.</li>
+</ul></li>
+<li><p>This is up to you but here is an example of a headings:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~PSCI_2075~~~~~~~~~~~~~~~~~~~~#</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~Recitation Lab~~~~~~~~~~~~~~~~~~#</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~09/05/24~~~~~~~~~~~~~~~~~~~~~#</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
 </section>
 <section id="importing-data" class="level2">
 <h2 class="anchored" data-anchor-id="importing-data">Importing data:</h2>
@@ -738,10 +767,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol></li>
 </ol></li>
 </ol>
-
-
 </section>
 </section>
+<section id="reading-data-into-r" class="level3">
+<h3 class="anchored" data-anchor-id="reading-data-into-r">Reading Data into R:</h3>
+<ul>
+<li><p>Now that we have our proper working directory, we can read our dataset into R.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"anes_pilot_2016.csv"</span>) <span class="co">#read.csv is a command specifically for reading .csv files. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>After you run the code, what happened? Did anything change?</p></li>
+</ul>
+</section>
+</section>
+<section id="week-2-reading" class="level2">
+<h2 class="anchored" data-anchor-id="week-2-reading">Week 2 Reading:</h2>
+<ul>
+<li>RCPA Ch. 1</li>
+</ul>
+
+
 </section>
 </section>
 

@@ -49,6 +49,10 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 #### Chapter 2:
 
+-   Conditional probabilities: describing the uncertainty of an observed or hypothetical event given a set of assumptions about the world.
+
+-   Likelihood: a measure of relative uncertainty
+
 ### Ward and Ahlquist Chapter 1:
 
 ## Lecture:
@@ -73,7 +77,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
     -   Trials -\> $\infty$
 
-    -   Mutually exclusive outcomes.
+    -   Mutually exclusive outcomes (Independent).
 
 -   Theta is the only parameter we need to estimate.
 
@@ -102,6 +106,30 @@ draft: false # setting this to `true` will prevent your post from appearing on y
     -   see slide 23 for examples.
 
     -   We can estimate all of these using OLS but we may hit a few snags and violation assumptions.
+
+-   **Working through an ML problem is as follows:**
+
+    -   Build a parametric statistical model
+
+    -   Define the probability density for $Y_i$ (uncertainty component)
+
+    -   Define the systematic component ($\theta$)
+
+    -   Maximize the likelihood function, given the data.
+
+    -   Interpret
+
+-   We will pretty much always use log-likelihood.
+
+    -   why?
+
+    -   likelihood starts to breakdown around N=1000. Log-likelihood does not. Why?
+
+        -   Our optimization function is multiplying probabilties
+
+            -   what happens when we multiply a bunch of probabilities?
+
+                -   Multiplying thousands of probabilities together is simply not a viable approach without infinite precision.
 
 ## Homework 1:
 
