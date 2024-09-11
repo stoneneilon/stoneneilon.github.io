@@ -899,6 +899,8 @@ There are important and predictable differences in ideational worlds as we progr
 
 ## [Neustadt, Richard. 1964. Presidential Power and the Modern Presidents, Ch. 1--3.](https://drive.google.com/file/d/1TgrV_JbgOdV3Te7FJrQoBt1shYpwN-Es/view?usp=sharing)
 
+These chapters are basically all about how the President deals with principle-agent problems.
+
 ### Chapter 1; Leader or Clerk?:
 
 -   When we make judgments about the president, what exactly are we evaluating?
@@ -987,4 +989,118 @@ There are important and predictable differences in ideational worlds as we progr
 
 -   Important to note the three events were all last resorts.
 
-## Dahl, Robert. 1957. "Decision-Making in a Democracy: The Supreme Court as National Policy Maker," Journal of Public Law.
+### Chapter 3; The Power to Persuade:
+
+-   *The constitution didn't separate powers it created a government of shared power*
+
+-   The essence of a President's persuasive task is to convince such men that what the White House wants of them is what they ought to do for their sake and on authority.
+
+-   Fear of presidential action is important in allowing the president to have greater persuasiveness.
+
+-   The power to persuade is the power to bargain
+
+    -   status and authority help with bargaining.
+
+-   President and congress need each other to do anything.
+
+-   President still to some degree has to persuade people within the executive office.
+
+    -   lower tier department officials.
+
+-   logic and reasoning is not enough for persuasion
+
+    -   reminds me of Socrates vs. the Sophists
+
+        -   Plato, in his famous fight against the ancient Sophists, discovered that their "universal art of enchanting the mind by arguments" (Phaedrus 261) had nothing to do with truth but aimed at opinions which by their very nature are changing, and which are valid only "at the time of the agreement and as long as the agreement lasts" (Theaetetus 172). He also discovered the very insecure position of truth in the world, for from "opinions comes persuasion and not from truth" (Phaedrus 260). The most striking difference between ancient and modern sophists is that the ancients were satisfied with a passing victory of the argument at the expense of truth, whereas the moderns want a more lasting victory at the expense of reality. In other words, one destroyed the dignity of human thought whereas the others destroy the dignity of human action. The old manipulators of logic were the concern of the philosopher, whereas the modern manipulators of facts stand in the way of the historian. For history itself is destroyed, and its comprehensibility ---based upon the fact that it is enacted by men and therefore can be understood by men---is in danger, whenever facts are no longer held to be part and parcel of the past and present world, and are misused to prove this or that opinion. p.9 Origins of totalitarianism
+
+-   "The people on the hill don't do what they might like to do, they do what they think they have to do in their own interest as they see it."
+
+-   President has to persuade congressmen that what he wants is in the best interest of them.
+
+## [Dahl, Robert. 1957. "Decision-Making in a Democracy: The Supreme Court as National Policy Maker," Journal of Public Law.](https://edisciplinas.usp.br/pluginfile.php/8021455/mod_resource/content/1/DahlDecisionMaking.pdf)
+
+-   Supreme court is not solely a legal institution.
+
+### Main focus: 
+
+-   "What is critical is the extent to which a court can and does make policy decisions by going outside established "legal" criteria found in precedent, statute, and constitution."
+
+-   Much of the court's legitimacy rests upon the fiction that it is not a political institution but exclusively a legal one.
+
+-   There are cases where the supreme court is deciding between policy and the solution cannot be found in precedent, statute, or the constitution.
+
+    -   thus the court is a national policy maker.
+
+-   This motivates the question: "what groups benefit or are handicapped by the Court and how does the allocation by the Court of these rewards and penalties fit into our presumably democratic political system?
+
+### II 
+
+-   The Majority Criterion
+
+    -   simply majority vs minority.
+
+    -   every conflict within a given society must be a dispute between a majority of those eligible to participate and a minority or minorities; or else it must be a dispute between or among minorities only.
+
+    -   Court has three possible outcomes:
+
+        -   accord with the preferences of a minority of citizens and run counter to the preferences of a majority
+
+        -   accord with the preferences of a majority and run counter to the preferences of a minority
+
+        -   accord with the preferences of one minority and run counter to the preferences of another minority, the rest being indifferent.
+
+    -   This role is not that important or defended much because congress is a thing and represents this all much better.
+
+    -   But then does the court protect minorities from "tyrannical" majorities?
+
+        -   well this is also a problematic view according to Dahl
+
+            -   Democracy is rule by majority. The principle of majority rule is a logical necessity.
+
+                -   for the court to act in this way is to affirm that the court *ought* to act in a way to deny popular sovereingty and political equality ought to prevail in this counry.
+
+    -   How do we even know what the population thinks? What is the majority?
+
+        -   pre mass polling
+
+        -   uses congress + president as the barometer of "majority" opinion.
+
+    -   Justices are appointed by presidents - who don't usually appoint hostile justices!
+
+        -   policy views of the court are never far out of line with the lawmaking majorities of the United States (this is obviously a bit outdated as we see differently today).
+
+    -   Lawmaking majorities generally have their way.
+
+    -   The court can delay the application of policy for a long time
+
+-   Right of Justice
+
+    -   basic premise: a country that respects the rights of man or believes in it, the court should defend these rights against a lawmaking majority.
+
+        -   but the justices are appointed by the lawmaking majority
+
+            -   are their beliefs ever that far out of line with them?
+
+                -   do we really think they would go against them?
+
+                    -   doesn't look that good:
+
+                        -   slave owners over slavery
+
+                        -   white people over black people
+
+                        -   property owners at the expense of wage earners
+
+-   If the court flagrantly opposes the major policies of the dominant alliance
+
+    -   legitimacy goes down.
+
+-   Court is least effective against a current law making majority and least inclined to act.
+
+-   Not majority or minority rule but *minorities* rule.
+
+-   the Court operates to confer legitimacy, not simply on the particular and parochial policies of the dominant political alliance, but upon the basic patterns of behavior required for the operation of a democracy.
+
+-   **The main objective of presidential leadership is to build a stable and dominant aggregation of minorities with a high probability of winning the presidency and one or both houses of Congress. The main task of the Court is to confer legitimacy on the fundamental policies of the successful coalition.**
+
+    -   this is really important to me!
