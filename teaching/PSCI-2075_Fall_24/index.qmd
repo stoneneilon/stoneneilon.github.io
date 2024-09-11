@@ -253,7 +253,7 @@ Think of folders as a [Russian Doll](https://images.app.goo.gl/C6zeW1AfC8xSy1mx7
 
 ## R Basics:
 
-### **Functions:** 
+### **Functions:**
 
 -   Functions perform a defined sequence of actions. Functions are like verbs, we are telling R to take some object (noun) and do something with it.
 
@@ -408,7 +408,7 @@ R has "base" functions. Think of this in car terms, you buy a standard version a
 
 -   After you initially save, a simple save after you are done will suffice. (Command S is the shortcut for Mac, Ctrl S is the shortcut for PC)
 
-## Creating a Heading: 
+## Creating a Heading:
 
 -   You should create a heading for every script you create.
 
@@ -494,7 +494,7 @@ R has "base" functions. Think of this in car terms, you buy a standard version a
 
                         1.  The directory should be different now.
 
-### Reading Data into R: 
+### Reading Data into R:
 
 -   Now that we have our proper working directory, we can read our dataset into R.
 
@@ -506,6 +506,249 @@ R has "base" functions. Think of this in car terms, you buy a standard version a
 
 -   After you run the code, what happened? Did anything change?
 
-## Week 2 Reading: 
+## Week 2 Reading:
 
 -   RCPA Ch. 1
+
+# Week 3
+
+## Stone's Song of the Week:
+
+[![Sofia Kourtesis - Si Te Portas Bonito](sofia_kourtesis.webp){width="439"}](https://www.youtube.com/watch?v=Uj1m7s6TRNk)
+
+I have absolutely zero idea what she is saying but I like it. She is also playing at Red Rocks September 25th which is cool.
+
+## Getting Into Class:
+
+Please sit in your assigned groups! Check your email if you don't know. Don't be shy. Say hi and introduce yourself.
+
+## Important Note:
+
+As you code more, you will start to notice different ways to get the "answer". This is fine. I simply show you *one* way. There are any number of ways to write code in R to achieve the same result. There are ways that are better than others. You generally want code to be as simple as possible. Simplicity = more readable = more organized = less errors.
+
+## What is Data?
+
+-   Systematically gathered information
+
+### Datasets:
+
+-   Rows are observations
+
+    -   example: each person that participates in a poll.
+
+-   Columns are variables
+
+    -   the type of thing you are measuring
+
+    -   example: the question asked in the poll.
+
+-   *N* means the number of observations in the dataset.
+
+### Unit of Analysis:
+
+-   Type of observation
+
+-   If you are polling people, humans would be the unit of analysis.
+
+-   Maybe our data isn't people, perhaps our observations are countries.
+
+    -   Our unit of analysis would then be countries.
+
+        -   Each row would be different countries.
+
+-   The unit we compare across.
+
+-   Ecological fallacy
+
+    -   Any conclusions must also pertain to the unit of analysis
+
+    -   if we are measuring states, we can draw conclusions about STATES
+
+        -   WE CANNOT DRAW CONCLUSIONS ABOUT INDIVIDUALS IN STATES.
+
+            -   they are different units of analysis!
+
+## Codebooks:
+
+-   When you get a dataset, the author will provide a "codebook". It is generally a pdf document. It will list the variables, number of observations, and general information about the data.
+
+-   Sometimes numbers represent categories.
+
+    -   ex: '0' = white, '1' = black, '2' = asian...etc etc
+
+        -   the codebook will tell you this
+
+-   It will also tell you the min and max value of a variable.
+
+-   Further, the codebook will tell you what the "NA" values are
+
+    -   NA values are non responses or simply we don't have data for that value.
+
+        -   sometimes they are not coded as "NA". The codebook will tell you how it codes NA values.
+
+## Dealing With Different Types of Objects:
+
+Last week we discussed the different types of objects in R. I introduced the following object types: factor, numeric, and character (aka string).
+
+When you get into the data, it may be coded 'weird'. Example, you may see numbers but you can't do anything with them, why? Because they may be coded as character values! So we need to check using the class() function.
+
+```{r}
+a <- c(1,2,3,4,5) # create a numeric vector
+class(a) # tell me what type of object 'a' is
+```
+
+```{r}
+b <- c("1","2","3","4","5") # create a character vector
+class(b) # tell me what type of object 'b' is 
+```
+
+What if I want to change the object 'b' to numeric? We can do that using the as.numeric() function.
+
+```{r}
+b <- as.numeric(b) # take the object 'b' and treat it as a numeric object then reassign it to b which 'write over it'. 
+class(b) # tell me what type of object 'b' is
+```
+
+The point of this exercise is because sometimes you may be trying to do something with a variable and it may not be working. You need to *know* your data. How is R reading it? R obviously can't add character values, so it may give you an error. Checking the object type will help you understand how to treat it and what to do.
+
+## Special Operators:
+
+You should now know what '\<-' does. If you do not, scroll up and review! However, there are a few other operators that we use that are important. There are more but here is the one of focus today:
+
+### The Dollar \$ign:
+
+'\$' is an operator you will use. The dollar sign may also be called the "selector". Its purpose is to grab specific pieces of information from a dataframe.
+
+```{r}
+df <- data.frame( # create a data frame with the variables, age, income, taxes, sex.
+  age = c(25, 30, 35, 40),
+  income = c(50000, 60000, 75000, 90000),
+  taxes = c(5000, 10000, 15000, 20000),
+  sex = c("Male", "Female", "Male", "Female"))
+
+df.income <- df$income #grab the income column/variable and create a new object. 
+```
+
+Notice what happens when we use the '\$'. The selector is a powerful tool that you will use. We will often need to change our data. The '\$' allows us to access the sections of our data that we want.
+
+The selector (\$) can also be used to manipulate variables within our data frame. Let's continue using the data frame above to show how this works.
+
+```{r}
+# I want to add a new variable (race) to my dataframe. 
+df$race <- c("White", "Asian", "Black", "Hispanic")
+df # Notice how we have a new column/variable
+```
+
+Let's keep going. Maybe I want to create a new variable that is the combination of two other variables.
+
+```{r}
+# subtract the taxes from the income variable and create and new variable from the output. 
+df$grossincome<- df$income - df$taxes 
+df # check to see the new variable. 
+summary(df$grossincome) # we can also look at summary statistics of the new vew variable. 
+```
+
+## Data Visualization:
+
+Data visualization is very important! We have thousands, possibly millions (shoot, even billions!), points of data. Data visualization helps us *describe* the data.
+
+There are many ways to visualize data. Some include histograms, violin plots, bar plots, line plots, boxplots, and many more. Different visualizations can serve different purposes. Some plots are better at conveying information than others. One example we will look at is the histogram. The histogram is great at visualizing the *distribution* of one or more variables. What do we mean by distribution? How the data is distributed across different values.
+
+*Side note:* you can also make pie charts but these suck. Don't use them. Ever.
+
+### Let's make a histogram:
+
+First, let's use a better data set.
+
+```{r}
+cardf <- mtcars # mtcars is a preloaded data set built into R. 
+cardf # check to see if data is loaded correctly 
+
+colnames(cardf) #lets look to see what the names of the variables are in our dataframe.
+# we could choose any variable, but lets look at the distrubtion of mpg. 
+nrow(cardf) # tells me how many rows/observations in a dataset
+
+hist(cardf$mpg) # create a histogram of the mpg variable. 
+hist(cardf$qsec) # lets look at the distribution of qsec. 
+```
+
+WOW! So pretty! look at you go.
+
+Notice the title and x/y axis names. They aren't pretty. We want clean titles to help with readibility. I won't show you how to change these right now BUT you have the tools to figure this out for yourself. *hint:* ?hist
+
+Think about what you can learn from the histogram vs. looking just at the numbers. Imagine if were looking at millions of data points! Plotting our data helps you get an idea of where the majority of values are. This is really important.
+
+## Practice Exercise:
+
+1.  Create a new script and install the 'RCPA3' package.
+
+2.  Import the 'world' dataset from the RCPA3 package. I provide code for how to do that below:
+
+    ```{r}
+    library(RCPA3)
+    data('world') # The RCPA3 package has preinstalled datasets. 
+    ```
+
+3.  With the dataset, complete the following:
+
+    1.  **create a histogram for the percent of a country's labor force that is in the military**
+
+        1.  the variable name is soldiers.percent
+
+    2.  **add 2 variables together**
+
+        1.  variable names: spendeduc and spendhealth
+
+    3.  **subtract 1 variable from another**
+
+4.  Before you begin, do some setup:
+
+    ```{r}
+    world2 <- world # create a new object to use for manipulation so that we do not alter the original data
+    ```
+
+## Benchmarks:
+
+Without looking, could you tell me the following?
+
+-   What does the '\<-' do?
+
+-   What does the '\$' do?
+
+-   Why do we need to visualize data?
+
+-   Did you remember to add a heading to your R script?
+
+Check your knowledge. Use the appropriate tools to figure out the answer to these questions. Consult the notes/readings/material if you do not know how to answer. "I don't know" is not a sufficient answer.
+
+-   What is the unit of analysis in the 'mtcars' dataset?
+
+-   What is the unit of analysis in the 'world' dataset?
+
+-   What is the mean of the variable 'mpg' in the 'mtcars' dataset?
+
+-   What is our *N* for each dataset we looked at?
+
+-   What do rows represent?
+
+-   What do columns represent?
+
+## Homework 1:
+
+-   Homework 1 is now posted on Canvas! Make sure you follow the directions.
+
+-   You should know who is in your group. Please contact them if you haven't already. I provided everyone's email, so check your email. I also assigned you to groups in Canvas.
+
+-   **You only have to turn in one copy - PLEASE WRITE THE NAME OF EVERYONE IN YOUR GROUP ON ALL DOCUMENTS TURNED IN!**
+
+-   Work together! Ask your group for help!
+
+-   Use your notes, Youtube, peers, etc.
+
+    -   or scroll up and use all the notes I have given you!
+
+    -   All the resources I have given you should allow you to complete homework assignment with (relative) ease.
+
+-   You will get errors! Double check your spelling, capitalization, etc.
+
+    -   try to work through them!

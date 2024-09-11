@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -131,6 +160,51 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#why-should-we-take-text-as-data" id="toc-why-should-we-take-text-as-data" class="nav-link" data-scroll-target="#why-should-we-take-text-as-data">Why should we take text as data?</a></li>
   <li><a href="#what-can-we-learn" id="toc-what-can-we-learn" class="nav-link" data-scroll-target="#what-can-we-learn">What can we learn?</a></li>
+  </ul></li>
+  <li><a href="#week-2-labor-day---no-class" id="toc-week-2-labor-day---no-class" class="nav-link" data-scroll-target="#week-2-labor-day---no-class">Week 2 (Labor Day - No Class)</a></li>
+  <li><a href="#week-3---introduction-to-text-as-data" id="toc-week-3---introduction-to-text-as-data" class="nav-link" data-scroll-target="#week-3---introduction-to-text-as-data">Week 3 - Introduction to Text as Data:</a>
+  <ul class="collapse">
+  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes:</a>
+  <ul class="collapse">
+  <li><a href="#a-fundamentally-qualitative-exercise" id="toc-a-fundamentally-qualitative-exercise" class="nav-link" data-scroll-target="#a-fundamentally-qualitative-exercise">A fundamentally qualitative exercise:</a></li>
+  <li><a href="#data-generating-process" id="toc-data-generating-process" class="nav-link" data-scroll-target="#data-generating-process">Data Generating Process:</a></li>
+  <li><a href="#validation" id="toc-validation" class="nav-link" data-scroll-target="#validation">Validation:</a></li>
+  <li><a href="#what-automated-approaches-can-and-cant-do" id="toc-what-automated-approaches-can-and-cant-do" class="nav-link" data-scroll-target="#what-automated-approaches-can-and-cant-do">What automated approaches can and can’t do:</a></li>
+  <li><a href="#big-data-challenges" id="toc-big-data-challenges" class="nav-link" data-scroll-target="#big-data-challenges">Big Data Challenges:</a></li>
+  <li><a href="#ethics" id="toc-ethics" class="nav-link" data-scroll-target="#ethics">Ethics:</a></li>
+  <li><a href="#theory-build-or-theory-testing" id="toc-theory-build-or-theory-testing" class="nav-link" data-scroll-target="#theory-build-or-theory-testing">Theory Build or Theory Testing?</a></li>
+  <li><a href="#how-do-i-collect-data" id="toc-how-do-i-collect-data" class="nav-link" data-scroll-target="#how-do-i-collect-data">How do I collect data?</a></li>
+  </ul></li>
+  <li><a href="#grimmer-justin-margaret-roberts-and-brandon-stewart.-text-as-data-chapters-1-2." id="toc-grimmer-justin-margaret-roberts-and-brandon-stewart.-text-as-data-chapters-1-2." class="nav-link" data-scroll-target="#grimmer-justin-margaret-roberts-and-brandon-stewart.-text-as-data-chapters-1-2.">Grimmer, Justin, Margaret Roberts, and Brandon Stewart. Text as Data, Chapters 1-2.</a>
+  <ul class="collapse">
+  <li><a href="#chapter-1" id="toc-chapter-1" class="nav-link" data-scroll-target="#chapter-1">Chapter 1:</a></li>
+  <li><a href="#chapter-2" id="toc-chapter-2" class="nav-link" data-scroll-target="#chapter-2">Chapter 2:</a></li>
+  </ul></li>
+  <li><a href="#henry-e.-brady.-2019.-the-challenge-of-big-data-and-data-science.-annual-review-of-political-science." id="toc-henry-e.-brady.-2019.-the-challenge-of-big-data-and-data-science.-annual-review-of-political-science." class="nav-link" data-scroll-target="#henry-e.-brady.-2019.-the-challenge-of-big-data-and-data-science.-annual-review-of-political-science.">Henry E. Brady. 2019. “The Challenge of Big Data and Data Science.” Annual Review of Political Science.</a>
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract:</a></li>
+  <li><a href="#bumper-sticker" id="toc-bumper-sticker" class="nav-link" data-scroll-target="#bumper-sticker">Bumper Sticker:</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background:</a></li>
+  </ul></li>
+  <li><a href="#grimmer-justin-and-brandon-stewart.-2013.-text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-documents-political-analysis.-21-3-267-297." id="toc-grimmer-justin-and-brandon-stewart.-2013.-text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-documents-political-analysis.-21-3-267-297." class="nav-link" data-scroll-target="#grimmer-justin-and-brandon-stewart.-2013.-text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-documents-political-analysis.-21-3-267-297.">Grimmer, Justin and Brandon Stewart. 2013. “Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Documents” Political Analysis. 21, 3 267-297.</a>
+  <ul class="collapse">
+  <li><a href="#abstract-1" id="toc-abstract-1" class="nav-link" data-scroll-target="#abstract-1">Abstract:</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview:</a></li>
+  <li><a href="#background-1" id="toc-background-1" class="nav-link" data-scroll-target="#background-1">Background:</a></li>
+  <li><a href="#four-principles-of-automated-text-analysis" id="toc-four-principles-of-automated-text-analysis" class="nav-link" data-scroll-target="#four-principles-of-automated-text-analysis">Four Principles of Automated Text Analysis:</a></li>
+  <li><a href="#supervised-method" id="toc-supervised-method" class="nav-link" data-scroll-target="#supervised-method">Supervised Method:</a></li>
+  <li><a href="#fully-automated-clustering-fac" id="toc-fully-automated-clustering-fac" class="nav-link" data-scroll-target="#fully-automated-clustering-fac">Fully Automated Clustering (FAC):</a></li>
+  <li><a href="#computer-assisted-clustering" id="toc-computer-assisted-clustering" class="nav-link" data-scroll-target="#computer-assisted-clustering">Computer Assisted Clustering</a></li>
+  </ul></li>
+  <li><a href="#michel-et-al.-2011-quantitative-analysis-of-culture-using-millions-of-digitized-books-science-3316014." id="toc-michel-et-al.-2011-quantitative-analysis-of-culture-using-millions-of-digitized-books-science-3316014." class="nav-link" data-scroll-target="#michel-et-al.-2011-quantitative-analysis-of-culture-using-millions-of-digitized-books-science-3316014.">Michel et al.&nbsp;2011, “Quantitative analysis of culture using millions of digitized books” Science, 331:6014.</a>
+  <ul class="collapse">
+  <li><a href="#abstract-2" id="toc-abstract-2" class="nav-link" data-scroll-target="#abstract-2">Abstract:</a></li>
+  <li><a href="#bumper-sticker-1" id="toc-bumper-sticker-1" class="nav-link" data-scroll-target="#bumper-sticker-1">Bumper Sticker:</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question:</a></li>
+  <li><a href="#datamethods" id="toc-datamethods" class="nav-link" data-scroll-target="#datamethods">Data/methods:</a></li>
+  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings">Findings:</a></li>
+  </ul></li>
+  <li><a href="#dimaggio-paul.-adapting-computational-text-analysis-to-social-science-and-vice-versa.-big-data-society-2.2-2015." id="toc-dimaggio-paul.-adapting-computational-text-analysis-to-social-science-and-vice-versa.-big-data-society-2.2-2015." class="nav-link" data-scroll-target="#dimaggio-paul.-adapting-computational-text-analysis-to-social-science-and-vice-versa.-big-data-society-2.2-2015.">DiMaggio, Paul. “Adapting computational text analysis to social science (and vice versa).” Big Data &amp; Society 2.2 (2015).</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -198,6 +272,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Text and language are integral components of political science.</p></li>
 <li><p>This field is HOT right now. Very accessible.</p></li>
 <li><p>Opens up exciting new opportunities for measurement and inference.</p></li>
+<li><p>a lot of text analysis is <em>discovery</em> - this can shape our question moving forward. The process is somewhat inductive.</p></li>
 </ul>
 </section>
 <section id="what-can-we-learn" class="level2">
@@ -205,9 +280,343 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>social media data gives us real-time measures of mass and elite behavior</p></li>
 <li><p>Text of floor speeches, press releases, supreme court briefs, and manifestos offer new measures of ideological scaling.</p></li>
-<li><p>Webscraping repeatedly can show us how authoritarian regimes censor content and control information.</p></li>
+<li><p>Web-scraping repeatedly can show us how authoritarian regimes censor content and control information.</p></li>
 <li><p>The language in books and magazines over time can show us how social attitudes have evolved.</p></li>
 </ul>
+</section>
+</section>
+<section id="week-2-labor-day---no-class" class="level1">
+<h1>Week 2 (Labor Day - No Class)</h1>
+</section>
+<section id="week-3---introduction-to-text-as-data" class="level1">
+<h1>Week 3 - Introduction to Text as Data:</h1>
+<section id="lecture-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-notes">Lecture Notes:</h2>
+<section id="a-fundamentally-qualitative-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="a-fundamentally-qualitative-exercise">A fundamentally qualitative exercise:</h3>
+<ul>
+<li><p>substantive knowledge and deep contextual understanding is essential to determine relevant quantities of interest.</p></li>
+<li><p>is the method appropriate?</p></li>
+<li><p>is this thing I measured actually capturing what I want?</p></li>
+<li><p>automated approach allows humans to read, organize, and analyze documents at scale.</p></li>
+</ul>
+</section>
+<section id="data-generating-process" class="level3">
+<h3 class="anchored" data-anchor-id="data-generating-process">Data Generating Process:</h3>
+<ul>
+<li><p>Agnostic about model selection</p></li>
+<li><p>as long as we can accurately measure what we care about.</p></li>
+<li><p>all text models are wrong!</p></li>
+<li><p>evaluate models based on their ability to perform a useful social scientific task.</p></li>
+</ul>
+</section>
+<section id="validation" class="level3">
+<h3 class="anchored" data-anchor-id="validation">Validation:</h3>
+<ul>
+<li><p>Face valididity?</p></li>
+<li><p>Does the text measure correlate with similar measures?</p></li>
+<li><p>How does the measure compare with our bets guess at “ground truth”?</p></li>
+</ul>
+</section>
+<section id="what-automated-approaches-can-and-cant-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-automated-approaches-can-and-cant-do">What automated approaches can and can’t do:</h3>
+<ul>
+<li><p>Algorithms are really good at sorting.</p></li>
+<li><p>good at compressing texts into lower dimensions.</p></li>
+<li><p>With supervised tasks, if a human can’t do it a machine (usually) can’t either.</p></li>
+</ul>
+</section>
+<section id="big-data-challenges" class="level3">
+<h3 class="anchored" data-anchor-id="big-data-challenges">Big Data Challenges:</h3>
+<ul>
+<li><p>Just because data is really big, doesn’t mean it’s representative.</p></li>
+<li><p>Just because we have statistical significance but it substantively isn’t meaningful.</p></li>
+</ul>
+</section>
+<section id="ethics" class="level3">
+<h3 class="anchored" data-anchor-id="ethics">Ethics:</h3>
+<ul>
+<li><p>Just because data is publicly available doesn’t mean you don’t need to protect subjects.</p></li>
+<li><p>Prioritize subjects over reproducability</p></li>
+<li><p>Following platforms’ terms of service is sometimes at odds with open science.</p></li>
+<li><p>Do the best you can but don’t violate ToS if possible.</p></li>
+</ul>
+</section>
+<section id="theory-build-or-theory-testing" class="level3">
+<h3 class="anchored" data-anchor-id="theory-build-or-theory-testing">Theory Build or Theory Testing?</h3>
+<ul>
+<li><p>Theory building: develop a new argument or concept to explain something that is not understood well</p></li>
+<li><p>theory testing: takes an existing theory and apply it to new cases or-evaluate existing cases etc. This can also result in the modification of an existing theory.</p></li>
+</ul>
+</section>
+<section id="how-do-i-collect-data" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-i-collect-data">How do I collect data?</h3>
+<ul>
+<li><p>APIs</p></li>
+<li><p>Webscraping</p></li>
+<li><p>OCR</p></li>
+</ul>
+</section>
+</section>
+<section id="grimmer-justin-margaret-roberts-and-brandon-stewart.-text-as-data-chapters-1-2." class="level2">
+<h2 class="anchored" data-anchor-id="grimmer-justin-margaret-roberts-and-brandon-stewart.-text-as-data-chapters-1-2."><a href="https://drive.google.com/file/d/1VDMUqd0UTSxeEBUCE1jY_m4D4TDe_vcI/view?usp=sharing">Grimmer, Justin, Margaret Roberts, and Brandon Stewart. Text as Data, Chapters 1-2.</a></h2>
+<p>(Textbook)</p>
+<section id="chapter-1" class="level3">
+<h3 class="anchored" data-anchor-id="chapter-1">Chapter 1:</h3>
+<ul>
+<li><p>The book uses text as data methods from computer science for social science purposes.</p></li>
+<li><p>Big use of inductive reasoning.</p></li>
+<li><p>Rather than a focus on prediction, text as data researchers are much more interested in how well their models provide insights into concepts of interest, how well measurement tools sort documents according to those rules, and how well the assumptions needed for accurate causal inference or prediction are met.</p></li>
+<li><p>Texts can be organized differently. No one correct organization</p>
+<ul>
+<li><p>we can then find the best measurement of that particular organization</p>
+<ul>
+<li><p>can be tested with extensive validation.</p>
+<ul>
+<li>what is the utility to answering the research question becomes of key interest.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Authors reject views that there is an underlying structure that statistical models applied to text are recovering. Rather, we view statistical models as useful (and incorrect) summaries of the text documents.</p></li>
+</ul>
+</section>
+<section id="chapter-2" class="level3">
+<h3 class="anchored" data-anchor-id="chapter-2">Chapter 2:</h3>
+<ul>
+<li><p>Typical social science research is deductive</p>
+<ul>
+<li><p>Theory &gt; data &gt; test</p></li>
+<li><p>Empirical Implications of Theoretical Models</p>
+<ul>
+<li>use theory to create formal game model then use the game theory model to extract predictions. Then collect data to test those predictions.</li>
+</ul></li>
+<li><p>strict deductive research can lead to missed opportunities in new questions + strategies.</p></li>
+</ul></li>
+<li><p>Authors argue there is value in inductive reasoning and using an iterative approach for text analysis.</p></li>
+<li><p>Methods to analyze text as data can contribute to inference at three stages of the process: discovery, measurement, and inference.</p></li>
+</ul>
+<section id="discovery" class="level4">
+<h4 class="anchored" data-anchor-id="discovery">Discovery:</h4>
+<ul>
+<li><p>Discovery - develop a research question</p>
+<ul>
+<li><p>the task of deciding what you want to measure from data and goal of inference.</p>
+<ul>
+<li><p>need to conceptualize the world.</p></li>
+<li><p>You want to analyze social media, okay, but what aspect?</p>
+<ul>
+<li><p>topical content, sentiment, readibility, etc.</p>
+<ul>
+<li>text analysis helps us discover what part we want to look at through the inductive process.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="inductive_deductive.png" class="img-fluid figure-img"></p>
+<figcaption>Figure of deductive vs.&nbsp;inductive.</figcaption>
+</figure>
+</div>
+<ul>
+<li>By pointing out new ways out of organizing the document, we can read the text differently and prompt new questions.</li>
+</ul>
+</section>
+<section id="measurement" class="level4">
+<h4 class="anchored" data-anchor-id="measurement">Measurement:</h4>
+<ul>
+<li>researchers have to demonstrate that their method of measurement does indeed describe the concept or behavior they want to measure—that is, they have to validate their measures and provide evidence that the described quantities are relevant to the theoretical quantity at hand.</li>
+</ul>
+</section>
+<section id="inference" class="level4">
+<h4 class="anchored" data-anchor-id="inference">Inference:</h4>
+<ul>
+<li><p>predictions about events</p></li>
+<li><p>used for causal inference.</p></li>
+</ul>
+</section>
+<section id="agnostic-approach-to-text-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="agnostic-approach-to-text-analysis">Agnostic approach to Text Analysis:</h4>
+<ul>
+<li><p>No true underlying data-generating process</p>
+<ul>
+<li>just a bunch of different ones with different insights.</li>
+</ul></li>
+</ul>
+</section>
+<section id="six-principles-of-text-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="six-principles-of-text-analysis">Six Principles of Text Analysis:</h4>
+<ol type="1">
+<li><p>Theory and substantive knowledge are essential for research design (Section 2.7.1)</p></li>
+<li><p>Text analysis does not replace humans—it augments them (Section 2.7.2)</p></li>
+<li><p>Building, refining, and testing social science theories requires iteration and cumulation (Section 2.7.3)</p></li>
+<li><p>Text analysis methods distill generalizations from language (Section 2.7.4)</p></li>
+<li><p>The best method depends on the task (Section 2.7.5)</p></li>
+<li><p>Validations are essential and depend on the theory and the task (Section 2.7.6)</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="henry-e.-brady.-2019.-the-challenge-of-big-data-and-data-science.-annual-review-of-political-science." class="level2">
+<h2 class="anchored" data-anchor-id="henry-e.-brady.-2019.-the-challenge-of-big-data-and-data-science.-annual-review-of-political-science."><a href="https://drive.google.com/file/d/1pJ4kuJNkW5BHVAzLwWrg2zioOS8BM9kV/view?usp=sharing">Henry E. Brady. 2019. “The Challenge of Big Data and Data Science.” Annual Review of Political Science.</a></h2>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract:</h3>
+<p>Big data and data science are transforming the world in ways that spawn new concerns for social scientists, such as the impacts of the internet on citizens and the media, the repercussions of smart cities, the possibilities of cyber-warfare and cyber-terrorism, the implications of precision medicine, and the consequences of artificial intelligence and automation. Along with these changes in society, powerful new data science methods support research using administrative, internet, textual, and sensor-audio-video data. Burgeoning data and innovative methods facilitate answering previously hard-to-tackle questions about society by offering new ways to form concepts from data, to do descriptive inference, to make causal inferences, and to generate predictions. They also pose challenges as social scientists must grasp the meaning of concepts and predictions generated by convoluted algorithms, weigh the relative value of prediction versus causal inference, and cope with ethical challenges as their methods, such as algorithms for mobilizing voters or determining bail, are adopted by policy makers.</p>
+</section>
+<section id="bumper-sticker" class="level3">
+<h3 class="anchored" data-anchor-id="bumper-sticker">Bumper Sticker:</h3>
+<p>Big data changed poli sci a lot - and there is more work to be done!</p>
+</section>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background:</h3>
+<ul>
+<li><p>So much information causing overload -&gt; fragmentation of information flows.</p>
+<ul>
+<li>good material explanation of maybe why people can chose their preferred media source.</li>
+</ul></li>
+<li><p>Big data <span class="math inline">\(\neq\)</span> better inference.</p>
+<ul>
+<li>this is true if our data collection process is bad/false/problematic.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="grimmer-justin-and-brandon-stewart.-2013.-text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-documents-political-analysis.-21-3-267-297." class="level2">
+<h2 class="anchored" data-anchor-id="grimmer-justin-and-brandon-stewart.-2013.-text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-documents-political-analysis.-21-3-267-297."><a href="https://drive.google.com/file/d/1_LzsCzik89-e6rlAR7vj7GFvEH3Dz-p4/view?usp=sharing">Grimmer, Justin and Brandon Stewart. 2013. “Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Documents” Political Analysis. 21, 3 267-297.</a></h2>
+<section id="abstract-1" class="level3">
+<h3 class="anchored" data-anchor-id="abstract-1">Abstract:</h3>
+<p>Politics and political conflict often occur in the written and spoken word. Scholars have long recognized this, but the massive costs of analyzing even moderately sized collections of texts have hindered their use in political science research. Here lies the promise of automated text analysis: it substantially reduces the costs of analyzing large collections of text. We provide a guide to this exciting new area of research and show how, in many instances, the methods have already obtained part of their promise. But there are pitfalls to using automated methods—they are no substitute for careful thought and close reading and require extensive and problem-specific validation. We survey a wide range of new methods, provide guidance on how to validate the output of the models, and clarify misconceptions and errors in the literature. To conclude, we argue that for automated text methods to become a standard tool for political scientists, methodologists must contribute new methods and new methods of validation.</p>
+</section>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview:</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="grimmer_overview_text.png" class="img-fluid figure-img"></p>
+<figcaption>Process of Text as Data</figcaption>
+</figure>
+</div>
+</section>
+<section id="background-1" class="level3">
+<h3 class="anchored" data-anchor-id="background-1">Background:</h3>
+<ul>
+<li><p>Just because one text method works well on one data set does not mean it will work will on a different dataset.</p></li>
+<li><p>Classification - organizes texts into a set of categories</p>
+<ul>
+<li><p>Dictionary method - use the frequency of key words to determine a document’s class</p></li>
+<li><p>supervised methods: hand coding documents then giving it to the machine to train and classify.</p>
+<ul>
+<li>easier to validate</li>
+</ul></li>
+<li><p>Fully automated clustering (FAC) - estimate categories then classify those documents into categories.</p>
+<ul>
+<li><p>mixed membership models - problem-specific structure to assist in the estimation of categories</p></li>
+<li><p>Computer assisted clustering (CAC) - looks at 1000s of potential clusterings.</p></li>
+</ul></li>
+<li><p>Unsupervised is not perfect and you need validation.</p></li>
+</ul></li>
+<li><p>Text/document - unit of anaylsis - tweet, facebook post, article, sentence, paragraph</p></li>
+<li><p>Corpus - population of texts</p></li>
+<li><p>Corpora - collection of corpus.</p></li>
+<li><p>Order of words does not matter. We treat our documents as a bag of words.</p></li>
+<li><p>stemming - reduces ends of words. This reduces dimensionality and keeps everything simpler.</p>
+<ul>
+<li><p>family, families, families’, familial</p>
+<ul>
+<li>all become famili</li>
+</ul></li>
+</ul></li>
+<li><p>Typically also discard capitalization, punctuation, very common words, and very uncommon words.</p></li>
+<li><p>We can used supervised methods to validate our use of unsupervised methods.</p></li>
+</ul>
+</section>
+<section id="four-principles-of-automated-text-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="four-principles-of-automated-text-analysis">Four Principles of Automated Text Analysis:</h3>
+<ol type="1">
+<li><p>All quantitative models of language are wrong - but some are useful</p></li>
+<li><p>Quantitative methods for text amplify resources and augment humans</p></li>
+<li><p>There is no globally best method for automated text analysis</p></li>
+<li><p>Validate, Validate, Validate.</p></li>
+</ol>
+</section>
+<section id="supervised-method" class="level3">
+<h3 class="anchored" data-anchor-id="supervised-method">Supervised Method:</h3>
+<ol type="1">
+<li><p>Construct a training set</p>
+<ol type="1">
+<li><p>iteratively develop coding scheme</p></li>
+<li><p>randomly sample to obtain a representative sample of documents</p>
+<ol type="1">
+<li><p>use this to train data set.</p></li>
+<li><p>n = 500 is ideal</p>
+<ol type="1">
+<li>n = 100 is just enough</li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><p>apply the supervised learning method-learning the relationship between features and categories in the training set, then using this to infer the labels in the test set</p></li>
+<li><p>validate the model output and classify the remaining documents</p></li>
+</ol>
+</section>
+<section id="fully-automated-clustering-fac" class="level3">
+<h3 class="anchored" data-anchor-id="fully-automated-clustering-fac">Fully Automated Clustering (FAC):</h3>
+<p>a supervised method we can use to validate unsupervised method</p>
+<section id="single-membership-model" class="level4">
+<h4 class="anchored" data-anchor-id="single-membership-model">Single Membership Model:</h4>
+<ul>
+<li><p>Single membership clustering models estimate a clustering: a partition of documents into</p>
+<p>mutually exclusive and exhaustive groups.</p>
+<ul>
+<li>Each group of documents in a clustering is a cluster, which represents an estimate of a category.</li>
+</ul></li>
+</ul>
+</section>
+<section id="mixed-membership-model" class="level4">
+<h4 class="anchored" data-anchor-id="mixed-membership-model">Mixed Membership Model</h4>
+</section>
+</section>
+<section id="computer-assisted-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="computer-assisted-clustering">Computer Assisted Clustering</h3>
+</section>
+</section>
+<section id="michel-et-al.-2011-quantitative-analysis-of-culture-using-millions-of-digitized-books-science-3316014." class="level2">
+<h2 class="anchored" data-anchor-id="michel-et-al.-2011-quantitative-analysis-of-culture-using-millions-of-digitized-books-science-3316014."><a href="https://www.science.org/doi/full/10.1126/science.1199644?casa_token=KsF6n_P2T7wAAAAA%3AjpgR4IuoHzVlqji8a9iemdAeMjw0HkD0pbaRpl4rMJRuR-By9za3j_O86Ucf5A-y90JFt6pHL96-hwc">Michel et al.&nbsp;2011, “Quantitative analysis of culture using millions of digitized books” Science, 331:6014.</a></h2>
+<section id="abstract-2" class="level3">
+<h3 class="anchored" data-anchor-id="abstract-2">Abstract:</h3>
+<p>We constructed a corpus of digitized texts containing about 4% of all books ever printed. Analysis of this corpus enables us to investigate cultural trends quantitatively. We survey the vast terrain of ‘culturomics,’ focusing on linguistic and cultural phenomena that were reflected in the English language between 1800 and 2000. We show how this approach can provide insights about fields as diverse as lexicography, the evolution of grammar, collective memory, the adoption of technology, the pursuit of fame, censorship, and historical epidemiology. Culturomics extends the boundaries of rigorous quantitative inquiry to a wide array of new phenomena spanning the social sciences and the humanities.</p>
+</section>
+<section id="bumper-sticker-1" class="level3">
+<h3 class="anchored" data-anchor-id="bumper-sticker-1">Bumper Sticker:</h3>
+<p>Text as Data can help us figure out language/culture changes over time.</p>
+</section>
+<section id="research-question" class="level3">
+<h3 class="anchored" data-anchor-id="research-question">Research Question:</h3>
+<p>How has culture changed?</p>
+</section>
+<section id="datamethods" class="level3">
+<h3 class="anchored" data-anchor-id="datamethods">Data/methods:</h3>
+<ul>
+<li><p>15 million books used for corpus</p></li>
+<li><p>spans hundreds of years and languages.</p></li>
+<li><p>restricted to 1-gram up to 5-gram - looked at how often a 1-gram or n-gram appeared</p>
+<ul>
+<li>1-gram is a sequence of characters uninterrupted by space.</li>
+</ul></li>
+<li><p>Usage frequency is computed by dividing the number of instances of the <em>n</em>-gram in a given year by the total number of words in the corpus in that year.</p></li>
+</ul>
+</section>
+<section id="findings" class="level3">
+<h3 class="anchored" data-anchor-id="findings">Findings:</h3>
+<ul>
+<li><p>More words found than in dictionary.</p></li>
+<li><p>English lexicon has early doubled from 1950 to 2000.</p></li>
+<li><p>grammar has changed</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="dimaggio-paul.-adapting-computational-text-analysis-to-social-science-and-vice-versa.-big-data-society-2.2-2015." class="level2">
+<h2 class="anchored" data-anchor-id="dimaggio-paul.-adapting-computational-text-analysis-to-social-science-and-vice-versa.-big-data-society-2.2-2015."><a href="https://journals.sagepub.com/doi/full/10.1177/2053951715602908">DiMaggio, Paul. “Adapting computational text analysis to social science (and vice versa).” Big Data &amp; Society 2.2 (2015).</a></h2>
 
 
 </section>

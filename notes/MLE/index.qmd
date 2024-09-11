@@ -123,14 +123,182 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
     -   why?
 
+    -   logarithms turn multiplication problems into addition problems.
+
     -   likelihood starts to breakdown around N=1000. Log-likelihood does not. Why?
 
-        -   Our optimization function is multiplying probabilties
+        -   Our optimization function is multiplying probabilities
 
             -   what happens when we multiply a bunch of probabilities?
 
                 -   Multiplying thousands of probabilities together is simply not a viable approach without infinite precision.
 
+### Example:
+
+```{r}
+# compare what happens when we increase n. 
+p <- seq(0,1,by=0.01)
+l <- (p^2)*(1-p)^3
+plot(l ~ p, type="l")
+p[which(l == max(l))]
+
+p <- seq(0,1,by=0.01)
+l <- (p^40)*(1-p)^20
+plot(l ~ p, type="l")
+p[which(l == max(l))]
+
+```
+
 ## Homework 1:
 
 -   "Lab 1.R"
+
+# Topic 2: Estimation: Looking Under the Hood
+
+-   $(\theta|y_i)=Pr(y|\theta)$
+
+-   you have to pick which distribution generated y.
+
+    -   assume a probability model.
+
+-   Remember:
+
+    -   Traditional probability is a measure of absolute uncertainty. It comes from three axioms:
+
+        -   See slide 5.
+
+    -   However, the likelihood is only a relative measure of uncertainty.
+
+    -   Likelihood model is never absolutely true. It is assumed. We always have to assume a probability model.
+
+    -   Therefore, we assume that information about $\theta$ comes from
+
+        -   the data
+
+        -   assumption about the DGP (assumed probability distribution)
+
+-   Important to assume outcomes are independent.
+
+-   Pick a theta and figure out the probability/distribution of outcomes.
+
+    -   higher theta better.
+
+-   Whath happens when we multiply a bunch of probabilities together?
+
+    -   they get really small
+
+        -   so we use logs.
+
+            -   what happens when we take natural logs of probabilities?
+
+                -   we get negative numbers - and they will become more negative with more observations.
+
+                    -   take value closes to zero
+
+                        -   maximizing a negative number. (making it less negative)
+
+## Under the Hood of ML:
+
+-   We are calculating the derivative of the highest point of the joint distribution.
+
+-   Types of optimization methods:
+
+    -   Numerical
+
+        -   grid search: Give me a bunch of plausible values of theta and evaluate.
+
+            -   we will find a global maximum.
+
+            -   very slow
+
+            -   computationally becomes crazy very quickly.
+
+    -   Iterative
+
+        -   this is the "default" one - everyone does this.
+
+            -   these are optimization methods of "steepest ascent" or "gradient Ascent" since the algorithm 'crawls' up the surface of the likelihood.
+
+    -   Others...
+
+## Measures of Uncertainty:
+
+-   We have discussed how to obtain the MLE, $\hat{\theta}$. Yet it is an estimate.
+
+-   uncertainty is kinda measured by the curvature.
+
+-   standard errors are derived from the negative of the inverse of the second derivative.
+
+    -   standard errors can't be negative
+
+    -   bigger values imply smaller variance.
+
+    -   bigger negative = more curvature. see equation 8/9 on slides.
+
+    -   we take take the inverse since larger (more negative) values indicate a sharper curvature, which indicates more certainty in our estimate.
+
+-   We use the Hessian for standard errors in MLE.
+
+    -   Variance = $-[\textbf{H}^-1]$
+
+    -   SE: $\sqrt{-[\textbf{H}^-1]}$
+
+## Properties of ML:
+
+-   Sufficiency: there exists a single $\theta$
+
+-   Consistency
+
+    -   $\hat{\theta} ->\theta as \textit{n} -> \infty$
+
+-   Asymptotic normality
+
+-   Invariance: ML estimate is invariant to functional transformations.
+
+-   Efficiency: MLE has the smallest variance (asymptotically), as given by the Cramer-Rao Lower Bound
+
+## Disadvantages of ML:
+
+-   small sample issues. Since ML is asymptotically normal, use Z- rather than t-statistics.
+
+-   We know the VCV is biased in small samples
+
+-   (not a disadvantage) but most MLE models use z rather than t-stat.
+
+-   Have to make distributional assumptions. We must characterize the nature of the statistical experiment.
+
+-   some regularity conditions must be met.
+
+## Information Criteria:
+
+-   Provides goodness-of-fit with penalization for model complexity
+
+    -   basically R\^2
+
+-   Used for feature (i.e., covariate) selection
+
+-   Relative, not absolute.
+
+-   Data-dependent (sample-dependent, just like log likelihood): numerical values of Y must be identical.
+
+-   No hypothesis test
+
+    -   no p-value.
+
+-   Akaike Information criterion (AIC)
+
+    -   $AIC=2k-2ln(L)$
+
+    -   Lower AIC is preferred model.
+
+-   Schwartz Bayesian information criterion (SBIC)
+
+    -   $SBIC=ln(n)k-2ln(L)$
+
+    -   Lower SBIC is preferred model
+
+    -   stronger penalty for over fitting than AIC. Penalty derived from "prior" information.
+
+-   Restricted Mode: Less parameters
+
+-   unrestricted model: all parameters.

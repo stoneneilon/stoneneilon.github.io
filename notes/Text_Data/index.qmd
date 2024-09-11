@@ -19,7 +19,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 [Click here for syllabus](https://drive.google.com/file/d/13QYHeUt1mlQ4sIT_N1vfRtfh1ny9jAFF/view?usp=sharing)
 
-## Why should we take text as data? 
+## Why should we take text as data?
 
 -   Availability!
 
@@ -29,12 +29,322 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 -   Opens up exciting new opportunities for measurement and inference.
 
-## What can we learn? 
+-   a lot of text analysis is *discovery* - this can shape our question moving forward. The process is somewhat inductive.
+
+## What can we learn?
 
 -   social media data gives us real-time measures of mass and elite behavior
 
 -   Text of floor speeches, press releases, supreme court briefs, and manifestos offer new measures of ideological scaling.
 
--   Webscraping repeatedly can show us how authoritarian regimes censor content and control information.
+-   Web-scraping repeatedly can show us how authoritarian regimes censor content and control information.
 
 -   The language in books and magazines over time can show us how social attitudes have evolved.
+
+# Week 2 (Labor Day - No Class)
+
+# Week 3 - Introduction to Text as Data:
+
+## Lecture Notes:
+
+### A fundamentally qualitative exercise:
+
+-   substantive knowledge and deep contextual understanding is essential to determine relevant quantities of interest.
+
+-   is the method appropriate?
+
+-   is this thing I measured actually capturing what I want?
+
+-   automated approach allows humans to read, organize, and analyze documents at scale.
+
+### Data Generating Process:
+
+-   Agnostic about model selection
+
+-   as long as we can accurately measure what we care about.
+
+-   all text models are wrong!
+
+-   evaluate models based on their ability to perform a useful social scientific task.
+
+### Validation:
+
+-   Face valididity?
+
+-   Does the text measure correlate with similar measures?
+
+-   How does the measure compare with our bets guess at "ground truth"?
+
+### What automated approaches can and can't do:
+
+-   Algorithms are really good at sorting.
+
+-   good at compressing texts into lower dimensions.
+
+-   With supervised tasks, if a human can't do it a machine (usually) can't either.
+
+### Big Data Challenges:
+
+-   Just because data is really big, doesn't mean it's representative.
+
+-   Just because we have statistical significance but it substantively isn't meaningful.
+
+### Ethics:
+
+-   Just because data is publicly available doesn't mean you don't need to protect subjects.
+
+-   Prioritize subjects over reproducability
+
+-   Following platforms' terms of service is sometimes at odds with open science.
+
+-   Do the best you can but don't violate ToS if possible.
+
+### Theory Build or Theory Testing?
+
+-   Theory building: develop a new argument or concept to explain something that is not understood well
+
+-   theory testing: takes an existing theory and apply it to new cases or-evaluate existing cases etc. This can also result in the modification of an existing theory.
+
+### How do I collect data?
+
+-   APIs
+
+-   Webscraping
+
+-   OCR
+
+## [Grimmer, Justin, Margaret Roberts, and Brandon Stewart. Text as Data, Chapters 1-2.](https://drive.google.com/file/d/1VDMUqd0UTSxeEBUCE1jY_m4D4TDe_vcI/view?usp=sharing)
+
+(Textbook)
+
+### Chapter 1:
+
+-   The book uses text as data methods from computer science for social science purposes.
+
+-   Big use of inductive reasoning.
+
+-   Rather than a focus on prediction, text as data researchers are much more interested in how well their models provide insights into concepts of interest, how well measurement tools sort documents according to those rules, and how well the assumptions needed for accurate causal inference or prediction are met.
+
+-   Texts can be organized differently. No one correct organization
+
+    -   we can then find the best measurement of that particular organization
+
+        -   can be tested with extensive validation.
+
+            -   what is the utility to answering the research question becomes of key interest.
+
+-   Authors reject views that there is an underlying structure that statistical models applied to text are recovering. Rather, we view statistical models as useful (and incorrect) summaries of the text documents.
+
+### Chapter 2:
+
+-   Typical social science research is deductive
+
+    -   Theory \> data \> test
+
+    -   Empirical Implications of Theoretical Models
+
+        -   use theory to create formal game model then use the game theory model to extract predictions. Then collect data to test those predictions.
+
+    -   strict deductive research can lead to missed opportunities in new questions + strategies.
+
+-   Authors argue there is value in inductive reasoning and using an iterative approach for text analysis.
+
+-   Methods to analyze text as data can contribute to inference at three stages of the process: discovery, measurement, and inference.
+
+#### Discovery:
+
+-   Discovery - develop a research question
+
+    -   the task of deciding what you want to measure from data and goal of inference.
+
+        -   need to conceptualize the world.
+
+        -   You want to analyze social media, okay, but what aspect?
+
+            -   topical content, sentiment, readibility, etc.
+
+                -   text analysis helps us discover what part we want to look at through the inductive process.
+
+![Figure of deductive vs. inductive.](inductive_deductive.png)
+
+-   By pointing out new ways out of organizing the document, we can read the text differently and prompt new questions.
+
+#### Measurement:
+
+-   researchers have to demonstrate that their method of measurement does indeed describe the concept or behavior they want to measure---that is, they have to validate their measures and provide evidence that the described quantities are relevant to the theoretical quantity at hand.
+
+#### Inference:
+
+-   predictions about events
+
+-   used for causal inference.
+
+#### Agnostic approach to Text Analysis:
+
+-   No true underlying data-generating process
+
+    -   just a bunch of different ones with different insights.
+
+#### Six Principles of Text Analysis:
+
+1.  Theory and substantive knowledge are essential for research design (Section 2.7.1)
+
+2.  Text analysis does not replace humans---it augments them (Section 2.7.2)
+
+3.  Building, refining, and testing social science theories requires iteration and cumulation (Section 2.7.3)
+
+4.  Text analysis methods distill generalizations from language (Section 2.7.4)
+
+5.  The best method depends on the task (Section 2.7.5)
+
+6.  Validations are essential and depend on the theory and the task (Section 2.7.6)
+
+## [Henry E. Brady. 2019. "The Challenge of Big Data and Data Science." Annual Review of Political Science.](https://drive.google.com/file/d/1pJ4kuJNkW5BHVAzLwWrg2zioOS8BM9kV/view?usp=sharing)
+
+### Abstract:
+
+Big data and data science are transforming the world in ways that spawn new concerns for social scientists, such as the impacts of the internet on citizens and the media, the repercussions of smart cities, the possibilities of cyber-warfare and cyber-terrorism, the implications of precision medicine, and the consequences of artificial intelligence and automation. Along with these changes in society, powerful new data science methods support research using administrative, internet, textual, and sensor-audio-video data. Burgeoning data and innovative methods facilitate answering previously hard-to-tackle questions about society by offering new ways to form concepts from data, to do descriptive inference, to make causal inferences, and to generate predictions. They also pose challenges as social scientists must grasp the meaning of concepts and predictions generated by convoluted algorithms, weigh the relative value of prediction versus causal inference, and cope with ethical challenges as their methods, such as algorithms for mobilizing voters or determining bail, are adopted by policy makers.
+
+### Bumper Sticker:
+
+Big data changed poli sci a lot - and there is more work to be done!
+
+### Background:
+
+-   So much information causing overload -\> fragmentation of information flows.
+
+    -   good material explanation of maybe why people can chose their preferred media source.
+
+-   Big data $\neq$ better inference.
+
+    -   this is true if our data collection process is bad/false/problematic.
+
+## [Grimmer, Justin and Brandon Stewart. 2013. "Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Documents" Political Analysis. 21, 3 267-297.](https://drive.google.com/file/d/1_LzsCzik89-e6rlAR7vj7GFvEH3Dz-p4/view?usp=sharing)
+
+### Abstract:
+
+Politics and political conflict often occur in the written and spoken word. Scholars have long recognized this, but the massive costs of analyzing even moderately sized collections of texts have hindered their use in political science research. Here lies the promise of automated text analysis: it substantially reduces the costs of analyzing large collections of text. We provide a guide to this exciting new area of research and show how, in many instances, the methods have already obtained part of their promise. But there are pitfalls to using automated methods---they are no substitute for careful thought and close reading and require extensive and problem-specific validation. We survey a wide range of new methods, provide guidance on how to validate the output of the models, and clarify misconceptions and errors in the literature. To conclude, we argue that for automated text methods to become a standard tool for political scientists, methodologists must contribute new methods and new methods of validation.
+
+### Overview:
+
+![Process of Text as Data](grimmer_overview_text.png)
+
+### Background:
+
+-   Just because one text method works well on one data set does not mean it will work will on a different dataset.
+
+-   Classification - organizes texts into a set of categories
+
+    -   Dictionary method - use the frequency of key words to determine a document's class
+
+    -   supervised methods: hand coding documents then giving it to the machine to train and classify.
+
+        -   easier to validate
+
+    -   Fully automated clustering (FAC) - estimate categories then classify those documents into categories.
+
+        -   mixed membership models - problem-specific structure to assist in the estimation of categories
+
+        -   Computer assisted clustering (CAC) - looks at 1000s of potential clusterings.
+
+    -   Unsupervised is not perfect and you need validation.
+
+-   Text/document - unit of anaylsis - tweet, facebook post, article, sentence, paragraph
+
+-   Corpus - population of texts
+
+-   Corpora - collection of corpus.
+
+-   Order of words does not matter. We treat our documents as a bag of words.
+
+-   stemming - reduces ends of words. This reduces dimensionality and keeps everything simpler.
+
+    -   family, families, families', familial
+
+        -   all become famili
+
+-   Typically also discard capitalization, punctuation, very common words, and very uncommon words.
+
+-   We can used supervised methods to validate our use of unsupervised methods.
+
+### Four Principles of Automated Text Analysis:
+
+1.  All quantitative models of language are wrong - but some are useful
+
+2.  Quantitative methods for text amplify resources and augment humans
+
+3.  There is no globally best method for automated text analysis
+
+4.  Validate, Validate, Validate.
+
+### Supervised Method:
+
+1.  Construct a training set
+
+    1.  iteratively develop coding scheme
+
+    2.  randomly sample to obtain a representative sample of documents
+
+        1.  use this to train data set.
+
+        2.  n = 500 is ideal
+
+            1.  n = 100 is just enough
+
+2.  apply the supervised learning method-learning the relationship between features and categories in the training set, then using this to infer the labels in the test set
+
+3.  validate the model output and classify the remaining documents
+
+### Fully Automated Clustering (FAC):
+
+a supervised method we can use to validate unsupervised method
+
+#### Single Membership Model:
+
+-   Single membership clustering models estimate a clustering: a partition of documents into
+
+    mutually exclusive and exhaustive groups.
+
+    -   Each group of documents in a clustering is a cluster, which represents an estimate of a category.
+
+#### Mixed Membership Model
+
+### Computer Assisted Clustering
+
+## [Michel et al. 2011, "Quantitative analysis of culture using millions of digitized books" Science, 331:6014.](https://www.science.org/doi/full/10.1126/science.1199644?casa_token=KsF6n_P2T7wAAAAA%3AjpgR4IuoHzVlqji8a9iemdAeMjw0HkD0pbaRpl4rMJRuR-By9za3j_O86Ucf5A-y90JFt6pHL96-hwc)
+
+### Abstract:
+
+We constructed a corpus of digitized texts containing about 4% of all books ever printed. Analysis of this corpus enables us to investigate cultural trends quantitatively. We survey the vast terrain of 'culturomics,' focusing on linguistic and cultural phenomena that were reflected in the English language between 1800 and 2000. We show how this approach can provide insights about fields as diverse as lexicography, the evolution of grammar, collective memory, the adoption of technology, the pursuit of fame, censorship, and historical epidemiology. Culturomics extends the boundaries of rigorous quantitative inquiry to a wide array of new phenomena spanning the social sciences and the humanities.
+
+### Bumper Sticker:
+
+Text as Data can help us figure out language/culture changes over time.
+
+### Research Question:
+
+How has culture changed?
+
+### Data/methods:
+
+-   15 million books used for corpus
+
+-   spans hundreds of years and languages.
+
+-   restricted to 1-gram up to 5-gram - looked at how often a 1-gram or n-gram appeared
+
+    -   1-gram is a sequence of characters uninterrupted by space.
+
+-   Usage frequency is computed by dividing the number of instances of the *n*-gram in a given year by the total number of words in the corpus in that year.
+
+### Findings:
+
+-   More words found than in dictionary.
+
+-   English lexicon has early doubled from 1950 to 2000.
+
+-   grammar has changed
+
+-   
+
+## [DiMaggio, Paul. "Adapting computational text analysis to social science (and vice versa)." Big Data & Society 2.2 (2015).](https://journals.sagepub.com/doi/full/10.1177/2053951715602908)

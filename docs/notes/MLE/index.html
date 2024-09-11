@@ -23,6 +23,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -164,8 +198,19 @@ window.Quarto = {
   <li><a href="#king-chapters-1-2" id="toc-king-chapters-1-2" class="nav-link" data-scroll-target="#king-chapters-1-2">King Chapters 1 &amp; 2</a></li>
   <li><a href="#ward-and-ahlquist-chapter-1" id="toc-ward-and-ahlquist-chapter-1" class="nav-link" data-scroll-target="#ward-and-ahlquist-chapter-1">Ward and Ahlquist Chapter 1:</a></li>
   </ul></li>
-  <li><a href="#lecture" id="toc-lecture" class="nav-link" data-scroll-target="#lecture">Lecture:</a></li>
+  <li><a href="#lecture" id="toc-lecture" class="nav-link" data-scroll-target="#lecture">Lecture:</a>
+  <ul class="collapse">
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example:</a></li>
+  </ul></li>
   <li><a href="#homework-1" id="toc-homework-1" class="nav-link" data-scroll-target="#homework-1">Homework 1:</a></li>
+  </ul></li>
+  <li><a href="#topic-2-estimation-looking-under-the-hood" id="toc-topic-2-estimation-looking-under-the-hood" class="nav-link" data-scroll-target="#topic-2-estimation-looking-under-the-hood">Topic 2: Estimation: Looking Under the Hood</a>
+  <ul class="collapse">
+  <li><a href="#under-the-hood-of-ml" id="toc-under-the-hood-of-ml" class="nav-link" data-scroll-target="#under-the-hood-of-ml">Under the Hood of ML:</a></li>
+  <li><a href="#measures-of-uncertainty" id="toc-measures-of-uncertainty" class="nav-link" data-scroll-target="#measures-of-uncertainty">Measures of Uncertainty:</a></li>
+  <li><a href="#properties-of-ml" id="toc-properties-of-ml" class="nav-link" data-scroll-target="#properties-of-ml">Properties of ML:</a></li>
+  <li><a href="#disadvantages-of-ml" id="toc-disadvantages-of-ml" class="nav-link" data-scroll-target="#disadvantages-of-ml">Disadvantages of ML:</a></li>
+  <li><a href="#information-criteria" id="toc-information-criteria" class="nav-link" data-scroll-target="#information-criteria">Information Criteria:</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -317,9 +362,10 @@ window.Quarto = {
 <li><p>We will pretty much always use log-likelihood.</p>
 <ul>
 <li><p>why?</p></li>
+<li><p>logarithms turn multiplication problems into addition problems.</p></li>
 <li><p>likelihood starts to breakdown around N=1000. Log-likelihood does not. Why?</p>
 <ul>
-<li><p>Our optimization function is multiplying probabilties</p>
+<li><p>Our optimization function is multiplying probabilities</p>
 <ul>
 <li><p>what happens when we multiply a bunch of probabilities?</p>
 <ul>
@@ -329,11 +375,190 @@ window.Quarto = {
 </ul></li>
 </ul></li>
 </ul>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compare what happens when we increase n. </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="at">by=</span><span class="fl">0.01</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> (p<span class="sc">^</span><span class="dv">2</span>)<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p)<span class="sc">^</span><span class="dv">3</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(l <span class="sc">~</span> p, <span class="at">type=</span><span class="st">"l"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>p[<span class="fu">which</span>(l <span class="sc">==</span> <span class="fu">max</span>(l))]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="at">by=</span><span class="fl">0.01</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> (p<span class="sc">^</span><span class="dv">40</span>)<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p)<span class="sc">^</span><span class="dv">20</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(l <span class="sc">~</span> p, <span class="at">type=</span><span class="st">"l"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>p[<span class="fu">which</span>(l <span class="sc">==</span> <span class="fu">max</span>(l))]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.67</code></pre>
+</div>
+</div>
+</section>
 </section>
 <section id="homework-1" class="level2">
 <h2 class="anchored" data-anchor-id="homework-1">Homework 1:</h2>
 <ul>
 <li>“Lab 1.R”</li>
+</ul>
+</section>
+</section>
+<section id="topic-2-estimation-looking-under-the-hood" class="level1">
+<h1>Topic 2: Estimation: Looking Under the Hood</h1>
+<ul>
+<li><p><span class="math inline">\((\theta|y_i)=Pr(y|\theta)\)</span></p></li>
+<li><p>you have to pick which distribution generated y.</p>
+<ul>
+<li>assume a probability model.</li>
+</ul></li>
+<li><p>Remember:</p>
+<ul>
+<li><p>Traditional probability is a measure of absolute uncertainty. It comes from three axioms:</p>
+<ul>
+<li>See slide 5.</li>
+</ul></li>
+<li><p>However, the likelihood is only a relative measure of uncertainty.</p></li>
+<li><p>Likelihood model is never absolutely true. It is assumed. We always have to assume a probability model.</p></li>
+<li><p>Therefore, we assume that information about <span class="math inline">\(\theta\)</span> comes from</p>
+<ul>
+<li><p>the data</p></li>
+<li><p>assumption about the DGP (assumed probability distribution)</p></li>
+</ul></li>
+</ul></li>
+<li><p>Important to assume outcomes are independent.</p></li>
+<li><p>Pick a theta and figure out the probability/distribution of outcomes.</p>
+<ul>
+<li>higher theta better.</li>
+</ul></li>
+<li><p>Whath happens when we multiply a bunch of probabilities together?</p>
+<ul>
+<li><p>they get really small</p>
+<ul>
+<li><p>so we use logs.</p>
+<ul>
+<li><p>what happens when we take natural logs of probabilities?</p>
+<ul>
+<li><p>we get negative numbers - and they will become more negative with more observations.</p>
+<ul>
+<li><p>take value closes to zero</p>
+<ul>
+<li>maximizing a negative number. (making it less negative)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="under-the-hood-of-ml" class="level2">
+<h2 class="anchored" data-anchor-id="under-the-hood-of-ml">Under the Hood of ML:</h2>
+<ul>
+<li><p>We are calculating the derivative of the highest point of the joint distribution.</p></li>
+<li><p>Types of optimization methods:</p>
+<ul>
+<li><p>Numerical</p>
+<ul>
+<li><p>grid search: Give me a bunch of plausible values of theta and evaluate.</p>
+<ul>
+<li><p>we will find a global maximum.</p></li>
+<li><p>very slow</p></li>
+<li><p>computationally becomes crazy very quickly.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Iterative</p>
+<ul>
+<li><p>this is the “default” one - everyone does this.</p>
+<ul>
+<li>these are optimization methods of “steepest ascent” or “gradient Ascent” since the algorithm ‘crawls’ up the surface of the likelihood.</li>
+</ul></li>
+</ul></li>
+<li><p>Others…</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="measures-of-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-uncertainty">Measures of Uncertainty:</h2>
+<ul>
+<li><p>We have discussed how to obtain the MLE, <span class="math inline">\(\hat{\theta}\)</span>. Yet it is an estimate.</p></li>
+<li><p>uncertainty is kinda measured by the curvature.</p></li>
+<li><p>standard errors are derived from the negative of the inverse of the second derivative.</p>
+<ul>
+<li><p>standard errors can’t be negative</p></li>
+<li><p>bigger values imply smaller variance.</p></li>
+<li><p>bigger negative = more curvature. see equation 8/9 on slides.</p></li>
+<li><p>we take take the inverse since larger (more negative) values indicate a sharper curvature, which indicates more certainty in our estimate.</p></li>
+</ul></li>
+<li><p>We use the Hessian for standard errors in MLE.</p>
+<ul>
+<li><p>Variance = <span class="math inline">\(-[\textbf{H}^-1]\)</span></p></li>
+<li><p>SE: <span class="math inline">\(\sqrt{-[\textbf{H}^-1]}\)</span></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="properties-of-ml" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-ml">Properties of ML:</h2>
+<ul>
+<li><p>Sufficiency: there exists a single <span class="math inline">\(\theta\)</span></p></li>
+<li><p>Consistency</p>
+<ul>
+<li><span class="math inline">\(\hat{\theta} -&gt;\theta as \textit{n} -&gt; \infty\)</span></li>
+</ul></li>
+<li><p>Asymptotic normality</p></li>
+<li><p>Invariance: ML estimate is invariant to functional transformations.</p></li>
+<li><p>Efficiency: MLE has the smallest variance (asymptotically), as given by the Cramer-Rao Lower Bound</p></li>
+</ul>
+</section>
+<section id="disadvantages-of-ml" class="level2">
+<h2 class="anchored" data-anchor-id="disadvantages-of-ml">Disadvantages of ML:</h2>
+<ul>
+<li><p>small sample issues. Since ML is asymptotically normal, use Z- rather than t-statistics.</p></li>
+<li><p>We know the VCV is biased in small samples</p></li>
+<li><p>(not a disadvantage) but most MLE models use z rather than t-stat.</p></li>
+<li><p>Have to make distributional assumptions. We must characterize the nature of the statistical experiment.</p></li>
+<li><p>some regularity conditions must be met.</p></li>
+</ul>
+</section>
+<section id="information-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="information-criteria">Information Criteria:</h2>
+<ul>
+<li><p>Provides goodness-of-fit with penalization for model complexity</p>
+<ul>
+<li>basically R^2</li>
+</ul></li>
+<li><p>Used for feature (i.e., covariate) selection</p></li>
+<li><p>Relative, not absolute.</p></li>
+<li><p>Data-dependent (sample-dependent, just like log likelihood): numerical values of Y must be identical.</p></li>
+<li><p>No hypothesis test</p>
+<ul>
+<li>no p-value.</li>
+</ul></li>
+<li><p>Akaike Information criterion (AIC)</p>
+<ul>
+<li><p><span class="math inline">\(AIC=2k-2ln(L)\)</span></p></li>
+<li><p>Lower AIC is preferred model.</p></li>
+</ul></li>
+<li><p>Schwartz Bayesian information criterion (SBIC)</p>
+<ul>
+<li><p><span class="math inline">\(SBIC=ln(n)k-2ln(L)\)</span></p></li>
+<li><p>Lower SBIC is preferred model</p></li>
+<li><p>stronger penalty for over fitting than AIC. Penalty derived from “prior” information.</p></li>
+</ul></li>
+<li><p>Restricted Mode: Less parameters</p></li>
+<li><p>unrestricted model: all parameters.</p></li>
 </ul>
 
 

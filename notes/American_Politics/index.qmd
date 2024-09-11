@@ -49,6 +49,24 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 ## In-Class Notes:
 
+-   All articles seem to reference polarization.
+
+-   These all seem to be "headline" articles.
+
+-   lots of survey data.
+
+-   More authors is the trend.
+
+-   Fowler:
+
+    -   Is congress polarizing because the public is polarizing? Or is it other things?
+
+    -   Fowler asks about policy preferences.
+
+-   Good papers establish topline relationship
+
+    -   can we establish the mechanism holds?
+
 ## [Fowler, Anthony, et al. 2023. "Moderates," American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/moderates/71A6A9BD7EC7A5C94F975703417F866F)
 
 ### Abstract:
@@ -90,6 +108,10 @@ Why (from a survey perspective) are people moderate?
     -   those who have genuinely centrist views that are well summarized by a single underlying ideological dimension (spatial)
 
         -   Downsian voters
+            -   live in single dimension.
+        -   $Pr(y=1) = F(\beta_j(x_i-\alpha_j)$
+            -   $x_i$ is the ideological position
+            -   $\alpha_j$ is issue
 
     -   those who are inattentive to politics or the survey (unsophisticated)
 
@@ -107,6 +129,12 @@ Why (from a survey perspective) are people moderate?
 
             -   They discriminate between thus if $\neq$ .5 relative likelihood then they are probably a conversian moderate.
 
+                -   issue by issue responses not correlated with each other. Less than .5
+
+                -   not completely guessing but no complete structure.
+
+            -   no clear structure.
+
 -   Assumes responses are perfect representations of preferences
 
     -   The issues have been ordered such that if a Downsian gives a conservative answer on issue one, he or she will necessarily give a conservative answer on issues two and three, and so on such that the three questions divide Downsians at three points along the ideological spectrum.
@@ -115,7 +143,7 @@ Why (from a survey perspective) are people moderate?
 
         -   this ordering and assumptions allows them to figure out who is a "downsian" voter
 
-            -   if they conflict with the guttman scale - that is probably not a downsian voter.
+            -   if they conflict with the Guttman scale - that is probably not a downsian voter.
 
 ### Data:
 
@@ -145,7 +173,7 @@ Why (from a survey perspective) are people moderate?
 
     -   more responsive to ideologies
 
--   Most moderates appear to be downsian
+-   Most moderates appear to be Downsian
 
 -   results suggest centrist voters drive the relative success of incumbents, centrists, and experienced candidates.
 
@@ -161,7 +189,7 @@ Why (from a survey perspective) are people moderate?
 
 ### Abstract:
 
-Contemporary American politics has been largely characterized by hyperpartisanship and polarization, withpartisan-motivated reasoning a thematic concern. Theories of emotions in politics suggest that anxiety might interruptpartisan heuristics and encourage citizens to reason more evenhandedly---but in what domains and to what extent? We useoriginal panel data to assess how anxiety about becoming seriously ill from COVID-19 interacted with partisan attachmentsto shape political judgment during the COVID-19 pandemic. The structure of our data allows us to assess large-scaleimplications of politically relevant emotions in ways that so far have not been possible. We find large effects on policyattitudes: Republicans who were afraid of getting sick rejected signals from copartisan leaders by supporting mask mandatesand the like. Effects on vote choice for Republicans were muted in comparison, but fear's large effect on independents mayhave been pivotal.
+Contemporary American politics has been largely characterized by hyper partisanship and polarization, with partisan-motivated reasoning a thematic concern. Theories of emotions in politics suggest that anxiety might interrupt partisan heuristics and encourage citizens to reason more evenhandedly---but in what domains and to what extent? We use original panel data to assess how anxiety about becoming seriously ill from COVID-19 interacted with partisan attachments to shape political judgment during the COVID-19 pandemic. The structure of our data allows us to assess large-scale implications of politically relevant emotions in ways that so far have not been possible. We find large effects on policy attitudes: Republicans who were afraid of getting sick rejected signals from copartisan leaders by supporting mask mandates and the like. Effects on vote choice for Republicans were muted in comparison, but fear's large effect on independents may have been pivotal.
 
 ### Bumper Sticker:
 
@@ -183,7 +211,7 @@ Fear and anxiety can influence partisanship (a little)
 
 -   Partisans typically listen to party elites.
 
-    -   but for many republicans during covid-19, they disagreed with the party elites.
+    -   but for many republicans during Covid-19, they disagreed with the party elites.
 
 -   **Accuracy Driven Reasoning:** a processing style in which people exert more effort to reach correct conclusions. They "attend to relevant information more carefully," "process it more deeply," and "\[consider\] more alternatives"
 
@@ -227,15 +255,17 @@ Fear and anxiety can influence partisanship (a little)
 
 ### Findings:
 
--   Anxiety about real-world events can decouple partisans' policy positions from those of their party leaders. Once citizensenter the voting booth, however, their ability to assessaccountability and mete out electoral reward or punishment remains deeply affected by partisanship even underpandemic conditions.
+-   Anxiety about real-world events can decouple partisans' policy positions from those of their party leaders. Once citizens enter the voting booth, however, their ability to assess accountability and mete out electoral reward or punishment remains deeply affected by partisanship even under pandemic conditions.
 
--   fear of gettingsick with COVID-19 can lead citizens to adopt policypositions contrary to party cues.
+-   fear of getting sick with COVID-19 can lead citizens to adopt policy positions contrary to party cues.
 
 -   the results suggest that anxiety does encourage individuals to pursue accuracy-motivated reasoning, even on a highly politicized issue
 
--   anxiety encourages individuals to seekout new information, to eschew habitual elite cues, and process what they learn with the goal of achieving accuracy, rather than rationalizing partisan talking points.
+-   anxiety encourages individuals to seek out new information, to eschew habitual elite cues, and process what they learn with the goal of achieving accuracy, rather than rationalizing partisan talking points.
 
 -   At the lowest levels of fear, respondents' vote intentions were strongly associated with their party identification.
+
+-   Fear increases people to check different news sources.
 
 -   As fear increased, probability to vote Trump decreases.
 
@@ -321,7 +351,7 @@ More engagement/demand with articles that include identities in headlines.
 
 ### Results:
 
--   Posts with identity-related contenthave higher levels of expressive and social engagement (measured via liking and sharing) than those without it.
+-   Posts with identity-related content have higher levels of expressive and social engagement (measured via liking and sharing) than those without it.
 
 -   Different outlets are shown to invoke different identities more frequently than others.
 
@@ -353,11 +383,15 @@ We made a new legislative efficiency score that tells us stuff about political h
 
     -   "The proven ability to advance a member's agenda items through the legislative process and into law" (Volden & Wiseman 2014)
 
+-   looking at structural institutions to see how it changes efficiency.
+
 -   They are creating a new way to measure members' legislative efficiency
 
 -   Primarily focused on role of committee chairs, majority parties, and ideological distance to chamber medians.
 
 -   Rule changes + organizational changes separate the legislative eras.
+
+    -   what institutional factors caused variation in efficiency.
 
 ### Hypothesis:
 
@@ -372,6 +406,8 @@ We made a new legislative efficiency score that tells us stuff about political h
 -   Create bill level measure to weigh importance of a bill.
 
 -   1.1 million bills
+
+-   look at bill progress + importance. - measure of bill salience.
 
 ### Results:
 
@@ -458,3 +494,497 @@ Has the Supreme Court become politicized and lost legitimacy in recent years?
         -   data goes into 2023 allowing study of overtime Dobbs effect rather than immediate effect.
 
 # Week 3 - Classic Readings in American Politics
+
+## [Campbell, Angus, Philip Converse, Warren Miller and Donald Stokes. 1960. The American Voter. Ch. 4.](https://drive.google.com/file/d/1a9TpKXJVtmA9b48Ptus0apuNc68GpCzL/view?usp=sharing)
+
+### Partisan Choice - Chapter 4.
+
+-   The motivational role of perceptions of the wider political environment deserves greater attention.
+
+#### Bumper Sticker:
+
+Levels of attitudes impact vote choice.
+
+#### Main Hypothesis:
+
+-   The voting act depends in an immediate sense on the individual voter's evaluative orientations towards *several* objects of politics ought to be tested by an examination of the influence of all these orientations at once.
+
+#### Psychological forces on behavior:
+
+-   Voting is the resultant of attitudinal forces.
+
+-   voters have orientations to the elements of politics
+
+    -   elements include the president, domestic + foreign policy, performance of parties in gov.
+
+        -   these are evaluated and subsequently shape the orientation as either positive or negative.
+
+            -   these combined make up a system of partisan attitudes.
+
+#### Partisan Attitude and Voting Choice:
+
+-   The psychological measures strongly affect the partisan vote.
+
+-   More favorable attitude of Eisenhower = higher % of republicans voted for him
+
+-   Less favorable attitude of Eisenhower = Lower % of republicans voted for him.
+
+-   data is a small n.
+
+-   Note this is just one attitude dimension that does not explain the voting act
+
+    -   authors argue the partisan choice is based on a **system of partisan attitudes.**
+
+-   Attitude towards Eisenhower at the extreme ends predicts vote choice pretty well. However, those that are more neutral in their attitude towards Eisenhower (regardless of party affiliation) does not predict vote choice well.
+
+    -   Authors need more dimensions to explain vote choice as attitude toward Eisenhower is not enough.
+
+-   These graphs are awful.
+
+#### Findings:
+
+-   Evidence for their hypothesis is supported from their sample
+
+    ![Results of their model in predictive power of vote.](American_voter_finding_1.png)
+
+-   Also looked at the error rate and why it existed.
+
+    -   did some qualitative work through interviews
+
+        -   "Our interviews suggest that the dynamics of these face-to-face associations are capable of generating forces that may negate the force of the individual's own evaluations of the elements of politics." p.76
+
+            -   "...For example, one respondent traced an abrupt reversal of his vote intention to the arrival of a brother-in--law from California; another to the pressures he felt from work associates; another to face-to-face badgering by a precinct committeeman." p.76
+
+                -   Seeing a bit of social capital/Gerber, green, Lerimer, in here
+
+-   Also showing early signs/evidence of partisan sorting among an individuals network.
+
+#### The Effects of Attitude Conflict:
+
+-   Campaign is important for them as it increases political salience.
+
+-   This section seems to ask to what degree does a campaign influence the individuals vote decision.
+
+-   They ask when an individual's vote decision crystallized.
+
+    -   majority knew before campaign
+
+        -   2nd most knew after who candidate was.
+
+    -   Those that knew earliest had the highest joint relation of those 6 attitudes tested earlier.
+
+        -   the decision time of who to vote correlates with a decline in 6 attitudinal relationship.
+
+            -   INTERESTING! - the people that are latest to decide have the lowest correlation in the 6 attitudes tested.
+
+                -   might these be moderates? Might this explain why candidates start turning to the middle during the general election? Might this be why there is so much focus on the undecided voters?
+
+-   **The proportion deciding late always is greater as the degree of attitude conflict is greater; at any attitude level.**
+
+-   persons in the sample who decided late had the highest amount of attitudes in conflict.
+
+-   Later voter has less enthusiasm about candidate.
+
+    -   more likely to split ticket.
+
+        -   "In our data from several presidential election campaigns it is clear that persons who show some degree of conflict of partisan attitude are less likely to be interested in the campaign than those whos attitudes are fully consistent, and they are less likely to care how the election turns out." p.85
+
+            -   this seems to be different from the Fowler et. al reading from earlier.
+
+            -   bring this up to Josh.
+
+## [Converse, Philip. 1964. "The Nature of Belief Systems in the Mass Public," (reprinted in Critical Review, 2006).](https://drive.google.com/file/d/1WdeeD7y2G36c9IBJNURf9dsPuJtMTbMw/view?usp=sharing)
+
+### Main Focus:
+
+Differences in the nature of belief systems held on the one hand by elite political actors and, on the other hand, by the masses that appear to be "numbered" within the spheres of influence of these belief systems.
+
+### Hypothesis:
+
+There are important and predictable differences in ideational worlds as we progress downward through such "belief strata" and that these differences, while obvious at one level, are easily overlooked and not infrequently miscalcualted.
+
+1.  As one moves from elite sources of belief systems downwards on such an informational scale, several important things occur
+
+    1.  the contextual grasp of "standard" political belief systems fades out very rapidly, almost before one has passed beyond the 10 percent of the American population that in the 1950s had completed standard college training.
+
+        1.  The net result, as one moves downward, is that constraint declines across the universe of idea-elements, and that the range of relevant belief systems becomes narrower and narrower.
+
+2.  Objects change as we move down as well.
+
+    1.  From more abstract to simple/"close to home" objects.
+
+        1.  abstract \> social groups/charismatic leaders\>objects of immediate experience (family, job, etc.)
+
+### Definitions:
+
+-   Belief system: a configuration of ideas and attitudes in which the elements are bound together by some form of constraint or functional interdependence.
+
+    -   Static "constraint" - may be taken to mean the success we would have in predicting, given initial knowledge that an individual holds a specified attitude, that he holds certain further ideas and attitudes.
+
+    -   Dynamic "constraint" - refers to the probability that a change in the perceived status of one idea-element would psychologcially require, from the point of view of the actor, some compensating change(s) in the status of idea elements elsewhere in the configuration.
+
+    -   idea elements - make up a belief system. No formal definition but seem to be an actors preferences.
+
+        -   idea elements vary in **centrality**.
+
+            -   this refers to the importance of the idea element within the belief system.
+
+                -   these can change over time. Generally thought that "ends" are supposed to be more central than "means".
+
+    -   Belief systems have *ranges*
+
+        -   the scope of objects that are referents for ideas and attitudes in the system.
+
+            -   focus will be on belief systems with wide ranges and some degree of centrality.
+
+### Sources of constraint on idea-elements:
+
+#### Logical Sources of Constraint:
+
+-   government revenues, government expenditures, and budget balance are three idea-elements that suggest some purely logical constraints.
+
+    -   these positions are contradictory.
+
+        -   however, this still does not ensure subjective constraints will be felt by the actor.
+
+-   *hypothesis 1) logical inconsistencies would be far more prevalent in a broad public.*
+
+-   constraints among idea-elements visible at an elite level is mirrored by the same lines of constraint in the belief system of their less visible "supporters."
+
+    -   they believes this to be incorrect.
+
+#### Psychological Sources of Constraint:
+
+-   Few belief systems depend on logical constraints.
+
+-   Logical contradictions in belief system
+
+    -   IMPORTANTLY: elites familiar with the totality of the belief system recognize the logically constrained cluster of ideas.
+
+-   There are like mega ideas(?), postures, values that make up prime centrality
+
+    -   social darwinism, social change, natural law, the nature of social justice
+
+### Social Sources of Constraint:
+
+#### First source of social constraint:
+
+-   In the case of the belief system, arguments are developed to lend some more positive rationale to the fact of constraint: The idea-elements go together not simply because both are in the interest of the person holding a particular status but for more abstract and quasi-logical reasons developed from a coherent world view as well. It is this type of constraint that is closest to the classic meaning of the term **"ideology."**
+
+#### Second source of social constraint:
+
+-   Shaping a belief system into something that is credible to large portions of the population can only be done by some minuscule portion of the population.
+
+-   idea elements of a belief system are diffused in "packages".
+
+    -   ("If you believe this, then you will also believe that, for it follows in such-and-such ways").
+
+-   Information must be successfully transmitted.
+
+-   trickling of information is largely due to differences in education
+
+    -   but also modified by differences in specialized interest and tastes that individuals have acquired over time.
+
+#### Active Use of Ideological Dimensions of Judgement:
+
+-   Seems to be describing the role of information shortcuts.
+
+-   greater constraint a system of multiple elements - the easier it can be packaged and understood.
+
+-   Uses 'yardsticks' as the term to describe this.
+
+-   Hierarchy of respondents:
+
+    -   **Ideologue:** top level - people who had some abstraction conceptualization
+
+        -   smallest group
+
+    -   **Semi-ideologue:** second level - mentioned a dimension but did not seem to grasp fully the dimension/concepts
+
+        -   second smallest
+
+    -   **Group Interest** - Third level - failed to rely upon any such over-arching dimensions yet evaluated parties and candidates in terms of their expected favorable or unfavorable treatment of different social groupings in the population.
+
+        -   Largest
+
+            -   some variation in sophistication at this level
+
+            -   less interest in politics.
+
+            -   Why aren't they considered ideologues?
+
+                -   they are kinda described as "followers"
+
+    -   **Nature of the Times:** Fourth level - residual category - respondents that invoked some policy considerations in their evaluations yet employed none of the references meriting location in any of the first three levels.
+
+        -   nature of the times voters
+
+        -   Issue reference was a single narrow policy for which they felt personal gratitude or indignation toward a party or candidate. Don't connect these policies to bigger postures of the party.
+
+    -   **No issue content:** Fifth level - respondents whose evaluations of the political scene had no shred of policy significance whatever.
+
+        -   they can be loyal to parties but have no idea what they stand for.
+
+        -   devoted attention to personal qualities of candidates.
+
+### Other:
+
+-   Early on, people could distinguish democrats as liberal because they spent and republicans as conservative because they wanted to save.
+
+    -   "spend-save" dimension used quite a bit by the voters surveyed.
+
+-   Groups as attitude objects are of higher centrality in masses than elites.
+
+-   masses less stable overtime in belief system.
+
+### Questions for lecture
+
+-   P.11 - not entirely sure what they are talking about - a little confusing.
+
+## [Mayhew, Peter. 1974. Congress: The Electoral Connection. Chs. 1--2 (selected portions).](https://drive.google.com/file/d/1IUEvkn7sCrX0nfCR1BGCArjeMUtp7Rhy/view?usp=sharing)
+
+### Chapter 1
+
+-   Congressmen are interested in getting reelected
+
+    -   this is the core assumption made for analytically purposes in the book. All else is second to this main point.
+
+-   growth of "career" congressmen.
+
+    -   used to be lots of "volunteerism" - now this has fallen to the wayside.
+
+-   Fenno assigns three prime goals to congressmen:
+
+    -   getting reelected
+
+    -   achieving influence in congress
+
+    -   making good public policy
+
+-   Nomination is through primary
+
+-   American congressmen have to mobilize their own resources.
+
+-   MP: a congressmen must build a powerbase that is substantially independent of party.
+
+-   What can a congressmen do to affect the fortunes of a presidency?:
+
+    -   support president in roll call votes (if same party)
+
+-   Congressmen typically have narrow victories at some point.
+
+-   All members share an interest in doing things to get them reelected.
+
+    -   What are activities that are electorally useful to engage in.
+
+        -   advertising: an effort to disseminate one's name among constituents in such a fashion as to create a favorable image but in messages having little or no issue content.
+
+            -   good to be known. need a brand.
+
+                -   modern version seems to be starting a podcast.
+
+        -   Credit claiming: acting so as to generate a belief in a relevant political actor (or actors) that one is personally responsible for causing the government, or some unit thereof, to do something that the actor (or actors) consider desirable.
+
+            -   individual accomplishment
+
+            -   bringing home the pork.
+
+        -   Position taking: public enunciation of a judgmental statement on anything likely to be of interest to political actors.
+
+            -   roll call votes
+
+            -   statements
+
+            -   normative stuff
+
+            -   Congressmen should stick to old positions - be "conservative"
+
+                -   facing defeat, it may make sense to gamble on new policy positions.
+
+### Chapter 2
+
+-   Chapter 1 was dedicated to show what activities are electorally useful to congressmen.
+
+    -   The goal of chapter 2 is to show what happens when members who need to engage in these activities assemble for collective action
+
+-   Committee position can be important for reelection.
+
+    -   productivity of the committee
+
+    -   power of the committee
+
+    -   division of labor
+
+    -   The quest for specialization in congress, is a quest for credit.
+
+-   Parties are important for reelection
+
+    -   members of the same party do not all take the same position
+
+        -   they have some freedom to exercise their vote.
+
+    -   Party leaders are chosen not to be program salesman or vote mobilizers, but to be brokers, favor-doers, agenda-setting, and protectors of established institutional routines.
+
+## [Fenno, Richard. 1978. Home Style, Ch. 1.](https://drive.google.com/file/d/14yuTmsihD5co35nA4cINkC0x3QSMzknm/view?usp=sharing)
+
+-   How do congressmen view their home district? What is their perception of it?
+
+    -   concentric circles
+
+        -   
+
+            ![Concentric circle example](concentric.svg){width="208"}
+
+        -   four concentric circles for each congressman:
+
+            -   geographic
+
+            -   reelection
+
+            -   primary
+
+            -   personal
+
+### The District:
+
+-   The largest of the concentric circle.
+
+-   the entity to which, from which, and within which the member travels. It is the entity whose boundaries have been fixed by state legislative enactment or by court decision.
+
+-   geographical constituency.
+
+-   house members describe their district with political and demographic variables.
+
+-   congressmen perception of district $\neq$ census data
+
+-   Why should we care about the perception of congressmen of their district?
+
+    -   it may influence how they govern.
+
+    -   How they seek reelection
+
+-   Congressmen all seem to think of their district on some level of homogeneity/heterogeneity.
+
+-   The less conflict a congressman perceives among district interests, the more likely he is to see his district as homogeneous.
+
+-   district construction are largely artificial. They do not necessarily represent or encompass real physical social communities.
+
+-   "distance acts as a barrier to contact and to interest." p.7
+
+### The Supporters:
+
+-   Congressmen do think of a political community within his geographical constituency
+
+    -   those in the district that think they will for him.
+
+        -   reelection constituency.
+
+    -   Starting seeing the district as "that group won't vote for me", "I do well with that group"
+
+-   "who voted for me *last time*."
+
+### The Primary Constituency: The Strongest Supporters:
+
+-   Congressmen distinguish between weak and strong supporters
+
+### The Personal Constituency: The Intimates:
+
+-   Center of concentric circle
+
+-   the closest people to the member
+
+-   advisers/confidants
+
+-   "home base"
+
+## [Neustadt, Richard. 1964. Presidential Power and the Modern Presidents, Ch. 1--3.](https://drive.google.com/file/d/1TgrV_JbgOdV3Te7FJrQoBt1shYpwN-Es/view?usp=sharing)
+
+### Chapter 1; Leader or Clerk?:
+
+-   When we make judgments about the president, what exactly are we evaluating?
+
+-   What is the President's influence on governmental action?
+
+    -   His strength and weakness, then, turns on his personal capacity to influence the conduct of the men who make up the government.
+
+-   power means influence
+
+-   Two ways to study political power:
+
+    -   one way: focus on tactics of influencing certain men in given situations
+
+    -   other way: what can this man accomplish to improve the prospect that he will have influence when he wants it? What is its nature and what are its resources?
+
+        -   what he does to boost his chance of mastery in any instance, looking toward tomorrow from today
+
+            -   **this way is the focus of the book.**
+
+    -   Focus: Eisenhower, Truman, FDR
+
+-   President is an invaluable clerk. President can be used by members of congress to help themselves - his actions are useful in their business.
+
+-   People look to the president to do something on everything
+
+    -   however they cant.
+
+-   the growth of the presidency represents a historical need from other parts of government.
+
+-   Presidents constituency:
+
+    -   Executive officialdom
+
+    -   Congress
+
+    -   partisans
+
+    -   citizens at large
+
+    -   abroad
+
+-   **Presidential power is the power to persuade**
+
+    -   see example with Eisenhower.
+
+    -   not all results can be achieved through orders given by the presidency.
+
+-   Look at three events to illustrate point:
+
+    -   MacArthur Dismissal
+
+    -   Steel mill strikes
+
+    -   Little Rock School integration.
+
+-   Seems to be discussing principle-agent issue.
+
+-   Embedded within these three events is a host of other factors used by the president to help ensure they exert influence in their action
+
+    -   president involvement was unambiguous
+
+    -   so were his words
+
+    -   order was widely publicized
+
+    -   men receiving order had control of everything to carry out
+
+    -   no doubt of authority
+
+-   Favorable factors that ensure compliance more in depth:
+
+    -   First factor: a presidential order is assurance the president has spoken.
+
+        -   given by the man himself
+
+    -   Second factor: Clarity about his meaning (of order)
+
+    -   Third factor: Publicity of directive.
+
+    -   Fourth factor: the directive is actually able to be carried out.
+
+    -   Fifth factor: What he wants is by his right.
+
+-   Accomplishing directives without some use of these factors will fall flat for the presidency.
+
+-   Important to note the three events were all last resorts.
+
+## Dahl, Robert. 1957. "Decision-Making in a Democracy: The Supreme Court as National Policy Maker," Journal of Public Law.
