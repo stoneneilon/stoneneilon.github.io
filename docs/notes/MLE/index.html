@@ -202,7 +202,10 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example:</a></li>
   </ul></li>
-  <li><a href="#homework-1" id="toc-homework-1" class="nav-link" data-scroll-target="#homework-1">Homework 1:</a></li>
+  <li><a href="#homework-1" id="toc-homework-1" class="nav-link" data-scroll-target="#homework-1">Homework 1:</a>
+  <ul class="collapse">
+  <li><a href="#probability-v.-likelihood" id="toc-probability-v.-likelihood" class="nav-link" data-scroll-target="#probability-v.-likelihood">Probability v. Likelihood:</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#topic-2-estimation-looking-under-the-hood" id="toc-topic-2-estimation-looking-under-the-hood" class="nav-link" data-scroll-target="#topic-2-estimation-looking-under-the-hood">Topic 2: Estimation: Looking Under the Hood</a>
   <ul class="collapse">
@@ -210,7 +213,13 @@ window.Quarto = {
   <li><a href="#measures-of-uncertainty" id="toc-measures-of-uncertainty" class="nav-link" data-scroll-target="#measures-of-uncertainty">Measures of Uncertainty:</a></li>
   <li><a href="#properties-of-ml" id="toc-properties-of-ml" class="nav-link" data-scroll-target="#properties-of-ml">Properties of ML:</a></li>
   <li><a href="#disadvantages-of-ml" id="toc-disadvantages-of-ml" class="nav-link" data-scroll-target="#disadvantages-of-ml">Disadvantages of ML:</a></li>
-  <li><a href="#information-criteria" id="toc-information-criteria" class="nav-link" data-scroll-target="#information-criteria">Information Criteria:</a></li>
+  <li><a href="#information-criteria" id="toc-information-criteria" class="nav-link" data-scroll-target="#information-criteria">Information Criteria:</a>
+  <ul class="collapse">
+  <li><a href="#lagrange-multiplier-test" id="toc-lagrange-multiplier-test" class="nav-link" data-scroll-target="#lagrange-multiplier-test">LaGrange Multiplier Test:</a></li>
+  <li><a href="#wald-test" id="toc-wald-test" class="nav-link" data-scroll-target="#wald-test">Wald Test:</a></li>
+  <li><a href="#the-3-likelihood-tests" id="toc-the-3-likelihood-tests" class="nav-link" data-scroll-target="#the-3-likelihood-tests">The 3 Likelihood Tests:</a></li>
+  </ul></li>
+  <li><a href="#topic-3-generalized-linear-models" id="toc-topic-3-generalized-linear-models" class="nav-link" data-scroll-target="#topic-3-generalized-linear-models">Topic 3: Generalized Linear Models</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -415,6 +424,17 @@ window.Quarto = {
 <ul>
 <li>“Lab 1.R”</li>
 </ul>
+<section id="probability-v.-likelihood" class="level3">
+<h3 class="anchored" data-anchor-id="probability-v.-likelihood">Probability v. Likelihood:</h3>
+<ul>
+<li><p>Probability = we know which universe we are in, and the probabilities of all events in that one universe add up to 1.</p>
+<ul>
+<li><p>area under a fixed distribution</p></li>
+<li></li>
+</ul></li>
+<li><p>Likelihood = we know what we observed, and we consider the probability of <strong>what we observed</strong> in any possible universe.</p></li>
+</ul>
+</section>
 </section>
 </section>
 <section id="topic-2-estimation-looking-under-the-hood" class="level1">
@@ -559,6 +579,86 @@ window.Quarto = {
 </ul></li>
 <li><p>Restricted Mode: Less parameters</p></li>
 <li><p>unrestricted model: all parameters.</p></li>
+<li><p>likelihood ratio test basically tells you if there is statistically significant difference between two models</p>
+<ul>
+<li><p>complex v. simple</p>
+<ul>
+<li>if the complex model doesn’t do that much better than the simple model, then the ratio can help you decide how to change your model specification (may be overkill).</li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="lagrange-multiplier-test" class="level3">
+<h3 class="anchored" data-anchor-id="lagrange-multiplier-test">LaGrange Multiplier Test:</h3>
+<ul>
+<li><p>Lots of tests for additional “nuisance” parameters</p></li>
+<li><p>Reject H_0: restricted parameter sufficiently improves model fit; should be unrestricted</p></li>
+<li><p>Fail to reject H_0:</p></li>
+</ul>
+</section>
+<section id="wald-test" class="level3">
+<h3 class="anchored" data-anchor-id="wald-test">Wald Test:</h3>
+<ul>
+<li><p>Similar to LR tst,</p></li>
+<li><p>only estimate unrestricted model.</p></li>
+<li><p>if MLE and the restriction are quite different, W becomes large.</p>
+<ul>
+<li>uncertainty of the coefficients matter.</li>
+</ul></li>
+<li><p>reject: parameters sufficiently different from the restriction</p>
+<ul>
+<li>use the unrestricted model.</li>
+</ul></li>
+</ul>
+</section>
+<section id="the-3-likelihood-tests" class="level3">
+<h3 class="anchored" data-anchor-id="the-3-likelihood-tests">The 3 Likelihood Tests:</h3>
+<ul>
+<li><p>LR-Test requires estimating two models; may be computationally intensive</p></li>
+<li><p>LM -Test requires estimating only a restricted model. Yet finding MLE of constrained model is sometimes difficult. Some LM derivations get around this.</p></li>
+<li><p>Wald requires estimating only an unrestricted model. Can also test non-linear restrictions.</p></li>
+<li><p>All are asymptotically equivalent</p></li>
+<li><p>In small samples, LM is most conservative, then LR, then Wald.</p>
+<ul>
+<li>small sample - use LM test.</li>
+</ul></li>
+<li><p>When doing these in code just keep track of which is restricted and unrestricted.</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-3-generalized-linear-models" class="level2">
+<h2 class="anchored" data-anchor-id="topic-3-generalized-linear-models">Topic 3: Generalized Linear Models</h2>
+<ul>
+<li><p>GLMs are generalized version of linear regression.</p></li>
+<li><p>basically just a bunch of different link functions</p>
+<ul>
+<li>we will call link function g().</li>
+</ul></li>
+<li><p>GLMs are linear in parameters.</p></li>
+<li><p>Basic order:</p>
+<ul>
+<li><p>figure out what DV is</p>
+<ul>
+<li><p>pick a distribution (based on DV)</p>
+<ul>
+<li>follow the guide basically.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Begin by specifying the random (stochastic) component.</p></li>
+<li><p>Normal:</p>
+<ul>
+<li><p>mean, media, and mode all occur at <span class="math inline">\(\mu\)</span></p></li>
+<li><p>The distribution is symmetric about <span class="math inline">\(\mu\)</span> (eliminate any random variable that is skewed)</p></li>
+<li><p>Distribution is continuous on the real-number line (eliminates any discrete random variable or bounded random variable)</p></li>
+<li><p>central limit theorem</p></li>
+<li><p>mean and variance are separable</p>
+<ul>
+<li>normal distribution is the only one that does this.</li>
+</ul></li>
+<li><p>Most distributions are not normal!</p></li>
+</ul></li>
+<li><p>MLE uses z-statistics because it is asymptotically normal.</p></li>
+<li><p><span class="math inline">\(\sigma^2\)</span> is not usually reported. It is an ancillary parameter.</p></li>
 </ul>
 
 

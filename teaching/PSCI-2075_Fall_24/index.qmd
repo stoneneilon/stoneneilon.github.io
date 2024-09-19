@@ -685,8 +685,9 @@ Think about what you can learn from the histogram vs. looking just at the number
 2.  Import the 'world' dataset from the RCPA3 package. I provide code for how to do that below:
 
     ```{r}
+    #install.packages("RCPA3") Note: this is commented out because I have already installed it.
     library(RCPA3)
-    data('world') # The RCPA3 package has preinstalled datasets. 
+    world # The RCPA3 package has preinstalled datasets. 
     ```
 
 3.  With the dataset, complete the following:
@@ -749,6 +750,114 @@ Check your knowledge. Use the appropriate tools to figure out the answer to thes
 
     -   All the resources I have given you should allow you to complete homework assignment with (relative) ease.
 
--   You will get errors! Double check your spelling, capitalization, etc.
+-   You will get errors! Double check your spelling, spacing, capitalization, etc.
 
     -   try to work through them!
+
+# Week 4
+
+## Stone's Song of the Week:
+
+[![Jamie xx - All You Children ft. The Avalanches](jamie.jpeg){width="470"}](https://www.youtube.com/watch?v=dILtgyQEXRA)
+
+😵‍💫
+
+## Getting into Class:
+
+Please sit in your assigned groups! I will be giving you some time to work on your homework.
+
+## Questions:
+
+We have gone over quite a bit in these first few weeks. I want to spend this time to allow you to ask for clarification on anything we've gone over thus far. Any questions for me?
+
+## Concepts and Variables:
+
+-   Why do we collect data?
+
+    -   we want to know stuff!
+
+-   What is a concept?
+
+    -   the *idea* in our theory that we want to represent
+
+-   What is a variable?
+
+    -   an attempt to measure the concept and turn it into data
+
+-   What is operationalization?
+
+    -   the process of turning a concept into a variable
+
+### Defining Concepts:
+
+-   What are you interested in? What is this *thing* you want to know about?
+
+    -   Are you interested in knowing about ideology? Democracy?
+
+        -   Cool! Now, how are going to measure these?
+
+        -   How will you collect data on this thing?
+
+-   REMEMBER: Theory will guide your procedure in coding and data collection.
+
+    -   you need to define these concepts and defend your choices using theory.
+
+        -   Imagine someone asks, "why did you code Russia as a democracy?"
+
+            -   to defend yourself, you would explain how you define democracy and how Russia fits into your definition of democracy.
+
+                -   See how this has some slippage? Not everyone may see Russia as a democracy. The debate is not *statistical* but is *theoretical.*
+
+## Descriptive Statistics: 
+
+-   When we get data, we want to summarize key elements of individual variables.
+
+-   Want to understand how the variable is distributed
+
+    -   **Distribution:** how frequently do different values of the variable occur in the data.
+
+-   How do we show the distribution? Histograms.
+
+    -   we've done this already!
+
+### Central Tendency: 
+
+-   What is a typical value?
+
+    -   mean
+
+    -   median
+
+    -   mode (sortof)
+
+### Dispersion:
+
+-   How widely is the data dispersed around the typical value
+
+    -   range
+
+    -   standard deviation and variance
+
+## Homework 1 Expectations:
+
+-   You only have to submit 1 assignment per group.
+
+-   Every document turned in **MUST** have all members of the group listed.
+
+-   Your script file should be organized.
+
+    -   **IT MUST HAVE A HEADING INCLUDING THE FOLLOWING:**
+
+        -   Names
+
+        -   Date
+
+        -   Title
+
+-   I expect at least some comments adjacent to your code explaining what the code does.
+
+    -   You have seen me do this in the examples above.
+
+-   Make sure you have both installed the packages needed *and* turned them on.
+
+-   Divide the amount of work evenly. The homework is nicely divided to allow each individual to take one section.

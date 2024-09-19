@@ -153,6 +153,16 @@ p[which(l == max(l))]
 
 -   "Lab 1.R"
 
+### Probability v. Likelihood:
+
+-   Probability = we know which universe we are in, and the probabilities of all events in that one universe add up to 1.
+
+    -   area under a fixed distribution
+
+    -   
+
+-   Likelihood = we know what we observed, and we consider the probability of **what we observed** in any possible universe.
+
 # Topic 2: Estimation: Looking Under the Hood
 
 -   $(\theta|y_i)=Pr(y|\theta)$
@@ -302,3 +312,87 @@ p[which(l == max(l))]
 -   Restricted Mode: Less parameters
 
 -   unrestricted model: all parameters.
+
+-   likelihood ratio test basically tells you if there is statistically significant difference between two models
+
+    -   complex v. simple
+
+        -   if the complex model doesn't do that much better than the simple model, then the ratio can help you decide how to change your model specification (may be overkill).
+
+### LaGrange Multiplier Test:
+
+-   Lots of tests for additional "nuisance" parameters
+
+-   Reject H_0: restricted parameter sufficiently improves model fit; should be unrestricted
+
+-   Fail to reject H_0:
+
+### Wald Test:
+
+-   Similar to LR tst,
+
+-   only estimate unrestricted model.
+
+-   if MLE and the restriction are quite different, W becomes large.
+
+    -   uncertainty of the coefficients matter.
+
+-   reject: parameters sufficiently different from the restriction
+
+    -   use the unrestricted model.
+
+### The 3 Likelihood Tests:
+
+-   LR-Test requires estimating two models; may be computationally intensive
+
+-   LM -Test requires estimating only a restricted model. Yet finding MLE of constrained model is sometimes difficult. Some LM derivations get around this.
+
+-   Wald requires estimating only an unrestricted model. Can also test non-linear restrictions.
+
+-   All are asymptotically equivalent
+
+-   In small samples, LM is most conservative, then LR, then Wald.
+
+    -   small sample - use LM test.
+
+-   When doing these in code just keep track of which is restricted and unrestricted.
+
+## Topic 3: Generalized Linear Models
+
+-   GLMs are generalized version of linear regression.
+
+-   basically just a bunch of different link functions
+
+    -   we will call link function g().
+
+-   GLMs are linear in parameters.
+
+-   Basic order:
+
+    -   figure out what DV is
+
+        -   pick a distribution (based on DV)
+
+            -   follow the guide basically.
+
+-   Begin by specifying the random (stochastic) component.
+
+-   Normal:
+
+    -   mean, media, and mode all occur at $\mu$
+
+    -   The distribution is symmetric about $\mu$ (eliminate any random variable that is skewed)
+
+    -   Distribution is continuous on the real-number line (eliminates any discrete random variable or bounded random variable)
+
+    -   central limit theorem
+
+    -   mean and variance are separable
+
+        -   normal distribution is the only one that does this.
+
+    -   Most distributions are not normal!
+
+-   MLE uses z-statistics because it is asymptotically normal.
+
+-   $\sigma^2$ is not usually reported. It is an ancillary parameter.
