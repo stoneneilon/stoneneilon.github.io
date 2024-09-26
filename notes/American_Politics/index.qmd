@@ -1190,7 +1190,7 @@ Written for JFK. Literally.
 
 # Week 4 - Political Opinion and Political Psychology
 
-## lecture notes: 
+## lecture notes:
 
 -   Common theme - political attitudes/opinions is DV.
 
@@ -1334,7 +1334,7 @@ Written for JFK. Literally.
 
 #### What is an Opinion?
 
-"The interview situation is an odd social experience. The respondent, on his doorstep or in his living room, is barraged with a set of questions on a wide variety of subjects by a stranger, usually a rather well-educated woman over 30, who carefully notes each response on a sheet of paper. Few people are accustomed to having their every utterance faithfully recorded and many find the experience flattering. And, aware that their views are being preserved for the ages, they do not wish to appear unprepared at that moment. Under these circumstances it is not surprising to find respondents pontificating in a seemingly authoritative, if basically "truthful," manner on subjects about which they know nothing or to which they have never given any thought whatsoever. . . . (p. 1)"
+"The interview situation is an odd social experience. The respondent, on his doorstep or in his living room, is barraged with a set of questions on a wide variety of subjects by a stranger, usually a rather well-educated woman over 30, who carefully notes each response on a sheet of paper. Few people are accustomed to having their every utterance faithfully recorded and many find the experience flattering. And, aware that their views are being preserved for the ages, they do not wish to appear unprepared at that moment. Under these circumstances it is not surprising to find respondents pontificating in a seemingly authoritative, if basically"truthful," manner on subjects about which they know nothing or to which they have never given any thought whatsoever. . . . (p. 1)"
 
 -   Zaller takes this quote and runs with it basically. The book is trying to make sense of the phenomenon described above.
 
@@ -1544,7 +1544,7 @@ How individuals respond to political information they may encounter - comprises 
 
 ### Bumper Sticker
 
-### Lecture notes: 
+### Lecture notes:
 
 -   people don't remember campaign info but are also more responsive to it.
 
@@ -1558,7 +1558,7 @@ How individuals respond to political information they may encounter - comprises 
 
 ## Taber, Charles and Milton Lodge. 2006. "Motivated Skepticism in the Evaluation of Political Beliefs" American Journal of Political Science.
 
-### Lecture Notes: 
+### Lecture Notes:
 
 -   motivated skepticism
 
@@ -1754,7 +1754,7 @@ DV: ten DVs that collectivel encompass a wide array of participatory acts.
 
 ## [Broockman, David and Daniel Butler. 2017. "The Causal Effects of Elite Position Taking on Voter Attitudes: Field Experiments with Elite Communication," American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/26379502.pdf?refreqid=fastly-default%3A649f89290d228924bfcd396da8cfb913&ab_segments=&origin=&initiator=&acceptTC=1)
 
-### Lecture: 
+### Lecture:
 
 -   Strong external validity.
 
@@ -1778,9 +1778,9 @@ How do they change?
 
 -   This article is really getting at the content and style of elite messaging. Whereas Zaller to some degree, is not focused on the content, necessarily.
 
-# Week 4: Partisanship and Polarization 
+# Week 5 - Partisanship and Polarization
 
-## Overarching questions: 
+## Overarching questions:
 
 -   Are the masses ideologically innocent?
 
@@ -1788,23 +1788,23 @@ How do they change?
 
 -   Is polarization evidence of ideological thinking?
 
-## Abramowitz, Alan and Kyle Saunders. 2008. \"Is Polarization a Myth?,\" Journal of Politics.
+## Abramowitz, Alan and Kyle Saunders. 2008. "Is Polarization a Myth?," Journal of Politics.
 
 ### Abstract
 
-*This article uses data from the American National Election Studies and national exit polls to test Fiorina's assertion that ideological polarization in the American public is a myth. Fiorina argues that twenty-first-century Americans, like the midtwentieth-century Americans described by Converse, \"are not very well-informed about politics, do not hold many of their views very strongly, and are not ideological\" (2006, 19). However, our evidence indicates that since the 1970s, ideological polarization has increased dramatically among the mass public in the United States as well as among political elites. There are now large differences in outlook between Democrats and Republicans, between red state voters and blue state voters, and between religious voters and secular voters. These divisions are not confined to a small minority of activists---they involve a large segment of the public and the deepest divisions are found among the most interested, informed, and active citizens. Moreover, contrary to Fiorina's suggestion that polarization turns off voters and depresses turnout, our evidence indicates that polarization energizes the electorate and stimulates political participation.*
+*This article uses data from the American National Election Studies and national exit polls to test Fiorina's assertion that ideological polarization in the American public is a myth. Fiorina argues that twenty-first-century Americans, like the midtwentieth-century Americans described by Converse, "are not very well-informed about politics, do not hold many of their views very strongly, and are not ideological" (2006, 19). However, our evidence indicates that since the 1970s, ideological polarization has increased dramatically among the mass public in the United States as well as among political elites. There are now large differences in outlook between Democrats and Republicans, between red state voters and blue state voters, and between religious voters and secular voters. These divisions are not confined to a small minority of activists---they involve a large segment of the public and the deepest divisions are found among the most interested, informed, and active citizens. Moreover, contrary to Fiorina's suggestion that polarization turns off voters and depresses turnout, our evidence indicates that polarization energizes the electorate and stimulates political participation.*
 
 ### Bumping Sticker
 
 We think Fiorina is wrong. - Abramowitz and Saunders
 
-### Questions: 
+### Questions:
 
 1.  **is it just elites that have become polarized?**
 
 2.  Does the ideological debates between elites have any resonance with the masses?
 
-### Background: 
+### Background:
 
 -   Converse argues much of the american electorate are not ideological
 
@@ -1818,7 +1818,7 @@ We think Fiorina is wrong. - Abramowitz and Saunders
 
     -   **little is known about ideological divisions at the mass level.**
 
-#### Fiorina Claims: 
+#### Fiorina Claims:
 
 1.  *Moderation*: Most Americans are ideological moderates. There has been no ideological polarization among the public
 
@@ -1862,7 +1862,7 @@ We think Fiorina is wrong. - Abramowitz and Saunders
 
         1.  Trump/Clinton, Trump/Biden evidence against this claim.
 
-#### Debate: 
+#### Debate:
 
 -   ''we \[ordinary Americans\] instinctively seek the center while the parties and candidates hang out on the extremes'' - Fiorina.
 
@@ -1884,13 +1884,13 @@ We think Fiorina is wrong. - Abramowitz and Saunders
 
 -   I didn't see this stated anywhere, BUT i have a feeling our authors are going to argue that there is more polarization and that there are more ideological thinkers among the masses. BUT Fiorina might counter and say polarization alone is not evidence of ideological thinking in the masses. IDK i think there might be some of that in this moving forward. Not sure havent finished this article yet.
 
-### Data: 
+### Data:
 
 -   ANES Survey
 
 -   National exit polls
 
-### Method: 
+### Method:
 
 1.  To test moderation
 
@@ -1904,7 +1904,7 @@ We think Fiorina is wrong. - Abramowitz and Saunders
 
                     1.  Question for Josh: How should we view survey data now after reading Zaller?
 
-### Findings: 
+### Findings:
 
 -   Polarization increases turnout and other forms of political participation. **Use this fact for my walkability paper.**
 
@@ -1928,39 +1928,39 @@ We think Fiorina is wrong. - Abramowitz and Saunders
 
     -   is polarization in the masses evidence of ideological thinking though?
 
-        -    Or are they just near-ideological voters following the elites?
+        -   Or are they just near-ideological voters following the elites?
 
-## [Fiorina, Morris, Samuel Abrams and Jeremy Pope. 2008. \"Polarization in the American Public: Misconceptions and Misreadings,\" Journal of Politics.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/10.1017/s002238160808050x.pdf?refreqid=fastly-default%3A6c446d7fb219abe1a4e48a251a52e4af&ab_segments=&initiator=&acceptTC=1)
+## [Fiorina, Morris, Samuel Abrams and Jeremy Pope. 2008. "Polarization in the American Public: Misconceptions and Misreadings," Journal of Politics.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/10.1017/s002238160808050x.pdf?refreqid=fastly-default%3A6c446d7fb219abe1a4e48a251a52e4af&ab_segments=&initiator=&acceptTC=1)
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 No Abramowitz and Saunders are wrong.
 
-### Background: 
+### Background:
 
 -   Basically says their data is coded incorrect and that this is not actually polarization within the masses.
 
 -   Too early to say if polarization actually increases voter turnout.
 
-## [Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. 2012. \"Affect, Not Ideology: A Social Identity Perspective on Polarization ,\" Public Opinion Quarterly.](https://pcl.sites.stanford.edu/sites/g/files/sbiybj22066/files/media/file/iyengar-poq-affect-not-ideology.pdf)
+## [Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. 2012. "Affect, Not Ideology: A Social Identity Perspective on Polarization ," Public Opinion Quarterly.](https://pcl.sites.stanford.edu/sites/g/files/sbiybj22066/files/media/file/iyengar-poq-affect-not-ideology.pdf)
 
 Really good article. Favorite one so far this week.
 
-### Abstract: 
+### Abstract:
 
 The current debate over the extent of polarization in the American mass public focuses on the extent to which partisans' policy preferences have moved. Whereas "maximalists" claim that partisans' views on policies have become more extreme over time (Abramowitz 2010), "minimalists" (Fiorina and Abrams 2009) contend that the majority of Americans remain centrist, and that what little centrifugal movement has occurred reflects sorting, i.e., the increased association between partisanship and ideology. We argue in favor of an alternative definition of polarization, based on the classic concept of social distance (Bogardus 1947). using data from a variety of sources, we demonstrate that both republicans and democrats increasingly dislike, even loathe, their opponents. We also find that partisan affect is inconsistently (and perhaps artifactually) founded in policy attitudes. the more plausible account lies in the nature of political campaigns; exposure to messages attacking the out-group reinforces partisans' biased views of their opponents.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 -   Americans are affectively polarized.
 
-### Question: 
+### Question:
 
 -   To what extent do partisans view each other as a disliked social outgroup?
 
 -   How much does affective polarization matter in the public?
 
-### Background: 
+### Background:
 
 -   Elites are significantly more partisan.
 
@@ -1980,7 +1980,7 @@ The current debate over the extent of polarization in the American mass public f
 
         -   more exposure.
 
-### Data 
+### Data
 
 -   National and cross-national surveys in the USA and United Kingdom.
 
@@ -2008,7 +2008,7 @@ The current debate over the extent of polarization in the American mass public f
 
     -   is exposure to campaign a big reason for affective polarization?
 
-### Results: 
+### Results:
 
 -   Democrats and Republicans score high for when they are in power
 
@@ -2022,7 +2022,7 @@ The current debate over the extent of polarization in the American mass public f
 
 -   Americans who expressed more positive views of party supporters and negative views of their opponents
 
-### Discussion: 
+### Discussion:
 
 -   is affective polarization simply a symptom of divergent movement in policy attitudes among both partisan supporters and party elites?
 
@@ -2042,13 +2042,13 @@ The current debate over the extent of polarization in the American mass public f
 
     -   I think to some degree the main point here is that elite partisanship is influencing masses.
 
-## [Mason, Lilliana. 2018. \"Ideologues without Issues: The Polarizing Consequences of Ideological Identities,\" Public Opinion Quarterly.](https://watermark.silverchair.com/nfy005.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA04wggNKBgkqhkiG9w0BBwagggM7MIIDNwIBADCCAzAGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMQbS1-8l0lZY6V5C2AgEQgIIDAZmhFm9fwmszONpoFpu5-5rTRp3EPTRfyLV6lOzPje-x8HgkdD7OMWpvPWSdI6GtzKyIselqKvR6DPv7lKfYSZJSQHla50UaeenKi8taVounlWxI2NLAhYk09R9oQcV6x7TK3Q7E4Sd2hvwHPTXMdjmm8u5qwCn41utDxTiYUe6zytlt6sPtASTFJbL50c16jkkXP4j2MkIfxEDwppLxuXki9l9pTnnbbHJcG4GJOx-4hnQIE056bUy_Hqmcy7H1yKx8WLM67eomGXO6dPQTYjokPew8LD9tbXJUjF-APhP9VOw2XCrftxJC6i1klP8jEYWQdXCKzAnDoZVEIe2lDlOuxpmytJqHpgZSeJ2vQduKmjks5vqrgd8rCGCucgPffbPmP7wOSvppd6MeFHl-bPrdDwtv0hc40j9P_rHTuAnIgE4p2y24WWDyFmPJcOsNAPEgMthO9tiOjoZOR5Sh44jp-He4xwQjzGrOgS780li5Ta-7Bmjwg1Ru-q9TIyOy87_cl9Cj-8uhS7VD5sQuMOkrpH0YqKQJnRlXYiz_59AYGc_dUT7xb1DDCSP-03CwmqDuplQNycbY247QDvIDomUfQzHULDZvrkAifzqQbOHmj9GAn-ODcUTtbW-8Qudgiu8vWHjpdwmetugpRgQfqXK1grRu2h9rA7kG3uSZQQBxwJLp4xhAxtub9NHDByGMR8oZ5OSZdmU_4T3WyCcBLnZvqJa9rO0URmb8uTMQ6MDvCfr2hMXyDdr7gGMZqKA3UlvUSj3PJLbM1aGg8Q0hxM2ZMGqgwSoEVLF3PVTSGp502vMQvne06-aeSG1r7G6eoXQroR35sSQeeamM_06pVqv_V9ezDRMBv49BFRERW_zrbc-Bc5T71WHCwcbryFNkphL9Vz0cC0bW1mZnyq56hkR8mF0Ex2XhN-mxxHPpwMMXWy8ViKOkHSZ-K21eLY2Jx8CHMBCunt3pgHDMpFdpQGEuhJWvWhc7nfzVX_c7ll1FaAfU9GLa0kDRXg57yU_GHXQ)
+## [Mason, Lilliana. 2018. "Ideologues without Issues: The Polarizing Consequences of Ideological Identities," Public Opinion Quarterly.](https://watermark.silverchair.com/nfy005.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA04wggNKBgkqhkiG9w0BBwagggM7MIIDNwIBADCCAzAGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMQbS1-8l0lZY6V5C2AgEQgIIDAZmhFm9fwmszONpoFpu5-5rTRp3EPTRfyLV6lOzPje-x8HgkdD7OMWpvPWSdI6GtzKyIselqKvR6DPv7lKfYSZJSQHla50UaeenKi8taVounlWxI2NLAhYk09R9oQcV6x7TK3Q7E4Sd2hvwHPTXMdjmm8u5qwCn41utDxTiYUe6zytlt6sPtASTFJbL50c16jkkXP4j2MkIfxEDwppLxuXki9l9pTnnbbHJcG4GJOx-4hnQIE056bUy_Hqmcy7H1yKx8WLM67eomGXO6dPQTYjokPew8LD9tbXJUjF-APhP9VOw2XCrftxJC6i1klP8jEYWQdXCKzAnDoZVEIe2lDlOuxpmytJqHpgZSeJ2vQduKmjks5vqrgd8rCGCucgPffbPmP7wOSvppd6MeFHl-bPrdDwtv0hc40j9P_rHTuAnIgE4p2y24WWDyFmPJcOsNAPEgMthO9tiOjoZOR5Sh44jp-He4xwQjzGrOgS780li5Ta-7Bmjwg1Ru-q9TIyOy87_cl9Cj-8uhS7VD5sQuMOkrpH0YqKQJnRlXYiz_59AYGc_dUT7xb1DDCSP-03CwmqDuplQNycbY247QDvIDomUfQzHULDZvrkAifzqQbOHmj9GAn-ODcUTtbW-8Qudgiu8vWHjpdwmetugpRgQfqXK1grRu2h9rA7kG3uSZQQBxwJLp4xhAxtub9NHDByGMR8oZ5OSZdmU_4T3WyCcBLnZvqJa9rO0URmb8uTMQ6MDvCfr2hMXyDdr7gGMZqKA3UlvUSj3PJLbM1aGg8Q0hxM2ZMGqgwSoEVLF3PVTSGp502vMQvne06-aeSG1r7G6eoXQroR35sSQeeamM_06pVqv_V9ezDRMBv49BFRERW_zrbc-Bc5T71WHCwcbryFNkphL9Vz0cC0bW1mZnyq56hkR8mF0Ex2XhN-mxxHPpwMMXWy8ViKOkHSZ-K21eLY2Jx8CHMBCunt3pgHDMpFdpQGEuhJWvWhc7nfzVX_c7ll1FaAfU9GLa0kDRXg57yU_GHXQ)
 
-### Abstract: 
+### Abstract:
 
 The distinction between a person's ideological identity and their issue positions has come more clearly into focus in recent research. Scholars have pointed out a significant difference between identity based and issue-based ideology in the American electorate. However, the affective and social effects of these separate elements of ideology have not been sufficiently explored. Drawing on a national sample collected by SSI and data from the 2016 ANES, this article finds that the identity based elements of ideology are capable of driving heightened levels of affective polarization against outgroup ideologues, even at low levels of policy attitude extremity or constraint. These findings demonstrate how Americans can use ideological terms to disparage political opponents without necessarily holding constrained sets of policy attitudes.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 ### Aim(s):
 
@@ -2056,7 +2056,7 @@ The distinction between a person's ideological identity and their issue position
 
     -   In other words, we already know that Democrats and Republicans hate each other, but liberals and conservatives likely hate each other too, for reasons that go beyond partisanship or even issue-based disagreement.
 
-### Hypothesis: 
+### Hypothesis:
 
 1.  Identity-based ideology is associated with increasing affective polarization of ideological groups.
 
@@ -2066,7 +2066,7 @@ The distinction between a person's ideological identity and their issue position
 
 -   Polarization: is an increasing distance between partisans in terms of their issue-based ideology, sometimes referred to as "ideological polarization"
 
-#### Issue based ideology: 
+#### Issue based ideology:
 
 -   Belief system (Converse) - A system of beliefs can be defined by a set of opinions and the degree to which they form measurable patterns.
 
@@ -2080,7 +2080,7 @@ The distinction between a person's ideological identity and their issue position
 
 big claims but very interesting.
 
-### Background: 
+### Background:
 
 -   Author argues Democrats are more pragmatic.
 
@@ -2136,15 +2136,15 @@ big claims but very interesting.
 
 -   republicans are more likely to represent themselves in their vision of government and society in some abstract battle.
 
-## [Barber, Michael and Jeremy Pope. 2018. \"Does Party Trump Ideology? Disentangling Party and Ideology in America,\" American Political Science Review.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B5BAD0AE947BD3CF18D51D399263C8D3/S0003055418000795a.pdf/does-party-trump-ideology-disentangling-party-and-ideology-in-america.pdf)
+## [Barber, Michael and Jeremy Pope. 2018. "Does Party Trump Ideology? Disentangling Party and Ideology in America," American Political Science Review.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B5BAD0AE947BD3CF18D51D399263C8D3/S0003055418000795a.pdf/does-party-trump-ideology-disentangling-party-and-ideology-in-america.pdf)
 
-### Abstract: 
+### Abstract:
 
-Are people conservative (liberal) because they are Republicans (Democrats)? Or is it the reverse: people are Republicans (Democrats) because they are conservatives (liberals)? Though much has been said about this long-standing question, it is difficult to test because the concepts are nearly impossible to disentangle in modern America. Ideology and partisanship are highly correlated, only growing more so over time. However, the election of President Trump presents a unique opportunity to disentangle party attachment from ideological commitment. Using a research design that employs actual \"conservative\" and \"liberal\" policy statements from President Trump, we find that low-knowledge respondents, strong Republicans, Trump-approving respondents, and self-described conservatives are the most likely to behave like party loyalists by accepting the Trump cue---in either a liberal or conservative direction. These results suggest that there are a large number of party loyalists in the United States, that their claims to being a self-defined conservative are suspect, and that group loyalty is the stronger motivator of opinion than are any ideological principles.
+Are people conservative (liberal) because they are Republicans (Democrats)? Or is it the reverse: people are Republicans (Democrats) because they are conservatives (liberals)? Though much has been said about this long-standing question, it is difficult to test because the concepts are nearly impossible to disentangle in modern America. Ideology and partisanship are highly correlated, only growing more so over time. However, the election of President Trump presents a unique opportunity to disentangle party attachment from ideological commitment. Using a research design that employs actual "conservative" and "liberal" policy statements from President Trump, we find that low-knowledge respondents, strong Republicans, Trump-approving respondents, and self-described conservatives are the most likely to behave like party loyalists by accepting the Trump cue---in either a liberal or conservative direction. These results suggest that there are a large number of party loyalists in the United States, that their claims to being a self-defined conservative are suspect, and that group loyalty is the stronger motivator of opinion than are any ideological principles.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
-### Question: 
+### Question:
 
 -   Are people conservative because they are Republicans? Or is it the reverse: people are Republicans because they are conservatives?
 
@@ -2152,11 +2152,11 @@ Are people conservative (liberal) because they are Republicans (Democrats)? Or i
 
 -   who is most likely to be a party loyalist? Or, what characteristics will moderate the effects of the treatment?
 
-### Background: 
+### Background:
 
 -   Very hard to separate partisanship from issue positions or any ideological commitments that may result from those positions.
 
--   **Party affiliation has been shown to be a social identity** (Campbell et al. [Reference Campbell, Converse, Miller and Stokes1960](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref15); Green, Palmquist and Schickler [Reference Green, Palmquist and Schickler2004](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref25); Greene [Reference Greene1999](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref26); Tajfel [Reference Tajfel1981](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref57)), **to be a heuristic about policy views** (Cohen [Reference Cohen2003](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref17); Rahn [Reference Rahn1993](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref54)), **and influence people\'s issue attitudes** (Layman and Carsey [Reference Layman and Carsey2002](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref41)). **People have also been shown to take cues from the party leader\'s positions** (Lenz [Reference Lenz2012](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref42)).
+-   **Party affiliation has been shown to be a social identity** (Campbell et al. [Reference Campbell, Converse, Miller and Stokes1960](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref15); Green, Palmquist and Schickler [Reference Green, Palmquist and Schickler2004](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref25); Greene [Reference Greene1999](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref26); Tajfel [Reference Tajfel1981](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref57)), **to be a heuristic about policy views** (Cohen [Reference Cohen2003](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref17); Rahn [Reference Rahn1993](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref54)), **and influence people's issue attitudes** (Layman and Carsey [Reference Layman and Carsey2002](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref41)). **People have also been shown to take cues from the party leader's positions** (Lenz [Reference Lenz2012](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref42)).
 
 -   Trump is a unique opportunity because he shifts all over the place on policy issues.
 
@@ -2164,7 +2164,7 @@ Are people conservative (liberal) because they are Republicans (Democrats)? Or i
 
 -   The heart of the theory is based on the importance of these partisan cues and how different types of citizens will interpret the cues.
 
-#### Definitions: 
+#### Definitions:
 
 -   Partisan Loyalists: unswervingly loyal to their party, but they care very little (if at all) about the underlying issues endorsed by the party.
 
@@ -2176,7 +2176,7 @@ Are people conservative (liberal) because they are Republicans (Democrats)? Or i
 
 -   Note: people probably exemplify some degree of both these concepts.
 
-### Hypothesis: 
+### Hypothesis:
 
 -   The influence of a Trump cue will demonstrate the existence of a large bloc of party loyalists in the electorate when his influence moves opinion in either a liberal or conservative direction based on the cue.
 
@@ -2196,7 +2196,7 @@ Are people conservative (liberal) because they are Republicans (Democrats)? Or i
 
         -   If, on the other hand, there is only a reaction to the conservative Trump cue, then the evidence does not support partisan loyalism.
 
-### Data: 
+### Data:
 
 -   representative survey of Americans collected by YouGov survey research company in early 2017, immediately after the inauguration of Donald Trump
 
@@ -2212,11 +2212,11 @@ Are people conservative (liberal) because they are Republicans (Democrats)? Or i
 
         -   which means these positions are NOT made up.
 
-### Results: 
+### Results:
 
 -   partisans emphasize group attachment over issue positions.
 
--   Among Republicans, the politically knowledgeable, those who do not approve of the cue giver, and self-described moderates and liberals are not all that likely to change their views when informed of President Trump\'s positions.
+-   Among Republicans, the politically knowledgeable, those who do not approve of the cue giver, and self-described moderates and liberals are not all that likely to change their views when informed of President Trump's positions.
 
 -   The implication of this unique test is that large, predictable segments of the public---partisans, the less-informed, approvers of the party leader, and even those who claim the most strong symbolic ideological labels---are likely to be influenced more by partisanship than by any issue content.
 
