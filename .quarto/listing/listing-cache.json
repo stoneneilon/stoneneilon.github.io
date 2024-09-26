@@ -1,5 +1,8 @@
 {
   "listingMap": {
+    "teaching.qmd": [
+      "teaching"
+    ],
     "notes.qmd": [
       "notes"
     ],
@@ -8,10 +11,6 @@
     ],
     "blog.qmd": [
       "B3049D40"
-    ],
-    "teaching.qmd": [
-      "notes",
-      "teaching"
     ]
   }
 }

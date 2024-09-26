@@ -221,6 +221,10 @@ window.Quarto = {
   </ul></li>
   <li><a href="#topic-3-generalized-linear-models" id="toc-topic-3-generalized-linear-models" class="nav-link" data-scroll-target="#topic-3-generalized-linear-models">Topic 3: Generalized Linear Models</a></li>
   </ul></li>
+  <li><a href="#topic-4" id="toc-topic-4" class="nav-link" data-scroll-target="#topic-4">Topic 4:</a>
+  <ul class="collapse">
+  <li><a href="#limited-dependent-variables" id="toc-limited-dependent-variables" class="nav-link" data-scroll-target="#limited-dependent-variables">Limited Dependent Variables</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -659,6 +663,87 @@ window.Quarto = {
 </ul></li>
 <li><p>MLE uses z-statistics because it is asymptotically normal.</p></li>
 <li><p><span class="math inline">\(\sigma^2\)</span> is not usually reported. It is an ancillary parameter.</p></li>
+<li><p>do likelihood test</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-4" class="level1">
+<h1>Topic 4:</h1>
+<ul>
+<li><p>rho is the correlation coefficient of epsilon and its prior value.</p></li>
+<li><p>when you take the lag of a series the first observation goes away.</p></li>
+</ul>
+<section id="limited-dependent-variables" class="level2">
+<h2 class="anchored" data-anchor-id="limited-dependent-variables">Limited Dependent Variables</h2>
+<p>censoring changes shape of the distribution, truncation does not change the distribution for the un-affected range.</p>
+<p>Both cause bias (attenuation) and inconsistency. More data does not help us here!</p>
+<ul>
+<li><p>Censoring</p>
+<ul>
+<li><p>Censoring is a symptom of our measuring</p></li>
+<li><p>is in sample (just a discrete value though)</p></li>
+<li><p>“values in a certain range are all transformed to (or reported as) a single value”</p>
+<ul>
+<li><p>income in surveys often censored ($250,000 or more) since there are so few individuals that would comprise these categories</p></li>
+<li><p>ex: if an individual on a survey responds 1, they are a strong democrat, 2,3,4, weak affiliation/independent, 5, strong Republican.</p></li>
+</ul></li>
+<li><p>This results in lumping/bunching near the censoring point <span class="math inline">\(\tau\)</span></p></li>
+<li><p>Estimates are biased (attenuated) since observations farthest from the center of the distribution are restricted to some arbitrary upper (lower limit)</p></li>
+<li><p>Three types:</p>
+<ul>
+<li><p>left (lower) censor</p>
+<ul>
+<li>anyone with incomes below $20k coded as &lt; $20k</li>
+</ul></li>
+<li><p>Right upper censor</p>
+<ul>
+<li>Anyone with incomes above $250k coded as &gt; $250k</li>
+</ul></li>
+<li><p>Interval censor.</p></li>
+</ul></li>
+<li><p>We have an observation in the region <em>somewhere</em>…but we don’t know exactly what the true value is”</p></li>
+<li><p>Dealing with Censoring</p>
+<ul>
+<li>censored data can sometimes be though fo as two distributions, one discrete and one continuous.</li>
+</ul></li>
+</ul></li>
+<li><p>Truncation</p>
+<ul>
+<li><p>truncation effects arise when one attempts to make inferences about a larger population from a sample that is drawn from a distinct sub-population.</p></li>
+<li><p>Theory will tell you where the truncation is. To fix truncation, you have to <em>know</em> you have truncation.</p></li>
+<li><p><strong>Truncation is a symptom of our sampling</strong></p></li>
+<li><p>Observation? what observation?</p></li>
+<li><p>produces bias</p>
+<ul>
+<li>shrinks estimates towards zero.</li>
+</ul></li>
+<li><p>moves mean away from tau</p></li>
+<li><p>shrinks variance too</p></li>
+<li><p>sample selection is a form of truncation</p></li>
+<li><p>This is in my Y.</p></li>
+<li><p>Examples: data on GDP of countries from the World Bank (excludes those that are too poor to report data from their statistical agency)</p>
+<ul>
+<li>data on car damage from insurer claims (excludes any damage that was below deductible)</li>
+</ul></li>
+<li><p>Dealing with Truncation:</p>
+<ul>
+<li><p>truncated normal distirbutions are not full probability distributions since the area under the curve (the CDF) does nto sum to one</p></li>
+<li><p>thus we cannot form the likelihood function.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Sample Selection Bias</p>
+<ul>
+<li><p>a type of truncation</p></li>
+<li><p>nonrandom sampling of observations.</p></li>
+<li><p>incidental truncation (truncation caused by some other variable, not y itself)</p></li>
+<li><p>What’s the population we are generalizing to?</p></li>
+</ul></li>
+<li><p>Selecting on the DV</p>
+<ul>
+<li><p>sample selection bias is not the same as selecting on the DV.</p></li>
+<li><p>Sampling on DV means deliberately choosing certain y outcomes.</p></li>
+</ul></li>
+<li><p>Discrete outcomes</p></li>
 </ul>
 
 
