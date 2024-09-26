@@ -685,6 +685,7 @@ Think about what you can learn from the histogram vs. looking just at the number
 2.  Import the 'world' dataset from the RCPA3 package. I provide code for how to do that below:
 
     ```{r}
+    #| eval: false
     #install.packages("RCPA3") Note: this is commented out because I have already installed it.
     library(RCPA3)
     world # The RCPA3 package has preinstalled datasets. 
@@ -705,6 +706,7 @@ Think about what you can learn from the histogram vs. looking just at the number
 4.  Before you begin, do some setup:
 
     ```{r}
+    #| eval: false
     world2 <- world # create a new object to use for manipulation so that we do not alter the original data
     ```
 
@@ -758,7 +760,7 @@ Check your knowledge. Use the appropriate tools to figure out the answer to thes
 
 ## Stone's Song of the Week:
 
-[![Jamie xx - All You Children ft. The Avalanches](jamie.jpeg){width="470"}](https://www.youtube.com/watch?v=dILtgyQEXRA)
+[![Jamie xx - All You Children ft. The Avalanches](jamie.jpeg){fig-align="center" width="470"}](https://www.youtube.com/watch?v=dILtgyQEXRA)
 
 😵‍💫
 
@@ -808,7 +810,7 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 
                 -   See how this has some slippage? Not everyone may see Russia as a democracy. The debate is not *statistical* but is *theoretical.*
 
-## Descriptive Statistics: 
+## Descriptive Statistics:
 
 -   When we get data, we want to summarize key elements of individual variables.
 
@@ -820,7 +822,7 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 
     -   we've done this already!
 
-### Central Tendency: 
+### Central Tendency:
 
 -   What is a typical value?
 
@@ -861,3 +863,179 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 -   Make sure you have both installed the packages needed *and* turned them on.
 
 -   Divide the amount of work evenly. The homework is nicely divided to allow each individual to take one section.
+
+# Week 5
+
+## Stone's Song of the Week 
+
+[![L'Impératrice - La Piscine (LIVE) & 'piano track killer' @ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
+
+I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now...You think I want to be here teaching you about variance?! JK I do \<3 variance and standard deviation are very important.
+
+P.S. - They are coming to Denver on January 27.
+
+## Sampling
+
+-   What is population?
+
+    -   All observations of the unit of analysis.
+
+-   What is a sample?
+
+    -   (from Google) a small part or quantity intended to show what the whole is like.
+
+-   Why do we take samples? Why not just look at every person across the United States?
+
+    -   not practical.
+
+-   **We are using data we have (sample) to tell us about data we don't have (population!**
+
+-   Using a subset of the population can help us understand the population.
+
+    -   Because we are using a sample, we are estimating the population
+
+-   Samples can have biases!
+
+-   There are different ways to sample.
+
+    -   how we sample is dependent on some factors but for the purposes of this class, we need need to ensure our sample is randomly collected.
+
+        -   not randomly sampling can bias our results.
+
+            -   We have measurement error when we sample.
+
+-   There are different formulas for population variance/SD and sample variance/SD
+
+-   What if I am looking at all 50 states (USA)? Would I use the population formula for variance and SD?
+
+    -   you will almost always use the sample formula.
+
+        -   I don't think I've ever used the population formula.
+
+![](Sample-Target-Population.webp){fig-align="center" width="637"}
+
+## Central Tendency
+
+-   We want to know what a typical value is.
+
+-   We talked before that the following help us figure this out:
+
+    -   mean
+
+    -   median
+
+    -   mode
+
+-   We discussed in the lecture the pros and cons of these measures.
+
+-   They are important though because they help us describe the data.
+
+-   In general, we want our data to be normally distributed.
+
+    ![Example of skew and how these measures of central tendency interact.](skew.png)
+
+## Variance
+
+$$
+\text{Variance} (s^2) = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}
+$$
+
+Chill, chilllllll. Let's go over what this all means.
+
+1.  Variance is a measure of **SPREAD.**
+
+2.  The average of the squared differences from the Mean. 
+
+3.  Let's walk through the formula step by step:
+
+    -   The $\Sigma$ means to sum all the values together.
+
+    -   $(x_i - \bar{x})$
+
+        1.  in this part we are taking each observation and subtracting it by the mean (average).
+
+        2.  Now lets add the square term. $(x_i - \bar{x})^2$
+
+            1.  Why do we square this?
+
+                1.  Imagine a number line from 0 to 100. We have some dataset where the mean is 50. Now let's say one of our observations is 38. 38-50 = -12. See what happens!? We have a negative number. All observations to the left of our mean are negative while all observations to the right of our mean are positive.
+
+                    1.  When we add these all up without the square term, we get ZERO!
+
+                2.  Thus we square to accommodate for these canceling out.
+
+                    1.  There are other reasons we square but they aren't relevant here and this is the main reason.
+
+        3.  Now the $n-1$
+
+            1.  N represents the number of observations.
+
+                1.  Why are we subtracting it by 1?
+
+                    1.  If we were calculating the population variance, then we wouldn't subtract by 1. However, we are pretty much never working with the population. We are always using some samples. 
+
+                    2.  This part is not super intuitive. BUT, we are using the sample mean, NOT the population mean to calculate the variance.
+
+                        1.  We don't know what the "true" population mean is. We have an estimate of it using our sample. Thus, there is some uncertainty around the sample mean (we don't know if the sample mean is = to the population mean). To account for this uncertainty we add a -1 to our denominator. 
+
+                            1.  By subtracting 1 from the denominator this makes the spread a little larger to account for that uncertainty. Think about what happens when we make our denominator smaller compared to if we don't. Example:
+
+                                1.  $\frac{16}{4-1}$ vs. $\frac{16}{4}$
+
+                                    1.  the one with the $4-1$ denominator will have a larger output and thus account for the uncertainty in our measurement.
+
+## Standard Deviation
+
+$$
+\text{Sample Standard Deviation} (s) = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}}
+$$
+
+-   Standard deviation is literally the square root of variance.
+
+-   Everything still means the same, we just square root it at the end.
+
+-   WHY DO WE SQUARE ROOT?
+
+    -   We take the square root to put the output back into its original units. Our output is in the same units as the mean.
+
+![Standard deviation visualized](statistics-standard-deviation.gif){fig-align="center"}
+
+-   Why do we care about standard deviation?
+
+    -   see photo below:
+
+    -   This will be very important when we get to statistical inference!
+
+![](normal-distrubution-3sds.svg){fig-align="center"}
+
+## Class Example:
+
+Let's work through an example together in R together.
+
+## Additional Material to Help: 
+
+[Mathisfun on variance and SD.](https://www.mathsisfun.com/data/standard-deviation.html)
+
+[StatQuest on Variance and SD. I would not be teaching you this if it weren't for him.](https://youtu.be/SzZ6GpcfoQY?si=FkKVIiD_uQRqlpES)
+
+## Homework 1 Feedback: 
+
+-   Still grading them.
+
+## Homework 2: 
+
+-   Please get in contact with your new group.
+
+-   It is due October 4th.
+
+-   You **MUST** turn in the following:
+
+    -   a PDF of your responses
+
+        -   Please include the original question and your response.
+
+            -   it makes it easier for me to grade 🥺
+
+    -   Your R script.
+
+        -   it must a .r file. DO NOT COPY YOUR CODE TO YOUR PDF.

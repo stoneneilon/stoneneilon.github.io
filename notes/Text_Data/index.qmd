@@ -345,6 +345,172 @@ How has culture changed?
 
 -   grammar has changed
 
--   
-
 ## [DiMaggio, Paul. "Adapting computational text analysis to social science (and vice versa)." Big Data & Society 2.2 (2015).](https://journals.sagepub.com/doi/full/10.1177/2053951715602908)
+
+# Week 4 (Canceled - Alex out sick) 
+
+# Week 5
+
+## Lecture Notes: 
+
+-   Type: is a unique sequence of characters that are grouped together in some meaningful way.
+
+-   Token: a particular instance of a type.
+
+    -   tokenization is the process of splitting a document into its constituent words
+
+    -   tokens are the individual units we split our document into before counting them up.
+
+-   Term: is a type that is part of the system's 'dictionary'.
+
+-   To do List:
+
+    -   choose unit of analysis & make corpus
+
+    -   tokenize
+
+    -   reduce complexity
+
+    -   filter by frequency.
+
+        -   remove overly common and overly rare words.
+
+-   A *lemma* is the canonical form (such as one might find in a dictionary) of a set of words that are related by inflection.
+
+-   A document is a collection of **W** features tokens
+
+## Grimmer, chp. 3-5. 
+
+### Chapter 3: 
+
+-   We need to decide what information we want and what information we need discarded.
+
+    -   figuring out what to discard and how is the hard part.
+
+#### Principle 1: 
+
+-   The usefulness of a corpus depends on the question the researcher wants to answer
+
+    and the population they want to study.
+
+    -   figure out the quanitity and population of interest.
+
+        -   twitter data is a subset of the population for example.
+
+            -   might not be the best way to gauge public opinion.
+
+#### Principle 2: 
+
+-   There is no one right way to represent text for all research questions.
+
+#### Principle 3: 
+
+-   The best assurance that a text representation is working is extensive validation.
+
+    -   how do we know that we have selected the "right" representation for their research question?
+
+        -   We will know that our representation is working in a measurement model if the
+
+            measures that we have created using that representation align with validated hand coded
+
+            data and facts that we know about the social world.
+
+### Chapter 4: Selecting Documents
+
+-   Four types of Bias:
+
+    -   Resource Bias
+
+    -   Incentive Bias
+
+    -   Medium Bias
+
+    -   Retrieval Bias
+
+### Chapter 5: Bag of Words
+
+-   We now need to represent our words numerically.
+
+-   Bag of Words model:
+
+    -   we will represent each document by counting how many time each word appears in it.
+
+    -   create a matrix
+
+    -   Full Recipe:
+
+        -   Choose the Unit of Analysis
+
+        -   Tokenize
+
+            -   Each individual word in the document is a token and the process of splitting a document into its constituent words is called tokenization.
+
+                -   Tokens are the individual units we split our document into before counting them up.
+
+        -   Reduce Complexity - helps computationally
+
+            -   lowercase
+
+            -   remove punctuation
+
+            -   Remove stop words
+
+            -   Create equivalence classes
+
+            -   filter by frequency
+
+        -   Create the document feature of analysis.
+
+-   N-grams
+
+    -   related to tokenization
+
+        -   basically we may have a word like "white house" BUT we pull out white *and* house.
+
+            -   we use n-grams - an ordered set of *n* words.
+
+                -   **unigrams**- single words
+
+                -   **bigrams**- ordered pairs
+
+                -   **trigrams**- ordered triples.
+
+## When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks
+
+### Abstract: 
+
+Previous research uses negative word counts to measure the tone of a text. We show that word lists developed for other disciplines misclassify common words in financial text. In a large sample of 10-Ks during 1994 to 2008, almost three-fourths of the words identified as negative by the widely used Harvard Dictionary are words typically not considered negative in financial contexts. We develop an alternative negative word list, along with five other word lists, that better reflect tone in financial text. We link the word lists to 10-K filing returns, trading volume, return volatility, fraud, material weakness, and unexpected earnings.
+
+### Question: 
+
+-   Can dictionaries from social science be used for business text data.
+
+### Bumper Sticker: 
+
+-   Words mean different things in context.
+
+## [The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods](https://www.cs.cmu.edu/~ylataus/files/TausczikPennebaker2010.pdf)
+
+### Abstract: 
+
+We are in the midst of a technological revolution whereby, for the first time, researchers can link daily word use to a broad array of real-world behaviors. This article reviews several computerized text analysis methods and describes how Linguistic Inquiry and Word Count (LIWC) was created and validated. LIWC is a transparent text analysis program that counts words in psychologically meaningful categories. Empirical results using LIWC demonstrate its ability to detect meaning in a wide variety of experimental settings, including to show attentional focus, emotionality, social relationships, thinking styles, and individual differences.
+
+### Background: 
+
+-   Content Words:
+
+    -   generally nouns, regular verbs, and many adjectives and adverbs.
+
+    -   "It was a dark and stormy night"
+
+        -   content words: "dark", "stormy", "night"
+
+    -   convey what people are saying
+
+-   Style Words:
+
+    -   aka function words.
+
+        -   pronouns, prepositions, articles, conjunctions, auxiliary verbs, and a few other esoteric categories.
+
+    -   style words: how people are communicating.

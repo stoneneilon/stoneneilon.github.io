@@ -396,3 +396,101 @@ p[which(l == max(l))]
 -   MLE uses z-statistics because it is asymptotically normal.
 
 -   $\sigma^2$ is not usually reported. It is an ancillary parameter.
+
+-   do likelihood test
+
+# Topic 4: 
+
+-   rho is the correlation coefficient of epsilon and its prior value.
+
+-   when you take the lag of a series the first observation goes away.
+
+## Limited Dependent Variables 
+
+censoring changes shape of the distribution, truncation does not change the distribution for the un-affected range.
+
+Both cause bias (attenuation) and inconsistency. More data does not help us here!
+
+-   Censoring
+
+    -   Censoring is a symptom of our measuring
+
+    -   is in sample (just a discrete value though)
+
+    -   "values in a certain range are all transformed to (or reported as) a single value"
+
+        -   income in surveys often censored (\$250,000 or more) since there are so few individuals that would comprise these categories
+
+        -   ex: if an individual on a survey responds 1, they are a strong democrat, 2,3,4, weak affiliation/independent, 5, strong Republican.
+
+    -   This results in lumping/bunching near the censoring point $\tau$
+
+    -   Estimates are biased (attenuated) since observations farthest from the center of the distribution are restricted to some arbitrary upper (lower limit)
+
+    -   Three types:
+
+        -   left (lower) censor
+
+            -   anyone with incomes below \$20k coded as \< \$20k
+
+        -   Right upper censor
+
+            -   Anyone with incomes above \$250k coded as \> \$250k
+
+        -   Interval censor.
+
+    -   We have an observation in the region *somewhere*...but we don't know exactly what the true value is"
+
+    -   Dealing with Censoring
+
+        -   censored data can sometimes be though fo as two distributions, one discrete and one continuous.
+
+-   Truncation
+
+    -   truncation effects arise when one attempts to make inferences about a larger population from a sample that is drawn from a distinct sub-population.
+
+    -   Theory will tell you where the truncation is. To fix truncation, you have to *know* you have truncation.
+
+    -   **Truncation is a symptom of our sampling**
+
+    -   Observation? what observation?
+
+    -   produces bias
+
+        -   shrinks estimates towards zero.
+
+    -   moves mean away from tau
+
+    -   shrinks variance too
+
+    -   sample selection is a form of truncation
+
+    -   This is in my Y.
+
+    -   Examples: data on GDP of countries from the World Bank (excludes those that are too poor to report data from their statistical agency)
+
+        -   data on car damage from insurer claims (excludes any damage that was below deductible)
+
+    -   Dealing with Truncation:
+
+        -   truncated normal distirbutions are not full probability distributions since the area under the curve (the CDF) does nto sum to one
+
+        -   thus we cannot form the likelihood function.
+
+-   Sample Selection Bias
+
+    -   a type of truncation
+
+    -   nonrandom sampling of observations.
+
+    -   incidental truncation (truncation caused by some other variable, not y itself)
+
+    -   What's the population we are generalizing to?
+
+-   Selecting on the DV
+
+    -   sample selection bias is not the same as selecting on the DV.
+
+    -   Sampling on DV means deliberately choosing certain y outcomes.
+
+-   Discrete outcomes

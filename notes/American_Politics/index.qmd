@@ -1188,11 +1188,33 @@ Written for JFK. Literally.
 
     -   Elites have more constraints aka they are more coherent in their belief system.
 
-# Week 4 - Political Opinion and Political Psychology 
+# Week 4 - Political Opinion and Political Psychology
+
+## lecture notes: 
+
+-   Common theme - political attitudes/opinions is DV.
+
+-   lots of surveys and experiments
+
+-   Zaller is fundamentally interested in how a person responds to survey questions.
+
+-   I'm not sure Zaller does a good job of answering/explaining moderates
+
+-   **ARE VOTERS UP TO THE TASK OF BEING A GOOD DEMOCRATIC CITIZEN? - MAJOR QUESTION OF ALL BEHAVIOR LITERATURE.**
+
+-   How should we view survey after Zaller
+
+    -   well we can still take survey results on their face
+
+    -   we do have error.
+
+    -   right on average
+
+### On-line mode
 
 ## Zaller, John. 1992. The Nature and Origins of Mass Opinion. Chs. 2--4.
 
-### Chapter 2 
+### Chapter 2
 
 \*have Josh go over the measurement error discussion - bit confused there.
 
@@ -1210,7 +1232,7 @@ Written for JFK. Literally.
 
     1.  note: not *statistical* issues. These are issues outlined by Zaller related to how people think about and are influenced.
 
-#### Definitions: 
+#### Definitions:
 
 -   Political elites - persons who devote themselves full time to some aspect of politics or public affairs
 
@@ -1252,7 +1274,7 @@ Written for JFK. Literally.
 
     -   multiple schemas available for understanding a phenomenon.
 
-#### Overview: 
+#### Overview:
 
 -   People never get the full record of recorded events and developments. Media distorts and has biases.
 
@@ -1310,21 +1332,13 @@ Written for JFK. Literally.
 
 -   **First, one should, whenever possible, use appropriate domain-specific measures of political values, rather than a general measure of ideology, as the operational measure of citizens' predispositions to accept or reject the political communications they receive. The reason is that ideology, as the more general measure of people's left-right tendencies, is more likely to miss reactions to a particular issue than is an indicator that has been tailored to that issue.**
 
-#### What is an Opinion? 				
+#### What is an Opinion?
 
-"The interview situation is an odd social experience. The respondent, on his doorstep or
-in his living room, is barraged with a set of questions on a wide variety of subjects by a
-stranger, usually a rather well-educated woman over 30, who carefully notes each re-
-sponse on a sheet of paper. Few people are accustomed to having their every utterance
-faithfully recorded and many find the experience flattering. And, aware that their views
-are being preserved for the ages, they do not wish to appear unprepared at that moment.
-Under these circumstances it is not surprising to find respondents pontificating in a seem-
-ingly authoritative, if basically "truthful," manner on subjects about which they know
-nothing or to which they have never given any thought whatsoever. . . . (p. 1)"
+"The interview situation is an odd social experience. The respondent, on his doorstep or in his living room, is barraged with a set of questions on a wide variety of subjects by a stranger, usually a rather well-educated woman over 30, who carefully notes each response on a sheet of paper. Few people are accustomed to having their every utterance faithfully recorded and many find the experience flattering. And, aware that their views are being preserved for the ages, they do not wish to appear unprepared at that moment. Under these circumstances it is not surprising to find respondents pontificating in a seemingly authoritative, if basically "truthful," manner on subjects about which they know nothing or to which they have never given any thought whatsoever. . . . (p. 1)"
 
 -   Zaller takes this quote and runs with it basically. The book is trying to make sense of the phenomenon described above.
 
-#### Problems with Mass Opinion Reports 
+#### Problems with Mass Opinion Reports
 
 -   overtime instability
 
@@ -1338,7 +1352,7 @@ nothing or to which they have never given any thought whatsoever. . . . (p. 1)"
 
     -   the content of the question can radically change how people respond to reporting their opinion.
 
-### Zaller's Model: 
+### Zaller's Model:
 
 -   I abandon the conventional but implausible view that citizens typically possess "true attitudes" on every issue about which a pollster may happen to inquire, and instead propose a model of how individuals construct opinion reports in response to the particular stimuli that confront them.
 
@@ -1358,7 +1372,7 @@ nothing or to which they have never given any thought whatsoever. . . . (p. 1)"
 
 3.  How do people acquire information from the political environment and transform that information into survey responses?
 
-#### Definitions 
+#### Definitions
 
 -   Consideration - any reason that might induce an individual to decide a political issue one way or the other.
 
@@ -1378,7 +1392,7 @@ How individuals respond to political information they may encounter - comprises 
 
     1.  specifying the reception axiom in terms of *cognitive* engagement.
 
-    2.  political attentiveness, political awareness, cognitive engagement = all the same thing.
+    2.  political attentiveness, political awareness, cognitive engagement = all the same thing. = COMPREHENSION! Political awareness = comprehension = are you watching and understanding.
 
         1.  measures a person's summary score across a series of neutral, factual tests of public affairs knowledge
 
@@ -1396,7 +1410,7 @@ How individuals respond to political information they may encounter - comprises 
 
     2.  Low attentive individuals seem to pay more attention to the credibility of source
 
-        1.  susceptibile to authority position.
+        1.  susceptible to authority position.
 
     3.  Political awareness should be associated with resistance to persuasion BUT
 
@@ -1418,7 +1432,7 @@ How individuals respond to political information they may encounter - comprises 
 
 5.  **Opinion statements, as conceived in my four-axiom model, are the outcome of a process in which people receive new information, decide whether to accept it, and then sample at the moment of answering questions.**
 
-### Chapter 4: 
+### Chapter 4:
 
 -   Zaller starts looking at NES data.
 
@@ -1442,7 +1456,7 @@ How individuals respond to political information they may encounter - comprises 
 
     -   attitude statements on particular issues depends on the amount and direction of info available to the public of each issue.
 
-#### Assumptions of RAS Model: 
+#### Assumptions of RAS Model:
 
 1.  Moderately intense, temporally stable information flows favoring both the liberal and the conservative side of each issue
 
@@ -1450,7 +1464,7 @@ How individuals respond to political information they may encounter - comprises 
 
         1.  excludes huge issues like the Iran-Contra.
 
-#### Deductions: 
+#### Deductions:
 
 -   Ambivalence Deduction
 
@@ -1526,11 +1540,33 @@ How individuals respond to political information they may encounter - comprises 
 
     -   people who mention an equal number of opposing considerations should be more stable only as often as could be expected by chance alone, which is 50% of the time.
 
-## [Lodge, Milton, Marco Steenbergen, and Shawn Brau. 1995. \"The Responsive Voter: Campaign Information and the Dynamics of Candidate Evaluation,\" American Political Science Review.](https://www.uky.edu/AS/PoliSci/Peffley/pdf/Lodge%20et%20al%201995%20APSR%20The%20Responsive%20Voter_%20Campaign%20Information%20and%20the%20Dynamics%20of%20Candidate%20Evaluation.pdf)
+## [Lodge, Milton, Marco Steenbergen, and Shawn Brau. 1995. "The Responsive Voter: Campaign Information and the Dynamics of Candidate Evaluation," American Political Science Review.](https://www.uky.edu/AS/PoliSci/Peffley/pdf/Lodge%20et%20al%201995%20APSR%20The%20Responsive%20Voter_%20Campaign%20Information%20and%20the%20Dynamics%20of%20Candidate%20Evaluation.pdf)
 
-### Bumper Sticker 
+### Bumper Sticker
 
-## Taber, Charles and Milton Lodge. 2006. \"Motivated Skepticism in the Evaluation of Political Beliefs\" American Journal of Political Science.
+### Lecture notes: 
+
+-   people don't remember campaign info but are also more responsive to it.
+
+-   memory and judgement
+
+-   voters evaluate information and remember their evaluation and then forget the information.
+
+    -   you might not remember the reasons why but you remember whether you did or did not like it.
+
+-   Less cognitive intensive seems to be better.
+
+## Taber, Charles and Milton Lodge. 2006. "Motivated Skepticism in the Evaluation of Political Beliefs" American Journal of Political Science.
+
+### Lecture Notes: 
+
+-   motivated skepticism
+
+-   spend more time looking at arguments they are against.
+
+-   greater polarization despite being exposed to same information
+
+    -   as they are being exposed to greater information.
 
 ### Bumper Sticker:
 
@@ -1546,7 +1582,7 @@ What explains political polarization in the face of factual information?
 
 ### Summary of Theory/Argument:
 
-The authors postulate what they call a theory of affect-driven motivated reasoning in trying to explain when and why citizens actively process biased information. This theory suggests that people will anchor their evaluation of new information in their own biases - being non-skeptical of information that confirms their biases and being "motivated- skepticals" when engaging in information that is counter to their biases - i.e. spending more time trying to discredit new information. The authors propose a process of "partisan processing" that results in attitude-polarization and which is conditional on the strength of ones prior attitudes and the level of one political sophistication. They test the mechanism as a series of hypothesis that assume the following form:
+The authors postulate what they call a theory of affect-driven motivated reasoning in trying to explain when and why citizens actively process biased information. This theory suggests that people will anchor their evaluation of new information in their own biases - being non-skeptical of information that confirms their biases and being "motivated-skepticals" when engaging in information that is counter to their biases - i.e. spending more time trying to discredit new information. The authors propose a process of "partisan processing" that results in attitude-polarization and which is conditional on the strength of ones prior attitudes and the level of one political sophistication. They test the mechanism as a series of hypothesis that assume the following form:
 
 **H1:** there is a prior attitude effect whereby people who feel strongly about an issue - even when encouraged to be objective and leave their preferences aside - will evaluate supportive arguments as stronger and more compelling than arguments that oppose their prior beliefs
 
@@ -1582,7 +1618,7 @@ The authors postulate what they call a theory of affect-driven motivated reasoni
 
 -   They then viewed information on an information board, where they could seek out hidden policy arguments by known source alone (see figure 2); the amount of time they spend engaging in each argument was recorded by the software.
 
--   They viewed eight arguments without a time limit, but could only view each argument ONCE
+-   **They viewed eight arguments without a time limit, but could only view each argument ONCE**
 
 -   They then completed the same attitude battery from the beginning of the experiment before filing out demographic information and a political knowledge scale ( to assess sophistication)
 
@@ -1606,17 +1642,17 @@ The authors postulate what they call a theory of affect-driven motivated reasoni
 
 -   Both the confirmation and disconfirmation biases lead to attitude polarization (H4) ---the strengthening of t2 over t1 attitudes---especially among those with the strongest priors (H5) and highest levels of political sophistication (H6).
 
-## Mondak, Jeff, et al. 2010. \"Personality and Civic Engagement: An Integrative Framework for the Study of Trait Effects on Political Behavior,\" American Political Science Review.
+## Mondak, Jeff, et al. 2010. "Personality and Civic Engagement: An Integrative Framework for the Study of Trait Effects on Political Behavior," American Political Science Review.
 
 This paper is rollercoaster for me.
 
 "Environmental forces influence political behavior, but how and to what extent they do differs as a function of indviduals' traits."
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 Personality affects political behaviors
 
-### Questions: 
+### Questions:
 
 1.  In addition to biological factors, do environmental forces also influence personality?
 
@@ -1628,15 +1664,15 @@ Personality affects political behaviors
 
 5.  Do environmental and trait effects operate independently of one another, or in combination?
 
-### Aim: 
+### Aim:
 
 Principle objective is not merely to identify links between the Big Five and political engagement, but rather to position personality within a broader theory of political behavior, one that also accounts for biological and environmental influences.
 
-### Personality and Politics: 
+### Personality and Politics:
 
 -   Personality refers to a multifaceted, enduring, internal psychological structure
 
-### Big 5: 
+### Big 5:
 
 -   Openness to experience
 
@@ -1664,7 +1700,7 @@ Principle objective is not merely to identify links between the Big Five and pol
 
     -   tense, nervousness.
 
-### Personality in Context: 
+### Personality in Context:
 
 -   They are not trying to look at personality traits on political behavior
 
@@ -1680,7 +1716,7 @@ Principle objective is not merely to identify links between the Big Five and pol
 
             -   **I DONT LIKE THIS PREMISE AND CONCLUSION!**
 
-### Page 90 Issues: 
+### Page 90 Issues:
 
 I really do not like the authors discussions on page 90. Page 90 attempts to provide answers for the following questions posited on page 89: 1) Do environmental forces also influence personality?; 2) is it not the case that people's personalities change, and does this not imply a role for influences other than biology?; and 3) irrespective of other non biological effects, can political behavior alter and individual's personality?
 
@@ -1690,7 +1726,7 @@ I believe they are understating the role of environmental factors as their premi
 
 For question 2, the authors do admit that personality changes over time, especially in their adolescence, but they argue this change does not signify a "noteworthy impact of environmental influences." Citing Costa and McCrae (1988), the changes are minuscule, further, citing a different article from Costa and McCrae (2006), biological influences account for changes in personality across life cycles. I DO NOT BUY THIS.
 
-"As teenagers mature toward adulthood, they consistently exhibit a tendency to become more agreeable and less neurotic. These tendencies are foundinallcultures, and eveninotherspecies. Costa and McCrae (2006, 27) note that "the hypothesis of intrinsic maturation is supported indirectly by evidence that similar age trends are found in other primates. Indeed, anyonefamiliar with puppies andolddogs canunderstandhowthehumandeclineinExcitementSeekingmight be biologically based."
+"As teenagers mature toward adulthood, they consistently exhibit a tendency to become more agreeable and less neurotic. These tendencies are found in all cultures, and even in other species. Costa and McCrae (2006, 27) note that"the hypothesis of intrinsic maturation is supported indirectly by evidence that similar age trends are found in other primates. Indeed, anyonef amiliar with puppies and old dogs can understand how the human decline in Excitement Seeking might be biologically based."
 
 While I have not read the aforementioned articles, their measurements are suspect. Age is obviously playing a massive role in this. We know from the political socialization literature that political opinions/ideology is strongly influenced by parents and family at a young age. **Are we not sure personality is part of that socialization process?**
 
@@ -1712,8 +1748,492 @@ Do environmental and trait effects operate independently of one another, or in c
 
     -   they at least recognize it and argue that this is not a big issue cause of other tests involving peer evaluations and stuff.
 
-### Other Measurement: 
+### Other Measurement:
 
 DV: ten DVs that collectivel encompass a wide array of participatory acts.
 
-## [Broockman, David and Daniel Butler. 2017. \"The Causal Effects of Elite Position Taking on Voter Attitudes: Field Experiments with Elite Communication,\" American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/26379502.pdf?refreqid=fastly-default%3A649f89290d228924bfcd396da8cfb913&ab_segments=&origin=&initiator=&acceptTC=1)
+## [Broockman, David and Daniel Butler. 2017. "The Causal Effects of Elite Position Taking on Voter Attitudes: Field Experiments with Elite Communication," American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/26379502.pdf?refreqid=fastly-default%3A649f89290d228924bfcd396da8cfb913&ab_segments=&origin=&initiator=&acceptTC=1)
+
+### Lecture: 
+
+-   Strong external validity.
+
+-   Strong Internal validity.
+
+### Abstract
+
+Influential theories depict politicians as, alternatively, strongly constrained by public opinion, able to shape public opinion with persuasive appeals, or relatively unconstrained by public opinion and able to shape it merely by announcing their positions. To test these theories, we conducted unique field experiments in cooperation with sitting politicians in which U.S. state legislators sent constituents official communications with randomly assigned content. The legislators sometimes stated their issue positions in these letters, sometimes supported by extensive arguments but sometimes minimally justified; in many cases, these issue positions were at odds with voters'. An ostensibly unrelated survey found that voters often adopted the positions legislators took, even when legislators offered little justification. Moreover, voters did not evaluate their legislators more negatively when representatives took positions these voters had previously opposed, again regardless of whether legislators provided justifications. The findings are consistent with theories suggesting voters often defer to politicians' policy judgments.
+
+### Bumper Sticker
+
+### Aims
+
+What causes people to adopt political opinions?
+
+How do they change?
+
+**How citizens react when politicians stake out policy positions, including those these citizens oppose, and the extent to which extensive justifications condition any impacts of such position-taking.**
+
+### Other:
+
+-   This article is really getting at the content and style of elite messaging. Whereas Zaller to some degree, is not focused on the content, necessarily.
+
+# Week 4: Partisanship and Polarization 
+
+## Overarching questions: 
+
+-   Are the masses ideologically innocent?
+
+-   Are the masses polarized?
+
+-   Is polarization evidence of ideological thinking?
+
+## Abramowitz, Alan and Kyle Saunders. 2008. \"Is Polarization a Myth?,\" Journal of Politics.
+
+### Abstract
+
+*This article uses data from the American National Election Studies and national exit polls to test Fiorina's assertion that ideological polarization in the American public is a myth. Fiorina argues that twenty-first-century Americans, like the midtwentieth-century Americans described by Converse, \"are not very well-informed about politics, do not hold many of their views very strongly, and are not ideological\" (2006, 19). However, our evidence indicates that since the 1970s, ideological polarization has increased dramatically among the mass public in the United States as well as among political elites. There are now large differences in outlook between Democrats and Republicans, between red state voters and blue state voters, and between religious voters and secular voters. These divisions are not confined to a small minority of activists---they involve a large segment of the public and the deepest divisions are found among the most interested, informed, and active citizens. Moreover, contrary to Fiorina's suggestion that polarization turns off voters and depresses turnout, our evidence indicates that polarization energizes the electorate and stimulates political participation.*
+
+### Bumping Sticker
+
+We think Fiorina is wrong. - Abramowitz and Saunders
+
+### Questions: 
+
+1.  **is it just elites that have become polarized?**
+
+2.  Does the ideological debates between elites have any resonance with the masses?
+
+### Background: 
+
+-   Converse argues much of the american electorate are not ideological
+
+    -   Education is strongly correlated with ideological thinking
+
+        -   since Converse, Americans have become more educated.
+
+-   Elites have also become more ideological and the public knows more about their ideological conflict.
+
+-   Consensus on elite level ideological divisions
+
+    -   **little is known about ideological divisions at the mass level.**
+
+#### Fiorina Claims: 
+
+1.  *Moderation*: Most Americans are ideological moderates. There has been no ideological polarization among the public
+
+    1.  Fowler et al. might be showing this position to be correct.
+
+        1.  Even still - Fowler shows most moderates are ideological moderates (Downsian).
+
+            1.  says nothing about the moderates in relation to the rest of voters.
+
+    2.  Abramowitz & Saunders show greater polarization.
+
+2.  *Partisan Polarization*: Partisan polarization is largely an elite phenomenon.
+
+    1.  only a few specific groups are truly polarized in their views.
+
+        1.  results of Abramowitz shows this to not hold.
+
+3.  *Geographical Polarization*: Culture between states is not that big
+
+    1.  voters are more similar than they are different.
+
+        1.  Abramowitz evidence shows contrary. States have become more polarized.
+
+            1.  large difference between very red and very blue states. Socially and politically.
+
+4.  *Societal Cleavages*: Divisions have gone down.
+
+    1.  some modest amount of cleavages exist but not super important.
+
+        1.  Abramowitz shows religion one of the biggest cleavages
+
+            1.  biggest cleavages is not between religions but between religious v. secular.
+
+            2.  Fiorina thinks economic cleavages are the biggest
+
+                1.  Abramowitz disagrees.
+
+5.  *Voter Engagement:* Growing polarization of elites and activists turns off voters and decreases turnout.
+
+    1.  I think this historically has suffered the most
+
+        1.  Trump/Clinton, Trump/Biden evidence against this claim.
+
+#### Debate: 
+
+-   ''we \[ordinary Americans\] instinctively seek the center while the parties and candidates hang out on the extremes'' - Fiorina.
+
+    -   Abramowitz disagress with this.
+
+-   Between Fiorina and everyone else
+
+-   Is the public becoming more ideologically aware? Are they using ideological frameworks in thinking about politics?
+
+    -   Fiorina thinks **no.** Converse still holds up.
+
+        -   According to Fiorina, the ideological disputes that engage political elites and acti-vists have little resonance among the American mass public: like their midtwentieth-century counterparts, ordinary twenty-ﬁrst-century Americans ''are not very well-informed about politics, do not hold manyof their views very strongly, and are not ideological''
+
+-   Fiorina understates division among the masses.
+
+-   deepest divisions are among those most interested, informed and active members of the public
+
+    -   so then the question is, have more voters become more interested, informed, and active?
+
+-   I didn't see this stated anywhere, BUT i have a feeling our authors are going to argue that there is more polarization and that there are more ideological thinkers among the masses. BUT Fiorina might counter and say polarization alone is not evidence of ideological thinking in the masses. IDK i think there might be some of that in this moving forward. Not sure havent finished this article yet.
+
+### Data: 
+
+-   ANES Survey
+
+-   National exit polls
+
+### Method: 
+
+1.  To test moderation
+
+    1.  gather a batter of policy/identity questions from NES.
+
+        1.  create a measure of ideological polarization from 0 - 7.
+
+            1.  difference between number of liberal and conservative positions indicated.
+
+                1.  **evidence shows polarization among masses through NES survey from 1982 and onwards.**
+
+                    1.  Question for Josh: How should we view survey data now after reading Zaller?
+
+### Findings: 
+
+-   Polarization increases turnout and other forms of political participation. **Use this fact for my walkability paper.**
+
+-   Education and political knowledge correlates with higher ideological thinking.
+
+-   high engagement voter most polarized
+
+-   large difference between very red and very blue states. Socially and politically.
+
+    -   red states more likely to be religious and own a gun.
+
+    -   less likely to have a union member in house (conservative states)
+
+-   Religiosity among white voters strongly influences candidate choice
+
+-   Religion cleavage bigger than class cleavage.
+
+-   **It is not just elites that are polarized**
+
+    -   But they do not address whether polarization in masses is driven by elites
+
+    -   is polarization in the masses evidence of ideological thinking though?
+
+        -    Or are they just near-ideological voters following the elites?
+
+## [Fiorina, Morris, Samuel Abrams and Jeremy Pope. 2008. \"Polarization in the American Public: Misconceptions and Misreadings,\" Journal of Politics.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/10.1017/s002238160808050x.pdf?refreqid=fastly-default%3A6c446d7fb219abe1a4e48a251a52e4af&ab_segments=&initiator=&acceptTC=1)
+
+### Bumper Sticker: 
+
+No Abramowitz and Saunders are wrong.
+
+### Background: 
+
+-   Basically says their data is coded incorrect and that this is not actually polarization within the masses.
+
+-   Too early to say if polarization actually increases voter turnout.
+
+## [Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. 2012. \"Affect, Not Ideology: A Social Identity Perspective on Polarization ,\" Public Opinion Quarterly.](https://pcl.sites.stanford.edu/sites/g/files/sbiybj22066/files/media/file/iyengar-poq-affect-not-ideology.pdf)
+
+Really good article. Favorite one so far this week.
+
+### Abstract: 
+
+The current debate over the extent of polarization in the American mass public focuses on the extent to which partisans' policy preferences have moved. Whereas "maximalists" claim that partisans' views on policies have become more extreme over time (Abramowitz 2010), "minimalists" (Fiorina and Abrams 2009) contend that the majority of Americans remain centrist, and that what little centrifugal movement has occurred reflects sorting, i.e., the increased association between partisanship and ideology. We argue in favor of an alternative definition of polarization, based on the classic concept of social distance (Bogardus 1947). using data from a variety of sources, we demonstrate that both republicans and democrats increasingly dislike, even loathe, their opponents. We also find that partisan affect is inconsistently (and perhaps artifactually) founded in policy attitudes. the more plausible account lies in the nature of political campaigns; exposure to messages attacking the out-group reinforces partisans' biased views of their opponents.
+
+### Bumper Sticker: 
+
+-   Americans are affectively polarized.
+
+### Question: 
+
+-   To what extent do partisans view each other as a disliked social outgroup?
+
+-   How much does affective polarization matter in the public?
+
+### Background: 
+
+-   Elites are significantly more partisan.
+
+-   Authors argue a better way to test polarization is not party identity but rather, affective polarization.
+
+-   " in our view, is that the mere act of identifying with a political party is sufficient to trigger negative evaluations of the opposition, and exposure to prolonged media-based campaigns only reinforces these predispositions." p.3
+
+-   Humans typically categorize themselves into groups. - Tajfel
+
+    -   which group becomes salient is important
+
+        -   because they give cues.
+
+-   Campaign importance has grown.
+
+    -   more campaign information cause internet.
+
+        -   more exposure.
+
+### Data 
+
+-   National and cross-national surveys in the USA and United Kingdom.
+
+    -   6 data sets
+
+    -   ANES, 2008 YouGov poll of US and UK voters, Almond and Verba, 2004 Blair Center Election study, AP-Yahoo! News election study, 2010 Eleven nation study by YouGov.
+
+    -   Wisconsin Advertising Project: ads of campaigns.
+
+-   feeling thermometers
+
+-   using multiple surveys conducted between 1960 and 2010, we describe parallel changes in two indicators of inter-party social distance---stereotypes of party supporters and feelings about marriage across party lines.
+
+### Method
+
+-   UK serves as the control.
+
+    -   parties have strong roots in class system.
+
+-   Compare party affiliation with other notable social cleavages.
+
+-   After main findings they look at:
+
+    -   is affective polarization a consequence of ideological polarization?
+
+    -   is exposure to campaign a big reason for affective polarization?
+
+### Results: 
+
+-   Democrats and Republicans score high for when they are in power
+
+-   However, as the outparty the trend is downward.
+
+-   Partisan cleavage has become bigger than others.
+
+-   Growing proportion of people of parents saying they would be displeased if their child married someone from another party.
+
+    -   Republicans especially.
+
+-   Americans who expressed more positive views of party supporters and negative views of their opponents
+
+### Discussion: 
+
+-   is affective polarization simply a symptom of divergent movement in policy attitudes among both partisan supporters and party elites?
+
+    -   most likely not
+
+    -   the weak association between ideological and affective polarization is consistent with the vast literature demonstrating that partisan identity in the united States has only weak ideological underpinnings.
+
+        -   For parties to be seen in ideological terms would require an awareness of their policy stances, yet most Americans have difficulty correctly locating parties on issue scales
+
+-   partisan identities are primarily affective attachments.
+
+-   political scientists have repeatedly demonstrated that the vast majority of the public does not think about parties in ideological terms and that their ties to the political world are instead affective, based on a primordial sense of partisan identity that is acquired very early in life and persists over the entire life cycle
+
+-   Iyengar argue political campaigns have played a big role in affective polarization but is certainly not the only one.
+
+    -   they get a little at information bubbles and media sorting.
+
+    -   I think to some degree the main point here is that elite partisanship is influencing masses.
+
+## [Mason, Lilliana. 2018. \"Ideologues without Issues: The Polarizing Consequences of Ideological Identities,\" Public Opinion Quarterly.](https://watermark.silverchair.com/nfy005.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA04wggNKBgkqhkiG9w0BBwagggM7MIIDNwIBADCCAzAGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMQbS1-8l0lZY6V5C2AgEQgIIDAZmhFm9fwmszONpoFpu5-5rTRp3EPTRfyLV6lOzPje-x8HgkdD7OMWpvPWSdI6GtzKyIselqKvR6DPv7lKfYSZJSQHla50UaeenKi8taVounlWxI2NLAhYk09R9oQcV6x7TK3Q7E4Sd2hvwHPTXMdjmm8u5qwCn41utDxTiYUe6zytlt6sPtASTFJbL50c16jkkXP4j2MkIfxEDwppLxuXki9l9pTnnbbHJcG4GJOx-4hnQIE056bUy_Hqmcy7H1yKx8WLM67eomGXO6dPQTYjokPew8LD9tbXJUjF-APhP9VOw2XCrftxJC6i1klP8jEYWQdXCKzAnDoZVEIe2lDlOuxpmytJqHpgZSeJ2vQduKmjks5vqrgd8rCGCucgPffbPmP7wOSvppd6MeFHl-bPrdDwtv0hc40j9P_rHTuAnIgE4p2y24WWDyFmPJcOsNAPEgMthO9tiOjoZOR5Sh44jp-He4xwQjzGrOgS780li5Ta-7Bmjwg1Ru-q9TIyOy87_cl9Cj-8uhS7VD5sQuMOkrpH0YqKQJnRlXYiz_59AYGc_dUT7xb1DDCSP-03CwmqDuplQNycbY247QDvIDomUfQzHULDZvrkAifzqQbOHmj9GAn-ODcUTtbW-8Qudgiu8vWHjpdwmetugpRgQfqXK1grRu2h9rA7kG3uSZQQBxwJLp4xhAxtub9NHDByGMR8oZ5OSZdmU_4T3WyCcBLnZvqJa9rO0URmb8uTMQ6MDvCfr2hMXyDdr7gGMZqKA3UlvUSj3PJLbM1aGg8Q0hxM2ZMGqgwSoEVLF3PVTSGp502vMQvne06-aeSG1r7G6eoXQroR35sSQeeamM_06pVqv_V9ezDRMBv49BFRERW_zrbc-Bc5T71WHCwcbryFNkphL9Vz0cC0bW1mZnyq56hkR8mF0Ex2XhN-mxxHPpwMMXWy8ViKOkHSZ-K21eLY2Jx8CHMBCunt3pgHDMpFdpQGEuhJWvWhc7nfzVX_c7ll1FaAfU9GLa0kDRXg57yU_GHXQ)
+
+### Abstract: 
+
+The distinction between a person's ideological identity and their issue positions has come more clearly into focus in recent research. Scholars have pointed out a significant difference between identity based and issue-based ideology in the American electorate. However, the affective and social effects of these separate elements of ideology have not been sufficiently explored. Drawing on a national sample collected by SSI and data from the 2016 ANES, this article finds that the identity based elements of ideology are capable of driving heightened levels of affective polarization against outgroup ideologues, even at low levels of policy attitude extremity or constraint. These findings demonstrate how Americans can use ideological terms to disparage political opponents without necessarily holding constrained sets of policy attitudes.
+
+### Bumper Sticker: 
+
+### Aim(s):
+
+-   This project examines how the social attachments to the terms "liberal" and "conservative" generate affective polarization against liberals and conservatives in the American electorate, even when issue-based ideology is not extreme.
+
+    -   In other words, we already know that Democrats and Republicans hate each other, but liberals and conservatives likely hate each other too, for reasons that go beyond partisanship or even issue-based disagreement.
+
+### Hypothesis: 
+
+1.  Identity-based ideology is associated with increasing affective polarization of ideological groups.
+
+2.  This relationship will occur even when issue-based ideology is weak or conflicting with identity-based ideology.
+
+### Background:
+
+-   Polarization: is an increasing distance between partisans in terms of their issue-based ideology, sometimes referred to as "ideological polarization"
+
+#### Issue based ideology: 
+
+-   Belief system (Converse) - A system of beliefs can be defined by a set of opinions and the degree to which they form measurable patterns.
+
+#### Identity based ideology:
+
+-   Prior research has found that the names "liberal" and "conservative" confer a sense of group identity that is not neatly connected to any set of issue positions, but nonetheless motivates political judgment
+
+-   It is characterized by a uniquely social connection to the groups that hold the labels "liberal" and "conservative."
+
+## Grossmann, Matt and Dan Hopkins. 2016. Asymmetric Politics: Ideological Republicans and Group-Interest Democrats, Ch. 2.
+
+big claims but very interesting.
+
+### Background: 
+
+-   Author argues Democrats are more pragmatic.
+
+    -   Republicans are more ideologically driven.
+
+-   The Democratic Party's character as a socialgroup coalition fosters arelatively pragmatic, results-oriented stvle of politics in which officeholders are rewarded for delivering concrete benefits to targeted groups in order to address specific social problems.
+
+-   Republicans, in contrast, are more likely to forge partisan ties based on common ideological beliefs, encouraging party officials to pursue broad rightward shifts ni public policy.
+
+-   As a result, Republican voters and activists are more likely than their Democratic counterparts to prize symbolic demonstrationsof ideological purity and to pressure their party leaders to reject moderation and compromise.
+
+-   This dynamic is reflected in the partisan attitudes within the public at large.
+
+-   Public is operationally liberal and symbolically conservative.
+
+-   Republicans more likely to view their party as standing for abstract values.
+
+-   Fun interesting quote from FDR:
+
+    -   "Roughly speaking, theliberal school of thought recognizes that the new conditions throughout the world call for new remedies. . (that can be adopted and successfuly maintained in this country under our present form of government if we use government as an instrument of cooperation to provide these remedies...the opposing or conservative school of thought, as a general proposition, does not recognize the need for Government itself to step in and take action to meet these new problems. It believes that individual initiative and private philanthropy will solve them-that we ought to repeal many of the things we have done and go back \[to prior policies\]."
+
+        -   pretty much sums of the left-right dimension.
+
+-   Republican propensity for ideological thinking is not simply due to religion or education; rather, is is a product of the movement's successful communication of its version of american political tradition to the party's electorate.
+
+    -   Frank Luntz.
+
+-   **Strong Democratic identifiers consistently describe politics as a competition among social groups for favorable concrete policies and benefits, whereas strong Republicans explain the salient differences between the parties as concerning a more abstract conflict over the proper role of government.**
+
+-   **Both hold policy positions but differ in REASONING!**
+
+-   Democrats more closely match social identity
+
+-   Republicans more closely match ideological identity as described by Abramowitz & Saunders.
+
+-   Republican voters value purists
+
+-   Democratic voters value people that compromise.
+
+-   **David Broockman and Christopher Skovron found that politicians dramatically overestimated the proportion of their constituents who agreed with conservative positions on abolishing welfare programs, implementing universal health coverage, and allowing same-sex marriage.? Though politicians in both parties exhibited this bias, Republicans overestimated conservative issue positions by a much larger margin than did Democrats-usually by more than 20 percent, implying that they viewed the average legislative district as more collectively conservative than the nation's most conservative districts are in actuality.**
+
+    -   COOL CONNECTION TO FENNO
+
+    -   Broockman.
+
+-   Social conservatism history in the US is very deep
+
+-   Elite rhetoric reinforces the asymmetries in public support for the views expressed in each party.
+
+-   people identify in different parties for different reasons.
+
+-   democrats generally define themselves politically through their social group ties and describe their party as representing groups they identify with
+
+-   republicans are more likely to represent themselves in their vision of government and society in some abstract battle.
+
+## [Barber, Michael and Jeremy Pope. 2018. \"Does Party Trump Ideology? Disentangling Party and Ideology in America,\" American Political Science Review.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B5BAD0AE947BD3CF18D51D399263C8D3/S0003055418000795a.pdf/does-party-trump-ideology-disentangling-party-and-ideology-in-america.pdf)
+
+### Abstract: 
+
+Are people conservative (liberal) because they are Republicans (Democrats)? Or is it the reverse: people are Republicans (Democrats) because they are conservatives (liberals)? Though much has been said about this long-standing question, it is difficult to test because the concepts are nearly impossible to disentangle in modern America. Ideology and partisanship are highly correlated, only growing more so over time. However, the election of President Trump presents a unique opportunity to disentangle party attachment from ideological commitment. Using a research design that employs actual \"conservative\" and \"liberal\" policy statements from President Trump, we find that low-knowledge respondents, strong Republicans, Trump-approving respondents, and self-described conservatives are the most likely to behave like party loyalists by accepting the Trump cue---in either a liberal or conservative direction. These results suggest that there are a large number of party loyalists in the United States, that their claims to being a self-defined conservative are suspect, and that group loyalty is the stronger motivator of opinion than are any ideological principles.
+
+### Bumper Sticker: 
+
+### Question: 
+
+-   Are people conservative because they are Republicans? Or is it the reverse: people are Republicans because they are conservatives?
+
+-   Another way of putting this question of party versus ideology is to ask how sincerely held are expressed political and policy opinions and are these opinions based on ideological convictions or group loyalty?
+
+-   who is most likely to be a party loyalist? Or, what characteristics will moderate the effects of the treatment?
+
+### Background: 
+
+-   Very hard to separate partisanship from issue positions or any ideological commitments that may result from those positions.
+
+-   **Party affiliation has been shown to be a social identity** (Campbell et al. [Reference Campbell, Converse, Miller and Stokes1960](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref15); Green, Palmquist and Schickler [Reference Green, Palmquist and Schickler2004](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref25); Greene [Reference Greene1999](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref26); Tajfel [Reference Tajfel1981](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref57)), **to be a heuristic about policy views** (Cohen [Reference Cohen2003](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref17); Rahn [Reference Rahn1993](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref54)), **and influence people\'s issue attitudes** (Layman and Carsey [Reference Layman and Carsey2002](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref41)). **People have also been shown to take cues from the party leader\'s positions** (Lenz [Reference Lenz2012](https://www.cambridge.org/core/journals/american-political-science-review/article/does-party-trump-ideology-disentangling-party-and-ideology-in-america/B5BAD0AE947BD3CF18D51D399263C8D3#ref42)).
+
+-   Trump is a unique opportunity because he shifts all over the place on policy issues.
+
+-   Distinguishing between partisan and policy loyalists is hard. Trump makes this easier.
+
+-   The heart of the theory is based on the importance of these partisan cues and how different types of citizens will interpret the cues.
+
+#### Definitions: 
+
+-   Partisan Loyalists: unswervingly loyal to their party, but they care very little (if at all) about the underlying issues endorsed by the party.
+
+    -   Partisan loyalists merely take the party line on all issues---regardless of whatever that position might be.
+
+-   Policy Loyalists: These people exhibit high levels of issue constraint and should be highly loyal to the underlying principles and policies that arise from those principles.
+
+    -   Loyalty to those ideas implies that policy loyalists should remain faithful to those principles regardless of which party or partisan leader espouses those views.
+
+-   Note: people probably exemplify some degree of both these concepts.
+
+### Hypothesis: 
+
+-   The influence of a Trump cue will demonstrate the existence of a large bloc of party loyalists in the electorate when his influence moves opinion in either a liberal or conservative direction based on the cue.
+
+-   **knowledge hypothesis** is that only the unknowledgeable should react to the cue and behave as party loyalists, presumably because the knowledgeable gain little from the treatment.
+
+-   **partisan hypothesis** holds that those who strongly affiliate with the party of the cue giver should be more likely to be party loyalists.
+
+-   **approval hypothesis** holds that those who approve of the cue giver should be more likely to be party loyalists.
+
+-   **symbolic ideology hypothesis**---self-described conservatives should hold firm to their presumed beliefs and be less likely to be party loyalists because they willingly identify with an ideological camp and as such likely adhere to the policy tenets of that group.
+
+### Critical Point To Uncover:
+
+-   if the less knowledgeable express more conservative views in the face of a conservative Trump cue *and* more liberal views in the face of a liberal Trump cue, then this is evidence for partisan loyalism.
+
+    -   showing both shows partisan loyalty.
+
+        -   If, on the other hand, there is only a reaction to the conservative Trump cue, then the evidence does not support partisan loyalism.
+
+### Data: 
+
+-   representative survey of Americans collected by YouGov survey research company in early 2017, immediately after the inauguration of Donald Trump
+
+    -   1,300 total respondents who were randomly assigned to one of three treatment conditions and a control condition.
+
+        -   Those in the control condition (500 respondents) were presented with a policy statement and then asked whether they agreed or disagreed with the policy statement they had just read.
+
+        -   Those respondents who were assigned to one of the three treatment conditions saw a similar statement with a small addition.
+
+            -   the treatment was different stimuli citing Trump's position on the matter. Because he has supported the same policy from different ideological perspectives, it allows the researcher to give the respondent a liberal cue of Trump and a conservative cue.
+
+    -   Trump has to have actually taken both sides of an issue at some point.
+
+        -   which means these positions are NOT made up.
+
+### Results: 
+
+-   partisans emphasize group attachment over issue positions.
+
+-   Among Republicans, the politically knowledgeable, those who do not approve of the cue giver, and self-described moderates and liberals are not all that likely to change their views when informed of President Trump\'s positions.
+
+-   The implication of this unique test is that large, predictable segments of the public---partisans, the less-informed, approvers of the party leader, and even those who claim the most strong symbolic ideological labels---are likely to be influenced more by partisanship than by any issue content.
+
+-   **First, no group reacts to a cue that comes from Republican leaders in Congress.**
+
+    -   Trump has some extraordinary sway that republican leaders do not have.
+
+-   **Democrats and Independents do not react to Trump cues, but Republicans do**
+
+-   we find strong support for both the knowledge and the approval hypotheses within the broader population.
+
+-   Those least knowledgeable and most approving of Trump are more likely to react to a Trump cue
+
+-   **However, our results run exactly in the opposite direction of the ideology hypothesis. In fact, it is those most likely to call themselves strong conservatives who are most influenced by the cue, *regardless of the direction of the cue.* Strong conservatives move the most when faced with a conservative Trump cue *and* when faced with a liberal Trump cue.**
+
+    -   so their ideological stance is actually a bit shaky it seems.
+
+-   Higher-knowledge individuals are more likely to look like policy loyalists than party loyalists. On the other hand, low-knowledge individuals display the opposite pattern.
+
+-   The simple truth is that many citizens behave as partisan loyalists rather than principled ideologues.
