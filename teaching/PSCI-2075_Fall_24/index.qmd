@@ -866,9 +866,9 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 
 # Week 5
 
-## Stone's Song of the Week 
+## Stone's Song of the Week
 
-[![L'Impératrice - La Piscine (LIVE) & 'piano track killer' @ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
+[![L\'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
 
 I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now...You think I want to be here teaching you about variance?! JK I do \<3 variance and standard deviation are very important.
 
@@ -1012,17 +1012,17 @@ $$
 
 Let's work through an example together in R together.
 
-## Additional Material to Help: 
+## Additional Material to Help:
 
 [Mathisfun on variance and SD.](https://www.mathsisfun.com/data/standard-deviation.html)
 
 [StatQuest on Variance and SD. I would not be teaching you this if it weren't for him.](https://youtu.be/SzZ6GpcfoQY?si=FkKVIiD_uQRqlpES)
 
-## Homework 1 Feedback: 
+## Homework 1 Feedback:
 
 -   Still grading them.
 
-## Homework 2: 
+## Homework 2:
 
 -   Please get in contact with your new group.
 
@@ -1039,3 +1039,284 @@ Let's work through an example together in R together.
     -   Your R script.
 
         -   it must a .r file. DO NOT COPY YOUR CODE TO YOUR PDF.
+
+# Week 6
+
+-   This is where it gets a bit confusing.
+
+-   Take your time. Watch some videos to reinforce this. This is not intuitive.
+
+-   ASK QUESTIONS!
+
+## Stone's Song of the Week
+
+[![Dennis Parker - Like An Eagle](dennis_parker.jpg){fig-align="center" width="482"}](https://www.youtube.com/watch?v=ujbSkWKTuHo)
+
+🦅 "Always searching, never perching" - incredible line. This is going to be my next instagram caption. 🦅
+
+[The edit by Todd Terje is also good.](https://www.youtube.com/watch?v=cGOZ0sFDNbc)
+
+## Statistical Inference
+
+-   We can calculate how likely we are to get a sample result
+
+-   When we sample, we introduce random error.
+
+-   In essence, calculate how likely it is our sample is misleading.
+
+-   Depends on:
+
+    -   law of large numbers
+
+    -   Central limit theorem
+
+## Law of Large Numbers
+
+-   As the sample's size approaches $\infty$, sample mean will converge on the population mean
+
+-   Sample must be random.
+
+-   basically, bigger sample = better.
+
+## Central Limit Theorem
+
+-   **Very important!**
+
+-   [Visual representation](http://mfviz.com/central-limit/)
+
+-   The distribution of a large number of sample means will be normally distributed around the population mean
+
+    -   assuming samples are large enough
+
+-   Normal distribution: bell curve
+
+-   Sampling distribution: distribution of possible samples
+
+-   The sampling distribution gets tighter as the sample size increases.
+
+-   **This theorem is the critical math concept that allows us to do hypothesis testing.**
+
+## Sampling Distribution
+
+-   Go back to the visual representation link from the central limit theorem section.
+
+-   Imagine we took a bunch of samples.
+
+    -   Take the mean of each of those samples
+
+        -   now plot them like a histogram.
+
+            -   these are plotted as [**density plots**](https://images.app.goo.gl/3fo32VU3S9Qse4US6)**.**
+
+                -   note you can also plot a single sample as a density plot, we just have been plotting them as histograms. They are basically the same thing with a slight (and specific) difference.
+
+![](samp_dist_example.gif){fig-align="center" width="444"}
+
+-   Let this marinate. We usually only have ONE sample. BUT if we had a bunch of samples it would look like this - (see Central Limit Theorem).
+
+## Standard Error
+
+$$
+SE = \frac{SD}{\sqrt{n}}
+$$
+
+-   the standard deviation of the sampling distribution
+
+    -   think about this for a second. Let it marinate.
+
+-   What is the difference between standard deviation and standard error?
+
+    -   Standard deviation quantifies the variation within a **set** of measurements. (singular)
+
+    -   Standard error quantifies the variation in the means from **multiple** sets of measurements. (multiple)
+
+        -   What is confusing is that we can get standard error from one single measurement, even though it describes the means from multiple sets. **Thus, even if you only have a single set of measurements, you are often given the option to plot the standard error.**
+
+## So why do we care?
+
+-   We (usually) only get one sample.
+
+-   we want to know how likely our sample is given the sampling distribution.
+
+    -   we are trying to figure out where our sample is relative to other samples, assuming some null hypothesis.
+
+        -   **We do NOT know the sampling distribution.**
+
+## Null Hypothesis Testing
+
+-   Basic idea: assuming some population mean, how probable is our sample?
+
+-   Want to show that the data is unlikely given that assumption.
+
+## P-Value 
+
+-   The p-value is extremely important and *commonly* misunderstood.
+
+-   **A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true.**
+
+-   If we assume the null hypothesis is true, then we could draw the sampling distribution centered around zero. By specifing the null hypothesis we can invoke the central limit theorem.
+
+-   The p-value is decided by the researcher. Convention typically sets the p-value at .10 and below. However, .10 is still not ideal, the lower the better.
+
+## Hypothesis Test Procedure:
+
+Remember: we are using data we **HAVE**, to tell us about data we do **NOT HAVE**.
+
+### Descriptive Statistics
+
+For whatever variable you are interested in, report summary statistics on that variable. We want to know how our sample is distributed.
+
+### Writing Hypothesis Tests 
+
+$H_o$ : (null hypothesis) - I think the mean is not greater than x
+
+$H_A$ : (alternative hypothesis) - I think the mean is greater than x
+
+### Calculate a Test Statistic
+
+There are few different test statistics we can calculate. We will use a "Student's" t-test. [Fun fact, this statistical test was developed by the Guinness Beer Company.](https://en.wikipedia.org/wiki/William_Sealy_Gosset) See statistics is important!
+
+one sample t-Test formula:
+
+$$
+\frac{\bar{x} - \mu}{\frac{s}{\sqrt{n}}}
+$$
+
+-   $\bar{x}$ = observed mean of the sample
+
+-   $\mu$ = assumed mean
+
+-   $s$ = standard deviation
+
+-   $n$ = sample size
+
+This is what R is doing under the hood when we run the t.test command.
+
+### Interpretation
+
+-   We do NOT prove our hypothesis.
+
+-   We can only do two things in the world of null hypothesis testing:
+
+    -   I reject the null hypothesis
+
+    -   I fail to reject the null hypothesis
+
+I will show example code below. When we do this in R, we will get back a bunch of values.
+
+1.  We will get a "t value".
+
+    1.  this value tells us how many standard deviations we are from the null hypothesis mean.
+
+2.  "df" or degrees of freedom
+
+    1.  $n-1$
+
+3.  p-value
+
+    1.  **A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true.**
+
+## Example with R Code 
+
+As a researcher, I am interested in how people feel about Obama. I think to myself, hmm, I think the public likes Obama. But then I also remember, that a lot of people don't like Obama. I imagine that I ask everyone in the United States how I feel about Obama on a 0-100 scale. I can't do this because I don't know everyone and I don't have enough money 😔. To figure this out, I take a sample, make a hypothesis, and test it!
+
+$H_o$ : The public's average feeling towards Obama is equal to 50
+
+$H_a$ : The public's average feeling towards Obama is greater than 50
+
+Lucky for us, someone already took a sample. Wow, thank you RCPA3! Let's call up that sample.
+
+```{r}
+library(RCPA3) 
+
+nes <- nes #load nes dataset into environment 
+```
+
+With our data loaded into R, let's look at our sample feeling thermometer of Obama:
+
+```{r}
+# calculate the mean of the 'ft.obama' variable in the nes dataset. 
+mean(nes$ft.obama, na.rm = TRUE) # the 'na.rm' is telling R to remove the NA values. 
+```
+
+We now have a sample mean ($\bar{x}$) of 60.87802. Of our respondents, the average feeling towards Obama was 60.87802.
+
+Now you might be thinking, 60.87802 \> 50. Thus our alternative hypothesis is right. Case closed. Whoooooa, slow down buckaroo.
+
+This is a **SAMPLE**. Maybe this sample is not that much different from the **true population** feeling thermometer toward Obama of 50. We need to know how likely it is we observed this sample given the population mean (the null hypothesis) was actually 50. But again, we don't ever know the true population parameter. **We assume the null hypothesis to be true. We are trying to see how likely it is for us to observe the value we got from our sample IF WE ASSUME THE POPULATION MEAN TO EQUAL 50.**
+
+We can use a test statistic to figure this out. Forgot what a t-test is? Scroll up.
+
+```{r}
+t.test(nes$ft.obama, mu=50, alternative="greater")  # do t-test of ft.obama, with hypothesis that the mean age is >50
+```
+
+Let's go through what this means:
+
+-   t = 26.727
+
+    -   this is our t-test score. Basically our sample that we observed is 26.727 standard deviations away from our hypothesized mean of 50.
+
+        -   Remember this photo from earlier:
+
+            -   ![](normal-distrubution-3sds.svg){width="227"}
+
+                -   Those numbers on the x-axis are standard deviation. We can see the majority (99.7%) of all values lie within 3 standard deviations of the mean.
+
+                    -   NOW IMAGINE 27.727 STANDARD DEVIATIONS!!!!! 😱😱😱😱😱😱
+
+-   df = 8164
+
+    -   degrees of freedom
+
+        -   after getting rid of the NA values we have 8165 observations
+
+            -   remember for df: $n-1$ so $8165-1= 8164$
+
+-   p-value \< 2.2e-16
+
+    -   our p-value is in scientific notation
+
+        -   so it's actually: $0.00000000000000022$
+
+        -   we know that we want p-values smaller than .10 (.05 is better but I digress)
+
+        -   is this smaller than .10?
+
+            -   So what does that mean we can do?
+
+-   Interpretation:
+
+    -   we reject the null hypothesis
+
+        -   the public feeling thermometer towards Obama is $\neq$ 50
+
+        -   Our sample mean is statistically greater than 50.
+
+    -   Remember! We never accept or "prove" our hypothesis.
+
+![](p-value-1024x768.webp){fig-align="center" width="518"}
+
+## Additional Resources
+
+I am a strong believer that there is no "correct" way to teach this material. It helps to be exposed to different explanations. Here are some YouTube videos that helped me:
+
+-   [3Blue1Brown - Central Limit Theorem](https://youtu.be/zeJD6dqJ5lo?si=MCs3QiLBmNooEFsT)
+
+    -   This is the GOAT of high level math concepts. I watch these for fun sometimes.
+
+-   [zedstatistics - Standard Error](https://www.youtube.com/watch?v=ulBG4SOHKS0&t=148s)
+
+    -   If you are thinking "Naur more statistics" then zedstatistics is your guy.
+
+        -   Statistics but with an Australian flair.
+
+            -   Has a lot of good videos.
+
+-   [StatQuest with Josh Starmer - Central Limit Theorem](https://www.youtube.com/watch?v=YAlJCEDH2uY)
+
+    -   Honestly, just watch **everyone** of his videos.
+
+## Homework 2
+
+-   **Due MONDAY!**

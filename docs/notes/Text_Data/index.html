@@ -228,6 +228,13 @@ window.Quarto = {
   <li><a href="#background-2" id="toc-background-2" class="nav-link" data-scroll-target="#background-2">Background:</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#week-6" id="toc-week-6" class="nav-link" data-scroll-target="#week-6">Week 6</a>
+  <ul class="collapse">
+  <li><a href="#dictionary-methods" id="toc-dictionary-methods" class="nav-link" data-scroll-target="#dictionary-methods">Dictionary Methods</a></li>
+  <li><a href="#validation-1" id="toc-validation-1" class="nav-link" data-scroll-target="#validation-1">Validation</a></li>
+  <li><a href="#zipfs-law" id="toc-zipfs-law" class="nav-link" data-scroll-target="#zipfs-law">Zipf’s Law</a></li>
+  <li><a href="#wordscores" id="toc-wordscores" class="nav-link" data-scroll-target="#wordscores">Wordscores</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -821,9 +828,54 @@ window.Quarto = {
 <li><p>style words: how people are communicating.</p></li>
 </ul></li>
 </ul>
-
-
 </section>
+</section>
+</section>
+<section id="week-6" class="level1">
+<h1>Week 6</h1>
+<section id="dictionary-methods" class="level2">
+<h2 class="anchored" data-anchor-id="dictionary-methods">Dictionary Methods</h2>
+<ul>
+<li><p>Keyword counting</p></li>
+<li><p>(weighted) average frequency</p></li>
+<li><p>For dictionaries to work well, words must have a particular meaning in a specific context</p></li>
+<li><p>Be very skeptical of out of the box approaches!</p>
+<ul>
+<li>the financial liabilities reading is a good example of this.</li>
+</ul></li>
+<li><p>Have to do validation.</p></li>
+</ul>
+</section>
+<section id="validation-1" class="level2">
+<h2 class="anchored" data-anchor-id="validation-1">Validation</h2>
+<ul>
+<li><p>Develop a confusion matrix</p></li>
+<li><p>minimize false positives and false negatives.</p></li>
+</ul>
+</section>
+<section id="zipfs-law" class="level2">
+<h2 class="anchored" data-anchor-id="zipfs-law">Zipf’s Law</h2>
+<ul>
+<li>In any corpus, the frequency of any word is inversely proportional to its rank in the frequency table. Thus the most frequent will word will occur approximately twice as often as the second most frequent word, three times as often as the third most frequent word, etc.</li>
+</ul>
+</section>
+<section id="wordscores" class="level2">
+<h2 class="anchored" data-anchor-id="wordscores">Wordscores</h2>
+<ul>
+<li><p>Extracting dimensional information from political texts using computerized content analysis</p></li>
+<li><p>Training a Wordscores model requires reference scores for texts whose positions on well-defined a prior dimensions are “known”. Afterwards, Wordscores estimates the positions for the remaining “unknown” texts.</p></li>
+<li><p>semi-supervised machine learning.</p></li>
+<li><p>kinda similar to DW Nominate score.</p></li>
+<li><p>But the issue is the dimension to which we observe these as</p>
+<ul>
+<li><p>DW nominate has always had issues with the Y axis.</p>
+<ul>
+<li>Wordscore has a similar issue with the labeling.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+
 </section>
 </section>
 

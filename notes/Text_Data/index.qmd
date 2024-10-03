@@ -347,11 +347,11 @@ How has culture changed?
 
 ## [DiMaggio, Paul. "Adapting computational text analysis to social science (and vice versa)." Big Data & Society 2.2 (2015).](https://journals.sagepub.com/doi/full/10.1177/2053951715602908)
 
-# Week 4 (Canceled - Alex out sick) 
+# Week 4 (Canceled - Alex out sick)
 
 # Week 5
 
-## Lecture Notes: 
+## Lecture Notes:
 
 -   Type: is a unique sequence of characters that are grouped together in some meaningful way.
 
@@ -379,15 +379,15 @@ How has culture changed?
 
 -   A document is a collection of **W** features tokens
 
-## Grimmer, chp. 3-5. 
+## Grimmer, chp. 3-5.
 
-### Chapter 3: 
+### Chapter 3:
 
 -   We need to decide what information we want and what information we need discarded.
 
     -   figuring out what to discard and how is the hard part.
 
-#### Principle 1: 
+#### Principle 1:
 
 -   The usefulness of a corpus depends on the question the researcher wants to answer
 
@@ -399,11 +399,11 @@ How has culture changed?
 
             -   might not be the best way to gauge public opinion.
 
-#### Principle 2: 
+#### Principle 2:
 
 -   There is no one right way to represent text for all research questions.
 
-#### Principle 3: 
+#### Principle 3:
 
 -   The best assurance that a text representation is working is extensive validation.
 
@@ -477,25 +477,25 @@ How has culture changed?
 
 ## When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks
 
-### Abstract: 
+### Abstract:
 
 Previous research uses negative word counts to measure the tone of a text. We show that word lists developed for other disciplines misclassify common words in financial text. In a large sample of 10-Ks during 1994 to 2008, almost three-fourths of the words identified as negative by the widely used Harvard Dictionary are words typically not considered negative in financial contexts. We develop an alternative negative word list, along with five other word lists, that better reflect tone in financial text. We link the word lists to 10-K filing returns, trading volume, return volatility, fraud, material weakness, and unexpected earnings.
 
-### Question: 
+### Question:
 
 -   Can dictionaries from social science be used for business text data.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 -   Words mean different things in context.
 
 ## [The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods](https://www.cs.cmu.edu/~ylataus/files/TausczikPennebaker2010.pdf)
 
-### Abstract: 
+### Abstract:
 
 We are in the midst of a technological revolution whereby, for the first time, researchers can link daily word use to a broad array of real-world behaviors. This article reviews several computerized text analysis methods and describes how Linguistic Inquiry and Word Count (LIWC) was created and validated. LIWC is a transparent text analysis program that counts words in psychologically meaningful categories. Empirical results using LIWC demonstrate its ability to detect meaning in a wide variety of experimental settings, including to show attentional focus, emotionality, social relationships, thinking styles, and individual differences.
 
-### Background: 
+### Background:
 
 -   Content Words:
 
@@ -514,3 +514,45 @@ We are in the midst of a technological revolution whereby, for the first time, r
         -   pronouns, prepositions, articles, conjunctions, auxiliary verbs, and a few other esoteric categories.
 
     -   style words: how people are communicating.
+
+# Week 6 
+
+## Dictionary Methods 
+
+-   Keyword counting
+
+-   (weighted) average frequency
+
+-   For dictionaries to work well, words must have a particular meaning in a specific context
+
+-   Be very skeptical of out of the box approaches!
+
+    -   the financial liabilities reading is a good example of this.
+
+-   Have to do validation.
+
+## Validation
+
+-   Develop a confusion matrix
+
+-   minimize false positives and false negatives.
+
+## Zipf's Law
+
+-   In any corpus, the frequency of any word is inversely proportional to its rank in the frequency table. Thus the most frequent will word will occur approximately twice as often as the second most frequent word, three times as often as the third most frequent word, etc.
+
+## Wordscores 
+
+-   Extracting dimensional information from political texts using computerized content analysis
+
+-   Training a Wordscores model requires reference scores for texts whose positions on well-defined a prior dimensions are "known". Afterwards, Wordscores estimates the positions for the remaining "unknown" texts.
+
+-   semi-supervised machine learning.
+
+-   kinda similar to DW Nominate score.
+
+-   But the issue is the dimension to which we observe these as
+
+    -   DW nominate has always had issues with the Y axis.
+
+        -   Wordscore has a similar issue with the labeling.

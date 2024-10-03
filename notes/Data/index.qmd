@@ -281,7 +281,7 @@ The p-value is decided by the researcher. Convention typically sets the p-value 
 
 ### Important Notes:
 
-the p-value does not tell us anything substantive. It simply tells us
+the p-value does not tell us anything substantive. It simply tells us if something is statistically significant.
 
 # Section 3: Regression Overview/Review
 

@@ -225,6 +225,22 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#limited-dependent-variables" id="toc-limited-dependent-variables" class="nav-link" data-scroll-target="#limited-dependent-variables">Limited Dependent Variables</a></li>
   </ul></li>
+  <li><a href="#topic-5-binary-choice-models" id="toc-topic-5-binary-choice-models" class="nav-link" data-scroll-target="#topic-5-binary-choice-models">Topic 5: Binary Choice Models</a>
+  <ul class="collapse">
+  <li><a href="#dichotomous-dependent-variables" id="toc-dichotomous-dependent-variables" class="nav-link" data-scroll-target="#dichotomous-dependent-variables">Dichotomous dependent variables</a></li>
+  <li><a href="#logit-log-odds" id="toc-logit-log-odds" class="nav-link" data-scroll-target="#logit-log-odds">Logit (log-odds)</a></li>
+  <li><a href="#probit" id="toc-probit" class="nav-link" data-scroll-target="#probit">Probit</a></li>
+  <li><a href="#latent-variable" id="toc-latent-variable" class="nav-link" data-scroll-target="#latent-variable">Latent Variable</a></li>
+  <li><a href="#measures-of-fit-r2" id="toc-measures-of-fit-r2" class="nav-link" data-scroll-target="#measures-of-fit-r2">Measures of Fit: <span class="math inline">\(R^2\)</span></a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation:</a></li>
+  <li><a href="#first-differences-lpm" id="toc-first-differences-lpm" class="nav-link" data-scroll-target="#first-differences-lpm">First Differences (LPM)</a></li>
+  <li><a href="#first-differences-logitprobit" id="toc-first-differences-logitprobit" class="nav-link" data-scroll-target="#first-differences-logitprobit">First Differences (Logit/Probit)</a>
+  <ul class="collapse">
+  <li><a href="#read-hanmer-and-kalkan" id="toc-read-hanmer-and-kalkan" class="nav-link" data-scroll-target="#read-hanmer-and-kalkan">Read Hanmer and Kalkan</a></li>
+  </ul></li>
+  <li><a href="#stochastic-simulation" id="toc-stochastic-simulation" class="nav-link" data-scroll-target="#stochastic-simulation">Stochastic Simulation</a></li>
+  <li><a href="#example-flores-macias-and-kreps-2013" id="toc-example-flores-macias-and-kreps-2013" class="nav-link" data-scroll-target="#example-flores-macias-and-kreps-2013">Example: Flores-Macias and Kreps (2013)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -744,6 +760,141 @@ window.Quarto = {
 <li><p>Sampling on DV means deliberately choosing certain y outcomes.</p></li>
 </ul></li>
 <li><p>Discrete outcomes</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-5-binary-choice-models" class="level1">
+<h1>Topic 5: Binary Choice Models</h1>
+<section id="dichotomous-dependent-variables" class="level2">
+<h2 class="anchored" data-anchor-id="dichotomous-dependent-variables">Dichotomous dependent variables</h2>
+<ul>
+<li><p>We can estimate <span class="math inline">\(\pi_i\)</span> using OLS.</p>
+<ul>
+<li><p><span class="math inline">\(\pi_i = X_i\beta\)</span> using OLS</p></li>
+<li><p>benefits:</p>
+<ul>
+<li><p>linear interpretation of betas</p></li>
+<li><p>simple…much faster since using OLS</p></li>
+<li><p>Works well if <span class="math inline">\(X_i\)</span> is also distributed Bernoulli</p></li>
+</ul></li>
+<li><p>Drawbacks:</p>
+<ul>
+<li><p>“impossible” predictions; probabilities exceed 0 and 1.</p></li>
+<li><p>censoring issue.</p></li>
+</ul></li>
+<li><p>error not normally distributed.</p></li>
+<li><p>error will not have constant variance.</p></li>
+</ul></li>
+<li><p>LPM is not ideal but its not terrible. You can run it sometimes. What we want is</p>
+<ul>
+<li><p><span class="math inline">\(\pi_i=g(X_i\beta)\)</span></p></li>
+<li><p>we can first express <span class="math inline">\(\pi_i\)</span> as odds</p>
+<ul>
+<li><p>approach infinity in the positive direction</p></li>
+<li><p>approach zero</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="logit-log-odds" class="level2">
+<h2 class="anchored" data-anchor-id="logit-log-odds">Logit (log-odds)</h2>
+<p>logit(<span class="math inline">\(\pi_i\)</span>) &lt; 0</p>
+<ul>
+<li><p>creates a sigmoid curve.</p>
+<ul>
+<li>cumulative density function.</li>
+</ul></li>
+<li><p>near inflection point of zero</p></li>
+<li><p>we are solving for <span class="math inline">\(\pi_i\)</span></p></li>
+<li><p><strong>GO THROUGH SLIDE 17!</strong></p></li>
+<li><p>constant shifts the inflection point in logit.</p></li>
+<li><p>big coefficients should have steeper slopes.</p>
+<ul>
+<li><p>if X is smaller, we get a more stretched out curve.</p>
+<ul>
+<li>slide 18.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="probit" class="level2">
+<h2 class="anchored" data-anchor-id="probit">Probit</h2>
+<ul>
+<li><p>z-score usage</p></li>
+<li><p>different link function</p></li>
+<li><p>coefficients in probit model show the increase/decrease in the z-score in response to a change in <span class="math inline">\(x_ik\)</span></p></li>
+<li><p>probit usually steeper but not always</p></li>
+<li><p>Logit more common in poli sci.</p>
+<ul>
+<li>prob cause coefficients are bigger</li>
+</ul></li>
+<li><p>Do not compare logit or probit coefficients - they are different.</p></li>
+</ul>
+</section>
+<section id="latent-variable" class="level2">
+<h2 class="anchored" data-anchor-id="latent-variable">Latent Variable</h2>
+<ul>
+<li><p>think of our Xbetas as a unbounded latent variable</p></li>
+<li><p>slide 28.</p></li>
+</ul>
+</section>
+<section id="measures-of-fit-r2" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-fit-r2">Measures of Fit: <span class="math inline">\(R^2\)</span></h2>
+<ul>
+<li><p>There are several psuedo R^2 measures used for fit of logit/prboit models.</p></li>
+<li><p>kinda useless. They aren’t exactly R^2.</p></li>
+<li><p>no need to report really.</p></li>
+<li><p>AIC/BIC more important.</p></li>
+</ul>
+</section>
+<section id="interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation">Interpretation:</h2>
+<ul>
+<li><p>Signs matter</p></li>
+<li><p>magnitude less so…</p></li>
+<li><p>Interpreting single <span class="math inline">\(\beta\)</span> can be done, but be careful about predictions, as log-odds are not a change in Pr(y=1)</p></li>
+<li><p>Example: predict Pr(Farm Laborer)</p></li>
+<li><p>Odds = 1 mean increase in x does not make Pr(y_i =1) more or less likely</p></li>
+<li><p>odds &lt; 1 mean increase in X makes Pr(y_i) less likely</p></li>
+<li><p>cant say probability but how much more likely you are to be a farm laborer.</p></li>
+<li><p>ODD RATIO SHOWN (this is what we should say when we report this).</p></li>
+<li><p>predictions always depend on the value of other covariates. see slide 37.</p></li>
+</ul>
+</section>
+<section id="first-differences-lpm" class="level2">
+<h2 class="anchored" data-anchor-id="first-differences-lpm">First Differences (LPM)</h2>
+<ul>
+<li><p>How much does Y change given a change at X.</p>
+<ul>
+<li>holding other X’s at some interesting value</li>
+</ul></li>
+</ul>
+</section>
+<section id="first-differences-logitprobit" class="level2">
+<h2 class="anchored" data-anchor-id="first-differences-logitprobit">First Differences (Logit/Probit)</h2>
+<ul>
+<li><p>First differences in the logit/probit context do not have all the properties listed previously</p></li>
+<li><p>first-differences for logit are given by: see slide 40.</p></li>
+</ul>
+<section id="read-hanmer-and-kalkan" class="level3">
+<h3 class="anchored" data-anchor-id="read-hanmer-and-kalkan">Read Hanmer and Kalkan</h3>
+<ul>
+<li><p>critique of expected values/expected change: “we are not aware of any theories that are specifically concerned with 48-year old white women who are independent politically and have an in income of $40k - $45k.</p></li>
+<li><p>Instead of setting X, we keep all X_i’s at their observed value for each observation, and fix our variable of interest to some value, giving us an expected value for each observation.</p></li>
+</ul>
+</section>
+</section>
+<section id="stochastic-simulation" class="level2">
+<h2 class="anchored" data-anchor-id="stochastic-simulation">Stochastic Simulation</h2>
+<ul>
+<li><p>Growing use of simulation techniques designed to show statistical and substantive significance of the results.</p></li>
+<li><p>Typically used to make predictions of Y.</p></li>
+</ul>
+</section>
+<section id="example-flores-macias-and-kreps-2013" class="level2">
+<h2 class="anchored" data-anchor-id="example-flores-macias-and-kreps-2013">Example: Flores-Macias and Kreps (2013)</h2>
+<ul>
+<li>When do states adopt war taxes to finance the cost of war?</li>
 </ul>
 
 

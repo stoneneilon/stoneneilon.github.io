@@ -399,13 +399,13 @@ p[which(l == max(l))]
 
 -   do likelihood test
 
-# Topic 4: 
+# Topic 4:
 
 -   rho is the correlation coefficient of epsilon and its prior value.
 
 -   when you take the lag of a series the first observation goes away.
 
-## Limited Dependent Variables 
+## Limited Dependent Variables
 
 censoring changes shape of the distribution, truncation does not change the distribution for the un-affected range.
 
@@ -494,3 +494,141 @@ Both cause bias (attenuation) and inconsistency. More data does not help us here
     -   Sampling on DV means deliberately choosing certain y outcomes.
 
 -   Discrete outcomes
+
+# Topic 5: Binary Choice Models
+
+## Dichotomous dependent variables
+
+-   We can estimate $\pi_i$ using OLS.
+
+    -   $\pi_i = X_i\beta$ using OLS
+
+    -   benefits:
+
+        -   linear interpretation of betas
+
+        -   simple...much faster since using OLS
+
+        -   Works well if $X_i$ is also distributed Bernoulli
+
+    -   Drawbacks:
+
+        -   "impossible" predictions; probabilities exceed 0 and 1.
+
+        -   censoring issue.
+
+    -   error not normally distributed.
+
+    -   error will not have constant variance.
+
+-   LPM is not ideal but its not terrible. You can run it sometimes. What we want is
+
+    -   $\pi_i=g(X_i\beta)$
+
+    -   we can first express $\pi_i$ as odds
+
+        -   approach infinity in the positive direction
+
+        -   approach zero
+
+## Logit (log-odds)
+
+logit($\pi_i$) \< 0
+
+-   creates a sigmoid curve.
+
+    -   cumulative density function.
+
+-   near inflection point of zero
+
+-   we are solving for $\pi_i$
+
+-   **GO THROUGH SLIDE 17!**
+
+-   constant shifts the inflection point in logit.
+
+-   big coefficients should have steeper slopes.
+
+    -   if X is smaller, we get a more stretched out curve.
+
+        -   slide 18.
+
+## Probit
+
+-   z-score usage
+
+-   different link function
+
+-   coefficients in probit model show the increase/decrease in the z-score in response to a change in $x_ik$
+
+-   probit usually steeper but not always
+
+-   Logit more common in poli sci.
+
+    -   prob cause coefficients are bigger
+
+-   Do not compare logit or probit coefficients - they are different.
+
+## Latent Variable
+
+-   think of our Xbetas as a unbounded latent variable
+
+-   slide 28.
+
+## Measures of Fit: $R^2$
+
+-   There are several psuedo R\^2 measures used for fit of logit/prboit models.
+
+-   kinda useless. They aren't exactly R\^2.
+
+-   no need to report really.
+
+-   AIC/BIC more important.
+
+## Interpretation:
+
+-   Signs matter
+
+-   magnitude less so...
+
+-   Interpreting single $\beta$ can be done, but be careful about predictions, as log-odds are not a change in Pr(y=1)
+
+-   Example: predict Pr(Farm Laborer)
+
+-   Odds = 1 mean increase in x does not make Pr(y_i =1) more or less likely
+
+-   odds \< 1 mean increase in X makes Pr(y_i) less likely
+
+-   cant say probability but how much more likely you are to be a farm laborer.
+
+-   ODD RATIO SHOWN (this is what we should say when we report this).
+
+-   predictions always depend on the value of other covariates. see slide 37.
+
+## First Differences (LPM)
+
+-   How much does Y change given a change at X.
+
+    -   holding other X's at some interesting value
+
+## First Differences (Logit/Probit)
+
+-   First differences in the logit/probit context do not have all the properties listed previously
+
+-   first-differences for logit are given by: see slide 40.
+
+### Read Hanmer and Kalkan
+
+-   critique of expected values/expected change: "we are not aware of any theories that are specifically concerned with 48-year old white women who are independent politically and have an in income of \$40k - \$45k.
+
+-   Instead of setting X, we keep all X_i's at their observed value for each observation, and fix our variable of interest to some value, giving us an expected value for each observation.
+
+## Stochastic Simulation
+
+-   Growing use of simulation techniques designed to show statistical and substantive significance of the results.
+
+-   Typically used to make predictions of Y.
+
+## Example: Flores-Macias and Kreps (2013)
+
+-   When do states adopt war taxes to finance the cost of war?

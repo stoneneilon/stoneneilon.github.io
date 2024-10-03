@@ -1780,6 +1780,52 @@ How do they change?
 
 # Week 5 - Partisanship and Polarization
 
+## Lecture Notes:
+
+-   elites are polarized back in the 1970s
+
+    -   so why?
+
+    -   is it the masses driving this?
+
+-   Abramowitz shall now be known as "Bram-Bram".
+
+-   partisanship is enduring attachment to party
+
+-   ideology is bundle of policy preferences.
+
+-   Fiorina kinda has bad timing with his argument
+
+-   Abramowitz: are people sorting into the right party?
+
+-   are moderates turn off from voting in polarization.
+
+-   Time and education are big threads in Abramowitz.
+
+-   Abramowitz uses constraint method from Converse.
+
+-   Iyengar: we think about perceived social distance between groups.
+
+    -   feeling thermometer is how like all of affective partisanship is operationalized.
+
+-   Mason digs deeper on figure 2 from Iyengar.
+
+    -   Liberal and conservative are personal identities.
+
+        -   when these are strong identities, these operate similar to party labels.
+
+-   partisan identity, ideological identity, measured identity - these are all separate.
+
+-   Grossman:
+
+    -   republicans have a zoomed out approach.
+
+        -   big gov/small gov.
+
+    -   democrats see policy more from a pragmatic approach
+
+        -   what group will policy help.
+
 ## Overarching questions:
 
 -   Are the masses ideologically innocent?
@@ -1792,7 +1838,7 @@ How do they change?
 
 ### Abstract
 
-*This article uses data from the American National Election Studies and national exit polls to test Fiorina's assertion that ideological polarization in the American public is a myth. Fiorina argues that twenty-first-century Americans, like the midtwentieth-century Americans described by Converse, "are not very well-informed about politics, do not hold many of their views very strongly, and are not ideological" (2006, 19). However, our evidence indicates that since the 1970s, ideological polarization has increased dramatically among the mass public in the United States as well as among political elites. There are now large differences in outlook between Democrats and Republicans, between red state voters and blue state voters, and between religious voters and secular voters. These divisions are not confined to a small minority of activists---they involve a large segment of the public and the deepest divisions are found among the most interested, informed, and active citizens. Moreover, contrary to Fiorina's suggestion that polarization turns off voters and depresses turnout, our evidence indicates that polarization energizes the electorate and stimulates political participation.*
+*This article uses data from the American National Election Studies and national exit polls to test Fiorina's assertion that ideological polarization in the American public is a myth. Fiorina argues that twenty-first-century Americans, like the mid twentieth-century Americans described by Converse, "are not very well-informed about politics, do not hold many of their views very strongly, and are not ideological" (2006, 19). However, our evidence indicates that since the 1970s, ideological polarization has increased dramatically among the mass public in the United States as well as among political elites. There are now large differences in outlook between Democrats and Republicans, between red state voters and blue state voters, and between religious voters and secular voters. These divisions are not confined to a small minority of activists---they involve a large segment of the public and the deepest divisions are found among the most interested, informed, and active citizens. Moreover, contrary to Fiorina's suggestion that polarization turns off voters and depresses turnout, our evidence indicates that polarization energizes the electorate and stimulates political participation.*
 
 ### Bumping Sticker
 
@@ -1824,7 +1870,7 @@ We think Fiorina is wrong. - Abramowitz and Saunders
 
     1.  Fowler et al. might be showing this position to be correct.
 
-        1.  Even still - Fowler shows most moderates are ideological moderates (Downsian).
+        1.  Even still - Fowler shows most moderates are ideological moderates.
 
             1.  says nothing about the moderates in relation to the rest of voters.
 
@@ -1835,6 +1881,7 @@ We think Fiorina is wrong. - Abramowitz and Saunders
     1.  only a few specific groups are truly polarized in their views.
 
         1.  results of Abramowitz shows this to not hold.
+            1.  yeah this is pretty much just not true.
 
 3.  *Geographical Polarization*: Culture between states is not that big
 
@@ -2022,6 +2069,12 @@ The current debate over the extent of polarization in the American mass public f
 
 -   Americans who expressed more positive views of party supporters and negative views of their opponents
 
+-   look at figure 1 - the difference between the two lines is affective polarization.
+
+-   partisan identities are pulling apart but liberal and conservative identities are not
+
+    -   Mason will get at this.
+
 ### Discussion:
 
 -   is affective polarization simply a symptom of divergent movement in policy attitudes among both partisan supporters and party elites?
@@ -2076,6 +2129,14 @@ The distinction between a person's ideological identity and their issue position
 
 -   It is characterized by a uniquely social connection to the groups that hold the labels "liberal" and "conservative."
 
+### Method:
+
+-   She measure how strongly they are ideological
+
+-   issue based measurement
+
+-   marriage question - her own survey
+
 ## Grossmann, Matt and Dan Hopkins. 2016. Asymmetric Politics: Ideological Republicans and Group-Interest Democrats, Ch. 2.
 
 big claims but very interesting.
@@ -2086,11 +2147,11 @@ big claims but very interesting.
 
     -   Republicans are more ideologically driven.
 
--   The Democratic Party's character as a socialgroup coalition fosters arelatively pragmatic, results-oriented stvle of politics in which officeholders are rewarded for delivering concrete benefits to targeted groups in order to address specific social problems.
+-   The Democratic Party's character as a social group coalition fosters a relatively pragmatic, results-oriented style of politics in which officeholders are rewarded for delivering concrete benefits to targeted groups in order to address specific social problems.
 
 -   Republicans, in contrast, are more likely to forge partisan ties based on common ideological beliefs, encouraging party officials to pursue broad rightward shifts ni public policy.
 
--   As a result, Republican voters and activists are more likely than their Democratic counterparts to prize symbolic demonstrationsof ideological purity and to pressure their party leaders to reject moderation and compromise.
+-   As a result, Republican voters and activists are more likely than their Democratic counterparts to prize symbolic demonstrations of ideological purity and to pressure their party leaders to reject moderation and compromise.
 
 -   This dynamic is reflected in the partisan attitudes within the public at large.
 
@@ -2100,7 +2161,7 @@ big claims but very interesting.
 
 -   Fun interesting quote from FDR:
 
-    -   "Roughly speaking, theliberal school of thought recognizes that the new conditions throughout the world call for new remedies. . (that can be adopted and successfuly maintained in this country under our present form of government if we use government as an instrument of cooperation to provide these remedies...the opposing or conservative school of thought, as a general proposition, does not recognize the need for Government itself to step in and take action to meet these new problems. It believes that individual initiative and private philanthropy will solve them-that we ought to repeal many of the things we have done and go back \[to prior policies\]."
+    -   "Roughly speaking, the liberal school of thought recognizes that the new conditions throughout the world call for new remedies. . (that can be adopted and successfuly maintained in this country under our present form of government if we use government as an instrument of cooperation to provide these remedies...the opposing or conservative school of thought, as a general proposition, does not recognize the need for Government itself to step in and take action to meet these new problems. It believes that individual initiative and private philanthropy will solve them-that we ought to repeal many of the things we have done and go back \[to prior policies\]."
 
         -   pretty much sums of the left-right dimension.
 
@@ -2136,6 +2197,8 @@ big claims but very interesting.
 
 -   republicans are more likely to represent themselves in their vision of government and society in some abstract battle.
 
+-   figure 2-6 kinda the punchline.
+
 ## [Barber, Michael and Jeremy Pope. 2018. "Does Party Trump Ideology? Disentangling Party and Ideology in America," American Political Science Review.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B5BAD0AE947BD3CF18D51D399263C8D3/S0003055418000795a.pdf/does-party-trump-ideology-disentangling-party-and-ideology-in-america.pdf)
 
 ### Abstract:
@@ -2144,6 +2207,8 @@ Are people conservative (liberal) because they are Republicans (Democrats)? Or i
 
 ### Bumper Sticker:
 
+Ideology is not as sticky as we think
+
 ### Question:
 
 -   Are people conservative because they are Republicans? Or is it the reverse: people are Republicans because they are conservatives?
@@ -2151,6 +2216,8 @@ Are people conservative (liberal) because they are Republicans (Democrats)? Or i
 -   Another way of putting this question of party versus ideology is to ask how sincerely held are expressed political and policy opinions and are these opinions based on ideological convictions or group loyalty?
 
 -   who is most likely to be a party loyalist? Or, what characteristics will moderate the effects of the treatment?
+
+-   to what extent are positions malleable?
 
 ### Background:
 
@@ -2211,6 +2278,8 @@ Are people conservative (liberal) because they are Republicans (Democrats)? Or i
     -   Trump has to have actually taken both sides of an issue at some point.
 
         -   which means these positions are NOT made up.
+
+-   Ask 10 questions.
 
 ### Results:
 
