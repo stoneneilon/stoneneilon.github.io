@@ -1154,7 +1154,7 @@ $$
 
 -   **A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true.**
 
--   If we assume the null hypothesis is true, then we could draw the sampling distribution centered around zero. By specifing the null hypothesis we can invoke the central limit theorem.
+-   If we assume the null hypothesis is true, then we could draw the sampling distribution centered around zero (or whatever our value specified is). By specifing the null hypothesis we can invoke the central limit theorem.
 
 -   The p-value is decided by the researcher. Convention typically sets the p-value at .10 and below. However, .10 is still not ideal, the lower the better.
 
@@ -1162,15 +1162,15 @@ $$
 
 Remember: we are using data we **HAVE**, to tell us about data we do **NOT HAVE**.
 
-### Descriptive Statistics
-
-For whatever variable you are interested in, report summary statistics on that variable. We want to know how our sample is distributed.
-
 ### Writing Hypothesis Tests 
 
 $H_o$ : (null hypothesis) - I think the mean is not greater than x
 
 $H_A$ : (alternative hypothesis) - I think the mean is greater than x
+
+### Descriptive Statistics
+
+For whatever variable you are interested in, report summary statistics on that variable. We want to know how our sample is distributed.
 
 ### Calculate a Test Statistic
 
@@ -1190,7 +1190,9 @@ $$
 
 -   $n$ = sample size
 
-This is what R is doing under the hood when we run the t.test command.
+This is what R is doing under the hood when we run the t.test command. The **t-score** we compute from a t-test tells you how far the sample mean is from the hypothesized population mean in terms of the **standard error**.
+
+-   The standard error is the standard deviation of the sampling distribution.
 
 ### Interpretation
 
@@ -1218,11 +1220,11 @@ I will show example code below. When we do this in R, we will get back a bunch o
 
 ## Example with R Code 
 
-As a researcher, I am interested in how people feel about Obama. I think to myself, hmm, I think the public likes Obama. But then I also remember, that a lot of people don't like Obama. I imagine that I ask everyone in the United States how I feel about Obama on a 0-100 scale. I can't do this because I don't know everyone and I don't have enough money 😔. To figure this out, I take a sample, make a hypothesis, and test it!
+As a researcher, I am interested in how people feel about Obama. I think to myself, hmm, I think the public likes Obama. But then I also remember, that a lot of people don't like Obama. But, I think more people like Obama than not. I imagine that I ask everyone in the United States how I feel about Obama on a 0-100 scale. I can't do this because I don't know everyone and I don't have enough money 😔. To figure this out, I take a sample, make a hypothesis, and test it!
 
-$H_o$ : The public's average feeling towards Obama is equal to 50
+$H_o$ : The public's average feeling towards Obama is $\leq$ to 50
 
-$H_a$ : The public's average feeling towards Obama is greater than 50
+$H_a$ : The public's average feeling towards Obama is $>$ than 50
 
 Lucky for us, someone already took a sample. Wow, thank you RCPA3! Let's call up that sample.
 
@@ -1255,15 +1257,17 @@ Let's go through what this means:
 
 -   t = 26.727
 
-    -   this is our t-test score. Basically our sample that we observed is 26.727 standard deviations away from our hypothesized mean of 50.
+    -   this is our t-test score. Basically our sample that we observed is 26.727 standard errors away from our hypothesized mean of 50.
 
         -   Remember this photo from earlier:
 
             -   ![](normal-distrubution-3sds.svg){width="227"}
 
-                -   Those numbers on the x-axis are standard deviation. We can see the majority (99.7%) of all values lie within 3 standard deviations of the mean.
+                -   While this relates to standard deviations and is conceptually a bit different, it still should help.
 
-                    -   NOW IMAGINE 27.727 STANDARD DEVIATIONS!!!!! 😱😱😱😱😱😱
+                -   Those numbers on the x-axis are standard errors. We can see the majority (99.7%) of all values lie within 3 standard errors of the mean.
+
+                    -   NOW IMAGINE 27.727 STANDARD ERRORS!!!!! 😱😱😱😱😱😱
 
 -   df = 8164
 
@@ -1275,15 +1279,17 @@ Let's go through what this means:
 
 -   p-value \< 2.2e-16
 
-    -   our p-value is in scientific notation
+    -   p-value definition: **A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true.**
 
-        -   so it's actually: $0.00000000000000022$
+        -   our p-value is in scientific notation
 
-        -   we know that we want p-values smaller than .10 (.05 is better but I digress)
+            -   so it's actually: $0.00000000000000022$
 
-        -   is this smaller than .10?
+            -   we know that we want p-values smaller than .10 (.05 and lower is better but I digress)
 
-            -   So what does that mean we can do?
+            -   is this smaller than .10?
+
+                -   So what does that mean we can do?
 
 -   Interpretation:
 
@@ -1296,6 +1302,27 @@ Let's go through what this means:
     -   Remember! We never accept or "prove" our hypothesis.
 
 ![](p-value-1024x768.webp){fig-align="center" width="518"}
+
+## Proportional Test 
+
+Perhaps we have a binary or categorical variable. We want to see if the proportion we observed is statistically different from some value we specify. Everything is still the same but we will select a different variable and use different R code.
+
+Let's look at the variable 'changed.names'. It asks whether people have changed names. I want to know how many people have changed names.
+
+I am going to specify that more than 30% of people have changed names. Thus my hypothesis will look like the following:
+
+$H_0$ : $p\leq .30$ the proportion is less than or equal to .30
+
+$H_A$: $p>.30$ the proportion is greater than .30
+
+```{r}
+summary(nes$changed.names)  # find number in each category of whether people have changed names
+prop.test(2672, 2672+5501, p=.3, alternative="greater")  # use number from summary command to conduct proportions test.  Hypothesis is more than 30% of people have changed names
+```
+
+The prop.test argument is structured as such:
+
+-   prop.test(number in test category, number of observations, p=hypothesis, alternative=\"greater/less/two.sided\")
 
 ## Additional Resources
 

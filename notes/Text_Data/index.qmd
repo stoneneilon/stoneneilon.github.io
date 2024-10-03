@@ -515,9 +515,9 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
     -   style words: how people are communicating.
 
-# Week 6 
+# Week 6
 
-## Dictionary Methods 
+## Dictionary Methods
 
 -   Keyword counting
 
@@ -541,7 +541,7 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
 -   In any corpus, the frequency of any word is inversely proportional to its rank in the frequency table. Thus the most frequent will word will occur approximately twice as often as the second most frequent word, three times as often as the third most frequent word, etc.
 
-## Wordscores 
+## Wordscores
 
 -   Extracting dimensional information from political texts using computerized content analysis
 

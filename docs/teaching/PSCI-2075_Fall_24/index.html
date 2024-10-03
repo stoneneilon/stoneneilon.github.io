@@ -311,12 +311,13 @@ window.Quarto = {
   <li><a href="#p-value" id="toc-p-value" class="nav-link" data-scroll-target="#p-value">P-Value</a></li>
   <li><a href="#hypothesis-test-procedure" id="toc-hypothesis-test-procedure" class="nav-link" data-scroll-target="#hypothesis-test-procedure">Hypothesis Test Procedure:</a>
   <ul class="collapse">
-  <li><a href="#descriptive-statistics-1" id="toc-descriptive-statistics-1" class="nav-link" data-scroll-target="#descriptive-statistics-1">Descriptive Statistics</a></li>
   <li><a href="#writing-hypothesis-tests" id="toc-writing-hypothesis-tests" class="nav-link" data-scroll-target="#writing-hypothesis-tests">Writing Hypothesis Tests</a></li>
+  <li><a href="#descriptive-statistics-1" id="toc-descriptive-statistics-1" class="nav-link" data-scroll-target="#descriptive-statistics-1">Descriptive Statistics</a></li>
   <li><a href="#calculate-a-test-statistic" id="toc-calculate-a-test-statistic" class="nav-link" data-scroll-target="#calculate-a-test-statistic">Calculate a Test Statistic</a></li>
   <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
   </ul></li>
   <li><a href="#example-with-r-code" id="toc-example-with-r-code" class="nav-link" data-scroll-target="#example-with-r-code">Example with R Code</a></li>
+  <li><a href="#proportional-test" id="toc-proportional-test" class="nav-link" data-scroll-target="#proportional-test">Proportional Test</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   <li><a href="#homework-2-1" id="toc-homework-2-1" class="nav-link" data-scroll-target="#homework-2-1">Homework 2</a></li>
   </ul></li>
@@ -1685,21 +1686,21 @@ SE = \frac{SD}{\sqrt{n}}
 <ul>
 <li><p>The p-value is extremely important and <em>commonly</em> misunderstood.</p></li>
 <li><p><strong>A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true.</strong></p></li>
-<li><p>If we assume the null hypothesis is true, then we could draw the sampling distribution centered around zero. By specifing the null hypothesis we can invoke the central limit theorem.</p></li>
+<li><p>If we assume the null hypothesis is true, then we could draw the sampling distribution centered around zero (or whatever our value specified is). By specifing the null hypothesis we can invoke the central limit theorem.</p></li>
 <li><p>The p-value is decided by the researcher. Convention typically sets the p-value at .10 and below. However, .10 is still not ideal, the lower the better.</p></li>
 </ul>
 </section>
 <section id="hypothesis-test-procedure" class="level2">
 <h2 class="anchored" data-anchor-id="hypothesis-test-procedure">Hypothesis Test Procedure:</h2>
 <p>Remember: we are using data we <strong>HAVE</strong>, to tell us about data we do <strong>NOT HAVE</strong>.</p>
-<section id="descriptive-statistics-1" class="level3">
-<h3 class="anchored" data-anchor-id="descriptive-statistics-1">Descriptive Statistics</h3>
-<p>For whatever variable you are interested in, report summary statistics on that variable. We want to know how our sample is distributed.</p>
-</section>
 <section id="writing-hypothesis-tests" class="level3">
 <h3 class="anchored" data-anchor-id="writing-hypothesis-tests">Writing Hypothesis Tests</h3>
 <p><span class="math inline">\(H_o\)</span> : (null hypothesis) - I think the mean is not greater than x</p>
 <p><span class="math inline">\(H_A\)</span> : (alternative hypothesis) - I think the mean is greater than x</p>
+</section>
+<section id="descriptive-statistics-1" class="level3">
+<h3 class="anchored" data-anchor-id="descriptive-statistics-1">Descriptive Statistics</h3>
+<p>For whatever variable you are interested in, report summary statistics on that variable. We want to know how our sample is distributed.</p>
 </section>
 <section id="calculate-a-test-statistic" class="level3">
 <h3 class="anchored" data-anchor-id="calculate-a-test-statistic">Calculate a Test Statistic</h3>
@@ -1745,7 +1746,7 @@ SE = \frac{SD}{\sqrt{n}}
 </section>
 <section id="example-with-r-code" class="level2">
 <h2 class="anchored" data-anchor-id="example-with-r-code">Example with R Code</h2>
-<p>As a researcher, I am interested in how people feel about Obama. I think to myself, hmm, I think the public likes Obama. But then I also remember, that a lot of people don’t like Obama. I imagine that I ask everyone in the United States how I feel about Obama on a 0-100 scale. I can’t do this because I don’t know everyone and I don’t have enough money 😔. To figure this out, I take a sample, make a hypothesis, and test it!</p>
+<p>As a researcher, I am interested in how people feel about Obama. I think to myself, hmm, I think the public likes Obama. But then I also remember, that a lot of people don’t like Obama. But, I think more people like Obama than not. I imagine that I ask everyone in the United States how I feel about Obama on a 0-100 scale. I can’t do this because I don’t know everyone and I don’t have enough money 😔. To figure this out, I take a sample, make a hypothesis, and test it!</p>
 <p><span class="math inline">\(H_o\)</span> : The public’s average feeling towards Obama is equal to 50</p>
 <p><span class="math inline">\(H_a\)</span> : The public’s average feeling towards Obama is greater than 50</p>
 <p>Lucky for us, someone already took a sample. Wow, thank you RCPA3! Let’s call up that sample.</p>
@@ -1786,15 +1787,16 @@ mean of x
 <ul>
 <li><p>t = 26.727</p>
 <ul>
-<li><p>this is our t-test score. Basically our sample that we observed is 26.727 standard deviations away from our hypothesized mean of 50.</p>
+<li><p>this is our t-test score. Basically our sample that we observed is 26.727 standard errors away from our hypothesized mean of 50.</p>
 <ul>
 <li><p>Remember this photo from earlier:</p>
 <ul>
 <li><p><img src="normal-distrubution-3sds.svg" class="img-fluid" width="227"></p>
 <ul>
-<li><p>Those numbers on the x-axis are standard deviation. We can see the majority (99.7%) of all values lie within 3 standard deviations of the mean.</p>
+<li><p>While this relates to standard deviations and is conceptually a bit different, it still should help.</p></li>
+<li><p>Those numbers on the x-axis are standard errors. We can see the majority (99.7%) of all values lie within 3 standard errors of the mean.</p>
 <ul>
-<li>NOW IMAGINE 27.727 STANDARD DEVIATIONS!!!!! 😱😱😱😱😱😱</li>
+<li>NOW IMAGINE 27.727 STANDARD ERRORS!!!!! 😱😱😱😱😱😱</li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -1812,13 +1814,16 @@ mean of x
 </ul></li>
 <li><p>p-value &lt; 2.2e-16</p>
 <ul>
+<li><p>p-value definition: <strong>A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true.</strong></p>
+<ul>
 <li><p>our p-value is in scientific notation</p>
 <ul>
 <li><p>so it’s actually: <span class="math inline">\(0.00000000000000022\)</span></p></li>
-<li><p>we know that we want p-values smaller than .10 (.05 is better but I digress)</p></li>
+<li><p>we know that we want p-values smaller than .10 (.05 and lower is better but I digress)</p></li>
 <li><p>is this smaller than .10?</p>
 <ul>
 <li>So what does that mean we can do?</li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -1837,6 +1842,37 @@ mean of x
 <p><img src="p-value-1024x768.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" width="518"></p>
 </figure>
 </div>
+</section>
+<section id="proportional-test" class="level2">
+<h2 class="anchored" data-anchor-id="proportional-test">Proportional Test</h2>
+<p>Perhaps we have a binary or categorical variable. We want to see if the proportion we observed is statistically different from some value we specify. Everything is still the same but we will select a different variable and use different R code.</p>
+<p>Let’s look at the variable ‘changed.names’. It asks whether people have changed names. I want to know how many people have changed names.</p>
+<p>I am going to specify that more than 30% of people have changed names. Thus my hypothesis will look like the following:</p>
+<p><span class="math inline">\(H_0\)</span> : <span class="math inline">\(p\leq .30\)</span> the proportion is less than or equal to .30</p>
+<p><span class="math inline">\(H_A\)</span>: <span class="math inline">\(p&gt;.30\)</span> the proportion is greater than .30</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(nes<span class="sc">$</span>changed.names)  <span class="co"># find number in each category of whether people have changed names</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> 1. Have changed name 2. Never changed name                  NA's 
+                 2672                  5501                   107 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="dv">2672</span>, <span class="dv">2672</span><span class="sc">+</span><span class="dv">5501</span>, <span class="at">p=</span>.<span class="dv">3</span>, <span class="at">alternative=</span><span class="st">"greater"</span>)  <span class="co"># use number from summary command to conduct proportions test.  Hypothesis is more than 30% of people have changed names</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    1-sample proportions test with continuity correction
+
+data:  2672 out of 2672 + 5501, null probability 0.3
+X-squared = 28.097, df = 1, p-value = 5.768e-08
+alternative hypothesis: true p is greater than 0.3
+95 percent confidence interval:
+ 0.3183931 1.0000000
+sample estimates:
+        p 
+0.3269301 </code></pre>
+</div>
+</div>
+<p>The prop.test argument is structured as such:</p>
+<p>prop.test(&lt;span style=‘color:red’&gt;number in test category&lt;/span&gt;, &lt;span style=‘color:red’&gt;number of observations&lt;/span&gt;, p=hypothesis, alternative="greater/less/two.sided")</p>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
