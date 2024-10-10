@@ -69,7 +69,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 ### Validation:
 
--   Face valididity?
+-   Face validity?
 
 -   Does the text measure correlate with similar measures?
 
@@ -556,3 +556,55 @@ We are in the midst of a technological revolution whereby, for the first time, r
     -   DW nominate has always had issues with the Y axis.
 
         -   Wordscore has a similar issue with the labeling.
+
+# Week 7 - Similarity and Complex measures
+
+## Lecture Notes:
+
+### Cosine Similarity:
+
+-   What makes text similar?
+
+-   cosign similarity is how close are documents are when put into a visual space.
+
+    -   maximum similarity will occur between a document and itself.
+
+        -   0 is min similarity and 1 is max for similarity
+
+-   Jaccard Similarity
+
+    -   calculate jaccard coefficient
+
+-   Distance metrics
+
+    -   euclidean distance
+
+        -   hypotenuse of Manhattan triangle.
+
+    -   Manhattan distance
+
+        -   up and over
+
+## Weighting and "Goldilocks Words"
+
+-   we want words that are neither too rare nor too frequent
+
+    -   weighting can help us with this.
+
+        -   when we remove stopwords, we are setting their weight to 0.
+
+        -   common approach tfdif
+
+            -   term frequency document infrequency
+
+-   TFDIF
+
+    -   up-weights rare words within a document
+
+    -   down-weights words popular across corpus.
+
+## Textual Complexity
+
+-   Linguistic complexity can lead to interesting measures/comparisons of documents
+
+-   Domain-specific measures of complexity.

@@ -2306,3 +2306,327 @@ Ideology is not as sticky as we think
 -   Higher-knowledge individuals are more likely to look like policy loyalists than party loyalists. On the other hand, low-knowledge individuals display the opposite pattern.
 
 -   The simple truth is that many citizens behave as partisan loyalists rather than principled ideologues.
+
+# Week 6
+
+## Lecture Notes
+
+## Riker
+
+rational choice is to understand the incentive behind people
+
+what are the variations
+
+trying to be clear about the mechanism.
+
+riker is a decision theory.
+
+rational choice = formal theory.
+
+its a toolkit - is it useful?
+
+Institution as a methodology - is a good paper for rat choice institutionalism.
+
+-   i am going to hold the instititution fixed
+
+    -   look at the behavior under those assumptions
+
+        -   important to maintain a consistent mechanism
+
+-   Where do institutions come from?
+
+    -   why do constitutions come to exist to serve a certain structure.
+
+-   We are better now at writing formal theory than Riker was back when he wrote this.
+
+-   Downs says voting is not rational - it costs more to vote.
+
+-   Eu(vote) = pb-c
+
+-   Eu(\~vote) = qb
+
+-   p-q\>/c/b
+
+    -   this is downs - they represent that whole thing as P
+
+        -   P is really small
+
+            -   probability of being pivotal is SMALL!
+
+                -   because P is so tiny its always more costly to vote.
+
+-   a competitive election influences PB all small.
+
+-   Riker introducing the index (the little i) is big contribution.
+
+## Gerber Green, & Lerimer
+
+-   social pressure with riker
+
+-   they are breaking the D term into parts
+
+    -   D - extrinsic civic duty
+
+        -   Gerber adds this
+
+            -   shame
+
+            -   external pressure
+
+            -   People might think less of me if I didn't vote.
+
+                -   social pressure the other way with Eman.
+
+    -   D_i intrinsic civic duty .
+
+        -   riker focuses on this one.
+
+-   Field experiment
+
+-   Hawthorne - people know they are being studied - people will act differently.
+
+-   Self-voting record
+
+-   Neighbor record
+
+## Rowgowski
+
+-   Does ideological polarization among elites increase or decrease voter turnout?
+
+    -   it either motivates
+
+        -   higher B
+
+    -   or demotivates.
+
+        -   further apart candidates are the more people feel isolated
+
+            -   efficacy.
+
+-   Data
+
+    -   project vote smart
+
+        -   send candidates questions about policy
+
+-   DV is difference between candidate ideology from vote smart.
+
+-   voting as identity? Why do american idol voters vote?
+
+    -   socialization as the mechanism behind caring about politics?
+
+## Lau
+
+-   Voter competence?
+
+-   are voters good at making the right decision?
+
+-   There is an overwhelming fire hose of information.
+
+-   more sohpisticated voters are better at using heuristic.
+
+    -   Correct voting? - another paper
+
+-   sophisticated voters using hueristics are better at "correctly voting".
+
+-   low sophistication voters are worse.
+
+## Bartels
+
+-   Accountability and performance dimension.
+
+-   ideology v. valience
+
+    -   ideology left or right
+
+    -   valence is good or not; competent or not.
+
+        -   issues everyone wants better.
+
+-   Ways voter makes decisions in valence world
+
+    -   independent of ideology. Focus on valence.
+
+-   Retrospective voting may drive effort from politician.
+
+-   How voters think and how politicians act in response.
+
+    -   pandering/election literature
+
+        -   canes-wrone Harron and schotz
+
+        -   Asheworth
+
+        -   Bessley
+
+# Week 7: Media and Social Media 
+
+## [Prior, Markus. 2005. \"News vs. Entertainment: How Increasing Media Choice Widens Gaps in Political Knowledge and Turnout,\" American Journal of Political Science.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-5907.2005.00143.x)
+
+### Bumper Sticker: 
+
+More channels = less political knowledge
+
+### Abstract: 
+
+Despite dramatic increases in available political information through cable television and the Internet, political knowledge and turnout have not changed noticeably. To explain this seeming paradox, I argue that greater media choice makes it easier for people to find their preferred content. People who like news take advantage of abundant political information to become more knowledgeable and more likely to turn out. In contrast, people who prefer entertainment abandon the news and become less likely to learn about politics and go to the polls. To test this proposition, I develop a measure of people's media content preference and include it in a representative opinion survey of 2,358 U.S. residents. Results show that content preference indeed becomes a better predictor of political knowledge and turnout as media choice increases. Cable TV and the Internet increase gaps in knowledge and turnout between people who prefer news and people who prefer entertainment.
+
+### Research Questions: 
+
+1.  While this debate is far from settled, the issue which precedes it is equally important and often side stepped: as choice between different media content increases, who continues to access any type of political information?
+
+### Puzzle: 
+
+-   Despite increase in media supply, political knowledge among the population has remained the same.
+
+### Hypothesis: 
+
+1.  I propose that such accidental exposure should become less likely in a high-choice environment because greater horizontal diversity (the number of genres available at any particular point in time) increases the chance that viewers will find content that matches their preferences.
+
+2.  My second hypothesis thus predicts a widening turnout gap in the current environment, as people who prefer news vote at higher rates and those with other preferences increasingly stay home from the polls.
+
+### Background: 
+
+-   There are more media choices (supply)
+
+    -   this decreases the "chance encounters" with political content
+
+-   Political knowledge broadly has remained the same
+
+    -   some demographics have increased and decreased in political knowledge.
+
+-   increase in media choice has created more voluntary segmentation among the population.
+
+-   Less supply back in the day. You watched the nightly news after dinner.
+
+-   people exposed to news still gain political knowledge - despite lack of interest.
+
+    -   \*\*\*It is here that the author contributes
+
+        -   there is less accidental exposure to NEWS in a high-choice environment
+
+### Study 1: 
+
+-   Data: the News & Entertainment (N&E) Survey, a panel survey of 2,358 randomly selected U.S. residents. It was conducted by Knowledge Networks in two waves in 2002 and 2003.
+
+-   Respondents were asked from 10 categories to mark their favorite genre.
+
+-   Relative Entertainment Preference (REP)
+
+-   **Greater dislike of news content coincides with a decrease in political knowledge.**
+
+-   Author checks to see if this shapes voter turnout
+
+    -   theorize that more informed citizens = likely to vote and vice versa.
+
+        -   more news consumption = more vote
+
+            -   finds evidence that support this.
+
+### Study 2: 
+
+-   Same thing with different data
+
+-   no direct measures but closely approximated.
+
+### Conclusion:  
+
+-   The analyses presented here show that both are true. Newmedia do indeed increase political knowledge and involve-ment in the electoral process among some people, just asthe optimists predict. Yet, the evidence supports the pessimists' scenario as well. Other people take advantage ofgreater choice and tune out of politics completely. Thosewith a preference for entertainment, once they gain accessto new media, become less knowledgeable about politicsand less likely to vote. People's media content preferencesbecome the key to understanding the political implica-tions of new media
+
+## [Martin, Greg and Josh McCrain. 2019. \"Local News and National Politics,\" American Political Science Review.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C8EEA488A777C37C7987964F8F85AEB5/S0003055418000965a.pdf/local-news-and-national-politics.pdf)
+
+### Bumper Sticker: 
+
+Local news go bye bye. This bad.
+
+### Abstract: 
+
+The level of journalistic resources dedicated to coverage of local politics is in a long-term decline in the US news media, with readership shifting to national outlets. We investigate whether this trend is demand - or supply-driven, exploiting a recent wave of local television station acquisitions by a conglomerate owner. Using extensive data on local news programming and viewership, we find that the ownership change led to (1) substantial increases in coverage of national politics at the expense of local politics, (2) a significant rightward shift in the ideological slant of coverage, and (3) a small decrease in viewership, all relative to the changes at other news programs airing in the same media markets. These results suggest a substantial supply side role in the trends toward nationalization and polarization of politics news, with negative implications for accountability of local elected officials and mass polarization.
+
+### Background: 
+
+-   Sinclair Broadcast Group is right leaning and has been buying up a bunch of stations.
+
+-   A sinclair owned station will be viewable to 72% of american households.
+
+### Data: 
+
+-   Compare local stations in the same area to Sinclair Broadcast Group stations.
+
+-   Transcript and viewership data across 743 stations - in every DMA.
+
+### Method: 
+
+-   Differeince-in-Difference & Cross sectional regression
+
+### Findings: 
+
+-   Following the acquisition of Bonten Media Group by Sinclair, the former Bonten stations' content shifted toward coverage of national politics at the expense of local politics, relative to other stations in the same media market.
+
+-   we find evidence that Sinclair devotes more coverage to all national politics topics---including some that are harmful to its partisan objective and does not devote more coverage to some topics that might be ideologically beneficial but would also require more investment in local reporting resources.
+
+### Policy implications:
+
+-   One factor enabling Sinclair's rapid recent expansion is FCC's elimination of the "main studio rule," which required local news stations to maintain a physical studio in the broadcast area. For Sinclair and other conglomerates, the potential for economies of scale resulting from the elimination of the rule is straightforward.
+
+## Broockman, David and Joshua Kalla. Forthcoming. \"Consuming Cross-Cutting Media Causes Learning and Moderates Attitudes: A Field Experiment with Fox News Viewers,\" Journal of Politics.
+
+### Bumper Sticker: 
+
+### Abstract: 
+
+Many Americans consume aligned partisan media, which scholars worry contributes topolarization. Many propose encouraging these Americans to consume cross-cutting media tomoderate their attitudes. However, motivated reasoning theory posits that exposure to cross-cutting media could backfire, exacerbating polarization. Building on theories that sustainedexposure to novel information can overcome motivated reasoning and that partisan sourceson opposite sides cover distinct information, we argue that sustained consumption of cross-cutting media leads voters to learn uncongenial information and moderate their attitudes incovered domains. To test this argument, we used data on actual TV viewership to recruit asample of regular Fox News viewers and incentivized a randomized treatment group to watchCNN instead for a month. Contrary to predictions from motivated reasoning, watching CNNcaused substantial learning and moderated participants' attitudes in covered domains. We closeby discussing challenges partisan media may pose for democracy.
+
+### Research Question: 
+
+### Background: 
+
+-   Does exposure to cross-cutting media reduce polarization?
+
+-   theories of motivated reasoning argue that exposure to cross-cutting content can back fire and actually make beliefs and attitudes more extreme
+
+    -   people may generate 'counter-arguments'.
+
+        -   "A key prediction of motivated reasoning theoryis backlash: exposure to counter-attitudinal evidence will cause people to hold more strongly totheir preexisting positions."
+
+-   We argue that sustained consumption of cross-cutting media can lead voters to learn uncongenial information and moderate their attitudes.
+
+    -   uncongenial means unpleasent.
+
+#### Motivated Reasoning:
+
+-   Motivated reasoning theories argue that motivated reasoning happens in two phases (e.g., Lodge and Taber 2013, p. 152): at the stage of information search, when people seek out confirmatory information
+
+-   second, when people process information to which they are exposed
+
+-   These are analogous to the Receive (selective exposure) and Accept (information processing) steps of Zaller's (1992) RASmodel (Nyhan 2014)
+
+-   **Authors argue viewers who engage in sustainted exposure to cross-cutting can overcome motivated reasoning in information processing.**
+
+    -   partisan sides cover topics differently. Exposure to both sources, may help them understand the cross-cutting info present in the stories and incorporate this into their attiudes
+
+    -   sustained exposure can reach a tipping point where individuals may eventually revisit their views.
+
+### Data & Methods: 
+
+-   They literally paid Fox viewers to watch CNN for four weeks.
+
+    -   \$15 per hour.
+
+        -   7 hours of CNN per week during September
+
+-   Conduct test with sample where motivated reasoning is strongest and most likely to exhibit backlash.
+
+-   To increase the probability that individuals 'Received' this cross-cutting content and thereby to balance their media diets as much as possible, we enforced compliance with viewership quizzes about non-political features of the coverage
+
+### Findings: 
+
+-   They find participants overcame motivated reasoning
+
+-   attitude change
+
+-   reduced fox learning effects.
+
+-   Our experiment supported this argument: Fox News viewers incentivized to watch CNN instead for a month learned information CNN presented, and their attitudes on political issues CNNcovered and towards Donald Trump moderated. Despite conducting our study among the population that motivated reasoning theories would most expect to display evidence of backlash or toresist persuasion---highly conservative, regular Fox News viewers---we do not find a single caseacross all of our measures of statistically significant evidence of backlash, and many cases wherewe find learning and moderation
+
+## Bail, Christopher, et al. 2018. \"Exposure to Opposing Views on Social Media Can Increase Political Polarization,\" Proceedings of the National Academy of Sciences.

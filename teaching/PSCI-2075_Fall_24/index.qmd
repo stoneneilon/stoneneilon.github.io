@@ -868,7 +868,7 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 
 ## Stone's Song of the Week
 
-[![L\'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
+[![L'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
 
 I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now...You think I want to be here teaching you about variance?! JK I do \<3 variance and standard deviation are very important.
 
@@ -1148,7 +1148,7 @@ $$
 
 -   Want to show that the data is unlikely given that assumption.
 
-## P-Value 
+## P-Value
 
 -   The p-value is extremely important and *commonly* misunderstood.
 
@@ -1162,7 +1162,7 @@ $$
 
 Remember: we are using data we **HAVE**, to tell us about data we do **NOT HAVE**.
 
-### Writing Hypothesis Tests 
+### Writing Hypothesis Tests
 
 $H_o$ : (null hypothesis) - I think the mean is not greater than x
 
@@ -1218,7 +1218,7 @@ I will show example code below. When we do this in R, we will get back a bunch o
 
     1.  **A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true.**
 
-## Example with R Code 
+## Example with R Code
 
 As a researcher, I am interested in how people feel about Obama. I think to myself, hmm, I think the public likes Obama. But then I also remember, that a lot of people don't like Obama. But, I think more people like Obama than not. I imagine that I ask everyone in the United States how I feel about Obama on a 0-100 scale. I can't do this because I don't know everyone and I don't have enough money 😔. To figure this out, I take a sample, make a hypothesis, and test it!
 
@@ -1303,7 +1303,7 @@ Let's go through what this means:
 
 ![](p-value-1024x768.webp){fig-align="center" width="518"}
 
-## Proportional Test 
+## Proportional Test
 
 Perhaps we have a binary or categorical variable. We want to see if the proportion we observed is statistically different from some value we specify. Everything is still the same but we will select a different variable and use different R code.
 
@@ -1322,7 +1322,7 @@ prop.test(2672, 2672+5501, p=.3, alternative="greater")  # use number from summa
 
 The prop.test argument is structured as such:
 
--   prop.test(number in test category, number of observations, p=hypothesis, alternative=\"greater/less/two.sided\")
+-   prop.test(number in test category, number of observations, p=hypothesis, alternative="greater/less/two.sided")
 
 ## Additional Resources
 
@@ -1347,3 +1347,136 @@ I am a strong believer that there is no "correct" way to teach this material. It
 ## Homework 2
 
 -   **Due MONDAY!**
+
+# Week 7
+
+## Stone's Song of the Week 
+
+[![CARIBOU - You Can Do It](interstellar.png){fig-align="center" width="527"}](https://youtu.be/VrPVSz3bBq4?si=JmVAPGYlyETQIMrX)
+
+Do I need to say anymore?
+
+## Homework 2 
+
+-   Have not looked at it yet.
+
+-   Hopefully went well?
+
+## Midterm
+
+Midterm is next week! Logistics are listed below:
+
+-   There will be multiple choice.
+
+-   There may be short answer response questions.
+
+-   There will be an R portion.
+
+-   You will have 2 hours to complete the test **once you open it**.
+
+-   The test will be open for 24 hours.
+
+-   **ABSOLUTELY NO WORKING TOGETHER.**
+
+    -   This is considered cheating and will result in an immediate honor code violation.
+
+-   Midterm on **October 16**
+
+## Review 
+
+For this week's recitation, I am going to allow you to get into groups and collaborate on a study guide.
+
+Some benchmark questions that may or may not be important for the midterm (but you should still know regardless!):
+
+1.  How do we find the mean?
+
+2.  How do we find the median?
+
+3.  How do we find the mode?
+
+4.  What do histograms tell us?
+
+5.  What is data?
+
+6.  What is the point of statistics?
+
+7.  What is the unit of analysis?
+
+8.  What is a concept?
+
+9.  True or False - observations are the columns in our data set.
+
+10. What is a population?
+
+11. What is a sample?
+
+12. Why do we take samples?
+
+13. Can you explain the central limit theory to me?
+
+    1.  This is important
+
+14. Why is the central limit theory important?
+
+15. What is variance and how do we find it? What does it tell us?
+
+16. What is standard deviation and how do we find it? What does it tell us?
+
+17. What is standard error and how do we find it? What does it tell us?
+
+18. I run a t-test and the R output shows a p-value of .12. What do I do?
+
+19. Relatively speaking, do we usually want more observations or less in our data set?
+
+20. I want to load the states data set into the R environment. I keep running this code but it keeps giving me an error!!!! UGH! What do I do?
+
+```{r}
+#| eval: false
+states <- states 
+```
+
+21. Stone told me histograms are useful because they help us visualize data. I really want to visualize this variable called 'vep20.turnout' from the states data set. I provided the code below but nothing is working. Can you help me? I don't think I can do it. 😞
+
+```{r}
+#| eval: false
+hist(vep20.turnout)
+```
+
+22. What is the definition of a p-value?
+
+23. What is a null hypothesis? What is an alternative hypothesis?
+
+24. Can we accept our hypothesis?
+
+25. What is a confidence interval?
+
+26. R gave me a bunch of code after I did a 't.test'. Can you help me understand what it means?
+
+    ```{r}
+    library(RCPA3)
+    # null hypothesis is feeling toward congress is equal to or greater than 50. 
+    # alt hypothesis is feelign toward congress is less than 50
+    t.test(nes$ft.congress, mu = 50, alternative = "less") 
+    ```
+
+27. Can you name a measure of central tendency? What do these values tell us?
+
+28. I'm on a plane 10,000 feet in the air. Before jumping, I read a study about how there has been no randomized controlled trial of parachutes. Equipped with this knowledge, I dive head first out the door. Given what you now know about statistics, do we need theory? If so, why?
+
+29. Do you know how to annotate your code?
+
+30. What does '\<-' do?
+
+31. What does '\$' do?
+
+32. What is a function/command in R?
+
+33. [Will you rise to the occasion and conquer the midterm?](https://www.youtube.com/watch?v=-5zdmA7HSoE)
+
+## Stone's sage advice 
+
+I have provided you with all the material possible for you to succeed on this midterm. I recommend you review the readings, lecture slides, your notes, and the material on this page. I want to remind you that this page is **not** intended to cover all the material. It is simply an additional resource to help guide you. If you are still fuzzy on material, come to my office hours next Tuesday. Alternatively, Professor Beard has office hours available. Additionally, I recommend YouTube videos on concepts you may still be struggling with.
+
+Remember: You **CAN** do it.
+
+I'll see you on the other side of the midterm. 🫡

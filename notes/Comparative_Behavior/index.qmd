@@ -1278,7 +1278,7 @@ economic performance as measured by the percentage change in GDP per capita duri
 ### Findings:
 
 | Hypothesis | Support | Details                                                                                                                                                                                                                                                                                     |
-|-------------|-------------|-----------------------------------------------|
+|------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | H1         | Yes     | incumbent parties' support decreases with economic downturns, without regard to institutional change (p.430)                                                                                                                                                                                |
 | H2         | Yes     | when electoral laws construct institutional barriers to small parties (restrictive), groups once holding the presidency will suffer losses in support when incumbents manage economic growth; as GDP declines, parties previously in power begin to experience a surge of supprot (p.431)   |
 | H3         | Yes     | accounting for the presence of Honduras, there was no relationship between poor economic performance and punishment of former incumbents in restrictive systems; there was a relationship between poor economic performance and the punishment of incumbents in permissive systems (pg.436) |

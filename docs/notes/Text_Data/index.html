@@ -235,6 +235,15 @@ window.Quarto = {
   <li><a href="#zipfs-law" id="toc-zipfs-law" class="nav-link" data-scroll-target="#zipfs-law">Zipf’s Law</a></li>
   <li><a href="#wordscores" id="toc-wordscores" class="nav-link" data-scroll-target="#wordscores">Wordscores</a></li>
   </ul></li>
+  <li><a href="#week-7---similarity-and-complex-measures" id="toc-week-7---similarity-and-complex-measures" class="nav-link" data-scroll-target="#week-7---similarity-and-complex-measures">Week 7 - Similarity and Complex measures</a>
+  <ul class="collapse">
+  <li><a href="#lecture-notes-2" id="toc-lecture-notes-2" class="nav-link" data-scroll-target="#lecture-notes-2">Lecture Notes:</a>
+  <ul class="collapse">
+  <li><a href="#cosine-similarity" id="toc-cosine-similarity" class="nav-link" data-scroll-target="#cosine-similarity">Cosine Similarity:</a></li>
+  </ul></li>
+  <li><a href="#weighting-and-goldilocks-words" id="toc-weighting-and-goldilocks-words" class="nav-link" data-scroll-target="#weighting-and-goldilocks-words">Weighting and “Goldilocks Words”</a></li>
+  <li><a href="#textual-complexity" id="toc-textual-complexity" class="nav-link" data-scroll-target="#textual-complexity">Textual Complexity</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -342,7 +351,7 @@ window.Quarto = {
 <section id="validation" class="level3">
 <h3 class="anchored" data-anchor-id="validation">Validation:</h3>
 <ul>
-<li><p>Face valididity?</p></li>
+<li><p>Face validity?</p></li>
 <li><p>Does the text measure correlate with similar measures?</p></li>
 <li><p>How does the measure compare with our bets guess at “ground truth”?</p></li>
 </ul>
@@ -873,6 +882,68 @@ window.Quarto = {
 <li>Wordscore has a similar issue with the labeling.</li>
 </ul></li>
 </ul></li>
+</ul>
+</section>
+</section>
+<section id="week-7---similarity-and-complex-measures" class="level1">
+<h1>Week 7 - Similarity and Complex measures</h1>
+<section id="lecture-notes-2" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-notes-2">Lecture Notes:</h2>
+<section id="cosine-similarity" class="level3">
+<h3 class="anchored" data-anchor-id="cosine-similarity">Cosine Similarity:</h3>
+<ul>
+<li><p>What makes text similar?</p></li>
+<li><p>cosign similarity is how close are documents are when put into a visual space.</p>
+<ul>
+<li><p>maximum similarity will occur between a document and itself.</p>
+<ul>
+<li>0 is min similarity and 1 is max for similarity</li>
+</ul></li>
+</ul></li>
+<li><p>Jaccard Similarity</p>
+<ul>
+<li>calculate jaccard coefficient</li>
+</ul></li>
+<li><p>Distance metrics</p>
+<ul>
+<li><p>euclidean distance</p>
+<ul>
+<li>hypotenuse of Manhattan triangle.</li>
+</ul></li>
+<li><p>Manhattan distance</p>
+<ul>
+<li>up and over</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="weighting-and-goldilocks-words" class="level2">
+<h2 class="anchored" data-anchor-id="weighting-and-goldilocks-words">Weighting and “Goldilocks Words”</h2>
+<ul>
+<li><p>we want words that are neither too rare nor too frequent</p>
+<ul>
+<li><p>weighting can help us with this.</p>
+<ul>
+<li><p>when we remove stopwords, we are setting their weight to 0.</p></li>
+<li><p>common approach tfdif</p>
+<ul>
+<li>term frequency document infrequency</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>TFDIF</p>
+<ul>
+<li><p>up-weights rare words within a document</p></li>
+<li><p>down-weights words popular across corpus.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="textual-complexity" class="level2">
+<h2 class="anchored" data-anchor-id="textual-complexity">Textual Complexity</h2>
+<ul>
+<li><p>Linguistic complexity can lead to interesting measures/comparisons of documents</p></li>
+<li><p>Domain-specific measures of complexity.</p></li>
 </ul>
 
 

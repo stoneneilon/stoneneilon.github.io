@@ -632,3 +632,23 @@ logit($\pi_i$) \< 0
 ## Example: Flores-Macias and Kreps (2013)
 
 -   When do states adopt war taxes to finance the cost of war?
+
+# Week 6:
+
+-   Need to understand AIC better.
+
+## Heteroskedasticity
+
+-   hetero can lead to inefficient estimates in OLS,though coefficients remain unbaised
+
+-   often worse in logit and probit models, leading to inconsistent estimates
+
+-   we can model out hetero through 'robust' standard errors
+
+-   or better? if we suspect determinants of hetero, we can model error variance directly through a hetero probit.
+
+-   use probit for hetero stuff
+
+## Omitted variable bias
+
+-   might be good to use LPM to deal with omitted variable bias

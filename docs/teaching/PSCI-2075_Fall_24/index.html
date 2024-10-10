@@ -321,6 +321,14 @@ window.Quarto = {
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   <li><a href="#homework-2-1" id="toc-homework-2-1" class="nav-link" data-scroll-target="#homework-2-1">Homework 2</a></li>
   </ul></li>
+  <li><a href="#week-7" id="toc-week-7" class="nav-link" data-scroll-target="#week-7">Week 7</a>
+  <ul class="collapse">
+  <li><a href="#stones-song-of-the-week-5" id="toc-stones-song-of-the-week-5" class="nav-link" data-scroll-target="#stones-song-of-the-week-5">Stone’s Song of the Week</a></li>
+  <li><a href="#homework-2-2" id="toc-homework-2-2" class="nav-link" data-scroll-target="#homework-2-2">Homework 2</a></li>
+  <li><a href="#midterm" id="toc-midterm" class="nav-link" data-scroll-target="#midterm">Midterm</a></li>
+  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
+  <li><a href="#stones-sage-advice" id="toc-stones-sage-advice" class="nav-link" data-scroll-target="#stones-sage-advice">Stone’s sage advice</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1355,10 +1363,10 @@ Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2</code></
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&amp;t=2770"><img src="limperatrice.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="634" alt="L'Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45"></a></p>
+<p><a href="https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&amp;t=2770"><img src="limperatrice.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="634" alt="L’Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45"></a></p>
 </figure>
 </div>
-<figcaption>L'Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45</figcaption>
+<figcaption>L’Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45</figcaption>
 </figure>
 </div>
 <p>I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now…You think I want to be here teaching you about variance?! JK I do &lt;3 variance and standard deviation are very important.</p>
@@ -1715,7 +1723,10 @@ SE = \frac{SD}{\sqrt{n}}
 <li><p><span class="math inline">\(s\)</span> = standard deviation</p></li>
 <li><p><span class="math inline">\(n\)</span> = sample size</p></li>
 </ul>
-<p>This is what R is doing under the hood when we run the t.test command.</p>
+<p>This is what R is doing under the hood when we run the t.test command. The <strong>t-score</strong> we compute from a t-test tells you how far the sample mean is from the hypothesized population mean in terms of the <strong>standard error</strong>.</p>
+<ul>
+<li>The standard error is the standard deviation of the sampling distribution.</li>
+</ul>
 </section>
 <section id="interpretation" class="level3">
 <h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
@@ -1747,8 +1758,8 @@ SE = \frac{SD}{\sqrt{n}}
 <section id="example-with-r-code" class="level2">
 <h2 class="anchored" data-anchor-id="example-with-r-code">Example with R Code</h2>
 <p>As a researcher, I am interested in how people feel about Obama. I think to myself, hmm, I think the public likes Obama. But then I also remember, that a lot of people don’t like Obama. But, I think more people like Obama than not. I imagine that I ask everyone in the United States how I feel about Obama on a 0-100 scale. I can’t do this because I don’t know everyone and I don’t have enough money 😔. To figure this out, I take a sample, make a hypothesis, and test it!</p>
-<p><span class="math inline">\(H_o\)</span> : The public’s average feeling towards Obama is equal to 50</p>
-<p><span class="math inline">\(H_a\)</span> : The public’s average feeling towards Obama is greater than 50</p>
+<p><span class="math inline">\(H_o\)</span> : The public’s average feeling towards Obama is <span class="math inline">\(\leq\)</span> to 50</p>
+<p><span class="math inline">\(H_a\)</span> : The public’s average feeling towards Obama is <span class="math inline">\(&gt;\)</span> than 50</p>
 <p>Lucky for us, someone already took a sample. Wow, thank you RCPA3! Let’s call up that sample.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3) </span>
@@ -1872,7 +1883,9 @@ sample estimates:
 </div>
 </div>
 <p>The prop.test argument is structured as such:</p>
-<p>prop.test(&lt;span style=‘color:red’&gt;number in test category&lt;/span&gt;, &lt;span style=‘color:red’&gt;number of observations&lt;/span&gt;, p=hypothesis, alternative="greater/less/two.sided")</p>
+<ul>
+<li>prop.test(number in test category, number of observations, p=hypothesis, alternative=“greater/less/two.sided”)</li>
+</ul>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
@@ -1903,6 +1916,124 @@ sample estimates:
 <ul>
 <li><strong>Due MONDAY!</strong></li>
 </ul>
+</section>
+</section>
+<section id="week-7" class="level1">
+<h1>Week 7</h1>
+<section id="stones-song-of-the-week-5" class="level2">
+<h2 class="anchored" data-anchor-id="stones-song-of-the-week-5">Stone’s Song of the Week</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/VrPVSz3bBq4?si=JmVAPGYlyETQIMrX"><img src="interstellar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="527" alt="CARIBOU - You Can Do It"></a></p>
+</figure>
+</div>
+<figcaption>CARIBOU - You Can Do It</figcaption>
+</figure>
+</div>
+<p>Do I need to say anymore?</p>
+</section>
+<section id="homework-2-2" class="level2">
+<h2 class="anchored" data-anchor-id="homework-2-2">Homework 2</h2>
+<ul>
+<li><p>Have not looked at it yet.</p></li>
+<li><p>Hopefully went well?</p></li>
+</ul>
+</section>
+<section id="midterm" class="level2">
+<h2 class="anchored" data-anchor-id="midterm">Midterm</h2>
+<p>Midterm is next week! Logistics are listed below:</p>
+<ul>
+<li><p>There will be multiple choice.</p></li>
+<li><p>There may be short answer response questions.</p></li>
+<li><p>There will be an R portion.</p></li>
+<li><p>You will have 2 hours to complete the test <strong>once you open it</strong>.</p></li>
+<li><p>The test will be open for 24 hours.</p></li>
+<li><p><strong>ABSOLUTELY NO WORKING TOGETHER.</strong></p>
+<ul>
+<li>This is considered cheating and will result in an immediate honor code violation.</li>
+</ul></li>
+<li><p>Midterm on <strong>October 16</strong></p></li>
+</ul>
+</section>
+<section id="review" class="level2">
+<h2 class="anchored" data-anchor-id="review">Review</h2>
+<p>For this week’s recitation, I am going to allow you to get into groups and collaborate on a study guide.</p>
+<p>Some benchmark questions that may or may not be important for the midterm (but you should still know regardless!):</p>
+<ol type="1">
+<li><p>How do we find the mean?</p></li>
+<li><p>How do we find the median?</p></li>
+<li><p>How do we find the mode?</p></li>
+<li><p>What do histograms tell us?</p></li>
+<li><p>What is data?</p></li>
+<li><p>What is the point of statistics?</p></li>
+<li><p>What is the unit of analysis?</p></li>
+<li><p>What is a concept?</p></li>
+<li><p>True or False - observations are the columns in our data set.</p></li>
+<li><p>What is a population?</p></li>
+<li><p>What is a sample?</p></li>
+<li><p>Why do we take samples?</p></li>
+<li><p>Can you explain the central limit theory to me?</p>
+<ol type="1">
+<li>This is important</li>
+</ol></li>
+<li><p>Why is the central limit theory important?</p></li>
+<li><p>What is variance and how do we find it? What does it tell us?</p></li>
+<li><p>What is standard deviation and how do we find it? What does it tell us?</p></li>
+<li><p>What is standard error and how do we find it? What does it tell us?</p></li>
+<li><p>I run a t-test and the R output shows a p-value of .12. What do I do?</p></li>
+<li><p>Relatively speaking, do we usually want more observations or less in our data set?</p></li>
+<li><p>I want to load the states data set into the R environment. I keep running this code but it keeps giving me an error!!!! UGH! What do I do?</p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>states <span class="ot">&lt;-</span> states </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="21" type="1">
+<li>Stone told me histograms are useful because they help us visualize data. I really want to visualize this variable called ‘vep20.turnout’ from the states data set. I provided the code below but nothing is working. Can you help me? I don’t think I can do it. 😞</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(vep20.turnout)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="22" type="1">
+<li><p>What is the definition of a p-value?</p></li>
+<li><p>What is a null hypothesis? What is an alternative hypothesis?</p></li>
+<li><p>Can we accept our hypothesis?</p></li>
+<li><p>What is a confidence interval?</p></li>
+<li><p>R gave me a bunch of code after I did a ‘t.test’. Can you help me understand what it means?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a><span class="co"># null hypothesis is feeling toward congress is equal to or greater than 50. </span></span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a><span class="co"># alt hypothesis is feelign toward congress is less than 50</span></span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(nes<span class="sc">$</span>ft.congress, <span class="at">mu =</span> <span class="dv">50</span>, <span class="at">alternative =</span> <span class="st">"less"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  nes$ft.congress
+t = -22.32, df = 7354, p-value &lt; 2.2e-16
+alternative hypothesis: true mean is less than 50
+95 percent confidence interval:
+     -Inf 44.76362
+sample estimates:
+mean of x 
+ 44.34697 </code></pre>
+</div>
+</div></li>
+<li><p>Can you name a measure of central tendency? What do these values tell us?</p></li>
+<li><p>I’m on a plane 10,000 feet in the air. Before jumping, I read a study about how there has been no randomized controlled trial of parachutes. Equipped with this knowledge, I dive head first out the door. Given what you now know about statistics, do we need theory? If so, why?</p></li>
+<li><p>Do you know how to annotate your code?</p></li>
+<li><p>What does ‘&lt;-’ do?</p></li>
+<li><p>What does ‘$’ do?</p></li>
+<li><p>What is a function/command in R?</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=-5zdmA7HSoE">Will you rise to the occasion and conquer the midterm?</a></p></li>
+</ol>
+</section>
+<section id="stones-sage-advice" class="level2">
+<h2 class="anchored" data-anchor-id="stones-sage-advice">Stone’s sage advice</h2>
+<p>I have provided you with all the material possible for you to succeed on this midterm. I recommend you review the readings, lecture slides, your notes, and the material on this page. I want to remind you that this page is <strong>not</strong> intended to cover all the material. It is simply an additional resource to help guide you. If you are still fuzzy on material, come to my office hours next Tuesday. Alternatively, Professor Beard has office hours available. Additionally, I recommend YouTube videos on concepts you may still be struggling with.</p>
+<p>Remember: You <strong>CAN</strong> do it.</p>
+<p>I’ll see you on the other side of the midterm. 🫡</p>
 
 
 </section>
