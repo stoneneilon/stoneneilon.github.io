@@ -2459,33 +2459,41 @@ Institution as a methodology - is a good paper for rat choice institutionalism.
 
         -   Bessley
 
-# Week 7: Media and Social Media 
+# Week 7: Media and Social Media
 
-## [Prior, Markus. 2005. \"News vs. Entertainment: How Increasing Media Choice Widens Gaps in Political Knowledge and Turnout,\" American Journal of Political Science.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-5907.2005.00143.x)
+## Lecture Notes:
 
-### Bumper Sticker: 
+-   There were no channels back in the day.
+
+-   Bill Clinton comes in and there are more channels.
+
+-   Everything in media is super endogenous.
+
+## [Prior, Markus. 2005. "News vs. Entertainment: How Increasing Media Choice Widens Gaps in Political Knowledge and Turnout," American Journal of Political Science.](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-5907.2005.00143.x)
+
+### Bumper Sticker:
 
 More channels = less political knowledge
 
-### Abstract: 
+### Abstract:
 
 Despite dramatic increases in available political information through cable television and the Internet, political knowledge and turnout have not changed noticeably. To explain this seeming paradox, I argue that greater media choice makes it easier for people to find their preferred content. People who like news take advantage of abundant political information to become more knowledgeable and more likely to turn out. In contrast, people who prefer entertainment abandon the news and become less likely to learn about politics and go to the polls. To test this proposition, I develop a measure of people's media content preference and include it in a representative opinion survey of 2,358 U.S. residents. Results show that content preference indeed becomes a better predictor of political knowledge and turnout as media choice increases. Cable TV and the Internet increase gaps in knowledge and turnout between people who prefer news and people who prefer entertainment.
 
-### Research Questions: 
+### Research Questions:
 
 1.  While this debate is far from settled, the issue which precedes it is equally important and often side stepped: as choice between different media content increases, who continues to access any type of political information?
 
-### Puzzle: 
+### Puzzle:
 
 -   Despite increase in media supply, political knowledge among the population has remained the same.
 
-### Hypothesis: 
+### Hypothesis:
 
 1.  I propose that such accidental exposure should become less likely in a high-choice environment because greater horizontal diversity (the number of genres available at any particular point in time) increases the chance that viewers will find content that matches their preferences.
 
 2.  My second hypothesis thus predicts a widening turnout gap in the current environment, as people who prefer news vote at higher rates and those with other preferences increasingly stay home from the polls.
 
-### Background: 
+### Background:
 
 -   There are more media choices (supply)
 
@@ -2505,7 +2513,15 @@ Despite dramatic increases in available political information through cable tele
 
         -   there is less accidental exposure to NEWS in a high-choice environment
 
-### Study 1: 
+-   Selective exposure - you chose what you want.
+
+-   news v. not news.
+
+-   Political knowledge is measured by current knowledge.
+
+    -   who is speaker of house?
+
+### Study 1:
 
 -   Data: the News & Entertainment (N&E) Survey, a panel survey of 2,358 randomly selected U.S. residents. It was conducted by Knowledge Networks in two waves in 2002 and 2003.
 
@@ -2523,43 +2539,43 @@ Despite dramatic increases in available political information through cable tele
 
             -   finds evidence that support this.
 
-### Study 2: 
+### Study 2:
 
 -   Same thing with different data
 
 -   no direct measures but closely approximated.
 
-### Conclusion:  
+### Conclusion:
 
--   The analyses presented here show that both are true. Newmedia do indeed increase political knowledge and involve-ment in the electoral process among some people, just asthe optimists predict. Yet, the evidence supports the pessimists' scenario as well. Other people take advantage ofgreater choice and tune out of politics completely. Thosewith a preference for entertainment, once they gain accessto new media, become less knowledgeable about politicsand less likely to vote. People's media content preferencesbecome the key to understanding the political implica-tions of new media
+-   The analyses presented here show that both are true. New media do indeed increase political knowledge and involvement in the electoral process among some people, just as the optimists predict. Yet, the evidence supports the pessimists' scenario as well. Other people take advantage of greater choice and tune out of politics completely. Those with a preference for entertainment, once they gain accessto new media, become less knowledgeable about politics and less likely to vote. People's media content preferences become the key to understanding the political implications of new media
 
-## [Martin, Greg and Josh McCrain. 2019. \"Local News and National Politics,\" American Political Science Review.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C8EEA488A777C37C7987964F8F85AEB5/S0003055418000965a.pdf/local-news-and-national-politics.pdf)
+## [Martin, Greg and Josh McCrain. 2019. "Local News and National Politics," American Political Science Review.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C8EEA488A777C37C7987964F8F85AEB5/S0003055418000965a.pdf/local-news-and-national-politics.pdf)
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 Local news go bye bye. This bad.
 
-### Abstract: 
+### Abstract:
 
 The level of journalistic resources dedicated to coverage of local politics is in a long-term decline in the US news media, with readership shifting to national outlets. We investigate whether this trend is demand - or supply-driven, exploiting a recent wave of local television station acquisitions by a conglomerate owner. Using extensive data on local news programming and viewership, we find that the ownership change led to (1) substantial increases in coverage of national politics at the expense of local politics, (2) a significant rightward shift in the ideological slant of coverage, and (3) a small decrease in viewership, all relative to the changes at other news programs airing in the same media markets. These results suggest a substantial supply side role in the trends toward nationalization and polarization of politics news, with negative implications for accountability of local elected officials and mass polarization.
 
-### Background: 
+### Background:
 
 -   Sinclair Broadcast Group is right leaning and has been buying up a bunch of stations.
 
--   A sinclair owned station will be viewable to 72% of american households.
+-   A Sinclair owned station will be viewable to 72% of american households.
 
-### Data: 
+### Data:
 
 -   Compare local stations in the same area to Sinclair Broadcast Group stations.
 
 -   Transcript and viewership data across 743 stations - in every DMA.
 
-### Method: 
+### Method:
 
--   Differeince-in-Difference & Cross sectional regression
+-   Difference-in-Difference & Cross sectional regression
 
-### Findings: 
+### Findings:
 
 -   Following the acquisition of Bonten Media Group by Sinclair, the former Bonten stations' content shifted toward coverage of national politics at the expense of local politics, relative to other stations in the same media market.
 
@@ -2569,19 +2585,25 @@ The level of journalistic resources dedicated to coverage of local politics is i
 
 -   One factor enabling Sinclair's rapid recent expansion is FCC's elimination of the "main studio rule," which required local news stations to maintain a physical studio in the broadcast area. For Sinclair and other conglomerates, the potential for economies of scale resulting from the elimination of the rule is straightforward.
 
-## Broockman, David and Joshua Kalla. Forthcoming. \"Consuming Cross-Cutting Media Causes Learning and Moderates Attitudes: A Field Experiment with Fox News Viewers,\" Journal of Politics.
+## Broockman, David and Joshua Kalla. Forthcoming. "Consuming Cross-Cutting Media Causes Learning and Moderates Attitudes: A Field Experiment with Fox News Viewers," Journal of Politics.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
-### Abstract: 
+Cross-cutting media can influence people!
 
-Many Americans consume aligned partisan media, which scholars worry contributes topolarization. Many propose encouraging these Americans to consume cross-cutting media tomoderate their attitudes. However, motivated reasoning theory posits that exposure to cross-cutting media could backfire, exacerbating polarization. Building on theories that sustainedexposure to novel information can overcome motivated reasoning and that partisan sourceson opposite sides cover distinct information, we argue that sustained consumption of cross-cutting media leads voters to learn uncongenial information and moderate their attitudes incovered domains. To test this argument, we used data on actual TV viewership to recruit asample of regular Fox News viewers and incentivized a randomized treatment group to watchCNN instead for a month. Contrary to predictions from motivated reasoning, watching CNNcaused substantial learning and moderated participants' attitudes in covered domains. We closeby discussing challenges partisan media may pose for democracy.
+### Abstract:
 
-### Research Question: 
+Many Americans consume aligned partisan media, which scholars worry contributes to polarization. Many propose encouraging these Americans to consume cross-cutting media to moderate their attitudes. However, motivated reasoning theory posits that exposure to cross-cutting media could backfire, exacerbating polarization. Building on theories that sustained exposure to novel information can overcome motivated reasoning and that partisan sources on opposite sides cover distinct information, we argue that sustained consumption of cross-cutting media leads voters to learn uncongenial information and moderate their attitudes incovered domains. To test this argument, we used data on actual TV viewership to recruit asample of regular Fox News viewers and incentivized a randomized treatment group to watchCNN instead for a month. Contrary to predictions from motivated reasoning, watching CNNcaused substantial learning and moderated participants' attitudes in covered domains. We close by discussing challenges partisan media may pose for democracy.
 
-### Background: 
+### Research Question:
 
 -   Does exposure to cross-cutting media reduce polarization?
+
+### Background:
+
+-   Does exposure to cross-cutting media reduce polarization?
+
+-   Do people have a backlash effect when seeing other opinions?
 
 -   theories of motivated reasoning argue that exposure to cross-cutting content can back fire and actually make beliefs and attitudes more extreme
 
@@ -2593,21 +2615,25 @@ Many Americans consume aligned partisan media, which scholars worry contributes 
 
     -   uncongenial means unpleasent.
 
+-   Stations fundamentally focused on different issues.
+
+-   balance test makes sure control and treatment samples are not different.
+
 #### Motivated Reasoning:
 
 -   Motivated reasoning theories argue that motivated reasoning happens in two phases (e.g., Lodge and Taber 2013, p. 152): at the stage of information search, when people seek out confirmatory information
 
 -   second, when people process information to which they are exposed
 
--   These are analogous to the Receive (selective exposure) and Accept (information processing) steps of Zaller's (1992) RASmodel (Nyhan 2014)
+-   These are analogous to the Receive (selective exposure) and Accept (information processing) steps of Zaller's (1992) RAS model (Nyhan 2014)
 
 -   **Authors argue viewers who engage in sustainted exposure to cross-cutting can overcome motivated reasoning in information processing.**
 
-    -   partisan sides cover topics differently. Exposure to both sources, may help them understand the cross-cutting info present in the stories and incorporate this into their attiudes
+    -   partisan sides cover topics differently. Exposure to both sources, may help them understand the cross-cutting info present in the stories and incorporate this into their attitudes
 
     -   sustained exposure can reach a tipping point where individuals may eventually revisit their views.
 
-### Data & Methods: 
+### Data & Methods:
 
 -   They literally paid Fox viewers to watch CNN for four weeks.
 
@@ -2619,7 +2645,7 @@ Many Americans consume aligned partisan media, which scholars worry contributes 
 
 -   To increase the probability that individuals 'Received' this cross-cutting content and thereby to balance their media diets as much as possible, we enforced compliance with viewership quizzes about non-political features of the coverage
 
-### Findings: 
+### Findings:
 
 -   They find participants overcame motivated reasoning
 
@@ -2627,6 +2653,624 @@ Many Americans consume aligned partisan media, which scholars worry contributes 
 
 -   reduced fox learning effects.
 
--   Our experiment supported this argument: Fox News viewers incentivized to watch CNN instead for a month learned information CNN presented, and their attitudes on political issues CNNcovered and towards Donald Trump moderated. Despite conducting our study among the population that motivated reasoning theories would most expect to display evidence of backlash or toresist persuasion---highly conservative, regular Fox News viewers---we do not find a single caseacross all of our measures of statistically significant evidence of backlash, and many cases wherewe find learning and moderation
+-   Our experiment supported this argument: Fox News viewers incentivized to watch CNN instead for a month learned information CNN presented, and their attitudes on political issues CNN covered and towards Donald Trump moderated. Despite conducting our study among the population that motivated reasoning theories would most expect to display evidence of backlash or to resist persuasion---highly conservative, regular Fox News viewers---we do not find a single case across all of our measures of statistically significant evidence of backlash, and many cases wherewe find learning and moderation
 
-## Bail, Christopher, et al. 2018. \"Exposure to Opposing Views on Social Media Can Increase Political Polarization,\" Proceedings of the National Academy of Sciences.
+## Bail, Christopher, et al. 2018. "Exposure to Opposing Views on Social Media Can Increase Political Polarization," Proceedings of the National Academy of Sciences.
+
+# Week 8: Elections and Campaigns 
+
+## [Gelman, Andrew and Gary King. 1993. \"Why are American Presidential Election Campaign Polls so Variable When Votes are so Predictable?\" British Journal of Political Science.](https://gking.harvard.edu/files/bj215.pdf)
+
+### Abstract 
+
+As most political scientists know, the outcome of the American presidential election can be predicted within a few percentage points (in the popular vote), based on information available months before the election. Thus, the general campaign for president seems irrelevant to the outcome (except in very close elections), despite all the media coverage of campaign strategy. However, it is also well known that the pre-election opinion polls can vary wildly over the campaign, and this variation is generally attributed to events in the campaign. How can campaign events affect people's opinions on whom they plan to vote for, and yet not affect the outcome of the election? For that matter, why do voters consistently increase their rupport for a candidate during his nominating convention, even though the conventions are almost entirely predictable events whose effects can be rationally forecast? In this exploratory study, we consider several intuitively appealing, but ultimately wrong. resolutions to this puzzle and discuss our current understanding of what causes opinion polls to fluctuate while reaching a predictable outcome. Our evidence is based on graphical presen- tation and analysis of over 67,000 individual-level responses from forty-nine commercial polls during the 1988 campaign and many other aggregate poll results from the 1952-92 campaigns. We show that responses to pollsters during the campaign are not generally informed or even, in a sense we describe, 'rational'. In contrast, voters decide, based on their enlightened preferences, as formed by the information they have learned during the campaign, as wel! as basic political cues such as ideology and party identification, which candidate to support eventually. We cannot prove this conclusion, but we do show that it is consistent with the aggregate forecasts and individual-level opinion poll responses. Based on the enlightened prefer- ences hypothesis, we conclude that the news media have an important effect on the outcome of presidential elections - not through misleading advertisements. sound bites, or spin doctors, but rather by conveying candidates' positions on important issues.
+
+### Bumper Sticker: 
+
+Why do polls vary?
+
+### Research Question
+
+-   If political scientists can forecast the election outcome reasonably well on the basis of fundamental variables measured before the campaign, why do the polls vary so much?
+
+### Hypothesis: 
+
+Our working hypothesis is that voters cast their ballots in general election contests for president on the basis of their 'enlightened preferences'.
+
+### Background: 
+
+#### Section 1: Forecasting Evidence and Data Summaries
+
+-   Rosenstone's forecasting model appears to be the gold standard for presidential races.
+
+-   Use Campbell's forecast because they couldn't find a Rosenstone forecast for the 1992 race.
+
+    -   They are going to alter it a little. However, below is Campbell's model:
+
+        -   Various variables:
+
+            -   nationwide:
+
+                -   Democratic candidate's share of the trial heat polls two months before the election
+
+                -    incumbency (0, 1, or - 1, depending on the party)
+
+                -   and the change in Gross National Product (GNP) in the preceding year (counted positively or negatively, depending on whether the Democrats or the Republicans are the incumbent party)
+
+            -   Statewide:
+
+                -    the state's vote in the last two presidential elections (relative to the nationwide vote in each case)
+
+                -    a presidential and vice-presidential home-state advantage (0, 1, or - l)
+
+                -   the change in the state's economic growth in the past year (counted positively or negatively depending on the incumbent party)
+
+                -    the partisanship of the state (measured by the proportion of Democrats in the state legislature) and the state's ideology (as measured by the average of its congressional representatives' ADA-ACA interest-group rating scores in 1988)
+
+            -   Regional:
+
+                -   meant to capture various regional effects, mostly from past elections - are dummy variables for the South in elections in which one of the candidates was a Southerner, for the South in 1964, for the deep South in 1964, for New England in 1964, the West in 1976, and for the North Central region in 1980
+
+                    -   seems like a sort of fixed effects?
+
+-   Problems with Campbell model:
+
+    -   it is based on a single regression specification that has been chosen because of its close fit to previous electoral data
+
+        -   Campbell's standard errors are probably too low
+
+        -    it may be possible to generate better forecasts by choosing a fit by more substantive criteria
+
+        -   Standard deviation of Campbell's estimates is 1.5% - specification uncertainty
+
+            -   they square 1.5 to account for more realistic
+
+    -   Gelman & King will estimate a model that includes the following variables:
+
+        -   1\) the president's approval rating, included as an interaction with the national presidential incumbency variable;
+
+        -   2\) the absolute difference between state and candidate ideologies, as used by Rosenstone
+
+        -   3\) an additional regional variable for 1960 indicating the percentage of the state's population that was Catholic in that year.
+
+    -   **Campbell's model ignores** the year-by-year structure of the data, treating them as 531 independent observations, rather than eleven sets of roughly fifty related observations each
+
+        -   There is a data grouping that Campbell is missing among states.
+
+            -   this just seems like fixed effects for the past 11 elections.
+
+        -   fit a two-error model - helps account for uncertainty...
+
+            -   need to ask josh a bit more about this.
+
+    -   Cambell calculates the expected number of electoral college delegates for each candidate by allocating all the delegates in a state to the candidate forecast to get more than half the vote, and then adds over all the states.
+
+        -   For each state, Gelman & King model yields an estimate of the proportion of the two-party vote that the Democrat will win.
+
+            -   Clinton's expected electoral vote count is just the sum of the electoral vote in each state, multiplied by the probability that he wins the state.
+
+                -   **this is a bit confusing?**
+
+#### Section 2:  MODELS OF VOTER DECISION MAKING AND THEIR IMPLICATIONS
+
+-   Previous forecasting models use aggregate data and thus cannot say anything about individual level behavior.
+
+-   Voters do take their vote choice seriously.
+
+    -   they may not be able to explain their reasons.
+
+-   There are fundamental variables in which voters base their vote decision on:
+
+    -   include economic conditions
+
+    -   party identification
+
+    -   proximity of the voter's ideology and issue preferences to those of the candidates
+
+-   **Why are some elections harder to predict than others?**
+
+    -   salience of election
+
+    -   lots of stuff going on
+
+    -   low visibility elections
+
+    -   in presidential elections, a lot of the 'silly' stuff is mostly ephemeral
+
+        -   **By election day, voters are able to vote based largely on accurate measures of their fundamental variables. The argument here is that although presidential campaigns have an important effect, what is relevant is their existence; we expect the details of a completely-run campaign to have a small effect on the election outcome.**
+
+            -   critically, the campaigns are assumed to be relatively evenly matched.
+
+-   Journalists model
+
+    -   voters do not take their role in the process very seriously, have very little information or knowledge of the campaign and the issues, and frequently do not vote on the basis of their own self-interest.
+
+    -   Basically horse-race model.
+
+    -   focus more on character issues
+
+#### Section 3: Flawed Expectations 
+
+-   **If political scientists can forecast the election outcome reasonably well on the basis of fundamental variables measured before the campaign, why do the polls vary so much? To put it another way, if the journalists' model is correct, then how can political scientists, or anyone else, forecast the outcome accurately? Alternatively, if the political science model is correct, why do polls vary at all, and why do they respond to specific campaign events such as conventions and advertising campaigns?**
+
+-   Authors raise several hypothesis that might explain the hypothesis listed above.
+
+-   4 flawed explanations:
+
+    -   Measurement theories
+
+        -   The polls are meaningless
+
+            -   The simplest hypothesis holds that public opinion polls have nothing to do with real observable political behaviour, and are as meaningless as candidates behind in the polls make them out to be. Evidence for this hypothesis is the high rate of non-response, and the perception that respondents do not take the survey seriously, giving insincere or poorly thought-out answers to most questions.
+
+            -   BUT polls are connected in some way to observable political behavior
+
+            -   polls before the election are good.
+
+            -   they are meaningful
+
+            -   this hypothesis doesn't really help us
+
+        -   Question wording effects and survey organization methods
+
+            -   Zaller esque
+
+            -   but doesn't explain why support for candidates vary so much.
+
+        -   Non-response bias
+
+            -   another hypothesis: survey respondents selectively refuse to answer
+
+                -   show a time series plot that refutes this.
+
+    -   Journalist theories:
+
+        -   The forecasters were lucky because Bush ran a good campaign and Dukakis a poor one
+
+            -   This hypothesis is about the actual campaigning of candidates.
+
+                -   In this example, Bush was better and that is the reason for winning.
+
+                -   not sufficient evidence to support hypothesis outside of 1988.
+
+        -   Unbalanced campaigns or predictable convergence
+
+            -   This hypothesis mixes journalists' and political science theories, in that it accepts the forecast, but still follows the story of the polls to understand why Bush won.
+
+                -   doesn't explain nor forecast that Bush would run a better campaign.
+
+        -   Uninformed voters
+
+            -   assumes many voters vote based on non-fundamental characteristics.
+
+            -   This model explains the swings in the pre-election polls, but does not explain how pre-campaign forecasting methods predict so well, given that the political science forecasts do not even try to account for personalities and campaign events.
+
+    -   Political Science Theories:
+
+        -    the political science theories take as a starting point that the ability of economists and political scientists to forecast election results accurately months ahead of time is evidence that the election came out just as predicted.
+
+        -   *Balanced Campaigns*
+
+            -   Forecast models work because they were balanced campaigns (in 1988)
+
+            -   "equal funding"
+
+            -   Still doesn't provide enough explanatory power.
+
+            -   **The fact that modern presidential campaigns seem to be balanced, which is consistent with the political science model of voter decision making, does not solve the puzzle about why the polls varied so much**
+
+                -   they say nothing about why polls vary so much.
+
+        -   Partisans returning to the fold
+
+            -   An elaboration of this hypothesis is that strong partisans come home to their party first, then weaker partisans, and so on
+
+            -   Different events bring in different groups of voters, but under the hypothesis being discussed here, the strong ones come home first, then subsequent events bring in others later.
+
+            -   **The key evidence against this thesis is that the proportion of undecided voters does not drop over the course of the campaign**
+
+                -   really? is that right? Seems hard to believe.
+
+        -   Rational Actor Theories
+
+            -   Assumes voters are rational
+
+                -   either have full or incomplete info
+
+                -   still reject incomplete model
+
+#### Section 4: Towards an explanation for poll variation
+
+-   Our working hypothesis is that voters cast their ballots in general election contests for president on the basis of their 'enlightened preferences'.
+
+    -   we do not require that people be able to discuss these preferences intelligently or even to know what they are; we only require that they know enough that their decisions are based on the true values of the fundamental variables.
+
+        -   wonder what this means in an affectively polarized world. Is enlightened preferences now just the party/ideology identity?
+
+    -   **The function of the campaign, then, is to inform voters about the fundamental** **variables and their appropriate weights; notably, the candidates' ideologies and their positions on major issues**
+
+        -   people DO gather more info through the campaign.
+
+        -   **At the start of the campaign, voters do not have the information necessary to make enlightened voting decisions. Gathering this information is costly and most citizens have no particularly good reason to gather it in time for the pollster's visit, so long as it can be gathered when needed on election day.**
+
+        -   Unfortunately, those who consider themselves 'voters' are willing to report to pollsters their 'likely' voting decisions, even if they have not gathered sufficient information to make this report accurate
+
+            -   **this is giving me shades of Zaller.**
+
+            -   implies the power of media and elites in framing early candidacy.
+
+    -   SO campaigns activate the salience of fundamental variables for voters. There is a lag and it takes time for this to penetrate into voters heads. This solidifies as the campaign goes on as voters get more info. - this is how im thinking about this.
+
+        -   this fits actually kinda well with Trump's rise in 2016
+
+        -   is there a panel study of voters polled and then how they voted day of actual election?
+
+    -   **Our hypothesis is that the early position of the polls is a result of the information that is readily available at the start of the general election campaign**
+
+    -   Perhaps people are not learning about the policies but they are overtime being activated against the other candidate/party.
+
+        -   affective polarization.
+
+-   **Thus, without sufficient knowledge of their fundamental variables, and when asked to give an opinion anyway, most respondents act as they will in the voting booth on election day: they use information at their disposal about their fundamental variables, and report a 'likely' vote to the pollster. We believe that this report to the pollster is sincere, but the survey response is still based on a different information set from that which will be available by the time of the election.**
+
+    -   PUNCHLINE!
+
+#### Section 5: EVIDENCE FOR ENLIGHTENED PREFERENCES
+
+-   Start of campaign: preferences = unenlightened
+
+    -   based on a lot of previous lit, they seem to always be unenlightened (to some degree).
+
+    -   conventions boost support
+
+    -   Graph sucks in this section
+
+    -   Independents move most extremely in response to conventions.
+
+    -   Some fundamental variables:
+
+        -   party
+
+        -   ideology
+
+        -   race
+
+        -   sex
+
+        -   income
+
+        -   education
+
+            -   says edu should have almost no effect? what? no way.
+
+        -   region
+
+    -   They find Race and ideology matter less at the start of the campaign than at the end, whereas the effect of region among non-whites and the effect of gender are much higher early on.
+
+### Conclusion
+
+-   King is dismissive of the journalist explanation
+
+    -   I am too. BUT
+
+        -   "Finally, journalists should realize that they can report the polls all they want, and continue to make incorrect causal inferences about them, but they are not helping to predict or even influence the election"
+
+            -   I DISAGREE WITH THIS! I think they do have some impact on the outcome.
+
+                -   josh thinks the same.
+
+## [Huber, Gregory and Kevin Arceneaux. 2007. \"Identifying the Persuasive Effects of Presidential Advertising,\" American Journal of Political Science.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-5907.2007.00291.x)
+
+### Abstract:
+
+*Do presidential campaign advertisements mobilize, inform, or persuade citizens? To answer this question we exploit a natural experiment, the accidental treatment of some individuals living in nonbattleground states during the 2000 presidential election to either high levels or one-sided barrages of campaign advertisements simply because they resided in a media market adjoining a competitive state. We isolate the effects of advertising by matching records of locally broadcast presidential advertising with the opinions of National Annenberg Election Survey respondents living in these uncontested states. This approach remedies the observed correlation between advertising and both other campaign activities and previous election outcomes. In contrast to previous research, we find little evidence that citizens are mobilized by or learn from presidential advertisements, but strong evidence that they are persuaded by them. We also consider the causal mechanisms that facilitate persuasion and investigate whether some individuals are more susceptible to persuasion than others*.
+
+### Bumper Sticker: 
+
+"Advertising does a little to inform, next to nothing to mobilize, and a great deal to persuade potential voters."
+
+### Research Question
+
+-   What effect do campaign advertisements have on those viewing them?
+
+-   Does advertising engage citizens in the campaign?
+
+-   does it inform them (or enable them to adopt appropriate partisan positions on the issues?
+
+-   Does it directly alter their evaluation of the candidates (persuade them)?
+
+### Background
+
+-   Scant evidence that campaigns (and their advertisements) sway voters
+
+-   campaign commercials increase reported turnout propensities, enhance viewers'knowledge of the candidates, and reinforce citizens' underlying partisan predispositions
+
+-   Political advertisements are meant to persuade NOT to turn out to vote.
+
+-   Because interest in politics is positively correlatedwith receiving political messages, individuals who do payattention to political advertising are also more likely tobe targeted by campaigns for GOTV efforts and directmail.
+
+-   JHJ find evidence that campaign advertisements are persuasive: In media markets where more pro-Bush (pro-Gore) commercials werebroadcast, the proportion of survey respondents indicating they would vote for Bush increased (decreased).
+
+    -   however, variation is non-random.
+
+### Data
+
+-   2000 presidential election
+
+-   DV: NAES individual-level survey measures of expressed preferencesand beliefs.
+
+-   IV: unsystematic variation in broadcast advertisements in non-battleground states
+
+### Method
+
+-   Natural Experiment
+
+-   uses areas adjacent to battleground states BUT in the same media market
+
+### Does Advertising Engage? 
+
+-   The core empirical hypothesis is that the frequent airing of commercials will cause citizens to be more likely to express interest in the campaign and to turn out to vote.
+
+-   We test this prediction by determining whether campaign interest and intention to vote are higher among NAES respondents from areas saturated with presidential campaign advertisements.
+
+-   IV: Advertising exposure
+
+    -   measured as theratings-adjusted number of presidential advertisements(in GRPs/1000) broadcast in the local media market inwhich each NAES respondent lives
+
+-   Finding: Advertising does not increase interest in campaign or intent to vote
+
+-   Previous findings emphasized an increase but it may because of the high correlation between advertising and grassroots campaign.
+
+### Does Advertising Inform?
+
+-   both perspectives predict that knowledge of candidate positions and the alignment between a respondent's opinions and those of her party's candidate will be greater inareas with more frequent advertisements.
+
+-   Respondentswere coded as knowledgeable (1 = "Yes" or 0 = "No") ifthey could accurately place both candidates on the issue orcould place Bush to the right of Gore on the ideology scale.The only evidence of citizen learning emerges in the case of Social Security reform, for which presidential advertisingis associated with a greater ability to place Bush (in fa-vor of personal accounts) and Gore (opposed to personalaccounts) in both the panel and cross-sectional analyses.
+
+-   Per the column (1) estimateusing panel data, and assuming an individual did not previously hold her party's position on Social Security, a onestandard deviation increase in advertising is associatedwith a predicted increase in adopting her party's candidate's position by about 2.5% (from a baseline of 32.5%,simulated 95% confidence intervals of .2 to 5.0%).
+
+-   **In summary, there is weak and inconsistent evidence for the claim that advertising enhances citizen learning or the adoption of partisan positions.**
+
+### Does Advertising Persuade
+
+-   higher levels of Gore advertising are associated with a decline inBush's favorability and these effects are statistically significant.
+
+-   What is the content of these advertisements though?
+
+    -   are they affective/negative?
+
+-   Per the column (4) estimates,a 1.57 GRPs/1000 increase in Bush's advertising decreasesthe probability of obtaining an above-average likeability rating by 3.2% (from a baseline of 56.8%) while an in-crease of that magnitude in Gore's advertising increasesthe probability by 4.9%
+
+-   **Lastly, we examine whether advertising affects re-ported vote intention and find strong evidence that it does. In the panel, a respondent who was initially undecided is predicted to subsequently support Gore 36.1% of the time and Bush 45.9% of the time. Per the column (5)results with the panel data, increasing Bush's advertising above the average by 1.57 GRPs/1000 is associated with a9.1% increase in the predicted probability of supporting Bush (95% confidence interval .5 to 18.2%) and a 7.8%decrease in the probability of supporting Gore (95% con-fidence interval −17.3 to −.3%).**
+
+### Assessing the Mechanism of Persuasion
+
+-   Based on the previous findings, the authors ask why do advertisements persuade vote choice?
+
+-   don't really know
+
+-   candidate affect is one promising mechanism
+
+### Who is most persuadable? 
+
+-   A related and important theoretical concern is whetherthe effects of advertising are moderated by individualcharacteristics that determine whether individuals are exposed to campaign advertising and, conditional on beingexposed, whether they are receptive to those messages.Most prominent in this regard is Zaller's (1992) Receive-Accept-Sample (RAS) model, which predicts that political awareness increases exposure to potentially persuasivemessages, but that at high levels this awareness also allows individual to reject messages that are incongruentwith their (often well-formed) opinions.
+
+-   **this suggests that both the least and most aware are relatively unaffected by communication, the former because they do not receive it, the latter because they resist it, while individuals lying between these extremes are more susceptible to political communication.**
+
+-   The greatest evidence of persuasion appears among moderately aware respondents.
+
+-   So if I am a campaign consultant, I am going after the moderately aware respondents.
+
+## [Healy, Andrew and Gabriel Lenz. 2014. \"Substituting the End for the Whole: Why Voters Respond Primarily to the Election-Year Economy,\" American Journal of Political Science.](https://drive.google.com/file/d/1MNWRo746wfYVy0xeUudAZXrqTxR8H20x/view?usp=sharing)
+
+### Abstract 
+
+According to numerous studies, the election-year economy influences presidential election results far more than cumulative growth throughout the term. Here we describe a series of surveys and experiments that point to an intriguing explanation for this pattern that runs contrary to standard political science explanations, but one that accords with a large psychological literature. Voters, we find, actually intend to judge presidents on cumulative growth. However, since that characteristic is not readily available to them, voters inadvertently substitute election-year performance because it is more easily accessible. This "end-heuristic" explanation for voters' election-year emphasis reflects a general tendency for people to simplify retrospective assessments by substituting conditions at the end for the whole. The end-heuristic explanation also suggests a remedy, a way to align voters' actions with their intentions. Providing people with the attribute they are seeking---cumulative growth---eliminates the election-year emphasis.
+
+### Bumper Sticker
+
+Psych explains why voters weigh election year economies more.
+
+### Research Question
+
+-   What are voters' intentions?
+
+-   why do recency effects emerge not just with the economy but also in domains such as legislative appropriations,crime, and terrorist attacks?
+
+### Background 
+
+-   Voters tend to reward incumbents when the economy is good 6 months prior to election
+
+-   Achen and Bartels argue long term trend don't move the needle much for the incumbents prospects.
+
+-   Short term views of the electorate can influence how officials govern.
+
+#### Why do voters put weight on election year economies? 
+
+-   first explanation: voter memories.
+
+    -   voters don't remember that far back
+
+-   second explanation: election year economies may be informative of what the president has done.
+
+    -   it takes years for a president to enact their policies and fix the economy.
+
+    -   Perhaps the election year is the best year to evaluate presidents.
+
+-   third explanation: psychological
+
+    -   substitute the end for the whole.
+
+    -   Voters are asked "How well did the economy perform during the president's term?" but answer "How has the economy been recently?"
+
+    -   "peak-end rule"
+
+        -   people evaluate stuff at the peak and at the end.
+
+### Data 
+
+-   lots of surveys
+
+### Methods
+
+-   survey questions
+
+### Findings
+
+-   Cognitively easier to evaluate recent year.
+
+-   Heuristic!
+
+-   People evaluate years differently. Voters continue to put greater emphasis on election year economies.
+
+-   **Voters appear to want to evaluate the economy as a whole, not just the end. However, since the whole is not readily available to them it requires adding up growth across years---they substitute the end.**
+
+### Potential issue? 
+
+-   I am not seeing ANY discussion of the perception of the economy influenced by education OR party id.
+
+    -   not big on this one tbh.
+
+## [Hall, Andrew. 2015. \"What Happens When Extremists Win Primaries?\" American Political Science Review.](https://www.andrewbenjaminhall.com/Hall_APSR.pdf)
+
+### Abstract: 
+
+This article studies the interplay of U.S. primary and general elections.I examine how the nomination of an extremist changes general-election outcomes and legislative behavior in the U.S. House, 1980--2010, using a regression discontinuity design in primary elections. When an extremist--- as measured by primary-election campaign receipt patterns---wins a "coin-flip" election over a more moderate candidate, the party's general-election vote share decreases on average by approximately 9-13 percentage points, and the probability that the party wins the seat decreases by 35--54 percentage points. This electoral penalty is so large that nominating the more extreme primary candidate causes the district's subsequent roll-call representation to reverse, on average, becoming more liberal when an extreme Republican is nominated and more conservative when an extreme Democrat is nominated. Overall, the findings show how general-election voters act as a moderating filter in response to primary nominations.
+
+### Bumper Sticker: 
+
+### Research Question
+
+-   How much does the party's electoral outlook suffer in a district where its primary voters nominate a more extreme candidate, relative to the counterfactual in which the same district nominates a more moderate candidate?
+
+### Background:
+
+-   For these reasons it is important to study not just the immediate electoral consequences of nominating more or less extreme candidates, but also the effects of nominating relatively extreme or moderate candidates on downstream roll-call voting
+
+-   See findings
+
+    -   Author move to explain the mechanisms behind these findings.
+
+        -   extremist may have a valence disadvantage
+
+            -   this is unlikely. Extremist candidates were more likely to be previous office holders than moderate candidates.
+
+        -   possible demographic difference
+
+            -   gender
+
+                -   not clearly tested.
+
+        -   Interest groups prefer moderates
+
+            -   on average interest groups are more moderate.
+
+        -   The penalty to extremist grows with voter information
+
+            -   districts where more newspaper information about local politics is available--- are more able to identify, describe, and rate their representatives.
+
+                -   there is a info lag for voter. It may take another election cycle to realize the extremeness of a candidate.
+
+### Data
+
+-   Estimated ideological positions of primary candidates from 1980 - 2010. - Hall & Snyder (2013).
+
+-   estimate donors ideological positions?
+
+-   I think he is scaling the ideological position at the time of the primary.
+
+-   The analysis uses a special subset of all primary elections---**namely, contested primaries with two "viable" candidates who raise enough money to allow for reliable ideological scaling.**
+
+-   Districts are defined as "safe" if the party's share of the presidential two-party normal vote, calculated as the average presidential vote share for the redistricting period, is above 60%.
+
+### Method
+
+-   Regression discontinuity.
+
+$$
+Y_{ipt}=\beta_0+\beta_1Extremist \ Primary \ Win_{ipt} + f(V_{ipt}) + \epsilon_{ipt}
+$$
+
+-   $Extremist \ Primary \  Win_{it}$ is an indicator variable for the extremist winning party p's primary in district $i$ at time $t$.
+
+-   Thus $\beta_1$ is the quantity of interest, the RDD estimator for causal effects from the "as-if" random assignment of an extremist in the general election.
+
+-   $Y_{ipt}$ stands in for three main outcome variables
+
+    -   party vote share
+
+    -   party victory
+
+    -   DW-Nominate score of the winning general election candidate in the ensuing Congress
+
+-   $f(V_{ipt})$ a flexible function of the running variable, the extremist candidate's vote-share winning margin, i.e., the extremist candidate's share of the top two candidates' vote less 0.5, which determines treatment status.
+
+-   Later on he connects extremist election to roll call voting.
+
+### Results: 
+
+-   Among"coin-flip"primary elections between a relative moderate and an extremist,the nomination of the extremist appears to cause a large decrease in the party's general-election vote share.
+
+-   Finally, the third estimate uses only primaries that occur in districts that are safe for the party holding the primary, i.e., districts where the presidential normal vote is at or above 60% for the party. Here we find almost no penalty to nominating the extremist, perhaps because the partisan voters in the district support whomever the party nominates.
+
+-   basically extreme candidates don't perform well in general election DEPENDENT on their margin of victory in the primary.
+
+    -   robust at different cutoff points.
+
+-   As we move to the left, i.e., as the winning Democratic primary candidate becomes more extreme, average roll-call voting first becomes more liberal, because the primary winner delivers more liberal roll-call voting. However,as the donor score becomes more extreme, Republicans begin to gain a more significant electoral advantage, and roll-call voting starts to become increasingly conservative.
+
+    -   basically there is a backlash effect
+
+    -   wonder if this still holds?
+
+    -   thinking about affective polarization in this context.
+
+        -   perhaps people are more affectively polarized that regardless of the extremeness of the candidate, people now hate the other side so much they still work to keep that extreme candidate in office.
+
+            -   not clear.
+
+-   Overall,I find that the nomination of the extremist causes a reversal in roll-call voting, producing more conservative roll-call voting when Democrats nominate a more extreme candidate and more liberal roll-call voting when Republicans nominate a more extreme candidate.
+
+    -   short term effect
+
+        -   this effect does not hold in safe districts.
+
+-   Nominating the extremist today continues to cause an ideological reversal in the district's roll-call voting even eight years (four terms) later. The effect is present in both Republican primaries (where observed roll-call voting becomes more liberal) and in Democratic primaries (where observed roll-call voting becomes more conservative).
+
+## [Thomsen, Danielle. 2023. \"Competition in Congressional Elections: Money versus Votes,\" American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/competition-in-congressional-elections-money-versus-votes/F84C395D7155C9C0D82971BC0BFC75E8?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark)
+
+### Abstract 
+
+Competition among candidates or parties is a necessary condition for democracy. But who counts as a candidate and what counts as competition? The influence of money in American elections makes fundraising an appropriate alternative to vote totals, and it provides a new vantage point to assess the quality of electoral competition. I draw on a dataset of preelection campaign receipts to measure competition in U.S. House primaries from 1980 to 2020. When competition is measured with receipts, it looks markedly worse than vote share measures suggest. Moreover, the difference between vote share and fundraising measures is largest in open-seat primaries, or the best-case scenarios of competition. The disparity between measures is driven largely by candidates who have little chance of winning. The findings shed new light on resource disparities in elections and demonstrate that our conclusions about the quality of competition are tied to our measures.
+
+### Bumper Sticker
+
+### Research Question
+
+-   How much does money influence primary elections
+
+### Background
+
+-   Competition among candidates or parties is necessary condition for democracy (Dahl 1956; 1971; Key 1949; Schlesinger 1966; Schumpeter 1942)
+
+-   This article departs from the use of vote shares and examines the quality of competition through the lens of fundraising.
+
+-   Money is a heuristic for who is winning and losing (in a horse race frame).
+
+-   Donations have direct implications for whether candidates can hire staffers and consultants, buy advertisements, and access the goods and services that fuel their campaigns.
+
+-   A strong fundraising haul also attracts attention from the media and partisan elites.
+
+-   They find that, across primaries from 1900 to 2016, the level of competition is highest in open-seat races and in constituencies with a partisan advantage.
+
+-   fundraising is a good predictor of who wins.
+
+### Data 
+
+-   preelection receipts in more than 16,000 U.S. House primaries from 1980 to 2020
+
+### Findings: 
+
+-   And although financial long shots do outperform their receipt shares at the ballot box, they overwhelmingly lose and usually by large margins.
+
+-   The main finding is that when competition is viewed through the lens of fundraising, it looks significantly worse than vote share measures suggest. The likelihood that primaries are competitive decreases across race types, with the largest difference emerging in open seats. The notion that several viable candidates are vigorously competing for voter support is not borne out when competition is measured with fundraising patterns.

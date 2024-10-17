@@ -244,6 +244,19 @@ window.Quarto = {
   <li><a href="#weighting-and-goldilocks-words" id="toc-weighting-and-goldilocks-words" class="nav-link" data-scroll-target="#weighting-and-goldilocks-words">Weighting and “Goldilocks Words”</a></li>
   <li><a href="#textual-complexity" id="toc-textual-complexity" class="nav-link" data-scroll-target="#textual-complexity">Textual Complexity</a></li>
   </ul></li>
+  <li><a href="#week-8---supervised-machine-learning" id="toc-week-8---supervised-machine-learning" class="nav-link" data-scroll-target="#week-8---supervised-machine-learning">Week 8 - Supervised Machine Learning</a>
+  <ul class="collapse">
+  <li><a href="#supervised-machine-learning" id="toc-supervised-machine-learning" class="nav-link" data-scroll-target="#supervised-machine-learning">Supervised Machine Learning:</a>
+  <ul class="collapse">
+  <li><a href="#classification-steps" id="toc-classification-steps" class="nav-link" data-scroll-target="#classification-steps">Classification Steps</a></li>
+  <li><a href="#human-annotation" id="toc-human-annotation" class="nav-link" data-scroll-target="#human-annotation">Human Annotation</a></li>
+  <li><a href="#types-of-supervised-models" id="toc-types-of-supervised-models" class="nav-link" data-scroll-target="#types-of-supervised-models">Types of supervised models:</a></li>
+  <li><a href="#naive-bayes-classifiers" id="toc-naive-bayes-classifiers" class="nav-link" data-scroll-target="#naive-bayes-classifiers">Naive Bayes Classifiers:</a></li>
+  <li><a href="#support-vector-machines" id="toc-support-vector-machines" class="nav-link" data-scroll-target="#support-vector-machines">Support Vector Machines:</a></li>
+  <li><a href="#model-performance" id="toc-model-performance" class="nav-link" data-scroll-target="#model-performance">Model Performance</a></li>
+  <li><a href="#validation-2" id="toc-validation-2" class="nav-link" data-scroll-target="#validation-2">Validation:</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -945,8 +958,105 @@ window.Quarto = {
 <li><p>Linguistic complexity can lead to interesting measures/comparisons of documents</p></li>
 <li><p>Domain-specific measures of complexity.</p></li>
 </ul>
+</section>
+</section>
+<section id="week-8---supervised-machine-learning" class="level1">
+<h1>Week 8 - Supervised Machine Learning</h1>
+<section id="supervised-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="supervised-machine-learning">Supervised Machine Learning:</h2>
+<ul>
+<li><p>Create a mapping between the features within a set of documents and more general categories and concepts that have been defined by the researcher.</p></li>
+<li><p>We learn the mapping function from the data by training an algorithm to predict the category of interest from the text using a random sample of coded documents.</p></li>
+<li><p>we are <em>predicting</em>.</p></li>
+<li><p>This approach is quite general and has the advantage that once the parameters of the model are learned classifying additional documents is essentially costless.</p></li>
+</ul>
+<section id="classification-steps" class="level3">
+<h3 class="anchored" data-anchor-id="classification-steps">Classification Steps</h3>
+<ul>
+<li><p>Accurately Label Documents (create a training set &amp; validation set)</p></li>
+<li><p>feature representation</p></li>
+<li><p>choose model &amp; classify documents</p></li>
+<li><p>IF YOUR TRAINING DATA SUCKS, YOUR CLASSIFIERS WILL SUCK!</p></li>
+</ul>
+</section>
+<section id="human-annotation" class="level3">
+<h3 class="anchored" data-anchor-id="human-annotation">Human Annotation</h3>
+<ul>
+<li><p><em>Stratified</em> random sample of documents to annotate.</p></li>
+<li><p>Create a codebook</p>
+<ul>
+<li><p>codebook = instructions</p>
+<ul>
+<li><p>how are we defining stuff</p>
+<ul>
+<li>iterative process</li>
+</ul></li>
+<li><p>objectivity/inter-subjectivity</p>
+<ul>
+<li>you can get intercode reliability.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="types-of-supervised-models" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-supervised-models">Types of supervised models:</h3>
+</section>
+<section id="naive-bayes-classifiers" class="level3">
+<h3 class="anchored" data-anchor-id="naive-bayes-classifiers">Naive Bayes Classifiers:</h3>
+<ul>
+<li><p>SPAM v. Ham</p>
+<ul>
+<li><p>how do we classify data example</p></li>
+<li><p>Bayes rule</p>
+<ul>
+<li><p>probability of new email is spam given its text is equal to….see slide.</p>
+<ul>
+<li><p>lets look at our priors</p>
+<ul>
+<li>posterior probability is updated probability after taking new info into account.</li>
+</ul></li>
+</ul></li>
+<li><p>for multiple words we treat each word as independent.</p>
+<ul>
+<li><p>this is obviously not true.</p>
+<ul>
+<li>but Naive bayes are useful.</li>
+</ul></li>
+</ul></li>
+<li><p>Main thing: when training data is imbalanced - we run into a lot of issues!</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="support-vector-machines" class="level3">
+<h3 class="anchored" data-anchor-id="support-vector-machines">Support Vector Machines:</h3>
+<ul>
+<li><p>Building a model from a binary labeled training set (yes/no, Rep/Dem) and returns an optimal hyperplane that puts a new examples into one of the categories non-probabilistically.</p>
+<ul>
+<li>first finds a support vector</li>
+</ul></li>
+</ul>
+</section>
+<section id="model-performance" class="level3">
+<h3 class="anchored" data-anchor-id="model-performance">Model Performance</h3>
+<ul>
+<li><p>Is Bayes or SVM better?</p></li>
+<li><p>confusion matrix!</p></li>
+<li><p>LOOK AT BALANCED ACCURACY FOR UNBALANCED TRAINING DATA!</p></li>
+</ul>
+</section>
+<section id="validation-2" class="level3">
+<h3 class="anchored" data-anchor-id="validation-2">Validation:</h3>
+<ul>
+<li><p>k-fold Cross-validation.</p></li>
+<li><p>Face validity?</p></li>
+<li><p>Convergent validity</p></li>
+<li><p>hypothesis validity</p></li>
+</ul>
 
 
+</section>
 </section>
 </section>
 

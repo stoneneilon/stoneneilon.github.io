@@ -608,3 +608,89 @@ We are in the midst of a technological revolution whereby, for the first time, r
 -   Linguistic complexity can lead to interesting measures/comparisons of documents
 
 -   Domain-specific measures of complexity.
+
+# Week 8 - Supervised Machine Learning 
+
+## Supervised Machine Learning: 
+
+-   Create a mapping between the features within a set of documents and more general categories and concepts that have been defined by the researcher.
+
+-   We learn the mapping function from the data by training an algorithm to predict the category of interest from the text using a random sample of coded documents.
+
+-   we are *predicting*.
+
+-   This approach is quite general and has the advantage that once the parameters of the model are learned classifying additional documents is essentially costless.
+
+### Classification Steps 
+
+-   Accurately Label Documents (create a training set & validation set)
+
+-   feature representation
+
+-   choose model & classify documents
+
+-   IF YOUR TRAINING DATA SUCKS, YOUR CLASSIFIERS WILL SUCK!
+
+### Human Annotation
+
+-   *Stratified* random sample of documents to annotate.
+
+-   Create a codebook
+
+    -   codebook = instructions
+
+        -   how are we defining stuff
+
+            -   iterative process
+
+        -   objectivity/inter-subjectivity
+
+            -   you can get intercode reliability.
+
+### Types of supervised models: 
+
+### Naive Bayes Classifiers: 
+
+-   SPAM v. Ham
+
+    -   how do we classify data example
+
+    -   Bayes rule
+
+        -   probability of new email is spam given its text is equal to....see slide.
+
+            -   lets look at our priors
+
+                -   posterior probability is updated probability after taking new info into account.
+
+        -   for multiple words we treat each word as independent.
+
+            -   this is obviously not true.
+
+                -   but Naive bayes are useful.
+
+        -   Main thing: when training data is imbalanced - we run into a lot of issues!
+
+### Support Vector Machines: 
+
+-   Building a model from a binary labeled training set (yes/no, Rep/Dem) and returns an optimal hyperplane that puts a new examples into one of the categories non-probabilistically.
+
+    -   first finds a support vector
+
+### Model Performance
+
+-   Is Bayes or SVM better?
+
+-   confusion matrix!
+
+-   LOOK AT BALANCED ACCURACY FOR UNBALANCED TRAINING DATA!
+
+### Validation: 
+
+-   k-fold Cross-validation.
+
+-   Face validity?
+
+-   Convergent validity
+
+-   hypothesis validity
