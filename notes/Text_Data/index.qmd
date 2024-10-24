@@ -609,9 +609,9 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
 -   Domain-specific measures of complexity.
 
-# Week 8 - Supervised Machine Learning 
+# Week 8 - Supervised Machine Learning
 
-## Supervised Machine Learning: 
+## Supervised Machine Learning:
 
 -   Create a mapping between the features within a set of documents and more general categories and concepts that have been defined by the researcher.
 
@@ -621,7 +621,7 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
 -   This approach is quite general and has the advantage that once the parameters of the model are learned classifying additional documents is essentially costless.
 
-### Classification Steps 
+### Classification Steps
 
 -   Accurately Label Documents (create a training set & validation set)
 
@@ -647,9 +647,9 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
             -   you can get intercode reliability.
 
-### Types of supervised models: 
+### Types of supervised models:
 
-### Naive Bayes Classifiers: 
+### Naive Bayes Classifiers:
 
 -   SPAM v. Ham
 
@@ -671,7 +671,7 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
         -   Main thing: when training data is imbalanced - we run into a lot of issues!
 
-### Support Vector Machines: 
+### Support Vector Machines:
 
 -   Building a model from a binary labeled training set (yes/no, Rep/Dem) and returns an optimal hyperplane that puts a new examples into one of the categories non-probabilistically.
 
@@ -685,7 +685,7 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
 -   LOOK AT BALANCED ACCURACY FOR UNBALANCED TRAINING DATA!
 
-### Validation: 
+### Validation:
 
 -   k-fold Cross-validation.
 
@@ -695,7 +695,7 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
 -   hypothesis validity
 
-## Week 9 - Unsupervised Machine Learning 
+## Week 9 - Unsupervised Machine Learning
 
 -   Algorithms that learn patterns from unlabeled data.
 
@@ -733,11 +733,11 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
 -   If we struggle to label a cluster - its probably not a good cluster.
 
-## Topic Models: 
+## Topic Models:
 
 -   Rather than assign each document to only one cluster, topic models assign each document with proportional membership to all categories.
 
-### Latent Dirichlet Allocation (LDA) 
+### Latent Dirichlet Allocation (LDA)
 
 -   Bayesian hierarchical model that assumes a particular data generating process for how an author produces a text.
 

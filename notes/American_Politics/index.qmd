@@ -2657,9 +2657,9 @@ Many Americans consume aligned partisan media, which scholars worry contributes 
 
 ## Bail, Christopher, et al. 2018. "Exposure to Opposing Views on Social Media Can Increase Political Polarization," Proceedings of the National Academy of Sciences.
 
-# Week 8: Elections and Campaigns 
+# Week 8: Elections and Campaigns
 
-## Lecture Notes: 
+## Lecture Notes:
 
 -   What actually are the fundamental variables:
 
@@ -2713,13 +2713,13 @@ Many Americans consume aligned partisan media, which scholars worry contributes 
 
     -   then include mediator and it should be smaller.
 
-## [Gelman, Andrew and Gary King. 1993. \"Why are American Presidential Election Campaign Polls so Variable When Votes are so Predictable?\" British Journal of Political Science.](https://gking.harvard.edu/files/bj215.pdf)
+## [Gelman, Andrew and Gary King. 1993. "Why are American Presidential Election Campaign Polls so Variable When Votes are so Predictable?" British Journal of Political Science.](https://gking.harvard.edu/files/bj215.pdf)
 
-### Abstract 
+### Abstract
 
 As most political scientists know, the outcome of the American presidential election can be predicted within a few percentage points (in the popular vote), based on information available months before the election. Thus, the general campaign for president seems irrelevant to the outcome (except in very close elections), despite all the media coverage of campaign strategy. However, it is also well known that the pre-election opinion polls can vary wildly over the campaign, and this variation is generally attributed to events in the campaign. How can campaign events affect people's opinions on whom they plan to vote for, and yet not affect the outcome of the election? For that matter, why do voters consistently increase their rupport for a candidate during his nominating convention, even though the conventions are almost entirely predictable events whose effects can be rationally forecast? In this exploratory study, we consider several intuitively appealing, but ultimately wrong. resolutions to this puzzle and discuss our current understanding of what causes opinion polls to fluctuate while reaching a predictable outcome. Our evidence is based on graphical presen- tation and analysis of over 67,000 individual-level responses from forty-nine commercial polls during the 1988 campaign and many other aggregate poll results from the 1952-92 campaigns. We show that responses to pollsters during the campaign are not generally informed or even, in a sense we describe, 'rational'. In contrast, voters decide, based on their enlightened preferences, as formed by the information they have learned during the campaign, as wel! as basic political cues such as ideology and party identification, which candidate to support eventually. We cannot prove this conclusion, but we do show that it is consistent with the aggregate forecasts and individual-level opinion poll responses. Based on the enlightened prefer- ences hypothesis, we conclude that the news media have an important effect on the outcome of presidential elections - not through misleading advertisements. sound bites, or spin doctors, but rather by conveying candidates' positions on important issues.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 Why do polls vary?
 
@@ -2727,11 +2727,11 @@ Why do polls vary?
 
 -   If political scientists can forecast the election outcome reasonably well on the basis of fundamental variables measured before the campaign, why do the polls vary so much?
 
-### Hypothesis: 
+### Hypothesis:
 
 Our working hypothesis is that voters cast their ballots in general election contests for president on the basis of their 'enlightened preferences'.
 
-### Background: 
+### Background:
 
 -   only focused on presidential elections
 
@@ -2749,19 +2749,19 @@ Our working hypothesis is that voters cast their ballots in general election con
 
                 -   Democratic candidate's share of the trial heat polls two months before the election
 
-                -    incumbency (0, 1, or - 1, depending on the party)
+                -   incumbency (0, 1, or - 1, depending on the party)
 
                 -   and the change in Gross National Product (GNP) in the preceding year (counted positively or negatively, depending on whether the Democrats or the Republicans are the incumbent party)
 
             -   Statewide:
 
-                -    the state's vote in the last two presidential elections (relative to the nationwide vote in each case)
+                -   the state's vote in the last two presidential elections (relative to the nationwide vote in each case)
 
-                -    a presidential and vice-presidential home-state advantage (0, 1, or - l)
+                -   a presidential and vice-presidential home-state advantage (0, 1, or - l)
 
                 -   the change in the state's economic growth in the past year (counted positively or negatively depending on the incumbent party)
 
-                -    the partisanship of the state (measured by the proportion of Democrats in the state legislature) and the state's ideology (as measured by the average of its congressional representatives' ADA-ACA interest-group rating scores in 1988)
+                -   the partisanship of the state (measured by the proportion of Democrats in the state legislature) and the state's ideology (as measured by the average of its congressional representatives' ADA-ACA interest-group rating scores in 1988)
 
             -   Regional:
 
@@ -2775,7 +2775,7 @@ Our working hypothesis is that voters cast their ballots in general election con
 
         -   Campbell's standard errors are probably too low
 
-        -    it may be possible to generate better forecasts by choosing a fit by more substantive criteria
+        -   it may be possible to generate better forecasts by choosing a fit by more substantive criteria
 
         -   Standard deviation of Campbell's estimates is 1.5% - specification uncertainty
 
@@ -2807,7 +2807,7 @@ Our working hypothesis is that voters cast their ballots in general election con
 
                 -   **this is a bit confusing?**
 
-#### Section 2:  MODELS OF VOTER DECISION MAKING AND THEIR IMPLICATIONS
+#### Section 2: MODELS OF VOTER DECISION MAKING AND THEIR IMPLICATIONS
 
 -   Previous forecasting models use aggregate data and thus cannot say anything about individual level behavior.
 
@@ -2845,7 +2845,7 @@ Our working hypothesis is that voters cast their ballots in general election con
 
     -   focus more on character issues
 
-#### Section 3: Flawed Expectations 
+#### Section 3: Flawed Expectations
 
 -   **If political scientists can forecast the election outcome reasonably well on the basis of fundamental variables measured before the campaign, why do the polls vary so much? To put it another way, if the journalists' model is correct, then how can political scientists, or anyone else, forecast the outcome accurately? Alternatively, if the political science model is correct, why do polls vary at all, and why do they respond to specific campaign events such as conventions and advertising campaigns?**
 
@@ -2909,7 +2909,7 @@ Our working hypothesis is that voters cast their ballots in general election con
 
     -   Political Science Theories:
 
-        -    the political science theories take as a starting point that the ability of economists and political scientists to forecast election results accurately months ahead of time is evidence that the election came out just as predicted.
+        -   the political science theories take as a starting point that the ability of economists and political scientists to forecast election results accurately months ahead of time is evidence that the election came out just as predicted.
 
         -   *Balanced Campaigns*
 
@@ -3021,13 +3021,13 @@ Our working hypothesis is that voters cast their ballots in general election con
 
                 -   josh thinks the same.
 
-## [Huber, Gregory and Kevin Arceneaux. 2007. \"Identifying the Persuasive Effects of Presidential Advertising,\" American Journal of Political Science.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-5907.2007.00291.x)
+## [Huber, Gregory and Kevin Arceneaux. 2007. "Identifying the Persuasive Effects of Presidential Advertising," American Journal of Political Science.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-5907.2007.00291.x)
 
 ### Abstract:
 
 *Do presidential campaign advertisements mobilize, inform, or persuade citizens? To answer this question we exploit a natural experiment, the accidental treatment of some individuals living in nonbattleground states during the 2000 presidential election to either high levels or one-sided barrages of campaign advertisements simply because they resided in a media market adjoining a competitive state. We isolate the effects of advertising by matching records of locally broadcast presidential advertising with the opinions of National Annenberg Election Survey respondents living in these uncontested states. This approach remedies the observed correlation between advertising and both other campaign activities and previous election outcomes. In contrast to previous research, we find little evidence that citizens are mobilized by or learn from presidential advertisements, but strong evidence that they are persuaded by them. We also consider the causal mechanisms that facilitate persuasion and investigate whether some individuals are more susceptible to persuasion than others*.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 "Advertising does a little to inform, next to nothing to mobilize, and a great deal to persuade potential voters."
 
@@ -3073,7 +3073,7 @@ Our working hypothesis is that voters cast their ballots in general election con
 
 -   intention to vote. NOT ACTUAL VOTE!
 
-### Does Advertising Engage? 
+### Does Advertising Engage?
 
 -   The core empirical hypothesis is that the frequent airing of commercials will cause citizens to be more likely to express interest in the campaign and to turn out to vote.
 
@@ -3121,7 +3121,7 @@ Our working hypothesis is that voters cast their ballots in general election con
 
 -   candidate affect is one promising mechanism
 
-### Who is most persuadable? 
+### Who is most persuadable?
 
 -   A related and important theoretical concern is whetherthe effects of advertising are moderated by individualcharacteristics that determine whether individuals are exposed to campaign advertising and, conditional on beingexposed, whether they are receptive to those messages.Most prominent in this regard is Zaller's (1992) Receive-Accept-Sample (RAS) model, which predicts that political awareness increases exposure to potentially persuasivemessages, but that at high levels this awareness also allows individual to reject messages that are incongruentwith their (often well-formed) opinions.
 
@@ -3131,9 +3131,9 @@ Our working hypothesis is that voters cast their ballots in general election con
 
 -   So if I am a campaign consultant, I am going after the moderately aware respondents.
 
-## [Healy, Andrew and Gabriel Lenz. 2014. \"Substituting the End for the Whole: Why Voters Respond Primarily to the Election-Year Economy,\" American Journal of Political Science.](https://drive.google.com/file/d/1MNWRo746wfYVy0xeUudAZXrqTxR8H20x/view?usp=sharing)
+## [Healy, Andrew and Gabriel Lenz. 2014. "Substituting the End for the Whole: Why Voters Respond Primarily to the Election-Year Economy," American Journal of Political Science.](https://drive.google.com/file/d/1MNWRo746wfYVy0xeUudAZXrqTxR8H20x/view?usp=sharing)
 
-### Abstract 
+### Abstract
 
 According to numerous studies, the election-year economy influences presidential election results far more than cumulative growth throughout the term. Here we describe a series of surveys and experiments that point to an intriguing explanation for this pattern that runs contrary to standard political science explanations, but one that accords with a large psychological literature. Voters, we find, actually intend to judge presidents on cumulative growth. However, since that characteristic is not readily available to them, voters inadvertently substitute election-year performance because it is more easily accessible. This "end-heuristic" explanation for voters' election-year emphasis reflects a general tendency for people to simplify retrospective assessments by substituting conditions at the end for the whole. The end-heuristic explanation also suggests a remedy, a way to align voters' actions with their intentions. Providing people with the attribute they are seeking---cumulative growth---eliminates the election-year emphasis.
 
@@ -3147,7 +3147,7 @@ Psych explains why voters weigh election year economies more.
 
 -   why do recency effects emerge not just with the economy but also in domains such as legislative appropriations,crime, and terrorist attacks?
 
-### Background 
+### Background
 
 -   Voters tend to reward incumbents when the economy is good 6 months prior to election
 
@@ -3155,7 +3155,7 @@ Psych explains why voters weigh election year economies more.
 
 -   Short term views of the electorate can influence how officials govern.
 
-#### Why do voters put weight on election year economies? 
+#### Why do voters put weight on election year economies?
 
 -   first explanation: voter memories.
 
@@ -3177,7 +3177,7 @@ Psych explains why voters weigh election year economies more.
 
         -   people evaluate stuff at the peak and at the end.
 
-### Data 
+### Data
 
 -   lots of surveys
 
@@ -3195,13 +3195,13 @@ Psych explains why voters weigh election year economies more.
 
 -   **Voters appear to want to evaluate the economy as a whole, not just the end. However, since the whole is not readily available to them it requires adding up growth across years---they substitute the end.**
 
-### Potential issue? 
+### Potential issue?
 
 -   I am not seeing ANY discussion of the perception of the economy influenced by education OR party id.
 
     -   not big on this one tbh.
 
-## [Hall, Andrew. 2015. \"What Happens When Extremists Win Primaries?\" American Political Science Review.](https://www.andrewbenjaminhall.com/Hall_APSR.pdf)
+## [Hall, Andrew. 2015. "What Happens When Extremists Win Primaries?" American Political Science Review.](https://www.andrewbenjaminhall.com/Hall_APSR.pdf)
 
 -   candidate centered elections.
 
@@ -3209,11 +3209,11 @@ Psych explains why voters weigh election year economies more.
 
 -   congressional races are idiosyncratic
 
-### Abstract: 
+### Abstract:
 
 This article studies the interplay of U.S. primary and general elections.I examine how the nomination of an extremist changes general-election outcomes and legislative behavior in the U.S. House, 1980--2010, using a regression discontinuity design in primary elections. When an extremist--- as measured by primary-election campaign receipt patterns---wins a "coin-flip" election over a more moderate candidate, the party's general-election vote share decreases on average by approximately 9-13 percentage points, and the probability that the party wins the seat decreases by 35--54 percentage points. This electoral penalty is so large that nominating the more extreme primary candidate causes the district's subsequent roll-call representation to reverse, on average, becoming more liberal when an extreme Republican is nominated and more conservative when an extreme Democrat is nominated. Overall, the findings show how general-election voters act as a moderating filter in response to primary nominations.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 ### Research Question
 
@@ -3291,7 +3291,7 @@ $$
 
 -   the drop in figure 2 is the actual treatment effect - the regression discontinuity.
 
-### Results: 
+### Results:
 
 -   Among"coin-flip"primary elections between a relative moderate and an extremist,the nomination of the extremist appears to cause a large decrease in the party's general-election vote share.
 
@@ -3321,9 +3321,9 @@ $$
 
 -   Nominating the extremist today continues to cause an ideological reversal in the district's roll-call voting even eight years (four terms) later. The effect is present in both Republican primaries (where observed roll-call voting becomes more liberal) and in Democratic primaries (where observed roll-call voting becomes more conservative).
 
-## [Thomsen, Danielle. 2023. \"Competition in Congressional Elections: Money versus Votes,\" American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/competition-in-congressional-elections-money-versus-votes/F84C395D7155C9C0D82971BC0BFC75E8?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark)
+## [Thomsen, Danielle. 2023. "Competition in Congressional Elections: Money versus Votes," American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/competition-in-congressional-elections-money-versus-votes/F84C395D7155C9C0D82971BC0BFC75E8?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark)
 
-### Abstract 
+### Abstract
 
 Competition among candidates or parties is a necessary condition for democracy. But who counts as a candidate and what counts as competition? The influence of money in American elections makes fundraising an appropriate alternative to vote totals, and it provides a new vantage point to assess the quality of electoral competition. I draw on a dataset of preelection campaign receipts to measure competition in U.S. House primaries from 1980 to 2020. When competition is measured with receipts, it looks markedly worse than vote share measures suggest. Moreover, the difference between vote share and fundraising measures is largest in open-seat primaries, or the best-case scenarios of competition. The disparity between measures is driven largely by candidates who have little chance of winning. The findings shed new light on resource disparities in elections and demonstrate that our conclusions about the quality of competition are tied to our measures.
 
@@ -3351,13 +3351,13 @@ Money is important in competitiveness in primaries.
 
 -   fundraising is a good predictor of who wins.
 
-### Data 
+### Data
 
 -   pre-election receipts in more than 16,000 U.S. House primaries from 1980 to 2020
 
 -   take money and look at affective number of candidates and observe across.
 
-### Findings: 
+### Findings:
 
 -   And although financial long shots do outperform their receipt shares at the ballot box, they overwhelmingly lose and usually by large margins.
 
@@ -3369,7 +3369,7 @@ Why and when does legislative organization change?
 
 ## Krehbiel, Keith. 1991. Information and Legislative Organization, Chs. 1, 4.
 
-### Chapter 1: 
+### Chapter 1:
 
 -   Article 1 section 5: "each House may determine the rules of its proceedings."
 
@@ -3405,7 +3405,7 @@ Why and when does legislative organization change?
 
         -   maximize this.
 
-##### The Informational Perspective: 
+##### The Informational Perspective:
 
 -   The distributive perspective is formulaic and overly emphasizes local incentives from reelection incentives of the member
 
@@ -3425,7 +3425,7 @@ Why and when does legislative organization change?
 
 -   expertise of a legislator, improves collective benefit of the chamber.
 
-#### Research Question: 
+#### Research Question:
 
 -   Are the major principles of legislative organization exclusively or predominantly distributive, or are they first and foremost informational?
 
@@ -3433,7 +3433,7 @@ Why and when does legislative organization change?
 
 -   How and why are these legislative institutions employed?
 
-#### Primary empirical focus: 
+#### Primary empirical focus:
 
 -   standing committees and their formation
 
@@ -3445,13 +3445,13 @@ Why and when does legislative organization change?
 
 -   legislative institutions: rules and precedents that act as binding constraints on legislators' behavior.
 
-#### Majoritarianism Postulate: 
+#### Majoritarianism Postulate:
 
 -   Objects of legislative choice in both the procedural and policy domains must be chosen by a majority of the legislature
 
 #### Uncertainty Postulate:
 
--    legislators are often uncertain about the relationship between policies and their outcomes
+-   legislators are often uncertain about the relationship between policies and their outcomes
 
 ### Chapter 4:
 
@@ -3485,37 +3485,29 @@ Why and when does legislative organization change?
 
 -   legislator gives up stuff so they can be an expert on the thing that matters the most for them.
 
-#### Test: 
+#### Test:
 
 -   use interest groups
 
 -   high demanders do get what they want in some policy arenas.
 
-## [Aldrich, John and David Rohde. 2000. \"The Republican Revolution and the House Appropriations Committee,\" Journal of Politics.](https://onlinelibrary.wiley.com/doi/pdf/10.1111/0022-3816.00001)
+## [Aldrich, John and David Rohde. 2000. "The Republican Revolution and the House Appropriations Committee," Journal of Politics.](https://onlinelibrary.wiley.com/doi/pdf/10.1111/0022-3816.00001)
 
-### Abstract: 
+### Abstract:
 
-This study applies the theory of \"conditional party government\" to the interaction between the Republican party and the Appropriations Committee in the 104th House, seen in the context of developments since the 96th Congress. As expected by the theory, we find that the relatively homogenous
-preferences of the Republican contingent in the House led them to adopt new institutional arrangements to enhance the powers of their leaders, which in turn were used to advance the party\'s policy
-goals. Given that the leadership decided to use Appropriations as one of the vehicles of major policy
-change, they and the Conference sought to monitor the committee\'s actions, and to influence it to
-behave as they wanted. The leaders used their enhanced powers over incentives and with regard to the
-agenda to advance the party cause. Both leaders and the Conference sought to block policy shifts
-away from what they wanted, but facilitated changes in the desired direction. Finally, we expected to
-see evidence of the increasing applicability of the theory over time, culminating in the developments
-of the 104th Congress, and this expectation was borne out.
+This study applies the theory of "conditional party government" to the interaction between the Republican party and the Appropriations Committee in the 104th House, seen in the context of developments since the 96th Congress. As expected by the theory, we find that the relatively homogenous preferences of the Republican contingent in the House led them to adopt new institutional arrangements to enhance the powers of their leaders, which in turn were used to advance the party's policy goals. Given that the leadership decided to use Appropriations as one of the vehicles of major policy change, they and the Conference sought to monitor the committee's actions, and to influence it to behave as they wanted. The leaders used their enhanced powers over incentives and with regard to the agenda to advance the party cause. Both leaders and the Conference sought to block policy shifts away from what they wanted, but facilitated changes in the desired direction. Finally, we expected to see evidence of the increasing applicability of the theory over time, culminating in the developments of the 104th Congress, and this expectation was borne out.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
-### Background: 
+### Background:
 
 -   Conditional Party Government: it contends that partisan organizational structures in the House---especially those of the majority party---will (under certain conditions) seek to use their powers to shift the policy outcomes produced by the body closer to the median position of the party than would otherwise be the case
 
-    -   The \"condition\" in conditional party government involves the degree of preference agreement within parties and of preference conflict between them. The general contention is that as intraparty homogeneity and interparty conflict increase, so too will the propensity of party members to grant stronger powers to their leaders and to collective party organizations, and to support their exercise of those powers in specific instances
+    -   The "condition" in conditional party government involves the degree of preference agreement within parties and of preference conflict between them. The general contention is that as intraparty homogeneity and interparty conflict increase, so too will the propensity of party members to grant stronger powers to their leaders and to collective party organizations, and to support their exercise of those powers in specific instances
 
     -   BASICALLY: Party = homogenous = stack cards against opponent
 
--   As intraparty homogeneity and interparty conflict increase, we would expect to find stronger party action designed to try to pull the policy chosen away from the floor median position and toward the median position of the party on issues that make up the party\'s agenda.
+-   As intraparty homogeneity and interparty conflict increase, we would expect to find stronger party action designed to try to pull the policy chosen away from the floor median position and toward the median position of the party on issues that make up the party's agenda.
 
 -   104th congress is polarizing
 
@@ -3525,19 +3517,19 @@ of the 104th Congress, and this expectation was borne out.
 
 -   
 
-## [Schickler, Eric. 2000. \"Institutional Change in the House of Representatives, 1867--1998: a Test of Partisan and Ideological Power Balance Models,\" American Political Science Review](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2586012.pdf?refreqid=fastly-default%3A77a87af9d0c8bf74905f7af82a2e5d6d&ab_segments=&initiator=&acceptTC=1)
+## [Schickler, Eric. 2000. "Institutional Change in the House of Representatives, 1867--1998: a Test of Partisan and Ideological Power Balance Models," American Political Science Review](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2586012.pdf?refreqid=fastly-default%3A77a87af9d0c8bf74905f7af82a2e5d6d&ab_segments=&initiator=&acceptTC=1)
 
-### Abstract: 
+### Abstract:
 
 I examine competing explanations for House rules changes with significant partisan overtones. I sought to identify all rules changes adopted from 1867 to 1998 that were intended either to advantage or to undermine the majority party and its leaders in their efforts to shape the House agenda. I test a majority party cartel model of institutional change against a model that focuses on the ideological balance of power on the floor, that is, on the closeness of the median voter to the median member of the majority and minority parties. I also evaluate the conditional party government approach. The data analysis suggests the preeminent importance of shifts in the ideological balance. Two variables identified by the conditional party government theory, party polarization and party capacity, obtain limited support, but their effect is neither as robust nor as large in magnitude as that of change in the median voter's position.
 
-### Background: 
+### Background:
 
 -   Committees used to have a lot more power and considerable deference to seniority.
 
 -   This changed in the 90s with Newt.
 
-### Majority Party Cartel Model 
+### Majority Party Cartel Model
 
 -   legislative institutions are designed controlled by majority party
 
@@ -3555,35 +3547,37 @@ I examine competing explanations for House rules changes with significant partis
 
 -   contend that the majority party's influence varies as a function of the party's internal homo geneity and the degree of polarization in the majority and minority parties' positions.
 
-#### Basic insight: 
+#### Basic insight:
 
 When majority party members agree on basic policy stands-that is, when they have homogeneous preferences they will have stronger incentives to give the party and its leaders increased control over the legislative agenda and decision making. By contrast, when there is disagreement on major policy issues, they will have incentives to give fewer tools to the party and its leaders.
 
-### Author's Argument: 
+### Author's Argument:
 
 -   I argue that shifts in the ideological balance of power on the floor, rather than change in the internal characteristics of the majority party, is the key determinant of changes in House rules
 
--    In this model, the median legislator on the floor is the pivotal decision maker.
+-   In this model, the median legislator on the floor is the pivotal decision maker.
 
--    I argue that changes in rules that determine the allocation depend on the ideological balance of power on the floor, that is, **on the closeness of the median voter on the floor to the two parties.**
+-   I argue that changes in rules that determine the allocation depend on the ideological balance of power on the floor, that is, **on the closeness of the median voter on the floor to the two parties.**
 
--    As the floor median (measured along a single, ideological dimension) moves toward the majority party, rules changes in favor of that party are more likely; when the median moves away from the majority party, rules changes that favor the minority party are more likely
+-   As the floor median (measured along a single, ideological dimension) moves toward the majority party, rules changes in favor of that party are more likely; when the median moves away from the majority party, rules changes that favor the minority party are more likely
 
-    -   this seems kinda obvious?
+```         
+-   this seems kinda obvious?
+```
 
-### DV: 
+### DV:
 
--    I sought to identify all rules changes with significant partisan overtones adopted by the House from 1867 to 1998.
+-   I sought to identify all rules changes with significant partisan overtones adopted by the House from 1867 to 1998.
 
-### Hypothesis: 
+### Hypothesis:
 
 1.  CHANGE IN HOMOGENEITY. Rules changes that enhance the agenda control of the majority party and its leaders are more likely as the majority party becomes increasingly homogeneous. Rules changes that reduce such majority party advantages are more likely as the party becomes more heterogeneous.
 
-2.   CHANGE IN PARTY CONTROL. A switch in majority party control of the House is likely to lead to rules changes in the new majority party's favor.
+2.  CHANGE IN PARTY CONTROL. A switch in majority party control of the House is likely to lead to rules changes in the new majority party's favor.
 
-3.   PARTY CAPACITY. The stronger the major ity party relative to the minority party, the more likely are rules changes that advantage the majority party. The weaker the majority party relative to the minority, the more likely are changes that disadvantage the majority party
+3.  PARTY CAPACITY. The stronger the major ity party relative to the minority party, the more likely are rules changes that advantage the majority party. The weaker the majority party relative to the minority, the more likely are changes that disadvantage the majority party
 
-4.   MAJORITY SIZE. As the majority party's share of seats becomes smaller, rules changes that advantage the majority party are likely
+4.  MAJORITY SIZE. As the majority party's share of seats becomes smaller, rules changes that advantage the majority party are likely
 
 5.  CHANGE IN PARTY POLARIZATION. As the majority party median moves farther from the minority party median, rules changes that advantage the majority party are like
 
@@ -3597,7 +3591,7 @@ When majority party members agree on basic policy stands-that is, when they have
 
 ### Chapter 2: Procedural Cartel Theory
 
-#### Why are there parties in legislatures? 
+#### Why are there parties in legislatures?
 
 -   Parties are created to solve internal collective action problems
 
@@ -3607,7 +3601,7 @@ When majority party members agree on basic policy stands-that is, when they have
 
     -   parties are formed primarily to accrue electoral gains
 
-#### How are parties organized? 
+#### How are parties organized?
 
 -   Parties as firms
 
@@ -3621,7 +3615,7 @@ When majority party members agree on basic policy stands-that is, when they have
 
         -   the senior partners are committee and subcommittee chairs, majority party floor leaders, campaign finance chairs, and the like.
 
-#### What do parties do? 
+#### What do parties do?
 
 -   How do they mitigate the collective action problem?
 
@@ -3635,13 +3629,13 @@ When majority party members agree on basic policy stands-that is, when they have
 
     -   the central issue is the majority party's ability to control the legislative agenda
 
-#### How do majority parties control the agenda? 
+#### How do majority parties control the agenda?
 
 -   Parties as allocating proposal rights
 
 -   Parties as allocating veto rights
 
-#### Procedural Cartel Theory: 
+#### Procedural Cartel Theory:
 
 1.  Assumption 1: Members of Congress seek reelection to the House, internal advancement within the House, good public policy, and majority status.
 
@@ -3675,7 +3669,7 @@ When majority party members agree on basic policy stands-that is, when they have
 
         5.  Cartel leadership takes action to maintain cooperation and coordination within the cartel.
 
-#### Other: 
+#### Other:
 
 -   Focus on party brand name.
 
@@ -3691,7 +3685,7 @@ When majority party members agree on basic policy stands-that is, when they have
 
 -   they get better data than Binder & Schickler
 
-#### Main Thesis: 
+#### Main Thesis:
 
 -   Our view is that the rules of the legislative game have been heavily stacked in the majority party's favor since the readoption of Reed's rules in 1894.
 
@@ -3715,7 +3709,7 @@ These come about because there is a logjam of bills in the reconstruction congre
 
 4.  a rule allowing the speaker to refer House bills, Senate bills, and messages from the president to appropriate committees (including conference committees) without debate.
 
-#### Punchline: 
+#### Punchline:
 
 -   Reed's rules give more power to the majority.
 

@@ -653,7 +653,7 @@ logit($\pi_i$) \< 0
 
 -   might be good to use LPM to deal with omitted variable bias
 
-# Topic 7: 
+# Topic 7:
 
 ## Ordered Models:
 
@@ -691,11 +691,11 @@ logit($\pi_i$) \< 0
 
 -   i.i.a is important. - need to know it better.
 
-# Topic 8: 
+# Topic 8:
 
 we are like basically modeling a rate (count/exposure time)
 
-## Count Data: 
+## Count Data:
 
 -   What if we observed multiple bernoulli trials over time?
 
@@ -705,7 +705,7 @@ we are like basically modeling a rate (count/exposure time)
 
 -   log count.
 
-### Deriving the Poisson Function 
+### Deriving the Poisson Function
 
 -   think about time. We are segmenting time and seeing the Bernoulli trial with that increasingly smaller time segment.
 
@@ -725,11 +725,11 @@ we are like basically modeling a rate (count/exposure time)
 
 -   when your count data is far from zero, then you prob don't have to use count models.
 
-## Poisson Log-Likelihood 
+## Poisson Log-Likelihood
 
 -   take the exponents to get rid of any negatives
 
-## Interpreting 
+## Interpreting
 
 -   IRR
 
@@ -747,6 +747,6 @@ we are like basically modeling a rate (count/exposure time)
 
 -   i mean you can always run a negative binomial and its best if you have overdispersion but if you don't then poisson is basically better.
 
-## Negative Binomial 
+## Negative Binomial
 
 -   The negative binomial relaxes the assumption that the conditional mean and variance are equivalent; in other words, it allows for overdispersion.
