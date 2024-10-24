@@ -339,6 +339,17 @@ window.Quarto = {
   <li><a href="#scatterplots" id="toc-scatterplots" class="nav-link" data-scroll-target="#scatterplots">Scatterplots</a></li>
   <li><a href="#a-soft-introduction-to-regression" id="toc-a-soft-introduction-to-regression" class="nav-link" data-scroll-target="#a-soft-introduction-to-regression">A Soft Introduction to Regression</a></li>
   </ul></li>
+  <li><a href="#week-9" id="toc-week-9" class="nav-link" data-scroll-target="#week-9">Week 9</a>
+  <ul class="collapse">
+  <li><a href="#stones-song-of-the-week-7" id="toc-stones-song-of-the-week-7" class="nav-link" data-scroll-target="#stones-song-of-the-week-7">Stone’s Song of the Week</a></li>
+  <li><a href="#explanationcausation" id="toc-explanationcausation" class="nav-link" data-scroll-target="#explanationcausation">Explanation/Causation</a></li>
+  <li><a href="#scatterplots-1" id="toc-scatterplots-1" class="nav-link" data-scroll-target="#scatterplots-1">Scatterplots</a></li>
+  <li><a href="#boxplot" id="toc-boxplot" class="nav-link" data-scroll-target="#boxplot">Boxplot</a>
+  <ul class="collapse">
+  <li><a href="#two-sample-t-test" id="toc-two-sample-t-test" class="nav-link" data-scroll-target="#two-sample-t-test">Two Sample t-test</a></li>
+  </ul></li>
+  <li><a href="#homework-3" id="toc-homework-3" class="nav-link" data-scroll-target="#homework-3">Homework 3:</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -2146,6 +2157,173 @@ mean of x
 <ul>
 <li>there is A LOT more going on than just that.</li>
 </ul></li>
+</ul>
+</section>
+</section>
+<section id="week-9" class="level1">
+<h1>Week 9</h1>
+<section id="stones-song-of-the-week-7" class="level2">
+<h2 class="anchored" data-anchor-id="stones-song-of-the-week-7">Stone’s Song of the Week</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/6KnYw4EwYGc?si=rFRVQjAMs00xvtig"><img src="heaven_LV.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="615" alt="Cocteau Twins - Heaven or Las Vegas"></a></p>
+</figure>
+</div>
+<figcaption>Cocteau Twins - Heaven or Las Vegas</figcaption>
+</figure>
+</div>
+<p>I’m the main character today</p>
+</section>
+<section id="explanationcausation" class="level2">
+<h2 class="anchored" data-anchor-id="explanationcausation">Explanation/Causation</h2>
+<ul>
+<li><p>We want to explain why things are the way they are</p></li>
+<li><p>Independent Variables makes the Dependent Variable more likely.</p></li>
+<li><p>Need theory!</p>
+<ul>
+<li>this will guide our hypothesis.</li>
+</ul></li>
+<li><p>Saying something causes another thing is <strong>HARD.</strong></p>
+<ul>
+<li>is it actually <em>causing</em> something to happen or is it just a correlation?</li>
+</ul></li>
+<li><p>We are going to make lots of graphs because that helps us visualize the data.</p>
+<ul>
+<li>we are trying to communicate information succinctly.</li>
+</ul></li>
+</ul>
+</section>
+<section id="scatterplots-1" class="level2">
+<h2 class="anchored" data-anchor-id="scatterplots-1">Scatterplots</h2>
+<ul>
+<li><p>Used if both variables are continuous</p></li>
+<li><p>X-axis (horizontal line) = independent variable</p></li>
+<li><p>Y-axis (vertical line) = dependent variable</p></li>
+<li><p>Each point in a scatterplot is an <strong>observation</strong>.</p></li>
+</ul>
+<section id="scatterplot-in-r" class="level4">
+<h4 class="anchored" data-anchor-id="scatterplot-in-r">Scatterplot in R:</h4>
+<ul>
+<li>Remember there are a few ways to get the same output.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3) </span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="co"># using the world dataset, create a scatterplot of these two variables</span></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(world<span class="sc">$</span>gdp.percap <span class="sc">~</span> world<span class="sc">$</span>trade.percent.gdp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-29-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Each dot is a country (country is our unit of analysis)</p></li>
+<li><p>We can change the scatterplot by adding arguments. These include titles, labels, changing how the points look, etc.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lets change some aspects of the scatterplot</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="co"># using the world dataset, create a scatterplot of these two variables</span></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Notice the arguments and what they do</span></span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(world<span class="sc">$</span>gdp.percap <span class="sc">~</span> world<span class="sc">$</span>trade.percent.gdp, <span class="at">main =</span> <span class="st">"Trade v. GDP"</span>, <span class="at">xlab =</span> <span class="st">"Trade as % GDP"</span>, <span class="at">ylab =</span> <span class="st">"GDP per capita"</span>, <span class="at">pch =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="boxplot" class="level2">
+<h2 class="anchored" data-anchor-id="boxplot">Boxplot</h2>
+<ul>
+<li><p>Useful to compare a continuous DV to a categorical/binary IV</p></li>
+<li><p>Box: 1st (bottom - 25th percentile) and 3rd (top- 75th percentile) quartiles</p></li>
+<li><p>Whiskers are range (max and min values)</p></li>
+</ul>
+<section id="boxplots-in-r" class="level4">
+<h4 class="anchored" data-anchor-id="boxplots-in-r">Boxplots in R:</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Boxplot of per capita GDP and whether Leader is Military Officer. </span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a><span class="co"># using world dataset</span></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a><span class="co"># range=0 will include outliers in the whiskers</span></span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a><span class="co"># so long as R knows IV is binary/categorical it will make a boxplot</span></span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a><span class="co"># if R is not doing it then you need to check how R is reading it and change it accordingly</span></span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(world<span class="sc">$</span>gdp.percap<span class="sc">~</span>world<span class="sc">$</span>dpi.cemo, <span class="at">range=</span><span class="dv">0</span>, <span class="at">ylab =</span> <span class="st">"GDP per capita"</span>, <span class="at">xlab =</span> <span class="st">"Leader is Military Officer"</span>, <span class="at">main =</span> <span class="st">"Boxplot Example"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-31-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="two-sample-t-test" class="level3">
+<h3 class="anchored" data-anchor-id="two-sample-t-test">Two Sample t-test</h3>
+<ul>
+<li><p>You did this earlier but it was a one sample t-test.</p>
+<ul>
+<li>You compared sample mean to some hypothesized value</li>
+</ul></li>
+<li><p>NOW, you are going to compare sample mean from one sample to the mean of another sample</p>
+<ul>
+<li><p>are these two means statistically different?</p>
+<ul>
+<li>t-test will tell us!</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Test how probable the observed difference between sample means would be if the population means were equal</strong></p></li>
+<li><p>Hypothesis: the mean of one group is greater/less than the mean of the other group</p></li>
+<li><p>There is a formula associated with this. You don’t need to know it, R does it for you. However, I have posted it below if it helps you better understand what R is actually doing.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Two-Sample-T-Test-Formula.jpeg" class="img-fluid figure-img" width="368"></p>
+<figcaption>Formula for two sample t-test (you don’t need to memorize this)</figcaption>
+</figure>
+</div>
+<section id="two-sample-t-test-in-r" class="level4">
+<h4 class="anchored" data-anchor-id="two-sample-t-test-in-r">Two-sample t-test in R</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># two sample t-test example </span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co"># are the means different? </span></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a><span class="co"># is the "no" category greater than the "yes" category? </span></span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a><span class="co"># same basic interpretation and procedure. </span></span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(gdp.percap<span class="sc">~</span>dpi.cemo, <span class="at">data =</span> world, <span class="at">alternative =</span> <span class="st">"greater"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  gdp.percap by dpi.cemo
+t = 7.626, df = 152.65, p-value = 1.206e-12
+alternative hypothesis: true difference in means between group No and group Yes is greater than 0
+95 percent confidence interval:
+ 12859.44      Inf
+sample estimates:
+ mean in group No mean in group Yes 
+        22893.698          6470.269 </code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="homework-3" class="level2">
+<h2 class="anchored" data-anchor-id="homework-3">Homework 3:</h2>
+<ul>
+<li><p><strong>I am allowing you to form your own groups.</strong></p></li>
+<li><p>PUT YOUR NAMES ON EVERY DOCUMENT</p></li>
+<li><p>You can do this solo (if you want)</p></li>
+<li><p><strong>4 people MAX</strong></p></li>
 </ul>
 
 

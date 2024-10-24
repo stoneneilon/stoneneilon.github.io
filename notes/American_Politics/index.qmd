@@ -2593,7 +2593,7 @@ Cross-cutting media can influence people!
 
 ### Abstract:
 
-Many Americans consume aligned partisan media, which scholars worry contributes to polarization. Many propose encouraging these Americans to consume cross-cutting media to moderate their attitudes. However, motivated reasoning theory posits that exposure to cross-cutting media could backfire, exacerbating polarization. Building on theories that sustained exposure to novel information can overcome motivated reasoning and that partisan sources on opposite sides cover distinct information, we argue that sustained consumption of cross-cutting media leads voters to learn uncongenial information and moderate their attitudes incovered domains. To test this argument, we used data on actual TV viewership to recruit asample of regular Fox News viewers and incentivized a randomized treatment group to watchCNN instead for a month. Contrary to predictions from motivated reasoning, watching CNNcaused substantial learning and moderated participants' attitudes in covered domains. We close by discussing challenges partisan media may pose for democracy.
+Many Americans consume aligned partisan media, which scholars worry contributes to polarization. Many propose encouraging these Americans to consume cross-cutting media to moderate their attitudes. However, motivated reasoning theory posits that exposure to cross-cutting media could backfire, exacerbating polarization. Building on theories that sustained exposure to novel information can overcome motivated reasoning and that partisan sources on opposite sides cover distinct information, we argue that sustained consumption of cross-cutting media leads voters to learn uncongenial information and moderate their attitudes incovered domains. To test this argument, we used data on actual TV viewership to recruit a sample of regular Fox News viewers and incentivized a randomized treatment group to watch CNN instead for a month. Contrary to predictions from motivated reasoning, watching CNN caused substantial learning and moderated participants' attitudes in covered domains. We close by discussing challenges partisan media may pose for democracy.
 
 ### Research Question:
 
@@ -2653,11 +2653,65 @@ Many Americans consume aligned partisan media, which scholars worry contributes 
 
 -   reduced fox learning effects.
 
--   Our experiment supported this argument: Fox News viewers incentivized to watch CNN instead for a month learned information CNN presented, and their attitudes on political issues CNN covered and towards Donald Trump moderated. Despite conducting our study among the population that motivated reasoning theories would most expect to display evidence of backlash or to resist persuasion---highly conservative, regular Fox News viewers---we do not find a single case across all of our measures of statistically significant evidence of backlash, and many cases wherewe find learning and moderation
+-   Our experiment supported this argument: Fox News viewers incentivized to watch CNN instead for a month learned information CNN presented, and their attitudes on political issues CNN covered and towards Donald Trump moderated. Despite conducting our study among the population that motivated reasoning theories would most expect to display evidence of backlash or to resist persuasion---highly conservative, regular Fox News viewers---we do not find a single case across all of our measures of statistically significant evidence of backlash, and many cases where we find learning and moderation
 
 ## Bail, Christopher, et al. 2018. "Exposure to Opposing Views on Social Media Can Increase Political Polarization," Proceedings of the National Academy of Sciences.
 
 # Week 8: Elections and Campaigns 
+
+## Lecture Notes: 
+
+-   What actually are the fundamental variables:
+
+    -   NOT NATE SILVER
+
+    -   Not tracking individual polling responses but fundamental descriptive variabels about the country/electorate
+
+        -   economic performance
+
+        -   presidential population
+
+        -   index on incumbency.
+
+-   There is not a lot of data...
+
+    -   elections happen every 4 years
+
+    -   its not statistically crazy to have predicted all election outcomes.
+
+-   Hall talks about valence - basically means candidate competence
+
+    -   this probably much different now.
+
+-   Political scientists do care about campaigns!
+
+    -   campaigns kinda cancel each other out
+
+        -   in equilibrium
+
+            -   fundamentals will be the decider.
+
+-   Advertising isn't a huge factor
+
+    -   its mostly mobilizing
+
+    -   cancel each other out
+
+        -   kinda a prisoner dilemna
+
+    -   this is kinda squishy
+
+        -   why do we have attack ads and negative ads?
+
+-   Huber:
+
+    -   ad exposure -\> likeability -\> vote choice
+
+        -   likeability is a mediator.
+
+    -   run without mediator should be larger
+
+    -   then include mediator and it should be smaller.
 
 ## [Gelman, Andrew and Gary King. 1993. \"Why are American Presidential Election Campaign Polls so Variable When Votes are so Predictable?\" British Journal of Political Science.](https://gking.harvard.edu/files/bj215.pdf)
 
@@ -2678,6 +2732,8 @@ Why do polls vary?
 Our working hypothesis is that voters cast their ballots in general election contests for president on the basis of their 'enlightened preferences'.
 
 ### Background: 
+
+-   only focused on presidential elections
 
 #### Section 1: Forecasting Evidence and Data Summaries
 
@@ -2822,6 +2878,12 @@ Our working hypothesis is that voters cast their ballots in general election con
             -   another hypothesis: survey respondents selectively refuse to answer
 
                 -   show a time series plot that refutes this.
+
+            -   surveys reflect engagement
+
+            -   bad event for dem candidate?
+
+                -   maybe dems don't answer.
 
     -   Journalist theories:
 
@@ -3005,7 +3067,11 @@ Our working hypothesis is that voters cast their ballots in general election con
 
 -   Natural Experiment
 
+    -   event in real world that assigns people into groups in a random fashion.
+
 -   uses areas adjacent to battleground states BUT in the same media market
+
+-   intention to vote. NOT ACTUAL VOTE!
 
 ### Does Advertising Engage? 
 
@@ -3015,7 +3081,9 @@ Our working hypothesis is that voters cast their ballots in general election con
 
 -   IV: Advertising exposure
 
-    -   measured as theratings-adjusted number of presidential advertisements(in GRPs/1000) broadcast in the local media market inwhich each NAES respondent lives
+    -   measured as the ratings-adjusted number of presidential advertisements(in GRPs/1000) broadcast in the local media market inwhich each NAES respondent lives
+
+-   DV: vote turnout
 
 -   Finding: Advertising does not increase interest in campaign or intent to vote
 
@@ -3025,23 +3093,25 @@ Our working hypothesis is that voters cast their ballots in general election con
 
 -   both perspectives predict that knowledge of candidate positions and the alignment between a respondent's opinions and those of her party's candidate will be greater inareas with more frequent advertisements.
 
--   Respondentswere coded as knowledgeable (1 = "Yes" or 0 = "No") ifthey could accurately place both candidates on the issue orcould place Bush to the right of Gore on the ideology scale.The only evidence of citizen learning emerges in the case of Social Security reform, for which presidential advertisingis associated with a greater ability to place Bush (in fa-vor of personal accounts) and Gore (opposed to personalaccounts) in both the panel and cross-sectional analyses.
+-   Respondents were coded as knowledgeable (1 = "Yes" or 0 = "No") if they could accurately place both candidates on the issue orcould place Bush to the right of Gore on the ideology scale.The only evidence of citizen learning emerges in the case of Social Security reform, for which presidential advertising is associated with a greater ability to place Bush (in favor of personal accounts) and Gore (opposed to personal accounts) in both the panel and cross-sectional analyses.
 
--   Per the column (1) estimateusing panel data, and assuming an individual did not previously hold her party's position on Social Security, a onestandard deviation increase in advertising is associatedwith a predicted increase in adopting her party's candidate's position by about 2.5% (from a baseline of 32.5%,simulated 95% confidence intervals of .2 to 5.0%).
+-   Per the column (1) estimate using panel data, and assuming an individual did not previously hold her party's position on Social Security, a one standard deviation increase in advertising is associated with a predicted increase in adopting her party's candidate's position by about 2.5% (from a baseline of 32.5%,simulated 95% confidence intervals of .2 to 5.0%).
 
 -   **In summary, there is weak and inconsistent evidence for the claim that advertising enhances citizen learning or the adoption of partisan positions.**
 
 ### Does Advertising Persuade
 
--   higher levels of Gore advertising are associated with a decline inBush's favorability and these effects are statistically significant.
+-   higher levels of Gore advertising are associated with a decline in Bush's favorability and these effects are statistically significant.
+
+-   DV: likability
 
 -   What is the content of these advertisements though?
 
     -   are they affective/negative?
 
--   Per the column (4) estimates,a 1.57 GRPs/1000 increase in Bush's advertising decreasesthe probability of obtaining an above-average likeability rating by 3.2% (from a baseline of 56.8%) while an in-crease of that magnitude in Gore's advertising increasesthe probability by 4.9%
+-   Per the column (4) estimates,a 1.57 GRPs/1000 increase in Bush's advertising decreases the probability of obtaining an above-average likeability rating by 3.2% (from a baseline of 56.8%) while an in-crease of that magnitude in Gore's advertising increasesthe probability by 4.9%
 
--   **Lastly, we examine whether advertising affects re-ported vote intention and find strong evidence that it does. In the panel, a respondent who was initially undecided is predicted to subsequently support Gore 36.1% of the time and Bush 45.9% of the time. Per the column (5)results with the panel data, increasing Bush's advertising above the average by 1.57 GRPs/1000 is associated with a9.1% increase in the predicted probability of supporting Bush (95% confidence interval .5 to 18.2%) and a 7.8%decrease in the probability of supporting Gore (95% con-fidence interval −17.3 to −.3%).**
+-   **Lastly, we examine whether advertising affects reported vote intention and find strong evidence that it does. In the panel, a respondent who was initially undecided is predicted to subsequently support Gore 36.1% of the time and Bush 45.9% of the time. Per the column (5)results with the panel data, increasing Bush's advertising above the average by 1.57 GRPs/1000 is associated with a 9.1% increase in the predicted probability of supporting Bush (95% confidence interval .5 to 18.2%) and a 7.8%decrease in the probability of supporting Gore (95% confidence interval −17.3 to −.3%).**
 
 ### Assessing the Mechanism of Persuasion
 
@@ -3133,6 +3203,12 @@ Psych explains why voters weigh election year economies more.
 
 ## [Hall, Andrew. 2015. \"What Happens When Extremists Win Primaries?\" American Political Science Review.](https://www.andrewbenjaminhall.com/Hall_APSR.pdf)
 
+-   candidate centered elections.
+
+-   fenno style
+
+-   congressional races are idiosyncratic
+
 ### Abstract: 
 
 This article studies the interplay of U.S. primary and general elections.I examine how the nomination of an extremist changes general-election outcomes and legislative behavior in the U.S. House, 1980--2010, using a regression discontinuity design in primary elections. When an extremist--- as measured by primary-election campaign receipt patterns---wins a "coin-flip" election over a more moderate candidate, the party's general-election vote share decreases on average by approximately 9-13 percentage points, and the probability that the party wins the seat decreases by 35--54 percentage points. This electoral penalty is so large that nominating the more extreme primary candidate causes the district's subsequent roll-call representation to reverse, on average, becoming more liberal when an extreme Republican is nominated and more conservative when an extreme Democrat is nominated. Overall, the findings show how general-election voters act as a moderating filter in response to primary nominations.
@@ -3171,6 +3247,8 @@ This article studies the interplay of U.S. primary and general elections.I exami
 
                 -   there is a info lag for voter. It may take another election cycle to realize the extremeness of a candidate.
 
+-   Extremist could also juice turnout and enthusiasm in the general.
+
 ### Data
 
 -   Estimated ideological positions of primary candidates from 1980 - 2010. - Hall & Snyder (2013).
@@ -3207,6 +3285,12 @@ $$
 
 -   Later on he connects extremist election to roll call voting.
 
+-   Basically we are going to look at coin-flip elections. We are treating these as "as-if" random. IF the election are this close we can basically say this is random.
+
+    -   some issues here but we are assuming random
+
+-   the drop in figure 2 is the actual treatment effect - the regression discontinuity.
+
 ### Results: 
 
 -   Among"coin-flip"primary elections between a relative moderate and an extremist,the nomination of the extremist appears to cause a large decrease in the party's general-election vote share.
@@ -3229,7 +3313,7 @@ $$
 
             -   not clear.
 
--   Overall,I find that the nomination of the extremist causes a reversal in roll-call voting, producing more conservative roll-call voting when Democrats nominate a more extreme candidate and more liberal roll-call voting when Republicans nominate a more extreme candidate.
+-   Overall, I find that the nomination of the extremist causes a reversal in roll-call voting, producing more conservative roll-call voting when Democrats nominate a more extreme candidate and more liberal roll-call voting when Republicans nominate a more extreme candidate.
 
     -   short term effect
 
@@ -3244,6 +3328,8 @@ $$
 Competition among candidates or parties is a necessary condition for democracy. But who counts as a candidate and what counts as competition? The influence of money in American elections makes fundraising an appropriate alternative to vote totals, and it provides a new vantage point to assess the quality of electoral competition. I draw on a dataset of preelection campaign receipts to measure competition in U.S. House primaries from 1980 to 2020. When competition is measured with receipts, it looks markedly worse than vote share measures suggest. Moreover, the difference between vote share and fundraising measures is largest in open-seat primaries, or the best-case scenarios of competition. The disparity between measures is driven largely by candidates who have little chance of winning. The findings shed new light on resource disparities in elections and demonstrate that our conclusions about the quality of competition are tied to our measures.
 
 ### Bumper Sticker
+
+Money is important in competitiveness in primaries.
 
 ### Research Question
 
@@ -3267,10 +3353,378 @@ Competition among candidates or parties is a necessary condition for democracy. 
 
 ### Data 
 
--   preelection receipts in more than 16,000 U.S. House primaries from 1980 to 2020
+-   pre-election receipts in more than 16,000 U.S. House primaries from 1980 to 2020
+
+-   take money and look at affective number of candidates and observe across.
 
 ### Findings: 
 
 -   And although financial long shots do outperform their receipt shares at the ballot box, they overwhelmingly lose and usually by large margins.
 
 -   The main finding is that when competition is viewed through the lens of fundraising, it looks significantly worse than vote share measures suggest. The likelihood that primaries are competitive decreases across race types, with the largest difference emerging in open seats. The notion that several viable candidates are vigorously competing for voter support is not borne out when competition is measured with fundraising patterns.
+
+# Week 9: Congress
+
+Why and when does legislative organization change?
+
+## Krehbiel, Keith. 1991. Information and Legislative Organization, Chs. 1, 4.
+
+### Chapter 1: 
+
+-   Article 1 section 5: "each House may determine the rules of its proceedings."
+
+-   Debates about legislative organization are debates about public policy and who determines it.
+
+-   **Legislative organization:** refers to the allocation of resources and assignment of parliamentary rights to individual legislators or groups of legislators.
+
+    -   rights to propose legislation
+
+    -   rights to amend legislation proposed by others
+
+    -   rights to employ staff to help study and draft legislation and amendments.
+
+#### Two Perspectives on Legislative Organization:
+
+##### Distributive Perspective
+
+-   The distributive perspective on legislative organization depicts a legislature as a collective choice body whose principle task is to allocate policy benefits.
+
+-   Goal: maximize *gains from trade* reliably and predictably.
+
+    -   I think this basically means efficient compromise
+
+    -   legislatures mess this up all the time.
+
+        -   **the solution is institutional:**
+
+            -   a set of rules and precedents that facilitates gains from trade by assigning parliamentary rights in accordance with intensity-and, in practice, the extremity-of legislators' preferences.
+
+-   Legislators compromise based on a proportional gain
+
+    -   give up something less important to gain something more important
+
+        -   maximize this.
+
+##### The Informational Perspective: 
+
+-   The distributive perspective is formulaic and overly emphasizes local incentives from reelection incentives of the member
+
+-   There is also specialization among legislators. Legislators have to organize themselves into what they are best do deal with.
+
+-   Information issues in congress. By legislators sorting into committees they specialize, it helps overcome information issues and improves the chamber as a whole.
+
+-   **The challenge of legislative organization within the informational framework is thus distinctly different from capturing gains from trade for the distributive benefit of high-demand minorities**
+
+    -   **Rather, it is to capture gains from specialization while minimizing the degree to which enacted policies deviate from majority-prefered outcomes.**
+
+-   The solution in this perspective is to develop policy expertise and to share policy-relevant information with fellow legislators, including legislators with competing distributive interests.
+
+-   Basically: assign resources to make legislators specialized
+
+-   legislators close to the median of chamber get special parliamentary rights to minimize partisan weaponization.
+
+-   expertise of a legislator, improves collective benefit of the chamber.
+
+#### Research Question: 
+
+-   Are the major principles of legislative organization exclusively or predominantly distributive, or are they first and foremost informational?
+
+-   How and why did these legislative institutions arise?
+
+-   How and why are these legislative institutions employed?
+
+#### Primary empirical focus: 
+
+-   standing committees and their formation
+
+-   rules governing the amendment of legislation in the parent chamber
+
+-   rules an precedents governing the resolution of interchamber differences in legislation
+
+#### An Institutional Focus:
+
+-   legislative institutions: rules and precedents that act as binding constraints on legislators' behavior.
+
+#### Majoritarianism Postulate: 
+
+-   Objects of legislative choice in both the procedural and policy domains must be chosen by a majority of the legislature
+
+#### Uncertainty Postulate:
+
+-    legislators are often uncertain about the relationship between policies and their outcomes
+
+### Chapter 4:
+
+-   Committees existence gives credence to informational perspective.
+
+-   **Are the major principles of legislative organization predominately distributive or informational?**
+
+-   **WHAT IS THE ORIGIN OF COMMITTEES?**
+
+    -   **its not Jeffersonian thinking.**
+
+##### Informational Origins of Committees
+
+-   Specialization (not distributive politics) was at the heart of conceptualization of the committee system.
+
+-   Committees were conceived as agents of the house.
+
+-   basically strong theoretical explanations for division of labor from an informational perspective
+
+-   but doesn't capture the full picture
+
+    -   congress is very different from its origins.
+
+    -   we also need to discuss the fact that legislators have differing preferences.
+
+##### The distributive perspective
+
+-   self-selection of committees from high demanders
+
+-   but still doesnt explain why a collective entity would embrace self-selection
+
+-   legislator gives up stuff so they can be an expert on the thing that matters the most for them.
+
+#### Test: 
+
+-   use interest groups
+
+-   high demanders do get what they want in some policy arenas.
+
+## [Aldrich, John and David Rohde. 2000. \"The Republican Revolution and the House Appropriations Committee,\" Journal of Politics.](https://onlinelibrary.wiley.com/doi/pdf/10.1111/0022-3816.00001)
+
+### Abstract: 
+
+This study applies the theory of \"conditional party government\" to the interaction between the Republican party and the Appropriations Committee in the 104th House, seen in the context of developments since the 96th Congress. As expected by the theory, we find that the relatively homogenous
+preferences of the Republican contingent in the House led them to adopt new institutional arrangements to enhance the powers of their leaders, which in turn were used to advance the party\'s policy
+goals. Given that the leadership decided to use Appropriations as one of the vehicles of major policy
+change, they and the Conference sought to monitor the committee\'s actions, and to influence it to
+behave as they wanted. The leaders used their enhanced powers over incentives and with regard to the
+agenda to advance the party cause. Both leaders and the Conference sought to block policy shifts
+away from what they wanted, but facilitated changes in the desired direction. Finally, we expected to
+see evidence of the increasing applicability of the theory over time, culminating in the developments
+of the 104th Congress, and this expectation was borne out.
+
+### Bumper Sticker: 
+
+### Background: 
+
+-   Conditional Party Government: it contends that partisan organizational structures in the House---especially those of the majority party---will (under certain conditions) seek to use their powers to shift the policy outcomes produced by the body closer to the median position of the party than would otherwise be the case
+
+    -   The \"condition\" in conditional party government involves the degree of preference agreement within parties and of preference conflict between them. The general contention is that as intraparty homogeneity and interparty conflict increase, so too will the propensity of party members to grant stronger powers to their leaders and to collective party organizations, and to support their exercise of those powers in specific instances
+
+    -   BASICALLY: Party = homogenous = stack cards against opponent
+
+-   As intraparty homogeneity and interparty conflict increase, we would expect to find stronger party action designed to try to pull the policy chosen away from the floor median position and toward the median position of the party on issues that make up the party\'s agenda.
+
+-   104th congress is polarizing
+
+-   Newt gets a bunch of power
+
+-   centralization of power into Leader
+
+-   
+
+## [Schickler, Eric. 2000. \"Institutional Change in the House of Representatives, 1867--1998: a Test of Partisan and Ideological Power Balance Models,\" American Political Science Review](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2586012.pdf?refreqid=fastly-default%3A77a87af9d0c8bf74905f7af82a2e5d6d&ab_segments=&initiator=&acceptTC=1)
+
+### Abstract: 
+
+I examine competing explanations for House rules changes with significant partisan overtones. I sought to identify all rules changes adopted from 1867 to 1998 that were intended either to advantage or to undermine the majority party and its leaders in their efforts to shape the House agenda. I test a majority party cartel model of institutional change against a model that focuses on the ideological balance of power on the floor, that is, on the closeness of the median voter to the median member of the majority and minority parties. I also evaluate the conditional party government approach. The data analysis suggests the preeminent importance of shifts in the ideological balance. Two variables identified by the conditional party government theory, party polarization and party capacity, obtain limited support, but their effect is neither as robust nor as large in magnitude as that of change in the median voter's position.
+
+### Background: 
+
+-   Committees used to have a lot more power and considerable deference to seniority.
+
+-   This changed in the 90s with Newt.
+
+### Majority Party Cartel Model 
+
+-   legislative institutions are designed controlled by majority party
+
+-   usurp power and use that power to create institutions to best serve the party members' interest.
+
+-   The Cox and McCubbils theory leads to the substantively important prediction that the majority party will design rules and procedures that generally allow it to pull policy outcomes away from the floor median and toward the majority party's median position.
+
+    -   something of consensus among scholars:
+
+        -   as the majority party becomes more homogenous, rules changes that enhance its leaders' agenda control become more likely.
+
+### Conditional Party Governmental Perspective
+
+-   also emphasizes the majority party's ability to shape legislative institutions, but advocates of this theory highlight variation in the degree of partisan control
+
+-   contend that the majority party's influence varies as a function of the party's internal homo geneity and the degree of polarization in the majority and minority parties' positions.
+
+#### Basic insight: 
+
+When majority party members agree on basic policy stands-that is, when they have homogeneous preferences they will have stronger incentives to give the party and its leaders increased control over the legislative agenda and decision making. By contrast, when there is disagreement on major policy issues, they will have incentives to give fewer tools to the party and its leaders.
+
+### Author's Argument: 
+
+-   I argue that shifts in the ideological balance of power on the floor, rather than change in the internal characteristics of the majority party, is the key determinant of changes in House rules
+
+-    In this model, the median legislator on the floor is the pivotal decision maker.
+
+-    I argue that changes in rules that determine the allocation depend on the ideological balance of power on the floor, that is, **on the closeness of the median voter on the floor to the two parties.**
+
+-    As the floor median (measured along a single, ideological dimension) moves toward the majority party, rules changes in favor of that party are more likely; when the median moves away from the majority party, rules changes that favor the minority party are more likely
+
+    -   this seems kinda obvious?
+
+### DV: 
+
+-    I sought to identify all rules changes with significant partisan overtones adopted by the House from 1867 to 1998.
+
+### Hypothesis: 
+
+1.  CHANGE IN HOMOGENEITY. Rules changes that enhance the agenda control of the majority party and its leaders are more likely as the majority party becomes increasingly homogeneous. Rules changes that reduce such majority party advantages are more likely as the party becomes more heterogeneous.
+
+2.   CHANGE IN PARTY CONTROL. A switch in majority party control of the House is likely to lead to rules changes in the new majority party's favor.
+
+3.   PARTY CAPACITY. The stronger the major ity party relative to the minority party, the more likely are rules changes that advantage the majority party. The weaker the majority party relative to the minority, the more likely are changes that disadvantage the majority party
+
+4.   MAJORITY SIZE. As the majority party's share of seats becomes smaller, rules changes that advantage the majority party are likely
+
+5.  CHANGE IN PARTY POLARIZATION. As the majority party median moves farther from the minority party median, rules changes that advantage the majority party are like
+
+6.  CHANGE IN IDEOLOGICAL POWER BALANCE. Rules changes that advantage the majority party and its leaders are more likely when the floor median moves in the direction favoring the majority party. Rules changes that reduce majority party advantages are more likely when the floor median moves in the direction favoring the minority party
+
+### Results
+
+-   The data analysis shows that the ideological power balance model fares quite well in explaining partisan rules changes. By contrast, the key explanatory variable derived from partisan theories, change in the homogeneity of majority party members' policy views, does not have a statistically significant effect on rules changes.
+
+## Cox, Gary and Mat McCubbins. 2005. Setting the Agenda: Responsible Party Government in the House of Representatives. Chs. 2, 4.
+
+### Chapter 2: Procedural Cartel Theory
+
+#### Why are there parties in legislatures? 
+
+-   Parties are created to solve internal collective action problems
+
+    -   to solve issues of unpredictability, legislators form political parties to bind themselves together in durable coalitions.
+
+-   Parties are created to solve external collective action problems
+
+    -   parties are formed primarily to accrue electoral gains
+
+#### How are parties organized? 
+
+-   Parties as firms
+
+    -   delegation to central agents in order to reduce transaction costs and ameliorate collective action problems
+
+-   Parties as partnerships
+
+    -   like law or account firms
+
+        -   various gradations of senior partners provide overall strategic and tactical direction to the firm
+
+        -   the senior partners are committee and subcommittee chairs, majority party floor leaders, campaign finance chairs, and the like.
+
+#### What do parties do? 
+
+-   How do they mitigate the collective action problem?
+
+-   Parties as floor voting coalitions
+
+    -   ensure a cohesive voting bloc
+
+    -   party can discipline members
+
+-   Parties as procedural coalitions
+
+    -   the central issue is the majority party's ability to control the legislative agenda
+
+#### How do majority parties control the agenda? 
+
+-   Parties as allocating proposal rights
+
+-   Parties as allocating veto rights
+
+#### Procedural Cartel Theory: 
+
+1.  Assumption 1: Members of Congress seek reelection to the House, internal advancement within the House, good public policy, and majority status.
+
+2.  Assumption 2: The reputation (or brand name) of a member's party affects both the member's personal probability of reelection and, more substantially, the party's probability of securing a majority.
+
+3.  Assumption 3: A party's reputation depends on significantly on its record of legislative accomplishment
+
+4.  Assumption 4: Legislating - hence compiling favorable records of legislative accomplishments - is akin to team production and entails overcoming an array of cooperation and coordination problems.
+
+5.  Assumption 5: The primary by which a (majority) party regulates its members' actions, in order to overcome problems of team production in the legislative process, is by delegating to a central authority.
+
+6.  Assumption 6: The key resource that majority parties delegate to their senior partners is the power to set the legislative agenda; the majority party forms is a procedural cartel that collectively monopolizes agenda-setting power.
+
+    1.  this is the important one
+
+    2.  **Procedural Cartel - is a coalition of legislators who constitute a majority in the assembly, share a common label, and cartelize the agenda via the following basic strategy.**
+
+    3.  Cartels seek to establish a collective monopoly on a particular resource (agenda setting power).
+
+        1.  First, the cartel creates (mostly inherits) a set of offices with special agenda setting powers
+
+            1.  committee chairs, slots on the Rules committee, and speakership
+
+        2.  cartel ensures all members get (or nearly all) agenda setting offices.
+
+        3.  Cartel members expect those appointed to agenda-setting offices to always obey.
+
+            1.  *thou shall not aid bills that will split the party*
+
+        4.  Cartel members expect rank-and-file members to support the agenda-setting decisions rendered by officeholds when those decisions are made in conformity to the expectations just noted
+
+        5.  Cartel leadership takes action to maintain cooperation and coordination within the cartel.
+
+#### Other: 
+
+-   Focus on party brand name.
+
+### Chapter 4: The Primacy of Reed's Rule in House Organization
+
+"Our government is founded on the doctrine that if 100 citizens think one way and 101 think another, the 101 are right. It is the old doctrine that the majority must govern. Indeed, you have no choice. If the majority does not govern, the minority will; and if the tyranny of the majority is hard, the tyranny of the minority is simply unendurable. The rules, then, ought to be so arranged as to facilitate the action of the majority." - Thomas Brackett Reed 1887
+
+#### Quick Summary
+
+-   After Reed's Rule became a permanent part of House organization, over 80% of the bills allowed to reach the final passage stage in the typical Congress proposed to move policy towards the median voter in the majority party.
+
+    -   how does this compare to Schickler?
+
+-   they get better data than Binder & Schickler
+
+#### Main Thesis: 
+
+-   Our view is that the rules of the legislative game have been heavily stacked in the majority party's favor since the readoption of Reed's rules in 1894.
+
+#### Background
+
+-   Reed's rules comes out after reconstruction. Basically, the House was a mess and majority and minority parties had veto power.
+
+-   Reed's rules break the power of the minority's power to delay
+
+#### Reed's Rule
+
+These come about because there is a logjam of bills in the reconstruction congress. Minortity power could gum up the system.
+
+1.  a rule giving the speaker the power to refuse to recognize members seeking to make dilatory motions
+
+2.  a rule allowing the speaker to count all members physically present in the chamber during quorum calls, even if those members chose not to answer when their names were called
+
+    1.  this is most famous one
+
+3.  a rule lowering the quorum in Committee of the Whole and permitting cloture of debate by majority vote on any part of a bill being considered.
+
+4.  a rule allowing the speaker to refer House bills, Senate bills, and messages from the president to appropriate committees (including conference committees) without debate.
+
+#### Punchline: 
+
+-   Reed's rules give more power to the majority.
+
+## Lee, Frances. 2016. Insecure Majorities. Ch. 6.
+
+-   Messaging bills are important.
+
+-   specifically framed to inform public
+
+    -   goal is to move dial.
+
+    -   aimed at communication

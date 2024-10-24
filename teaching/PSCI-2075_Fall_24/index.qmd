@@ -1557,3 +1557,124 @@ plot(x, y, main = "Scatterplot Example",
 -   Basically drawing a line in the middle of all the points.
 
     -   there is A LOT more going on than just that.
+
+# Week 9 
+
+## Stone's Song of the Week 
+
+[![Cocteau Twins - Heaven or Las Vegas](heaven_LV.jpg){fig-align="center" width="615"}](https://youtu.be/6KnYw4EwYGc?si=rFRVQjAMs00xvtig)
+
+I'm the main character today
+
+## Explanation/Causation 
+
+-   We want to explain why things are the way they are
+
+-   Independent Variables makes the Dependent Variable more likely.
+
+-   Need theory!
+
+    -   this will guide our hypothesis.
+
+-   Saying something causes another thing is **HARD.**
+
+    -   is it actually *causing* something to happen or is it just a correlation?
+
+-   We are going to make lots of graphs because that helps us visualize the data.
+
+    -   we are trying to communicate information succinctly.
+
+## Scatterplots
+
+-   Used if both variables are continuous
+
+-   X-axis (horizontal line) = independent variable
+
+-   Y-axis (vertical line) = dependent variable
+
+-   Each point in a scatterplot is an **observation**.
+
+#### Scatterplot in R: 
+
+-   Remember there are a few ways to get the same output.
+
+```{r}
+library(RCPA3) 
+
+# using the world dataset, create a scatterplot of these two variables
+plot(world$gdp.percap ~ world$trade.percent.gdp)
+```
+
+-   Each dot is a country (country is our unit of analysis)
+
+-   We can change the scatterplot by adding arguments. These include titles, labels, changing how the points look, etc.
+
+```{r}
+# Lets change some aspects of the scatterplot
+
+# using the world dataset, create a scatterplot of these two variables
+# Notice the arguments and what they do
+plot(world$gdp.percap ~ world$trade.percent.gdp, main = "Trade v. GDP", xlab = "Trade as % GDP", ylab = "GDP per capita", pch = 14)
+```
+
+## Boxplot 
+
+-   Useful to compare a continuous DV to a categorical/binary IV
+
+-   Box: 1st (bottom - 25th percentile) and 3rd (top- 75th percentile) quartiles
+
+-   Whiskers are range (max and min values)
+
+#### Boxplots in R: 
+
+```{r}
+# Boxplot of per capita GDP and whether Leader is Military Officer. 
+# using world dataset
+
+# range=0 will include outliers in the whiskers
+# so long as R knows IV is binary/categorical it will make a boxplot
+# if R is not doing it then you need to check how R is reading it and change it accordingly
+plot(world$gdp.percap~world$dpi.cemo, range=0, ylab = "GDP per capita", xlab = "Leader is Military Officer", main = "Boxplot Example") 
+
+```
+
+### Two Sample t-test 
+
+-   You did this earlier but it was a one sample t-test.
+
+    -   You compared sample mean to some hypothesized value
+
+-   NOW, you are going to compare sample mean from one sample to the mean of another sample
+
+    -   are these two means statistically different?
+
+        -   t-test will tell us!
+
+-   **Test how probable the observed difference between sample means would be if the population means were equal**
+
+-   Hypothesis: the mean of one group is greater/less than the mean of the other group
+
+-   There is a formula associated with this. You don't need to know it, R does it for you. However, I have posted it below if it helps you better understand what R is actually doing.
+
+![Formula for two sample t-test (you don't need to memorize this)](Two-Sample-T-Test-Formula.jpeg){fig-align="center" width="368"}
+
+#### Two-sample t-test in R
+
+```{r}
+# two sample t-test example 
+
+# are the means different? 
+# is the "no" category greater than the "yes" category? 
+# same basic interpretation and procedure. 
+t.test(gdp.percap~dpi.cemo, data = world, alternative = "greater")
+```
+
+## Homework 3: 
+
+-   **I am allowing you to form your own groups.**
+
+-   PUT YOUR NAMES ON EVERY DOCUMENT
+
+-   You can do this solo (if you want)
+
+-   **4 people MAX**

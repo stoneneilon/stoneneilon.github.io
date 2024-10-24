@@ -256,6 +256,15 @@ window.Quarto = {
   <li><a href="#model-performance" id="toc-model-performance" class="nav-link" data-scroll-target="#model-performance">Model Performance</a></li>
   <li><a href="#validation-2" id="toc-validation-2" class="nav-link" data-scroll-target="#validation-2">Validation:</a></li>
   </ul></li>
+  <li><a href="#week-9---unsupervised-machine-learning" id="toc-week-9---unsupervised-machine-learning" class="nav-link" data-scroll-target="#week-9---unsupervised-machine-learning">Week 9 - Unsupervised Machine Learning</a></li>
+  <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">Clustering</a>
+  <ul class="collapse">
+  <li><a href="#k-means-clustering" id="toc-k-means-clustering" class="nav-link" data-scroll-target="#k-means-clustering">K-Means Clustering</a></li>
+  </ul></li>
+  <li><a href="#topic-models" id="toc-topic-models" class="nav-link" data-scroll-target="#topic-models">Topic Models:</a>
+  <ul class="collapse">
+  <li><a href="#latent-dirichlet-allocation-lda" id="toc-latent-dirichlet-allocation-lda" class="nav-link" data-scroll-target="#latent-dirichlet-allocation-lda">Latent Dirichlet Allocation (LDA)</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -1053,6 +1062,66 @@ window.Quarto = {
 <li><p>Face validity?</p></li>
 <li><p>Convergent validity</p></li>
 <li><p>hypothesis validity</p></li>
+</ul>
+</section>
+</section>
+<section id="week-9---unsupervised-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="week-9---unsupervised-machine-learning">Week 9 - Unsupervised Machine Learning</h2>
+<ul>
+<li><p>Algorithms that learn patterns from unlabeled data.</p>
+<ul>
+<li>there is no labels to start.</li>
+</ul></li>
+<li><p>Helpful for exploratory analysis. What topics are in my data?</p></li>
+<li><p>Researchers assigns labels to clusters or topics through post-estimation interpretation of their elements-this requires a lot of substantive knowledge!</p></li>
+</ul>
+</section>
+<section id="clustering" class="level2">
+<h2 class="anchored" data-anchor-id="clustering">Clustering</h2>
+<ul>
+<li><p>creating partitions of the data.</p></li>
+<li><p>they input a collection of texts and output a set of K categories and document assignments to each of those K categories.</p></li>
+<li><p>Documents are organized is estimated as part of the process, rather than being assumed.</p></li>
+<li><p>Clustering groups documents such that inside a cluster they are very similar to each other but different from those outside the cluster.</p></li>
+<li><p>Clustering only gets one membership - LDA allows this to vary (multiple memberships).</p></li>
+</ul>
+<section id="k-means-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="k-means-clustering">K-Means Clustering</h3>
+<ul>
+<li><p>Randomly select K starting centroids</p></li>
+<li><p>each data point is assigned to its nearest centroid</p></li>
+<li><p>Recompute the centroids as the mean of the data points assigned to the respective cluster.</p>
+<ul>
+<li>repeat until we are optimized.</li>
+</ul></li>
+<li><p>Kinda an old method</p></li>
+<li><p>Possibility the algorithm finds latent differences that weren’t theorized.</p></li>
+<li><p>If we struggle to label a cluster - its probably not a good cluster.</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-models" class="level2">
+<h2 class="anchored" data-anchor-id="topic-models">Topic Models:</h2>
+<ul>
+<li>Rather than assign each document to only one cluster, topic models assign each document with proportional membership to all categories.</li>
+</ul>
+<section id="latent-dirichlet-allocation-lda" class="level3">
+<h3 class="anchored" data-anchor-id="latent-dirichlet-allocation-lda">Latent Dirichlet Allocation (LDA)</h3>
+<ul>
+<li><p>Bayesian hierarchical model that assumes a particular data generating process for how an author produces a text.</p></li>
+<li><p>Suppose that when writing a text the author draws a mixture of topics: a set of weights that will describe how prevalent the particular topics are.</p></li>
+<li><p>Given the set of weights, the author generates the actual text.</p></li>
+<li><p>This topic-specific distribution is common across the documents and characterizes the rates words appear when discussing a particular topic.</p></li>
+<li><p>It is a LATENT VARIABLE MODEL</p>
+<ul>
+<li>latent variables models are statistical models where in addition to the observed variables, a set of latent variables also exists which is not observed.</li>
+</ul></li>
+<li><p>LDA is basic topic model</p></li>
+<li><p>Dirichlet is a type of distribution.</p></li>
+<li><p>simplex its a generalization of a triangle.</p>
+<ul>
+<li>triangle is the simplest shape to make in space.</li>
+</ul></li>
 </ul>
 
 

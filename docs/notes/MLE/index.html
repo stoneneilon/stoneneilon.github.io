@@ -241,10 +241,24 @@ window.Quarto = {
   <li><a href="#stochastic-simulation" id="toc-stochastic-simulation" class="nav-link" data-scroll-target="#stochastic-simulation">Stochastic Simulation</a></li>
   <li><a href="#example-flores-macias-and-kreps-2013" id="toc-example-flores-macias-and-kreps-2013" class="nav-link" data-scroll-target="#example-flores-macias-and-kreps-2013">Example: Flores-Macias and Kreps (2013)</a></li>
   </ul></li>
-  <li><a href="#week-6" id="toc-week-6" class="nav-link" data-scroll-target="#week-6">Week 6:</a>
+  <li><a href="#topic-6" id="toc-topic-6" class="nav-link" data-scroll-target="#topic-6">Topic 6:</a>
   <ul class="collapse">
   <li><a href="#heteroskedasticity" id="toc-heteroskedasticity" class="nav-link" data-scroll-target="#heteroskedasticity">Heteroskedasticity</a></li>
   <li><a href="#omitted-variable-bias" id="toc-omitted-variable-bias" class="nav-link" data-scroll-target="#omitted-variable-bias">Omitted variable bias</a></li>
+  </ul></li>
+  <li><a href="#topic-7" id="toc-topic-7" class="nav-link" data-scroll-target="#topic-7">Topic 7:</a>
+  <ul class="collapse">
+  <li><a href="#ordered-models" id="toc-ordered-models" class="nav-link" data-scroll-target="#ordered-models">Ordered Models:</a></li>
+  </ul></li>
+  <li><a href="#topic-8" id="toc-topic-8" class="nav-link" data-scroll-target="#topic-8">Topic 8:</a>
+  <ul class="collapse">
+  <li><a href="#count-data" id="toc-count-data" class="nav-link" data-scroll-target="#count-data">Count Data:</a>
+  <ul class="collapse">
+  <li><a href="#deriving-the-poisson-function" id="toc-deriving-the-poisson-function" class="nav-link" data-scroll-target="#deriving-the-poisson-function">Deriving the Poisson Function</a></li>
+  </ul></li>
+  <li><a href="#poisson-log-likelihood" id="toc-poisson-log-likelihood" class="nav-link" data-scroll-target="#poisson-log-likelihood">Poisson Log-Likelihood</a></li>
+  <li><a href="#interpreting" id="toc-interpreting" class="nav-link" data-scroll-target="#interpreting">Interpreting</a></li>
+  <li><a href="#negative-binomial" id="toc-negative-binomial" class="nav-link" data-scroll-target="#negative-binomial">Negative Binomial</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -903,8 +917,8 @@ window.Quarto = {
 </ul>
 </section>
 </section>
-<section id="week-6" class="level1">
-<h1>Week 6:</h1>
+<section id="topic-6" class="level1">
+<h1>Topic 6:</h1>
 <ul>
 <li>Need to understand AIC better.</li>
 </ul>
@@ -922,6 +936,105 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="omitted-variable-bias">Omitted variable bias</h2>
 <ul>
 <li>might be good to use LPM to deal with omitted variable bias</li>
+</ul>
+</section>
+</section>
+<section id="topic-7" class="level1">
+<h1>Topic 7:</h1>
+<section id="ordered-models" class="level2">
+<h2 class="anchored" data-anchor-id="ordered-models">Ordered Models:</h2>
+<ul>
+<li><p>We are estimating <span class="math inline">\(\tau\)</span> cut points.</p></li>
+<li><p>Why do we this over OLS?</p>
+<ul>
+<li>think of latent space. The difference between <span class="math inline">\(\tau_1\)</span> and <span class="math inline">\(\tau_2\)</span>; and <span class="math inline">\(\tau_3\)</span> and <span class="math inline">\(\tau_4\)</span> can be different space.</li>
+</ul></li>
+<li><p>It is just a generalization of the logit/probit to accommodate multiple cut-points.</p></li>
+<li><p>trying to find betas and taus such that we are maximizing our probability that this observation is a 1 (or 2, 3,etc - dependent on category).</p></li>
+<li><p>Why would I ever run MLE over OLS - this is a comp question</p>
+<ul>
+<li><p>if cut points are equidistant - just run OLS</p>
+<ul>
+<li>if not or substantively interesting - MLE</li>
+</ul></li>
+</ul></li>
+<li><p>these are good with vote choice models.</p></li>
+<li><p>We get log odds when running this</p>
+<ul>
+<li><p>and cut points</p>
+<ul>
+<li>usually reported</li>
+</ul></li>
+</ul></li>
+<li><p>Conceptually, when we plug in values and multiply by the coefficients estimated - we get a value that will tell us where the output falls in relation to the estimated cut points (<span class="math inline">\(\tau\)</span>).</p></li>
+<li><p>How are Taus getting estimated?</p>
+<ul>
+<li>not sure - seems like its just being optimized.</li>
+</ul></li>
+<li><p>Code needs to use clarify - Andy hasn’t done that yet.</p></li>
+<li><p>i.i.a is important. - need to know it better.</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-8" class="level1">
+<h1>Topic 8:</h1>
+<p>we are like basically modeling a rate (count/exposure time)</p>
+<section id="count-data" class="level2">
+<h2 class="anchored" data-anchor-id="count-data">Count Data:</h2>
+<ul>
+<li><p>What if we observed multiple bernoulli trials over time?</p>
+<ul>
+<li>this is count data!</li>
+</ul></li>
+<li><p>by definition, these data are truncated at 0.</p></li>
+<li><p>log count.</p></li>
+</ul>
+<section id="deriving-the-poisson-function" class="level3">
+<h3 class="anchored" data-anchor-id="deriving-the-poisson-function">Deriving the Poisson Function</h3>
+<ul>
+<li><p>think about time. We are segmenting time and seeing the Bernoulli trial with that increasingly smaller time segment.</p></li>
+<li><p>Poisson function does this.</p>
+<ul>
+<li><p>lambda in our example is the expectation of the # of job changes over 5 years.</p></li>
+<li><p>y=2 because i wanted to the know the probability you had 2 job changes.</p></li>
+</ul></li>
+<li><p>Example: Prussian soldiers who died after being kicked by a horse.</p>
+<ul>
+<li>“law of small numbers”</li>
+</ul></li>
+<li><p>count data is a time story and is almost always not independent.</p></li>
+<li><p>only used count data when you are pushed up to zero.</p></li>
+<li><p>when your count data is far from zero, then you prob don’t have to use count models.</p></li>
+</ul>
+</section>
+</section>
+<section id="poisson-log-likelihood" class="level2">
+<h2 class="anchored" data-anchor-id="poisson-log-likelihood">Poisson Log-Likelihood</h2>
+<ul>
+<li>take the exponents to get rid of any negatives</li>
+</ul>
+</section>
+<section id="interpreting" class="level2">
+<h2 class="anchored" data-anchor-id="interpreting">Interpreting</h2>
+<ul>
+<li><p>IRR</p></li>
+<li><p>substantively show you the change in counts.</p></li>
+<li><p>concerned about overdispersed</p>
+<ul>
+<li><p>mean &lt; variance</p></li>
+<li><p>basically outliers</p></li>
+<li><p>If variable is overdispersed, it was not generated via a Poisson process.</p>
+<ul>
+<li>betas fine, standard errors are biased downwards.</li>
+</ul></li>
+</ul></li>
+<li><p>i mean you can always run a negative binomial and its best if you have overdispersion but if you don’t then poisson is basically better.</p></li>
+</ul>
+</section>
+<section id="negative-binomial" class="level2">
+<h2 class="anchored" data-anchor-id="negative-binomial">Negative Binomial</h2>
+<ul>
+<li>The negative binomial relaxes the assumption that the conditional mean and variance are equivalent; in other words, it allows for overdispersion.</li>
 </ul>
 
 

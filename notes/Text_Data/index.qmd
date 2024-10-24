@@ -694,3 +694,67 @@ We are in the midst of a technological revolution whereby, for the first time, r
 -   Convergent validity
 
 -   hypothesis validity
+
+## Week 9 - Unsupervised Machine Learning 
+
+-   Algorithms that learn patterns from unlabeled data.
+
+    -   there is no labels to start.
+
+-   Helpful for exploratory analysis. What topics are in my data?
+
+-   Researchers assigns labels to clusters or topics through post-estimation interpretation of their elements-this requires a lot of substantive knowledge!
+
+## Clustering
+
+-   creating partitions of the data.
+
+-   they input a collection of texts and output a set of K categories and document assignments to each of those K categories.
+
+-   Documents are organized is estimated as part of the process, rather than being assumed.
+
+-   Clustering groups documents such that inside a cluster they are very similar to each other but different from those outside the cluster.
+
+-   Clustering only gets one membership - LDA allows this to vary (multiple memberships).
+
+### K-Means Clustering
+
+-   Randomly select K starting centroids
+
+-   each data point is assigned to its nearest centroid
+
+-   Recompute the centroids as the mean of the data points assigned to the respective cluster.
+
+    -   repeat until we are optimized.
+
+-   Kinda an old method
+
+-   Possibility the algorithm finds latent differences that weren't theorized.
+
+-   If we struggle to label a cluster - its probably not a good cluster.
+
+## Topic Models: 
+
+-   Rather than assign each document to only one cluster, topic models assign each document with proportional membership to all categories.
+
+### Latent Dirichlet Allocation (LDA) 
+
+-   Bayesian hierarchical model that assumes a particular data generating process for how an author produces a text.
+
+-   Suppose that when writing a text the author draws a mixture of topics: a set of weights that will describe how prevalent the particular topics are.
+
+-   Given the set of weights, the author generates the actual text.
+
+-   This topic-specific distribution is common across the documents and characterizes the rates words appear when discussing a particular topic.
+
+-   It is a LATENT VARIABLE MODEL
+
+    -   latent variables models are statistical models where in addition to the observed variables, a set of latent variables also exists which is not observed.
+
+-   LDA is basic topic model
+
+-   Dirichlet is a type of distribution.
+
+-   simplex its a generalization of a triangle.
+
+    -   triangle is the simplest shape to make in space.

@@ -633,7 +633,7 @@ logit($\pi_i$) \< 0
 
 -   When do states adopt war taxes to finance the cost of war?
 
-# Week 6:
+# Topic 6:
 
 -   Need to understand AIC better.
 
@@ -652,3 +652,101 @@ logit($\pi_i$) \< 0
 ## Omitted variable bias
 
 -   might be good to use LPM to deal with omitted variable bias
+
+# Topic 7: 
+
+## Ordered Models:
+
+-   We are estimating $\tau$ cut points.
+
+-   Why do we this over OLS?
+
+    -   think of latent space. The difference between $\tau_1$ and $\tau_2$; and $\tau_3$ and $\tau_4$ can be different space.
+
+-   It is just a generalization of the logit/probit to accommodate multiple cut-points.
+
+-   trying to find betas and taus such that we are maximizing our probability that this observation is a 1 (or 2, 3,etc - dependent on category).
+
+-   Why would I ever run MLE over OLS - this is a comp question
+
+    -   if cut points are equidistant - just run OLS
+
+        -   if not or substantively interesting - MLE
+
+-   these are good with vote choice models.
+
+-   We get log odds when running this
+
+    -   and cut points
+
+        -   usually reported
+
+-   Conceptually, when we plug in values and multiply by the coefficients estimated - we get a value that will tell us where the output falls in relation to the estimated cut points ($\tau$).
+
+-   How are Taus getting estimated?
+
+    -   not sure - seems like its just being optimized.
+
+-   Code needs to use clarify - Andy hasn't done that yet.
+
+-   i.i.a is important. - need to know it better.
+
+# Topic 8: 
+
+we are like basically modeling a rate (count/exposure time)
+
+## Count Data: 
+
+-   What if we observed multiple bernoulli trials over time?
+
+    -   this is count data!
+
+-   by definition, these data are truncated at 0.
+
+-   log count.
+
+### Deriving the Poisson Function 
+
+-   think about time. We are segmenting time and seeing the Bernoulli trial with that increasingly smaller time segment.
+
+-   Poisson function does this.
+
+    -   lambda in our example is the expectation of the \# of job changes over 5 years.
+
+    -   y=2 because i wanted to the know the probability you had 2 job changes.
+
+-   Example: Prussian soldiers who died after being kicked by a horse.
+
+    -   "law of small numbers"
+
+-   count data is a time story and is almost always not independent.
+
+-   only used count data when you are pushed up to zero.
+
+-   when your count data is far from zero, then you prob don't have to use count models.
+
+## Poisson Log-Likelihood 
+
+-   take the exponents to get rid of any negatives
+
+## Interpreting 
+
+-   IRR
+
+-   substantively show you the change in counts.
+
+-   concerned about overdispersed
+
+    -   mean \< variance
+
+    -   basically outliers
+
+    -   If variable is overdispersed, it was not generated via a Poisson process.
+
+        -   betas fine, standard errors are biased downwards.
+
+-   i mean you can always run a negative binomial and its best if you have overdispersion but if you don't then poisson is basically better.
+
+## Negative Binomial 
+
+-   The negative binomial relaxes the assumption that the conditional mean and variance are equivalent; in other words, it allows for overdispersion.
