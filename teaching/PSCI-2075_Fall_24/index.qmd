@@ -868,7 +868,7 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 
 ## Stone's Song of the Week
 
-[![L'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
+[![L\'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
 
 I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now...You think I want to be here teaching you about variance?! JK I do \<3 variance and standard deviation are very important.
 
@@ -1678,3 +1678,96 @@ t.test(gdp.percap~dpi.cemo, data = world, alternative = "greater")
 -   You can do this solo (if you want)
 
 -   **4 people MAX**
+
+# Week 10 
+
+## Stone's Song of the Week:
+
+[![Michael Jackson - Thriller](Michael_Jackson_-_Thriller.png){fig-align="center" width="440"}](https://youtu.be/sOnqjkJTMaA?si=4UD7ISAeL2ntyW52)
+
+You know the vibes. 🎃
+
+## Midterm Overview
+
+-   I have graded all midterms.
+
+-   Should be released soon.
+
+## Correlation
+
+-   Correlation does not equal causation!
+
+-   We interpret correlation from -1 to 1.
+
+-   -1 represents a perfectly negative correlation
+
+    -   This will almost never happen
+
+        -   1 represents a perfectly positive correlation
+
+            -   this will almost never happen.
+
+-   Correlation tell us the direction and strength of a linear relationship between two variables.
+
+-   If you were to get a correlation of zero. What would that look like?
+
+-   Let's go over a quick example from the car data
+
+```{r}
+cor(mtcars$mpg, mtcars$wt)
+```
+
+![Correlation vs. Regression](corrreg.png){fig-align="center" width="534"}
+
+## Why Does Correlation $\neq$ Causation? 
+
+-   [Here is a great website of spurious correlations](https://www.tylervigen.com/spurious-correlations)
+
+    -   This is why theory matters!
+
+        -    we know these things are completely unrelated but yet they have a high degree of correlation.
+
+            -   correlation just quantifies the covariance of two variables into an output between -1 and 1.
+
+## Regression
+
+-   Regression tells us how one variable impacts the other.
+
+-   Also called Ordinary Least Squares (OLS)
+
+-   How much X causes variation in Y.
+
+-   What are we doing in regression
+
+    -   we are drawing a line that minimizing the sum of squares.
+
+        -   literally drawing a line in the middle of all the observations
+
+        -   How do we know what line to draw?
+
+            -   There is a formula for this but don't worry because R does it for us.
+
+-   Error...what is it?
+
+    -   typically represented in mathematical notation as $\epsilon$ (epsilon).
+
+    -   it is the variation in our dependent variable we cannot explain by our independent variable.
+
+    -   $y_i - \hat{y}_i$
+
+        -   the value of our observation subtracted from the line of best fit (the prediction/regression line)
+
+## Reading Regression Output
+
+Let's go over this real quick. Don't worry if you are still fuzzy. We are going to keep going over this in later weeks.
+
+```{r}
+# regression 
+# DV: mpg
+# IV: wt (weight)
+summary(lm(mtcars$mpg~mtcars$wt)) 
+```
+
+## Homework 3: 
+
+-   If you are done with Homework 3 - you are free to go!

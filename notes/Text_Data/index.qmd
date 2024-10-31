@@ -695,6 +695,8 @@ We are in the midst of a technological revolution whereby, for the first time, r
 
 -   hypothesis validity
 
+-   performance may drop.
+
 ## Week 9 - Unsupervised Machine Learning
 
 -   Algorithms that learn patterns from unlabeled data.
@@ -758,3 +760,19 @@ We are in the midst of a technological revolution whereby, for the first time, r
 -   simplex its a generalization of a triangle.
 
     -   triangle is the simplest shape to make in space.
+
+# Week 10 - Word Embeddings  
+
+-   We want context now!
+
+-   we need to know whats around words now.
+
+-   Word embeddings enable us to take context into account.
+
+-   transfer learning - using stuff to train something else adjacent.
+
+-   **an embedding is a mapping of a discrete-categorical-variable to a vector of continuous numbers**
+
+## Hidden Layer 
+
+-   embeddings basically create like a giant lookup table that gets us from the input to the output.

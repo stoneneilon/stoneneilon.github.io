@@ -309,6 +309,8 @@ p[which(l == max(l))]
 
     -   stronger penalty for over fitting than AIC. Penalty derived from "prior" information.
 
+-   **AIC AND BIC ARE NOT TESTS THEY ARE VALUES**
+
 -   Restricted Mode: Less parameters
 
 -   unrestricted model: all parameters.
@@ -750,3 +752,89 @@ we are like basically modeling a rate (count/exposure time)
 ## Negative Binomial
 
 -   The negative binomial relaxes the assumption that the conditional mean and variance are equivalent; in other words, it allows for overdispersion.
+-   diff between poisson - basically if you have overdispersion do negative binomial.
+-   variance is larger than the mean.
+
+## Interpreting
+
+-   change in log-count
+
+    -   easier if you exponential - basically an odds ratio.
+
+-   Still use clarify.
+
+-   first difference
+
+-   irr means count doesn't move up and down.
+
+-   if alpha is zero - run poisson.
+
+    -   not zero - run negative binomial
+
+-   null is poisson.
+
+# Topic 9:
+
+-   Recall: **we use anytime we suspect that the data are from a Bernoulli random variable with a large number of trials, with a very low probability of an "event" occurring.**
+
+-   What if our model has a substantial amount of zeros?
+
+    -   mean will shift to the left of the zero.
+
+        -   you get overdispersion
+
+-   we need to figure out if we have lots of zeros which is hard
+
+    -   depends on theory
+
+    -   see Netflix example.
+
+-   poisson is negative binomial when alpha is zero.
+
+## Zero-inflated Poisson
+
+-   One way of modeling zeros is to envision two regimes.
+
+-   What is $F$ ? -one of the Bernoulli link functions.
+
+    -   logit function
+
+-   Joint probability
+
+## Zero-inflated Negative Binomial
+
+-   variance is higher than conditional mean
+
+-   overdispersion
+
+-   do you have overdispersion or excess zeros?
+
+## How do I test for Zero-inflation?
+
+-   lots of debate.
+
+-   Poisson vs NB?
+
+    -   wald test...is alpha zero or not?
+
+-   ZIP vs. ZINB
+
+    -   account for zero-inflation and include alpha zero test.
+
+-   Vuong test - bunch of issues with it.
+
+## Truncated Counts
+
+-   See protest question on midterm
+
+-   we don't observe zero.
+
+## Censored Count
+
+-   for instance, a respondent codes the number of cars they've owned in the past 10 years.
+
+## Hurdle Models
+
+-   these assume that there is a unique DGP that determines whether we observe a zero or truncated Poisson
+
+-   confusing

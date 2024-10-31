@@ -350,6 +350,16 @@ window.Quarto = {
   </ul></li>
   <li><a href="#homework-3" id="toc-homework-3" class="nav-link" data-scroll-target="#homework-3">Homework 3:</a></li>
   </ul></li>
+  <li><a href="#week-10" id="toc-week-10" class="nav-link" data-scroll-target="#week-10">Week 10</a>
+  <ul class="collapse">
+  <li><a href="#stones-song-of-the-week-8" id="toc-stones-song-of-the-week-8" class="nav-link" data-scroll-target="#stones-song-of-the-week-8">Stone’s Song of the Week:</a></li>
+  <li><a href="#midterm-overview" id="toc-midterm-overview" class="nav-link" data-scroll-target="#midterm-overview">Midterm Overview</a></li>
+  <li><a href="#correlation" id="toc-correlation" class="nav-link" data-scroll-target="#correlation">Correlation</a></li>
+  <li><a href="#why-does-correlation-neq-causation" id="toc-why-does-correlation-neq-causation" class="nav-link" data-scroll-target="#why-does-correlation-neq-causation">Why Does Correlation <span class="math inline">\(\neq\)</span> Causation?</a></li>
+  <li><a href="#regression" id="toc-regression" class="nav-link" data-scroll-target="#regression">Regression</a></li>
+  <li><a href="#reading-regression-output" id="toc-reading-regression-output" class="nav-link" data-scroll-target="#reading-regression-output">Reading Regression Output</a></li>
+  <li><a href="#homework-3-1" id="toc-homework-3-1" class="nav-link" data-scroll-target="#homework-3-1">Homework 3:</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1384,10 +1394,10 @@ Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2</code></
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&amp;t=2770"><img src="limperatrice.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="634" alt="L’Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45"></a></p>
+<p><a href="https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&amp;t=2770"><img src="limperatrice.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="634" alt="L'Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45"></a></p>
 </figure>
 </div>
-<figcaption>L’Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45</figcaption>
+<figcaption>L'Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45</figcaption>
 </figure>
 </div>
 <p>I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now…You think I want to be here teaching you about variance?! JK I do &lt;3 variance and standard deviation are very important.</p>
@@ -2324,6 +2334,139 @@ sample estimates:
 <li><p>PUT YOUR NAMES ON EVERY DOCUMENT</p></li>
 <li><p>You can do this solo (if you want)</p></li>
 <li><p><strong>4 people MAX</strong></p></li>
+</ul>
+</section>
+</section>
+<section id="week-10" class="level1">
+<h1>Week 10</h1>
+<section id="stones-song-of-the-week-8" class="level2">
+<h2 class="anchored" data-anchor-id="stones-song-of-the-week-8">Stone’s Song of the Week:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/sOnqjkJTMaA?si=4UD7ISAeL2ntyW52"><img src="Michael_Jackson_-_Thriller.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="440" alt="Michael Jackson - Thriller"></a></p>
+</figure>
+</div>
+<figcaption>Michael Jackson - Thriller</figcaption>
+</figure>
+</div>
+<p>You know the vibes. 🎃</p>
+</section>
+<section id="midterm-overview" class="level2">
+<h2 class="anchored" data-anchor-id="midterm-overview">Midterm Overview</h2>
+<ul>
+<li><p>I have graded all midterms.</p></li>
+<li><p>Should be released soon.</p></li>
+</ul>
+</section>
+<section id="correlation" class="level2">
+<h2 class="anchored" data-anchor-id="correlation">Correlation</h2>
+<ul>
+<li><p>Correlation does not equal causation!</p></li>
+<li><p>We interpret correlation from -1 to 1.</p></li>
+<li><p>-1 represents a perfectly negative correlation</p>
+<ul>
+<li><p>This will almost never happen</p>
+<ul>
+<li><p>1 represents a perfectly positive correlation</p>
+<ul>
+<li>this will almost never happen.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Correlation tell us the direction and strength of a linear relationship between two variables.</p></li>
+<li><p>If you were to get a correlation of zero. What would that look like?</p></li>
+<li><p>Let’s go over a quick example from the car data</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(mtcars<span class="sc">$</span>mpg, mtcars<span class="sc">$</span>wt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.8676594</code></pre>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="corrreg.png" class="img-fluid figure-img" width="534"></p>
+<figcaption>Correlation vs.&nbsp;Regression</figcaption>
+</figure>
+</div>
+</section>
+<section id="why-does-correlation-neq-causation" class="level2">
+<h2 class="anchored" data-anchor-id="why-does-correlation-neq-causation">Why Does Correlation <span class="math inline">\(\neq\)</span> Causation?</h2>
+<ul>
+<li><p><a href="https://www.tylervigen.com/spurious-correlations">Here is a great website of spurious correlations</a></p>
+<ul>
+<li><p>This is why theory matters!</p>
+<ul>
+<li>we know these things are completely unrelated but yet they have a high degree of correlation.</li>
+</ul>
+<pre><code>-   correlation just quantifies the covariance of two variables into an output between -1 and 1.</code></pre></li>
+</ul></li>
+</ul>
+</section>
+<section id="regression" class="level2">
+<h2 class="anchored" data-anchor-id="regression">Regression</h2>
+<ul>
+<li><p>Regression tells us how one variable impacts the other.</p></li>
+<li><p>Also called Ordinary Least Squares (OLS)</p></li>
+<li><p>How much X causes variation in Y.</p></li>
+<li><p>What are we doing in regression</p>
+<ul>
+<li><p>we are drawing a line that minimizing the sum of squares.</p>
+<ul>
+<li><p>literally drawing a line in the middle of all the observations</p></li>
+<li><p>How do we know what line to draw?</p>
+<ul>
+<li>There is a formula for this but don’t worry because R does it for us.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Error…what is it?</p>
+<ul>
+<li><p>typically represented in mathematical notation as <span class="math inline">\(\epsilon\)</span> (epsilon).</p></li>
+<li><p>it is the variation in our dependent variable we cannot explain by our independent variable.</p></li>
+<li><p><span class="math inline">\(y_i - \hat{y}_i\)</span></p>
+<ul>
+<li>the value of our observation subtracted from the line of best fit (the prediction/regression line)</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="reading-regression-output" class="level2">
+<h2 class="anchored" data-anchor-id="reading-regression-output">Reading Regression Output</h2>
+<p>Let’s go over this real quick. Don’t worry if you are still fuzzy. We are going to keep going over this in later weeks.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co"># regression </span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a><span class="co"># DV: mpg</span></span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a><span class="co"># IV: wt (weight)</span></span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(mtcars<span class="sc">$</span>mpg<span class="sc">~</span>mtcars<span class="sc">$</span>wt)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = mtcars$mpg ~ mtcars$wt)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.5432 -2.3647 -0.1252  1.4096  6.8727 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
+mtcars$wt    -5.3445     0.5591  -9.559 1.29e-10 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.046 on 30 degrees of freedom
+Multiple R-squared:  0.7528,    Adjusted R-squared:  0.7446 
+F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
+</div>
+</div>
+</section>
+<section id="homework-3-1" class="level2">
+<h2 class="anchored" data-anchor-id="homework-3-1">Homework 3:</h2>
+<ul>
+<li>If you are done with Homework 3 - you are free to go!</li>
 </ul>
 
 

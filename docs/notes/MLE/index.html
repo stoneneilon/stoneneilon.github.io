@@ -259,6 +259,16 @@ window.Quarto = {
   <li><a href="#poisson-log-likelihood" id="toc-poisson-log-likelihood" class="nav-link" data-scroll-target="#poisson-log-likelihood">Poisson Log-Likelihood</a></li>
   <li><a href="#interpreting" id="toc-interpreting" class="nav-link" data-scroll-target="#interpreting">Interpreting</a></li>
   <li><a href="#negative-binomial" id="toc-negative-binomial" class="nav-link" data-scroll-target="#negative-binomial">Negative Binomial</a></li>
+  <li><a href="#interpreting-1" id="toc-interpreting-1" class="nav-link" data-scroll-target="#interpreting-1">Interpreting</a></li>
+  </ul></li>
+  <li><a href="#topic-9" id="toc-topic-9" class="nav-link" data-scroll-target="#topic-9">Topic 9:</a>
+  <ul class="collapse">
+  <li><a href="#zero-inflated-poisson" id="toc-zero-inflated-poisson" class="nav-link" data-scroll-target="#zero-inflated-poisson">Zero-inflated Poisson</a></li>
+  <li><a href="#zero-inflated-negative-binomial" id="toc-zero-inflated-negative-binomial" class="nav-link" data-scroll-target="#zero-inflated-negative-binomial">Zero-inflated Negative Binomial</a></li>
+  <li><a href="#how-do-i-test-for-zero-inflation" id="toc-how-do-i-test-for-zero-inflation" class="nav-link" data-scroll-target="#how-do-i-test-for-zero-inflation">How do I test for Zero-inflation?</a></li>
+  <li><a href="#truncated-counts" id="toc-truncated-counts" class="nav-link" data-scroll-target="#truncated-counts">Truncated Counts</a></li>
+  <li><a href="#censored-count" id="toc-censored-count" class="nav-link" data-scroll-target="#censored-count">Censored Count</a></li>
+  <li><a href="#hurdle-models" id="toc-hurdle-models" class="nav-link" data-scroll-target="#hurdle-models">Hurdle Models</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -616,6 +626,7 @@ window.Quarto = {
 <li><p>Lower SBIC is preferred model</p></li>
 <li><p>stronger penalty for over fitting than AIC. Penalty derived from “prior” information.</p></li>
 </ul></li>
+<li><p><strong>AIC AND BIC ARE NOT TESTS THEY ARE VALUES</strong></p></li>
 <li><p>Restricted Mode: Less parameters</p></li>
 <li><p>unrestricted model: all parameters.</p></li>
 <li><p>likelihood ratio test basically tells you if there is statistically significant difference between two models</p>
@@ -1035,6 +1046,98 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="negative-binomial">Negative Binomial</h2>
 <ul>
 <li>The negative binomial relaxes the assumption that the conditional mean and variance are equivalent; in other words, it allows for overdispersion.</li>
+<li>diff between poisson - basically if you have overdispersion do negative binomial.</li>
+<li>variance is larger than the mean.</li>
+</ul>
+</section>
+<section id="interpreting-1" class="level2">
+<h2 class="anchored" data-anchor-id="interpreting-1">Interpreting</h2>
+<ul>
+<li><p>change in log-count</p>
+<ul>
+<li>easier if you exponential - basically an odds ratio.</li>
+</ul></li>
+<li><p>Still use clarify.</p></li>
+<li><p>first difference</p></li>
+<li><p>irr means count doesn’t move up and down.</p></li>
+<li><p>if alpha is zero - run poisson.</p>
+<ul>
+<li>not zero - run negative binomial</li>
+</ul></li>
+<li><p>null is poisson.</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-9" class="level1">
+<h1>Topic 9:</h1>
+<ul>
+<li><p>Recall: <strong>we use anytime we suspect that the data are from a Bernoulli random variable with a large number of trials, with a very low probability of an “event” occurring.</strong></p></li>
+<li><p>What if our model has a substantial amount of zeros?</p>
+<ul>
+<li><p>mean will shift to the left of the zero.</p>
+<ul>
+<li>you get overdispersion</li>
+</ul></li>
+</ul></li>
+<li><p>we need to figure out if we have lots of zeros which is hard</p>
+<ul>
+<li><p>depends on theory</p></li>
+<li><p>see Netflix example.</p></li>
+</ul></li>
+<li><p>poisson is negative binomial when alpha is zero.</p></li>
+</ul>
+<section id="zero-inflated-poisson" class="level2">
+<h2 class="anchored" data-anchor-id="zero-inflated-poisson">Zero-inflated Poisson</h2>
+<ul>
+<li><p>One way of modeling zeros is to envision two regimes.</p></li>
+<li><p>What is <span class="math inline">\(F\)</span> ? -one of the Bernoulli link functions.</p>
+<ul>
+<li>logit function</li>
+</ul></li>
+<li><p>Joint probability</p></li>
+</ul>
+</section>
+<section id="zero-inflated-negative-binomial" class="level2">
+<h2 class="anchored" data-anchor-id="zero-inflated-negative-binomial">Zero-inflated Negative Binomial</h2>
+<ul>
+<li><p>variance is higher than conditional mean</p></li>
+<li><p>overdispersion</p></li>
+<li><p>do you have overdispersion or excess zeros?</p></li>
+</ul>
+</section>
+<section id="how-do-i-test-for-zero-inflation" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-test-for-zero-inflation">How do I test for Zero-inflation?</h2>
+<ul>
+<li><p>lots of debate.</p></li>
+<li><p>Poisson vs NB?</p>
+<ul>
+<li>wald test…is alpha zero or not?</li>
+</ul></li>
+<li><p>ZIP vs.&nbsp;ZINB</p>
+<ul>
+<li>account for zero-inflation and include alpha zero test.</li>
+</ul></li>
+<li><p>Vuong test - bunch of issues with it.</p></li>
+</ul>
+</section>
+<section id="truncated-counts" class="level2">
+<h2 class="anchored" data-anchor-id="truncated-counts">Truncated Counts</h2>
+<ul>
+<li><p>See protest question on midterm</p></li>
+<li><p>we don’t observe zero.</p></li>
+</ul>
+</section>
+<section id="censored-count" class="level2">
+<h2 class="anchored" data-anchor-id="censored-count">Censored Count</h2>
+<ul>
+<li>for instance, a respondent codes the number of cars they’ve owned in the past 10 years.</li>
+</ul>
+</section>
+<section id="hurdle-models" class="level2">
+<h2 class="anchored" data-anchor-id="hurdle-models">Hurdle Models</h2>
+<ul>
+<li><p>these assume that there is a unique DGP that determines whether we observe a zero or truncated Poisson</p></li>
+<li><p>confusing</p></li>
 </ul>
 
 

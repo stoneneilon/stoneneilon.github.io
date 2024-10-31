@@ -3365,9 +3365,69 @@ Money is important in competitiveness in primaries.
 
 # Week 9: Congress
 
-Why and when does legislative organization change?
+## Lecture Notes:
+
+-   Why and when does legislative organization change?
+
+-   institutions literature
+
+-   they fight a bunch
+
+-   Krehbiel is good but also wrong - Josh
+
+    -   good starting point for how we think about institutions
+
+    -   we do rules exist and what do they serve and what are the consequences.
+
+-   Partisan stuff was secondary before Gingrich.
+
+-   What are the institutions actually doing?
+
+-   discharge petition - discharge straight from committee if majority in floor
+
+    -   committee loses gatekeeping power.
+
+        -   rarely used.
+
+-   institutions are patterns repeated overtime in the long run
+
+    -   equillibria
+
+        -   how institutions produce behavior.
+
+-   Josh loves Krehbiel but it hasnt aged super well.
+
+-   Krehbiel is setting out to explain why we have certain institutions within Congress.
+
+    -   similar storyline to Mayhew
+
+    -   members of congress engage in gains from trade
+
+-   we want committee members that are loyal to the chamber so they arent trying to "fool".
+
+-   How are committee designed?
+
+-   Everything by congress at some point is approved by a majority. - Krehbiel
+
+    -   explain why the median of the majority approves this at some point.
+
+-   WHY DID RULE CHANGES OCCUR?!
+
+-   Seniority is an institution
+
+    -   distributive - good at policy
+
+    -   informational - expertise
+
+    -   whats the evidence between the two?
+
+        -   Why are senior members kicked out - this will tell us.
+
+-   Hastert Rule - vote doesnt go to floor unless at least a majority of the majority supports it.
 
 ## Krehbiel, Keith. 1991. Information and Legislative Organization, Chs. 1, 4.
+
+-   Krehbiel is trying to explain which perspective is the reason for these institutions to exist.
 
 ### Chapter 1:
 
@@ -3389,6 +3449,8 @@ Why and when does legislative organization change?
 
 -   The distributive perspective on legislative organization depicts a legislature as a collective choice body whose principle task is to allocate policy benefits.
 
+-   pork barrel model
+
 -   Goal: maximize *gains from trade* reliably and predictably.
 
     -   I think this basically means efficient compromise
@@ -3405,9 +3467,17 @@ Why and when does legislative organization change?
 
         -   maximize this.
 
+-   There is a trust issue here. What if people reneg on bills.
+
+    -   prisoner's dilemna problem
+
+    -   committees help prevent this - certain people are endowed with power to ensure trust.
+
 ##### The Informational Perspective:
 
 -   The distributive perspective is formulaic and overly emphasizes local incentives from reelection incentives of the member
+
+-   maximizing gains from specialization
 
 -   There is also specialization among legislators. Legislators have to organize themselves into what they are best do deal with.
 
@@ -3415,7 +3485,7 @@ Why and when does legislative organization change?
 
 -   **The challenge of legislative organization within the informational framework is thus distinctly different from capturing gains from trade for the distributive benefit of high-demand minorities**
 
-    -   **Rather, it is to capture gains from specialization while minimizing the degree to which enacted policies deviate from majority-prefered outcomes.**
+    -   **Rather, it is to capture gains from specialization while minimizing the degree to which enacted policies deviate from majority-preferred outcomes.**
 
 -   The solution in this perspective is to develop policy expertise and to share policy-relevant information with fellow legislators, including legislators with competing distributive interests.
 
@@ -3424,6 +3494,12 @@ Why and when does legislative organization change?
 -   legislators close to the median of chamber get special parliamentary rights to minimize partisan weaponization.
 
 -   expertise of a legislator, improves collective benefit of the chamber.
+
+-   uncertainty is the key issue.
+
+    -   specifically with policy instruments and policy outcomes.
+
+-   we give power (committee membership) to people well suited to help with these issues.
 
 #### Research Question:
 
@@ -3448,6 +3524,7 @@ Why and when does legislative organization change?
 #### Majoritarianism Postulate:
 
 -   Objects of legislative choice in both the procedural and policy domains must be chosen by a majority of the legislature
+    -   procedures and action must be acceptable to the majority.
 
 #### Uncertainty Postulate:
 
@@ -3493,6 +3570,14 @@ Why and when does legislative organization change?
 
 ## [Aldrich, John and David Rohde. 2000. "The Republican Revolution and the House Appropriations Committee," Journal of Politics.](https://onlinelibrary.wiley.com/doi/pdf/10.1111/0022-3816.00001)
 
+-   Josh doesnt like this
+
+-   one big critique of Krehbiel
+
+    -   doesn't think about change/variation
+
+-   Why do we have structures that change? What does that tell us when they do change?
+
 ### Abstract:
 
 This study applies the theory of "conditional party government" to the interaction between the Republican party and the Appropriations Committee in the 104th House, seen in the context of developments since the 96th Congress. As expected by the theory, we find that the relatively homogenous preferences of the Republican contingent in the House led them to adopt new institutional arrangements to enhance the powers of their leaders, which in turn were used to advance the party's policy goals. Given that the leadership decided to use Appropriations as one of the vehicles of major policy change, they and the Conference sought to monitor the committee's actions, and to influence it to behave as they wanted. The leaders used their enhanced powers over incentives and with regard to the agenda to advance the party cause. Both leaders and the Conference sought to block policy shifts away from what they wanted, but facilitated changes in the desired direction. Finally, we expected to see evidence of the increasing applicability of the theory over time, culminating in the developments of the 104th Congress, and this expectation was borne out.
@@ -3515,7 +3600,9 @@ This study applies the theory of "conditional party government" to the interacti
 
 -   centralization of power into Leader
 
--   
+-   **rules committee sets the term of debate**
+
+-   even non-committee republicans were expressing disagreement with Gingrich
 
 ## [Schickler, Eric. 2000. "Institutional Change in the House of Representatives, 1867--1998: a Test of Partisan and Ideological Power Balance Models," American Political Science Review](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2586012.pdf?refreqid=fastly-default%3A77a87af9d0c8bf74905f7af82a2e5d6d&ab_segments=&initiator=&acceptTC=1)
 
@@ -3535,7 +3622,7 @@ I examine competing explanations for House rules changes with significant partis
 
 -   usurp power and use that power to create institutions to best serve the party members' interest.
 
--   The Cox and McCubbils theory leads to the substantively important prediction that the majority party will design rules and procedures that generally allow it to pull policy outcomes away from the floor median and toward the majority party's median position.
+-   The Cox and McCubbins theory leads to the substantively important prediction that the majority party will design rules and procedures that generally allow it to pull policy outcomes away from the floor median and toward the majority party's median position.
 
     -   something of consensus among scholars:
 
@@ -3545,7 +3632,7 @@ I examine competing explanations for House rules changes with significant partis
 
 -   also emphasizes the majority party's ability to shape legislative institutions, but advocates of this theory highlight variation in the degree of partisan control
 
--   contend that the majority party's influence varies as a function of the party's internal homo geneity and the degree of polarization in the majority and minority parties' positions.
+-   contend that the majority party's influence varies as a function of the party's internal homogeneity and the degree of polarization in the majority and minority parties' positions.
 
 #### Basic insight:
 
@@ -3561,9 +3648,7 @@ When majority party members agree on basic policy stands-that is, when they have
 
 -   As the floor median (measured along a single, ideological dimension) moves toward the majority party, rules changes in favor of that party are more likely; when the median moves away from the majority party, rules changes that favor the minority party are more likely
 
-```         
--   this seems kinda obvious?
-```
+    -   this seems kinda obvious?
 
 ### DV:
 
@@ -3589,6 +3674,20 @@ When majority party members agree on basic policy stands-that is, when they have
 
 ## Cox, Gary and Mat McCubbins. 2005. Setting the Agenda: Responsible Party Government in the House of Representatives. Chs. 2, 4.
 
+### Lecture Notes:
+
+-   Take away this reading as like the kinda "truth"
+
+-   parties matter.
+
+-   Why parties - Aldrich
+
+-   why does the median voter to the right of a democratic majority give power to majority party literature?
+
+    -   because if you dont centralize power nothing happens and thus this hurts the party brand.
+
+        -   this is better/asnwers khrebial
+
 ### Chapter 2: Procedural Cartel Theory
 
 #### Why are there parties in legislatures?
@@ -3600,6 +3699,7 @@ When majority party members agree on basic policy stands-that is, when they have
 -   Parties are created to solve external collective action problems
 
     -   parties are formed primarily to accrue electoral gains
+    -   party brand
 
 #### How are parties organized?
 
@@ -3628,6 +3728,8 @@ When majority party members agree on basic policy stands-that is, when they have
 -   Parties as procedural coalitions
 
     -   the central issue is the majority party's ability to control the legislative agenda
+    -   \*\*\* this is important. This is where power is flexed.
+    -   prevent votes that embarrass members of the party.
 
 #### How do majority parties control the agenda?
 
@@ -3672,6 +3774,10 @@ When majority party members agree on basic policy stands-that is, when they have
 #### Other:
 
 -   Focus on party brand name.
+-   getting rolled is basically a violation of the hastert rule.
+    -   these should be rare according to Cox and McCubbins
+        -   because the party sets agenda
+            -   negative power
 
 ### Chapter 4: The Primacy of Reed's Rule in House Organization
 
@@ -3697,7 +3803,7 @@ When majority party members agree on basic policy stands-that is, when they have
 
 #### Reed's Rule
 
-These come about because there is a logjam of bills in the reconstruction congress. Minortity power could gum up the system.
+These come about because there is a logjam of bills in the reconstruction congress. Minority power could gum up the system. Prevent delay!
 
 1.  a rule giving the speaker the power to refuse to recognize members seeking to make dilatory motions
 
@@ -3722,3 +3828,415 @@ These come about because there is a logjam of bills in the reconstruction congre
     -   goal is to move dial.
 
     -   aimed at communication
+
+-   modern congress always changing hands
+
+-   these aren't new but now everyone uses it.
+
+-   uses amendment to look at.
+
+    -   HAS to be amendments cause majority controls bills that get to floor.
+
+# Week 10: Presidency and Interbranch Relations
+
+## [Ragsdale, Lyn and John Thies. 1997. \"The Institutionalization of the American Presidency,\" American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2960490.pdf?refreqid=fastly-default%3Af38c37cc15158316eca45f5952a275e3&ab_segments=&initiator=&acceptTC=1)
+
+sociology perspective is dialectic between institutions and person.
+
+rat choice still big in institutions. very good at predicting stability of institutions.
+
+congress asked president to do more. They asked because president is better. Probably a division of labor story.
+
+abdication hypothesis.
+
+presidential signing statements
+
+Congressional bills give more or less details (length of proxy).
+
+john d huber & Charles R. Shipan. - spatial model story
+
+Clinton et al. -
+
+### Theory: 
+
+The institutionalization of the presidency involves the process by which the office as an organization attains stability and value as an end in itself. Stability denotes that the entity cannot be easily altered or eliminated, while value involves the entity acquiring a distinctive identity. More specifically, the presidency becomes institutionalized when it attains high levels of four features: autonomy (the independence of the presidency from other units), adaptability (the longevity of units in the presidency), complexity (the dif ferentiation of subunits and staff in the office), and coherence (the manageable volume of work). Institutionalization results from an interplay between individual interests within the organization and aspects of the environment.
+
+### Hypothesis: 
+
+Government activity, congressional action, and individual presidents' efforts affect the degree of institutionalization across the dimensions of autonomy, adaptability, complexity, and coherence.
+
+### Methods: 
+
+From 1924 to 1992, several descriptive indicators of the four dimensions of in stitutionalization are analyzed, including expenditures, duration of organizational units, employees, and workload. A multivariate model is then estimated for the Executive Office of the President, Office of Management and Budget, and White House Office using ordinary least squares.
+
+### Results: 
+
+The presidency emerged as an institution in the 1970s. In estimating the impact of government activity, congressional action, and individual presidents on various indica tors of institutionalization, national government activity-measured by social welfare expenditures and defense expenditures-has the greatest impact. The effect of congres sional activity is more limited. The indicators for differences among individual presi dents have little effect
+
+### Background: 
+
+-   Previous presidential literature typically focuses on the personality, leadership, and decision making style of the presidency.
+
+    -   the key feature of the office IS the president.
+
+        -   not the institutional nature of the the presidency.
+
+            -   Authors are going to shift away from this.
+
+#### A Framework for Institutionalization:
+
+-   **We define institutionalization as the process by which an organization "acquires values and stability" as an end in itself.**
+
+    -   to "institutionalize" is to infuse with value beyond the technical requirements of the task at hand.
+
+        -   as an organization achieves stability and value, it becomes an institution.
+
+            -   **Stability denotes that the organization is no longer a mechanistic entity, easily altered or eliminated. Instead, as an organization institutionalizes, it survives various internal and environmental challenges and achieves self-maintenance-it exists in the future because it has existed in the past**
+
+                -   value denotes "the prizing of \[organization\] for its own sake."
+
+    -   **Institutionalization results from an interplay between individuals' interests within the organization and the environment. Individuals, who may already work as a staff or loosely-configured association, use resources to establish the organization, bolster its persistence, and make their activities more routine. The environment creates conditions for the organization to be taken for granted as it conducts specialized activities upon which other units grow to depend (Zucker 1991, 105).**
+
+        -   greater the institutionalization, the more it acts upon the individuals.
+
+        -   As the organization becomes institutionalized, it exhibits continuity and importance in spite of changes in individual or environmental exogenous constraints.
+
+-   When does an organization become institutionalized?
+
+    -   easier to say when an organization is not an institution then the other way around.
+
+#### Institutionalizing the Presidency 
+
+-   For much of its history, the president was literally just the president
+
+    -   had no organizational or institutional qualities
+
+-   Some disagreement about when the institutionalization of the presidency began
+
+    -   some think it started in 1939 with the creation of the Executive Office of the Presidency
+
+        -   others think it started before.
+
+            -   authors think it started before in 1924 with the Budget and Accounting Act of 1921
+
+                -   presidents now had to draft budgets and the bureau of the budget was established to help assemble the document.
+
+-   Follow 1924 through 1992 to see how the presidency acquired external (autonomy and adaptability) and internal (complexity and coherence) institutional elements.
+
+##### Autonomy: 
+
+-   the growth of an organizations budget - which shapes its stability and value.
+
+    -   larger the budget the more stable the organization
+
+-   **As the presidency becomes more institutionalized, administrations are able to offer policy directions free from other parts of the government, notably Congress.**
+
+##### Adaptability: 
+
+-   the "safety valve" of the institution.
+
+    -   the organization is subject to shifts as presidents add and subtract units, but it continues to develop over time, adjusting to these changes, as some new units become part of the enduring composition of the organization
+
+##### Complexity: 
+
+-    complexity marks an organization's increased division of labor and specialization.
+
+-   measure of complexity: organization's total units.
+
+    -   staff size is another one.
+
+##### Coherence: 
+
+-    Coherence involves the ability of the organization to manage its work load.
+
+-   measured with clearance criteria
+
+    -   While not ideal, this measure of clear ance volume captures much of what underlies coherence-the deadlines, guidelines, and preferences involved in managing the workload. More uniform volume denotes increased coherence.
+
+##### General Conclusion
+
+-   Presidency was NOT institutionalized in 1939 with the creation of the EOP.
+
+-   it was an organization that started the process of institutionalization
+
+-   PRESIDENTS STILL MATTER IN THE INSTITUTIONALIZATION PROCESS!
+
+#### Determinants of Presidential Institutionalization
+
+-   We offer a model of institutionalization specifying that the political environment and the behavior of individuals within the presidency, notably decisions of presidents themselves, shape the process
+
+-   Environmental factors:
+
+    -   First, the growing activity of the federal government enlarges the independent responsibilities of its several branches.
+
+    -   Second, the seeming intractability of major policy problems places demands on the presidency for novel policy solution
+
+        -   his reasons here are AWFUL. LOL
+
+            -   his evidence supports the theory but his theoretical argument seems bad to me.
+
+    -    Finally, congressional activity is apt to affect presidential institutionalization
+
+        -   "The more active Congress is, the more autonomous the presidency is likely to become in order to ensure executive success"
+
+-   Results:
+
+    -   First, the strongest determinants of changing levels of institutionalization are measures of national government activity.
+
+        -   **i am confused here because isn't this endogenous? How are we measuring national government activity? Isn't government activity a function of the increase in these presidential organizations?**
+
+            -   Much of the development of autonomy reflects an ongoing government commitment to such issues as social security, medical care, unemployment, and education, as evidenced by the burgeoning social welfare budget. As this national domestic policy commitment en larges and presidents' policy roles in domestic affairs also expand, the presidential institution grows to match the environmental changes.
+
+## [Canes-Wrone, Brandice, William Howell, and David Lewis. 2008. \"Toward a Broader Understanding of Presidential Power: A Reevaluation of the Two Presidencies Thesis,\" Journal of Politics.](https://www.journals.uchicago.edu/doi/full/10.1017/S0022381607080061)
+
+### Abstract: 
+
+An enduring and controversial debate centers on whether there exist ''two presidencies,'' that is, whether presidents exercise fundamentally greater inﬂuence over foreign than domestic affairs. This paper makes two contributions tounderstanding this issue and, by extension, presidential power more generally. First, we distill an institutional logic that both supports the two presidencies thesis and implies that Congress has incentives to delegate foreign policypowers to the president. Accordingly, the logic suggests that empirical analysis should incorporate these incentives.Our second contribution, then, is to test for the existence of two presidencies in a domain that Congress cannotdelegate, budgetary appropriations, and a domain that explicitly incorporates delegation, agency creation. Consistent with expectations, we ﬁnd presidents exercise considerably greater inﬂuence over foreign policy.
+
+### Research Question: 
+
+-   Do presidents exercise greater influence over foreign or domestic affairs?
+
+-   Do presidents get more control over agencies when they are focused on or foreign affairs?
+
+    -   Our institutional logic suggests that even if one controls for other factors that may affect these executive-legislative negotiations---such as the partisan composition of Congress and the individual president---chief executives will tend to get more of what they want for the foreign policy agencies than the domestic one
+
+        -   **this question is much more interesting than their first.**
+
+### Background: 
+
+-   Presidents have more influence over foreign policy.
+
+-   previous studies have looked at roll call voting
+
+-   constitution gives a lot of power to presidency over foreign policy
+
+-   Presidents vis-a-vis foreign policy: These provide incentives to delegate power to president on foreign policy from congress.
+
+    -   first movers advantage in the international environment
+
+    -   the collection and dispersal of information about foreign policy
+
+    -   the different electoral incentives of congressional members and presidents
+
+-   The two presidencies thesis, however, does not require that Congress be wholly uninformed about foreign policy---only that it be less informed than in domestic policy.
+
+### Methods/Data: 
+
+-   We examine ﬁscal year 1969--2000 appropriations data in addition to 1946--2000 agency creation and design data.
+
+    -   The budget data enable the examinationof a policy that, according to the Constitution, cannot easily be delegated to the executive.
+
+-   In each case, the dependent variable captures a component of presidential inﬂuence, and the independent variables either assess the degree to which this inﬂuence differs for foreign affairs or controls for other factors that could affect policy-making.
+
+-   ordered probit
+
+### Results: 
+
+-   the magnitude of the effect is notable: the president's requested change in budgetary appropriations is approximately 8 percentage points closer in foreign and defense agencies than it is in domestic ones.
+
+    -   This means that for a foreign or defense agency with previous spending of one billion dollars, a president's requests will be eighty million dollars closer to enacted appropriations than for acomparable domestic agency.
+
+-   The results again indicate that foreign and defense agencies are created to allow signiﬁcantly more presidential inﬂuence than domestic ones
+
+-   Setting all other variables at their means, the ﬁrst model predicts that foreign affairs agencies are 27 percentage points more likely to have all four characteristics that enhance presidential control.
+
+-   In sum, we ﬁnd substantial evidence that presidents secure more administrative inﬂuence over foreign policy agencies than domestic ones. Given that bureaucracies are relatively durable, our results point to an evolving bureaucracy where presidents have more and more control in foreign than domestic policy
+
+## [McCubbins, Mathew and Thomas Schwartz. 1984. \"Congressional Oversight Overlooked: Police Patrols versus Fire Alarms,\"American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2110792.pdf?refreqid=fastly-default%3A595b90c4b3e24e04e091b502653463bd&ab_segments=&initiator=&acceptTC=1)
+
+### Abstract: 
+
+Scholars have often remarked that Congress neglects its oversight responsibility. We argue that Congress does not do such thing: what appears to be a neglect of oversight really is the rational preference for one form of oversight - which we call fire-alarm oversight- over another form- policy-patrol oversight. Our analysis supports a somewhat neglected way of looking at the strategies by which legislators seek to achieve their goals.
+
+### Background: 
+
+-   Bunch of scholars basically think congress doesn't care about its oversight responsibility.
+
+    -   Authors disagree and say that this neglect is actually a form of oversight.
+
+-   **Congressional oversight policy concerns whether, to what extent, and in what way Congress attempts to detect and remedy executive-branch violations of legislative goals.**
+
+#### Police-Patrol Oversight 
+
+-   Congress examines a sample of executive-agency activities, with the aim of detecting and remedying any violations of legislative goals and, by its surveillance, discouraging such violations.
+
+-   literally analogous to a police-patrol.
+
+-   surveillance includes reading documents, commissioning scientific studies, conducting field observations, and holding hearings to question officials and affected citizens.
+
+#### Fire-Alarm Oversight
+
+-   Analogous to fire alarms
+
+-   congress establishes a system of rules, procedures, and informal practices that enable individual citizens and organized interest groups to examine administrative decisions (sometimes in prospect), to charge executive agencies with violating congressional goals, and to seek remedies from agencies, courts, and Congress itself.
+
+-   decentralized!
+
+-   involves less active and direct intervention than police-patrol oversight.
+
+-   Greater role for citizens and interest groups to help Congress.
+
+### Assumptions of Model: 
+
+1.  Technological Assumption:
+
+    1.  Two forms of oversight are available, Police-Patrol and Fire-Alarm
+
+        1.  Congress can chose between these two forms.
+
+            1.  When writing legislation Congress can include police patrol measures such as sunset reviews, or fire-alarm features such as requirements for public hearing
+
+            2.  When it evaluates an agencies performance, Congress can either call oversight hearings to patrol for violations of legislative goals or else wait for alarms to signal potential violations.
+
+2.  Motivational Assumption:
+
+    1.  congressman want to take credit from supporters - citizens and interest group.
+
+    2.  congressman seeks to avoid as much blame as possible for the net costs borne by his potential supporters.
+
+3.  Institutional Assumption:
+
+    1.  executive agencies act as agents of Congress and especially of those subcommittees on which they depend for authorizations and appropriations.
+
+### Consequences: 
+
+-   Consequence 1:
+
+    -   Congressmen tend to prefer fire-alarm oversight.
+
+        -   more efficient to take credit through this oversight
+
+        -   they already do police-oversight but no one really notices
+
+            -   opportunity-cost is negative here.
+
+        -   this seems like a division of labor story.
+
+            -   fire-alarm provides more time to congressman to do other stuff.
+
+    -   Congressmen might miss stuff. They don't know everything
+
+        -   citizens/interest groups alarm the congressmen to what is important and what they might miss.
+
+-   Consequence 2:
+
+    -   Congress will not neglect its oversight responsibility. It will adopt an extensive and somewhat effective (even if imperfect) oversight policy.
+
+        -   **When his potential supporters complain of a violation of legislative goals, a congressman gains credit if he eliminates the cause of the complaint.**
+
+-   Consequence 3:
+
+    -   Congress will adopt an extensive and somewhat effective policy of fire-alarm oversight while largely neglecting police-patrol oversight.
+
+### Is Fire-Alarm Oversight More Effective? 
+
+-   First, we do not contend that the most effective oversight policy is likely to contain no police-patrol features, only that fire-alarm techniques are likely to predominate. Second, we do not contend that a predominantly fire-alarm policy is more likely than a predominantly police-patrol policy to serve the public interest, only that it is likely to secure greater compliance with legislative goals; whether such compliance serves the public interest depends on what those goals are.
+
+-   A predominantly fire-alarm oversight policy is likely to be more effective-to secure greater compliance with legislative goals-than a predominantly police-patrol policy for two main reasons:
+
+    -   First, legislative goals often are stated in such a vague way that it is hard to decide whether any violation has occurred unless some citizen or group registers a complaint.
+
+    -   Second, whereas a fire-alarm policy would almost certainly pick up any violation of legislative goals that seriously harmed an organized group, a police-patrol policy would doubtless miss many such violations, since only a sample of executive-branch actions would be examined.
+
+### Question: 
+
+-   The concept of fire-alarm oversight surely requires citizens/interest groups to be aware and communicate their feelings.
+
+    -   How would they do that prior to television? How is this actually functioning. This makes sense to me in a modern context with the internet and instantaneous knowledge diffusion/communication.
+
+## [Clinton, Josh, David Lewis and Jennifer Selin. 2014. \"Influencing the Bureaucracy: The Irony of Congressional Oversight,\" American Journal of Political Science.](https://onlinelibrary.wiley.com/share/U3AVBEKM6XJ3YUKGWWDJ?target=10.1111/ajps.12066)
+
+### Abstract: 
+
+Does the president or Congress have more influence over policymaking by the bureaucracy? Despite a wealth of theoretical guidance, progress on this important question has proven elusive due to competing theoretical predictions and severedifficulties in measuring agency influence and oversight. We use a survey of federal executives to assess political influence,congressional oversight, and the policy preferences of agencies, committees, and the president on a comparable scale. Analyzing variation in political influence across and within agencies reveals that Congress is less influential relative to the White House when more committees are involved. While increasing the number of involved committees may maximizethe electoral benefits for members, it may also undercut the ability of Congress as an institution to collectively respond tothe actions of the presidency or the bureaucracy.
+
+### Research Question: 
+
+-   Whom are bureaucracies more responsive to? President or Congress?
+
+-   how does the internal organization of Congress shape congressional influence over the bureaucracy?
+
+-   We explore whether the institutional structure of Congress and a system of bureaucratic oversight that relies on multiple committees with overlapping jurisdic-tion tends to increase or decrease the ability of Congressto control the bureaucracy when faced with a presidentfrom the opposing party.
+
+### Background: 
+
+-   Members of Congress seek to organize Congress so that they are able to provide input on issues of potential re-election importance
+
+-   Scholars take different perspectives on whether an in-crease in the number of committees increases or decreasesthe influence of Congress on agency policies
+
+-   **As Congress tries to reconcile differences between chambers and among committees, the president may have an opportunity to exert influence**
+
+-   The incentive to free ride typically increases as the number of committees increases (Gailmard 2009; Laffont and Tirole1993), and this may affect Congress's ability to influence agency policy.
+
+-   one might question whether the existence of multiple committee overseers is a cause of congressional weakness or a response to previous presidential influence.
+
+### Data: 
+
+-   Survey of federal agency administrators and program managers designed to measure congressional and presidential influence over agency policymaking during 2007 and 2008
+
+    -   Of the 6,690 potential respondents, 2,225 executives from 128 different agencies and bureaus provided at least a partial response, and the average agency contains 14 respondents
+
+### Results: 
+
+-   We find that when more committees are involved in monitoring and potentially directing agency policy making, Congress is less influential than the president for determining agency policy.
+
+### Discussion: 
+
+-    One possibility is that as the number of committees involved in overseeing an agency increases, policy disagreements among the involved committees become more likely. Alternatively, more committee involvementmay result in less influence even if committees agree because of collective action problems and increased transaction costs.
+
+-   **Based on the perceptions and opinions of those individuals most responsible for implementing agency policy, the more congressional committees involved in the oversight of an agency, the weaker Congress is relative to the president. This suggests that the more Congress cares about an issue---at least as reflected in the structure of its committee system---the less influence Congress may have over the direction of agency policy making.**
+
+## [Kinane, Christina. 2021. \"Control without Confirmation: The Politics of Vacancies in Presidential Appointments,\" American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/control-without-confirmation-the-politics-of-vacancies-in-presidential-appointments/0993030400C450B424D8284CF780B1F3?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark)
+
+### Abstract: 
+
+Scholarship on separation of powers assumes executives are constrained by legislative approval when placing agents in top policy-making positions. But presidents frequently fill vacancies in agency leadership with unconfirmed, temporary officials or leave them empty entirely. I develop a novel dataset of vacancies across 15 executive departments from 1977 to 2016 and reevaluate the conventional perspective that appointment power operates only through formal channels. I argue that presidents\' nomination strategies include leaving positions empty and making interim appointments, and this choice reflects presidents\' priorities and the character of vacant positions. The evidence indicates that interim appointees are more likely when positions have a substantial capacity to act on presidential expansion priorities and suggest that presidents can capitalize on their first-mover advantage to evade Senate confirmation. The results further suggest that separation of powers models may need to consider how deliberate inaction and sidestepping of formal powers influence political control and policy-making strategies.
+
+### Research Question: 
+
+### Hypothesis:
+
+1.  **Empty Position Hypothesis**: *A president is more likely to leave high-value positions empty when prioritizing policy contraction*.
+
+2.  **Interim Appointee Hypothesis**: *A president will always immediately fill low-value positions with interim appointees and is more likely to immediately fill high-value positions with interims when prioritizing policy expansion*.
+
+### Background: 
+
+-   "PAS" positions require senate approval
+
+-   PAS positions *without* confirmed appointees could be *empty* or *filled with interim appointees*, temporary officials exercising the authority of the position without Senate confirmation.
+
+-   The Senate enters the appointment calculus only after a president, again unilaterally, chooses to submit a nominee.
+
+-   **That is, the crucial question for a president is not as much whether a potential appointee might be confirmed but how much the president\'s specific policy priorities can be advanced *without* a formal appointment.**
+
+-   an interim appointee can typically fill the position for 210 days after the vacancy began and upwards of 720 days if the respective nominations are withdrawn, rejected, or returned, and these limits are suspended if the Senate does not return the nomination.
+
+-   interim appointments offer presidents the flexibility to select individuals who the Senate might not otherwise confirm
+
+-   **I develop a new measure of the capacity of positions themselves to advance policy priorities to expand or contract the reach of an agency---which I call their *Position Value*. This position value, which is independent of a particular nominee or appointee, determines whether and when rational presidents strategically forgo appointments and nominations.**
+
+### Data/Method:
+
+-   I develop a new dataset that identifies when a president leaves a position empty by design or unilaterally fills it with an interim appointee. These originally collected data capture the status of PAS positions (e.g., empty, interim appointee, permanent appointee), the positions\' capacity to control policy outcomes, and the Senate\'s and president\'s policy priorities, across all fifteen Executive departments from 1977 to 2016.
+
+-   covers a total of 11,043 position-year observations
+
+-   Does a theoretical game (I don't really understand it).
+
+-   Estimates a multinomial probit
+
+    -   0 = empty
+
+    -   1 = Interim Appointee
+
+    -   2 = Permanent Appointee
+
+### Results: 
+
+-   Overall, the results indicate that *Position Value* significantly contributes to the likelihood of both an empty position and interim appointee.
+
+-   Taken together, the *Interim Appointee* and *Empty Position Hypotheses* produce the expectation that vacant positions are more likely to be filled by interim appointees than left empty when president *Position Value* is \"High Value (expansion)\"or \"Low Value.\"
+
+-   Contradiction value was not found to be statistically significant.
