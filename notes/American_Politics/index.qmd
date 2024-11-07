@@ -3839,6 +3839,36 @@ These come about because there is a logjam of bills in the reconstruction congre
 
 # Week 10: Presidency and Interbranch Relations
 
+## Lecture Notes: 
+
+-   Congress wants to delegate to specialized people
+
+    -   but Congress needs to make sure they don't drift away from their policy perspective
+
+        -   so how does Congress reign in bureaucracies
+
+            -   this is kind of where the big debates are
+
+                -   they can exercise oversight over executive
+
+                -   nomination stuff
+
+                -   committee stuff - see Clinton.
+
+                -   discretion
+
+                    -   Huber and shipman.
+
+    -   We give away authority because they are more specialized.
+
+-   Notice and comment
+
+    -   solicit feedback from people on regulation
+
+-   One of the debates hot in the 90s is congress actually really in control? Is it effective? Or are they abdicating?
+
+    -   one theory is about Congress and how they don't care - they just want to be reelected.
+
 ## [Ragsdale, Lyn and John Thies. 1997. \"The Institutionalization of the American Presidency,\" American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2960490.pdf?refreqid=fastly-default%3Af38c37cc15158316eca45f5952a275e3&ab_segments=&initiator=&acceptTC=1)
 
 sociology perspective is dialectic between institutions and person.
@@ -3856,6 +3886,12 @@ Congressional bills give more or less details (length of proxy).
 john d huber & Charles R. Shipan. - spatial model story
 
 Clinton et al. -
+
+Historic institutionalism - why institionts change and develop
+
+Rat choice institutionalism - why institutions stick around
+
+Sociological institutionalism - Independent force. Institutions influence thought process. Shape social norms. Joe manchin believeing in the filibuster is an example. He totally believes that stuff.
 
 ### Theory: 
 
@@ -3923,6 +3959,8 @@ The presidency emerged as an institution in the 1970s. In estimating the impact 
 
 -   Follow 1924 through 1992 to see how the presidency acquired external (autonomy and adaptability) and internal (complexity and coherence) institutional elements.
 
+-   Huntington defines the following as critical for institution:
+
 ##### Autonomy: 
 
 -   the growth of an organizations budget - which shapes its stability and value.
@@ -3947,11 +3985,13 @@ The presidency emerged as an institution in the 1970s. In estimating the impact 
 
 ##### Coherence: 
 
--    Coherence involves the ability of the organization to manage its work load.
+-   Coherence involves the ability of the organization to manage its work load.
 
 -   measured with clearance criteria
 
     -   While not ideal, this measure of clear ance volume captures much of what underlies coherence-the deadlines, guidelines, and preferences involved in managing the workload. More uniform volume denotes increased coherence.
+
+-   Regularized decision making. NOT AD HOC!
 
 ##### General Conclusion
 
@@ -4025,9 +4065,11 @@ An enduring and controversial debate centers on whether there exist ''two presid
 
 -   We examine ﬁscal year 1969--2000 appropriations data in addition to 1946--2000 agency creation and design data.
 
-    -   The budget data enable the examinationof a policy that, according to the Constitution, cannot easily be delegated to the executive.
+    -   The budget data enable the examination of a policy that, according to the Constitution, cannot easily be delegated to the executive.
 
 -   In each case, the dependent variable captures a component of presidential inﬂuence, and the independent variables either assess the degree to which this inﬂuence differs for foreign affairs or controls for other factors that could affect policy-making.
+
+-   Don't want an issue of selection effect. So we look at budget.
 
 -   ordered probit
 
@@ -4044,6 +4086,12 @@ An enduring and controversial debate centers on whether there exist ''two presid
 -   In sum, we ﬁnd substantial evidence that presidents secure more administrative inﬂuence over foreign policy agencies than domestic ones. Given that bureaucracies are relatively durable, our results point to an evolving bureaucracy where presidents have more and more control in foreign than domestic policy
 
 ## [McCubbins, Mathew and Thomas Schwartz. 1984. \"Congressional Oversight Overlooked: Police Patrols versus Fire Alarms,\"American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2110792.pdf?refreqid=fastly-default%3A595b90c4b3e24e04e091b502653463bd&ab_segments=&initiator=&acceptTC=1)
+
+-   Is Congress actually abdicating their power?
+
+-   Key point - absence of oversight is not the absence of intent to oversee.
+
+-   This is really important for principle-agent.
 
 ### Abstract: 
 
@@ -4149,7 +4197,7 @@ Scholars have often remarked that Congress neglects its oversight responsibility
 
 ### Abstract: 
 
-Does the president or Congress have more influence over policymaking by the bureaucracy? Despite a wealth of theoretical guidance, progress on this important question has proven elusive due to competing theoretical predictions and severedifficulties in measuring agency influence and oversight. We use a survey of federal executives to assess political influence,congressional oversight, and the policy preferences of agencies, committees, and the president on a comparable scale. Analyzing variation in political influence across and within agencies reveals that Congress is less influential relative to the White House when more committees are involved. While increasing the number of involved committees may maximizethe electoral benefits for members, it may also undercut the ability of Congress as an institution to collectively respond tothe actions of the presidency or the bureaucracy.
+Does the president or Congress have more influence over policymaking by the bureaucracy? Despite a wealth of theoretical guidance, progress on this important question has proven elusive due to competing theoretical predictions and severedifficulties in measuring agency influence and oversight. We use a survey of federal executives to assess political influence,congressional oversight, and the policy preferences of agencies, committees, and the president on a comparable scale. Analyzing variation in political influence across and within agencies reveals that Congress is less influential relative to the White House when more committees are involved. While increasing the number of involved committees may maximizethe electoral benefits for members, it may also undercut the ability of Congress as an institution to collectively respond to the actions of the presidency or the bureaucracy.
 
 ### Research Question: 
 
@@ -4157,7 +4205,7 @@ Does the president or Congress have more influence over policymaking by the bure
 
 -   how does the internal organization of Congress shape congressional influence over the bureaucracy?
 
--   We explore whether the institutional structure of Congress and a system of bureaucratic oversight that relies on multiple committees with overlapping jurisdic-tion tends to increase or decrease the ability of Congressto control the bureaucracy when faced with a presidentfrom the opposing party.
+-   We explore whether the institutional structure of Congress and a system of bureaucratic oversight that relies on multiple committees with overlapping jurisdic-tion tends to increase or decrease the ability of Congress to control the bureaucracy when faced with a presidentfrom the opposing party.
 
 ### Background: 
 
@@ -4167,7 +4215,7 @@ Does the president or Congress have more influence over policymaking by the bure
 
 -   **As Congress tries to reconcile differences between chambers and among committees, the president may have an opportunity to exert influence**
 
--   The incentive to free ride typically increases as the number of committees increases (Gailmard 2009; Laffont and Tirole1993), and this may affect Congress's ability to influence agency policy.
+-   The incentive to free ride typically increases as the number of committees increases (Gailmard 2009; Laffont and Tirole 1993), and this may affect Congress's ability to influence agency policy.
 
 -   one might question whether the existence of multiple committee overseers is a cause of congressional weakness or a response to previous presidential influence.
 
@@ -4188,6 +4236,12 @@ Does the president or Congress have more influence over policymaking by the bure
 -   **Based on the perceptions and opinions of those individuals most responsible for implementing agency policy, the more congressional committees involved in the oversight of an agency, the weaker Congress is relative to the president. This suggests that the more Congress cares about an issue---at least as reflected in the structure of its committee system---the less influence Congress may have over the direction of agency policy making.**
 
 ## [Kinane, Christina. 2021. \"Control without Confirmation: The Politics of Vacancies in Presidential Appointments,\" American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/control-without-confirmation-the-politics-of-vacancies-in-presidential-appointments/0993030400C450B424D8284CF780B1F3?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark)
+
+-   Lack of soft power when you are an interm appointee
+
+    -   more legitiamcy and helps the principle agent issue between the bureau and the head.
+
+-   multinomial logit/probit are different and make different assumptions.
 
 ### Abstract: 
 
@@ -4216,6 +4270,8 @@ Scholarship on separation of powers assumes executives are constrained by legisl
 -   interim appointments offer presidents the flexibility to select individuals who the Senate might not otherwise confirm
 
 -   **I develop a new measure of the capacity of positions themselves to advance policy priorities to expand or contract the reach of an agency---which I call their *Position Value*. This position value, which is independent of a particular nominee or appointee, determines whether and when rational presidents strategically forgo appointments and nominations.**
+
+    -   expansion or contractionary
 
 ### Data/Method:
 

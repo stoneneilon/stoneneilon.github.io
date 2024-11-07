@@ -270,6 +270,19 @@ window.Quarto = {
   <li><a href="#censored-count" id="toc-censored-count" class="nav-link" data-scroll-target="#censored-count">Censored Count</a></li>
   <li><a href="#hurdle-models" id="toc-hurdle-models" class="nav-link" data-scroll-target="#hurdle-models">Hurdle Models</a></li>
   </ul></li>
+  <li><a href="#topic-10" id="toc-topic-10" class="nav-link" data-scroll-target="#topic-10">Topic 10</a>
+  <ul class="collapse">
+  <li><a href="#duration-models---time-to-event-data" id="toc-duration-models---time-to-event-data" class="nav-link" data-scroll-target="#duration-models---time-to-event-data">Duration Models - time to event data</a></li>
+  <li><a href="#kaplan-meier-curves" id="toc-kaplan-meier-curves" class="nav-link" data-scroll-target="#kaplan-meier-curves">Kaplan-Meier Curves</a></li>
+  <li><a href="#duration-models" id="toc-duration-models" class="nav-link" data-scroll-target="#duration-models">Duration Models</a></li>
+  <li><a href="#the-hazard-rate" id="toc-the-hazard-rate" class="nav-link" data-scroll-target="#the-hazard-rate">The Hazard Rate</a></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a></li>
+  <li><a href="#exponential-functions" id="toc-exponential-functions" class="nav-link" data-scroll-target="#exponential-functions">Exponential Functions</a></li>
+  <li><a href="#weibull-distribution" id="toc-weibull-distribution" class="nav-link" data-scroll-target="#weibull-distribution">Weibull Distribution</a></li>
+  <li><a href="#gamma" id="toc-gamma" class="nav-link" data-scroll-target="#gamma">Gamma</a></li>
+  <li><a href="#interpretation-proportional-hazards" id="toc-interpretation-proportional-hazards" class="nav-link" data-scroll-target="#interpretation-proportional-hazards">Interpretation: Proportional Hazards</a></li>
+  <li><a href="#cox-model" id="toc-cox-model" class="nav-link" data-scroll-target="#cox-model">Cox Model</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1138,6 +1151,105 @@ window.Quarto = {
 <ul>
 <li><p>these assume that there is a unique DGP that determines whether we observe a zero or truncated Poisson</p></li>
 <li><p>confusing</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-10" class="level1">
+<h1>Topic 10</h1>
+<section id="duration-models---time-to-event-data" class="level2">
+<h2 class="anchored" data-anchor-id="duration-models---time-to-event-data">Duration Models - time to event data</h2>
+<ul>
+<li><p>The key focus is on the time until an event occurs</p></li>
+<li><p>Originates from epidemiology where observations were patients, the start was the onset of the study, and th event was death, disease, recovery, etc.</p></li>
+<li><p>Differs from event count models; we’re now trying to see how long until a single event occurs.</p></li>
+<li><p>1=failure, 0=no failure</p></li>
+<li><p>presence of time-varying covariates is going to influence how we structure our dataset.</p></li>
+</ul>
+</section>
+<section id="kaplan-meier-curves" class="level2">
+<h2 class="anchored" data-anchor-id="kaplan-meier-curves">Kaplan-Meier Curves</h2>
+<ul>
+<li><p>Epidemiology loves this, poli sci not so much</p></li>
+<li><p>the proportion/percent surviving is on the vertical axis</p></li>
+<li><p>time is on the horizontal axis</p></li>
+</ul>
+</section>
+<section id="duration-models" class="level2">
+<h2 class="anchored" data-anchor-id="duration-models">Duration Models</h2>
+<ul>
+<li><p>Data consist of a cross-section of <em>i</em> units</p></li>
+<li><p>units enter at <span class="math inline">\(t_0\)</span></p></li>
+<li><p>How does <span class="math inline">\(x\)</span> affect <span class="math inline">\(T_i\)</span> ?</p></li>
+<li><p>not a normal distribution!</p></li>
+<li><p>Weibull, exponetnial, Gompertz</p></li>
+<li><p>Add in explanatory covariates</p></li>
+<li><p>Can either be constant across t, or time-varying, depending how the data are structured.</p></li>
+<li><p>Semi-proportional model:</p>
+<ul>
+<li><p>you don’t have to specify the hazard.</p>
+<ul>
+<li><p>Cox proportional hazard model</p>
+<ul>
+<li>like everyone runs this.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="the-hazard-rate" class="level2">
+<h2 class="anchored" data-anchor-id="the-hazard-rate">The Hazard Rate</h2>
+<ul>
+<li><p>whats the probability that a unit fails in the next period</p></li>
+<li><p>As the time interval between periods, <span class="math inline">\(\delta\)</span>, gets smaller and smaller, we approximate the hazard rate</p></li>
+<li><p>the hazard rate is the rate at which units fail after time t, given that they have last up to time t.</p></li>
+</ul>
+</section>
+<section id="recap" class="level2">
+<h2 class="anchored" data-anchor-id="recap">Recap</h2>
+<ul>
+<li>We choose a distribution, then can condition the shape of the distribution by adding covariates.</li>
+</ul>
+</section>
+<section id="exponential-functions" class="level2">
+<h2 class="anchored" data-anchor-id="exponential-functions">Exponential Functions</h2>
+<ul>
+<li><p>Exponential is “memoryless”</p></li>
+<li><p>this means that there is a constant risk of failure at all times.</p></li>
+</ul>
+</section>
+<section id="weibull-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="weibull-distribution">Weibull Distribution</h2>
+<ul>
+<li>monotonically increasing, decreasing, or flat hazard rate.</li>
+</ul>
+</section>
+<section id="gamma" class="level2">
+<h2 class="anchored" data-anchor-id="gamma">Gamma</h2>
+<ul>
+<li><p>The most general one</p></li>
+<li><p>look at gamma first and test down basically.</p></li>
+</ul>
+</section>
+<section id="interpretation-proportional-hazards" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation-proportional-hazards">Interpretation: Proportional Hazards</h2>
+<ul>
+<li><p>For most models, such as the exponential and Weibull, the metric output is in proportional hazards.</p></li>
+<li><p>a one unit increase in x makes the instantaneous rate of failure twice as likely..</p></li>
+</ul>
+</section>
+<section id="cox-model" class="level2">
+<h2 class="anchored" data-anchor-id="cox-model">Cox Model</h2>
+<ul>
+<li><p>It allows users to avoid explicitly specifying the baseline hazard</p></li>
+<li><p>We don’t care about the baseline hazard (often, since we only guess at what it might be)</p></li>
+<li><p>We just want to see how covariates affect the hazard rate</p></li>
+<li><p>Assumption</p>
+<ul>
+<li><p>covariates affect the relative risk of failure, not the shape of the overall hazard function</p>
+<ul>
+<li>when testing, make sure to interact all RHS variables with t or g(t). Significant interaction terms indicate violation of PH assumption.</li>
+</ul></li>
+</ul></li>
 </ul>
 
 

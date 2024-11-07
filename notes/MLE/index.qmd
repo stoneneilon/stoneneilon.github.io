@@ -838,3 +838,97 @@ we are like basically modeling a rate (count/exposure time)
 -   these assume that there is a unique DGP that determines whether we observe a zero or truncated Poisson
 
 -   confusing
+
+# Topic 10
+
+## Duration Models - time to event data
+
+-   The key focus is on the time until an event occurs
+
+-   Originates from epidemiology where observations were patients, the start was the onset of the study, and th event was death, disease, recovery, etc.
+
+-   Differs from event count models; we're now trying to see how long until a single event occurs.
+
+-   1=failure, 0=no failure
+
+-   presence of time-varying covariates is going to influence how we structure our dataset.
+
+## Kaplan-Meier Curves 
+
+-   Epidemiology loves this, poli sci not so much
+
+-   the proportion/percent surviving is on the vertical axis
+
+-   time is on the horizontal axis
+
+## Duration Models
+
+-   Data consist of a cross-section of *i* units
+
+-   units enter at $t_0$
+
+-   How does $x$ affect $T_i$ ?
+
+-   not a normal distribution!
+
+-   Weibull, exponetnial, Gompertz
+
+-   Add in explanatory covariates
+
+-   Can either be constant across t, or time-varying, depending how the data are structured.
+
+-   Semi-proportional model:
+
+    -   you don't have to specify the hazard.
+
+        -   Cox proportional hazard model
+
+            -   like everyone runs this.
+
+## The Hazard Rate
+
+-   whats the probability that a unit fails in the next period
+
+-   As the time interval between periods, $\delta$, gets smaller and smaller, we approximate the hazard rate
+
+-   the hazard rate is the rate at which units fail after time t, given that they have last up to time t.
+
+## Recap 
+
+-   We choose a distribution, then can condition the shape of the distribution by adding covariates.
+
+## Exponential Functions 
+
+-   Exponential is "memoryless"
+
+-   this means that there is a constant risk of failure at all times.
+
+## Weibull Distribution 
+
+-   monotonically increasing, decreasing, or flat hazard rate.
+
+## Gamma 
+
+-   The most general one
+
+-   look at gamma first and test down basically.
+
+## Interpretation: Proportional Hazards
+
+-   For most models, such as the exponential and Weibull, the metric output is in proportional hazards.
+
+-   a one unit increase in x makes the instantaneous rate of failure twice as likely..
+
+## Cox Model
+
+-   It allows users to avoid explicitly specifying the baseline hazard
+
+-   We don't care about the baseline hazard (often, since we only guess at what it might be)
+
+-   We just want to see how covariates affect the hazard rate
+
+-   Assumption
+
+    -   covariates affect the relative risk of failure, not the shape of the overall hazard function
+
+        -   when testing, make sure to interact all RHS variables with t or g(t). Significant interaction terms indicate violation of PH assumption.

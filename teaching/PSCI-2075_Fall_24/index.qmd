@@ -868,7 +868,7 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 
 ## Stone's Song of the Week
 
-[![L\'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
+[![L'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
 
 I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now...You think I want to be here teaching you about variance?! JK I do \<3 variance and standard deviation are very important.
 
@@ -1679,7 +1679,7 @@ t.test(gdp.percap~dpi.cemo, data = world, alternative = "greater")
 
 -   **4 people MAX**
 
-# Week 10 
+# Week 10
 
 ## Stone's Song of the Week:
 
@@ -1719,15 +1719,17 @@ cor(mtcars$mpg, mtcars$wt)
 
 ![Correlation vs. Regression](corrreg.png){fig-align="center" width="534"}
 
-## Why Does Correlation $\neq$ Causation? 
+## Why Does Correlation $\neq$ Causation?
 
 -   [Here is a great website of spurious correlations](https://www.tylervigen.com/spurious-correlations)
 
     -   This is why theory matters!
 
-        -    we know these things are completely unrelated but yet they have a high degree of correlation.
+        -   we know these things are completely unrelated but yet they have a high degree of correlation.
 
-            -   correlation just quantifies the covariance of two variables into an output between -1 and 1.
+        ```         
+        -   correlation just quantifies the covariance of two variables into an output between -1 and 1.
+        ```
 
 ## Regression
 
@@ -1768,6 +1770,91 @@ Let's go over this real quick. Don't worry if you are still fuzzy. We are going 
 summary(lm(mtcars$mpg~mtcars$wt)) 
 ```
 
-## Homework 3: 
+## Homework 3:
 
 -   If you are done with Homework 3 - you are free to go!
+
+# Week 11 
+
+## Stone's Song of the Week
+
+[![T.I., Justin Timberlake - Dead And Gone](TI.jpeg){fig-align="center" width="526"}](https://www.youtube.com/watch?v=6mEx9FtuN0k)
+
+The old me is dead and gone but that new me will be alright 🧑👈🙏💪
+
+## Regression Line (continued) 
+
+-   minimize the sum of squared residuals
+
+-   What is a residual?
+
+    -   vertical distance from point to line
+
+        -   $y_i - \hat{y}_i$
+
+            -   note: a residual might also be called "error".
+
+                -   The error/residual is how much our line of best fit DOES NOT explain.
+
+                    -   remember we live in a stochastic world!
+
+-   We are going to minimize the error across **ALL OBSERVATIONS**.
+
+    -   thus we are drawing a line that perfectly does that
+
+        -   of course, we can draw an infinite number of lines. So how do we know what line is best?
+
+            -   there is a formula that you do **not** need to know:
+
+                -   $\beta = (X'X)^{-1}X'Y$
+
+## Regression in R
+
+Let's first make a scatterplot:
+
+```{r}
+library(RCPA3)
+plot(states$cigarettes ~ states$cig.tax, main = "cigarette taxes and smoking", xlab = "cigarette tax/pack", ylab = "Mean num. of packs bimonthly")
+```
+
+Let's run a regression now.
+
+-   Dependent variable: cigarette consumption by state
+
+-   Independent variable: cigarette tax by state
+
+```{r}
+model <- lm(states$cigarettes ~ states$cig.tax) #run a bivariate regression and call it 'model'
+summary(model) # show the results of the regression model
+```
+
+Let's add the regression line to the scatterplot.
+
+```{r}
+plot(states$cigarettes ~ states$cig.tax, main = "cigarette taxes and smoking", xlab = "cigarette tax/pack", ylab = "Mean num. of packs bimonthly")
+abline(model, col = "red") # adds a line to plot
+```
+
+### A better way to visualize 
+
+The code above is a little messy. We can use a new package called 'ggplot2' to create a plot. We can load the 'tidyverse' package which contains ggplot2.
+
+This might look a little more confusing but take the time to dig in and I think you can start to see why this is a bit better. Additionally, ggplot2 has an insane amount of customization. This package allows you to basically make any plot you can think of.
+
+```{r}
+library(tidyverse)
+# ggplot version
+ggplot(states, aes(x = cig.tax, y = cigarettes)) +
+  geom_point() +  # Scatter plot of the data
+  geom_smooth(method = "lm", se = TRUE, color = "red") +  # Add linear regression line
+  labs(
+    title = "Cigarette Taxes and Smoking",
+    x = "Cigarette Tax/Pack",
+    y = "Mean Num. of Packs Bimonthly")
+```
+
+See! Doesn't that look so much better? Do you know what that band is around the line?
+
+## Homework 4 
+
+-   Groups are up to you.
