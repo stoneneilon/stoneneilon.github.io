@@ -1860,3 +1860,98 @@ See! Doesn't that look so much better? Do you know what that band is around the 
 -   Groups are up to you.
 
 -   Due next week.
+
+# Week 12 
+
+## Stone's Song of the Week
+
+[![Talking Heads - Life During Wartime (live)](pain_world.webp){fig-align="center" width="595"}](https://www.youtube.com/watch?v=8al5cSQNmME)
+
+This room is our sanctuary for statistics. There is no pain when we learn statistics
+
+## Housekeeping
+
+-   **WE WILL HAVE RECITATION NEXT WEEK (BEFORE THANKSGIVING BREAK)!**
+
+-   I finished grading homework 3
+
+-   It seems we are struggling with interpretation of our results.
+
+-   You should always say whether you reject or fail to reject the null hypothesis!
+
+-   What area do you feel you need more help with?
+
+## Hypothesis Testing in Regression
+
+-   We loosely went over this earlier but I wanted to circle back.
+
+-   When we do regression we still specify our null and alternative hypothesis.
+
+-   These will look like the following:
+
+    -   Null Hypothesis $\beta = 0$
+
+    -   Alternative Hypothesis $\beta \neq 0$
+
+-   If our coefficient is statistically different, that means our (coefficient/slope) is statistically different from zero!
+
+## Multivariate Regression 
+
+-   Same thing as bivariate regression but with more variables!
+
+-   Past 3 variables we can't really visualize this with all the dimensions. It will hurt your brain! (So, don't do it!)
+
+-   Multivariate regression allows us to "control" for other variables.
+
+-   By controlling for other variables, we can isolate the effect our variable we are interested in.
+
+    -   Let's work through an example with cigarette use as our DV and cigarette tax as our IV.
+
+### Bivariate Regression (what you have been doing) 
+
+```{r}
+library(RCPA3)
+model_bivariate <- lm(cigarettes ~ cig.tax, data = states) # create regression and assign to object
+summary(model_bivariate) # print summary statistics for regression model 
+```
+
+### Multivariate Regression 
+
+-   before we run the multivariate regression, we need to think about what other variables may influence cigarette use.
+
+-   What variables influence cigarette use? This is why theory is important!
+
+    -   I can think of a few from the 'states' dataset (there are more):
+
+        -   age ("median.age")
+
+        -   education ("ba.or.more")
+
+        -   income ("prcapinc")
+
+```{r}
+model_multivariate <- lm(cigarettes ~ cig.tax + median.age + ba.or.more + prcapinc, data = states) # create regression and assign to object
+summary(model_multivariate) # print summary statistics for regression model 
+```
+
+-   Scroll up and compare the results to the bivariate result. What do you notice?
+
+-   Do you remember how to interpret this?
+
+## Homework 4
+
+-   Some of you may be a bit confused about the first part of the homework
+
+-   The point of this exercise is to find a line of best fit.
+
+    -   We want to find a line that minimizes the residuals
+
+        -   but how do we know what the residuals are without the line of best fit?!
+
+            -   well, we are going to try different lines and see what which one minimizes the residuals, *the most.* (There is formula that does this but the purpose of this exercise is to help you understand the concept of regression.)
+
+![Sum of squares example (from lecture) with candidate line](sum_of_squares_example.png){fig-align="center" width="767"}
+
+## Homework 4
+
+-   Take the remainder of class to work on the homework!

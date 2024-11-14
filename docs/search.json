@@ -3232,5 +3232,47 @@
     "title": "MLE - Data 3",
     "section": "Cox Model",
     "text": "Cox Model\n\nIt allows users to avoid explicitly specifying the baseline hazard\nWe don’t care about the baseline hazard (often, since we only guess at what it might be)\nWe just want to see how covariates affect the hazard rate\nAssumption\n\ncovariates affect the relative risk of failure, not the shape of the overall hazard function\n\nwhen testing, make sure to interact all RHS variables with t or g(t). Significant interaction terms indicate violation of PH assumption."
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#stones-song-of-the-week-10",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#stones-song-of-the-week-10",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Stone’s Song of the Week",
+    "text": "Stone’s Song of the Week\n\n\n\n\n\n\n\nTalking Heads - Life During Wartime (live)\n\n\nThis room is our sanctuary for statistics. There is no pain when we learn statistics"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#housekeeping",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#housekeeping",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Housekeeping",
+    "text": "Housekeeping\n\nWE WILL HAVE RECITATION NEXT WEEK (BEFORE THANKSGIVING BREAK)!\nI finished grading homework 3\nIt seems we are struggling with interpretation of our results.\nYou should always say whether you reject or fail to reject the null hypothesis!\nWhat area do you feel you need more help with?"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#hypothesis-testing-in-regression",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#hypothesis-testing-in-regression",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Hypothesis Testing in Regression",
+    "text": "Hypothesis Testing in Regression\n\nWe loosely went over this earlier but I wanted to circle back.\nWhen we do regression we still specify our null and alternative hypothesis.\nThese will look like the following:\n\nNull Hypothesis \\(\\beta = 0\\)\nAlternative Hypothesis \\(\\beta \\neq 0\\)\n\nIf our coefficient is statistically different, that means our (coefficient/slope) is statistically different from zero!"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#multivariate-regression",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#multivariate-regression",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Multivariate Regression",
+    "text": "Multivariate Regression\n\nSame thing as bivariate regression but with more variables!\nPast 3 variables we can’t really visualize this with all the dimensions. It will hurt your brain! (So, don’t do it!)\nMultivariate regression allows us to “control” for other variables.\nBy controlling for other variables, we can isolate the effect our variable we are interested in.\n\nLet’s work through an example with cigarette use as our DV and cigarette tax as our IV.\n\n\n\nBivariate Regression (what you have been doing)\n\nlibrary(RCPA3)\nmodel_bivariate &lt;- lm(cigarettes ~ cig.tax, data = states) # create regression and assign to object\nsummary(model_bivariate) # print summary statistics for regression model \n\n\nCall:\nlm(formula = cigarettes ~ cig.tax, data = states)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-4.9640 -1.3838 -0.3718  0.8209 10.4901 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)   9.7994     0.8065  12.151 2.97e-16 ***\ncig.tax      -1.2177     0.3798  -3.206  0.00239 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.91 on 48 degrees of freedom\nMultiple R-squared:  0.1764,    Adjusted R-squared:  0.1592 \nF-statistic: 10.28 on 1 and 48 DF,  p-value: 0.002394\n\n\n\n\nMultivariate Regression\n\nbefore we run the multivariate regression, we need to think about what other variables may influence cigarette use.\nWhat variables influence cigarette use? This is why theory is important!\n\nI can think of a few from the ‘states’ dataset (there are more):\n\nage (“median.age”)\neducation (“ba.or.more”)\nincome (“prcapinc”)\n\n\n\n\nmodel_multivariate &lt;- lm(cigarettes ~ cig.tax + median.age + ba.or.more + prcapinc, data = states) # create regression and assign to object\nsummary(model_multivariate) # print summary statistics for regression model \n\n\nCall:\nlm(formula = cigarettes ~ cig.tax + median.age + ba.or.more + \n    prcapinc, data = states)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-4.3902 -0.8428 -0.3169  0.4261  9.3813 \n\nCoefficients:\n              Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) -1.200e+01  6.705e+00  -1.790 0.080175 .  \ncig.tax     -1.364e+00  4.218e-01  -3.233 0.002293 ** \nmedian.age   6.038e-01  1.624e-01   3.718 0.000553 ***\nba.or.more  -2.235e-01  1.119e-01  -1.997 0.051898 .  \nprcapinc     1.809e-04  1.397e-04   1.295 0.201870    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.495 on 45 degrees of freedom\nMultiple R-squared:  0.4325,    Adjusted R-squared:  0.3821 \nF-statistic: 8.574 on 4 and 45 DF,  p-value: 3.125e-05\n\n\n\nScroll up and compare the results to the bivariate result. What do you notice?\nDo you remember how to interpret this?"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#homework-4-1",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#homework-4-1",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Homework 4",
+    "text": "Homework 4\n\nSome of you may be a bit confused about the first part of the homework\nThe point of this exercise is to find a line of best fit.\n\nWe want to find a line that minimizes the residuals\n\nbut how do we know what the residuals are without the line of best fit?!\n\nwell, we are going to try different lines and see what which one minimizes the residuals, the most. (There is formula that does this but the purpose of this exercise is to help you understand the concept of regression.)\n\n\n\n\n\n\n\nSum of squares example (from lecture) with candidate line"
+  },
+  {
+    "objectID": "teaching/PSCI-2075_Fall_24/index.html#homework-4-2",
+    "href": "teaching/PSCI-2075_Fall_24/index.html#homework-4-2",
+    "title": "PSCI 2075 - Quantitive Research Methods - Fall 2024",
+    "section": "Homework 4",
+    "text": "Homework 4\n\nTake the remainder of class to work on the homework!"
   }
 ]

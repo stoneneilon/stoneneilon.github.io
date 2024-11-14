@@ -370,6 +370,19 @@ window.Quarto = {
   </ul></li>
   <li><a href="#homework-4" id="toc-homework-4" class="nav-link" data-scroll-target="#homework-4">Homework 4</a></li>
   </ul></li>
+  <li><a href="#week-12" id="toc-week-12" class="nav-link" data-scroll-target="#week-12">Week 12</a>
+  <ul class="collapse">
+  <li><a href="#stones-song-of-the-week-10" id="toc-stones-song-of-the-week-10" class="nav-link" data-scroll-target="#stones-song-of-the-week-10">Stone’s Song of the Week</a></li>
+  <li><a href="#housekeeping" id="toc-housekeeping" class="nav-link" data-scroll-target="#housekeeping">Housekeeping</a></li>
+  <li><a href="#hypothesis-testing-in-regression" id="toc-hypothesis-testing-in-regression" class="nav-link" data-scroll-target="#hypothesis-testing-in-regression">Hypothesis Testing in Regression</a></li>
+  <li><a href="#multivariate-regression" id="toc-multivariate-regression" class="nav-link" data-scroll-target="#multivariate-regression">Multivariate Regression</a>
+  <ul class="collapse">
+  <li><a href="#bivariate-regression-what-you-have-been-doing" id="toc-bivariate-regression-what-you-have-been-doing" class="nav-link" data-scroll-target="#bivariate-regression-what-you-have-been-doing">Bivariate Regression (what you have been doing)</a></li>
+  <li><a href="#multivariate-regression-1" id="toc-multivariate-regression-1" class="nav-link" data-scroll-target="#multivariate-regression-1">Multivariate Regression</a></li>
+  </ul></li>
+  <li><a href="#homework-4-1" id="toc-homework-4-1" class="nav-link" data-scroll-target="#homework-4-1">Homework 4</a></li>
+  <li><a href="#homework-4-2" id="toc-homework-4-2" class="nav-link" data-scroll-target="#homework-4-2">Homework 4</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -2631,6 +2644,161 @@ F-statistic: 10.28 on 1 and 48 DF,  p-value: 0.002394</code></pre>
 <ul>
 <li><p>Groups are up to you.</p></li>
 <li><p>Due next week.</p></li>
+</ul>
+</section>
+</section>
+<section id="week-12" class="level1">
+<h1>Week 12</h1>
+<section id="stones-song-of-the-week-10" class="level2">
+<h2 class="anchored" data-anchor-id="stones-song-of-the-week-10">Stone’s Song of the Week</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.youtube.com/watch?v=8al5cSQNmME"><img src="pain_world.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" width="595" alt="Talking Heads - Life During Wartime (live)"></a></p>
+</figure>
+</div>
+<figcaption>Talking Heads - Life During Wartime (live)</figcaption>
+</figure>
+</div>
+<p>This room is our sanctuary for statistics. There is no pain when we learn statistics</p>
+</section>
+<section id="housekeeping" class="level2">
+<h2 class="anchored" data-anchor-id="housekeeping">Housekeeping</h2>
+<ul>
+<li><p><strong>WE WILL HAVE RECITATION NEXT WEEK (BEFORE THANKSGIVING BREAK)!</strong></p></li>
+<li><p>I finished grading homework 3</p></li>
+<li><p>It seems we are struggling with interpretation of our results.</p></li>
+<li><p>You should always say whether you reject or fail to reject the null hypothesis!</p></li>
+<li><p>What area do you feel you need more help with?</p></li>
+</ul>
+</section>
+<section id="hypothesis-testing-in-regression" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-testing-in-regression">Hypothesis Testing in Regression</h2>
+<ul>
+<li><p>We loosely went over this earlier but I wanted to circle back.</p></li>
+<li><p>When we do regression we still specify our null and alternative hypothesis.</p></li>
+<li><p>These will look like the following:</p>
+<ul>
+<li><p>Null Hypothesis <span class="math inline">\(\beta = 0\)</span></p></li>
+<li><p>Alternative Hypothesis <span class="math inline">\(\beta \neq 0\)</span></p></li>
+</ul></li>
+<li><p>If our coefficient is statistically different, that means our (coefficient/slope) is statistically different from zero!</p></li>
+</ul>
+</section>
+<section id="multivariate-regression" class="level2">
+<h2 class="anchored" data-anchor-id="multivariate-regression">Multivariate Regression</h2>
+<ul>
+<li><p>Same thing as bivariate regression but with more variables!</p></li>
+<li><p>Past 3 variables we can’t really visualize this with all the dimensions. It will hurt your brain! (So, don’t do it!)</p></li>
+<li><p>Multivariate regression allows us to “control” for other variables.</p></li>
+<li><p>By controlling for other variables, we can isolate the effect our variable we are interested in.</p>
+<ul>
+<li>Let’s work through an example with cigarette use as our DV and cigarette tax as our IV.</li>
+</ul></li>
+</ul>
+<section id="bivariate-regression-what-you-have-been-doing" class="level3">
+<h3 class="anchored" data-anchor-id="bivariate-regression-what-you-have-been-doing">Bivariate Regression (what you have been doing)</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>model_bivariate <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax, <span class="at">data =</span> states) <span class="co"># create regression and assign to object</span></span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_bivariate) <span class="co"># print summary statistics for regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = cigarettes ~ cig.tax, data = states)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.9640 -1.3838 -0.3718  0.8209 10.4901 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)   9.7994     0.8065  12.151 2.97e-16 ***
+cig.tax      -1.2177     0.3798  -3.206  0.00239 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.91 on 48 degrees of freedom
+Multiple R-squared:  0.1764,    Adjusted R-squared:  0.1592 
+F-statistic: 10.28 on 1 and 48 DF,  p-value: 0.002394</code></pre>
+</div>
+</div>
+</section>
+<section id="multivariate-regression-1" class="level3">
+<h3 class="anchored" data-anchor-id="multivariate-regression-1">Multivariate Regression</h3>
+<ul>
+<li><p>before we run the multivariate regression, we need to think about what other variables may influence cigarette use.</p></li>
+<li><p>What variables influence cigarette use? This is why theory is important!</p>
+<ul>
+<li><p>I can think of a few from the ‘states’ dataset (there are more):</p>
+<ul>
+<li><p>age (“median.age”)</p></li>
+<li><p>education (“ba.or.more”)</p></li>
+<li><p>income (“prcapinc”)</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>model_multivariate <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax <span class="sc">+</span> median.age <span class="sc">+</span> ba.or.more <span class="sc">+</span> prcapinc, <span class="at">data =</span> states) <span class="co"># create regression and assign to object</span></span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_multivariate) <span class="co"># print summary statistics for regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = cigarettes ~ cig.tax + median.age + ba.or.more + 
+    prcapinc, data = states)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.3902 -0.8428 -0.3169  0.4261  9.3813 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) -1.200e+01  6.705e+00  -1.790 0.080175 .  
+cig.tax     -1.364e+00  4.218e-01  -3.233 0.002293 ** 
+median.age   6.038e-01  1.624e-01   3.718 0.000553 ***
+ba.or.more  -2.235e-01  1.119e-01  -1.997 0.051898 .  
+prcapinc     1.809e-04  1.397e-04   1.295 0.201870    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.495 on 45 degrees of freedom
+Multiple R-squared:  0.4325,    Adjusted R-squared:  0.3821 
+F-statistic: 8.574 on 4 and 45 DF,  p-value: 3.125e-05</code></pre>
+</div>
+</div>
+<ul>
+<li><p>Scroll up and compare the results to the bivariate result. What do you notice?</p></li>
+<li><p>Do you remember how to interpret this?</p></li>
+</ul>
+</section>
+</section>
+<section id="homework-4-1" class="level2">
+<h2 class="anchored" data-anchor-id="homework-4-1">Homework 4</h2>
+<ul>
+<li><p>Some of you may be a bit confused about the first part of the homework</p></li>
+<li><p>The point of this exercise is to find a line of best fit.</p>
+<ul>
+<li><p>We want to find a line that minimizes the residuals</p>
+<ul>
+<li><p>but how do we know what the residuals are without the line of best fit?!</p>
+<ul>
+<li>well, we are going to try different lines and see what which one minimizes the residuals, <em>the most.</em> (There is formula that does this but the purpose of this exercise is to help you understand the concept of regression.)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="sum_of_squares_example.png" class="img-fluid figure-img" width="767"></p>
+<figcaption>Sum of squares example (from lecture) with candidate line</figcaption>
+</figure>
+</div>
+</section>
+<section id="homework-4-2" class="level2">
+<h2 class="anchored" data-anchor-id="homework-4-2">Homework 4</h2>
+<ul>
+<li>Take the remainder of class to work on the homework!</li>
 </ul>
 
 
