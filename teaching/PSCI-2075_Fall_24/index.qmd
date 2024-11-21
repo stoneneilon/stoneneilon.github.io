@@ -868,7 +868,7 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 
 ## Stone's Song of the Week
 
-[![L'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
+[![L\'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
 
 I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now...You think I want to be here teaching you about variance?! JK I do \<3 variance and standard deviation are very important.
 
@@ -1774,7 +1774,7 @@ summary(lm(mtcars$mpg~mtcars$wt))
 
 -   If you are done with Homework 3 - you are free to go!
 
-# Week 11 
+# Week 11
 
 ## Stone's Song of the Week
 
@@ -1782,7 +1782,7 @@ summary(lm(mtcars$mpg~mtcars$wt))
 
 The old me is dead and gone but that new me will be alright 🧑👈🙏💪
 
-## Regression Line (continued) 
+## Regression Line (continued)
 
 -   minimize the sum of squared residuals
 
@@ -1835,7 +1835,7 @@ plot(states$cigarettes ~ states$cig.tax, main = "cigarette taxes and smoking", x
 abline(model, col = "red") # adds a line to plot
 ```
 
-### A better way to visualize 
+### A better way to visualize
 
 The code above is a little messy. We can use a new package called 'ggplot2' to create a plot. We can load the 'tidyverse' package which contains ggplot2.
 
@@ -1855,13 +1855,13 @@ ggplot(states, aes(x = cig.tax, y = cigarettes)) +
 
 See! Doesn't that look so much better? Do you know what that band is around the line?
 
-## Homework 4 
+## Homework 4
 
 -   Groups are up to you.
 
 -   Due next week.
 
-# Week 12 
+# Week 12
 
 ## Stone's Song of the Week
 
@@ -1895,7 +1895,7 @@ This room is our sanctuary for statistics. There is no pain when we learn statis
 
 -   If our coefficient is statistically different, that means our (coefficient/slope) is statistically different from zero!
 
-## Multivariate Regression 
+## Multivariate Regression
 
 -   Same thing as bivariate regression but with more variables!
 
@@ -1907,7 +1907,7 @@ This room is our sanctuary for statistics. There is no pain when we learn statis
 
     -   Let's work through an example with cigarette use as our DV and cigarette tax as our IV.
 
-### Bivariate Regression (what you have been doing) 
+### Bivariate Regression (what you have been doing)
 
 ```{r}
 library(RCPA3)
@@ -1915,7 +1915,7 @@ model_bivariate <- lm(cigarettes ~ cig.tax, data = states) # create regression a
 summary(model_bivariate) # print summary statistics for regression model 
 ```
 
-### Multivariate Regression 
+### Multivariate Regression
 
 -   before we run the multivariate regression, we need to think about what other variables may influence cigarette use.
 
@@ -1955,3 +1955,239 @@ summary(model_multivariate) # print summary statistics for regression model
 ## Homework 4
 
 -   Take the remainder of class to work on the homework!
+
+# Week 13 
+
+## Stone's Song of the Week: 
+
+[![LCD Soundsystem - Home](lcd.webp){fig-align="center"}](https://www.youtube.com/watch?v=ETDCbQUYiAQ)
+
+What are you still doing here? Go HOME! 🪩
+
+## 🦃 GOBBLE GOBBLE GOBBLE 🦃 
+
+-   Anyone have strong feelings about Thanksgiving food?
+
+    -   I love stuffing and mashed potatoes (shoutout carbs)
+
+    -   This year we are mixing it up. Smoking a brisket and some pork.
+
+## More Regression! 
+
+### Multivariate: 
+
+-   Potentially unlimited variables:
+
+    -   Independent variable/s (IV)
+
+    -   Dependent variable (DV)
+
+    -   **Control variables**
+
+-   Estimates effects of IV/s on DV
+
+-   Not as easy to interpret
+
+-   Can do a better job of explaining variation (Adjusted R2)
+
+-   Might do a better job of arguing causation
+
+## Review Regression Interpretation 
+
+We will get $\beta$ coefficients (remember $\beta$ is the slope) for each of our variable. This is the effect of that IV on the DV, holding other variables constant. Though we get a $\beta$ coefficient for each variable, we also get a t-test and respective p-value for each output.
+
+### Bivariate Regression: 
+
+*"for every one unit change in X, we observe a \_\_\_\_ change in Y.*
+
+### Multivariate Regression: 
+
+"*for every one unit change in X, we observe a \_\_\_\_ change in Y, all else equal."*
+
+### Multivariate regression with categorical IV interpretation: 
+
+"the expected change in Y for \[category X\] is \_\_\_\_, when compared to \[reference category\]."
+
+-   This one is not as clean. These don't need to be written exactly like this but you need to get the same message across to the reader when you write this.
+
+    -   Example: "If the independent variable 'Education Level' is categorical with categories 'High School' (reference), 'Bachelor's,' and 'Master's,' then the coefficient for 'Bachelor's' indicates the expected change in Y for individuals with a Bachelor's degree compared to those with only a High School degree, all else being equal."
+
+### How would you interpret prcapinc in the model below? 
+
+```{r}
+model_multivariate <- lm(cigarettes ~ cig.tax + median.age + ba.or.more + prcapinc, data = states) # create regression and assign to object
+summary(model_multivariate) # print summary statistics for regression model 
+```
+
+#### What can we conclude? 
+
+Make sure you are evaluating the other columns before answering!
+
+## Degrees of Freedom: 
+
+$$
+n-k-1
+$$
+
+-   This is formula for Degrees of Freedom
+
+-   Where:
+
+    -   $n$ = the number of observations
+
+    -   $k$ = the number of parameters estimating (the number of independent variables)
+
+    -   $-1$ = literally just minus 1. Not entirely sure why we do this.
+
+-   Degrees of freedom relate to how much information we have available to estimate something.
+
+-   I like to use Anand Sokhey's example of pixels and a photograph.
+
+    -   the more pixels you have in an image, the clearer it is (more observations)
+
+    -   the less pixels you have, the less information you have, and the harder it is to figure out what the image is (less observations)
+
+        -   Degrees of freedom is literally this metaphor applied to regression.
+
+## Regression with a binary IV 
+
+-   Same command in R
+
+-   Slightly different interpretation:
+
+    -   **The intercept means something!**
+
+-   **Yes = 1; No = 0 (the intercept)**
+
+-   **Command:**
+
+    -   lm(dataset\$DV \~ dataset\$binary_IV)
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUejOEX1b0sMew5iBRtdpyGGT-qulK0NjSRYTh8WG6nZmCKQfHh6RctsYAvemeJjVIcFIznql9a1jPMqxQXsTDP8aXza--kAOgs1GcAh75vs2SRKM3-zjk_2XKVHwhNBHdbwUYda=s2048?key=82bALnBoWx_XpS6iwiMlkCZu){width="323"}
+
+## Regression with Categorical Variables
+
+-   Trickier!
+
+-   You\'re comparing the coefficients to each other since the units are meaningless.
+
+-   For example, what would a 1-unit increase in blue eye color mean???
+
+-   Instead, you choose one of the independent variables as a reference category and base your interpretation off of a comparison to that category.
+
+    -   \"Brown-eyed students score 0.3% higher on the midterm relative to blue-eyed students.\"
+
+    -   I made this up. 
+
+-   Command is the same; be sure to list your desired ref category as IV1
+
+    -   lm(dataset\$DV \~ dataset\$cat_IV1 + dataset\$cat_IV2 + ... dataset\$cat_IVn)
+
+## Multi-collinearity (side tangent) 
+
+Recall a binary IV is coded as 0 or 1. When you run a regression with this type of variable, R will not include the reference category (which will be 0). There is a mathematical reason for this called *perfect mulit-collinearity.*
+
+-   Perfect Multi-Collinearity: is when one IV perfectly explains the other.
+
+    -   example: you have a variable coded as the following:
+
+        -   0 = Democrat
+
+        -   1 = Republican
+
+            | Trump_ft (feeling therm) | Democrat | Republican |
+            |--------------------------|----------|------------|
+            | 49                       | 1        | 0          |
+            | 21                       | 1        | 0          |
+            | 64                       | 1        | 0          |
+            | 83                       | 0        | 1          |
+
+    -   imagine your dataframe looked like that.
+
+        -   if you were to include both the Democrat and Republican variable in your regression, you would run into some issues.
+
+            -   Why?
+
+                -   Your 'Democrat' variable perfectly predicts the 'Republican' variable.
+
+                    -   Basically, the Democrat variable tells you all the information about the Republican variable.
+
+-   To avoid this, we have a reference category. If we were to run a regression, Democrats would not be included in the output table. We would get the coefficient for Republican feelings toward Trump.
+
+    -   HOWEVER, that coefficient tells us the feeling toward Trump RELATIVE to Democrats.
+
+```{r}
+# create a data frame 
+df <- data.frame(
+  trump_ft = c(49, 21, 64, 83),
+  Democrat = c(1, 1, 1, 0),
+  Republican = c(0, 0, 0, 1)
+)
+
+# regression
+summary(lm(trump_ft~Democrat + Republican, data = df))
+
+```
+
+-   notice the output says "*Coefficients: (1 not defined because of singularities)*"
+
+    -   R is telling us it left out one variable, in this case, Republicans because it recognized a multi-collinearity issue.
+
+-   Punchline: think about how the IVs you choose might be related to each other. It is fine if they are related but it becomes a big problem when they *perfectly* relate to each other.
+
+## Interactions in Regression:
+
+We use interactions when we have a ***conditional*** hypothesis. Example:
+
+-   Higher tariffs will decrease trade *conditional on* how democratic a country is.
+
+Don't worry about this right now. We will go over this more after the break.
+
+## A new package has entered the chat: 
+
+### Stargazer! 
+
+```{r}
+#| eval: false
+install.packages("stargazer")
+library(stargazer)
+```
+
+-   Stargazer is a very useful package. Think about what you know so far from the regression outputs we have been looking at. Why do you think this package is called stargazer?
+
+-   Stargazer makes our outputs pretty and easier to read. They also allow us to compare across different models.
+
+-   Let's use an example. First, let's create some regression models:
+
+    ```{r}
+    library(RCPA3)
+    library(stargazer)
+    model0 <- lm(trade.percent.gdp~tariff.rate, data=world)
+
+    model1 <- lm(trade.percent.gdp~tariff.rate + eiu.democ.bin + eu + religion, data=world) # 
+
+    model2 <- lm(trade.percent.gdp~ eiu.democ.bin*tariff.rate + eu, data=world) 
+
+    stargazer(model0, model1, model2 , type="text", report="vcs*",star.char = c("+","*","**","***"),  star.cutoffs=c(.1,.05,.01,.001), notes="+p<0.1,*p<0.05,**p<0.01,***p<0.001", notes.append=FALSE)
+    ```
+
+### sjPlot
+
+-   sjPlot is another package to help visualize results.
+
+-   I've showed you 'ggplot2' which is another package created for the same task.
+
+-   There are many different ways to visualize this stuff. This is just to expand your pallet and learn about all the options you have available!
+
+    ```{r}
+    # make sure you have the sjPlot package installed first! 
+    # we are using the 'model2' from the previous code chunk
+    library(sjPlot)
+    plot_model(model2, type="pred", term=c("tariff.rate", "eiu.democ.bin"))
+    ```
+
+While we observe a general decrease in trade as tariffs go up, we cannot statistically differentiate the effect of being a democracy on this relationship. We can tell because the confidence intervals overlap. We will go over this more after break.
+
+## Homework 5 
+
+-   Due 12/8

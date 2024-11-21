@@ -270,6 +270,10 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#hidden-layer" id="toc-hidden-layer" class="nav-link" data-scroll-target="#hidden-layer">Hidden Layer</a></li>
   </ul></li>
+  <li><a href="#week-11" id="toc-week-11" class="nav-link" data-scroll-target="#week-11">Week 11</a>
+  <ul class="collapse">
+  <li><a href="#transformers" id="toc-transformers" class="nav-link" data-scroll-target="#transformers">Transformers</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1144,6 +1148,28 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="hidden-layer">Hidden Layer</h2>
 <ul>
 <li>embeddings basically create like a giant lookup table that gets us from the input to the output.</li>
+</ul>
+</section>
+</section>
+<section id="week-11" class="level1">
+<h1>Week 11</h1>
+<section id="transformers" class="level2">
+<h2 class="anchored" data-anchor-id="transformers">Transformers</h2>
+<ul>
+<li><p>Leverage embedding and supervised training for more nuanced/better text classification</p></li>
+<li><p>Encoders are layers that process and refine the input text representation</p></li>
+<li><p>Self-attention mechanism: calculates each word’s relevance to others in the sentence</p>
+<ul>
+<li>allows each word to “focus” on other words in the sentence, adjusting its representation based on context.</li>
+</ul></li>
+<li><p>Masked Language Modeling: Predicts missing words to understand sentence structure</p>
+<ul>
+<li><p>“The animal didn’t cross the road because it was tired”</p>
+<ul>
+<li>BERT can tell animal and it are the same.</li>
+</ul></li>
+</ul></li>
+<li><p>BERT cannot produce its own text.</p></li>
 </ul>
 
 

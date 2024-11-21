@@ -853,7 +853,7 @@ we are like basically modeling a rate (count/exposure time)
 
 -   presence of time-varying covariates is going to influence how we structure our dataset.
 
-## Kaplan-Meier Curves 
+## Kaplan-Meier Curves
 
 -   Epidemiology loves this, poli sci not so much
 
@@ -893,21 +893,21 @@ we are like basically modeling a rate (count/exposure time)
 
 -   the hazard rate is the rate at which units fail after time t, given that they have last up to time t.
 
-## Recap 
+## Recap
 
 -   We choose a distribution, then can condition the shape of the distribution by adding covariates.
 
-## Exponential Functions 
+## Exponential Functions
 
 -   Exponential is "memoryless"
 
 -   this means that there is a constant risk of failure at all times.
 
-## Weibull Distribution 
+## Weibull Distribution
 
 -   monotonically increasing, decreasing, or flat hazard rate.
 
-## Gamma 
+## Gamma
 
 -   The most general one
 
@@ -932,3 +932,151 @@ we are like basically modeling a rate (count/exposure time)
     -   covariates affect the relative risk of failure, not the shape of the overall hazard function
 
         -   when testing, make sure to interact all RHS variables with t or g(t). Significant interaction terms indicate violation of PH assumption.
+
+# Topic 11
+
+## Event History Review:
+
+-   f(t) was the probability distribution of failure. At what *time* does our observation fail.
+
+-   h(t) was the hazard rate; given that an observation has surived to time t, whats the instantaneous rate of failure?
+
+-   Need to probably know the hazard rate formula
+
+-   Hazard function is the ratio of the PDF of the failure function over the survivor function.
+
+## Proportional Hazards
+
+-   Cox Model need to be worried about proportional hazard models!!!!!!!
+
+-   proportional hazard?
+
+-   Cox model implicitly assumes that the effects are constant (proportional) across time
+
+-   Need to assume affect of X is the same across time
+
+    -   if this is met you satisfy the proportional hazard.
+
+    -   Another way of thinking about htis is that the coefficients do not change w.r.t. time (since the hazard is some function of time)
+
+-   The log likelihood function of the Cox model - think of it between actually failed and at risk of failiure. We want to maximize the difference between the two.
+
+## Time-Varying Covariates
+
+-   we have assumed our coefficients, x, are constant over time within an individual.
+
+-   However, some may vary over time.
+
+-   Dont get this confused with time-varying coefficients!
+
+-   g(t) is effectively a fix for proportional hazards
+
+## Schoenfeld Residuals
+
+-   These help us assess whether PH is violated.
+
+-   want these residuals to be flat
+
+    -   if not it means they are changing over time. We violate proportional hazards.
+
+## COX interpretation
+
+-   look at exponential coefficient.
+
+-   above 1 quicker, lower than 1 slower. see R code.
+
+# Topic 12
+
+## Missing Data
+
+-   Respondent chooses not to answer a question about their race/ethniciy
+
+-   Venezeula fails to report inflation data for 1980 to IMF
+
+-   Missingness in the DV is not a big problem.
+
+## MCAR
+
+-   Missingness that may occur is missing completely at random
+
+-   this almost never happens
+
+-   If have MCAR, we still have an unbiased estimate of $\beta$
+
+-   Hardest to achieve
+
+## MAR
+
+-   Missing at random
+
+-   weak
+
+-   means that a missing y variable is not determined by y.
+
+-   We don't observe a respondent's views on abortion if they have a high school level of education or lower
+
+-   we have another variable that kind of explains the missingness of another variable.
+
+-   will produce biased estimates unless using FIML
+
+## MNAR
+
+-   Another weak form of missingness is known as missing **not at random**
+
+-   this is bad!
+
+-   Also called observed at random (OAR), or non-ignorable non-response
+
+-   i.e. we don't observe a respondent's views on abortion if they have particular strong (pro or anti) views on abortion.
+
+## Important for Missingness:
+
+-   we need to know where our missingness is!
+
+-   we normally do listwise deletion - also called complete-case analysis.
+
+## Why we don't really care if our DV is missing
+
+-   you could fill it in but its really just noise. It'll effectively be our $\hat{y}$
+
+-   its just not really a big issue
+
+## Interpolation
+
+-   Another way of handling data is interpolation
+
+-   assuming time series data, we might perform linear model interpolation
+
+-   whats a good guess of Y, the time before it and the time after.
+
+### Drawbacks:
+
+-   hard to do outside of time series
+
+-   will reduce variation
+
+    -   we are interpolating from other values (taking the mean) thus decreasing variance...less extremes.
+
+## Extrapolation
+
+-   When data are at the end/beginning of a series, they are sometimes extrapolated
+
+-   filling in values at the beginning or end of a series.
+
+-   seems a little dodgy
+
+## Imputation
+
+-   Imputation allows us to fill in missing data, but preserve the inherent uncertainty associated with the filled in value.
+
+-   Amelia package by King.
+
+## Standard Errors
+
+-   Listwise deletion standard errors are bigger than they probably should be
+
+-   interpolation smaller they should be
+
+-   imputation probably where SE should be.
+
+    -   if we do this and our results don't really change, thats good. It is more robust.

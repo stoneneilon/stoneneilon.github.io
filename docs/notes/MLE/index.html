@@ -283,6 +283,30 @@ window.Quarto = {
   <li><a href="#interpretation-proportional-hazards" id="toc-interpretation-proportional-hazards" class="nav-link" data-scroll-target="#interpretation-proportional-hazards">Interpretation: Proportional Hazards</a></li>
   <li><a href="#cox-model" id="toc-cox-model" class="nav-link" data-scroll-target="#cox-model">Cox Model</a></li>
   </ul></li>
+  <li><a href="#topic-11" id="toc-topic-11" class="nav-link" data-scroll-target="#topic-11">Topic 11</a>
+  <ul class="collapse">
+  <li><a href="#event-history-review" id="toc-event-history-review" class="nav-link" data-scroll-target="#event-history-review">Event History Review:</a></li>
+  <li><a href="#proportional-hazards" id="toc-proportional-hazards" class="nav-link" data-scroll-target="#proportional-hazards">Proportional Hazards</a></li>
+  <li><a href="#time-varying-covariates" id="toc-time-varying-covariates" class="nav-link" data-scroll-target="#time-varying-covariates">Time-Varying Covariates</a></li>
+  <li><a href="#schoenfeld-residuals" id="toc-schoenfeld-residuals" class="nav-link" data-scroll-target="#schoenfeld-residuals">Schoenfeld Residuals</a></li>
+  <li><a href="#cox-interpretation" id="toc-cox-interpretation" class="nav-link" data-scroll-target="#cox-interpretation">COX interpretation</a></li>
+  </ul></li>
+  <li><a href="#topic-12" id="toc-topic-12" class="nav-link" data-scroll-target="#topic-12">Topic 12</a>
+  <ul class="collapse">
+  <li><a href="#missing-data" id="toc-missing-data" class="nav-link" data-scroll-target="#missing-data">Missing Data</a></li>
+  <li><a href="#mcar" id="toc-mcar" class="nav-link" data-scroll-target="#mcar">MCAR</a></li>
+  <li><a href="#mar" id="toc-mar" class="nav-link" data-scroll-target="#mar">MAR</a></li>
+  <li><a href="#mnar" id="toc-mnar" class="nav-link" data-scroll-target="#mnar">MNAR</a></li>
+  <li><a href="#important-for-missingness" id="toc-important-for-missingness" class="nav-link" data-scroll-target="#important-for-missingness">Important for Missingness:</a></li>
+  <li><a href="#why-we-dont-really-care-if-our-dv-is-missing" id="toc-why-we-dont-really-care-if-our-dv-is-missing" class="nav-link" data-scroll-target="#why-we-dont-really-care-if-our-dv-is-missing">Why we don’t really care if our DV is missing</a></li>
+  <li><a href="#interpolation" id="toc-interpolation" class="nav-link" data-scroll-target="#interpolation">Interpolation</a>
+  <ul class="collapse">
+  <li><a href="#drawbacks" id="toc-drawbacks" class="nav-link" data-scroll-target="#drawbacks">Drawbacks:</a></li>
+  </ul></li>
+  <li><a href="#extrapolation" id="toc-extrapolation" class="nav-link" data-scroll-target="#extrapolation">Extrapolation</a></li>
+  <li><a href="#imputation" id="toc-imputation" class="nav-link" data-scroll-target="#imputation">Imputation</a></li>
+  <li><a href="#standard-errors" id="toc-standard-errors" class="nav-link" data-scroll-target="#standard-errors">Standard Errors</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1249,6 +1273,156 @@ window.Quarto = {
 <ul>
 <li>when testing, make sure to interact all RHS variables with t or g(t). Significant interaction terms indicate violation of PH assumption.</li>
 </ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="topic-11" class="level1">
+<h1>Topic 11</h1>
+<section id="event-history-review" class="level2">
+<h2 class="anchored" data-anchor-id="event-history-review">Event History Review:</h2>
+<ul>
+<li><p>f(t) was the probability distribution of failure. At what <em>time</em> does our observation fail.</p></li>
+<li><p>h(t) was the hazard rate; given that an observation has surived to time t, whats the instantaneous rate of failure?</p></li>
+<li><p>Need to probably know the hazard rate formula</p></li>
+<li><p>Hazard function is the ratio of the PDF of the failure function over the survivor function.</p></li>
+</ul>
+</section>
+<section id="proportional-hazards" class="level2">
+<h2 class="anchored" data-anchor-id="proportional-hazards">Proportional Hazards</h2>
+<ul>
+<li><p>Cox Model need to be worried about proportional hazard models!!!!!!!</p></li>
+<li><p>proportional hazard?</p></li>
+<li><p>Cox model implicitly assumes that the effects are constant (proportional) across time</p></li>
+<li><p>Need to assume affect of X is the same across time</p>
+<ul>
+<li><p>if this is met you satisfy the proportional hazard.</p></li>
+<li><p>Another way of thinking about htis is that the coefficients do not change w.r.t. time (since the hazard is some function of time)</p></li>
+</ul></li>
+<li><p>The log likelihood function of the Cox model - think of it between actually failed and at risk of failiure. We want to maximize the difference between the two.</p></li>
+</ul>
+</section>
+<section id="time-varying-covariates" class="level2">
+<h2 class="anchored" data-anchor-id="time-varying-covariates">Time-Varying Covariates</h2>
+<ul>
+<li><p>we have assumed our coefficients, x, are constant over time within an individual.</p></li>
+<li><p>However, some may vary over time.</p></li>
+<li><p>Dont get this confused with time-varying coefficients!</p></li>
+<li><p>g(t) is effectively a fix for proportional hazards</p></li>
+</ul>
+</section>
+<section id="schoenfeld-residuals" class="level2">
+<h2 class="anchored" data-anchor-id="schoenfeld-residuals">Schoenfeld Residuals</h2>
+<ul>
+<li><p>These help us assess whether PH is violated.</p></li>
+<li><p>want these residuals to be flat</p>
+<ul>
+<li>if not it means they are changing over time. We violate proportional hazards.</li>
+</ul></li>
+</ul>
+</section>
+<section id="cox-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="cox-interpretation">COX interpretation</h2>
+<ul>
+<li><p>look at exponential coefficient.</p></li>
+<li><p>above 1 quicker, lower than 1 slower. see R code.</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-12" class="level1">
+<h1>Topic 12</h1>
+<section id="missing-data" class="level2">
+<h2 class="anchored" data-anchor-id="missing-data">Missing Data</h2>
+<ul>
+<li><p>Respondent chooses not to answer a question about their race/ethniciy</p></li>
+<li><p>Venezeula fails to report inflation data for 1980 to IMF</p></li>
+<li><p>Missingness in the DV is not a big problem.</p></li>
+</ul>
+</section>
+<section id="mcar" class="level2">
+<h2 class="anchored" data-anchor-id="mcar">MCAR</h2>
+<ul>
+<li><p>Missingness that may occur is missing completely at random</p></li>
+<li><p>this almost never happens</p></li>
+<li><p>If have MCAR, we still have an unbiased estimate of <span class="math inline">\(\beta\)</span></p></li>
+<li><p>Hardest to achieve</p></li>
+</ul>
+</section>
+<section id="mar" class="level2">
+<h2 class="anchored" data-anchor-id="mar">MAR</h2>
+<ul>
+<li><p>Missing at random</p></li>
+<li><p>weak</p></li>
+<li><p>means that a missing y variable is not determined by y.</p></li>
+<li><p>We don’t observe a respondent’s views on abortion if they have a high school level of education or lower</p></li>
+<li><p>we have another variable that kind of explains the missingness of another variable.</p></li>
+<li><p>will produce biased estimates unless using FIML</p></li>
+</ul>
+</section>
+<section id="mnar" class="level2">
+<h2 class="anchored" data-anchor-id="mnar">MNAR</h2>
+<ul>
+<li><p>Another weak form of missingness is known as missing <strong>not at random</strong></p></li>
+<li><p>this is bad!</p></li>
+<li><p>Also called observed at random (OAR), or non-ignorable non-response</p></li>
+<li><p>i.e.&nbsp;we don’t observe a respondent’s views on abortion if they have particular strong (pro or anti) views on abortion.</p></li>
+</ul>
+</section>
+<section id="important-for-missingness" class="level2">
+<h2 class="anchored" data-anchor-id="important-for-missingness">Important for Missingness:</h2>
+<ul>
+<li><p>we need to know where our missingness is!</p></li>
+<li><p>we normally do listwise deletion - also called complete-case analysis.</p></li>
+</ul>
+</section>
+<section id="why-we-dont-really-care-if-our-dv-is-missing" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-dont-really-care-if-our-dv-is-missing">Why we don’t really care if our DV is missing</h2>
+<ul>
+<li><p>you could fill it in but its really just noise. It’ll effectively be our <span class="math inline">\(\hat{y}\)</span></p></li>
+<li><p>its just not really a big issue</p></li>
+</ul>
+</section>
+<section id="interpolation" class="level2">
+<h2 class="anchored" data-anchor-id="interpolation">Interpolation</h2>
+<ul>
+<li><p>Another way of handling data is interpolation</p></li>
+<li><p>assuming time series data, we might perform linear model interpolation</p></li>
+<li><p>whats a good guess of Y, the time before it and the time after.</p></li>
+</ul>
+<section id="drawbacks" class="level3">
+<h3 class="anchored" data-anchor-id="drawbacks">Drawbacks:</h3>
+<ul>
+<li><p>hard to do outside of time series</p></li>
+<li><p>will reduce variation</p>
+<ul>
+<li>we are interpolating from other values (taking the mean) thus decreasing variance…less extremes.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="extrapolation" class="level2">
+<h2 class="anchored" data-anchor-id="extrapolation">Extrapolation</h2>
+<ul>
+<li><p>When data are at the end/beginning of a series, they are sometimes extrapolated</p></li>
+<li><p>filling in values at the beginning or end of a series.</p></li>
+<li><p>seems a little dodgy</p></li>
+</ul>
+</section>
+<section id="imputation" class="level2">
+<h2 class="anchored" data-anchor-id="imputation">Imputation</h2>
+<ul>
+<li><p>Imputation allows us to fill in missing data, but preserve the inherent uncertainty associated with the filled in value.</p></li>
+<li><p>Amelia package by King.</p></li>
+</ul>
+</section>
+<section id="standard-errors" class="level2">
+<h2 class="anchored" data-anchor-id="standard-errors">Standard Errors</h2>
+<ul>
+<li><p>Listwise deletion standard errors are bigger than they probably should be</p></li>
+<li><p>interpolation smaller they should be</p></li>
+<li><p>imputation probably where SE should be.</p>
+<ul>
+<li>if we do this and our results don’t really change, thats good. It is more robust.</li>
 </ul></li>
 </ul>
 

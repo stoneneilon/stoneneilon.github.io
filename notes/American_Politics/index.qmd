@@ -3839,7 +3839,7 @@ These come about because there is a logjam of bills in the reconstruction congre
 
 # Week 10: Presidency and Interbranch Relations
 
-## Lecture Notes: 
+## Lecture Notes:
 
 -   Congress wants to delegate to specialized people
 
@@ -3869,7 +3869,7 @@ These come about because there is a logjam of bills in the reconstruction congre
 
     -   one theory is about Congress and how they don't care - they just want to be reelected.
 
-## [Ragsdale, Lyn and John Thies. 1997. \"The Institutionalization of the American Presidency,\" American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2960490.pdf?refreqid=fastly-default%3Af38c37cc15158316eca45f5952a275e3&ab_segments=&initiator=&acceptTC=1)
+## [Ragsdale, Lyn and John Thies. 1997. "The Institutionalization of the American Presidency," American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2960490.pdf?refreqid=fastly-default%3Af38c37cc15158316eca45f5952a275e3&ab_segments=&initiator=&acceptTC=1)
 
 sociology perspective is dialectic between institutions and person.
 
@@ -3893,23 +3893,23 @@ Rat choice institutionalism - why institutions stick around
 
 Sociological institutionalism - Independent force. Institutions influence thought process. Shape social norms. Joe manchin believeing in the filibuster is an example. He totally believes that stuff.
 
-### Theory: 
+### Theory:
 
 The institutionalization of the presidency involves the process by which the office as an organization attains stability and value as an end in itself. Stability denotes that the entity cannot be easily altered or eliminated, while value involves the entity acquiring a distinctive identity. More specifically, the presidency becomes institutionalized when it attains high levels of four features: autonomy (the independence of the presidency from other units), adaptability (the longevity of units in the presidency), complexity (the dif ferentiation of subunits and staff in the office), and coherence (the manageable volume of work). Institutionalization results from an interplay between individual interests within the organization and aspects of the environment.
 
-### Hypothesis: 
+### Hypothesis:
 
 Government activity, congressional action, and individual presidents' efforts affect the degree of institutionalization across the dimensions of autonomy, adaptability, complexity, and coherence.
 
-### Methods: 
+### Methods:
 
 From 1924 to 1992, several descriptive indicators of the four dimensions of in stitutionalization are analyzed, including expenditures, duration of organizational units, employees, and workload. A multivariate model is then estimated for the Executive Office of the President, Office of Management and Budget, and White House Office using ordinary least squares.
 
-### Results: 
+### Results:
 
 The presidency emerged as an institution in the 1970s. In estimating the impact of government activity, congressional action, and individual presidents on various indica tors of institutionalization, national government activity-measured by social welfare expenditures and defense expenditures-has the greatest impact. The effect of congres sional activity is more limited. The indicators for differences among individual presi dents have little effect
 
-### Background: 
+### Background:
 
 -   Previous presidential literature typically focuses on the personality, leadership, and decision making style of the presidency.
 
@@ -3941,7 +3941,7 @@ The presidency emerged as an institution in the 1970s. In estimating the impact 
 
     -   easier to say when an organization is not an institution then the other way around.
 
-#### Institutionalizing the Presidency 
+#### Institutionalizing the Presidency
 
 -   For much of its history, the president was literally just the president
 
@@ -3961,7 +3961,7 @@ The presidency emerged as an institution in the 1970s. In estimating the impact 
 
 -   Huntington defines the following as critical for institution:
 
-##### Autonomy: 
+##### Autonomy:
 
 -   the growth of an organizations budget - which shapes its stability and value.
 
@@ -3969,21 +3969,21 @@ The presidency emerged as an institution in the 1970s. In estimating the impact 
 
 -   **As the presidency becomes more institutionalized, administrations are able to offer policy directions free from other parts of the government, notably Congress.**
 
-##### Adaptability: 
+##### Adaptability:
 
 -   the "safety valve" of the institution.
 
     -   the organization is subject to shifts as presidents add and subtract units, but it continues to develop over time, adjusting to these changes, as some new units become part of the enduring composition of the organization
 
-##### Complexity: 
+##### Complexity:
 
--    complexity marks an organization's increased division of labor and specialization.
+-   complexity marks an organization's increased division of labor and specialization.
 
 -   measure of complexity: organization's total units.
 
     -   staff size is another one.
 
-##### Coherence: 
+##### Coherence:
 
 -   Coherence involves the ability of the organization to manage its work load.
 
@@ -4015,9 +4015,11 @@ The presidency emerged as an institution in the 1970s. In estimating the impact 
 
             -   his evidence supports the theory but his theoretical argument seems bad to me.
 
-    -    Finally, congressional activity is apt to affect presidential institutionalization
+    -   Finally, congressional activity is apt to affect presidential institutionalization
 
-        -   "The more active Congress is, the more autonomous the presidency is likely to become in order to ensure executive success"
+    ```         
+    -   "The more active Congress is, the more autonomous the presidency is likely to become in order to ensure executive success"
+    ```
 
 -   Results:
 
@@ -4027,13 +4029,13 @@ The presidency emerged as an institution in the 1970s. In estimating the impact 
 
             -   Much of the development of autonomy reflects an ongoing government commitment to such issues as social security, medical care, unemployment, and education, as evidenced by the burgeoning social welfare budget. As this national domestic policy commitment en larges and presidents' policy roles in domestic affairs also expand, the presidential institution grows to match the environmental changes.
 
-## [Canes-Wrone, Brandice, William Howell, and David Lewis. 2008. \"Toward a Broader Understanding of Presidential Power: A Reevaluation of the Two Presidencies Thesis,\" Journal of Politics.](https://www.journals.uchicago.edu/doi/full/10.1017/S0022381607080061)
+## [Canes-Wrone, Brandice, William Howell, and David Lewis. 2008. "Toward a Broader Understanding of Presidential Power: A Reevaluation of the Two Presidencies Thesis," Journal of Politics.](https://www.journals.uchicago.edu/doi/full/10.1017/S0022381607080061)
 
-### Abstract: 
+### Abstract:
 
 An enduring and controversial debate centers on whether there exist ''two presidencies,'' that is, whether presidents exercise fundamentally greater inﬂuence over foreign than domestic affairs. This paper makes two contributions tounderstanding this issue and, by extension, presidential power more generally. First, we distill an institutional logic that both supports the two presidencies thesis and implies that Congress has incentives to delegate foreign policypowers to the president. Accordingly, the logic suggests that empirical analysis should incorporate these incentives.Our second contribution, then, is to test for the existence of two presidencies in a domain that Congress cannotdelegate, budgetary appropriations, and a domain that explicitly incorporates delegation, agency creation. Consistent with expectations, we ﬁnd presidents exercise considerably greater inﬂuence over foreign policy.
 
-### Research Question: 
+### Research Question:
 
 -   Do presidents exercise greater influence over foreign or domestic affairs?
 
@@ -4043,7 +4045,7 @@ An enduring and controversial debate centers on whether there exist ''two presid
 
         -   **this question is much more interesting than their first.**
 
-### Background: 
+### Background:
 
 -   Presidents have more influence over foreign policy.
 
@@ -4061,7 +4063,7 @@ An enduring and controversial debate centers on whether there exist ''two presid
 
 -   The two presidencies thesis, however, does not require that Congress be wholly uninformed about foreign policy---only that it be less informed than in domestic policy.
 
-### Methods/Data: 
+### Methods/Data:
 
 -   We examine ﬁscal year 1969--2000 appropriations data in addition to 1946--2000 agency creation and design data.
 
@@ -4073,7 +4075,7 @@ An enduring and controversial debate centers on whether there exist ''two presid
 
 -   ordered probit
 
-### Results: 
+### Results:
 
 -   the magnitude of the effect is notable: the president's requested change in budgetary appropriations is approximately 8 percentage points closer in foreign and defense agencies than it is in domestic ones.
 
@@ -4085,7 +4087,7 @@ An enduring and controversial debate centers on whether there exist ''two presid
 
 -   In sum, we ﬁnd substantial evidence that presidents secure more administrative inﬂuence over foreign policy agencies than domestic ones. Given that bureaucracies are relatively durable, our results point to an evolving bureaucracy where presidents have more and more control in foreign than domestic policy
 
-## [McCubbins, Mathew and Thomas Schwartz. 1984. \"Congressional Oversight Overlooked: Police Patrols versus Fire Alarms,\"American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2110792.pdf?refreqid=fastly-default%3A595b90c4b3e24e04e091b502653463bd&ab_segments=&initiator=&acceptTC=1)
+## [McCubbins, Mathew and Thomas Schwartz. 1984. "Congressional Oversight Overlooked: Police Patrols versus Fire Alarms,"American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2110792.pdf?refreqid=fastly-default%3A595b90c4b3e24e04e091b502653463bd&ab_segments=&initiator=&acceptTC=1)
 
 -   Is Congress actually abdicating their power?
 
@@ -4093,11 +4095,11 @@ An enduring and controversial debate centers on whether there exist ''two presid
 
 -   This is really important for principle-agent.
 
-### Abstract: 
+### Abstract:
 
 Scholars have often remarked that Congress neglects its oversight responsibility. We argue that Congress does not do such thing: what appears to be a neglect of oversight really is the rational preference for one form of oversight - which we call fire-alarm oversight- over another form- policy-patrol oversight. Our analysis supports a somewhat neglected way of looking at the strategies by which legislators seek to achieve their goals.
 
-### Background: 
+### Background:
 
 -   Bunch of scholars basically think congress doesn't care about its oversight responsibility.
 
@@ -4105,7 +4107,7 @@ Scholars have often remarked that Congress neglects its oversight responsibility
 
 -   **Congressional oversight policy concerns whether, to what extent, and in what way Congress attempts to detect and remedy executive-branch violations of legislative goals.**
 
-#### Police-Patrol Oversight 
+#### Police-Patrol Oversight
 
 -   Congress examines a sample of executive-agency activities, with the aim of detecting and remedying any violations of legislative goals and, by its surveillance, discouraging such violations.
 
@@ -4125,7 +4127,7 @@ Scholars have often remarked that Congress neglects its oversight responsibility
 
 -   Greater role for citizens and interest groups to help Congress.
 
-### Assumptions of Model: 
+### Assumptions of Model:
 
 1.  Technological Assumption:
 
@@ -4147,7 +4149,7 @@ Scholars have often remarked that Congress neglects its oversight responsibility
 
     1.  executive agencies act as agents of Congress and especially of those subcommittees on which they depend for authorizations and appropriations.
 
-### Consequences: 
+### Consequences:
 
 -   Consequence 1:
 
@@ -4177,7 +4179,7 @@ Scholars have often remarked that Congress neglects its oversight responsibility
 
     -   Congress will adopt an extensive and somewhat effective policy of fire-alarm oversight while largely neglecting police-patrol oversight.
 
-### Is Fire-Alarm Oversight More Effective? 
+### Is Fire-Alarm Oversight More Effective?
 
 -   First, we do not contend that the most effective oversight policy is likely to contain no police-patrol features, only that fire-alarm techniques are likely to predominate. Second, we do not contend that a predominantly fire-alarm policy is more likely than a predominantly police-patrol policy to serve the public interest, only that it is likely to secure greater compliance with legislative goals; whether such compliance serves the public interest depends on what those goals are.
 
@@ -4187,19 +4189,19 @@ Scholars have often remarked that Congress neglects its oversight responsibility
 
     -   Second, whereas a fire-alarm policy would almost certainly pick up any violation of legislative goals that seriously harmed an organized group, a police-patrol policy would doubtless miss many such violations, since only a sample of executive-branch actions would be examined.
 
-### Question: 
+### Question:
 
 -   The concept of fire-alarm oversight surely requires citizens/interest groups to be aware and communicate their feelings.
 
     -   How would they do that prior to television? How is this actually functioning. This makes sense to me in a modern context with the internet and instantaneous knowledge diffusion/communication.
 
-## [Clinton, Josh, David Lewis and Jennifer Selin. 2014. \"Influencing the Bureaucracy: The Irony of Congressional Oversight,\" American Journal of Political Science.](https://onlinelibrary.wiley.com/share/U3AVBEKM6XJ3YUKGWWDJ?target=10.1111/ajps.12066)
+## [Clinton, Josh, David Lewis and Jennifer Selin. 2014. "Influencing the Bureaucracy: The Irony of Congressional Oversight," American Journal of Political Science.](https://onlinelibrary.wiley.com/share/U3AVBEKM6XJ3YUKGWWDJ?target=10.1111/ajps.12066)
 
-### Abstract: 
+### Abstract:
 
 Does the president or Congress have more influence over policymaking by the bureaucracy? Despite a wealth of theoretical guidance, progress on this important question has proven elusive due to competing theoretical predictions and severedifficulties in measuring agency influence and oversight. We use a survey of federal executives to assess political influence,congressional oversight, and the policy preferences of agencies, committees, and the president on a comparable scale. Analyzing variation in political influence across and within agencies reveals that Congress is less influential relative to the White House when more committees are involved. While increasing the number of involved committees may maximizethe electoral benefits for members, it may also undercut the ability of Congress as an institution to collectively respond to the actions of the presidency or the bureaucracy.
 
-### Research Question: 
+### Research Question:
 
 -   Whom are bureaucracies more responsive to? President or Congress?
 
@@ -4207,7 +4209,7 @@ Does the president or Congress have more influence over policymaking by the bure
 
 -   We explore whether the institutional structure of Congress and a system of bureaucratic oversight that relies on multiple committees with overlapping jurisdic-tion tends to increase or decrease the ability of Congress to control the bureaucracy when faced with a presidentfrom the opposing party.
 
-### Background: 
+### Background:
 
 -   Members of Congress seek to organize Congress so that they are able to provide input on issues of potential re-election importance
 
@@ -4219,23 +4221,23 @@ Does the president or Congress have more influence over policymaking by the bure
 
 -   one might question whether the existence of multiple committee overseers is a cause of congressional weakness or a response to previous presidential influence.
 
-### Data: 
+### Data:
 
 -   Survey of federal agency administrators and program managers designed to measure congressional and presidential influence over agency policymaking during 2007 and 2008
 
     -   Of the 6,690 potential respondents, 2,225 executives from 128 different agencies and bureaus provided at least a partial response, and the average agency contains 14 respondents
 
-### Results: 
+### Results:
 
 -   We find that when more committees are involved in monitoring and potentially directing agency policy making, Congress is less influential than the president for determining agency policy.
 
-### Discussion: 
+### Discussion:
 
--    One possibility is that as the number of committees involved in overseeing an agency increases, policy disagreements among the involved committees become more likely. Alternatively, more committee involvementmay result in less influence even if committees agree because of collective action problems and increased transaction costs.
+-   One possibility is that as the number of committees involved in overseeing an agency increases, policy disagreements among the involved committees become more likely. Alternatively, more committee involvementmay result in less influence even if committees agree because of collective action problems and increased transaction costs.
 
 -   **Based on the perceptions and opinions of those individuals most responsible for implementing agency policy, the more congressional committees involved in the oversight of an agency, the weaker Congress is relative to the president. This suggests that the more Congress cares about an issue---at least as reflected in the structure of its committee system---the less influence Congress may have over the direction of agency policy making.**
 
-## [Kinane, Christina. 2021. \"Control without Confirmation: The Politics of Vacancies in Presidential Appointments,\" American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/control-without-confirmation-the-politics-of-vacancies-in-presidential-appointments/0993030400C450B424D8284CF780B1F3?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark)
+## [Kinane, Christina. 2021. "Control without Confirmation: The Politics of Vacancies in Presidential Appointments," American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/control-without-confirmation-the-politics-of-vacancies-in-presidential-appointments/0993030400C450B424D8284CF780B1F3?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark)
 
 -   Lack of soft power when you are an interm appointee
 
@@ -4243,11 +4245,11 @@ Does the president or Congress have more influence over policymaking by the bure
 
 -   multinomial logit/probit are different and make different assumptions.
 
-### Abstract: 
+### Abstract:
 
-Scholarship on separation of powers assumes executives are constrained by legislative approval when placing agents in top policy-making positions. But presidents frequently fill vacancies in agency leadership with unconfirmed, temporary officials or leave them empty entirely. I develop a novel dataset of vacancies across 15 executive departments from 1977 to 2016 and reevaluate the conventional perspective that appointment power operates only through formal channels. I argue that presidents\' nomination strategies include leaving positions empty and making interim appointments, and this choice reflects presidents\' priorities and the character of vacant positions. The evidence indicates that interim appointees are more likely when positions have a substantial capacity to act on presidential expansion priorities and suggest that presidents can capitalize on their first-mover advantage to evade Senate confirmation. The results further suggest that separation of powers models may need to consider how deliberate inaction and sidestepping of formal powers influence political control and policy-making strategies.
+Scholarship on separation of powers assumes executives are constrained by legislative approval when placing agents in top policy-making positions. But presidents frequently fill vacancies in agency leadership with unconfirmed, temporary officials or leave them empty entirely. I develop a novel dataset of vacancies across 15 executive departments from 1977 to 2016 and reevaluate the conventional perspective that appointment power operates only through formal channels. I argue that presidents' nomination strategies include leaving positions empty and making interim appointments, and this choice reflects presidents' priorities and the character of vacant positions. The evidence indicates that interim appointees are more likely when positions have a substantial capacity to act on presidential expansion priorities and suggest that presidents can capitalize on their first-mover advantage to evade Senate confirmation. The results further suggest that separation of powers models may need to consider how deliberate inaction and sidestepping of formal powers influence political control and policy-making strategies.
 
-### Research Question: 
+### Research Question:
 
 ### Hypothesis:
 
@@ -4255,7 +4257,7 @@ Scholarship on separation of powers assumes executives are constrained by legisl
 
 2.  **Interim Appointee Hypothesis**: *A president will always immediately fill low-value positions with interim appointees and is more likely to immediately fill high-value positions with interims when prioritizing policy expansion*.
 
-### Background: 
+### Background:
 
 -   "PAS" positions require senate approval
 
@@ -4263,7 +4265,7 @@ Scholarship on separation of powers assumes executives are constrained by legisl
 
 -   The Senate enters the appointment calculus only after a president, again unilaterally, chooses to submit a nominee.
 
--   **That is, the crucial question for a president is not as much whether a potential appointee might be confirmed but how much the president\'s specific policy priorities can be advanced *without* a formal appointment.**
+-   **That is, the crucial question for a president is not as much whether a potential appointee might be confirmed but how much the president's specific policy priorities can be advanced *without* a formal appointment.**
 
 -   an interim appointee can typically fill the position for 210 days after the vacancy began and upwards of 720 days if the respective nominations are withdrawn, rejected, or returned, and these limits are suspended if the Senate does not return the nomination.
 
@@ -4275,7 +4277,7 @@ Scholarship on separation of powers assumes executives are constrained by legisl
 
 ### Data/Method:
 
--   I develop a new dataset that identifies when a president leaves a position empty by design or unilaterally fills it with an interim appointee. These originally collected data capture the status of PAS positions (e.g., empty, interim appointee, permanent appointee), the positions\' capacity to control policy outcomes, and the Senate\'s and president\'s policy priorities, across all fifteen Executive departments from 1977 to 2016.
+-   I develop a new dataset that identifies when a president leaves a position empty by design or unilaterally fills it with an interim appointee. These originally collected data capture the status of PAS positions (e.g., empty, interim appointee, permanent appointee), the positions' capacity to control policy outcomes, and the Senate's and president's policy priorities, across all fifteen Executive departments from 1977 to 2016.
 
 -   covers a total of 11,043 position-year observations
 
@@ -4289,10 +4291,944 @@ Scholarship on separation of powers assumes executives are constrained by legisl
 
     -   2 = Permanent Appointee
 
-### Results: 
+### Results:
 
 -   Overall, the results indicate that *Position Value* significantly contributes to the likelihood of both an empty position and interim appointee.
 
--   Taken together, the *Interim Appointee* and *Empty Position Hypotheses* produce the expectation that vacant positions are more likely to be filled by interim appointees than left empty when president *Position Value* is \"High Value (expansion)\"or \"Low Value.\"
+-   Taken together, the *Interim Appointee* and *Empty Position Hypotheses* produce the expectation that vacant positions are more likely to be filled by interim appointees than left empty when president *Position Value* is "High Value (expansion)"or "Low Value."
 
 -   Contradiction value was not found to be statistically significant.
+
+# Week 11 - Supreme Court
+
+## Lecture Notes:
+
+-   Justices are insulated
+
+-   Attitudinal model argues justices operate exclusively off their own preferences.
+
+## SCAMR
+
+### Chapter 2:
+
+#### Legal Model:
+
+-   hold in one form or another that justices make decisions influenced by the facts of the case in light of plain meaning, the intent of the framers, and precedent.
+
+-   While the court uses these factors to justify its decisions, they do not explain their outcome.
+
+#### Attitudinal Model:
+
+-   This model holds that the Supreme Court decides disputes in light of the facts of the case vis-a-vis the ideological attitudes and values of the justices.
+
+-   Basically: Rehnquest votes the way he does because he is extremely conservative.
+
+-   attitudinal model begins with the legal realist movement
+
+    -   law is not mathematical - it is uncertain.
+
+    -   The law always has been, is now, and will continue to be, largely vague and variable. And how could this be otherwise? The law deals with human relations in their most complicated aspects.
+
+-   The behavioralists argued:
+
+    -   Political science can ultimately become a science of prediction and explanation
+
+    -   political science should concern itself primarily, if not exclusively, with phenomena which can actually be described...
+
+    -   Data should be quantified and "findings" based upon quantifiable data...
+
+    -   Research should be theory oriented and theory directed
+
+-   Economic influence:
+
+    -   to Rhode and Spaeth: the primary goal of Supreme Court Justices in the decision making process are policy goals. Each member of the court has preferences concerning the policy questions faced by the Court, and when the justices make decisions they want the outcomes to approximate as nearly as possible those policy preferences.
+
+    -   They also specify certain rules of the game that will determine the actor's choices.
+
+-   Because of institutional design, justices are basically free to do whatever they want.
+
+#### Rational Choice Model:
+
+-   Riker's core of rational choice:
+
+    -   Actors are able to order their alternative goals, values, tastes and strategies. This means that the relation of preferences and indifferences among the alternatives is transitive...
+
+    -   Actors choose from available alternatives so as to maximize their satisfaction.
+
+        -   actors are allowed to make errors - as a result of information issues.
+
+        -   as Riker recognizes, the allowance of incomplete information means that even for a specific goal, all choices, even the most foolish ones, can be deemed rational because they may result from incomplete information.
+
+    -   Goal in rat choice is to find equilibria
+
+        -   an outcome is stable in equilibrium
+
+-   Viewing justices as policy seekers provides enormous leverage in understanding their behaviors.
+
+### Chapter 7:
+
+-   Basically Stare decisis is BS and sucks.
+
+-   Legal doctrine wack
+
+### Chapter 8:
+
+-   look at search and seizure cause court is very inconsistent
+
+-   use lower court records to determine the facts of the case.
+
+-   DV: decision of the SC whether or not to exclude evidence or find a search unreasonable.
+
+-   Measure justices ideology through newspaper stories about justices and how they are characterized.
+
+## Lax, Jeff. 2003. "Certiorari and Compliance in the Judicial Hierarchy: Discretion, Reputation and the Rule of Four," Journal of Theoretical Politics.
+
+### Abstract:
+
+I develop a formal model of the interaction between auditing by the Supreme Court (certiorari) and compliance by the lower courts, presenting three chal-lenges to the existing literature. First, I show that even discretionary certiorari(the Court can choose which cases to hear) only goes so far in inducingcompliance. Second, the literature often treats the Court as a unitary actor,ignoring the Rule of Four (only four votes are needed to grant certiorari).This rule is generally assumed to limit majoritarian dominance ± this is a puzzle given that the rule itself is subject to majority control. I show that itactually increases majority power by increasing lower court compliance.Finally, while sincere behavior is often taken for granted at the SupremeCourt level, I show that potential non-compliance creates heretofore unrecog-nized incentives for the justices to conceal their true preferences, so as to inducegreater compliance. They can exploit even minimal uncertainty to manipulateasymmetric information in a signaling game of strategic reputation building,further increasing compliance under the Rule of Four.
+
+### Research Question:
+
+### Background:
+
+-   rule of four: only requires 4 justices for certs
+
+    -   show, however, that the Rule of Four actually increases majority power by increasing lower court compliance.
+
+-   What do we mean by "compliance"?
+
+## Carrubba, Cliff, et al. 2012. "Who Controls the Content of Supreme Court Opinions?" American Journal of Political Science.
+
+### Abstract
+
+Conventional arguments identify either the median justice or the opinion author as the most influential justices in shaping the content of Supreme Court opinions. We develop a model of judicial decision making that suggests that opinions are likely to reflect the views of the median justice in the majority coalition. This result derives from two features of judicial decision making that have received little attention in previous models. The first is that in deciding a case, justices must resolve a concrete dispute, and that they may have preferences over which party wins the specific case confronting them. The second is that justices who are dissatisfied with an opinion are free to write concurrences (and dissents). We demonstrate that both features undermine the bargaining power of the Court's median and shift influence towards the coalition median. An empirical analysis of concurrence behavior provides significant support for the model.
+
+### Research Question:
+
+# Week 12 - Representation
+
+## Lecture Note:
+
+-   Responsiveness - do lawmakers act and change when policy changes
+
+-   congruence - how similar is the policy enacted to what the public wanted.
+
+-   **figure 3 is interesting. When government is X, public gets tired of X and shifts away.**
+
+    -   thermostatic model.
+
+## [Stimson, James, Michael MacKuen and Robert Erikson. 1995. "Dynamic Representation," American Political Science Review.](https://calgara.github.io/Pol1_Summer2017/Stimson,%20Mackuen%20&%20Erikson%201995.pdf)
+
+### Kalman filter:
+
+-   its a time series model
+
+-   only uses information from years prior, OLS does not do this. It just predicts everything.
+
+-   factor analysis
+
+    -   dimension reduction techniques.
+
+### Abstract
+
+If public opinion changes and then public policy responds, this is dynamic representation. Public opinion is the global policy preference of the American electorate. Policy is a diverse set of acts of 1 elected and unelected officials. Two mechanisms of policy responsiveness are (1) elections change the government's political composition, which is then reflected in new policy and (2) policymakers calculate future (mainly electoral) implications of current public views and act accordingly (rational anticipation). We develop multiple indicators of policy activity for the House, Senate, presidency, and Supreme Court, then model policy liberalism as a joint function of the two mechanisms. For each institution separately, and also in a global analysis of "government as a whole," we find that policy responds dynamically to public opinion change. This responsiveness varies by institution, both in level and in mechanism, as would be expected from constitutional design
+
+### Research Question
+
+1.  If public opinion governs, how does it find its way into the aggregation of acts that come to be policy?
+
+2.  does opinion move policy?
+
+3.  does opinion influence election outcomes?
+
+4.  through what mechanisms does opinion work on policy?
+
+### Background
+
+-   Dynamic representation: public opinions change, gov officials sensing the change, change their behavior in response.
+
+    -   this is pretty endogenous since elites supply information.
+
+    -   this def is macro level - aggregate! Don't make an ecological fallacy! they are not applying it to individuals
+
+-   Representation exists when changing preferences lead to changing policy acts. It is dynamic representation because the idea, in its essence, is structured in time.
+
+-   "The public makes judgements about current public policy-most easily that government's actions need to be enhanced or trimmed back."
+
+    -   in an abstract sense, yes. BUT the public's political knowledge and general sense of what is going on is suspect. They are driven in large part by the cues from the elites they follow.
+
+-   as real-world conditions change, or as "politically colored" perceptions of policy and conditions change. And as the simple model indicates, politicians and government officials sense these changes in public judgment and act accordingly. Thus, when public policy drifts away from the pub- lic's demands for policy, the representation system acts as a control mechanism to keep policy on course.3 The question now is how.
+
+-   *Postulate 1: Rationality - Rational actors make decisions in the present, but the utility they maximize lies wholly in the future.*
+
+    -   politicians have an information issue
+
+        -   don't know who they are facing OR
+
+        -   what issues will be salient
+
+-   *Postulate 2: Information - Authors recognize the little public policy knowledge of the public. They argue politicians are tuned into an abstract/national "feeling"*
+
+-   *Postulate 3: Consensus - What elites talk about*
+
+    -   where do opinions converge?
+
+        -   this will likely cause a big shift
+
+### Mechanism:
+
+1.  elections
+
+    1.  changing the politicans in power
+
+        1.  change from a liberal to a conservative congressman
+
+2.  politicians' rational anticipation of elections
+
+    1.  politicians have an ideal point and an expediance point (points most likely to optimize future election chances)
+
+    2.  **when politicians perceive public opinion change, they adapt their behavior to please their constituency, and, accordingly, enhance their chances of reelection.**
+
+### Hypothesis:
+
+1.  Strategic adjustment will dampen turnover
+
+2.  drive policy through rational anticipation
+
+### Data
+
+-   Public opinion: Domestic policy mood
+
+    -   left v. right. more fed or less
+
+    -   temperature check
+
+    -   bunch of polls on policy and just estimates a model of aggregate vibes.
+
+        -   summary measure
+
+-   Policy change: congressional votes
+
+    -   congressional rating scales
+
+    -   congressional roll call outcomes
+
+    -   key votes
+
+    -   presidential policy liberalism
+
+    -   supreme court liberalism
+
+### Methods
+
+-   time series of policy and public opinion.
+
+-   We wish to estimate coefficients that will represent the policy making effects of turnover and of rational anticipation
+
+-   IV: public opinion and election outcomes.
+
+-   public opinion is t-1
+
+    -   policymaking is at t
+
+        -   so there is a lag on public opinion
+
+### Results
+
+-   Find strong evidence of dynamic representation across the board.
+
+## Hibbing, John and Elizabeth Theiss-Morse. 2002. Stealth Democracy: Americans' Beliefs About How Government Should Work. Ch. 6.
+
+### Chapter 6: Americans' Desire for Stealth Democracy
+
+-   People want more democracy but dont want to be involved.
+
+-   People prefer to not think about politics.
+
+-   stealth democracy (138)
+
+    -   Our government would run better if decisions were left up to successful business people.
+
+    -   Our government would run better if decisions were left up to nonelected, independent experts rather than politicians or the people.
+
+    -   Our government would work best if it were run like a business.
+
+-   Who should and should not get powered is up to the people
+
+    -   its hard to figure that out!
+
+-   people don't want self-serving elites
+
+    -   they want **non-self-interest elites!**
+
+-   people don't like to engage with politics (generally).
+
+-   **It kinda feels like the theory here is that the public wants to exercise fire-alarm oversight in politics.**
+
+-   people want representatives so it unburdens them of dealing with politics.
+
+-   people overestimate how many other Americans share their attitutde on something.
+
+-   people don't like when congress debates
+
+    -   people don't like the procedural elements of democracy because it inherently requires conflict
+
+-   They expect people to empower elites who are not motivated by self-interest.
+
+-   Stealth democracy tendencys are measured by if a respondant:
+
+    -   agreed that "elected officials would help the country more if they would stop talking and just take action on important issues".
+
+    -   agreed that "what people call compromise in politics is really just selling out on one's principles"
+
+    -   agreed either that "our government would run better if decisions were left up to nonelected, independent experts rather than politicians or the people" or that "our government would run better if decisions were left up to successful business people."
+
+-   People are conflict-averse
+
+-   something doesn't sit right with me in this book chapter.
+
+## [Lax, Jeff and Justin Phillips. 2012. "The Democratic Deficit in the States," American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/23075149.pdf?refreqid=fastly-default%3A875104c6984733c7f144d1cd30da413a&ab_segments=&initiator=&acceptTC=1)
+
+### Abstract
+
+We study how well states translate public opinion into policy. Using national surveys and advances in subnational opinion estimation, we estimate state-level support for 39 policies across eight issue areas, including abortion, law enforcement, health care, and education. We show that policy is highly responsive to policy-specific opinion, even controlling for other influences. But we also uncover a striking "democratic deficit": policy is congruent with majority will only half the time. The analysis considers the influence of institutions, salience, partisan control of government, and interest groups on the magnitude and ideological direction of this democratic deficit. We find the largest influences to be legislative professionalization, term limits, and issue salience. Partisanship and interest groups affect the ideological balance of incongruence more than the aggregate degree thereof. Finally, policy is overresponsive to ideology and party---leading policy to be polarized relative to state electorates.
+
+### Research Question
+
+1.  Is policy over or under responsiveness to preferences?
+
+2.  How well do states translate public opinion into policy?
+
+    ### Background:
+
+-   How much does opinion influence policy
+
+    -   if a state is 30% liberal and another state is 35% liberal, it is likely the state with 35% liberalness will have more liberal policy but *how much more liberal?*
+
+-   Difference between this one Stimson et al. is the measure of specific support.
+
+-   ideology is hard to map to latent variables.
+
+-   Authors recognize the debate about how much policy voters actually know.
+
+    -   this is a theoretical issue and a practical issue. We don't have the appropriate data to do policy preference questions by state.
+
+-   **Incongruence can occur when policy is liberal and the opinion majority is conservative or vice versa.**
+
+-   DV is policy outcome
+
+### Method:
+
+-   State level policy preferences by voter is hard to source
+
+-   Authors get around this by using a Multilevel Regression and Poststratification (MRP). There are two stages:
+
+    -   First, individual survey response is modeled as a function of a nuanced demographic and geographic typology, using multilevel regression.
+
+    -   Second is poststratification, the estimates for each demographic-geographic type are weighed by the percentages of each type in actual state populations using Census data, so that we can estimate the percentage of respondents within each state who take a particular position.
+
+-   Use MRP to estimate opinion for 39 policies set by state governments
+
+-   use multiple surveys
+
+    -   sourced from iPoll - Roper Center for Public Opinion research
+
+### Results:
+
+-   Our findings are consistent with a world in which states implement either a largely liberal or largely conservative slate of policies, rather than a policy-by-policy median voter world, in which it is possible to mix and match policies as preferred by opinion majority
+
+-   They find that while state policy is highly responsive to policy-specific opinion, it is congruent with majority will only about half the time, revealing a significant "democratic deficit."
+
+-   **Responsiveness**: Policy is generally responsive to public opinion, especially when the issue is highly salient. Legislative professionalization and term limits enhance this responsiveness.
+
+-   **Congruence**: Policy matches majority opinion only 48% of the time, even with large majorities. This incongruence persists across various issue areas and states.
+
+-   **Influences on Democratic Performance**: Legislative professionalization, term limits, and issue salience are the largest influences on reducing the democratic deficit. Partisanship and interest groups affect the ideological direction of incongruence more than the aggregate degree.
+
+-   **Polarization**: State policies are more polarized than public preferences, often overshooting in the liberal or conservative direction relative to the median voter's specific policy preferences.
+
+-   **Institutional Effects**: Professionalized legislatures and term limits improve congruence, while the citizen initiative and elected judiciary do not significantly enhance majoritarianism.
+
+## [Gilens, Martin and Benjamin Page. 2014. "Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens," Perspectives on Politics.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/62327F513959D0A304D4893B382B992B/S1537592714001595a.pdf/testing-theories-of-american-politics-elites-interest-groups-and-average-citizens.pdf)
+
+### Abstract:
+
+Each of four theoretical traditions in the study of American politics---which can be characterized as theories of Majoritarian Electoral Democracy, Economic-Elite Domination, and two types of interest-group pluralism, Majoritarian Pluralism and Biased Pluralism---offers different predictions about which sets of actors have how much influence over public policy: average citizens; economic elites; and organized interest groups, mass-based or business-oriented. A great deal of empirical research speaks to the policy influence of one or another set of actors, but until recently it has not been possible to test these contrasting theoretical predictions against each other within a single statistical model. We report on an effort to do so, using a unique data set that includes measures of the key variables for 1,779 policy issues. Multivariate analysis indicates that economic elites and organized groups representing business interests have substantial independent impacts on U.S. government policy, while average citizens and mass-based interest groups have little or no independent influence. The results provide substantial support for theories of Economic-Elite Domination and for theories of Biased Pluralism, but not for theories of Majoritarian Electoral Democracy or Majoritarian Pluralism.
+
+### Research Question:
+
+-   What type of constituent is the government most responsive to?
+
+-   Do interest groups actually affect policy?
+
+### Background:
+
+-   4 types of theories:
+
+    -   Electoral Democracy
+
+    -   Economic-Elite Domination
+
+    -   Majoritarian Pluralism - in which the interests of all citizens are more or less equally represented
+
+    -   Biased Pluralism - in which corporations, business associations, and professional groups predominate.
+
+#### Majoritarian Electoral Democracy:
+
+-   attribute U.S. government policies chiefly to the collective will of average citizens, who are seen as empowered by democratic elections.
+
+-   median voter theorem
+
+-   The "electoral reward and punishment" version of democratic control through elections---in which voters retrospectively judge how well the results of government policy have satisfied their basic interests and values, and politicians enact policies in anticipation of judgments that they expect will later be made by what V.O. Key, Jr., called "latent" public opinion---might be thought to offer a different prediction: that policy will tend to satisfy citizens' underlying needs and values, rather than corresponding with their current policy preferences.
+
+-   this is the classic Downs model.
+
+#### Economic-Elite Domination
+
+-   policy making is dominated by individuals who have substantial economic resources, i.e., high levels of income or wealth---including, but not limited to, ownership of business firms.
+
+    -   not just economic resources but also social/institutional power
+
+-   the power elite
+
+#### Majoritarian Pluralism
+
+-   Goes back to Federalist paper 10 by Madison.
+
+    -   which analyzed politics in terms of "factions"---a somewhat fuzzy concept that apparently encompassed political parties and even popular majorities, as well as what we would today consider organized interest groups, business firms, and industrial sectors.
+
+-   Dahl also part of this camp
+
+    -   Dahl's analyses of American politics in terms of "polyarchy" or "pluralist democracy" also come close to our ideal type of majoritarian pluralist theory, since they imply that the wants or needs of the average citizen tend to be reasonably well served by the outcomes of interest-group struggle.
+
+-   Mancur Olson complicates this perspective
+
+    -   free-rider problem in group/interest formation
+
+    -   the free-rider problem thus causes an issue in what and who can form groups/special interest.
+
+#### Biased Pluralism
+
+-   Theories of biased pluralism generally argue that both the thrust of interest-group conflict and the public policies that result tend to tilt toward the wishes of corporations and business and professional associations.
+
+-   business groups prevail when scope is narrow and visibility low
+
+-   More recently, Fred McChesney has made the ingenious argument that campaign contributions from interest groups maynotrepresent quid proquo briberyattemptsbygroups, butinsteadresult fromextortion by politicians who threaten to harm the groups' interests.
+
+### Data:
+
+-   1,779 instances between 1981 and 2002 in which a national survey of the general public asked a favor/ oppose question about a proposed policy change.
+
+-   They included policies are not restricted to the narrow Washington "policy agenda." At the same time---since they were seen as worth asking poll questions about---they tend to concern matters of relatively high salience, about which it is plausible that average citizens may have real opinions and may exert some political influence.
+
+-   Use measures of income
+
+    -   divide it into percentiles.
+
+    -   will use these income divisions to test the different theories outlined above.
+
+-   Measuring interest group
+
+    -   Baumgartner et al. found that a simple proxy for their index---the number of reputedly "powerful" interest groups (from among groups appearing over the years in Fortune magazine's "Power 25" lists) that favored a given policy change, minus the number that opposed it--- correlated quite substantially in their cases with the full interest-group index (r=50.73)
+
+        -   Gilens use this but slightly modified. Same idea though.
+
+            -   coded whether the group was favorable or unfavorable to policy
+
+-   DV: a measure of whether or not the policy change proposed in each survey question was actually adopted within four years after the question was asked.
+
+### Hypothesis:
+
+![](hypoth_gilens.png){fig-align="center"}
+
+### Results:
+
+-   The central point that emerges from our research is that economic elites and organized groups representing business interests have substantial independent impacts on U.S. government policy, while mass-based interest groups and average citizens have little or no independent influence. Our results provide substantial support for theories of Economic-Elite Domination and for theories of Biased Pluralism, but not for theories of Majoritarian Electoral Democracy or Majoritarian Pluralism.
+
+-   Again, the implication of these limitations in our data is that interest groups and economic elites actually wield more policy influence than our estimates indicate.
+
+-   When the preferences of economic elites and the stands of organized interest groups are controlled for, the preferences of the average American appear to have only a minuscule, near-zero, statistically non-significant impact upon public policy.
+
+-   Furthermore, the preferences of economic elites (as measured by our proxy, the preferences of "affluent" citizens) have far more independent impact upon policy changethanthepreferences ofaveragecitizens do. To be sure, this does not mean that ordinary citizens always lose out; they fairly often get the policies they favor, but only because those policies happen also to be preferred by the economically-elite citizens who wield the actual influence.
+
+-   When a majority of citizens disagrees with economic elites or with organized interests, they generally lose.
+
+## [Broockman, David and Christopher Skovron. 2018. "Bias in Perceptions of Public Opinion among Political Elites," American Political Science Review.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2EF080E04D3AAE6AC1C894F52642E706/S0003055418000011a.pdf/bias-in-perceptions-of-public-opinion-among-political-elites.pdf)
+
+### Abstract
+
+The conservative asymmetry of elite polarization represents a significant puzzle. We argue that politicians can maintain systematic misperceptions of constituency opinion that may contribute to breakdowns in dyadic representation. We demonstrate this argument with original surveys of 3,765 politicians' perceptions of constituency opinion on nine issues. In 2012 and 2014, state legislative politicians from both parties dramatically overestimated their constituents' support for conservative policies on these issues, a pattern consistent across methods, districts, and states. Republicans drive much of this overestimation. Exploiting responses from politicians in the same district, we confirm these partisan differences within individual districts. Further evidence suggests that this overestimation may arise due to biases in who contacts politicians, as in recent years Republican citizens have been especially likely to contact legislators, especially fellow Republicans. Our findings suggest that a novel force can operate in elections and in legislatures: Politicians can systematically misperceive what their constituents want.
+
+### Bumper Sticker:
+
+-   Politicians have bias in how they perceive their constituency.
+
+### Research Question
+
+1.  In contexts like these,can politicians indeed systematically misperceive constituency opinion on salient issues?
+
+2.  Why did elites polarize first?\* kinda a question they are circling around.
+
+3.  Why are US politicians' perceptions of constituency opinion systematically skewed to the right?
+
+### Background
+
+-   How do politicians perceive their constituents
+
+-   Circling back on Fenno 1977
+
+-   we argue that biases in politicians' information environments common across politicians can lead politicians as a whole to systematically misperceive constituency opinion and, in turn,to contribute to systemic breakdowns in dyadic representation like asymmetric polarization.
+
+-   authors start with the rise of conservative public sphere outlets.
+
+-   Republicans simply got way more political in the 2000s.
+
+-   "Politicians' positions and the policies they make are clearly responsive to public opinion"
+
+    -   this is somewhat suspect based on Gilens findings.
+
+### Hypothesis
+
+1.  we argue that politicians can misperceive constituency opinion dramatically and systematically enough to contribute to significant, one-sided biases in representation such as asymmetric polarization.
+
+2.  if certain kinds of individuals are more likely to express their views in the public spheres politicians monitor, then these individuals' viewpoints may loom disproportionately large in many politicians' minds as they think about what their geographic constituency wants.
+
+### Data
+
+-   This original survey evidence spans two years and 3,765 surveys of American politicians,across which we collected 11,803 elite perceptions of constituency opinion intotal. Our main evidence comes from a survey we conducted in 2014 of 1,858 state legislative politicians.
+
+### Method:
+
+-   To compare elites' perceptions to reasonably precise estimates of true public opinion, we asked them to estimate constituency opinion on items that were being contemporaneously asked in the2014 CCES, a large sample survey
+
+-   Use MRP to impute survey results from CES for state districts. Because we are asking politicans to estimate how much they think their constituents support X policy. We are going to have issues where we won't have enough observations from the respective districts. Thus we use MRP to help us.
+
+-   In addition to the MRP, they also use a lot of math to create average district opinion and average politician opinion and then compare across. This is almost like a pooled version in a way. It is more generalizable. We are losing out on some of that geographic distinction.
+
+-   MRP is going to give greater leverage because it estimates support for each issue in all of the nation's state legislative districts using multilevel regression and poststratification
+
+### Results:
+
+-   Our evidence reveals that, on average, American politicians from both parties in 2012 and 2014 believed that support for conservative positions on these issues in their constituencies was much higher than it actually was.
+
+-   Republicans overestimate how conservative their district is more than democrats. However, democrats also overestimate.
+
+### Why (mechanism)
+
+-   Authors argue that it is because Republicans are more likely to contact their official (use previous study to back this up)
+
+    -   i don't disagree but I don't think this is the biggest driver.
+
+-   Authors don't mention it but I really think this is a media story. Either news/social media.
+
+    -   One possibility our data suggest is that these misperceptions originate from patterns of mass participation in the public sphere; consistent with this, Online Appendix H shows suggestive evidence that politicians overestimated conservatism the most in districts where Republicans were especially likely to contact legislators.
+
+# Week 13 - Parties and Interest Groups 
+
+## Cohen, Marty, et al. 2008. The Party Decides: Presidential Nominations Before and After Reform, Chs 1, 8--9.
+
+### Chapter 1: The Outrageous Nomination of Hubert Humphrey 
+
+-   1968 Democratic campaign
+
+-   Hubert Humphrey is vice president and did not win any states.
+
+-   Reforms after began in the Dem party and spread to Republican party after.
+
+-   Debate about what kind of elite is most influential in nomination process
+
+-   General consensus: parties play no important role in presidential nominations
+
+-   Authors argument: **parties are still tremendously important in presidential nominations**
+
+    -   the demise of parties has been exaggerated
+
+    -   candidate centered efforts are tremendously important
+
+    -   parties provide a 'threshold' of who goes on to the next level.
+
+-   "*One continually hears the declaration that the direct primary \[for legislative offices\] will take power from the politicians and give it to the people. This is pure nonsense. Politics has been, is, and always will be carried on by politicians, just as art is carried on by artists, engineering by engineers, business by businessmen. All that the direct primary, or any other political reform, can do is affect the character of the politicians by altering the conditions that govern political activity, thus determining its extent and quality. The direct primary may take advantage and opportunity from one set of politicians and confer them upon another set, but politicians there will always be so long as there is politics. (cited in Key 1965, 394-395)*
+
+-   Nominations used to be more tightly controlled by politicians but now there are more stakeholders involved.
+
+-   The party does not have a monopoly but still has a significant amount of power.
+
+-   **Main Claim: The various leaders, activists, and interest group leaders who seek to influence presidential nominations are more than a collection of individual actors; they meet the standard definition of political parties. They are, in other words, a broad coalition aiming to control not only the presidnecy, but also Congress, the Supreme Court, governorships, state legislatures, city councils and county boards, and every other locus of political power in the United states.**
+
+-   THEY STILL THINK PARTIES ARE VERY IMPORTANT!
+
+-   Question for Josh: The median voter theory assumes voters know what they want. right?
+
+    -   Unari and Zapal AJPS
+
+    -   politicians can pick a platform
+
+        -   there is platform differentiation.
+
+    -   valence literature.
+
+-   Parties behave in the same basic way - as vehicles by which the most energized segments of the population attempt to pull government policy toward their own preferences.
+
+    -   whether parties succeed in this is irrelevant
+
+-   Party is most influential in the invisible primary stage.
+
+-   The invisible primary control by the party seemed to be strongly a result of technological limitations. These interactions occured physically. This has changed now which also has coincided with nomination changes.
+
+-   Previous definitions of parties only focused on politicans and their leaders.
+
+    -   authors disagree with this definition
+
+    -   **parties include interest groups, fundraisers, activists, campaign technicians, etc.**
+
+### Chapter 8 - Anatomy of a Conversation
+
+-   A central claim of this study is that parties decide who to nominate for president in long-running national conversation in which party members-officeholders, interest groups, activists, donors-discuss who can best unite the party coalition and win the general election.
+
+-   good and funny story on 236/237.
+
+    -   but also indicative of personality at the elite level. Not everything is policy based.
+
+-   A central claim in our study is that presidential nominations are dominated by a group of party insiders who are generally active in party politics
+
+-   sample: 6k individual ednorsments between 1980 - 2004.
+
+    -   lots of repeat endorsers.
+
+-   Authors have four measures of the invisible primary:
+
+    -   media coverage
+
+        -   measured by newspaper coverage of invisible primary.
+
+            -   specifically TIME magazine
+
+                -   all preorting of the presidential nomination contenst from january of the year prior to the last issue before the Iowa caucus, 1980-2004.
+
+                -   **Does media coverage create front-runners in the invisible primary, or does media coverage flow to candidates who are front-runners independent of the media?**
+
+    -   endorsements
+
+    -   candidate support in public opinion polls
+
+        -   polls are important less a forecasting tool but more so as to who is popular within the primary race.
+
+    -   fundraising.
+
+-   How much of these 4 features influence each other?
+
+-   they divide data and add different lags.
+
+-   1st results:
+
+    -   endorsements at t=1 are significant predictors at t=2.
+
+    -   same with polls
+
+-   They then look at out-of-group endorsements.
+
+    -   out-of-group endorsements will convey more information about acceptability within the party and will, therefore, have greater impact on the dynamics of the invisible primary.
+
+    -   endorsements in this model are majorly significant. They affect everything else.
+
+    -   Early out of group endorsements are big movers in the invisible primary.
+
+-   Still need to show that these endorsements of party insiders, exert a decisive impact on the voter primaries and caucuses that follow.
+
+### Chapter 9 - The Voters Weigh In
+
+-   What aspect of the invisible primary is most important for the outcome of state primaries and caucuses?
+
+-   What if voters are ignorant of leader endorsements? Then they wont matter at all.
+
+-   Main point: presidential nominations are fought and win in primary and caucus elections. However, the fight takes place on a playing field that tilts in the direction that party insiders want it to.
+
+-   Endorsements matter in Iowa and New Hampshire
+
+    -   local officials, activists, and interest-group leaders matter!
+
+-   Do endorsements actually matter?
+
+    -   yes
+
+        -   endorsements by a party actor can help mobilize resources.
+
+            -   they can provide volunteers
+
+            -   phone banking
+
+            -   canvasing
+
+        -   They don't necessarily change peoples vote.
+
+        -   certain people may be more suceptable to endorsments.
+
+            -   An electorate that is not very interested, not very well informed, and attracted to candidates in significnat part because they are doing well is probably an electorate open to suggestions about whom to support.
+
+        -   Endorsements can cue voters.
+
+-   momentum is important but is kind of dead as a factor because of the structure of the race.
+
+    -   why?
+
+## [Bawn, Kathleen, et al. 2012. \"A Theory of Political Parties: Groups, Policy Demands and Nominations in American Politics,,\" Perspectives on Politics.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F7996D5365C105C3B91CD56E6A1FAA3/S1537592712001624a.pdf/a-theory-of-political-parties-groups-policy-demands-and-nominations-in-american-politics.pdf)
+
+### Abstract: 
+
+We propose a theory of political parties in which interest groups and activists are the key actors, and coalitions of groups develop common agendas and screen candidates for party nominations based on loyalty to their agendas. This theoretical stance contrasts with currently dominant theories, which view parties as controlled by election-minded politicians. The difference is normatively important because parties dominated by interest groups and activists are less responsive to voter preferences, even to the point of taking advantage of lapses in voter attention to politics. Our view is consistent with evidence from the formation of national parties in the 1790s, party position change on civil rights and abortion, patterns of polarization in Congress, policy design and nominations for state legislatures, Congress, and the presidency.
+
+### Research Question: 
+
+What evidence do we have to support our argument that parties are controlled by coalition of intense policy demanders?
+
+### Main Argument: 
+
+-   Ourview, in contrast, places policy demanders at the center. These interest groups and activists form coalitions to nominate and elect politicians committed to their common program. In our view, party nominees are not so much "constrained" by policy demanders to deviate from what voters want, as genuinely committed to what the policy demanders want regardless of the wishes of the median voter. This view of parties and politicians is as antithetical to Burke's idea of parties as it is to Schumpeter's. What makes plausible the survival of our kind of party, despite fierce electoral competition, is the limited attention voters pay to politics, and especially to policy positions and outcomes.
+
+### Background: 
+
+-   Contemporary scholarship views a party as a team of politicians whose paramount goal is to win electoral office.
+
+    -   these teams make promises about what they will do if elected.
+
+        -   this is not ideal.
+
+-   **We argue that parties in the US are best understood as coalitions of interest groups and activists seeking to capture and use government for their particular goals, which range from material self-interest to high-minded idealism.**
+
+    -   In this groupcentric view of parties, candidates will, if the coalition has selected them well, have as their paramount goal the advancement of the party program.
+
+-   Authors are aware that voters cant really judge what they want
+
+-   In our account, parties are no great friends of popular sovereignty. Electoral competition does constrain group centric parties to be somewhat responsive to citizen preferences, but they cede as little policy to voters as possible. Parties mainly push their own agendas and aim to get voters to go along.
+
+    -   RECALL GILENS!
+
+#### Legislative-Centered Theories of Party 
+
+-   The discipline's most developed theories of party feature office holders, especially legislators, as the dominant actors.
+
+-   how do coalitions form
+
+    -   we have three actors
+
+        -   2 of them coordinate and achieve something better than if they didnt.
+
+    -   By forming a majority coalition that stays together across votes, A and B increase their pay-offs to 2.
+
+-   Parties form because coalitions seek to win. IF there are three individual actors with different policy preferences and 1 wins. The payoffs look like:
+
+    -   Actor 1: 3
+
+    -   Actor 2: -1
+
+    -   Actor 3: -1
+
+        -   thus actor 2 and 3 form a coalition to increase their payoffs by 2.
+
+            -   The gains from keeping a stable majority together form Schwartz's and Aldrich's answer to the question "Why Parties?"
+
+-   Why do parties stay together?
+
+    -   According to Gary Cox and Mathew McCubbins, party leaders control the legislative agenda, suppressing proposals that might split the party and promoting the party program. The policies thus enacted create a "brand name," valuable for winning elections.
+
+-   These are good but perspectives but limited. It only conceives of parties as legislators attempting to win reelection.
+
+#### Alternate Theory: 
+
+-   Organized policy demanders strive to recruit and elect candidates sympathetic to their goals, goals typicallyn not shared by most ordinary voters.
+
+-   Bargaining among policy demanders constructs not only the party system, but also the ideological space.
+
+-   Inevitably, the party programs are less than perfect matches for the concerns of most voters, who respond with varying degrees of trust, adaptation, and confusion.
+
+-   The importance of nominations and the nature of voter responses to parties are particularly important points; we next elaborate on each.
+
+-   **politicians are not the center of the party. Policy demanders are.**
+
+#### Why Nominations? 
+
+-   Groups of organized policy demanders are the basic units of our theory of parties.
+
+-   The long coalition strives to nominate a candidate whom each group trusts to represent its interests in a manner acceptable to the coalition as a whole.
+
+### What about voters? 
+
+-   Downs median voter theorem
+
+    -   assumes voters can locate policy preferences
+
+        -   doesn't really hold.
+
+        -   cite achen and bartels shark attack paper
+
+-   We call the policy region over which aggregate electorates do not enforce their preferences the "electoral blind spot."
+
+-   There is no need for either party, however, to scale back beyond the point where voters notice any difference. As long as parties stay within the electoral blind spot, they are effectively free to nominate any candidate they want.
+
+#### Competing views of parties 
+
+-   Edmund Burke's def of a party:
+
+    -   We call the policy region over which aggregate electorates do not enforce their preferences the "electoral blind spot."
+
+        -   schumpeter (and many others disagree)
+
+-   Schumpeter:
+
+    -   We call the policy region over which aggregate electorates do not enforce their preferences the "electoral blind spot."
+
+        -   Schumpeter's view emphasizes the extent to which electoral competition drives the actions of politicians and therefore parties.
+
+        -   As evidence against Burke's position, Schumpeter goes on to note that different parties may adopt identical platforms.
+
+-   Anthony Downs subsequently connected these points, arguing that platform convergence was a logical consequence of the pressures of electoral competition on officeseeking parties.
+
+### Evidence: 
+
+-   Going to look across history
+
+-   Specifically at the Democrats around civil rights
+
+-   and at the Republicans around Abortion
+
+-   They will argue that these changes on policy and their subsequent salience was driven not by party leaders but by intense policy demanders.
+
+-   Democratic legislators most vocal about civil rights came from districts with a high concentration of union membership. Even more so than districts with a large amount of African-Americans.
+
+    -   Union membership was strongly vocal about civil rights.
+
+-   Authors do not claim politicans are bystanders and not important.
+
+-   More informed voters show preferences for moderates but there isn't a lot of moderates. Media markets are to blame
+
+-   Citizens cannot track all policy.
+
+-   voters struggle with figuring out what is going on.
+
+-   Fail to tow the party line and the party may work against you in the primaries when you are up for reelection.
+
+### Main Point: 
+
+-   We have challenged this syllogism at two points: First, voters do not pay so much attention to politics that politicians must faithfully execute their wishes to win election; within fairly broad limits, obfuscation and phony credit claimingworkquitewell.Second,interestgroupsandactivists are the dominant players in political parties, insisting on the nomination of candidates who will exploit the limitations of voter monitoring to advance party programs.
+
+## Baumgartner, Frank and Beth Leech. 2001. \"Interest Niches and Policy Bandwagons: Patterns of Interest Group Involvement in National Politics,\" Journal of Politics.
+
+### Abstract: 
+
+Using data from more than 19,000 reports filed under the Lobbying Disclosure Act of 1995, we analyze the distribution of lobbying on a random sample of 137 issues and find a tremendous skewness. The median issue involved only 15 interest groups, whereas 8 of the issues involved more than 300 interest groups. The top 5% of the issues accounted for more than 45% of the lobbying, whereas the bottom 50% of the issues accounted for less than 3% of the total. This distribution makes generalizations about interest group conflict difficult and helps explain whymany scholars have disagreed about the abilities of lobbyists to get what they want. We also confirm and expand upon previous findings regarding the tremendous predominance of business firms in the Washington lobbying population
+
+### Research Question: 
+
+Just descriptive statistics
+
+### Background: 
+
+-   1995 Lobbying Disclosure Act expanded reporting requirements
+
+-   Businesses and trade associations make up more than half of the Washington lobbying community
+
+-   Most policies have very little lobbying going on.
+
+-   A few policies have a LOT!
+
+-   Most important, the data show that business advantage,while great overall, is even more striking in the cases where the fewest interest groups are active.
+
+### Data: 
+
+-   19,000 reports
+
+-   First, organizations spending less than \$20,500 on lobbying in a six-month period need not register: this would exclude small groups operating on a shoe string budget or organizations that lobby rarely.
+
+-   Second, the law is aimed at providing a record of direct contacts of government officials that would not otherwise be noted, and, therefore, groups need not report grassroots lobbying, media campaigns, litigation, testimony at hearings, or submissions under notice and comment.
+
+## [Hall, Richard and Alan Deardorff. 2006. \"Lobbying as Legislative Subsidy,\" American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/lobbying-as-legislative-subsidy/AE4B5D8AB9C2487BB78C2A51BB53E03F)
+
+### Abstract: 
+
+Professional lobbyists are among the most experienced, knowledgeable, and strategic actors one can find in the everyday practice of politics. Nonetheless, their behavioral patterns often appear anomalous when viewed in the light of existing theories. We revisit these anomalies in search of an alternative theory. We model lobbying not as exchange (vote buying) or persuasion (informative signaling) but as a form of legislative subsidy---a matching grant of policy information, political intelligence, and legislative labor to the enterprises of strategically selected legislators. The proximate political objective of this strategy is not to change legislators' minds but to assist natural allies in achieving their own, coincident objectives. The theory is simple in form, realistic in its principal assumptions, and counterintuitive in its main implications. Empirically, the model renders otherwise anomalous regularities comprehensible and predictable. In a later section, we briefly bring preferences back in, examining the important but relatively uncommon conditions under which preference-centered lobbying should occur.
+
+### Research Question: 
+
+### Background:
+
+-   Previous lobby theories:
+
+    -   one that conceptualizes lobbying as a form of exchange,
+
+    -   the other as persuasion---both mechanisms for changing legislators' preferences over policies.
+
+-   **We propose a fundamentally different but fundamentally simple theory of lobbying. The main idea is that lobbying is primarily a form of legislative *subsidy*---a matching grant of costly policy information, political intelligence, and labor to the enterprises of strategically selected legislators.**
+
+    -   The proximate objective of this strategy is *not* to change legislators' minds but to assist natural allies in achieving their own, coincident objectives.
+
+    -   basically provide help when policies align.
+
+-   Exchange theory
+
+    -   buying votes basically
+
+    -   quid pro quo
+
+        -   this is kinda unlikely
+
+        -   what is stopping from the politician reneging?
+
+    -   Also, PAC managers give the most to politicans that align with them.
+
+        -   if this were true, wouldn't it be the other way around?
+
+-   Lobbying as persuasion
+
+    -   In the newer view, information transmission is at the heart of the lobbyist--legislator relationship, but contrary to the older pluralists, that information is not innocuous.
+
+-   Direct lobbying, in our view, typically is not a strategy for changing legislators' preferences over policies. Nor is it about keeping them from being changed. Rather, it is an attempt to *subsidize* the legislative resources of members who already support the cause of the group.
+
+### Assumptions: 
+
+1.  *For a legislator to have much influence on policy, she must work at it*
+
+2.  *Legislators' resources are scarce*
+
+3.  *For any given period, individual legislators care about influencing more than one policy at a time*
+
+4.  *Legislators care about some issues more than others*
+
+5.  *Relative to legislators, lobbyists are specialists*
+
+### Hypothesis: 
+
+1.  *Lobbyists will lobby their allies*, where \"allies\" refer to legislators who share the same policy objective as the group.
+
+2.  *Lobbyists will lobby most their strongest allies*, where strength refers to the legislator's marginal willingness to pay for progress toward the policy objective the member and group share.
+
+3.  *Lobbyists will not lobby their enemies*.
+
+4.  *Lobbyists will seldom lobby uncommitteds*, where uncommitted here refers to legislators for whom it is uncertain whether they favor progress or regress on *A*.
+
+5.  *As lobbying increases, so will the participation or \"effort\" of allies*.
+
+6.  *Lobbying will increase most the participation of the lobbyist's strongest legislative allies*.
+
+7.  *Lobbying uncommitted legislators or enemies (to the extent that this happens) will not increase those legislators' participation*.
+
+8.  *Legislators will give access to (be lobbied by) like-minded public interest groups, even if the latter have no reelection-relevant assets*.
+
+9.  *Lobbying by public interest groups without reelection-relevant assets will increase the participation or \"effort\" of allies*.
+
+10. *Lobbyists will lobby legislative allies with the most productive enterprises*.
+
+11. *Lobbying will increase the participation of the lobbyist's most productive allies*.
+
+## [McCrain, Joshua. 2018. \"Revolving Door Lobbyists and the Value of Congressional Staff Connections,\" Journal of Politics](https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5d91d673-a93f-4407-87f5-cf2b3e454f2c)
+
+### Abstract: 
+
+Building on previous work on lobbying and relationships in Congress, I propose a theory of staff-to-staff connections as a human capital asset for Capitol Hill staff and revolving door lobbyists. Employing lobbying disclosure data matched to congressional staff employment histories, I find that the connections these lobbyists maintain to their former Hill coworkers primarily drive their higher relative value as lobbyists. Specifically, a 1 standard deviation increase in staff connections predicts an 18% increase in revenue attributed to the lobbyist during her first year. I also find that the indirect connections lobbyists maintain to legislators through knowing a staffer in a legislative office are of potential greater value than a direct connection to a senator given a large enough number of connections. This article sheds additional light onto the political economy of the lobbying industry, making an important contribution to the literature on lobbying and the revolving door phenomenon.
+
+### Research Question: 
+
+*This article establishes a story of revolving door lobbying that suggests staffers who become lobbyists benefit from connections to their staff colleagues, a unique human capital asset they can bring to the private sector.*
+
+### Background: 
+
+### Data: 
