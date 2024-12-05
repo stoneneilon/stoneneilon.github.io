@@ -1080,3 +1080,73 @@ we are like basically modeling a rate (count/exposure time)
 -   imputation probably where SE should be.
 
     -   if we do this and our results don't really change, thats good. It is more robust.
+
+# Topic 13
+
+## Robustness:
+
+-   the results are not specific to the model you estimated.
+
+-   Even if i violate assumptions ill still get same results
+
+-   your model doesn't rely on model assumptions
+
+-   Read Robustness Tests for Quantitative Research
+
+-   why do people run OLS over others?
+
+    -   its simple and easy to interpret
+
+-   Andy's definition:
+
+    -   Do your findings (magnitude, direction and statistical significance) change under differing assumptions?
+
+    -   assumptions: identificiation assumptions, measurement assumptions, estimator assumptions
+
+        -   identification:
+
+            -   how do i know you have a identified a causal mechanism?
+
+-   Robustness is NOT ensuring the model is well-specified. It starts with the assumed model you chose and builds from there; you're not going to show a bad model to begin with.
+
+-   Robustness is not about predictive ability or forecasting.
+
+-   Robustness checks are a way to check for internal and external validity, but id be wary about saying the model is valid just b/c its robust.
+
+-   Are our models ever correct?
+
+    -   NO!
+
+-   What are robust standard errors:
+
+    -   changing standard errors
+
+    -   another name: heteroskedastic consistent standard errors
+
+    -   standard errors are consistent even with heteroskedasticity
+
+    -   even if we violate spherical assumptions, standard errors will still be correct
+
+    -   does not alter our $\hat{\beta}$ 's, but makes our standard errors "robust to" certain misspecifications.
+
+    -   sandwich operator
+
+        -   typically standard errors will be a little larger after but more correct.
+
+        -   spherical error violation? Do this.
+
+    -   Cluster-robust:
+
+    -   normally distributed errors is probably going to be violated
+
+        -   standard errors will technically be wrong too
+
+        -   so what do we do?
+
+            -   estimate boot-strap standard errors.
+
+-   Model Variation tests
+
+    -   add/change control variables
+
+-   Functional form changes

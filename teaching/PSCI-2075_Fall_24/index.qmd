@@ -868,7 +868,7 @@ We have gone over quite a bit in these first few weeks. I want to spend this tim
 
 ## Stone's Song of the Week
 
-[![L\'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
+[![L'Impératrice - La Piscine (LIVE) & 'piano track killer' \@ 46:11 - 58:45](limperatrice.jpg){fig-align="center" width="634"}](https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&t=2770)
 
 I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now...You think I want to be here teaching you about variance?! JK I do \<3 variance and standard deviation are very important.
 
@@ -1956,15 +1956,15 @@ summary(model_multivariate) # print summary statistics for regression model
 
 -   Take the remainder of class to work on the homework!
 
-# Week 13 
+# Week 13
 
-## Stone's Song of the Week: 
+## Stone's Song of the Week:
 
 [![LCD Soundsystem - Home](lcd.webp){fig-align="center"}](https://www.youtube.com/watch?v=ETDCbQUYiAQ)
 
 What are you still doing here? Go HOME! 🪩
 
-## 🦃 GOBBLE GOBBLE GOBBLE 🦃 
+## 🦃 GOBBLE GOBBLE GOBBLE 🦃
 
 -   Anyone have strong feelings about Thanksgiving food?
 
@@ -1972,9 +1972,9 @@ What are you still doing here? Go HOME! 🪩
 
     -   This year we are mixing it up. Smoking a brisket and some pork.
 
-## More Regression! 
+## More Regression!
 
-### Multivariate: 
+### Multivariate:
 
 -   Potentially unlimited variables:
 
@@ -1992,19 +1992,19 @@ What are you still doing here? Go HOME! 🪩
 
 -   Might do a better job of arguing causation
 
-## Review Regression Interpretation 
+## Review Regression Interpretation
 
 We will get $\beta$ coefficients (remember $\beta$ is the slope) for each of our variable. This is the effect of that IV on the DV, holding other variables constant. Though we get a $\beta$ coefficient for each variable, we also get a t-test and respective p-value for each output.
 
-### Bivariate Regression: 
+### Bivariate Regression:
 
 *"for every one unit change in X, we observe a \_\_\_\_ change in Y.*
 
-### Multivariate Regression: 
+### Multivariate Regression:
 
 "*for every one unit change in X, we observe a \_\_\_\_ change in Y, all else equal."*
 
-### Multivariate regression with categorical IV interpretation: 
+### Multivariate regression with categorical IV interpretation:
 
 "the expected change in Y for \[category X\] is \_\_\_\_, when compared to \[reference category\]."
 
@@ -2012,18 +2012,18 @@ We will get $\beta$ coefficients (remember $\beta$ is the slope) for each of our
 
     -   Example: "If the independent variable 'Education Level' is categorical with categories 'High School' (reference), 'Bachelor's,' and 'Master's,' then the coefficient for 'Bachelor's' indicates the expected change in Y for individuals with a Bachelor's degree compared to those with only a High School degree, all else being equal."
 
-### How would you interpret prcapinc in the model below? 
+### How would you interpret prcapinc in the model below?
 
 ```{r}
 model_multivariate <- lm(cigarettes ~ cig.tax + median.age + ba.or.more + prcapinc, data = states) # create regression and assign to object
 summary(model_multivariate) # print summary statistics for regression model 
 ```
 
-#### What can we conclude? 
+#### What can we conclude?
 
 Make sure you are evaluating the other columns before answering!
 
-## Degrees of Freedom: 
+## Degrees of Freedom:
 
 $$
 n-k-1
@@ -2049,7 +2049,7 @@ $$
 
         -   Degrees of freedom is literally this metaphor applied to regression.
 
-## Regression with a binary IV 
+## Regression with a binary IV
 
 -   Same command in R
 
@@ -2069,13 +2069,13 @@ $$
 
 -   Trickier!
 
--   You\'re comparing the coefficients to each other since the units are meaningless.
+-   You're comparing the coefficients to each other since the units are meaningless.
 
 -   For example, what would a 1-unit increase in blue eye color mean???
 
 -   Instead, you choose one of the independent variables as a reference category and base your interpretation off of a comparison to that category.
 
-    -   \"Brown-eyed students score 0.3% higher on the midterm relative to blue-eyed students.\"
+    -   "Brown-eyed students score 0.3% higher on the midterm relative to blue-eyed students."
 
     -   I made this up. 
 
@@ -2083,7 +2083,7 @@ $$
 
     -   lm(dataset\$DV \~ dataset\$cat_IV1 + dataset\$cat_IV2 + ... dataset\$cat_IVn)
 
-## Multi-collinearity (side tangent) 
+## Multi-collinearity (side tangent)
 
 Recall a binary IV is coded as 0 or 1. When you run a regression with this type of variable, R will not include the reference category (which will be 0). There is a mathematical reason for this called *perfect mulit-collinearity.*
 
@@ -2143,9 +2143,9 @@ We use interactions when we have a ***conditional*** hypothesis. Example:
 
 Don't worry about this right now. We will go over this more after the break.
 
-## A new package has entered the chat: 
+## A new package has entered the chat:
 
-### Stargazer! 
+### Stargazer!
 
 ```{r}
 #| eval: false
@@ -2188,6 +2188,88 @@ library(stargazer)
 
 While we observe a general decrease in trade as tariffs go up, we cannot statistically differentiate the effect of being a democracy on this relationship. We can tell because the confidence intervals overlap. We will go over this more after break.
 
-## Homework 5 
+## Homework 5
 
 -   Due 12/8
+
+# Week 15
+
+## Stone's Song of the Week:
+
+[![Joy Orbison, Lil Yachty, Future, Playboi Carti - flex fm (freddit)](flexfm.jpeg){fig-align="center"}](https://www.youtube.com/watch?v=UZgiAu8QRAI)
+
+We are SO BACK (literally).
+
+## How was break?
+
+-   Anyone do anything fun?
+
+## Check your grades
+
+-   Make sure I haven't made any mistakes.
+
+-   If I did, email me explaining the issue.
+
+## Final
+
+-   Haven't put it together yet.
+
+-   Will likely focus on more recent material but anything is possible.
+
+-   We will do review next week. Let me know if there is any specific material you want me to go over.
+
+## Interactions (cont.)
+
+-   We use interactions for conditional hypothesis.
+
+-   Example: X causes Y, only if Z is active. The effect of X on Y depends on the level of Z.
+
+-   When interactions are dichotomous or categorical, interpretation is relatively easy. When the interaction includes a continuous variable, interpretation from the table becomes difficult.
+
+    -   Generally, it is easier to wrap your head around an interaction when plotted visually rather than looking at a table.
+
+-   In a regression with interactions, we include all constitutive terms.
+
+    -   **Wrong:** Turnout = Age + Age\*Race
+
+    -   **Correct:** Turnout = Age + Race + Age\*Race
+
+        -   **NOTE:** R does this automatically. So you can just run the lm model with the interaction terms.
+
+-   Let's look at the example from lecture. We want to know if the effect of tariff rates on trade is conditional on whether the country is democratic or not.
+
+```{r}
+library(RCPA3)
+# note R will include the constitutive terms automatically. 
+model_int <- lm(trade.percent.gdp~ eiu.democ.bin*tariff.rate + eu, data=world)
+summary(model_int)
+```
+
+-   Some notes about this:
+    -   notice how we still have coefficients for just 'eiu.democ.bin' and 'tariff.rate'.
+    -   You should NOT say: the effect of eiu.democ.bin on trade is 1.9921. THIS IS INCORRECT.
+        -   the coefficient of eiu.democ.bin is the effect on trade WHEN tariff.rate is ZERO.
+    -   The same follows for tariff.rate.
+        -   The coefficient of tariff.rate is the effect on trade WHEN eiu.democ.bin is NO (coded as a zero.)
+-   Zero has a substantive meaning.
+-   At the bottom of the table is our coefficient for interaction. It is not statistically significant according to the table.
+    -   This is showing the effect of tariffs on trade when democracy is yes compared to non democratic countries.
+-   Let's plot what this interaction looks like:
+
+```{r}
+library(sjPlot)
+plot_model(model_int, type="pred", term=c("tariff.rate", "eiu.democ.bin")) #plot interaction from model2, with different lines for eiu.democ.bin
+```
+
+-   Let's compare this plot with the same model but no interaction term. So we are just controlling and do not hypothesize a conditional hypothesis:
+
+```{r}
+model_simple <- lm(trade.percent.gdp~ tariff.rate + eu + eiu.democ.bin, data=world)
+plot_model(model_simple, type="pred", term=c("tariff.rate"))
+```
+
+## Homework 5
+
+-   Spend the rest of class working on Homework 5!
+
+-   It is due soon!

@@ -307,6 +307,10 @@ window.Quarto = {
   <li><a href="#imputation" id="toc-imputation" class="nav-link" data-scroll-target="#imputation">Imputation</a></li>
   <li><a href="#standard-errors" id="toc-standard-errors" class="nav-link" data-scroll-target="#standard-errors">Standard Errors</a></li>
   </ul></li>
+  <li><a href="#topic-13" id="toc-topic-13" class="nav-link" data-scroll-target="#topic-13">Topic 13</a>
+  <ul class="collapse">
+  <li><a href="#robustness" id="toc-robustness" class="nav-link" data-scroll-target="#robustness">Robustness:</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1424,6 +1428,67 @@ window.Quarto = {
 <ul>
 <li>if we do this and our results don’t really change, thats good. It is more robust.</li>
 </ul></li>
+</ul>
+</section>
+</section>
+<section id="topic-13" class="level1">
+<h1>Topic 13</h1>
+<section id="robustness" class="level2">
+<h2 class="anchored" data-anchor-id="robustness">Robustness:</h2>
+<ul>
+<li><p>the results are not specific to the model you estimated.</p></li>
+<li><p>Even if i violate assumptions ill still get same results</p></li>
+<li><p>your model doesn’t rely on model assumptions</p></li>
+<li><p>Read Robustness Tests for Quantitative Research</p></li>
+<li><p>why do people run OLS over others?</p>
+<ul>
+<li>its simple and easy to interpret</li>
+</ul></li>
+<li><p>Andy’s definition:</p>
+<ul>
+<li><p>Do your findings (magnitude, direction and statistical significance) change under differing assumptions?</p></li>
+<li><p>assumptions: identificiation assumptions, measurement assumptions, estimator assumptions</p>
+<ul>
+<li><p>identification:</p>
+<ul>
+<li>how do i know you have a identified a causal mechanism?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Robustness is NOT ensuring the model is well-specified. It starts with the assumed model you chose and builds from there; you’re not going to show a bad model to begin with.</p></li>
+<li><p>Robustness is not about predictive ability or forecasting.</p></li>
+<li><p>Robustness checks are a way to check for internal and external validity, but id be wary about saying the model is valid just b/c its robust.</p></li>
+<li><p>Are our models ever correct?</p>
+<ul>
+<li>NO!</li>
+</ul></li>
+<li><p>What are robust standard errors:</p>
+<ul>
+<li><p>changing standard errors</p></li>
+<li><p>another name: heteroskedastic consistent standard errors</p></li>
+<li><p>standard errors are consistent even with heteroskedasticity</p></li>
+<li><p>even if we violate spherical assumptions, standard errors will still be correct</p></li>
+<li><p>does not alter our <span class="math inline">\(\hat{\beta}\)</span> ’s, but makes our standard errors “robust to” certain misspecifications.</p></li>
+<li><p>sandwich operator</p>
+<ul>
+<li><p>typically standard errors will be a little larger after but more correct.</p></li>
+<li><p>spherical error violation? Do this.</p></li>
+</ul></li>
+<li><p>Cluster-robust:</p></li>
+<li><p>normally distributed errors is probably going to be violated</p>
+<ul>
+<li><p>standard errors will technically be wrong too</p></li>
+<li><p>so what do we do?</p>
+<ul>
+<li>estimate boot-strap standard errors.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Model Variation tests</p>
+<ul>
+<li>add/change control variables</li>
+</ul></li>
+<li><p>Functional form changes</p></li>
 </ul>
 
 
