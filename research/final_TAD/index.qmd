@@ -26,6 +26,8 @@ copyright:
 bibliography: ref.bib
 link-citations: true
 draft: false
+citation: 
+  url: https://stoneneilon.github.io/research
 ---
 
 ```{r}
