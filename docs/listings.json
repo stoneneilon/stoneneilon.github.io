@@ -51,6 +51,8 @@
   },
   {
     "listing": "/research.html",
-    "items": []
+    "items": [
+      "/research/final_TAD/index.html"
+    ]
   }
 ]

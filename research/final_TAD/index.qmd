@@ -1,6 +1,7 @@
 ---
 title: "Fear and Loathing on the Campaign Trails - A Textual Analysis of Presidential Campaign Speeches"
 date: 2024-12-08
+categories: [In Progress] 
 author:
   - name: Stone Neilon
     id: sn
