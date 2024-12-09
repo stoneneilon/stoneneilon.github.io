@@ -59,6 +59,7 @@ library(clarify)
 library(stargazer)
 ```
 
+
 # Introduction
 
 > But Lindsay seems almost suicidally frank at times; he will spend two hours on a stage, dutifully haranguing a crowd about whatever topic his speechwriters have laid out for him that day... and thirty minutes later he will sit down with a beer and say something that no politician in his right mind would normally dare to stay in the presence of journalists. - Fear and Loathing on the Campaign Trail '72, Hunter S. Thompson
@@ -112,6 +113,7 @@ If all of the above are satisfied, then a campaign is well underway. However, ca
 Presidential candidate campaign speeches were scraped from The American Presidency Project at the University of California, Santa Barbara (UCSB) (@peters2017american). The American Presidency Project provides detailed documents of all known presidential activity, including transcripts of failed presidential candidates' speeches. I assembled the corpus by sorting spoken addresses and remarks across all presidential candidates between the Republican and Democrat parties from 01-01-1999 to 11-17-2024 (the date of access). I further segment the corpus by removing documents that do not meet the definition standards of campaign rallies I set earlier. The full data sourcing replication procedure can be found in the Appendix.
 
 Before additional cleaning, I source a total of 1490 documents including all presidential candidate speeches, forming the corpus. I drop candidates with less than five speeches from the corpus. The graph below provides the number of speeches for each respective candidate within the corpus. I exclude presidential speeches given during midterm elections. While these likely have electoral importance for the president's own reelection efforts, they serve a fundamentally different purpose and are thus irrelevant to the focus of this study.
+
 
 ```{r}
 #| echo: false
@@ -298,6 +300,7 @@ df %>%
   )
 ```
 
+
 # Characterizing Campaign Speeches
 
 The corpus contains campaign documents over a multitude of years, candidates, locations, parties, and election types. Each speech contains a range of content specifically crafted by candidates and staffers to best articulate policy positions and court voters. To understand the content of these speeches and how they differ, I use a keyword assisted topic model (keyATM) to estimate 12 known important policy topics across all documents (@eshima2024keyword).
@@ -309,6 +312,7 @@ This section continues by first running a common keyATM across all documents wit
 Before estimating, I pre-processed my corpus by removing punctuation, numbers, symbols, URLs, and both general English and custom stopwords. I then trim infrequent words, leaving me with a total of 8779 unique total words. @eshima2024keyword's recommends a range between 7000 and 10000 unique words.
 
 ## Common keyATM Topic Model
+
 
 ```{r}
 #| echo: false
@@ -412,6 +416,7 @@ saveRDS(out, file = "full_campaign.rds")
 plot_topicprop(out, show_topic = 1:12)
 ```
 
+
 ## Topic Model Variation by Party
 
 Given the period estimated is from 1999 to 2024, the parties have polarized ideologically and affectively (@iyengar2012affect; @layman2006party; @abramowitz2008polarization). Further, while these preferences have diverged, they have also varied considerably overtime. For example, the Republican party in 1999 is in many ways different from the party in 2024. Thus to observe differences across time between the parties, I characterize the parties more abstractly.
@@ -425,6 +430,7 @@ While no candidate is the same, candidates generally operate in a party framewor
 *Democratic Hypothesis: Democrats will emphasize civil rights, education, environment, labor, and finance topics with greater prevalence than Republicans.*
 
 *Republican Hypothesis: Republicans will emphasize macro-economics, crime, agriculture, immigration with greater prevalence than Democrats.*
+
 
 ```{r}
 #| echo: false
@@ -454,6 +460,7 @@ fig_doctopic2 <- plot(strata_topic2, var_name = "Party", show_topic = c(1:12))
 fig_doctopic2
 ```
 
+
 ## Topic Model Variation by Location
 
 To communicate their message and increase attention to the campaign, candidates must regularly travel across the United States to promote themselves. Campaigning across the United States for the office of the presidency has been observed since in early presidential elections and continually growing in usage over American history. By traveling to different states, candidates meet different subsets of voters, elites, and media. Even during periods of high television and internet usage, where candidates are no longer physically restricted, candidates still regularly travel across states.
@@ -471,6 +478,7 @@ Border states refer to states that border the southern border with Mexico. These
 Despite these states sharing a border, states like California and Texas are massive in both population and geographical size. To say Northern California is similar to Southern California would be a mistake. If we had finer grained geographical data for where these speeches were given, we could better estimate the effect of immigration topic salience as the location gets closer to the Mexico border. Unfortunately, we only have location data by state. Thus, given the size of California and Texas generally commands greater topic discussion than just immigration, it may cloud our ability to differentiate immigration's topic salience between border and non-border states. To test this, I create a dummy variable for border state speeches. I assign a 1 if the speech was given in a border state and a 0 if the speech was given in another state. Given what we know about border states, I hypothesize the following:
 
 *Border State Hypothesis: Candidates will discuss immigration more when in border states, relative to other topics.*
+
 
 ```{r}
 #| echo: false
@@ -501,11 +509,13 @@ fig_doctopic3 <- plot(strata_topic3, var_name = "Location", show_topic = c(1:12)
 fig_doctopic3
 ```
 
+
 ### Topic Salience in Rustbelt States
 
 The "rust belt" refers to regions historically associated with steel, coal, and car industries. These regions were generally thought of as the manufacturing backbone of the United States and have been in decline as result of larger macro-economic/trade shifts. While they are related to specific areas within specific states; during the campaign, the Wisconsin, Illinois, Michigan, Ohio, and Pennsylvania are typically characterized as the "Rustbelt" states. Some classifications of the rust belt include New York and Missouri due to certain portions of their state associated with manufacturing. However, I do not include these states because the overall state is not generally characterized in this manner. Given what we know about this area of the United States, we should expect candidates to mostly talk about economics and trade. I hypothesize the following:
 
 *Rustbelt Hypothesis: Candidates will discuss macro-economics and trade more in Rustbelt states compared to non-Rustbelt states.*
+
 
 ```{r}
 #| echo: false
@@ -537,6 +547,7 @@ fig_doctopic4 <- plot(strata_topic4, var_name = "Location", show_topic = c(1:12)
 fig_doctopic4
 ```
 
+
 ## Topic Model Variation by Candidate
 
 Even when from the same party, candidates vary wildly across policy preferences. To capture this variance for specific candidates, I provide key word assisted topic models for Donald J. Trump and Bernie Sanders. While there are numerous candidates to choose from, I focus on these two candidates because of their unique positions in their respective parties.
@@ -550,6 +561,7 @@ Trump established himself within the presidential race by making extreme comment
 To test this, I create a dummy variable for Trump's speeches. I assign a 1 if Donald J. Trump is giving the speech and a 0 for all other candidate speeches. Given what we know about Donald J. Trump's policies and unique rhetoric, I hypothesize the following:
 
 *Donald J. Trump hypothesis:* *Donald J. Trump's speeches will have a higher proportion of speeches related to immigration and crime, relative to other presidential candidates.*
+
 
 ```{r}
 #| echo: false
@@ -580,11 +592,13 @@ fig_doctopic5 <- plot(strata_topic5, var_name = "Candidate", show_topic = c(1:12
 fig_doctopic5
 ```
 
+
 ### Bernie Sanders
 
 The independent senator from Vermont, Bernie Sanders, also surprised many in the 2016 Democratic primary. Hillary Clinton was the overwhelming favorite to win the primary and was expected to win with little resistance. However, Bernie Sanders' campaign grew significant enough to pose a credible threat to Clinton's presumed nomination. In many similar ways to Trump, Sanders represented himself as an outsider. Journalists characterized Sanders' campaign message to be centered on economic, labor, and healthcare related issues. Even in the 2020 presidential primary, Sanders' message was still remarkably consistent. Sanders called himself a 'democratic socialist', promoting greater union membership, medicare-for-all, and raising taxes on wealthy individuals. Despite these characterizations, we again do not how much more the Sanders campaign emphasized these topics relative to other candidates. To test this, I create a dummy variable for Sanders' speeches. I assign a 1 if Bernie Sanders is giving the speech and a 0 for all other candidate speeches. Given what we know about Bernie Sanders through journalist accounts, I hypothesize the following:
 
 *Bernie Sanders Hypothesis: Bernie Sanders' speeches will have a higher proportion of speeches related to macro-economics, healthcare, and labor, relative to other presidential candidates.*
+
 
 ```{r}
 #| echo: false
@@ -612,6 +626,7 @@ fig_doctopic6 <- plot(strata_topic6, var_name = "Candidate", show_topic = c(1:12
 fig_doctopic6
 ```
 
+
 ## Topic Model Variation by Election Type
 
 There are stark differences in how candidates act during the primary and general elections. Primary elections are low information, occur at different time periods by state, more competitive, reduced turnout, and makeup a fundamentally different voting bloc than the general election. Because there are more candidates in a primary election, I expect greater variance in the topic prevalence.
@@ -623,6 +638,7 @@ I classify the start of the general election on the day of the National Conventi
 *Primary Election Hypothesis: During the primary election, more* 'niche' topics will be prevalent, relative to general elections.
 
 *General Election Hypothesis: During the general election, greater macro-economic topic prevalence will occur, relative to primary elections.*
+
 
 ```{r}
 #| echo: false
@@ -651,6 +667,7 @@ fig_doctopic7 <- plot(strata_topic7, var_name = "Election Type", show_topic = c(
 #| echo: false
 fig_doctopic7
 ```
+
 
 # Multinomial Logit
 
@@ -696,6 +713,7 @@ Party is coded as a dummy variable. Democrats are assigned a zero and Republican
 For computational and time related reasons, I choose to subset my model to only speeches related to the 2016 primary and general election. I define this date range between 2015-03-22 and 2016-11-08. After filtering date ranges, I am left with 181 observations.
 
 ### Multinomial Logit Results
+
 
 ```{r}
 #| echo: false
@@ -872,6 +890,7 @@ stargazer(model = mnl1, mnl2, mnl3, mnl4 , type = "text", title = "Multinomial L
 <tr><td style="text-align:left"></td><td colspan="8" style="text-align:right"></td></tr>
 </table>
 ```
+
 The raw output of the multinomial logit table is shown above. Recall there were no observations for the environment topic (3) and is thus not included in this output. I estimate 3 bivariate mulitnomial logit models and a fourth model with the complete specification for all campaign speeches in 2016. The coefficients show the log-odds of being in each category.
 
 Model 1 provides a bivariate multinomial logit estimation of party identification's effect on topic category discussion. The log-odds ratio for discussing social issues relative to macroeconomic issues as a Republican candidate compared to being a Democratic candidate is -1.301. Compared to a Democratic candidate, a Republican candidate is less likely to discuss social issues in campaign speeches. The first difference from moving from a Democrat to a Republican candidate in discussing social issues is -.2212.
@@ -1005,3 +1024,4 @@ ACID RAIN \| CAP AND TRADE \| CAP-AND-TRADE \| CARBON PRICING \| CARBON SINK \| 
 ### Policy & Governance
 
 "al-qaeda", "al-qaida", "hamas", "hizbullah", "hezbollah", "ambassador", "commonwealth of nations", "consulate", "diplomacy", "diplomat", "embass", "foreign affairs", "foreign aid", "foreign policy", "foreign service", "francophonie", "g20", "g8", "group of 20", "group of 8", "group of eight", "group of twenty", "high commissioner", "international affairs", "international aid", "organization of american states", "responsibility to protect", "r2p", "un security council", "united nations", "imf", "world bank", "unesco", "ecosoc", "international red cross", "doctors without borders", "peacekeeping", "global aid", "global hunger", "world population", "international disaster relief", "humanitarian aid", "bilateral aid", "passport", "terrorism", "irish republican army", "amnesty international", "oecd", "schengen", "eu", "european union", "muslim", "jihad", "ukraine", "russia", "taiwan", "acquit", "capital punishment", "convict", "court", "crime", "criminal", "crown prosecutor", "death penalty", "decriminal", "extortion", "felon", "homocid", "imprison", "incarcerat", "incrimin", "indict", "unlawful", "investigation", "justice", "kidnap", "law enforc", "manslaughter", "misdemeanor", "murder", "parole", "plaintiff", "police", "prison", "public defender", "public safety", "rape", "rapist", "rcmp", "sexual assault", "sexual violence", "border guard", "border inspect", "port police", "racketeer", "bootleg", "fraud", "money laundering", "drug trafficking", "jury", "juror", "detention", "child porn", "child abuse", "missing child", "violence against child", "child welfare", "child adoption", "adopt a child", "adoptive parent", "adopted child", "adopted a child", "domestic violence", "battered women", "family planning", "child support", "child custody", "teen pregnancy", "teenage pregnancy", "suicide prevention", "family service", "elderly abuse", "divorce", "marriage", "gun control", "gun registry", "long-gun registry","asylum", "border", "citizenship", "family class", "points system", "immigra", "permanent residen", "refugee", "migrant worker", "foreign worker", "multicultural", "intercultural", "emigra", "foreigner", "newcomer to canada", "newcomers to canada", "work permit", "study permit", "residence permit", "work visa", "study visa", "residence visa", "naturalise", "naturalize", "naturalisation", "naturalization", "deport", "undocumented", "provincial nominee", "labour market opinion", "nationality", "jus soli", "jus sanguinis", "wall", "border", "alien", "mexic", "xenophob"
+
