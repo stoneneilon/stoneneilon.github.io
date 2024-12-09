@@ -1150,3 +1150,5 @@ we are like basically modeling a rate (count/exposure time)
     -   add/change control variables
 
 -   Functional form changes
+
+# Topic 14

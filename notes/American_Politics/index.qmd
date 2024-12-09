@@ -5259,9 +5259,35 @@ Building on previous work on lobbying and relationships in Congress, I propose a
 
 ## [Washington, Ebonya. 2008. "Female Socialization: How Daughters Affect Their Legislator Fathers," American Economic Review.](https://fairmodel.econ.yale.edu/ec438/wash1.pdf)
 
+### Lecture Notes:
+
+-   mechanism - daughter increases saience of feminist issues
+
+-   doesn't address mechanism.
+
+-   natural experiment.
+
+-   fixed effects = within estimator
+
+    -   fixed effects on number of children
+
+-   random effects is fewer parameters .
+
+    -   you estimate two a parameters a mean and variance of the means itself
+
+        -   but you dont hurt your degrees of freedom
+
+            -   bias variance tradeoff.
+
+            -   gelman and hills school - josh likes random effects.
+
+-   diff in diff is 2x2
+
+    -   2 categories and before and after.
+
 ### Abstract:
 
-Parenting daughters, sociologists have shown, increases feminist sympathies. I test the hypothesis that children, much like neighbors or peers, can influence parental behavior. I demonstrate that conditional on total number of children, each daughter increases a congressperson's propensity to vote liberally, par? ticularly on reproductive rights issues. The results identify an important (and previously omitted) explanatory variable in the literature on congressional decision making. Additionally the paper highlights the relevance of child-to-parent behavioral influence.
+Parenting daughters, sociologists have shown, increases feminist sympathies. I test the hypothesis that children, much like neighbors or peers, can influence parental behavior. I demonstrate that conditional on total number of children, each daughter increases a congressperson's propensity to vote liberally, particularly on reproductive rights issues. The results identify an important (and previously omitted) explanatory variable in the literature on congressional decision making. Additionally the paper highlights the relevance of child-to-parent behavioral influence.
 
 ### Research Question:
 
@@ -5313,9 +5339,13 @@ Parenting daughters, sociologists have shown, increases feminist sympathies. I t
 
 ## Lawless, Jennifer, Sean Theriault and Samantha Guthrie. 2019. "Nice Girls? Sex, Collegiality, and Bipartisan Cooperation in the US Congress," Journal of Politics.
 
+### Lecture Notes:
+
+-   women are more socially connected than men.
+
 ### Abstract:
 
-When women in Congress solve a high-proﬁle problem, their colleagues and the media praise their ability to get Washington's business done by collaborating and compromising in a way that men do not. The problem with this popularly held view is that it is entirely anecdotal. In assembling several new data sets to test this proposition systematically, we ﬁnd that women are more likely than men to participate in the kinds of activities that foster collegiality. But we uncover almost no evidence that women's legislative behavior on fact ﬁnding abroad, cosponsoring legislation, or engaging thelegislative process differs from men's. The partisan divide that now characterizes the legislative process creates strong disincentives for women (and men) to engage in bipartisan problem solving. To be sure, women's presence in Congress promotes democratic legitimacy, but it does little to reduce gridlock and stalemate on Capitol Hill.
+When women in Congress solve a high-proﬁle problem, their colleagues and the media praise their ability to get Washington's business done by collaborating and compromising in a way that men do not. The problem with this popularly held view is that it is entirely anecdotal. In assembling several new data sets to test this proposition systematically, we ﬁnd that women are more likely than men to participate in the kinds of activities that foster collegiality. But we uncover almost no evidence that women's legislative behavior on fact ﬁnding abroad, cosponsoring legislation, or engaging the legislative process differs from men's. The partisan divide that now characterizes the legislative process creates strong disincentives for women (and men) to engage in bipartisan problem solving. To be sure, women's presence in Congress promotes democratic legitimacy, but it does little to reduce gridlock and stalemate on Capitol Hill.
 
 ### Research Question:
 
@@ -5325,21 +5355,21 @@ When women in Congress solve a high-proﬁle problem, their colleagues and the m
 
 ### Background:
 
--   As a result of these friendships---so these popular accounts go---women are more likely to trust and cooperatewith one another when it comes to governing.
+-   As a result of these friendships---so these popular accounts go---women are more likely to trust and cooperate with one another when it comes to governing.
 
--   First, women are more likely than men to develop personalrelationships with their colleagues and, thus, a sense of trust.
+-   First, women are more likely than men to develop personal relationships with their colleagues and, thus, a sense of trust.
 
     -   good evidence for this.
 
 -   Second, women, having established this trust, are more likely than men to cooperate with colleagues to move the legislative process along.
 
-    -   women, because of the per-sonal relationships they have built, will be more bipartisanthan men in moving the legislative process along
+    -   women, because of the personal relationships they have built, will be more bipartisan than men in moving the legislative process along
 
     -   less evidence for this.
 
 -   social capital among political elites.
 
--   A substantial body of research also ﬁnds that women aremore likely than men to prioritize these personal relation-ships and, as such, to engage in collegial behavior profes-sionally. Konrad, Kramer, and Erkut (2008)
+-   A substantial body of research also ﬁnds that women are more likely than men to prioritize these personal relation-ships and, as such, to engage in collegial behavior professionally. Konrad, Kramer, and Erkut (2008)
 
 ### Data:
 
@@ -5359,11 +5389,11 @@ When women in Congress solve a high-proﬁle problem, their colleagues and the m
 
     -   authors use four ways to test this.
 
-        -   1: Information gathering through congresisonal delegation travel.
+        -   1: Information gathering through congressional delegation travel.
 
         -   2: Bipartisan sponsorship and co-sponsorship activity.
 
-            -   shouldnt we look at cosponorship activity between members that participate in these events?
+            -   shouldn't we look at cosponorship activity between members that participate in these events?
 
                 -   why do we expect member X to work more with member Y if member Y doesn't participate in anything?
 
@@ -5380,6 +5410,14 @@ When women in Congress solve a high-proﬁle problem, their colleagues and the m
 -   This doesn't mean they dont make a difference.
 
 ## [Kinder, Don and Nicholas Winter. 2001. "Exploring the Racial Divide: Blacks, Whites, and Opinion on National Policy," American Journal of Political Science.](https://www-jstor-org.colorado.idm.oclc.org/stable/pdf/2669351.pdf?refreqid=fastly-default%3A3927f29a85baf926df4d096fbfec5602&ab_segments=&initiator=&acceptTC=1)
+
+### Lecture Notes:
+
+-   Black and whites differ on policy.
+
+-   why?
+
+-   cant explain why people have different opinions.
 
 ### Abstract:
 
@@ -5476,6 +5514,7 @@ How does the context in which a person lives affect his or her political behavio
 -   Is racial threat real?
 
     -   the presence of an out group
+    -   people are more politically attentive when they feel threatened.
 
 -   Conflicting results in past studies
 
@@ -5511,13 +5550,15 @@ How does the context in which a person lives affect his or her political behavio
 
 -   I obtained the 2004 Illinois voter file and augmented it with demographic data from the 2000 and 2010 Census counts.
 
--   I geocoded the residences of the approximately1.2 million voters in Chicago and determined their distance from each of the demolished public housing projects using a Geographic Information System
+-   I geocoded the residences of the approximately 1.2 million voters in Chicago and determined their distance from each of the demolished public housing projects using a Geographic Information System
 
 -   I was able to identify the exact distance of each voter to the edge of a housing project using data on the two dimensional spatial boundaries of the housing projects.
 
 -   I collected a unique data set of property records, including homeownership data and homevalues, for all Chicago voters. I also identified each voter's race using a Bayesian process based on the voter's name and location.
 
 -   Election returns and precinct GIS data were also obtained from the Chicago Board of Election Commissioners.
+
+-   unit of analysis is individual level.
 
 ### Methods:
 
@@ -5551,6 +5592,114 @@ How does the context in which a person lives affect his or her political behavio
 
 ## [Harris, Allison. 2024. "Can Racial Diversity among Judges Affect Sentencing Outcomes?" American Political Science Review.](https://www.cambridge.org/core/journals/american-political-science-review/article/can-racial-diversity-among-judges-affect-sentencing-outcomes/762B5A7158BC5D864E0333BB9B8C9D9C)
 
+### Lecture Notes:
+
+-   Districts/municipality courts work alone
+
+    -   judges run their own court.
+
+    -   so how does the presence of diversity in the building influence how white judges act.
+
+-   being around a diverse group effect.
+
+-   most diversity is in main Chicago court house.
+
+-   Lpm has nonspherical errors by definition
+
 ### Abstract:
 
 How does racial diversity impact institutional outcomes and (in)equality? Discussions about diversity usually focus on how individuals' identities shape their behavior, but diversity is a group-level characteristic. Scholars must, therefore, consider the relationship between group composition and the individual decisions that shape institutional outcomes. Using felony data from a large U.S. court system, I explore the relationship between racial diversity among the judges comprising a court and individual judges' decisions. I find that as the percent of Black judges in a courthouse increases white judges are less likely to render incarceration sentences in cases with Black defendants. Increases in racial diversity decrease the Black--white gap in the probability of incarceration by up to 7 percentage points. However, I find no relationship between judge's racial identities and disparities in their decisions. This study highlights the importance of conceptualizing diversity as a group characteristic and the relationship between institutional context and outcomes.
+
+### Research Question:
+
+-   How does racial diversity impact institutional outcomes and (in)equality?
+
+-   how the composition of a judge's group of colleagues can influence their sentencing decisions in criminal cases
+
+-   how this influence may differ based on a judge's own personal characteristics
+
+-   what this means for disparities in sentencing and how we think about diversity in state and local institutions.
+
+### Background:
+
+-   Coworker effect
+
+-   While research on the effects of racial diversity in the judiciary has largely focused on the impact of individual judges' identities on decision making, much less work has investigated the impact of racial diversity as a contextual feature of the bench.
+
+-   **I argue that increasing the representation of racial-minority-group members on the bench decreases racial disparities in felony sentencing, not because of these judges' behavior, but because their presence alters their peers' behavior.**
+
+-   An individual cannot be "diverse." Individuals contribute to a group's diversity
+
+-   As members of minority racial groups gain representation in homogenous institutions dominated by majority-racial-group members, the altered context can influence the decision making of individuals from all racial groups.
+
+-   Non-white government officials working in white-dominated institutions may also face pressures to make decisions that are generally more favorable to majority-group members (Allport [Allport1955](https://www.cambridge.org/core/journals/american-political-science-review/article/can-racial-diversity-among-judges-affect-sentencing-outcomes/762B5A7158BC5D864E0333BB9B8C9D9C#r3); Steffensmeier and [Steffensmeier and Britt2001](https://www.cambridge.org/core/journals/american-political-science-review/article/can-racial-diversity-among-judges-affect-sentencing-outcomes/762B5A7158BC5D864E0333BB9B8C9D9C#r49)).
+
+-   However, intergroup contact can lead to negative outcomes
+
+-   Repeated, long-term, and positive inter-group contact may lead to more positive outcomes, including decreasing out-group prejudice
+
+-   Overall, we might expect these positive experiences with peer racial-out-group members to improve majority-racial-group member officials' perceptions and treatment of minority-racial-group members.
+
+#### Mechanism:
+
+-   First, the introduction of individuals that increase a group's diversity may change the type of information exchange that occurs, thereby influencing the knowledge and considerations individuals rely on when making decisions
+
+    -   The general process here is that as racial diversity in a group increases, the content of group conversations will include information related to race and racism that leads individuals in the group to more positively evaluate minority-racial-group members, such that future decisions will be more favorable to members of that racial minority group
+
+-   Second, seeing and interacting with a more racially diverse set of colleagues may make majority-racial-group institution members desire not to appear discriminatory against out-group members or biased in favor of in-group members in their behavior.
+
+-   third, it could remind majority-group-member officials of their own desire to avoid prejudiced behavior
+
+-   fourth, a racially diverse group of colleagues may change the extent to which race is a salient consideration in their decision making.
+
+### Hypothesis:
+
+-   In general, I expect increases in racial diversity among judges to lead to decreases in punitiveness and decreases in race-based sentencing disparities.
+
+-   I expect increases in Black judicial representation will lead to decreases in the probability of incarceration and sentence length.
+
+-   As the court becomes more racially diverse, I expect white judges to become more lenient toward Black defendants due to the processes described above.
+
+-   Black judges may similarly become less likely to incarcerate Black defendants as they gain Black colleagues. However, it is unclear, how many Black colleagues would be necessary in order to alleviate pressures of tokenism Black judges may experience in situations where they are extremely underrepresented.
+
+### Data:
+
+-   Circuit Court of Cook County in Illinois
+
+    -   The Circuit is composed of six municipal districts, with the First Municipal District covering the entire city of Chicago. A chief judge presides over the Circuit, which includes nonjudicial offices and the judiciary. The Criminal Division is responsible for hearing most of the county's felony cases.
+
+-   The Cook County, IL, Criminal Division data used for this project include just over 431,000 felony cases heard from 1995 to 2013
+
+    -   in which the defendant was *not* found not guilty
+
+-   Each case is identified by a case number, and includes the following information: initiation date; defendant's last name, date of birth, race, and sex; judge's name; description of charge; felony class of the convicted charge; final disposition; length of minimum and maximum sentence; courthouse and number of the courtroom where the case was heard.
+
+-   The vast majority of judges, for whom I could identify race and gender, are white (79%) and male (79%).
+
+-   I measure racial diversity on the bench as the percent of Black judges in the Criminal Division each year.
+
+### Methods:
+
+-   LPM and OLS
+
+![method specification](method_court_black.png){fig-align="center"}
+
+-   where *i* and *j* represent a case and a judge, respectively.
+
+-   The dependent variable in most of the models is dichotomous, taking a value of 1 if a defendant in a case is incarcerated to prison or jail and 0 otherwise.
+
+-   In a few of the models, the dependent variable is sentence length, measured in days.
+
+-   The main independent variable is the percent of Criminal Division judges who are Black each year, measured either across all three courthouses comprising the Division, or just in Chicago's Leighton Building.
+
+### Results:
+
+-   I find that as the percentage of Black judges in a courthouse increases, white judges are less likely to render incarceration sentences in cases with Black defendants.
+
+-   These shifts in judicial behavior shrink the Black--white gap in the probability of an incarceration sentence by up to 7 percentage points, greatly decreasing disparities in this outcome.
+
+-   Significance only in the Chicago Leighton Building
+
+    -   why dont they observe these in the suburban courthouses
+
+        -   they dont interact with their black colleagues at the chicago court house.
