@@ -48,5 +48,9 @@
     "items": [
       "/posts/2024-05-28-first-blog-test/index.html"
     ]
+  },
+  {
+    "listing": "/research.html",
+    "items": []
   }
 ]
