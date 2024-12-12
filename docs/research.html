@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -208,87 +208,71 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="In Progress,Seminar Paper,Fall 2024" data-listing-date-sort="1733986800000" data-listing-file-modified-sort="1733995408126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3261">
-<div class="thumbnail">
-<p><a href="./research/final_core/index.html" class="no-external"></a></p><a href="./research/final_core/index.html" class="no-external">
-<p class="card-img-top"><img src="research/final_core/index_files/figure-html/unnamed-chunk-3-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./research/final_core/index.html" class="no-external"></a></p>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./research/final_core/index.html" class="no-external">Your Political Network May Be Physically Defined - Does The Built Environment Shape Who You Discuss Politics With?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./research/final_core/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('In Progress'); return false;">
-In Progress
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Seminar Paper'); return false;">
-Seminar Paper
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Fall 2024'); return false;">
-Fall 2024
-</div>
-</div>
-<div class="listing-description">
-<a href="./research/final_core/index.html" class="no-external">Cross-cutting relationships are shown to reduce affective polarization and increase tolerance for different perspectives. Evidence points to the workplace as an effective social setting to foster these relationships. However, America has grown increasingly sorted along political lines across social, geographical, and lifestyle dimensions. Further, the Covid-19 pandemic has upended much of the traditional workplace dynamics. These developments have re-contextualized questions of where else cross-cutting relationships might occur and to what degree. I argue the design of the built environment can encourage greater stochastic interaction between partisans and increase heterogeneity in an indvidual’s political network. Using data from a 2018 module in the Harvard Cooperative Election Study (CES), I estimate the effect of population density on political heterogeneity in an individual’s network using a logistic regression. I find population density has no effect on the heterogeneity of an individual’s political network. While the results do not support my theory, operationalization of the concepts is likely misspecified leading to inconclusve results. Further research with more accurate data is planned. </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./research/final_core/index.html" class="no-external">
-<div class="listing-date">
-Dec 12, 2024
-</div>
-<div class="listing-author">
-Stone Neilon
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="In Progress,Seminar Paper,Fall 2024" data-listing-date-sort="1733641200000" data-listing-file-modified-sort="1733942700624" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="75" data-listing-word-count-sort="14979">
-<div class="thumbnail">
-<p><a href="./research/final_TAD/index.html" class="no-external"></a></p><a href="./research/final_TAD/index.html" class="no-external">
-<p class="card-img-top"><img src="research/final_TAD/index_files/figure-html/unnamed-chunk-5-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./research/final_TAD/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./research/final_TAD/index.html" class="no-external">Fear and Loathing on the Campaign Trails - A Textual Analysis of Presidential Campaign Speeches</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./research/final_TAD/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('In Progress'); return false;">
-In Progress
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Seminar Paper'); return false;">
-Seminar Paper
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Fall 2024'); return false;">
-Fall 2024
-</div>
-</div>
-<div class="listing-description">
-<a href="./research/final_TAD/index.html" class="no-external">Presidential candidates strategically craft their speeches to align their policy preferences with the perceived priorities of diverse audiences. While journalistic accounts have provided qualitative insights into candidates’ strategies, no quantitative study has systematically examined campaign speeches across multiple elections. This study analyzes a corpus of U.S. presidential campaign speeches from 1999 to 2024, focusing on 12 policy topics through a keyword-assisted topic model (keyATM). The analysis reveals significant variation in the topics candidates emphasize across multiple theoretical dimensions. A multinomial logit model is then employed to identify the most influential factor in shaping topic emphasis. I find party identification to be the strongest predictor of which topics are discussed. These findings deepen our historical understanding of presidential campaigns and provide critical insights into the policy priorities of Democratic and Republican candidates. This work motivates future research between candidate communication and voter preferences. </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./research/final_TAD/index.html" class="no-external">
-<div class="listing-date">
-Dec 8, 2024
-</div>
-<div class="listing-author">
-Stone Neilon
-</div>
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="In Progress,Seminar Paper,Fall 2024" data-listing-date-sort="1733986800000" data-listing-file-modified-sort="1733995408126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3261" data-listing-title-sort="Your Political Network May Be Physically Defined - Does The Built Environment Shape Who You Discuss Politics With?" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">Dec 12, 2024</span>
+</td>
+<td>
+<a href="./research/final_core/index.html" class="title listing-title">Your Political Network May Be Physically Defined - Does The Built Environment Shape Who You Discuss Politics With?</a>
+</td>
+<td>
+<span class="listing-author">Stone Neilon</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="In Progress,Seminar Paper,Fall 2024" data-listing-date-sort="1733641200000" data-listing-file-modified-sort="1733942700624" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="75" data-listing-word-count-sort="14979" data-listing-title-sort="Fear and Loathing on the Campaign Trails - A Textual Analysis of Presidential Campaign Speeches" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">Dec 8, 2024</span>
+</td>
+<td>
+<a href="./research/final_TAD/index.html" class="title listing-title">Fear and Loathing on the Campaign Trails - A Textual Analysis of Presidential Campaign Speeches</a>
+</td>
+<td>
+<span class="listing-author">Stone Neilon</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
