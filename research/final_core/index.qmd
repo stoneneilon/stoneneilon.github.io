@@ -274,7 +274,7 @@ By showing how physical space can influence the nature and frequency of who we t
 
 (Mostly just future notes for myself if I pick up this question in the future.)
 
-## Motivated Question Exploration 
+## Motivated Question Exploration
 
 What additional questions does this paper motivate?
 
@@ -289,11 +289,11 @@ The 2018 module asks respondents to identify whether they live in a city, suburb
 hist(data$urbancity, main = "Perception of City Classification Histogram", xlab = "City Classification", ylab = "Frequency")
 ```
 
-### Isolation Measure 
+### Isolation Measure
 
 How does the built environment influence political isolation? While the module used in this paper did not provide an explicit measure of political isolationism, failure of the respondent to identify anyone within the name generator may be indication of political isolation. Of course, this also may be a survey issue where the respondent simply chooses not to identify anyone. This is not entirely clear but may be worth pursuing further.
 
-### Political Sorting 
+### Political Sorting
 
 What is the exposure to out-group partisans in a geographically sorted neighborhood? Where do they cross paths? Do politically sorted communities have a more homogeneous network?
 
