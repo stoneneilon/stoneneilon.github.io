@@ -2192,6 +2192,8 @@ While we observe a general decrease in trade as tariffs go up, we cannot statist
 
 -   Due 12/8
 
+# Week 14 (Thanksgiving - no classes)
+
 # Week 15
 
 ## Stone's Song of the Week:
@@ -2273,3 +2275,521 @@ plot_model(model_simple, type="pred", term=c("tariff.rate"))
 -   Spend the rest of class working on Homework 5!
 
 -   It is due soon!
+
+# Week 16
+
+## Stone's Song of the Week
+
+[![Justice ft. Thundercat - The End](justice.webp){fig-align="center"}](https://www.youtube.com/watch?v=arulMUtTy_4)
+
+FYI - I was successful in getting their concert tickets at Red Rocks. 😎
+
+-   Justice was my #1 wrapped spotify artist. Low key like their biggest fan.
+
+-   Also, this is our last class so this felt like a fitting song. Literally, THE END.
+
+-   Thank you all for a fun semester! This was my first time teaching statistics. Hopefully, I made it (somewhat) digestible for you.
+
+## Final Exam Logistics
+
+-   Final will take place on December 17.
+
+-   24 hour window. 12:01 AM to 11:59 PM
+
+-   You will have 2.5 hours to complete **once started.**
+
+-   Will be online.
+
+-   NO EXTENSIONS OR MAKE-UP DATES.
+
+-   Similar format to midterm. Expect 'select all that apply' questions and a coding portion. Will need to upload R script.
+
+-   Likely include questions across the semester but will focus on latter material.
+
+-   Remember that this material builds upon each other!
+
+-   **No AI or working with anyone else.**
+
+## Final Review
+
+-   I provide the answer beneath each question. It is hidden in the foldable section under each question.
+
+-   **DON'T LOOK AT ANSWER UNTIL YOU HAVE ANSWERED THE QUESTION.**
+
+    -   **YOU ARE LEARNING NOT MEMORIZING!**
+
+-   These are topics I think are important for you to know. It is not comprehensive and you **should** consult other material (textbook, lecture, homework, etc.) when studying.
+
+    -   this is just one resource!
+
+-   Use this to guide you study but do not rely on it.
+
+### What do you need help with?
+
+-   Before we get into the questions I provide below, is there any topics you want me to cover more in depth?
+
+### My review questions for you:
+
+#### General Questions:
+
+1.  What is the point of statistics?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "To use data we have to tell us about data we don't have!"
+    ```
+
+2.  I want to know how good students are doing in PSCI 2075. I sample only students in in my recitations. Is this an issue? Why?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Sampling only students in my recitation to make inferences about all students in PSCI 2075 would be problematic because I would have a selection bias. My sample is not a random sample. Students may differ in their grades because of different TAs. By only looking at my students, I fail to control for other factors (like having a different TA) on a student's grade. Thus the sample is not representative of the population of interest."
+    ```
+
+3.  Are random samples good? Why or why not?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "They are good. I won't tell you why here. You should go read about it from the book or earlier material/lecture notes to answer this question."
+    ```
+
+4.  There are no randomized controlled experiments that show the effectiveness of parachutes. Should I jump out of this airplane without a parachute?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Do you really need to see the answer to this?"
+    ```
+
+5.  True or False: Research questions must be falsifiable.
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "True."
+    ```
+
+#### Descriptive Statistic Questions:
+
+1.  What is an ordinal variable?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "A categorical variable that has a hierarchy between each category."
+    ```
+
+2.  The mean, median, and mode are all measures of what?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Central tendency"
+    ```
+
+3.  What is the difference between variance and standard deviation?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Standard deviation is the square root of variance."
+    "Variance is about the spread of the data; standard deviation standardizes the spread into one number."
+
+    ```
+
+4.  What axis does the dependent variable go on? What axis does the independent variable go on?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+    "Dependent variable goes on the Y axis."
+    "Independent variable goes on the X axis."
+    ```
+
+#### Plotting Questions:
+
+1.  Jon wants to compare his students performance to Stone's students performance. Jon has two variables. Using the description of the variables below, what plot should Jon create?
+
+    -   stone_student_grades: a continuous variable containing the grade percentage of each of his students.
+
+    -   jon_student_grades: a continuous variable containing the grade percentage of each of his students.
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Because these are both continuous variables, Jon should create a scatterplot."
+    ```
+
+2.  Paul "Lisan Al-Gaib" Atreides wants to know the concentration of spice (melange) between the cities of Arrakeen and Sietch Tabr. With the information below, how should the Lisan Al-Gaib plot these variables?
+
+    -   "city" is a binary variable
+
+    -   "spice_concentration" is a continuous variable
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Because one variable is binary and the other is a continous, the Lisan Al-Gaib should create a boxplot."
+
+
+    "~the spice must flow~"
+    ```
+
+#### Hypothesis Testing:
+
+1.  Can you explain the Central Limit Theorem to someone? No like, literally, can you? Turn to a friend, neighbor, or call up your mom and see if you can explain it in a way that they would understand.
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Return to earlier weeks to review the concept. The central limit theorem is important! It is the mechanism that allows us to do hypothesis testing! Think about what the central limit theorem is and why it might be related to null hypothesis testing."
+
+    ```
+
+2.  What does the Central Limit Theorem allow us to do?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "The central limit theorem allows us to do hypothesis testing!"
+
+    ```
+
+3.  What is the purpose of hypothesis testing?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "To use data we have to tell us about data we don't have! We use it to make inferences with our sample  data. Is this a real relationship or is this just a relationship I observe due to chance? Hypothesis testing helps us understand this connection."
+
+    ```
+
+4.  What is the purpose of having a null hypothesis?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "It provides a baseline to compare to. The null hypothesis represents the assumption of no relationship in the population. If the null were true, how likely are we to observe the sample we got? If it is unlikely for us to observe the sample we got (which we determine using the test stat and p-value) then it is improbable that we observed the sample to do chance."
+    ```
+
+5.  What is a p-value?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+    "A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true."
+    ```
+
+6.  What is a confidence interval?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "The range of true values that would give our sample (or something
+    further away) at least some portion of the time"
+
+    "A confidence interval is the mean of your estimate plus and minus the variation in that estimate. This is the range of values you expect your estimate to fall between if you redo your test, within a certain level of confidence."
+    ```
+
+#### Regression Questions:
+
+1.  A regression has multiplication between two variables in it. What is that called?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Interaction"
+
+    ```
+
+2.  How many independent variables are included in a bivariate regression?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "One variable."
+    ```
+
+3.  What is the null hypothesis in Regression?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+    "beta = 0"
+    ```
+
+4.  Why do we add control variables?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "A control variable is an independent variable that you believe does not have a causal effect upon the dependent variable, but would potentially bias your results by excluding from your model (i.e. age, level of education, GDP per capita, population, etc.)" 
+    ```
+
+5.  I estimate a bivariate model between cigarette consumption and cigarette taxes. I don't include age in my regression equation even though I think it is a theoretically important factor on the consumption of cigarettes by state. What type of bias is this an example of?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "This is considered an ommitted variable bias."
+    ```
+
+6.  What is a residual?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+    "The residual is the difference between our observed value and the predicted value (the regression line.) Note: the residual may also sometimes be called the error."
+    ```
+
+7.  What does the line of best (regression line) do?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+    "It minimizes the sum of squares. Hence the name OLS - Ordinary Least Squares"
+    ```
+
+8.  Can we do a regression with a binary independent variable?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Yes! When we have a binary/categorical variable, we need to leave out one category. The category left out is our reference category. The effect we observe in the table is the effect relative to that reference category."
+    ```
+
+9.  I theorize that the relationship between my X and Y variable is conditional on some other Z variable. What should I do to account for this conditional theory in my regression model?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "You should run an interaction between your X and Z variable. The interaction will tell you the level of effect of Y on X, conditional on the level of Z."
+
+    ```
+
+10. The beta is the \_\_\_\_
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "slope coefficient"
+    ```
+
+#### Interpretation Questions:
+
+1.  I run a multiple regression and interpret it as follows: A one unit change in X has a .38 decrease in Y. What am I missing?
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "A one unit change in X has a .38 decrease in Y, all else equal."
+    ```
+
+2.  Let's return to our cigarette consumption question. We want to know if cigarette taxes influence the cigarette consumption in a state. I run two models with two different specifications:
+
+    1.  Model 1 is a bivariate regression
+    2.  Model 2 is a multivariate regression
+
+```{r}
+library(RCPA3)
+library(stargazer)
+model1 <- lm(cigarettes ~ cig.tax, data = states)
+
+model2 <- lm(cigarettes ~ cig.tax + ba.or.more + median.age + prcapinc + religiosity3, data = states)
+
+stargazer(model1, model2, 
+          type = "text", # Change to "html" or "latex" if needed
+          title = "Regression Models of Cigarette Consumption",
+          dep.var.labels = "Cigarette Consumption",
+          covariate.labels = c("Cigarette Tax","Education (BA or more)","Age", "Per Capita Income", "Religiosity Mid", "Religiosity High"), 
+          align = TRUE)
+```
+
+##### Questions:
+
+-   How do you interpret the coefficient for each variable?
+
+-   Why is the coefficient for cigarette tax different between model 1 and model 2?
+
+-   Why is the $R^2$ different between models?
+
+-   What is the adjusted $R^2$? Should we look at adjusted $R^2$ or $R^2$?
+
+-   Which model explains the most variation?
+
+-   What do the stars(\*\*\*) mean?
+
+-   Why does the 'Religiosity' variable have a mid and high category?
+
+    -   What is the reference category?
+
+    -   Why does R leave out one category?
+
+#### Research Ethics Questions:
+
+1.  True or False: forcing someone to do a survey is unethical.
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Yeah...don't do that."
+    ```
+
+2.  True or False: The researcher can do an experiment on someone without their consent.
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "False. Don't do that. In general, don't do anything to anyone without their consent."
+    ```
+
+#### Coding Questions:
+
+1.  Hunter S. Thompson really wants to make a histogram of state marijuana laws in 2017. He knows the RCPA3 package has the variable called "pot.policy" in the "states" data set. However, when he runs the code below, he gets angry because it won't work! What is he missing?
+
+    ```{r}
+    #| output: false
+    #| eval: false
+    install.packages(RCPA3)
+    hist(states$pot.policy)
+    ```
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "That silly dude forgot to run the 'library(RCPA3)' command!"
+    ```
+
+2.  How would you code a logarithmic transformation of the variable 'population' from the world dataset? You can name the new variable whatever you want.
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+    #| eval: false
+
+    world$moo_deng <- log10(world$population)
+
+
+    ```
+
+3.  Carmen Berzatto just yelled "GET THE F- OFF MY LAPTOP" at his groupmate for failing to run the proper regression code. The code the group ran is below, how would you fix this and what would you say to Chef Carmen?
+
+    ```{r}
+    #| output: false
+    #| eval: false
+    library(RCPA3)
+    summary(lm(min.wage ~ population + land.area + hs.or.more))
+    ```
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "the command should be: 'lm(min.wage ~ population + land.area + hs.or.more, data = states)', they forgot to tell R what data frame these variables come from."
+
+    "~Yes Chef~"
+    ```
+
+4.  Rupaul provided the contestants a variable and the code to make a histogram with. However, the code provided was incorrect...on purpose. The challenge was to find out what was wrong and make the fix. The variable was 'corrections.incarc.rate'.
+
+    ```{r}
+    #| output: false
+    #| eval: false
+
+    library(RCPA3)
+    hist(states$corrections.incac.rate)
+    ```
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "Look very very very closely."
+    ```
+
+5.  Sabrina is mad at Barry because he didn't pay attention during the interaction term week. She turns to you and asks 'Please, please, please show me how to do this. Here is my code but it isn't right.' What do you fix?
+
+    ```{r}
+    #| output: false
+    #| eval: false
+
+    library(RCPA3)
+    summary(lm(min.wage ~ population + land.area + hs.or.more + population$land.area, data = states))
+
+    ```
+
+    ```{r}
+    #| code-fold: true
+    #| code-summary: "Show the answer"
+    #| output: false
+
+    "The $ symbol has a different purpose in R. You should use '*' for interactions." 
+
+    ```
+
+## That's all I got
+
+![](teaching.qmd.gif){fig-align="center"}

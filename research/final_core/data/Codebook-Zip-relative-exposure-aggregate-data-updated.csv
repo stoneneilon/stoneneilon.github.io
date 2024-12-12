@@ -1,0 +1,17 @@
+Variable,
+zip,Zip Code id
+n,Number of registered voters in Zip code
+d,Sum of posterior probabilities of being a Democrat in Zip Code
+r,Sum of posterior probabilities of being a Republican in Zip Code
+r.exp.r,Average spatial exposure of Republicans to Republican neighbors in Zip Code
+d.exp.r,Average spatial exposure of Democrats to Republican neighbors in Zip Code
+r.exp.d,Average spatial exposure of Republicans to Democratic neighbors in Zip Code
+d.exp.d,Average spatial exposure of Democrats to Democratic neighbors in Zip Code
+r.exp.r_nohh,"Average spatial exposure of Republicans to Republican neighbors in Zip Code, excluding same household neighbors"
+d.exp.r_nohh,"Average spatial exposure of Democrats to Republican neighbors in Zip Code, excluding same household neighbors"
+r.exp.d_nohh,"Average spatial exposure of Republicans to Democratic neighbors in Zip Code, excluding same household neighbors"
+d.exp.d_nohh,"Average spatial exposure of Democrats to Democratic neighbors in Zip Code, excluding same household neighbors"
+diff.d,Relative Exposure for Republicans -- difference in Republicans' exposure to Democrats and Democrats' exposure to Democrat neighbors
+diff.d_nohh,"Relative Exposure for Republicans, excluding same household neighbors"
+diff.r,Relative Exposure for Democrats -- difference in Democrats' exposure to Republicans and Republicans' exposure to Republican neighbors
+diff.r_nohh,"Relative Exposure for Democrats, excluding same household neighbors"
