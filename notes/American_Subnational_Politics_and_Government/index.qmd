@@ -1,0 +1,20 @@
+---
+title: "American Subnational Politics and Government"
+description: "Professor: Kenneth Bickers"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 01-14-2025
+categories: [Spring, 2025, American] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/teaching/American_Subnational_Politics_and_Government/
+image: gandalf.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Week 1: Course Introduction
+
+## [Hooghe, Liesbet and Gary Marks. 2003. \"Unraveling the Central State, but How? Types of Multi-Level Governance.\" American Political Science Review, Vol. 97, No. 2 (May), pp. 233-243.](https://drive.google.com/file/d/1YB-w1QFwfbwiu00801vKemTXQZs-oBB8/view?usp=sharing)
