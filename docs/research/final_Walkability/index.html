@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stone Neilon">
+<meta name="dcterms.date" content="2025-03-19">
+<meta name="keywords" content="Built Environment, Voter Turnout, Walkability">
+
+<title>Stone Neilon - The Effects of Walkability on Voter Turnout</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Stone Neilon</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://drive.google.com/file/d/1eZT7KaLsqdW3k4WxoeloMPm_9cdf-9A6/view?usp=sharing"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-built-environment-and-political-participation" id="toc-the-built-environment-and-political-participation" class="nav-link" data-scroll-target="#the-built-environment-and-political-participation">The Built Environment and Political Participation</a>
+  <ul class="collapse">
+  <li><a href="#cost-of-voting" id="toc-cost-of-voting" class="nav-link" data-scroll-target="#cost-of-voting">Cost of Voting</a></li>
+  <li><a href="#social-capital-and-political-socialization" id="toc-social-capital-and-political-socialization" class="nav-link" data-scroll-target="#social-capital-and-political-socialization">Social Capital and Political Socialization</a>
+  <ul class="collapse">
+  <li><a href="#social-pressure" id="toc-social-pressure" class="nav-link" data-scroll-target="#social-pressure">Social Pressure</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+  <li><a href="#independent-variable-walkability-index" id="toc-independent-variable-walkability-index" class="nav-link" data-scroll-target="#independent-variable-walkability-index">Independent Variable: Walkability Index</a></li>
+  <li><a href="#dependent-variable-general-election-voter-turnout" id="toc-dependent-variable-general-election-voter-turnout" class="nav-link" data-scroll-target="#dependent-variable-general-election-voter-turnout">Dependent Variable: General Election Voter Turnout</a></li>
+  <li><a href="#unit-of-analysis" id="toc-unit-of-analysis" class="nav-link" data-scroll-target="#unit-of-analysis">Unit of Analysis</a></li>
+  </ul></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#sorting-the-sort---need-help-here.---incomplete-step." id="toc-sorting-the-sort---need-help-here.---incomplete-step." class="nav-link" data-scroll-target="#sorting-the-sort---need-help-here.---incomplete-step.">Sorting the Sort - need help here. - incomplete step.</a></li>
+  </ul></li>
+  <li><a href="#general-election-results" id="toc-general-election-results" class="nav-link" data-scroll-target="#general-election-results">General Election Results</a></li>
+  <li><a href="#primary-election-results" id="toc-primary-election-results" class="nav-link" data-scroll-target="#primary-election-results">Primary Election Results</a></li>
+  <li><a href="#study-2-survey-experiment" id="toc-study-2-survey-experiment" class="nav-link" data-scroll-target="#study-2-survey-experiment">Study 2: Survey Experiment</a>
+  <ul class="collapse">
+  <li><a href="#survey-design" id="toc-survey-design" class="nav-link" data-scroll-target="#survey-design">Survey Design</a>
+  <ul class="collapse">
+  <li><a href="#control" id="toc-control" class="nav-link" data-scroll-target="#control">Control:</a></li>
+  <li><a href="#treatment-1-cost" id="toc-treatment-1-cost" class="nav-link" data-scroll-target="#treatment-1-cost">Treatment 1: Cost:</a></li>
+  <li><a href="#treatment-2-social-pressure" id="toc-treatment-2-social-pressure" class="nav-link" data-scroll-target="#treatment-2-social-pressure">Treatment 2: Social Pressure:</a></li>
+  <li><a href="#outcomes" id="toc-outcomes" class="nav-link" data-scroll-target="#outcomes">Outcomes:</a></li>
+  </ul></li>
+  <li><a href="#survey-results" id="toc-survey-results" class="nav-link" data-scroll-target="#survey-results">Survey Results</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
+  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">Appendix A</a>
+  <ul class="collapse">
+  <li><a href="#spherical-error-checks" id="toc-spherical-error-checks" class="nav-link" data-scroll-target="#spherical-error-checks">Spherical error checks:</a></li>
+  </ul></li>
+  <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">Appendix B</a>
+  <ul class="collapse">
+  <li><a href="#controls" id="toc-controls" class="nav-link" data-scroll-target="#controls">Controls:</a></li>
+  </ul></li>
+  <li><a href="#appendix-individual-level-results" id="toc-appendix-individual-level-results" class="nav-link" data-scroll-target="#appendix-individual-level-results">Appendix Individual Level Results</a>
+  <ul class="collapse">
+  <li><a href="#individual-level-data" id="toc-individual-level-data" class="nav-link" data-scroll-target="#individual-level-data">Individual Level Data</a></li>
+  <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary Statistics</a></li>
+  </ul></li>
+  <li><a href="#appendix-for-qp-defense" id="toc-appendix-for-qp-defense" class="nav-link" data-scroll-target="#appendix-for-qp-defense">Appendix for QP Defense</a></li>
+  </ul></li>
+  <li><a href="#works-cited" id="toc-works-cited" class="nav-link" data-scroll-target="#works-cited">Works Cited</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Effects of Walkability on Voter Turnout</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">In Progress</div>
+    <div class="quarto-category">Seminar Paper</div>
+    <div class="quarto-category">Spring 2025</div>
+  </div>
+  </div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Stone Neilon <a href="mailto:stone.neilon@colorado.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0006-6026-4384" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colorado.edu/">
+            University of Colorado Boulder
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 19, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>Walkability - the ease of walking to amenities within an area - mediates how people engage and interact with others. While the factors that influence voter turnout are extensive, previous literature shows variation in voting barriers and political socialization are strong indicators of voter turnout. Given walkability mediates the cost of voting and political socialization, we ask, does walkability influence voter turnout? Using the Environmental Protection Agency’s (EPA) walkability index and voting data from the 2016, 2018, and 2020 general and primary presidential elections, we observe the level of impact walkability has on voter turnout at the census block group level in the 25 most populated Metropolitan Statistical Areas (MSA). We find Census block groups with higher walkability were associated with higher voter turnout across all elections. We theorize these results are mediated through two factors: cost and social pressure. To separate the effects of these factors, we plan a survey experiment to be conducted in April 2025.</p>
+  </div>
+</div>
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>Built Environment, Voter Turnout, Walkability</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Critical to a healthy democracy is the political participation and active engagement of the citizenry <span class="citation" data-cites="dahl2005governs">(<a href="#ref-dahl2005governs" role="doc-biblioref">Dahl 2005</a>)</span>. Who has access to the voting booth has critical consequences for whose voice is represented <span class="citation" data-cites="gilens2014testing">(<a href="#ref-gilens2014testing" role="doc-biblioref">Gilens and Page 2014</a>)</span>. There are many ways for citizens to be politically involved but none are more prevalent than the action of voting. Given voting is the most widespread participatory action in politics and is that final choice made to decide the form of government, scholars have devoted considerable effort to understanding and predicting the factors that cause individuals to vote. However, because voting is not compulsory, understanding what ultimately causes someone to vote has led to numerous theories and factors.</p>
+<p>Voter turnout work tends to understand the drivers of voter turnout through either individual or environmental level factors <span class="citation" data-cites="campbell1980american">(<a href="#ref-campbell1980american" role="doc-biblioref">Campbell 1980</a>)</span> <span class="citation" data-cites="lazarsfeld1968people">(<a href="#ref-lazarsfeld1968people" role="doc-biblioref">Lazarsfeld, Berelson, and Gaudet 1968</a>)</span>. Despite these two perspectives, what likely drives voter turnout is a combination of these factors. In the years since the development of the Columbia and Michigan models, scholars have identified the effects of political knowledge <span class="citation" data-cites="carpini1996americans">(<a href="#ref-carpini1996americans" role="doc-biblioref">Carpini and Keeter 1996</a>)</span>, identity <span class="citation" data-cites="sides2019identity">(<a href="#ref-sides2019identity" role="doc-biblioref">Sides, Tesler, and Vavreck 2019</a>)</span>, campaign effects <span class="citation" data-cites="farrell2003political">(<a href="#ref-farrell2003political" role="doc-biblioref">Farrell and Schmitt-Beck 2003</a>)</span>, network socialization <span class="citation" data-cites="rolfe2012voter">(<a href="#ref-rolfe2012voter" role="doc-biblioref">Rolfe 2012</a>)</span>, education <span class="citation" data-cites="sondheimer2010using">(<a href="#ref-sondheimer2010using" role="doc-biblioref">Sondheimer and Green 2010</a>)</span>, convenience voting <span class="citation" data-cites="burden2014election">(<a href="#ref-burden2014election" role="doc-biblioref">Burden et al. 2014</a>)</span>, parental socialization <span class="citation" data-cites="jennings1968transmission">(<a href="#ref-jennings1968transmission" role="doc-biblioref">Jennings and Niemi 1968</a>)</span>, and many, many more <span class="citation" data-cites="plutzer2002becoming">(<a href="#ref-plutzer2002becoming" role="doc-biblioref">Plutzer 2002</a>)</span>. Despite this vast literature, we still know very little about how physical space, or the <em>built environment</em>, can shape political behaviors.</p>
+<p>The built environment is a concept heavily studied within the fields of urban planning and public health. The built environment is defined as the man-made structures, features, and facilities viewed collectively as an environment in which people live and work <span class="citation" data-cites="lawrence1990built">(<a href="#ref-lawrence1990built" role="doc-biblioref">Lawrence and Low 1990</a>)</span>. Studies of the built environment struggle due to measurement issues and differences. We choose to operationalize the built environment by using a measure of walkability. Walkability is a closely related concept but is defined as the ease of walking to amenities within a given area <span class="citation" data-cites="forsyth2015walkable">(<a href="#ref-forsyth2015walkable" role="doc-biblioref">Forsyth 2015</a>)</span>. We use our measure of walkability to study voter turnout in the 25 most populated Metropolitan Statistical Areas (MSA). Previous studies of the built environment and political phenomenon have varied in their measurements and use surveys/case studies to study the effect on political participation. We provide the first known systematic national study of the built environment on political participation. To measure voter turnout, we use the L2 voter file aggregated to the Census block group level. We find a significantly positive association between walkability and voter turnout. We then field a survey to better understand what underlying mechanisms drive this association.</p>
+<p>Our results motivate greater attention to the relationship between the built environment and political phenomenon. The design of physical space has been rarely considered on political behavior. Because physical space structures how people interact and engage socially, how its’ design varies can lead to different political behaviors. In addition, its’ design is a collection of social choices made over time. By understanding how the built environment structures social interaction and thus political behaviors, we can better shape its formation to improve political outcomes more conducive to a healthy and equitable democracy.</p>
+</section>
+<section id="the-built-environment-and-political-participation" class="level1">
+<h1>The Built Environment and Political Participation</h1>
+<p>The built environment is defined as the man-made structures, features, and facilities viewed collectively as an environment in which people live and work <span class="citation" data-cites="lawrence1990built">(<a href="#ref-lawrence1990built" role="doc-biblioref">Lawrence and Low 1990</a>)</span>. While other disciplines such as urban planning and the public health literature have tested the built environment on social, mental, and physical health questions, with some notable exceptions, its effect on political phenomenon is sparse. <span class="citation" data-cites="putnam2000bowling">Putnam (<a href="#ref-putnam2000bowling" role="doc-biblioref">2000</a>)</span> considered suburbanization to be a major factor in the decline of social capital but found null results. <span class="citation" data-cites="leyden2003social">Leyden (<a href="#ref-leyden2003social" role="doc-biblioref">2003</a>)</span> finds individuals in more walkable, mixed-use neighborhoods were more likely to have higher social capital in Galway, Ireland. However, <span class="citation" data-cites="hopkins2012inactive">Hopkins and Williamson (<a href="#ref-hopkins2012inactive" role="doc-biblioref">2012</a>)</span> find built environmental factors did not have any effect on voting but were significant on harder forms of political engagement. More recently, <span class="citation" data-cites="nathan2023grids">Nathan (<a href="#ref-nathan2023grids" role="doc-biblioref">2023</a>)</span> finds more gridded and orderly streets reduces social cohesion and depresses political turnout in Ghana. Despite mixed results, there is likely some true level of effect between one’s built environment and political participation. However, the built environment is an abstract concept and thus difficult to measure. Each of the aforementioned studies measured it differently. We operationalize the built environment using a measure of walkability. Walkability is a similar concept, defined as the ease of walking to amenities within an area.</p>
+<p>From the perspective of the voter calculus model, walkability’s effect could flow through either the “C” (cost) or “D” (citizen duty) term <span class="citation" data-cites="riker1968theory">(<a href="#ref-riker1968theory" role="doc-biblioref">Riker and Ordeshook 1968</a>)</span>. Because voting is still largely seen as a physical action in which voters travel to the polls, we posit two potential mechanisms. First, a walkable area can reduce the cost - both perceived and actual - of turning out to vote. Second, because walkability increases the frequency of face-to-face interaction, individuals may feel greater social pressure to vote, increasing their feeling of “citizen duty”.</p>
+<section id="cost-of-voting" class="level2">
+<h2 class="anchored" data-anchor-id="cost-of-voting">Cost of Voting</h2>
+<p>The action of voting always has some cost greater than zero <span class="citation" data-cites="riker1968theory">(<a href="#ref-riker1968theory" role="doc-biblioref">Riker and Ordeshook 1968</a>)</span>. The higher the cost, the less likely it is for an individual to vote, all else equal. For the majority of voters, the action of voting is physical. Voting is not equal for all individuals. In addition to information costs, you must travel the polling location, potentially wait in line, and finally take the time to actually complete the process of voting. Election laws and convenience voting measures influence turnout and vary across states <span class="citation" data-cites="burden2014election">(<a href="#ref-burden2014election" role="doc-biblioref">Burden et al. 2014</a>)</span>. However, the vast majority of voters (especially prior to COVID-19) cast their ballots in person on election day. While they find null results for voting, <span class="citation" data-cites="hopkins2012inactive">Hopkins and Williamson (<a href="#ref-hopkins2012inactive" role="doc-biblioref">2012</a>)</span> find harder forms of political participation such as protesting and going to a town hall were significantly impacted by distance.</p>
+<p>The ability of walkability to reduce the cost of voting is driven primarily through the benefits it provides in transportation options. The farther the polling booth is from where an individual lives, decreases their likelihood to turn out <span class="citation" data-cites="brady2011turning">(<a href="#ref-brady2011turning" role="doc-biblioref">Brady and McNulty 2011</a>)</span>. <span class="citation" data-cites="gimpel2003political">Gimpel and Schuknecht (<a href="#ref-gimpel2003political" role="doc-biblioref">2003</a>)</span> provides additional evidence, finding that voter turnout in reduced in suburban precincts when the polling location is between 2-5 miles away. Given much of American society is car-centric, transportation issues can magnify the cost of traveling to the polls. A walkable environment not only provides the opportunity to walk to the polls but it provides alternative transportation options to be utilized such as subways, buses, or bikes. Thus a walkable environment can reduce the objective cost of traveling to the polls.</p>
+<p>A walkable environment may reduce the perceived cost of voting. Studies from other disciplines, find built environments conducive with a walkable environment influence walking patterns. The action of walking can reduce stress, improve mental and physical health, and increase cognition <span class="citation" data-cites="finlay2022cognability">(<a href="#ref-finlay2022cognability" role="doc-biblioref">Finlay et al. 2022</a>)</span> <span class="citation" data-cites="johansson2011psychological">(<a href="#ref-johansson2011psychological" role="doc-biblioref">Johansson, Hartig, and Staats 2011</a>)</span> <span class="citation" data-cites="roe2011restorative">(<a href="#ref-roe2011restorative" role="doc-biblioref">Roe and Aspinall 2011</a>)</span>. So while a walk could take an individual longer to physically travel to the polling location, their perceived effort might be lower than if they had drove. Given these benefits, walking may reduce the perceived effort required to vote and thus reduce the cost of voting, increasing their likelihood to turnout.</p>
+</section>
+<section id="social-capital-and-political-socialization" class="level2">
+<h2 class="anchored" data-anchor-id="social-capital-and-political-socialization">Social Capital and Political Socialization</h2>
+<p>Social interaction can expose people to different politically relevant information <span class="citation" data-cites="huckfeldt2001social">(<a href="#ref-huckfeldt2001social" role="doc-biblioref">R. Huckfeldt 2001</a>)</span>. The type of social context one inhabits can have a major effect on how an individual participates politically <span class="citation" data-cites="huckfeldt1979political">(<a href="#ref-huckfeldt1979political" role="doc-biblioref">R. R. Huckfeldt 1979</a>)</span>. The design of the built environment we argue can shape how social contexts are formed and thus, the character and frequency for who you interact with. A walkable area increases the frequency of face-to-face interactions <span class="citation" data-cites="van2017subjective">(<a href="#ref-van2017subjective" role="doc-biblioref">Van den Berg, Sharmeen, and Weijs-Perrée 2017</a>)</span>. A walkable environment is mediated through two mechanisms for voter turnout: unscripted contact and facilitated recruitment <span class="citation" data-cites="hopkins2012inactive">(<a href="#ref-hopkins2012inactive" role="doc-biblioref">Hopkins and Williamson 2012</a>)</span>.</p>
+<p>Greater unscripted contact increases the prevalence of weak ties. Weak ties are theorized to be vital in fostering and sharing new ideas <span class="citation" data-cites="granovetter1983strength">(<a href="#ref-granovetter1983strength" role="doc-biblioref">Granovetter 1983</a>)</span>. Given walkability increases the frequency of interactions between strangers, there is a higher possibility these interactions can snowball into a more connected and trustworthy community. <span class="citation" data-cites="jacobs1992death">Jacobs (<a href="#ref-jacobs1992death" role="doc-biblioref">1992</a>)</span> echo’s the importance of city design in shaping social networks:</p>
+<blockquote class="blockquote">
+<p>The trust of a city street is formed over time from many, many little public sidewalk contacts…Most of it is ostensibly trivial but the sum is not trivial at all.</p>
+</blockquote>
+<p>A civic culture is a politically active culture <span class="citation" data-cites="almond2015civic">(<a href="#ref-almond2015civic" role="doc-biblioref">Almond and Verba 2015</a>)</span> <span class="citation" data-cites="putnam2000bowling">(<a href="#ref-putnam2000bowling" role="doc-biblioref">Putnam 2000</a>)</span>. When an area is constructed to increase the frequency of physical interaction, more network relationships can form and thus more facilitated recruitment may occur. A walkable environment is thus conducive in developing greater <em>civic skills</em>, a critical component of <span class="citation" data-cites="verba1995voice">Verba, Schlozman, and Brady (<a href="#ref-verba1995voice" role="doc-biblioref">1995</a>)</span>’s resource model of participation. While socioeconomic factors can lead to variation in the resource model, <span class="citation" data-cites="mcclurg2003social">McClurg (<a href="#ref-mcclurg2003social" role="doc-biblioref">2003</a>)</span> shows social interaction enhances engagement with group membership and political participation, contingent on the <em>amount</em> of political discussion within the network. Critical to walkability’s impact on political participation is then mediated through it’s ability to foster greater social interaction. Further, greater civic participation can lead to greater social capital and foster more forms of social bridging and bonding <span class="citation" data-cites="putnam2000bowling">(<a href="#ref-putnam2000bowling" role="doc-biblioref">Putnam 2000</a>)</span>. An individual’s sense of of civic duty rises increasing their likelihood to participate politically <span class="citation" data-cites="riker1968theory">(<a href="#ref-riker1968theory" role="doc-biblioref">Riker and Ordeshook 1968</a>)</span>.</p>
+<p>Information gain can arise from increased network interaction and diversity <span class="citation" data-cites="huckfeldt2001social">(<a href="#ref-huckfeldt2001social" role="doc-biblioref">R. Huckfeldt 2001</a>)</span>. Political knowledge of current events and the structure of government vary wildly <span class="citation" data-cites="carpini1996americans">(<a href="#ref-carpini1996americans" role="doc-biblioref">Carpini and Keeter 1996</a>)</span> <span class="citation" data-cites="bartels2005homer">(<a href="#ref-bartels2005homer" role="doc-biblioref">Bartels 2005</a>)</span>. While political information can be received through multiple pathways, face-to-face interactions are unique as they are both unfiltered and potentially more personal than media <span class="citation" data-cites="carlson2019through">(<a href="#ref-carlson2019through" role="doc-biblioref">Carlson 2019</a>)</span>. While these interactions can lead to false information, simple conversation still makes politics salient and indicates larger social networks can influence the flow of political information <span class="citation" data-cites="huckfeldt1995political">(<a href="#ref-huckfeldt1995political" role="doc-biblioref">R. Huckfeldt et al. 1995</a>)</span>.</p>
+<p>Finally, Increased social interaction may influence an individuals level of altruism <span class="citation" data-cites="fowler2006altruism">(<a href="#ref-fowler2006altruism" role="doc-biblioref">Fowler 2006</a>)</span>. Thus, greater social interaction facilitated through walkability increases care for others, motivating greater political participation. Engagement within your community fosters greater care for you community <span class="citation" data-cites="fitzgerald2018close">(<a href="#ref-fitzgerald2018close" role="doc-biblioref">Fitzgerald 2018</a>)</span>. Thus, the more frequent interaction you have with others may motivate individuals to care more deeply about their political agency.</p>
+<section id="social-pressure" class="level3">
+<h3 class="anchored" data-anchor-id="social-pressure">Social Pressure</h3>
+<p>While greater face-to-face interaction may encourage individuals to participate more in civil society and ascribe greater purpose in voting, walkability may also induce greater social pressure on individuals to vote. Previous work shows exposure to others voting can dramatically increase the likelihood of someone voting <span class="citation" data-cites="gerber2008social">(<a href="#ref-gerber2008social" role="doc-biblioref">Gerber, Green, and Larimer 2008</a>)</span>. <span class="citation" data-cites="gerber2008social">Gerber, Green, and Larimer (<a href="#ref-gerber2008social" role="doc-biblioref">2008</a>)</span> argue the threat of shame can induce specific behaviors. While they test non face-to-face interactions, they do find that when neighbors are exposed for not voting, they can be pressured to vote in future elections. In face-to-face interactions, political conversations may arise and thus individuals may be inclined to avoid ostracism or shame by voting. The threat of someone asking you in person may even have a more pronounced effect than the turnout mailings <span class="citation" data-cites="gerber2008social">Gerber, Green, and Larimer (<a href="#ref-gerber2008social" role="doc-biblioref">2008</a>)</span> used. Given walkability increases social interactions within an area, it is likely these types of conversations may arise more frequently than otherwise and foster greater social pressure to vote. Face-to-face interaction and exposure to others voting is shown to increase voter turnout <span class="citation" data-cites="gerber2000effects">(<a href="#ref-gerber2000effects" role="doc-biblioref">Gerber and Green 2000</a>)</span> <span class="citation" data-cites="arceneaux2012get">(<a href="#ref-arceneaux2012get" role="doc-biblioref">Arceneaux, Kousser, and Mullin 2012</a>)</span> <span class="citation" data-cites="fortier2006absentee">(<a href="#ref-fortier2006absentee" role="doc-biblioref">Fortier 2006</a>)</span> <span class="citation" data-cites="funk2010social">(<a href="#ref-funk2010social" role="doc-biblioref">Funk 2010</a>)</span>.</p>
+<p>The greater frequency of political conversations in weak tie network increases the amount of possible mobilizing agents and thus facilitated recruitment towards the action of voting. Previous work has found neighbors that talk together, vote together, indicating a neighborhood socialization effect on partisanship <span class="citation" data-cites="pattie2000people">(<a href="#ref-pattie2000people" role="doc-biblioref">Pattie and Johnston 2000</a>)</span>. <span class="citation" data-cites="rolfe2012voter">Rolfe (<a href="#ref-rolfe2012voter" role="doc-biblioref">2012</a>)</span> provides additional support for the role of social pressure by arguing the decision of an individual to vote is conditional on the vote decisions of friends, family, neighbors, and coworkers. The amount and interaction of these actors within an individual’s social network have a powerful mobilizing influence over an individual’s likelihood to vote.</p>
+<p>Thus, we see walkability’s influence on voter turnout has multiple pathways that we categorize into three potential mediating mechanisms. (1) Walkability can reduce both the objective and perceived cost of voting. (2) Walkability can increase weak tie network formation and increase individual’s sense of civic duty to participate politically. (3) Walkability increases the exposure of election activities both from the campaign and other citizens engaging the voting process, increasing the social pressure to participate in voting.</p>
+<p>Given these potential mechanisms, we theorize the following:</p>
+<p><span class="math inline">\(H_1\)</span> Communities with higher walkability will have higher voter turnout.</p>
+<p><span class="math inline">\(H_2\)</span> Walkability reduces the perceived cost associated with voting</p>
+<p><span class="math inline">\(H_3\)</span> Walkability increases political socialization and increases voter turnout.</p>
+<p>The paper proceeds by first testing whether a relationship exists between walkability and voter turnout. We find a positive association. To test how these theorized mechanisms mediate this association, we field a survey experiment.</p>
+</section>
+</section>
+</section>
+<section id="data" class="level1">
+<h1>Data</h1>
+<section id="independent-variable-walkability-index" class="level2">
+<h2 class="anchored" data-anchor-id="independent-variable-walkability-index">Independent Variable: Walkability Index</h2>
+<p>Our independent variable is walkability. Walkability is defined as the ease of walking to amenities within an area <span class="citation" data-cites="forsyth2015walkable">(<a href="#ref-forsyth2015walkable" role="doc-biblioref">Forsyth 2015</a>)</span>. We use walkability to operationalize the built environment because it captures the layout of an area and mutes variation in architectural design. While previous research has found evidence between architectural features and voter turnout, we are only concerned about the built environment from an urban planning perspective <span class="citation" data-cites="levan2020neighborhoods">(<a href="#ref-levan2020neighborhoods" role="doc-biblioref">LeVan 2020</a>)</span>. This measurement decision is supported by previous work on the varying suburb types and political participation <span class="citation" data-cites="hopkins2012inactive">(<a href="#ref-hopkins2012inactive" role="doc-biblioref">Hopkins and Williamson 2012</a>)</span>.</p>
+<p>It is important to separate walkability from population density. <span class="citation" data-cites="oliver2001democracy">Oliver (<a href="#ref-oliver2001democracy" role="doc-biblioref">2001</a>)</span> argues greater density should reduce political participation in municipal elections. While we do not test walkability on municipal elections, <span class="citation" data-cites="oliver2001democracy">Oliver (<a href="#ref-oliver2001democracy" role="doc-biblioref">2001</a>)</span>’s point is still important. Population density refers to the amount of people in one area. A highly dense area does not necessarily mean it is walkable. Similarly, a walkable area does not necessarily mean that it is a dense area. An example of this phenomenon may be a Boston suburb that is not relatively dense in population but is walkable.</p>
+<p>To measure walkability, we use the Environmental Protection Agency’s (EPA) walkability index. The walkability index scores all Census block groups from least to most walkable on a 0-20 scale. With 0 being the least and 20 the most walkable. The walkability index was created in 2018 and is time invariant. The EPA measures walkability using the following formula:</p>
+<p><span class="math display">\[
+National\ Walkability\ Index=(w/3)+(x/3)+(y/6)+(z/6)
+\]</span></p>
+<p>Where:</p>
+<ol type="1">
+<li><p><span class="math inline">\(w=intersection\ density\)</span></p></li>
+<li><p><span class="math inline">\(x=proximity\ to \ transit\ stops\)</span></p></li>
+<li><p><span class="math inline">\(y = employment \ mix\)</span></p></li>
+<li><p><span class="math inline">\(z = employment \ and \ household \  mix\)</span></p></li>
+</ol>
+<p>Summary statistics for the walkability index used in our data-set can be found in Table 1.</p>
+<div id="tbl-letters" class="anchored">
+<table class="table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Table 1. Summary Statistics: Walkability Index</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Statistic</td>
+<td>N</td>
+<td>Mean</td>
+<td>St.&nbsp;Dev.</td>
+<td>Min</td>
+<td>Max</td>
+</tr>
+<tr class="even">
+<td>National Walkability Index</td>
+<td>83,608</td>
+<td>11.66</td>
+<td>3.941126</td>
+<td>1.000</td>
+<td>20.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="dependent-variable-general-election-voter-turnout" class="level2">
+<h2 class="anchored" data-anchor-id="dependent-variable-general-election-voter-turnout">Dependent Variable: General Election Voter Turnout</h2>
+<p>Our dependent variable is the proportion of voter turnout within a Census block group by each election. We calculate this by taking the number of voters who turned out in an election divided by the number of registered voters in a Census block group. Summary statistics for general election voter turnout can be found in Table 2. Turnout data is sourced using the L2 voter file accessed through the Redistricting Data Hub, a nonprofit that purchased the file for use towards research on gerrymandering.</p>
+<p>Turnout data is available for earlier elections cycles. However, we choose to focus only on turnout in the 2016, 2018, and 2020 election cycles. Because the walkability measure is time invariant and is only measured at the time of its creation in 2018, we limit our scope to only these three election years. Given the built environment is a culmination of buildings constructed over many years, and typical construction of a building can take anywhere from 6 to 17+ months <span class="citation" data-cites="statista2025">(<a href="#ref-statista2025" role="doc-biblioref">Statista 2025</a>)</span>, the change in walkability is likely negligible between the periods observed. We feel less confident with this assumption as we extend the election periods to before 2016.</p>
+<div>
+<table class="table">
+<colgroup>
+<col style="width: 52%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Table 2. Summary Statistics: General Election Voter Turnout</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Statistic</strong></td>
+<td><strong>N</strong></td>
+<td><strong>Mean</strong></td>
+<td><strong>St.&nbsp;Dev</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+</tr>
+<tr class="even">
+<td>Voter Proportion 2016</td>
+<td>83,608</td>
+<td>0.5725</td>
+<td>0.1157</td>
+<td>0.000</td>
+<td>1.000</td>
+</tr>
+<tr class="odd">
+<td>Voter Proportion 2018</td>
+<td>83,608</td>
+<td>0.5148</td>
+<td>0.1285</td>
+<td>0.000</td>
+<td>1.000</td>
+</tr>
+<tr class="even">
+<td>Voter Proportion 2020</td>
+<td>83,608</td>
+<td>0.7313</td>
+<td>0.1318</td>
+<td>0.000</td>
+<td>1.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="unit-of-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="unit-of-analysis">Unit of Analysis</h2>
+<p>Because the walkability index is measured at the Census block group level, our unit of analysis is a Census block group in an election. The types of boundary chosen can dramatically influence how we measure walkability. Zip codes are unreliable and have fluid boundaries, making it difficult to assign a systematic walkability score. Census tracts are more advantageous as they are less fluid and systematically defined by the Census bureau. However, Census tracts can still range considerably in size and not properly capture how an individual operates within their ‘neighborhood’. We recognize how one defines their ‘neighborhood’ is entirely subjective <span class="citation" data-cites="Wong_Bowers_Rubenson_Fredrickson_Rundlett_2020">(<a href="#ref-Wong_Bowers_Rubenson_Fredrickson_Rundlett_2020" role="doc-biblioref">Wong et al. 2020</a>)</span>. However, Census block groups can minimize this concern as its size captures more local impacts of an individual’s built environment, capturing the immediacy of amenities that surround an individual. A Census block group is a unit of spatial aggregation that is smaller than a Census tract but larger than a Census block. A Census block group is the combination of Census blocks for a given area. Previous studies have varied in which geographical aggregation to utilize.</p>
+<p>We restrict our focus of walkability to only the 25 most populous Metropolitan Statistical Areas (MSA). The list of MSAs in our study can be found in table 3. MSAs are a variation of the census defined “core based statistical area”. MSAs can span multiple states and are defined by having at least 50% of their population in urban areas, at least 50,000 population, and include surrounding areas with strong economic ties. Our choice to only focus on Census block groups within the 25 most populous MSAs is because we are only interested in urban design variability. MSAs do contain rural areas and provide sufficient variability in their walkability. If we were to include all Census block groups in the United States, our model would be clouded by the presence of rural census block groups.</p>
+<p>Some readers may question the effect of our choice of aggregation. To quell these potential concerns, we re-estimate a model using a logit at the individual level using the L2 voter file. The results of this model can be found in Appendix TK.</p>
+<table class="table">
+<caption>Table 3. List of Metropolitan Statistical Areas (MSA) by Population</caption>
+<thead>
+<tr class="header">
+<th>Metropolitan Name</th>
+<th>State(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>New York-Newark-Jersey City</td>
+<td>NY-NJ</td>
+</tr>
+<tr class="even">
+<td>Los Angeles-Long Beach-Anaheim</td>
+<td>CA</td>
+</tr>
+<tr class="odd">
+<td>Chicago-Naperville-Elgin</td>
+<td>IL-IN</td>
+</tr>
+<tr class="even">
+<td>Dallas-Fort Worth-Arlington</td>
+<td>TX</td>
+</tr>
+<tr class="odd">
+<td>Houston-Pasadena-The Woodlands</td>
+<td>TX</td>
+</tr>
+<tr class="even">
+<td>Washington-Arlington-Alexandria</td>
+<td>DC-VA-MD-WV</td>
+</tr>
+<tr class="odd">
+<td>Philadelphia-Camden-Wilmington</td>
+<td>PA-NJ-DE-MD</td>
+</tr>
+<tr class="even">
+<td>Atlanta-Sandy Springs-Roswell</td>
+<td>GA</td>
+</tr>
+<tr class="odd">
+<td>Miami-Fort Lauderdale-West Palm Beach</td>
+<td>FL</td>
+</tr>
+<tr class="even">
+<td>Phoenix-Mesa-Chandler</td>
+<td>AZ</td>
+</tr>
+<tr class="odd">
+<td>Boston-Cambridge-Newton</td>
+<td>MA</td>
+</tr>
+<tr class="even">
+<td>Riverside-San Bernardino-Ontario</td>
+<td>CA</td>
+</tr>
+<tr class="odd">
+<td>San Francisco-Oakland-Fremont</td>
+<td>CA</td>
+</tr>
+<tr class="even">
+<td>Detroit-Warren-Dearborn</td>
+<td>MI</td>
+</tr>
+<tr class="odd">
+<td>Seattle-Tacoma-Bellevue</td>
+<td>WA</td>
+</tr>
+<tr class="even">
+<td>Minneapolis-St.&nbsp;Paul-Bloomington</td>
+<td>MN-WI</td>
+</tr>
+<tr class="odd">
+<td>Tampa-St.&nbsp;Petersburg-Clearwater</td>
+<td>FL</td>
+</tr>
+<tr class="even">
+<td>San Diego-Chula Vista-Carlsbad</td>
+<td>CA</td>
+</tr>
+<tr class="odd">
+<td>Denver-Aurora-Centennial</td>
+<td>CO</td>
+</tr>
+<tr class="even">
+<td>Baltimore-Columbia-Townson</td>
+<td>MD</td>
+</tr>
+<tr class="odd">
+<td>St.&nbsp;Louis</td>
+<td>MO-IL</td>
+</tr>
+<tr class="even">
+<td>Orlando-Kissimmee-Sanford</td>
+<td>FL</td>
+</tr>
+<tr class="odd">
+<td>Charlotte-Concord-Gastonia</td>
+<td>NC-SC</td>
+</tr>
+<tr class="even">
+<td>San Antonio-New Braunfels</td>
+<td>TX</td>
+</tr>
+<tr class="odd">
+<td>Portland-Vancouver-Hillsboro</td>
+<td>OR-WA</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<p>To test the effect of walkability on voter turnout, we regress the walkability index onto voter turnout using ordinary least squares (OLS). Using the 2016, 2018, and 2020 voter turnout at the Census block group level for our dependent variable. Recall that we restrict our focus to only Census block groups within the top 25 most populated MSAs.</p>
+<p><span class="math display">\[
+Voter\ Turnout_{ikj} = Walkability_{ikj}\ + Aggregate\ Level \ Controls_{ikj}
+\]</span></p>
+<p>Where <span class="math inline">\(i\)</span> is the Census block group</p>
+<p>Where <span class="math inline">\(k\)</span> is the Metropolitan Statistical Area</p>
+<p>Where <span class="math inline">\(j\)</span> is the election year.</p>
+<p>The control variables were chosen based on previous studies of walkability and traditional factors that influence voter turnout. Because we are measuring this at the Census block group level, our controls include population density, median home age, home value, proportion of various social and racial demographics, and the proportion of party ID. We also create a dummy variable for Mail-in-ballots at the state level. A full list of controls can be found in Appendix TK.</p>
+<p>Because we nest Census block groups within an MSA, we study both the within and between variation in our data set. We cluster our standard errors to account for correlation among the Census block groups nested in each MSA, thus non-independence of our observations. Choosing not to cluster our standard errors would produce underestimated (too small) standard errors. Additionally, we run a fixed effects model to account for between variation of MSAs. Both of these robustness checks can be found in Appendix TK.</p>
+<section id="sorting-the-sort---need-help-here.---incomplete-step." class="level3">
+<h3 class="anchored" data-anchor-id="sorting-the-sort---need-help-here.---incomplete-step.">Sorting the Sort - need help here. - incomplete step.</h3>
+<p>A major concern in this body of work, is the role of endogenous sorting of individuals into more walkable neighborhoods. Individuals can chose where to live based off the amenities offered <span class="citation" data-cites="tiebout1956pure">(<a href="#ref-tiebout1956pure" role="doc-biblioref">Tiebout 1956</a>)</span>. Thus, individuals who are already likely to vote may sort into a walkable neighborhood. Of the few previous built environment and political participation studies, only <span class="citation" data-cites="nathan2023grids">Nathan (<a href="#ref-nathan2023grids" role="doc-biblioref">2023</a>)</span> controls for endogenous sorting using survey questions. Because we use a voter file rather than a survey to measure voter turnout, we are unable to follow a similar design. We do, however, use <span class="citation" data-cites="brown2021measurement">Brown and Enos (<a href="#ref-brown2021measurement" role="doc-biblioref">2021</a>)</span>’s partisan exposure measure as a control for potential partisan sorting. Measuring endogenous sorting with a measure of partisan sorting is an imperfect measure. However, growing evidence points to Democrats selecting into more walkable areas and Republicans selecting into suburban/rural areas. This assumption is reflected in the growing evidence between an urban/rural divide and lifestyle choices among Democrats and Republican <span class="citation" data-cites="lyons2023you">(<a href="#ref-lyons2023you" role="doc-biblioref">Lyons and Utych 2023</a>)</span> <span class="citation" data-cites="bishop2009big">(<a href="#ref-bishop2009big" role="doc-biblioref">Bishop and Cushing 2009</a>)</span> <span class="citation" data-cites="brown2021measurement">(<a href="#ref-brown2021measurement" role="doc-biblioref">Brown and Enos 2021</a>)</span> <span class="citation" data-cites="williamson2008sprawl">(<a href="#ref-williamson2008sprawl" role="doc-biblioref">Williamson 2008</a>)</span>.</p>
+<p>Given this assumption, Republicans would be less likely to sort into walkable areas and prefer the aesthetics of less walkable suburban/rural communities. Thus, if our results hold for Republican voters, we can likely mitigate some concern for endogenous sorting, as strong Republicans would be less likely to sort into such a community. Using <span class="citation" data-cites="brown2021measurement">Brown and Enos (<a href="#ref-brown2021measurement" role="doc-biblioref">2021</a>)</span>’s relative measure of partisan exposure at the Census Tract level, we interact partisan exposure within a community with our walkability index TK. <span class="citation" data-cites="brown2021measurement">Brown and Enos (<a href="#ref-brown2021measurement" role="doc-biblioref">2021</a>)</span>’s measure was created in 2018 and thus we only conduct this analysis for the 2018 election TK. Results can be found in Appendix TK.</p>
+</section>
+</section>
+<section id="general-election-results" class="level1">
+<h1>General Election Results</h1>
+<p>The full results for the 2016, 2018, and 2020 general elections are shown below in table 4.</p>
+<div>
+<strong>TABLE 4:</strong> Regression Results for 2016, 2018, and 2020 General Elections
+
+<table class="table table-striped table-hover" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2016 General</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2018 General</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2020 General</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dependent Var.:</td>
+<td style="text-align: left;">2016 Voter Turnout</td>
+<td style="text-align: left;">2018 Voter Turnout</td>
+<td style="text-align: left;">2020 Voter Turnout</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Walkability Index</td>
+<td style="text-align: left;">0.0011*** (0.0003)</td>
+<td style="text-align: left;">0.0012** (0.0004)</td>
+<td style="text-align: left;">0.0012*** (0.0003)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Population Density</td>
+<td style="text-align: left;">4.53e-8 (1.63e-7)</td>
+<td style="text-align: left;">1.66e-7 (1.59e-7)</td>
+<td style="text-align: left;">-2.09e-7 (1.7e-7)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Median Home Value</td>
+<td style="text-align: left;">5.54e-9 (1.01e-8)</td>
+<td style="text-align: left;">9.69e-9 (8.49e-9)</td>
+<td style="text-align: left;">-2.03e-8 (1.47e-8)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Median Household Income</td>
+<td style="text-align: left;">2.85e-7*** (3.45e-8)</td>
+<td style="text-align: left;">3.35e-7*** (3.14e-8)</td>
+<td style="text-align: left;">4.31e-7*** (3.53e-8)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Median Home Age</td>
+<td style="text-align: left;">-2.18e-6 (2.57e-6)</td>
+<td style="text-align: left;">-4.99e-6* (2.3e-6)</td>
+<td style="text-align: left;">2.25e-6 (1.8e-6)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Age: 30-54</td>
+<td style="text-align: left;">0.3845*** (0.0308)</td>
+<td style="text-align: left;">0.3460*** (0.0390)</td>
+<td style="text-align: left;">0.2480*** (0.0539)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Age: 55+</td>
+<td style="text-align: left;">0.3572*** (0.0263)</td>
+<td style="text-align: left;">0.3358*** (0.0379)</td>
+<td style="text-align: left;">0.1264** (0.0412)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gender: Female</td>
+<td style="text-align: left;">0.1684*** (0.0383)</td>
+<td style="text-align: left;">0.0827. (0.0451)</td>
+<td style="text-align: left;">0.0965 (0.0853)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Party: Democrat</td>
+<td style="text-align: left;">-0.0184 (0.0249)</td>
+<td style="text-align: left;">0.0843** (0.0263)</td>
+<td style="text-align: left;">-0.0313 (0.0421)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Party: No Political Preference</td>
+<td style="text-align: left;">-0.1751*** (0.0403)</td>
+<td style="text-align: left;">-0.1292*** (0.0331)</td>
+<td style="text-align: left;">-0.0924 (0.0801)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Race: White</td>
+<td style="text-align: left;">0.1990*** (0.0233)</td>
+<td style="text-align: left;">0.2599*** (0.0357)</td>
+<td style="text-align: left;">0.1195* (0.0536)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Race: Hispanic</td>
+<td style="text-align: left;">0.1144*** (0.0182)</td>
+<td style="text-align: left;">0.0807* (0.0313)</td>
+<td style="text-align: left;">-0.0418 (0.0444)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Race: Black</td>
+<td style="text-align: left;">0.1247*** (0.0131)</td>
+<td style="text-align: left;">0.1143** (0.0308)</td>
+<td style="text-align: left;">-0.0326 (0.0483)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Education: HS diploma</td>
+<td style="text-align: left;">0.0863. (0.0459)</td>
+<td style="text-align: left;">-0.1966*** (0.0493)</td>
+<td style="text-align: left;">-0.3100*** (0.0646)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Education: Some College</td>
+<td style="text-align: left;">0.8087*** (0.1753)</td>
+<td style="text-align: left;">0.9060*** (0.2112)</td>
+<td style="text-align: left;">1.343*** (0.1818)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Education: Bachelors Degree</td>
+<td style="text-align: left;">0.7767*** (0.0677)</td>
+<td style="text-align: left;">0.8227*** (0.0551)</td>
+<td style="text-align: left;">0.6836*** (0.0712)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Education: Graduate Degree</td>
+<td style="text-align: left;">0.8291*** (0.0624)</td>
+<td style="text-align: left;">0.9190*** (0.0711)</td>
+<td style="text-align: left;">0.5428*** (0.0926)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mail-in-Ballot State - 2016</td>
+<td style="text-align: left;">0.0578*** (0.0083)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mail-in-Ballot State - 2018</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.0733*** (0.0056)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mail-in-Ballot State - 2020</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.0531*** (0.0063)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fixed-Effects:</td>
+<td style="text-align: left;">---------------------</td>
+<td style="text-align: left;">---------------------</td>
+<td style="text-align: left;">---------------------</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MSA</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">_____________________________</td>
+<td style="text-align: left;">_____________________</td>
+<td style="text-align: left;">_____________________</td>
+<td style="text-align: left;">_____________________</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">S.E.: Clustered</td>
+<td style="text-align: left;">by: MSA</td>
+<td style="text-align: left;">by: MSA</td>
+<td style="text-align: left;">by: MSA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: left;">74,534</td>
+<td style="text-align: left;">74,534</td>
+<td style="text-align: left;">74,534</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">R2</td>
+<td style="text-align: left;">0.83573</td>
+<td style="text-align: left;">0.82733</td>
+<td style="text-align: left;">0.72515</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Within R2</td>
+<td style="text-align: left;">0.79015</td>
+<td style="text-align: left;">0.78486</td>
+<td style="text-align: left;">0.64613</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Using listwise deletion, we are left with 74,534 Census block groups across all three general elections. Starting in the 2016 column, we observe a statistically significant (.01 p-value) positive relationship between walkability and voter turnout. A one unit change in the walkability of a census block group resulted in a .11 percentage point increase in voter turnout, all else equal. These findings are robust to fixed effects and clustered standard errors. The <span class="math inline">\(R^2\)</span> value of .83 indicates our model explains 83% of the variation on voter turnout.</p>
+<p>The 2018 results indicate a similarly significantly positive relationship. However, these results are significant at p-value of .05. A one unit change in the walkability of a census block group resulting in a .12 percentage point increase in voter turnout, all else equal. These findings are robust to fixed effects and clustered standard errors. The <span class="math inline">\(R^2\)</span> value of .82 indicates our model explains 82% of the variation on voter turnout.</p>
+<p>Finally, the 2020 results show a significantly positive relationship at a significance level of .01. A one unit change in the walkability of a Census block group resulted in a .12 percentage point increase in voter turnout. These findings are robust to fixed effects and clustered standard errors. The <span class="math inline">\(R^2\)</span> value of .72 indicates our model explains 72% of the variation on voter turnout.</p>
+<p>While the 2018 election is still significant, it is less significant than the 2016 and 2020 election. Additionally, the <span class="math inline">\(R^2\)</span> for both 2018 and 2020 are less than the <span class="math inline">\(R^2\)</span> value in 2016. This <span class="math inline">\(R^2\)</span> result might be driven by the unique presence of Donald Trump in office and the 2020 COVID-19 pandemic. Despite these differences across elections, walkability appears to have a continued effect on voter turnout.</p>
+<p>However, the general presidential election is the most salient election in the United States. If walkability is to be associated with higher voter turnout, we should expect these results to hold in lower salient elections, where voters are less likely to turnout. As our 2018 results indicate, more analysis is needed on lower salient elections. Thus, we now turn to testing the effect of walkability on voter turnout in primary elections.</p>
+</section>
+<section id="primary-election-results" class="level1">
+<h1>Primary Election Results</h1>
+<p>Because the general elections is the highest information and most known election type in America, walkabily’s effect should be more pronounced and substantively interesting in elections with less turnout and salience. Thus, we ask an additional quesiton, <em>How does walkability influence turnout in lower salient elections?</em></p>
+<p>The primary elections are one example of a lower salient election. Primaries are less publicized and typically voted by those more interested and knowledgeable of politics. To understand how walkability influences voter turnout within lower salient elections, we test it’s effect within the 2016 presidential primary. While we have data for 2018 and 2020 primary turnout, these elections have considerable variations that we cannot systematically control for.</p>
+<p>While congressional primaries seem like a useful election type to study, we cannot account for the unique aspects of each congressional race. For example, some primaries were extremely close, while others ran uncontested. Coupled with the fact that states vary in who can vote in these primaries makes it extremely difficult to source a proper voter turnout count by Census block group for these elections. Additionally, we run into aggregation issues as Census block groups do not perfectly map onto congressional districts. While this is still an issue for the 2016 election, it is less so, as would be voters are likely to participate in this primary election because they are motivated to vote for their preferred presidential primary candidate. Finally, because President Obama was termed out, there is no concern for an incumbency advantage to cloud our results. The 2018 and 2020 elections are marked by Trump’s presence in office and likely influence the level of turnout for primaries.</p>
+<p>For these reasons, we do not feel comfortable estimating primary turnout in 2018 and 2020 at the Census block group level. The 2016 presidential primary provides the best opportunity to study the effect of walkability on voter turnout. (<em>Note:</em> <em>We are able to mitigate some of these issues when estimating the level of effect at the individual level.)</em> Unfortunately, data from states that conduct caucauses for their presidential primaries cannot be sourced. Thus, we leave those states out of our model. These states in 2016 were Kansas and Minnesota.</p>
+<p>We provide summary statistics for voter turnout in the 2016 primary election at the Census block group level in table 5. We take all presidential primary election results across the selected states and create a voter turnout proportion for each Census block. As table 5 shows, we see significantly less individuals voting in this election compared to the 2016 general election.</p>
+<div>
+<table class="table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Table 5. Summary Statistics: Primary Election Voter Turnout</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Statistic</strong></td>
+<td><strong>N</strong></td>
+<td><strong>Mean</strong></td>
+<td><strong>St.&nbsp;Dev</strong></td>
+<td><strong>Min</strong></td>
+<td><strong>Max</strong></td>
+</tr>
+<tr class="even">
+<td>Voter Proportion 2016</td>
+<td>81,329</td>
+<td>.2727</td>
+<td>0.1073</td>
+<td>0.000</td>
+<td>1.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Using only 2016 primary election results, we re-estimate the model using OLS with fixed effects and clustered standard errors. We provide three different specifications of the model. In addition, we control for primary type (open, semi-closed, closed). Table 6 provides the 2016 primary regression results.</p>
+<div>
+<strong>TABLE 6:</strong> Regression results at different model specifications for the 2016 Primary Election
+
+<table class="table table-striped table-hover" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Bivariate Model</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Multivariate Model</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Multivatriate Model w/FE &amp; CSE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dependent Var.:</td>
+<td style="text-align: left;">2016 Primary</td>
+<td style="text-align: left;">2016 Primary</td>
+<td style="text-align: left;">2016 Primary</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">0.2949*** (0.0138)</td>
+<td style="text-align: left;">-0.2351* (0.0974)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Walkability Index</td>
+<td style="text-align: left;">-0.0019 (0.0014)</td>
+<td style="text-align: left;">0.0006 (0.0007)</td>
+<td style="text-align: left;">0.0013*** (0.0003)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Population Density</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-9.82e-8 (2.17e-7)</td>
+<td style="text-align: left;">4.35e-7** (1.51e-7)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Median Home Value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">5.9e-8* (2.62e-8)</td>
+<td style="text-align: left;">8.78e-9 (6.71e-9)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Median Household Income</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-1.47e-7 (9.31e-8)</td>
+<td style="text-align: left;">8.5e-8* (3.52e-8)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Median Home Age</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-2.07e-5* (8.65e-6)</td>
+<td style="text-align: left;">-9.42e-6** (3.09e-6)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Age: 30-54</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.1106 (0.0843)</td>
+<td style="text-align: left;">0.2636*** (0.0473)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Age: 55+</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.2359** (0.0702)</td>
+<td style="text-align: left;">0.3787*** (0.0483)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gender: Female</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-0.0235 (0.0656)</td>
+<td style="text-align: left;">0.0765. (0.0403)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Party: Democrat</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.1945. (0.0945)</td>
+<td style="text-align: left;">0.0296 (0.0432)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Party: No Political Preference</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.0507 (0.1448)</td>
+<td style="text-align: left;">-0.2742*** (0.0590)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Race: White</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.1834* (0.0706)</td>
+<td style="text-align: left;">0.1805*** (0.0228)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Race: Hispanic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.0994. (0.0505)</td>
+<td style="text-align: left;">0.1048*** (0.0175)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Race: Black</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.0943 (0.0587)</td>
+<td style="text-align: left;">0.0857*** (0.0166)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Education: HS Diploma</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.0306 (0.1797)</td>
+<td style="text-align: left;">-0.0943 (0.0580)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Education: Some College</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">1.253** (0.4135)</td>
+<td style="text-align: left;">0.4036* (0.1684)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Education: Bachelors Degree</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.5390** (0.1446)</td>
+<td style="text-align: left;">0.3169*** (0.0761)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Education: Graduate Degree</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.8429*** (0.1779)</td>
+<td style="text-align: left;">0.6383*** (0.0803)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mail-in-Ballot State - 2016</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.0623* (0.0242)</td>
+<td style="text-align: left;">0.0571*** (0.0112)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Partially Open Primary</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-0.0021 (0.0380)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Open to Unaffiliated Voters</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">0.1175*** (0.0272)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Open Primary</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-0.0533. (0.0265)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fixed-Effects:</td>
+<td style="text-align: left;">------------------</td>
+<td style="text-align: left;">-------------------</td>
+<td style="text-align: left;">--------------------</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MSA</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">_____________________________</td>
+<td style="text-align: left;">__________________</td>
+<td style="text-align: left;">___________________</td>
+<td style="text-align: left;">____________________</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">S.E.: Clustered</td>
+<td style="text-align: left;">by: MSA</td>
+<td style="text-align: left;">by: MSA</td>
+<td style="text-align: left;">by: MSA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: left;">81,329</td>
+<td style="text-align: left;">72,361</td>
+<td style="text-align: left;">72,361</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">R2</td>
+<td style="text-align: left;">0.00489</td>
+<td style="text-align: left;">0.44170</td>
+<td style="text-align: left;">0.81124</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Within R2</td>
+<td style="text-align: left;">--</td>
+<td style="text-align: left;">--</td>
+<td style="text-align: left;">0.67078</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Model 1 provides the bivariate OLS results of walkability’s effect on voter turnout in the 2016 primary. The coefficient is negative and fails to gain statistical significance. Model 2 provides the multivariate OLS results at nearly the full specification. Model 2 includes all variables except for primary election type and does not include fixed effects or clustered standard errors on MSA.</p>
+<p>Model 3 provides the complete multivariate OLS specification. The effect of walkability on voter turnout in the 2016 primary is positive and statistically significant at the .01 significance level. A one unit change in walkability results in a .13 percentage point increase in voter turnout, all else equal. As we add more variables to our models, the <span class="math inline">\(R^2\)</span> increases. The <span class="math inline">\(R^2\)</span> in model 3 is .81; our model explains 81% of the variation in primary voter turnout proportion across Census block groups.</p>
+<p>These results are robust when clustering standard errors and running fixed effects at the MSA level, accounting for the within and between variation. The .13 percentage unit level of effect is only slightly higher than what was observed in the general election. However, this slight increase does point to walkability’s effect being more pronounced in lower salient elections.</p>
+</section>
+<section id="study-2-survey-experiment" class="level1">
+<h1>Study 2: Survey Experiment</h1>
+<p>Now that we have established an association between the walkability of an area and voter turnout, we turn to testing why this relationship exists. Recall we theorized two potential mechanisms: cost and social pressure/socialization. Our goal is to identify which one of these mechanisms has the greatest influence in mediating the relationship between walkability and voter turnout. It is likely that both of these mechanisms have influence, however, to what extent is unknown and is the purpose of this survey experiment.</p>
+<p>We field our survey experiment on the American West Time-Sharing Survey. This survey fields questions to undergraduate students at the following institutions: Arizona State University; Colorado State University, Fort Collins; Colorado State University, Pueblo; Texas Tech University; Texas A&amp;M; California State University, Fullerton; San Diego State University; University of Arizona; University of California, Merced; University of Colorado Boulder; University of Florida; University of New Mexico; University of Missouri; University of Nebraska; University of Texas, Austin; University of Texas, El Paso; University of Texas, Rio Grande Valley; University of Utah; University of Houston.</p>
+<p>This survey has an expected <span class="math inline">\(n = 3000\)</span>. While these are the listed universities participating, they are subject to change.</p>
+<section id="survey-design" class="level2">
+<h2 class="anchored" data-anchor-id="survey-design">Survey Design</h2>
+<p>To test the potential mechanisms, we randomly assign respondents to 1 of 3 conditions. The conditions are as follows:</p>
+<section id="control" class="level3">
+<h3 class="anchored" data-anchor-id="control">Control:</h3>
+<blockquote class="blockquote">
+<p>Imagine you live in a highly walkable neighborhood where businesses and homes blend together, with tree-lined sidewalks, bike lanes, and bus stops. Grocery stores, coffee shops, restaurants, and retail shops are just a short walk away, and people are out and about.</p>
+</blockquote>
+</section>
+<section id="treatment-1-cost" class="level3">
+<h3 class="anchored" data-anchor-id="treatment-1-cost">Treatment 1: Cost:</h3>
+<blockquote class="blockquote">
+<p>Imagine you live in a highly walkable neighborhood where businesses and homes blend together, with tree-lined sidewalks, bike lanes, and bus stops. Grocery stores, coffee shops, restaurants, and retail shops are just a short walk away, and people are out and about.&nbsp; Moreover, post offices, libraries, churches, and community centers are just a short walk away, making regular errands and occasional activities easy to access.</p>
+</blockquote>
+</section>
+<section id="treatment-2-social-pressure" class="level3">
+<h3 class="anchored" data-anchor-id="treatment-2-social-pressure">Treatment 2: Social Pressure:</h3>
+<blockquote class="blockquote">
+<p>Imagine you live in a highly walkable neighborhood where businesses and homes blend together, with tree-lined sidewalks, bike lanes, and bus stops. Grocery stores, coffee shops, restaurants, and retail shops are just a short walk away, and people are out and about.&nbsp; It is a vibrant, socially-connected community where people know each others’ names, notice things, and expect people to look out for one another.</p>
+</blockquote>
+</section>
+<section id="outcomes" class="level3">
+<h3 class="anchored" data-anchor-id="outcomes">Outcomes:</h3>
+<p>Each respondent is then asked three questions on a 0-10 scale, with 0 = extremely unlikely; 10 = extremely likely. The question order is randomized for all respondents. These questions serve as our dependent variable and are as follows:</p>
+<ol type="1">
+<li><p>How likely would you be to vote in presidential elections if you lived in this community?</p></li>
+<li><p>How likely would you be to vote in local and off-year elections if you lived in this community?</p></li>
+<li><p>How likely would you be to vote in nonpresidential elections (like midterms) if you lived in this community?</p></li>
+</ol>
+</section>
+</section>
+<section id="survey-results" class="level2">
+<h2 class="anchored" data-anchor-id="survey-results">Survey Results</h2>
+<p><em>To come after completion of survey.</em></p>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p><em>Note: substantial revisions of this section will be completed after the survey.</em></p>
+<p><em>Does walkability influence voter turnout?</em> We find a significant association between the walkability of Census block group and voter turnout across all elections. Our statistical results appear modest, however, the level of effect between the lowest walkable block group (0) and the highest (20) roughly equates to a 2% voter turnout difference. With continued polarization, elections are growing increasingly close.</p>
+<p>It is worth mentioning that each election tested is characterized by Donald Trump’s presence. Trump being a polarizing figure in politics at the time motivated unique political activation among the populous.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>To our knowledge, this is the largest test of built environment factors on voter turnout in the United States. Our results add to the growing evidence between the built environment and political phenomenon.</p>
+<p>While the internet has changed the way we communicate with others politically, we should not discount the role of face-to-face communication.</p>
+</section>
+<section id="appendix" class="level1">
+<h1>Appendix</h1>
+<section id="appendix-a" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-a">Appendix A</h2>
+<section id="spherical-error-checks" class="level3">
+<h3 class="anchored" data-anchor-id="spherical-error-checks">Spherical error checks:</h3>
+</section>
+</section>
+<section id="appendix-b" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-b">Appendix B</h2>
+<section id="controls" class="level3">
+<h3 class="anchored" data-anchor-id="controls">Controls:</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Control Name</th>
+<th>Type</th>
+<th>Definition</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Population Density</td>
+<td>Proportion</td>
+<td>Need to go back and figure out where I sourced this. I think it was social explorer.</td>
+<td>TK</td>
+</tr>
+<tr class="even">
+<td>Median Home Value</td>
+<td>Numeric</td>
+<td>Media home value of homes in the block group</td>
+<td>L2 Voter File</td>
+</tr>
+<tr class="odd">
+<td>Median Household Income</td>
+<td>Numeric</td>
+<td>Median household income of individuals living in the block group</td>
+<td>L2 Voter File</td>
+</tr>
+<tr class="even">
+<td>Median Home Age</td>
+<td>Numeric</td>
+<td>The median year of homes built in the block group.</td>
+<td>L2 Voter File</td>
+</tr>
+<tr class="odd">
+<td>Age</td>
+<td>Proportion</td>
+<td>Proportion of individuals living in block group within a given age range.</td>
+<td>L2 Voter File</td>
+</tr>
+<tr class="even">
+<td>Gender</td>
+<td>Proportion</td>
+<td>Proportion of the reported gender of individuals living in a block group.</td>
+<td>L2 Voter File</td>
+</tr>
+<tr class="odd">
+<td>Party</td>
+<td>Proportion</td>
+<td>Proportion of registered party affiliates in a block group.</td>
+<td>L2 Voter File</td>
+</tr>
+<tr class="even">
+<td>Race</td>
+<td>Proportion</td>
+<td>Proportion of</td>
+<td>L2 Voter File</td>
+</tr>
+<tr class="odd">
+<td>Education</td>
+<td>Proportion</td>
+<td>Proportion of individuals living in a block group with</td>
+<td>L2 Voter File</td>
+</tr>
+<tr class="even">
+<td>Mail-in-Ballot</td>
+<td>Binary</td>
+<td>Whether the state allowed no absentee mail-in-ballots in each respective election. I do not have data on whether an individual voted in-person or with a mail-in-ballot.</td>
+<td>Ballotpedia - Hand coded</td>
+</tr>
+<tr class="odd">
+<td>Primary Election Type</td>
+<td>Categorical</td>
+<td>Whether the state has open, semi-closed, or closed primaries.</td>
+<td><a href="https://www.ncsl.org/elections-and-campaigns/state-primary-election-types">National Conference of State Legislators - Hand coded</a></td>
+</tr>
+<tr class="even">
+<td><p><strong>NOT INCLUDED:</strong></p>
+<p>Home owner/Renter</p>
+<p>See Oliver (2001) for reason why. Did not account for this variable in this iteration 03/16/25</p></td>
+<td>Numerical</td>
+<td>Number of voters in Census block groups who are home owners.</td>
+<td><p>L2 Voter Vile</p>
+<p>TK</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="appendix-individual-level-results" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-individual-level-results">Appendix Individual Level Results</h2>
+<p>Because the individual level voter file is so large, I restrict my individual level analysis to just the 2018 primary. My goal is to have all elections in the future. However, I am using a 3rd party data management hub that requires me to purchase computational credits to complete the full analysis. I am only allotted a certain amount of computation power to run these analysis and thus I can only do the 2018 primary at this time.</p>
+<p>I selected the 2018 primary because I felt it would be the most substantively interesting.</p>
+<section id="individual-level-data" class="level3">
+<h3 class="anchored" data-anchor-id="individual-level-data">Individual Level Data</h3>
+</section>
+<section id="summary-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="summary-statistics">Summary Statistics</h3>
+</section>
+</section>
+<section id="appendix-for-qp-defense" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-for-qp-defense">Appendix for QP Defense</h2>
+<ul>
+<li>This section is to help me remember the issue I am having with solving the sorting problem.</li>
+</ul>
+</section>
+</section>
+<section id="works-cited" class="level1">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Works Cited</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-almond2015civic" class="csl-entry" role="listitem">
+Almond, Gabriel Abraham, and Sidney Verba. 2015. <span>“The Civic Culture: Political Attitudes and Democracy in Five Nations.”</span>
+</div>
+<div id="ref-arceneaux2012get" class="csl-entry" role="listitem">
+Arceneaux, Kevin, Thad Kousser, and Megan Mullin. 2012. <span>“Get Out the Vote-by-Mail? A Randomized Field Experiment Testing the Effect of Mobilization in Traditional and Vote-by-Mail Precincts.”</span> <em>Political Research Quarterly</em> 65 (4): 882–94.
+</div>
+<div id="ref-bartels2005homer" class="csl-entry" role="listitem">
+Bartels, Larry M. 2005. <span>“Homer Gets a Tax Cut: Inequality and Public Policy in the American Mind.”</span> <em>Perspectives on Politics</em> 3 (1): 15–31.
+</div>
+<div id="ref-bishop2009big" class="csl-entry" role="listitem">
+Bishop, Bill, and Robert G Cushing. 2009. <em>The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart</em>. Houghton Mifflin Harcourt.
+</div>
+<div id="ref-brady2011turning" class="csl-entry" role="listitem">
+Brady, Henry E, and John E McNulty. 2011. <span>“Turning Out to Vote: The Costs of Finding and Getting to the Polling Place.”</span> <em>American Political Science Review</em> 105 (1): 115–34.
+</div>
+<div id="ref-brown2021measurement" class="csl-entry" role="listitem">
+Brown, Jacob R, and Ryan D Enos. 2021. <span>“The Measurement of Partisan Sorting for 180 Million Voters.”</span> <em>Nature Human Behaviour</em> 5 (8): 998–1008.
+</div>
+<div id="ref-burden2014election" class="csl-entry" role="listitem">
+Burden, Barry C, David T Canon, Kenneth R Mayer, and Donald P Moynihan. 2014. <span>“Election Laws, Mobilization, and Turnout: The Unanticipated Consequences of Election Reform.”</span> <em>American Journal of Political Science</em> 58 (1): 95–109.
+</div>
+<div id="ref-campbell1980american" class="csl-entry" role="listitem">
+Campbell, Angus. 1980. <em>The American Voter</em>. University of Chicago Press.
+</div>
+<div id="ref-carlson2019through" class="csl-entry" role="listitem">
+Carlson, Taylor N. 2019. <span>“Through the Grapevine: Informational Consequences of Interpersonal Political Communication.”</span> <em>American Political Science Review</em> 113 (2): 325–39.
+</div>
+<div id="ref-carpini1996americans" class="csl-entry" role="listitem">
+Carpini, Michael X Delli, and Scott Keeter. 1996. <em>What Americans Know about Politics and Why It Matters</em>. Yale University Press.
+</div>
+<div id="ref-dahl2005governs" class="csl-entry" role="listitem">
+Dahl, Robert A. 2005. <em>Who Governs?: Democracy and Power in an American City</em>. Yale university press.
+</div>
+<div id="ref-farrell2003political" class="csl-entry" role="listitem">
+Farrell, David M, and Rüdiger Schmitt-Beck. 2003. <em>Do Political Campaigns Matter?: Campaign Effects in Elections and Referendums</em>. Routledge.
+</div>
+<div id="ref-finlay2022cognability" class="csl-entry" role="listitem">
+Finlay, Jessica, Michael Esposito, Kenneth M Langa, Suzanne Judd, and Philippa Clarke. 2022. <span>“Cognability: An Ecological Theory of Neighborhoods and Cognitive Aging.”</span> <em>Social Science &amp; Medicine</em> 309: 115220.
+</div>
+<div id="ref-fitzgerald2018close" class="csl-entry" role="listitem">
+Fitzgerald, Jennifer. 2018. <em>Close to Home: Local Ties and Voting Radical Right in Europe</em>. Cambridge University Press.
+</div>
+<div id="ref-forsyth2015walkable" class="csl-entry" role="listitem">
+Forsyth, Ann. 2015. <span>“What Is a Walkable Place? The Walkability Debate in Urban Design.”</span> <em>Urban Design International</em> 20: 274–92.
+</div>
+<div id="ref-fortier2006absentee" class="csl-entry" role="listitem">
+Fortier, John C. 2006. <em>Absentee and Early Voting: Trends, Promises, and Perils</em>. Aei Press Washington, DC.
+</div>
+<div id="ref-fowler2006altruism" class="csl-entry" role="listitem">
+Fowler, James H. 2006. <span>“Altruism and Turnout.”</span> <em>The Journal of Politics</em> 68 (3): 674–83.
+</div>
+<div id="ref-funk2010social" class="csl-entry" role="listitem">
+Funk, Patricia. 2010. <span>“Social Incentives and Voter Turnout: Evidence from the Swiss Mail Ballot System.”</span> <em>Journal of the European Economic Association</em> 8 (5): 1077–1103.
+</div>
+<div id="ref-gerber2000effects" class="csl-entry" role="listitem">
+Gerber, Alan S, and Donald P Green. 2000. <span>“The Effects of Canvassing, Telephone Calls, and Direct Mail on Voter Turnout: A Field Experiment.”</span> <em>American Political Science Review</em> 94 (3): 653–63.
+</div>
+<div id="ref-gerber2008social" class="csl-entry" role="listitem">
+Gerber, Alan S, Donald P Green, and Christopher W Larimer. 2008. <span>“Social Pressure and Voter Turnout: Evidence from a Large-Scale Field Experiment.”</span> <em>American Political Science Review</em> 102 (1): 33–48.
+</div>
+<div id="ref-gilens2014testing" class="csl-entry" role="listitem">
+Gilens, Martin, and Benjamin I Page. 2014. <span>“Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens.”</span> <em>Perspectives on Politics</em> 12 (3): 564–81.
+</div>
+<div id="ref-gimpel2003political" class="csl-entry" role="listitem">
+Gimpel, James G, and Jason E Schuknecht. 2003. <span>“Political Participation and the Accessibility of the Ballot Box.”</span> <em>Political Geography</em> 22 (5): 471–88.
+</div>
+<div id="ref-granovetter1983strength" class="csl-entry" role="listitem">
+Granovetter, Mark. 1983. <span>“The Strength of Weak Ties: A Network Theory Revisited.”</span> <em>Sociological Theory</em>, 201–33.
+</div>
+<div id="ref-hopkins2012inactive" class="csl-entry" role="listitem">
+Hopkins, Daniel J, and Thad Williamson. 2012. <span>“Inactive by Design? Neighborhood Design and Political Participation.”</span> <em>Political Behavior</em> 34: 79–101.
+</div>
+<div id="ref-huckfeldt1979political" class="csl-entry" role="listitem">
+Huckfeldt, R Robert. 1979. <span>“Political Participation and the Neighborhood Social Context.”</span> <em>American Journal of Political Science</em>, 579–92.
+</div>
+<div id="ref-huckfeldt2001social" class="csl-entry" role="listitem">
+Huckfeldt, Robert. 2001. <span>“The Social Communication of Political Expertise.”</span> <em>American Journal of Political Science</em>, 425–38.
+</div>
+<div id="ref-huckfeldt1995political" class="csl-entry" role="listitem">
+Huckfeldt, Robert, Paul Allen Beck, Russell J Dalton, and Jeffrey Levine. 1995. <span>“Political Environments, Cohesive Social Groups, and the Communication of Public Opinion.”</span> <em>American Journal of Political Science</em>, 1025–54.
+</div>
+<div id="ref-jacobs1992death" class="csl-entry" role="listitem">
+Jacobs, Jane. 1992. <span>“The Death and Life of Great American Cities. 1961.”</span> <em>New York: Vintage</em> 321 (325): 9783839413272–099.
+</div>
+<div id="ref-jennings1968transmission" class="csl-entry" role="listitem">
+Jennings, M Kent, and Richard G Niemi. 1968. <span>“The Transmission of Political Values from Parent to Child.”</span> <em>American Political Science Review</em> 62 (1): 169–84.
+</div>
+<div id="ref-johansson2011psychological" class="csl-entry" role="listitem">
+Johansson, Marcus, Terry Hartig, and Henk Staats. 2011. <span>“Psychological Benefits of Walking: Moderation by Company and Outdoor Environment.”</span> <em>Applied Psychology: Health and Well-Being</em> 3 (3): 261–80.
+</div>
+<div id="ref-lawrence1990built" class="csl-entry" role="listitem">
+Lawrence, Denise L, and Setha M Low. 1990. <span>“The Built Environment and Spatial Form.”</span> <em>Annual Review of Anthropology</em>, 453–505.
+</div>
+<div id="ref-lazarsfeld1968people" class="csl-entry" role="listitem">
+Lazarsfeld, Paul F, Bernard Berelson, and Hazel Gaudet. 1968. <em>The People’s Choice: How the Voter Makes up His Mind in a Presidential Campaign</em>. Columbia University Press.
+</div>
+<div id="ref-levan2020neighborhoods" class="csl-entry" role="listitem">
+LeVan, Carrie. 2020. <span>“Neighborhoods That Matter: How Place and People Affect Political Participation.”</span> <em>American Politics Research</em> 48 (2): 286–94.
+</div>
+<div id="ref-leyden2003social" class="csl-entry" role="listitem">
+Leyden, Kevin M. 2003. <span>“Social Capital and the Built Environment: The Importance of Walkable Neighborhoods.”</span> <em>American Journal of Public Health</em> 93 (9): 1546–51.
+</div>
+<div id="ref-lyons2023you" class="csl-entry" role="listitem">
+Lyons, Jeffrey, and Stephen M Utych. 2023. <span>“You’re Not from Here!: The Consequences of Urban and Rural Identities.”</span> <em>Political Behavior</em> 45 (1): 75–101.
+</div>
+<div id="ref-mcclurg2003social" class="csl-entry" role="listitem">
+McClurg, Scott D. 2003. <span>“Social Networks and Political Participation: The Role of Social Interaction in Explaining Political Participation.”</span> <em>Political Research Quarterly</em> 56 (4): 449–64.
+</div>
+<div id="ref-nathan2023grids" class="csl-entry" role="listitem">
+Nathan, Noah L. 2023. <span>“Do Grids Demobilize? How Street Networks, Social Networks, and Political Networks Intersect.”</span> <em>American Journal of Political Science</em>.
+</div>
+<div id="ref-oliver2001democracy" class="csl-entry" role="listitem">
+Oliver, J Eric. 2001. <em>Democracy in Suburbia</em>. Princeton University Press.
+</div>
+<div id="ref-pattie2000people" class="csl-entry" role="listitem">
+Pattie, Charles, and Ron Johnston. 2000. <span>“<span>‘People Who Talk Together Vote Together’</span>: An Exploration of Contextual Effects in Great Britain.”</span> <em>Annals of the Association of American Geographers</em> 90 (1): 41–66.
+</div>
+<div id="ref-plutzer2002becoming" class="csl-entry" role="listitem">
+Plutzer, Eric. 2002. <span>“Becoming a Habitual Voter: Inertia, Resources, and Growth in Young Adulthood.”</span> <em>American Political Science Review</em> 96 (1): 41–56.
+</div>
+<div id="ref-putnam2000bowling" class="csl-entry" role="listitem">
+Putnam, Robert D. 2000. <span>“Bowling Alone: The Collapse and Revival of American Community.”</span> <em>Simon Schuster</em>.
+</div>
+<div id="ref-riker1968theory" class="csl-entry" role="listitem">
+Riker, William H, and Peter C Ordeshook. 1968. <span>“A Theory of the Calculus of Voting.”</span> <em>American Political Science Review</em> 62 (1): 25–42.
+</div>
+<div id="ref-roe2011restorative" class="csl-entry" role="listitem">
+Roe, Jenny, and Peter Aspinall. 2011. <span>“The Restorative Benefits of Walking in Urban and Rural Settings in Adults with Good and Poor Mental Health.”</span> <em>Health &amp; Place</em> 17 (1): 103–13.
+</div>
+<div id="ref-rolfe2012voter" class="csl-entry" role="listitem">
+Rolfe, Meredith. 2012. <em>Voter Turnout: A Social Theory of Political Participation</em>. Cambridge University Press.
+</div>
+<div id="ref-sides2019identity" class="csl-entry" role="listitem">
+Sides, John, Michael Tesler, and Lynn Vavreck. 2019. <em>Identity Crisis: The 2016 Presidential Campaign and the Battle for the Meaning of America</em>. Princeton University Press.
+</div>
+<div id="ref-sondheimer2010using" class="csl-entry" role="listitem">
+Sondheimer, Rachel Milstein, and Donald P Green. 2010. <span>“Using Experiments to Estimate the Effects of Education on Voter Turnout.”</span> <em>American Journal of Political Science</em> 54 (1): 174–89.
+</div>
+<div id="ref-statista2025" class="csl-entry" role="listitem">
+Statista. 2025. <span>“U.s. Construction of Residential Buildings: Average Time.”</span> <a href="https://www.statista.com/statistics/909951/us-construction-of-residential-buildings-average-time/">https://www.statista.com/statistics/909951/us-construction-of-residential-buildings-average-time/</a>.
+</div>
+<div id="ref-tiebout1956pure" class="csl-entry" role="listitem">
+Tiebout, Charles M. 1956. <span>“A Pure Theory of Local Expenditures.”</span> <em>Journal of Political Economy</em> 64 (5): 416–24.
+</div>
+<div id="ref-van2017subjective" class="csl-entry" role="listitem">
+Van den Berg, Pauline, Fariya Sharmeen, and Minou Weijs-Perrée. 2017. <span>“On the Subjective Quality of Social Interactions: Influence of Neighborhood Walkability, Social Cohesion and Mobility Choices.”</span> <em>Transportation Research Part A: Policy and Practice</em> 106: 309–19.
+</div>
+<div id="ref-verba1995voice" class="csl-entry" role="listitem">
+Verba, Sidney, Kay Lehman Schlozman, and Henry E Brady. 1995. <em>Voice and Equality: Civic Voluntarism in American Politics</em>. Harvard University Press.
+</div>
+<div id="ref-williamson2008sprawl" class="csl-entry" role="listitem">
+Williamson, Thad. 2008. <span>“Sprawl, Spatial Location, and Politics: How Ideological Identification Tracks the Built Environment.”</span> <em>American Politics Research</em> 36 (6): 903–33.
+</div>
+<div id="ref-Wong_Bowers_Rubenson_Fredrickson_Rundlett_2020" class="csl-entry" role="listitem">
+Wong, Cara, Jake Bowers, Daniel Rubenson, Mark Fredrickson, and Ashlea Rundlett. 2020. <span>“Maps in People’s Heads: Assessing a New Measure of Context.”</span> <em>Political Science Research and Methods</em> 8 (1): 160–68. <a href="https://doi.org/10.1017/psrm.2018.51">https://doi.org/10.1017/psrm.2018.51</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2025,
+  author = {Neilon, Stone},
+  title = {The {Effects} of {Walkability} on {Voter} {Turnout}},
+  date = {2025-03-19},
+  url = {https://stoneneilon.github.io/research/final_walkability},
+  langid = {en},
+  abstract = {Walkability - the ease of walking to amenities within an
+    area - mediates how people engage and interact with others. While
+    the factors that influence voter turnout are extensive, previous
+    literature shows variation in voting barriers and political
+    socialization are strong indicators of voter turnout. Given
+    walkability mediates the cost of voting and political socialization,
+    we ask, does walkability influence voter turnout? Using the
+    Environmental Protection Agency’s (EPA) walkability index and voting
+    data from the 2016, 2018, and 2020 general and primary presidential
+    elections, we observe the level of impact walkability has on voter
+    turnout at the census block group level in the 25 most populated
+    Metropolitan Statistical Areas (MSA). We find Census block groups
+    with higher walkability were associated with higher voter turnout
+    across all elections. We theorize these results are mediated through
+    two factors: cost and social pressure. To separate the effects of
+    these factors, we plan a survey experiment to be conducted in April
+    2025.}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-neilon2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Neilon, Stone. 2025. <span>“The Effects of Walkability on Voter
+Turnout.”</span> March 19, 2025. <a href="https://stoneneilon.github.io/research/final_walkability">https://stoneneilon.github.io/research/final_walkability</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

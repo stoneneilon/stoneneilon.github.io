@@ -1,0 +1,612 @@
+---
+title: "Introductory Game Theory"
+description: "Professor: Josh Strayhorn"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 01-14-2025
+categories: [Spring, 2025, American] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/Game_Theory/
+image: hangover_math.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Week 1: Utility, Decision theory, Rationality
+
+## Needed Skills:
+
+-   be able to solve for X.
+
+-   Know some calculus.
+
+    -   taking derivative
+
+        -   power rule basically.
+
+## Assignments:
+
+-   Problem sets: homework assignments due the week after they are handed out.
+
+    -   you will get stuck.
+
+-   One exam
+
+    -   after bootcamp
+
+    -   closed note exam
+
+-   One paper
+
+    -   equilibrium spaces and comparative statics is important for the paper.
+
+## What is Game Theory:
+
+-   Strategic interaction - two or more players with potentially conflicting goals.
+
+    -   Players' choices depend on what others might do.
+
+-   Interdependence!
+
+-   Two assumptions:
+
+    -   **Common knowledge:** something is common knowledge if everyone knows it, everyone knows that everyone knows it.
+
+        -   structure of game is always common knowledge
+
+        -   breaking this assumption gets interesting but is hard.
+
+        -   don't forget that it is there!
+
+    -   **Rationality:** players will act to maximize utility
+
+        -   players are goal-oriented
+
+        -   trying to achieve the most value of the game
+
+        -   not making moves arbitrary.
+
+        -   players are trying to accomplish *something*.
+
+        -   utility is a rank-ordering of outcomes.
+
+            -   actions: rock, paper, scissors
+
+            -   outcomes: win, lose, draw
+
+                -   actors are concerned with the outcome space
+
+                    -   actions are instrumental.
+
+            -   players are playing to win the *game.*
+
+        -   Players assume all other players are rational.
+
+-   Models must specify:
+
+    -   actors
+
+    -   strategies (their available choices or actions)
+
+    -   interests (utilities over outcomes)
+
+-   Utility:
+
+    -   assigns numbers to outcomes in some way
+
+    -   we want to be able to do math on our utility functions.
+
+    -   utility is just a rank ordering
+
+        -   a utility function is where assign some number to it.
+
+-   Utility Functions:
+
+    -   **Function**: a mapping of inputs to outputs
+
+    -   the input is an outcome of the game.
+
+    -   vertical line rule!
+
+        -   every input must return a unique output.
+
+    -   should work smoothly with respect to lotteries/gambles.
+
+    -   discrete = finite
+
+-   Expected utility (EU)
+
+    -   preference ranking
+
+    -   averaging across discrete events
+
+    -   used to explore how decisions are made - how we compare choices to one another under uncertainty.
+
+-   VNM axioms:
+
+    -   Completeness:
+
+        -   For any A,B, either A \> B, B \> A, or A = B
+
+        -   intuitively: utility value is assigned to everything
+
+    -   Continuity:
+
+        -   if A \> B \> C, there exist some $p \in [0,1]: pA + (1-p)C = B$
+
+    -   Transitivity:
+
+        -   A \>B and B\>C, A\>C
+
+        -   no preference cycles
+
+    -   Independence:
+
+        -   if A \> B, then for any $p \in [0,1], pA+(1-p)C>pB+(1-p)C$
+
+        -   preference between A and B should be the same regardless of irrelevant alternative C.
+
+-   All we are assuming is that actors have goals and we can rank those goals.
+
+    -   this is rationality.
+
+-   Thin vs. Thick rationality
+
+    -   thin: just assume goal oriented
+
+        -   you could make Charles Manson rational with this
+
+        -   kinda like overfitting
+
+    -   Thick: more bounded.
+
+        -   convention
+
+-   Changing the utility function mapping captures risk-aversion
+
+    -   can also do risk-acceptance
+
+-   Convex vs. concave utility
+
+    -   **Convex:** risk acceptant
+
+        -   opens upward
+
+            -   "concave up" - Josh
+
+    -   **Concave:** is risk averse
+
+        -   opens downward
+
+            -   "concave down" - Josh
+
+## Reading (Chapter 1)
+
+### Decision Problem has 3 features:
+
+1.  Actions: all the alternatives from which the player can choose.
+
+2.  Outcomes: the possible consequences that can results from any of the actions
+
+3.  Preferences: describe how the player ranks the set of possible outcomes from most desired to least desired. The **preference relation** describes the player's preferences and the notation $x \succsim y$ means "x is at least as good as y."
+
+## Notation
+
+$x \succsim y$ means "x is at least as good as y." - preference relation
+
+$x \succ y$ means "x is strictly better than y." - Strict preference relation
+
+$x \thicksim y$ means "x and y are equally as good." - indifference relation
+
+## Assumptions
+
+-   Players must be able to rank outcomes.
+
+    -   The completeness Axiom
+
+-   Transitive axiom.
+
+    -   at least one best outcome.
+
+## Payoff function:
+
+-   The ability to rank our decisions numerically.
+
+-   assigning a value to our preferences that can be ranked.
+
+-   How we actually assign the value is not important
+
+    -   so long as they represent the correct ordering of our preferences.
+
+## Rational Choice Paradigm:
+
+-   An individual is rational in that he chooses actions that maximize his well-being as defined by his payoff function over the resulting outcomes
+
+-   This assumption is the rational choice paradigm.
+
+-   We make assumptions within this paradigm
+
+    -   The player fully understands the decision problem by knowing:
+
+        -   all possible actions; A
+
+        -   all possible outcomes; X
+
+        -   exactly how each action affects which outcome will materialize
+
+        -   his rational preferences (payoffs) over outcomes.
+
+## Chapter 2
+
+-   Decision trees are useful to visualize actions and outcomes.
+
+-   A= {g,s}; these are the sets of all possible actions
+
+-   X = {0,10} these represent the outcomes (in profit terms).
+
+-   We can utilize a decision tree to describe the player's decision problem that includes uncertainty.
+
+-   How do players make choices?
+
+    -   they sum over the probabilities of the events they want.
+
+        -   figure 2.2. Player would choose the action that has the highest probability of achieving the output they desire.
+
+-   Expected payoff from the lottery
+
+    -   maybe there is a cost associated
+
+        -   figure 2.3
+
+        -   we still average out.
+
+            -   whichever expected payoff is higher, the actor should choose.
+
+    -   v(a) is used to define the expected payoff of an action
+
+        -   Example:
+
+            -   v(g) = 6.5
+
+            -   v(s) = 5
+
+                -   we read this as the expected payoff of taking action g is 6.5 and the expected payoff of taking action s is 5.
+
+                    -   the player should choose action g as it has the higher expected payoff.
+
+-   When we choose to use expected payoff then the intensity of preferences matters.
+
+### Rational Decision Making with Uncertainty:
+
+1.  We define a rational player as one who chooses an action that maximizes his payoffs among the set of all possible actions.
+
+2.  FIGURE 2.4
+
+3.  One thing im struggling with is how we determine the payoffs and cost.
+
+### Applications
+
+-   When decisions lead to stochastic outcomes, our rational player chooses his action to maximize his expected payoff so that *on average* he is making the right choice.
+
+# Week 2: Discrete Choice Games in Normal Form
+
+## Lecture Notes:
+
+-   Homework is suppose to be hard.
+
+-   Turn in hard copy and include your scratch work.
+
+-   Normal Form aka strategic form
+
+-   extensive form games are the trees
+
+    -   more flexible
+
+-   Prisoner's Dilemma
+
+    -   keep quiet or talk
+
+    -   games have players, action/outcome, interests.
+
+    -   normal form game
+
+    -   cell entries are outcomes
+
+    -   strategies are talk or quiet
+
+-   Player 1 always the ROW player
+
+-   Player 2 always the COLUMN PLAYER
+
+-   player 1, player 2
+
+-   Normal form games are **always simultaneous**
+
+    -   **Utility function -** input is the final decisions (the strategy combinations) -\> outputs is a cardinal rank order of the strategy combinations.
+
+-   A solution is a prediction about how game will be played.
+
+    -   **We want to identify 'reasonable' ways to play.**
+
+-   We want a systematic rule to produce solutions
+
+    -   we need some standard
+
+    -   any rule that produces solution is a **solution concept**
+
+        -   josh thinks of solution concepts as gatekeeprs
+
+            -   they eliminate unreasonable strategies rather than identifying reasonable ones.
+
+            -   it is often more informative that something is not a Nash equilibrium than that something is.
+
+### Nash Equilibrium
+
+-   2nd most important concept in this course.
+
+-   Nash depends on the concept of: **best reply or best response**
+
+    -   **this is the most important thing.**
+
+-   best response correspondence
+
+    -   going through every possible strategy by one player and figuring out the other's best response.
+
+-   Nash is a set of mutual best replies
+
+    -   in prisoner dilemma - the both defect cell is a nash.
+
+    -   no regret basically
+
+-   To find Nash - we assume or stipulate a strategy profile.
+
+    -   if no individual can profitably deviate from that profile, it is Nash.
+
+-   never compare across diagonals!
+
+-   Nash is based off rational anticipation.
+
+-   Nash involves a common conjecture
+
+-   I play x because I think you'll play y; I also think it's reasonable for you to play y given I will play x.
+
+-   *Beliefs:* **what one player believes the other's strategy will be.**
+
+-   every game has at least one Nash Equilibrium\*
+
+-   **a profile that fails to be Nash does not have a mutually-reinforcing common conjecture.**
+
+-   Nash doesn't make predictions about which equilibrium actually happens.
+
+### Rationtalizable
+
+-   A strategy is rationalizable if it is a best reply to at least one strategy that can be played by the opponent.
+
+-   in prisoner dilemma, Cooperate is not rationalizable because it is never a best reply under any conditions.
+
+-   thought process being modeled.
+
+## Chapter 3: Preliminaries
+
+-   3 elements
+
+    -   possible actions
+
+    -   the deterministic or probabilistic relationship between actions and outcomes
+
+    -   the decision maker's preferences over the possible outcomes.
+
+-   We need to understand what other players are going to do.
+
+```         
+-   what is the strategic environment.
+```
+
+-   **Strategic environment:** you have to think hard about what other players are doing in order to decide what is best for you - knowing that the other players are going through the same difficulties.
+
+### Static Games:
+
+-   a player makes a once-and-for-all decision, after which outcomes are realized.
+
+-   2 steps - these settle what we mean by *static*:
+
+    -   1\) Each player simultaneously and independently chooses an action.
+
+    -   2\) Conditional on the players' choices of actions, payoffs are distributed to each player.
+
+-   Complete information:
+
+    -   all players understand the environment they are in - that is, the game they are playing- in every way.
+
+### Games of Complete Information
+
+1.  All the possible actions of all the players
+
+2.  all the possible outcomes
+
+3.  how each combination of actions of all players affects which outcome will materialize
+
+4.  the preferences of each and every player over outcomes.
+
+-   Common knowledge:
+
+    -   Everyone knows E, everyone knows that everyone knows E.
+
+### Normal-form Games with Pure Strategies
+
+-   A Normal-form game consists of three features:
+
+    -   set of players
+
+        -   $N={1,2….,n}$
+
+    -   set of actions for each player
+
+        -   a collection of sets of pure strategies
+
+            -   ${S_1, S_2,….,S_n}$
+
+    -   a set of payoff functions for each player that give a payoff value to each combination of the players' chosen actions.
+
+-   Strategy: a plan of action intended to accomplish a specific goal.
+
+-   A **pure strategy** for player i is a deterministic plan of action. The set of all **pure strategies** for player i is denoted $S_i$.
+
+-   only focusing on deterministic pure strategy right now. Not stochastic.
+
+### Example: The Prisoner's Dilemma
+
+-   static game
+
+-   complete information
+
+-   best strategy is to confess.
+
+### Example: Battle of the Sexes
+
+-   There is no strategy that is always best.
+
+-   playing F is best of your opponent plays F.
+
+-   playing O is best if your opponent plays O.
+
+-   does not provide a useful solution concept.
+
+### Solution Concept:
+
+-   a method of analyzing games with the objective of restricting the set of *all possible outcomes* to those that are *more reasonable than others.*
+
+-   We will consider some reasonable and consistent assumptions about the behavior and beliefs of players that will divide the space of outcomes into "more likely" and "less likely"
+
+-   if rules are set, how people are going to react - this is the solution concept.
+
+-   There are different solution concepts.
+
+    -   Dominant strategy
+
+    -   Rationalization
+
+    -   Nash Equilibrium
+
+### Equilibrium:
+
+-   For any one strategy profiles that emerges as on of the solution concept's predictions
+
+-   We often think of equilibria as the *actual predictions* of our theory.
+
+-   we add a fourth assumption
+
+    -   self-enforcement.
+
+        -   constrains the set of out outcomes that are reasonable.
+
+            -   critical assumption for noncooperative game theory
+
+### Non-Cooperative game theory:
+
+-   Each player is in control of his own actions and he will stick to an action only if he finds it to be in his best interest.
+
+-   If a profile of strategies is to be an equilibrium, we will require each player to be happy with his own choice given how the others make their own choices.
+
+-   Competitive environments where players act independently and don't form alliances.
+
+### Pareto Optimality:
+
+-   an outcome is considered to be socially undesirable if there is a different outcome that would make some people better off without harming anyone else.
+
+-   efficiency, no waste.
+
+-   kinda seems like another way to say you cannot "iterate" any further? Not sure if this is correct.
+
+## Chapter 4: Rationality and Common Knowledge
+
+### Dominant Strategy
+
+-   In a prisoner dilemma, defection strictly dominates cooperation
+
+    -   There is a dominant strategy
+
+-   Rational players **never** play a strictly dominated strategy.
+
+-   In the Battle of the Sexes game
+
+    -   Neither players has a dominant strategy.
+
+    -   if we stick to the solution concept of strict dominance where there is no equilibrium.
+
+        -   most games do not have strict dominance.
+
+## Iterated Elimination of Strictly Dominated Pure Strategies
+
+1.  A rational player will never play a dominated strategy.
+
+2.  If a rational player has a strictly dominated strategy then he will play it.
+
+### Cournot Duopoly
+
+-   firms simultaneously chooses a quantity of production.
+
+-   firms want to maximize profit.
+
+-   firms are in equilibrium when each does not want to change what it is doing given the other firm's strategy.
+
+### Beliefs, Best Response, and Rationalizability
+
+-   Strict dominance and IESDS are based on eliminating actions that players would never play.
+
+-   An alt approach: what possible strategies might players choose to play and under what conditions?
+
+-   Difference between decision theory and game:
+
+    -   in a game your optimal decision not only depends on the structure of the game, but it will often depend on what the other players are doing.
+
+-   qualify strategy
+
+-   **In order for a player to be optimizing in a game, he has to choose a best strategy as a response to the strategy of his opponents.**
+
+-   if i think my opponents are doing $s_{-i}$ , then I should do $s_i$
+
+### Rationalizability
+
+-   Instead of asking what your opponents might be doing, you asked
+
+    -   "what would a rational player not do?"
+
+        -   we are now going to do basically the inverse.
+
+-   "What might a rational player do?"
+
+    -   a rational player will select only one strategies that are a best response to some profile of his opponents.
+
+-   We can eliminate all strategies that are never a best response.
+
+-   What survives is called the set of rationalizable strategies.
+
+-   Rationalizability and IESDS are basically two sides of the same coin
+
+    -   some slight difference is mentioned that will be elaborated later.
+
+## Chapter 5: Pinning Down Beliefs: Nash Equilibrium
+
+-   For dominant strategy equilibrium we required only that players be rational
+
+-   IESDS and rationalizability we required common knowledge of rationality
+
+-   **Nash Equilibrium:** is a system of beliefs and a profile of actions for which each player is playing a best response to his beliefs and, moreover, players have **correct** beliefs.
+
+-   best response to a best response.
+
+-   Requirements for Nash Equilibrium:
+
+    -   Each player is playing a best response to his beleifs
+
+    -   the beliefs of the players about their opponents are correct.
+
+-   does not guarantee pareto optimality.
+
+-   self-enforcing outcomes.
+
+-   left to their own devices, people in many situations will do what is best for them, at the expense of social efficiency.

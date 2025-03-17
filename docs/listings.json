@@ -35,13 +35,15 @@
       "/notes/Rule_of_Law/index.html",
       "/notes/ICPSR_Machine_Learning/index.html",
       "/notes/MLE/index.html",
+      "/notes/Game_Theory/index.html",
       "/notes/ICPSR_Math_Review/index.html",
       "/notes/ICPSR_Intro_to_Python/index.html",
       "/notes/Data/index.html",
       "/notes/Comparative_Behavior/index.html",
       "/notes/American_Subnational_Politics_and_Government/index.html",
       "/notes/American_Politics/index.html",
-      "/notes/American_Institutions/index.html"
+      "/notes/American_Institutions/index.html",
+      "/notes/American_Behavior/index.html"
     ]
   },
   {
@@ -54,6 +56,7 @@
     "listing": "/research.html",
     "items": [
       "/research/final_core/index.html",
+      "/research/final_Walkability/index.html",
       "/research/final_TAD/index.html"
     ]
   }

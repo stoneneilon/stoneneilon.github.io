@@ -1,0 +1,754 @@
+---
+title: "The Effects of Walkability on Voter Turnout"
+date: 2025-03-19
+categories: [In Progress, Seminar Paper, Spring 2025] 
+author:
+  - name: Stone Neilon
+    id: sn
+    orcid: 0009-0006-6026-4384
+    email: stone.neilon@colorado.edu
+    affiliation: 
+      - name: University of Colorado Boulder
+        city: Boulder
+        state: CO
+        url: https://www.colorado.edu/
+abstract: > 
+  Walkability - the ease of walking to amenities within an area - mediates how people engage and interact with others. While the factors that influence voter turnout are extensive, previous literature shows variation in voting barriers and political socialization are strong indicators of voter turnout. Given walkability mediates the cost of voting and political socialization, we ask, does walkability influence voter turnout? Using the Environmental Protection Agency's (EPA) walkability index and voting data from the 2016, 2018, and 2020 general and primary presidential elections, we observe the level of impact walkability has on voter turnout at the census block group level in the 25 most populated Metropolitan Statistical Areas (MSA). We find Census block groups with higher walkability were associated with higher voter turnout across all elections. We theorize these results are mediated through two factors: cost and social pressure. To separate the effects of these factors, we plan a survey experiment to be conducted in April 2025. 
+
+keywords:
+  - Built Environment
+  - Voter Turnout
+  - Walkability
+license: "CC BY"
+copyright: 
+  holder: Stone Neilon
+  year: 2025
+bibliography: ref.bib
+link-citations: true
+draft: false
+citation: 
+  url: https://stoneneilon.github.io/research/final_walkability
+---
+
+# Introduction
+
+Critical to a healthy democracy is the political participation and active engagement of the citizenry [@dahl2005governs]. Who has access to the voting booth has critical consequences for whose voice is represented [@gilens2014testing]. There are many ways for citizens to be politically involved but none are more prevalent than the action of voting. Given voting is the most widespread participatory action in politics and is that final choice made to decide the form of government, scholars have devoted considerable effort to understanding and predicting the factors that cause individuals to vote. However, because voting is not compulsory, understanding what ultimately causes someone to vote has led to numerous theories and factors.
+
+Voter turnout work tends to understand the drivers of voter turnout through either individual or environmental level factors [@campbell1980american] [@lazarsfeld1968people]. Despite these two perspectives, what likely drives voter turnout is a combination of these factors. In the years since the development of the Columbia and Michigan models, scholars have identified the effects of political knowledge [@carpini1996americans], identity [@sides2019identity], campaign effects [@farrell2003political], network socialization [@rolfe2012voter], education [@sondheimer2010using], convenience voting [@burden2014election], parental socialization [@jennings1968transmission], and many, many more [@plutzer2002becoming]. Despite this vast literature, we still know very little about how physical space, or the *built environment*, can shape political behaviors.
+
+The built environment is a concept heavily studied within the fields of urban planning and public health. The built environment is defined as the man-made structures, features, and facilities viewed collectively as an environment in which people live and work [@lawrence1990built]. Studies of the built environment struggle due to measurement issues and differences. We choose to operationalize the built environment by using a measure of walkability. Walkability is a closely related concept but is defined as the ease of walking to amenities within a given area [@forsyth2015walkable]. We use our measure of walkability to study voter turnout in the 25 most populated Metropolitan Statistical Areas (MSA). Previous studies of the built environment and political phenomenon have varied in their measurements and use surveys/case studies to study the effect on political participation. We provide the first known systematic national study of the built environment on political participation. To measure voter turnout, we use the L2 voter file aggregated to the Census block group level. We find a significantly positive association between walkability and voter turnout. We then field a survey to better understand what underlying mechanisms drive this association.
+
+Our results motivate greater attention to the relationship between the built environment and political phenomenon. The design of physical space has been rarely considered on political behavior. Because physical space structures how people interact and engage socially, how its' design varies can lead to different political behaviors. In addition, its' design is a collection of social choices made over time. By understanding how the built environment structures social interaction and thus political behaviors, we can better shape its formation to improve political outcomes more conducive to a healthy and equitable democracy.
+
+# The Built Environment and Political Participation
+
+The built environment is defined as the man-made structures, features, and facilities viewed collectively as an environment in which people live and work [@lawrence1990built]. While other disciplines such as urban planning and the public health literature have tested the built environment on social, mental, and physical health questions, with some notable exceptions, its effect on political phenomenon is sparse. @putnam2000bowling considered suburbanization to be a major factor in the decline of social capital but found null results. @leyden2003social finds individuals in more walkable, mixed-use neighborhoods were more likely to have higher social capital in Galway, Ireland. However, @hopkins2012inactive find built environmental factors did not have any effect on voting but were significant on harder forms of political engagement. More recently, @nathan2023grids finds more gridded and orderly streets reduces social cohesion and depresses political turnout in Ghana. Despite mixed results, there is likely some true level of effect between one's built environment and political participation. However, the built environment is an abstract concept and thus difficult to measure. Each of the aforementioned studies measured it differently. We operationalize the built environment using a measure of walkability. Walkability is a similar concept, defined as the ease of walking to amenities within an area.
+
+From the perspective of the voter calculus model, walkability's effect could flow through either the "C" (cost) or "D" (citizen duty) term [@riker1968theory]. Because voting is still largely seen as a physical action in which voters travel to the polls, we posit two potential mechanisms. First, a walkable area can reduce the cost - both perceived and actual - of turning out to vote. Second, because walkability increases the frequency of face-to-face interaction, individuals may feel greater social pressure to vote, increasing their feeling of "citizen duty".
+
+## Cost of Voting
+
+The action of voting always has some cost greater than zero [@riker1968theory]. The higher the cost, the less likely it is for an individual to vote, all else equal. For the majority of voters, the action of voting is physical. Voting is not equal for all individuals. In addition to information costs, you must travel the polling location, potentially wait in line, and finally take the time to actually complete the process of voting. Election laws and convenience voting measures influence turnout and vary across states [@burden2014election]. However, the vast majority of voters (especially prior to COVID-19) cast their ballots in person on election day. While they find null results for voting, @hopkins2012inactive find harder forms of political participation such as protesting and going to a town hall were significantly impacted by distance.
+
+The ability of walkability to reduce the cost of voting is driven primarily through the benefits it provides in transportation options. The farther the polling booth is from where an individual lives, decreases their likelihood to turn out [@brady2011turning]. @gimpel2003political provides additional evidence, finding that voter turnout in reduced in suburban precincts when the polling location is between 2-5 miles away. Given much of American society is car-centric, transportation issues can magnify the cost of traveling to the polls. A walkable environment not only provides the opportunity to walk to the polls but it provides alternative transportation options to be utilized such as subways, buses, or bikes. Thus a walkable environment can reduce the objective cost of traveling to the polls.
+
+A walkable environment may reduce the perceived cost of voting. Studies from other disciplines, find built environments conducive with a walkable environment influence walking patterns. The action of walking can reduce stress, improve mental and physical health, and increase cognition [@finlay2022cognability] [@johansson2011psychological] [@roe2011restorative]. So while a walk could take an individual longer to physically travel to the polling location, their perceived effort might be lower than if they had drove. Given these benefits, walking may reduce the perceived effort required to vote and thus reduce the cost of voting, increasing their likelihood to turnout.
+
+## Social Capital and Political Socialization
+
+Social interaction can expose people to different politically relevant information [@huckfeldt2001social]. The type of social context one inhabits can have a major effect on how an individual participates politically [@huckfeldt1979political]. The design of the built environment we argue can shape how social contexts are formed and thus, the character and frequency for who you interact with. A walkable area increases the frequency of face-to-face interactions [@van2017subjective]. A walkable environment is mediated through two mechanisms for voter turnout: unscripted contact and facilitated recruitment [@hopkins2012inactive].
+
+Greater unscripted contact increases the prevalence of weak ties. Weak ties are theorized to be vital in fostering and sharing new ideas [@granovetter1983strength]. Given walkability increases the frequency of interactions between strangers, there is a higher possibility these interactions can snowball into a more connected and trustworthy community. @jacobs1992death echo's the importance of city design in shaping social networks:
+
+> The trust of a city street is formed over time from many, many little public sidewalk contacts...Most of it is ostensibly trivial but the sum is not trivial at all.
+
+A civic culture is a politically active culture [@almond2015civic] [@putnam2000bowling]. When an area is constructed to increase the frequency of physical interaction, more network relationships can form and thus more facilitated recruitment may occur. A walkable environment is thus conducive in developing greater *civic skills*, a critical component of @verba1995voice's resource model of participation. While socioeconomic factors can lead to variation in the resource model, @mcclurg2003social shows social interaction enhances engagement with group membership and political participation, contingent on the *amount* of political discussion within the network. Critical to walkability's impact on political participation is then mediated through it's ability to foster greater social interaction. Further, greater civic participation can lead to greater social capital and foster more forms of social bridging and bonding [@putnam2000bowling]. An individual's sense of of civic duty rises increasing their likelihood to participate politically [@riker1968theory].
+
+Information gain can arise from increased network interaction and diversity [@huckfeldt2001social]. Political knowledge of current events and the structure of government vary wildly [@carpini1996americans] [@bartels2005homer]. While political information can be received through multiple pathways, face-to-face interactions are unique as they are both unfiltered and potentially more personal than media [@carlson2019through]. While these interactions can lead to false information, simple conversation still makes politics salient and indicates larger social networks can influence the flow of political information [@huckfeldt1995political].
+
+Finally, Increased social interaction may influence an individuals level of altruism [@fowler2006altruism]. Thus, greater social interaction facilitated through walkability increases care for others, motivating greater political participation. Engagement within your community fosters greater care for you community [@fitzgerald2018close]. Thus, the more frequent interaction you have with others may motivate individuals to care more deeply about their political agency.
+
+### Social Pressure
+
+While greater face-to-face interaction may encourage individuals to participate more in civil society and ascribe greater purpose in voting, walkability may also induce greater social pressure on individuals to vote. Previous work shows exposure to others voting can dramatically increase the likelihood of someone voting [@gerber2008social]. @gerber2008social argue the threat of shame can induce specific behaviors. While they test non face-to-face interactions, they do find that when neighbors are exposed for not voting, they can be pressured to vote in future elections. In face-to-face interactions, political conversations may arise and thus individuals may be inclined to avoid ostracism or shame by voting. The threat of someone asking you in person may even have a more pronounced effect than the turnout mailings @gerber2008social used. Given walkability increases social interactions within an area, it is likely these types of conversations may arise more frequently than otherwise and foster greater social pressure to vote. Face-to-face interaction and exposure to others voting is shown to increase voter turnout [@gerber2000effects] [@arceneaux2012get] [@fortier2006absentee] [@funk2010social].
+
+The greater frequency of political conversations in weak tie network increases the amount of possible mobilizing agents and thus facilitated recruitment towards the action of voting. Previous work has found neighbors that talk together, vote together, indicating a neighborhood socialization effect on partisanship [@pattie2000people]. @rolfe2012voter provides additional support for the role of social pressure by arguing the decision of an individual to vote is conditional on the vote decisions of friends, family, neighbors, and coworkers. The amount and interaction of these actors within an individual's social network have a powerful mobilizing influence over an individual's likelihood to vote.
+
+Thus, we see walkability's influence on voter turnout has multiple pathways that we categorize into three potential mediating mechanisms. (1) Walkability can reduce both the objective and perceived cost of voting. (2) Walkability can increase weak tie network formation and increase individual's sense of civic duty to participate politically. (3) Walkability increases the exposure of election activities both from the campaign and other citizens engaging the voting process, increasing the social pressure to participate in voting.
+
+Given these potential mechanisms, we theorize the following:
+
+$H_1$ Communities with higher walkability will have higher voter turnout.
+
+$H_2$ Walkability reduces the perceived cost associated with voting
+
+$H_3$ Walkability increases political socialization and increases voter turnout.
+
+The paper proceeds by first testing whether a relationship exists between walkability and voter turnout. We find a positive association. To test how these theorized mechanisms mediate this association, we field a survey experiment.
+
+# Data
+
+## Independent Variable: Walkability Index
+
+Our independent variable is walkability. Walkability is defined as the ease of walking to amenities within an area [@forsyth2015walkable]. We use walkability to operationalize the built environment because it captures the layout of an area and mutes variation in architectural design. While previous research has found evidence between architectural features and voter turnout, we are only concerned about the built environment from an urban planning perspective [@levan2020neighborhoods]. This measurement decision is supported by previous work on the varying suburb types and political participation [@hopkins2012inactive].
+
+It is important to separate walkability from population density. @oliver2001democracy argues greater density should reduce political participation in municipal elections. While we do not test walkability on municipal elections, @oliver2001democracy's point is still important. Population density refers to the amount of people in one area. A highly dense area does not necessarily mean it is walkable. Similarly, a walkable area does not necessarily mean that it is a dense area. An example of this phenomenon may be a Boston suburb that is not relatively dense in population but is walkable.
+
+To measure walkability, we use the Environmental Protection Agency's (EPA) walkability index. The walkability index scores all Census block groups from least to most walkable on a 0-20 scale. With 0 being the least and 20 the most walkable. The walkability index was created in 2018 and is time invariant. The EPA measures walkability using the following formula:
+
+$$
+National\ Walkability\ Index=(w/3)+(x/3)+(y/6)+(z/6)
+$$
+
+Where:
+
+1.  $w=intersection\ density$
+
+2.  $x=proximity\ to \ transit\ stops$
+
+3.  $y = employment \ mix$
+
+4.  $z = employment \ and \ household \  mix$
+
+Summary statistics for the walkability index used in our data-set can be found in Table 1.
+
+::: {#tbl-letters}
++----------------------------------------------------+----------+----------+----------+----------+----------+
+| **Table 1. Summary Statistics: Walkability Index** |          |          |          |          |          |
++====================================================+==========+==========+==========+==========+==========+
+| Statistic                                          | N        | Mean     | St. Dev. | Min      | Max      |
++----------------------------------------------------+----------+----------+----------+----------+----------+
+| National Walkability Index                         | 83,608   | 11.66    | 3.941126 | 1.000    | 20.000   |
++----------------------------------------------------+----------+----------+----------+----------+----------+
+:::
+
+## Dependent Variable: General Election Voter Turnout
+
+Our dependent variable is the proportion of voter turnout within a Census block group by each election. We calculate this by taking the number of voters who turned out in an election divided by the number of registered voters in a Census block group. Summary statistics for general election voter turnout can be found in Table 2. Turnout data is sourced using the L2 voter file accessed through the Redistricting Data Hub, a nonprofit that purchased the file for use towards research on gerrymandering.
+
+Turnout data is available for earlier elections cycles. However, we choose to focus only on turnout in the 2016, 2018, and 2020 election cycles. Because the walkability measure is time invariant and is only measured at the time of its creation in 2018, we limit our scope to only these three election years. Given the built environment is a culmination of buildings constructed over many years, and typical construction of a building can take anywhere from 6 to 17+ months [@statista2025], the change in walkability is likely negligible between the periods observed. We feel less confident with this assumption as we extend the election periods to before 2016.
+
+<div>
+
++-----------------------------------------------------------------+---------+----------+-------------+---------+---------+
+| **Table 2. Summary Statistics: General Election Voter Turnout** |         |          |             |         |         |
++=================================================================+=========+==========+=============+=========+=========+
+| **Statistic**                                                   | **N**   | **Mean** | **St. Dev** | **Min** | **Max** |
++-----------------------------------------------------------------+---------+----------+-------------+---------+---------+
+| Voter Proportion 2016                                           | 83,608  | 0.5725   | 0.1157      | 0.000   | 1.000   |
++-----------------------------------------------------------------+---------+----------+-------------+---------+---------+
+| Voter Proportion 2018                                           | 83,608  | 0.5148   | 0.1285      | 0.000   | 1.000   |
++-----------------------------------------------------------------+---------+----------+-------------+---------+---------+
+| Voter Proportion 2020                                           | 83,608  | 0.7313   | 0.1318      | 0.000   | 1.000   |
++-----------------------------------------------------------------+---------+----------+-------------+---------+---------+
+
+</div>
+
+## Unit of Analysis
+
+Because the walkability index is measured at the Census block group level, our unit of analysis is a Census block group in an election. The types of boundary chosen can dramatically influence how we measure walkability. Zip codes are unreliable and have fluid boundaries, making it difficult to assign a systematic walkability score. Census tracts are more advantageous as they are less fluid and systematically defined by the Census bureau. However, Census tracts can still range considerably in size and not properly capture how an individual operates within their 'neighborhood'. We recognize how one defines their 'neighborhood' is entirely subjective [@Wong_Bowers_Rubenson_Fredrickson_Rundlett_2020]. However, Census block groups can minimize this concern as its size captures more local impacts of an individual's built environment, capturing the immediacy of amenities that surround an individual. A Census block group is a unit of spatial aggregation that is smaller than a Census tract but larger than a Census block. A Census block group is the combination of Census blocks for a given area. Previous studies have varied in which geographical aggregation to utilize.
+
+We restrict our focus of walkability to only the 25 most populous Metropolitan Statistical Areas (MSA). The list of MSAs in our study can be found in table 3. MSAs are a variation of the census defined "core based statistical area". MSAs can span multiple states and are defined by having at least 50% of their population in urban areas, at least 50,000 population, and include surrounding areas with strong economic ties. Our choice to only focus on Census block groups within the 25 most populous MSAs is because we are only interested in urban design variability. MSAs do contain rural areas and provide sufficient variability in their walkability. If we were to include all Census block groups in the United States, our model would be clouded by the presence of rural census block groups.
+
+Some readers may question the effect of our choice of aggregation. To quell these potential concerns, we re-estimate a model using a logit at the individual level using the L2 voter file. The results of this model can be found in Appendix TK.
+
+| Metropolitan Name                     | State(s)    |
+|---------------------------------------|-------------|
+| New York-Newark-Jersey City           | NY-NJ       |
+| Los Angeles-Long Beach-Anaheim        | CA          |
+| Chicago-Naperville-Elgin              | IL-IN       |
+| Dallas-Fort Worth-Arlington           | TX          |
+| Houston-Pasadena-The Woodlands        | TX          |
+| Washington-Arlington-Alexandria       | DC-VA-MD-WV |
+| Philadelphia-Camden-Wilmington        | PA-NJ-DE-MD |
+| Atlanta-Sandy Springs-Roswell         | GA          |
+| Miami-Fort Lauderdale-West Palm Beach | FL          |
+| Phoenix-Mesa-Chandler                 | AZ          |
+| Boston-Cambridge-Newton               | MA          |
+| Riverside-San Bernardino-Ontario      | CA          |
+| San Francisco-Oakland-Fremont         | CA          |
+| Detroit-Warren-Dearborn               | MI          |
+| Seattle-Tacoma-Bellevue               | WA          |
+| Minneapolis-St. Paul-Bloomington      | MN-WI       |
+| Tampa-St. Petersburg-Clearwater       | FL          |
+| San Diego-Chula Vista-Carlsbad        | CA          |
+| Denver-Aurora-Centennial              | CO          |
+| Baltimore-Columbia-Townson            | MD          |
+| St. Louis                             | MO-IL       |
+| Orlando-Kissimmee-Sanford             | FL          |
+| Charlotte-Concord-Gastonia            | NC-SC       |
+| San Antonio-New Braunfels             | TX          |
+| Portland-Vancouver-Hillsboro          | OR-WA       |
+
+: Table 3. List of Metropolitan Statistical Areas (MSA) by Population
+
+# Methods
+
+To test the effect of walkability on voter turnout, we regress the walkability index onto voter turnout using ordinary least squares (OLS). Using the 2016, 2018, and 2020 voter turnout at the Census block group level for our dependent variable. Recall that we restrict our focus to only Census block groups within the top 25 most populated MSAs.
+
+$$
+Voter\ Turnout_{ikj} = Walkability_{ikj}\ + Aggregate\ Level \ Controls_{ikj} 
+$$
+
+Where $i$ is the Census block group
+
+Where $k$ is the Metropolitan Statistical Area
+
+Where $j$ is the election year.
+
+The control variables were chosen based on previous studies of walkability and traditional factors that influence voter turnout. Because we are measuring this at the Census block group level, our controls include population density, median home age, home value, proportion of various social and racial demographics, and the proportion of party ID. We also create a dummy variable for Mail-in-ballots at the state level. A full list of controls can be found in Appendix TK.
+
+Because we nest Census block groups within an MSA, we study both the within and between variation in our data set. We cluster our standard errors to account for correlation among the Census block groups nested in each MSA, thus non-independence of our observations. Choosing not to cluster our standard errors would produce underestimated (too small) standard errors. Additionally, we run a fixed effects model to account for between variation of MSAs. Both of these robustness checks can be found in Appendix TK.
+
+### Sorting the Sort - need help here. - incomplete step. 
+
+A major concern in this body of work, is the role of endogenous sorting of individuals into more walkable neighborhoods. Individuals can chose where to live based off the amenities offered [@tiebout1956pure]. Thus, individuals who are already likely to vote may sort into a walkable neighborhood. Of the few previous built environment and political participation studies, only @nathan2023grids controls for endogenous sorting using survey questions. Because we use a voter file rather than a survey to measure voter turnout, we are unable to follow a similar design. We do, however, use @brown2021measurement's partisan exposure measure as a control for potential partisan sorting. Measuring endogenous sorting with a measure of partisan sorting is an imperfect measure. However, growing evidence points to Democrats selecting into more walkable areas and Republicans selecting into suburban/rural areas. This assumption is reflected in the growing evidence between an urban/rural divide and lifestyle choices among Democrats and Republican [@lyons2023you] [@bishop2009big] [@brown2021measurement] [@williamson2008sprawl].
+
+Given this assumption, Republicans would be less likely to sort into walkable areas and prefer the aesthetics of less walkable suburban/rural communities. Thus, if our results hold for Republican voters, we can likely mitigate some concern for endogenous sorting, as strong Republicans would be less likely to sort into such a community. Using @brown2021measurement's relative measure of partisan exposure at the Census Tract level, we interact partisan exposure within a community with our walkability index TK. @brown2021measurement's measure was created in 2018 and thus we only conduct this analysis for the 2018 election TK. Results can be found in Appendix TK.
+
+# General Election Results
+
+The full results for the 2016, 2018, and 2020 general elections are shown below in table 4.
+
+```{=html}
+<strong>TABLE 4:</strong> Regression Results for 2016, 2018, and 2020 General Elections
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">  </th>
+   <th style="text-align:left;"> 2016 General </th>
+   <th style="text-align:left;"> 2018 General </th>
+   <th style="text-align:left;"> 2020 General</th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Dependent Var.: </td>
+   <td style="text-align:left;"> 2016 Voter Turnout </td>
+   <td style="text-align:left;"> 2018 Voter Turnout </td>
+   <td style="text-align:left;"> 2020 Voter Turnout </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Walkability Index </td>
+   <td style="text-align:left;"> 0.0011*** (0.0003) </td>
+   <td style="text-align:left;"> 0.0012** (0.0004) </td>
+   <td style="text-align:left;"> 0.0012*** (0.0003) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Population Density </td>
+   <td style="text-align:left;"> 4.53e-8 (1.63e-7) </td>
+   <td style="text-align:left;"> 1.66e-7 (1.59e-7) </td>
+   <td style="text-align:left;"> -2.09e-7 (1.7e-7) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Median Home Value </td>
+   <td style="text-align:left;"> 5.54e-9 (1.01e-8) </td>
+   <td style="text-align:left;"> 9.69e-9 (8.49e-9) </td>
+   <td style="text-align:left;"> -2.03e-8 (1.47e-8) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Median Household Income </td>
+   <td style="text-align:left;"> 2.85e-7*** (3.45e-8) </td>
+   <td style="text-align:left;"> 3.35e-7*** (3.14e-8) </td>
+   <td style="text-align:left;"> 4.31e-7*** (3.53e-8) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Median Home Age </td>
+   <td style="text-align:left;"> -2.18e-6 (2.57e-6) </td>
+   <td style="text-align:left;"> -4.99e-6* (2.3e-6) </td>
+   <td style="text-align:left;"> 2.25e-6 (1.8e-6) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Age: 30-54 </td>
+   <td style="text-align:left;"> 0.3845*** (0.0308) </td>
+   <td style="text-align:left;"> 0.3460*** (0.0390) </td>
+   <td style="text-align:left;"> 0.2480*** (0.0539) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Age: 55+ </td>
+   <td style="text-align:left;"> 0.3572*** (0.0263) </td>
+   <td style="text-align:left;"> 0.3358*** (0.0379) </td>
+   <td style="text-align:left;"> 0.1264** (0.0412) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Gender: Female </td>
+   <td style="text-align:left;"> 0.1684*** (0.0383) </td>
+   <td style="text-align:left;"> 0.0827. (0.0451) </td>
+   <td style="text-align:left;"> 0.0965 (0.0853) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Party: Democrat </td>
+   <td style="text-align:left;"> -0.0184 (0.0249) </td>
+   <td style="text-align:left;"> 0.0843** (0.0263) </td>
+   <td style="text-align:left;"> -0.0313 (0.0421) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Party: No Political Preference </td>
+   <td style="text-align:left;"> -0.1751*** (0.0403) </td>
+   <td style="text-align:left;"> -0.1292*** (0.0331) </td>
+   <td style="text-align:left;"> -0.0924 (0.0801) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Race: White </td>
+   <td style="text-align:left;"> 0.1990*** (0.0233) </td>
+   <td style="text-align:left;"> 0.2599*** (0.0357) </td>
+   <td style="text-align:left;"> 0.1195* (0.0536) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Race: Hispanic </td>
+   <td style="text-align:left;"> 0.1144*** (0.0182) </td>
+   <td style="text-align:left;"> 0.0807* (0.0313) </td>
+   <td style="text-align:left;"> -0.0418 (0.0444) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Race: Black </td>
+   <td style="text-align:left;"> 0.1247*** (0.0131) </td>
+   <td style="text-align:left;"> 0.1143** (0.0308) </td>
+   <td style="text-align:left;"> -0.0326 (0.0483) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Education: HS diploma </td>
+   <td style="text-align:left;"> 0.0863. (0.0459) </td>
+   <td style="text-align:left;"> -0.1966*** (0.0493) </td>
+   <td style="text-align:left;"> -0.3100*** (0.0646) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Education: Some College </td>
+   <td style="text-align:left;"> 0.8087*** (0.1753) </td>
+   <td style="text-align:left;"> 0.9060*** (0.2112) </td>
+   <td style="text-align:left;"> 1.343*** (0.1818) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Education: Bachelors Degree </td>
+   <td style="text-align:left;"> 0.7767*** (0.0677) </td>
+   <td style="text-align:left;"> 0.8227*** (0.0551) </td>
+   <td style="text-align:left;"> 0.6836*** (0.0712) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Education: Graduate Degree </td>
+   <td style="text-align:left;"> 0.8291*** (0.0624) </td>
+   <td style="text-align:left;"> 0.9190*** (0.0711) </td>
+   <td style="text-align:left;"> 0.5428*** (0.0926) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mail-in-Ballot State - 2016 </td>
+   <td style="text-align:left;"> 0.0578*** (0.0083) </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mail-in-Ballot State - 2018 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.0733*** (0.0056) </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mail-in-Ballot State - 2020 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.0531*** (0.0063) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Fixed-Effects: </td>
+   <td style="text-align:left;"> --------------------- </td>
+   <td style="text-align:left;"> --------------------- </td>
+   <td style="text-align:left;"> --------------------- </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MSA </td>
+   <td style="text-align:left;"> Yes </td>
+   <td style="text-align:left;"> Yes </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> _____________________________ </td>
+   <td style="text-align:left;"> _____________________ </td>
+   <td style="text-align:left;"> _____________________ </td>
+   <td style="text-align:left;"> _____________________ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> S.E.: Clustered </td>
+   <td style="text-align:left;"> by: MSA </td>
+   <td style="text-align:left;"> by: MSA </td>
+   <td style="text-align:left;"> by: MSA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Observations </td>
+   <td style="text-align:left;"> 74,534 </td>
+   <td style="text-align:left;"> 74,534 </td>
+   <td style="text-align:left;"> 74,534 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:left;"> 0.83573 </td>
+   <td style="text-align:left;"> 0.82733 </td>
+   <td style="text-align:left;"> 0.72515 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Within R2 </td>
+   <td style="text-align:left;"> 0.79015 </td>
+   <td style="text-align:left;"> 0.78486 </td>
+   <td style="text-align:left;"> 0.64613 </td>
+  </tr>
+</tbody>
+</table>
+```
+
+Using listwise deletion, we are left with 74,534 Census block groups across all three general elections. Starting in the 2016 column, we observe a statistically significant (.01 p-value) positive relationship between walkability and voter turnout. A one unit change in the walkability of a census block group resulted in a .11 percentage point increase in voter turnout, all else equal. These findings are robust to fixed effects and clustered standard errors. The $R^2$ value of .83 indicates our model explains 83% of the variation on voter turnout.
+
+The 2018 results indicate a similarly significantly positive relationship. However, these results are significant at p-value of .05. A one unit change in the walkability of a census block group resulting in a .12 percentage point increase in voter turnout, all else equal. These findings are robust to fixed effects and clustered standard errors. The $R^2$ value of .82 indicates our model explains 82% of the variation on voter turnout.
+
+Finally, the 2020 results show a significantly positive relationship at a significance level of .01. A one unit change in the walkability of a Census block group resulted in a .12 percentage point increase in voter turnout. These findings are robust to fixed effects and clustered standard errors. The $R^2$ value of .72 indicates our model explains 72% of the variation on voter turnout.
+
+While the 2018 election is still significant, it is less significant than the 2016 and 2020 election. Additionally, the $R^2$ for both 2018 and 2020 are less than the $R^2$ value in 2016. This $R^2$ result might be driven by the unique presence of Donald Trump in office and the 2020 COVID-19 pandemic. Despite these differences across elections, walkability appears to have a continued effect on voter turnout.
+
+However, the general presidential election is the most salient election in the United States. If walkability is to be associated with higher voter turnout, we should expect these results to hold in lower salient elections, where voters are less likely to turnout. As our 2018 results indicate, more analysis is needed on lower salient elections. Thus, we now turn to testing the effect of walkability on voter turnout in primary elections.
+
+# Primary Election Results
+
+Because the general elections is the highest information and most known election type in America, walkabily's effect should be more pronounced and substantively interesting in elections with less turnout and salience. Thus, we ask an additional quesiton, *How does walkability influence turnout in lower salient elections?*
+
+The primary elections are one example of a lower salient election. Primaries are less publicized and typically voted by those more interested and knowledgeable of politics. To understand how walkability influences voter turnout within lower salient elections, we test it's effect within the 2016 presidential primary. While we have data for 2018 and 2020 primary turnout, these elections have considerable variations that we cannot systematically control for.
+
+While congressional primaries seem like a useful election type to study, we cannot account for the unique aspects of each congressional race. For example, some primaries were extremely close, while others ran uncontested. Coupled with the fact that states vary in who can vote in these primaries makes it extremely difficult to source a proper voter turnout count by Census block group for these elections. Additionally, we run into aggregation issues as Census block groups do not perfectly map onto congressional districts. While this is still an issue for the 2016 election, it is less so, as would be voters are likely to participate in this primary election because they are motivated to vote for their preferred presidential primary candidate. Finally, because President Obama was termed out, there is no concern for an incumbency advantage to cloud our results. The 2018 and 2020 elections are marked by Trump's presence in office and likely influence the level of turnout for primaries.
+
+For these reasons, we do not feel comfortable estimating primary turnout in 2018 and 2020 at the Census block group level. The 2016 presidential primary provides the best opportunity to study the effect of walkability on voter turnout. (*Note:* *We are able to mitigate some of these issues when estimating the level of effect at the individual level.)* Unfortunately, data from states that conduct caucauses for their presidential primaries cannot be sourced. Thus, we leave those states out of our model. These states in 2016 were Kansas and Minnesota.
+
+We provide summary statistics for voter turnout in the 2016 primary election at the Census block group level in table 5. We take all presidential primary election results across the selected states and create a voter turnout proportion for each Census block. As table 5 shows, we see significantly less individuals voting in this election compared to the 2016 general election.
+
+<div>
+
++-----------------------------------------------------------------+--------+----------+-------------+---------+---------+
+| **Table 5. Summary Statistics: Primary Election Voter Turnout** |        |          |             |         |         |
++=================================================================+========+==========+=============+=========+=========+
+| **Statistic**                                                   | **N**  | **Mean** | **St. Dev** | **Min** | **Max** |
++-----------------------------------------------------------------+--------+----------+-------------+---------+---------+
+| Voter Proportion 2016                                           | 81,329 | .2727    | 0.1073      | 0.000   | 1.000   |
++-----------------------------------------------------------------+--------+----------+-------------+---------+---------+
+
+</div>
+
+Using only 2016 primary election results, we re-estimate the model using OLS with fixed effects and clustered standard errors. We provide three different specifications of the model. In addition, we control for primary type (open, semi-closed, closed). Table 6 provides the 2016 primary regression results.
+
+```{=html}
+<strong>TABLE 6:</strong> Regression results at different model specifications for the 2016 Primary Election
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">  </th>
+   <th style="text-align:left;"> Bivariate Model </th>
+   <th style="text-align:left;"> Multivariate Model </th>
+   <th style="text-align:left;"> Multivatriate Model w/FE & CSE</th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Dependent Var.: </td>
+   <td style="text-align:left;"> 2016 Primary </td>
+   <td style="text-align:left;"> 2016 Primary </td>
+   <td style="text-align:left;"> 2016 Primary </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Constant </td>
+   <td style="text-align:left;"> 0.2949*** (0.0138) </td>
+   <td style="text-align:left;"> -0.2351* (0.0974) </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Walkability Index </td>
+   <td style="text-align:left;"> -0.0019 (0.0014) </td>
+   <td style="text-align:left;"> 0.0006 (0.0007) </td>
+   <td style="text-align:left;"> 0.0013*** (0.0003) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Population Density </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> -9.82e-8 (2.17e-7) </td>
+   <td style="text-align:left;"> 4.35e-7** (1.51e-7) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Median Home Value </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 5.9e-8* (2.62e-8) </td>
+   <td style="text-align:left;"> 8.78e-9 (6.71e-9) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Median Household Income </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> -1.47e-7 (9.31e-8) </td>
+   <td style="text-align:left;"> 8.5e-8* (3.52e-8) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Median Home Age </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> -2.07e-5* (8.65e-6) </td>
+   <td style="text-align:left;"> -9.42e-6** (3.09e-6) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Age: 30-54 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.1106 (0.0843) </td>
+   <td style="text-align:left;"> 0.2636*** (0.0473) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Age: 55+ </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.2359** (0.0702) </td>
+   <td style="text-align:left;"> 0.3787*** (0.0483) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Gender: Female </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> -0.0235 (0.0656) </td>
+   <td style="text-align:left;"> 0.0765. (0.0403) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Party: Democrat </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.1945. (0.0945) </td>
+   <td style="text-align:left;"> 0.0296 (0.0432) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Party: No Political Preference </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.0507 (0.1448) </td>
+   <td style="text-align:left;"> -0.2742*** (0.0590) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Race: White </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.1834* (0.0706) </td>
+   <td style="text-align:left;"> 0.1805*** (0.0228) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Race: Hispanic </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.0994. (0.0505) </td>
+   <td style="text-align:left;"> 0.1048*** (0.0175) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Race: Black </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.0943 (0.0587) </td>
+   <td style="text-align:left;"> 0.0857*** (0.0166) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Education: HS Diploma </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.0306 (0.1797) </td>
+   <td style="text-align:left;"> -0.0943 (0.0580) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Education: Some College </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 1.253** (0.4135) </td>
+   <td style="text-align:left;"> 0.4036* (0.1684) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Education: Bachelors Degree </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.5390** (0.1446) </td>
+   <td style="text-align:left;"> 0.3169*** (0.0761) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Education: Graduate Degree </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.8429*** (0.1779) </td>
+   <td style="text-align:left;"> 0.6383*** (0.0803) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mail-in-Ballot State - 2016 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.0623* (0.0242) </td>
+   <td style="text-align:left;"> 0.0571*** (0.0112) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Partially Open Primary </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> -0.0021 (0.0380) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Open to Unaffiliated Voters </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 0.1175*** (0.0272) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Open Primary </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> -0.0533. (0.0265) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Fixed-Effects: </td>
+   <td style="text-align:left;"> ------------------ </td>
+   <td style="text-align:left;"> ------------------- </td>
+   <td style="text-align:left;"> -------------------- </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MSA </td>
+   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> _____________________________ </td>
+   <td style="text-align:left;"> __________________ </td>
+   <td style="text-align:left;"> ___________________ </td>
+   <td style="text-align:left;"> ____________________ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> S.E.: Clustered </td>
+   <td style="text-align:left;"> by: MSA </td>
+   <td style="text-align:left;"> by: MSA </td>
+   <td style="text-align:left;"> by: MSA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Observations </td>
+   <td style="text-align:left;"> 81,329 </td>
+   <td style="text-align:left;"> 72,361 </td>
+   <td style="text-align:left;"> 72,361 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R2 </td>
+   <td style="text-align:left;"> 0.00489 </td>
+   <td style="text-align:left;"> 0.44170 </td>
+   <td style="text-align:left;"> 0.81124 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Within R2 </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> -- </td>
+   <td style="text-align:left;"> 0.67078 </td>
+  </tr>
+</tbody>
+</table>
+```
+Model 1 provides the bivariate OLS results of walkability's effect on voter turnout in the 2016 primary. The coefficient is negative and fails to gain statistical significance. Model 2 provides the multivariate OLS results at nearly the full specification. Model 2 includes all variables except for primary election type and does not include fixed effects or clustered standard errors on MSA.
+
+Model 3 provides the complete multivariate OLS specification. The effect of walkability on voter turnout in the 2016 primary is positive and statistically significant at the .01 significance level. A one unit change in walkability results in a .13 percentage point increase in voter turnout, all else equal. As we add more variables to our models, the $R^2$ increases. The $R^2$ in model 3 is .81; our model explains 81% of the variation in primary voter turnout proportion across Census block groups.
+
+These results are robust when clustering standard errors and running fixed effects at the MSA level, accounting for the within and between variation. The .13 percentage unit level of effect is only slightly higher than what was observed in the general election. However, this slight increase does point to walkability's effect being more pronounced in lower salient elections.
+
+# Study 2: Survey Experiment
+
+Now that we have established an association between the walkability of an area and voter turnout, we turn to testing why this relationship exists. Recall we theorized two potential mechanisms: cost and social pressure/socialization. Our goal is to identify which one of these mechanisms has the greatest influence in mediating the relationship between walkability and voter turnout. It is likely that both of these mechanisms have influence, however, to what extent is unknown and is the purpose of this survey experiment.
+
+We field our survey experiment on the American West Time-Sharing Survey. This survey fields questions to undergraduate students at the following institutions: Arizona State University; Colorado State University, Fort Collins; Colorado State University, Pueblo; Texas Tech University; Texas A&M; California State University, Fullerton; San Diego State University; University of Arizona; University of California, Merced; University of Colorado Boulder; University of Florida; University of New Mexico; University of Missouri; University of Nebraska; University of Texas, Austin; University of Texas, El Paso; University of Texas, Rio Grande Valley; University of Utah; University of Houston.
+
+This survey has an expected $n = 3000$. While these are the listed universities participating, they are subject to change.
+
+## Survey Design
+
+To test the potential mechanisms, we randomly assign respondents to 1 of 3 conditions. The conditions are as follows:
+
+### Control:
+
+> Imagine you live in a highly walkable neighborhood where businesses and homes blend together, with tree-lined sidewalks, bike lanes, and bus stops. Grocery stores, coffee shops, restaurants, and retail shops are just a short walk away, and people are out and about.
+
+### Treatment 1: Cost:
+
+> Imagine you live in a highly walkable neighborhood where businesses and homes blend together, with tree-lined sidewalks, bike lanes, and bus stops. Grocery stores, coffee shops, restaurants, and retail shops are just a short walk away, and people are out and about.  Moreover, post offices, libraries, churches, and community centers are just a short walk away, making regular errands and occasional activities easy to access.
+
+### Treatment 2: Social Pressure:
+
+> Imagine you live in a highly walkable neighborhood where businesses and homes blend together, with tree-lined sidewalks, bike lanes, and bus stops. Grocery stores, coffee shops, restaurants, and retail shops are just a short walk away, and people are out and about.  It is a vibrant, socially-connected community where people know each others' names, notice things, and expect people to look out for one another.
+
+### Outcomes:
+
+Each respondent is then asked three questions on a 0-10 scale, with 0 = extremely unlikely; 10 = extremely likely. The question order is randomized for all respondents. These questions serve as our dependent variable and are as follows:
+
+1.  How likely would you be to vote in presidential elections if you lived in this community?
+
+2.  How likely would you be to vote in local and off-year elections if you lived in this community?
+
+3.  How likely would you be to vote in nonpresidential elections (like midterms) if you lived in this community?
+
+## Survey Results
+
+*To come after completion of survey.*
+
+# Discussion
+
+*Note: substantial revisions of this section will be completed after the survey.*
+
+*Does walkability influence voter turnout?* We find a significant association between the walkability of Census block group and voter turnout across all elections. Our statistical results appear modest, however, the level of effect between the lowest walkable block group (0) and the highest (20) roughly equates to a 2% voter turnout difference. With continued polarization, elections are growing increasingly close.
+
+It is worth mentioning that each election tested is characterized by Donald Trump's presence. Trump being a polarizing figure in politics at the time motivated unique political activation among the populous.
+
+# Conclusion
+
+To our knowledge, this is the largest test of built environment factors on voter turnout in the United States. Our results add to the growing evidence between the built environment and political phenomenon.
+
+While the internet has changed the way we communicate with others politically, we should not discount the role of face-to-face communication.
+
+# Appendix
+
+## Appendix A
+
+### Spherical error checks: 
+
+## Appendix B
+
+### Controls: 
+
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Control Name                                                                                   | Type         | Definition                                                                                                                                                               | Source                                                                                                                              |
++================================================================================================+==============+==========================================================================================================================================================================+=====================================================================================================================================+
+| Population Density                                                                             | Proportion   | Need to go back and figure out where I sourced this. I think it was social explorer.                                                                                     | TK                                                                                                                                  |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Median Home Value                                                                              | Numeric      | Media home value of homes in the block group                                                                                                                             | L2 Voter File                                                                                                                       |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Median Household Income                                                                        | Numeric      | Median household income of individuals living in the block group                                                                                                         | L2 Voter File                                                                                                                       |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Median Home Age                                                                                | Numeric      | The median year of homes built in the block group.                                                                                                                       | L2 Voter File                                                                                                                       |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Age                                                                                            | Proportion   | Proportion of individuals living in block group within a given age range.                                                                                                | L2 Voter File                                                                                                                       |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Gender                                                                                         | Proportion   | Proportion of the reported gender of individuals living in a block group.                                                                                                | L2 Voter File                                                                                                                       |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Party                                                                                          | Proportion   | Proportion of registered party affiliates in a block group.                                                                                                              | L2 Voter File                                                                                                                       |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Race                                                                                           | Proportion   | Proportion of                                                                                                                                                            | L2 Voter File                                                                                                                       |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Education                                                                                      | Proportion   | Proportion of individuals living in a block group with                                                                                                                   | L2 Voter File                                                                                                                       |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Mail-in-Ballot                                                                                 | Binary       | Whether the state allowed no absentee mail-in-ballots in each respective election. I do not have data on whether an individual voted in-person or with a mail-in-ballot. | Ballotpedia - Hand coded                                                                                                            |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Primary Election Type                                                                          | Categorical  | Whether the state has open, semi-closed, or closed primaries.                                                                                                            | [National Conference of State Legislators - Hand coded](https://www.ncsl.org/elections-and-campaigns/state-primary-election-types)  |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| **NOT INCLUDED:**                                                                              | Numerical    | Number of voters in Census block groups who are home owners.                                                                                                             | L2 Voter Vile                                                                                                                       |
+|                                                                                                |              |                                                                                                                                                                          |                                                                                                                                     |
+| Home owner/Renter                                                                              |              |                                                                                                                                                                          | TK                                                                                                                                  |
+|                                                                                                |              |                                                                                                                                                                          |                                                                                                                                     |
+| See Oliver (2001) for reason why. Did not account for this variable in this iteration 03/16/25 |              |                                                                                                                                                                          |                                                                                                                                     |
++------------------------------------------------------------------------------------------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+
+## Appendix Individual Level Results
+
+Because the individual level voter file is so large, I restrict my individual level analysis to just the 2018 primary. My goal is to have all elections in the future. However, I am using a 3rd party data management hub that requires me to purchase computational credits to complete the full analysis. I am only allotted a certain amount of computation power to run these analysis and thus I can only do the 2018 primary at this time.
+
+I selected the 2018 primary because I felt it would be the most substantively interesting.
+
+### Individual Level Data
+
+### Summary Statistics
+
+## Appendix for QP Defense
+
+-   This section is to help me remember the issue I am having with solving the sorting problem.
+
+# Works Cited

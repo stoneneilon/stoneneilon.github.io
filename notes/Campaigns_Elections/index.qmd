@@ -1,0 +1,48 @@
+---
+title: "Campaigns and Elections"
+description: "Undergraduate class - grader"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 01-14-2025
+categories: [Spring, 2025, American] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/Campaigns_Elections/
+image: brain.jpg
+draft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Week 1
+
+## What is a campaign?
+
+-   organized efforts to persuade and mobilize voters to support or oppose and specific candidate, political party, or issue.
+
+## Other lecture material:
+
+-   People focus more attention on politics during campaigns.
+
+-   Free choice
+
+    -   uncontested election = no challenger basically.
+
+# Week 2
+
+### Voting Rights
+
+Amendments:
+
+-   15th
+
+    -   very important
+
+        -   voting rights act of 1965 enforces 15th amendment.
+
+-   19th
+
+-   24th
+
+-   26th

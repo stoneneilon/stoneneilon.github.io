@@ -10,11 +10,2919 @@ author:
 date: 01-14-2025
 categories: [Spring, 2025, American] # self-defined categories
 citation: 
-  url: https://stoneneilon.github.io/teaching/American_Subnational_Politics_and_Government/
+  url: https://stoneneilon.github.io/notes/American_Subnational_Politics_and_Government/
 image: gandalf.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
 # Week 1: Course Introduction
 
-## [Hooghe, Liesbet and Gary Marks. 2003. \"Unraveling the Central State, but How? Types of Multi-Level Governance.\" American Political Science Review, Vol. 97, No. 2 (May), pp. 233-243.](https://drive.google.com/file/d/1YB-w1QFwfbwiu00801vKemTXQZs-oBB8/view?usp=sharing)
+## Lecture Notes:
+
+-   Mostly course logistic stuff
+
+-   Lit review is first major assignment to submit
+
+    -   probably makes most sense to do lit review on the week you are presenting.
+
+    -   part of research project.
+
+-   presentation at the end.
+
+-   Municipalities are generally thought of Type II governance.
+
+-   University has a lot of power and in many cases has more power over the city of Boulder.
+
+-   if a gov can take land...its powerful.
+
+-   special districts help with fiscal limitations related to type 1 governance states.
+
+## [Hooghe, Liesbet and Gary Marks. 2003. "Unraveling the Central State, but How? Types of Multi-Level Governance." American Political Science Review, Vol. 97, No. 2 (May), pp. 233-243.](https://drive.google.com/file/d/1YB-w1QFwfbwiu00801vKemTXQZs-oBB8/view?usp=sharing)
+
+This article anchors the classic. It is very important for course material later on.
+
+### Abstract:
+
+The reallocation of authority upward, downward, and sideways from central states has drawn attention from a growing number of scholars in political science. Yet beyond agreement that governance has become (and should be) multi-level, there is no consensus about how it should be organized. This article draws on several literatures to distinguish two types of multi-level governance. One type conceives of dispersion of authority to general-purpose, non-intersecting, and durable jurisdictions. A second type of governance conceives of task-specific, intersecting, and flexible jurisdictions. We conclude by specifying the virtues of each type of governance.
+
+### Research Question:
+
+1.  How should multi-level governance be organized?
+
+2.  What are the basic alternatives?
+
+### Background:
+
+-   This debate is generally framed between "consolidationists" and "fragmentationalists".
+
+-   Diffusion of decision making away from central state raises fundamental issues of design, conceptualized into two types of governance.
+
+-   Tiebout: claims that competition among multiple local jurisdictions leads to more efficient provision of local public services.
+
+-   The literatures all share a common postulate: dispersion of governance across multiple jurisdictions is more flexible than concentration of governance in on jurisdiction.
+
+-   Economies of scale are more likely to characterize the production of capital-intensive public goods than of labor-intensive services because economies accrue from spreading costs over larger outputs.
+
+    -   Large scale jurisdictions make sense for the capital intensive public goods.
+
+-   Centralized gov. is not well suited to accommodate diversity.
+
+-   Flexible governance must be multi-level.
+
+    -   no consensus as to how multi-level governance should be structured.
+
+### Type 1 Governance:
+
+-   Describes jurisdictions at a limited number of levels.
+
+-   intellectual foundation is federalism
+
+-   These jurisdictions - international, national, regional, meso, local - are general purpose.
+
+-   They bundle together a range of policy responsibilities and, in many cases, a court system and representative institutions.
+
+-   Every citizen is located in a Russian Doll set of nested jurisdictions, where there is only and only one relevant jurisdiction at any particular territorial scale.
+
+-   Summary:
+
+    -   General-Purpose Jurisdictions
+
+        -   general purpose means they bundle together multiple functions, including a range of policy responsibilities.
+
+    -   Nonintersecting memberships
+
+    -   Jurisdictions at a limited number of levels
+
+    -   Systemwide architecture
+
+        -   legislature, executive, and court system.
+
+-   Advantages:
+
+    -   cleaner. Engineered.
+
+        -   easier to understand.
+
+    -   easier for citizens to hold people accountable.
+
+### Type 2 Governance:
+
+-   specialized jurisdictions.
+
+-   Jurisdictions are not aligned on just a few levels but operate at numerous territorial scales
+
+-   jurisdictions are task-specific rather than general purpose. Jurisdictions are intended to be flexible rather than durable.
+
+-   specialized district governance increasing in US.
+
+-   Summary:
+
+    -   Task-specific jurisdictions
+
+    -   Intersecting memberships
+
+    -   No limit to the number of jurisdictional levels
+
+    -   flexible design
+
+-   Advantages:
+
+    -   flexible
+
+### Coordination Dilemma
+
+-   multi-level governance benefit: Flexibility
+
+    -   main cost: coordinating multiple jurisdictions.
+
+-   More actors = harder to punish defectors.
+
+    -   free riding is dominant strategy for large groups.
+
+-   How can multi-level governance deal with the coordination dilemma?
+
+    -   limit the number of autonomous actors who have to be coordinated by limiting the number of autonomous jurisdictions.
+
+        -   this underpins type 1 governance.
+
+            -   type 1 constrains jurisdictions by:
+
+                -   nonintersecting memberships
+
+                -   Cascading jurisdictional scale.
+
+                -   General-purpose jurisdictions
+
+                -   systemwide architecture
+
+                    -   pyramid structure.
+
+    -   Second, limit interaction among actors by splicing competencies into functionally distinct units.
+
+        -   underpins type 2
+
+            -   Functional specificity
+
+            -   flexible, policy-specific, architecture.
+
+                -   type 2 governance is designed with respect to particular policy problems, NOT particular communities or constituencies.
+
+### Intrinsic vs. Extrinsic Community
+
+-   Type 1 and Type 2 governance embody different conceptions of community.
+
+-   type 1 = territorial communities
+
+    -   may also be based on membership (religious/ethnic group).
+
+    -   rooted in communal identity.
+
+-   type 2 = more pliable.
+
+    -   Set up to solve particular policy problems, such as managing a common pool resource, setting a technical standard, managing an urban service, or shipping hazardous waste.
+
+    -   constituency = individuals who share some geographical or functional space and who have a common need for collective decision making
+
+        -   irrigation farmers, public service users, parents, exporters, homeowners, or software producers.
+
+    -   Type II jurisdictions facilitate entry and exit to create a market for the production and consumption of a public good.
+
+### Conclusion:
+
+-   These types both diffuse authority away from the central government.
+
+-   Type 1 - bundles competencies in jurisdictions at a limited number of territorial level, and the units at each level are perfectly nested within those at the next higher level.
+
+    -   Voice rather than to exit
+
+    -   Maximize the fit between the scale of a jurisdiction and the optimal scale of public good provision while minimizing inter-jurisdictional coordination by (a) creating inclusive jurisdictions that internalize most relevant externalizes and )b limiting the number of jurisdictional levels.
+
+-   Type 2 - limits the transaction costs of inter-jurisdictional coordination, but it does so in a fundamentally different way, by splicing public good provision into a large number of functionally discrete jurisdictions.
+
+    -   each is designed to address a limited set of related problems.
+
+    -   task-driven.
+
+    -   membership tends to be conditional and extrinsic.
+
+    -   more competition.
+
+### Utility of these types:
+
+-   Type 2 has grown extensively.
+
+-   Type 2 is fluid.
+
+-   more electoral accountability in type 1.
+
+-   policy choice for households
+
+-   responsiveness to preferences
+
+-   policy variation, which can be thought of as a form inequality (negatively) or experimentation (positively)
+
+-   Sizing to obtain economies of scale.
+
+# Week 2: Theories of an American Compound Republic
+
+## Lecture Notes:
+
+-   Democracy is not just voting for Vincent.
+
+    -   Democracy was really more about discourse. debate. Solving collective action problems.
+
+-   Eleanor Ostrom:
+
+    -   develops a way of thinking action arenas to overcome collective action problems.
+
+-   I need to look at Houston for zoning stuff.
+
+-   Contribution: Alternative ways to solve collective action problems
+
+-   Vincent hated intro to American. He thought it was too focused on top-down.
+
+-   Why do we start with Hobbes?
+
+    -   Hobbes is the first person to move government away from theological roots.
+
+        -   not premised on monarchies and their special access to god.
+
+-   Key for Vincent is LANGUAGE!
+
+    -   we always share language.
+
+        -   he sees government as something people figure out through talking with each other.
+
+        -   
+
+## Ostrom, Vincent. 1999. The Meaning of American Federalism. ICS Press. Selected chapters
+
+### Chapter One: The Meaning of American Federalism
+
+-   Democracy implies that people govern.
+
+    -   the "government" is *not* the people.
+
+-   Voting is not enough for democracy.
+
+    -   Democracy requires more than voting in elections.
+
+        -   federalism is the "more".
+
+#### Language and Meaning in Political Discourse:
+
+-   The constitution only references one element of federalism - a limited national government - in a more general system of governance.
+
+-   Hamilton reformulates a confederation.
+
+    -   Articles of Confed fail. Hamilton argues individuals are the basic elements.
+
+    -   Ostrom thinks Hamilton's reformulation of the concept of confederation is an essential attribute of a federal system of government.
+
+        -   Hamilton's conception:
+
+            -   **each unit of government must be able to articulate the aspirations of people, respond to the demands of individuals, and enforce its resolutions with regard to individuals, not to collectivities as such. Each unit would be autonomous in itself and have both executive and judicial authorities to enforce its resolutions as laws.**
+
+-   Still ambiguity in the meaning of federalism. What shape does it have?
+
+-   All federal systems have reference to multiple units of government, each of which has an autonomous existence.
+
+-   Federalism is generally between state and fed gov BUT states also practice federalism through incorporation of municipalities.
+
+-   **How people think and relate to one another is a most fundamental feature in the governance of human affairs.**
+
+-   *this is reminding me a bit of Imagined Communities.*
+
+-   Really focused on this concept of: how people relate and think with one another.
+
+#### Tocqueville's Analysis of the American Experiment
+
+-   Tocqueville considers three types of factors to be important in understanding how a society functions.
+
+    -   Ostrom agrees!
+
+-   Tocqueville concludes these three factors causes which tend to maintain democracy in America.
+
+    -   first: "the peculiar and accidental situation in which Providence" places people.
+
+        -   Ostrom considers this to refer to the environmental and material conditions that are available to people in fashioning their lives.
+
+    -   second: "the laws"
+
+        -   Ostrom considers this to refer to institutions - the working rules of going concerns.
+
+    -   third: the "manners and customs of the people."
+
+        -   "Habits of the heart" and to "the mass of those ideas which shape their character of mind"
+
+            -   Ostrom considers those to mean the manners and customs to include habits of thought - cognition.
+
+-   Through these three points, we can understand the relationship of federalism to democracy.
+
+-   Ostrom focuses on Tocqueville's statement about how government operating is kinda invisible. Tocqueville is taken aback by this because the french government administration is visible in maintaing the tutelage over French society.
+
+#### Some Contemporary Reflections
+
+-   Federalism can be characterized as "constitutional choice reiterated to apply to many different units of government where each is bound by enforceable rules of constitutional law."
+
+-   policies emerge from the interaction of multiple centers of authority than to presume that they are made by some single center of ultimate authority.
+
+    -   Valid policies emerge from diverse processes of due deliberation.
+
+        -   Collective actions, as distinguished from collective decisions, depend upon what people do in responding to the opportunities and exigencies of life.
+
+            -   If there is a shared community of understanding and a reasonable level of consensus about how to address common problems, people will exercise a significant influence in monitoring, facilitating, and constraining one another behavior rather than presuming that it is only governments that govern.
+
+-   **Government in a democratic society, then, is not simply a matter of command and control but of providing multiple structures that have reference to diverse methods of problem solving!!!!!!! p.17**
+
+    -   Together these methods enable people to process conflict in peaceful and constructive ways and to search out more effective ways of achieving resolutions.
+
+        -   People have diverse interests but they work out effective complementarities of interest to achieve interdependent communities of interest. Processes of contention and adjustment occur as though an invisible hand were at work, rather than a visible hand exercising command and control over a society.
+
+-   The constitution of order in a self-governing society turns upon how those configurations of relationships get put together.
+
+#### The Scope of This Inquiry:
+
+-   "My concern is with how American federalism can be conceptualized as a regime that enables people to be first their own governors; to exercise substantial latitude in associating with others; to share in the exercise of legislative, executive, and judicial prerogatives; and to exercise the basic prerogatives of constitutional choice in setting, maintaining, and altering the terms and conditions of governance."
+
+    -   primary attention is given to the way that the structures serve to process conflict and achieve conflict resolution.
+
+        -   Process is the key!
+
+### Chapter 2: Conceptualizing The Meaning of American Federalism: Hobbeses Leviathan and The Logic of American Federalism:
+
+-   Humans create their social realities.
+
+    -   how they do so can take different forms
+
+        -   We need to think about through that.
+
+    -   uses architecture as a metaphor
+
+-   Hobbes argues that a unity of power is the only way to create a stable commonwealth.
+
+    -   Locke challenges Hobbes with separation of powers
+
+        -   Montesquieu proposes confederation.
+
+            -   Hamilton and Madison address the failures of confederation
+
+#### Hobbes's Leviathan
+
+-   Provides the computational logic for a unitary system of government.
+
+-   Six sets of computation in Hobbes's analysis:
+
+    -   The initial statement of his methodological presuppositions
+
+    -   his exposition of the computations that are characteristic of human choice
+
+    -   his analysis of man in a "state of nature"
+
+        -   no law, authority, no mine. Everyone is free to take what one can get and defend what one has got.
+
+        -   conditions of scarcity are to prevail
+
+            -   conflict will occur and in the absence of political constraint, will escalate to a point where people end up fighting with one another.
+
+        -   Ostrom contends Hobbes is flawed because it neglects the fact that humans have speech and could reason a way out. Hobbes however kinda makes this point later on.
+
+    -   his formulation of the articles of peace that lay the foundations for human community
+
+        -   Ostrom contends that words alone are not sufficient to maintain this.
+
+            -   need to be self-enforcing. To which Hobbes's are not.
+
+            -   Hobbes main point revolves around the Golden Rule
+
+    -   His theory of sovereignty (that is, his Leviathan)
+
+    -   his specification of a sovereign's accountability to God and the natural punishments that follow from errors of judgement.
+
+-   For Hobbes: Humans continually strive to use present means to achieve some future apparent good that unfolds in a succession, one activity after another, that ceases only in death.
+
+    -   ...All human beings have a capacity to think for themselves, and their choices will reflect their own computation of the alternatives they consider to be available.
+
+        -   People are never perfectly obedient automata; they always strive to better themselves. **This is the source of all political contingencies.**
+
+-   The unity of the commonwealth depends upon a unity of power.
+
+    -   A unity of power entails a monopoly over the powers of governance, including the powers of the sword, that are necessary to the maintenance and enforcement of rules of law and the defense of a common wealth.
+
+#### Democracy, Constitutional Rule, And Federalism
+
+-   Hobbes's characterization of democracies as rule by assemblies of all citizens who will come together neglects a crucial consideration: in order to have rule by assemblies, it is logically necessary to have a shared community of understanding and agreement about the rules of assembly and what it means to govern by assembly.
+
+-   Government by assembly, then, necessarily depends upon generally accepted rules of assembly.
+
+    -   Hobbes presumes that it is the unity of the representer, not the unity of the represented, that makes the commonwealth one.
+
+-   The representer and represented don't always map onto each other very well.
+
+-   Need established rules for assembly
+
+    -   vest these powers into one person and its very dangerous.
+
+        -   that person can become the sovereign
+
+-   All assemblies have oligarchical tendencies
+
+    -   Madison federalist 55 and 58.
+
+        -   more coherent debate occurs in smaller assemblies.
+
+    -   oligarchical refers not to the contemporary version of oligarchical
+
+        -   we mean the traditional def of oligarchical not the wealthy billionaires.
+
+    -   A democracy survives only so long as the rule of assembly is maintained with effective limits upon those who exercise leadership prerogatives and serve as agents of the assembly.
+
+-   Montesquieu: "If a republic be small, it is destroyed by foreign force; if it be large, it is ruined by internal imperfection".
+
+    -   Montesquieu thought confederation would this problem.
+
+        -   small republics join together to defend against foreign aggression.
+
+            -   manifests in the Articles of Confederation.
+
+                -   This of course is a failure that is discussed later.
+
+-   Hamilton argues: a confederate assembly is not sufficient in enforcing laws.
+
+    -   A confederate assembly cannot enforce its resolutions as binding rules.
+
+    -   individuals are the fundamental unit.
+
+-   Hamilton and Montesquieu describe *compound republics.*
+
+-   **General theory of limited constitutions: limits to the prerogatives of each unit of government are to be maintained by reference to a general system of constitutional law.**
+
+    -   Each unit of government is subject to the terms and conditions as specified in a constitution that serves a legal charter specifying the way that authority is distributed and shared in that unit.
+
+    -   If power is to be distributed and shared on the basis of opposite and rival interests, then all persons can have access to some powers of government and no one need be in a position to exercise unlimited power.
+
+-   Architecture of constitutional arrangements:
+
+    -   separation of powers.
+
+    -   checks and balances
+
+    -   ties that link the exercise of authority by citizens to the exercise of authority in governmental decision structures. - Elections
+
+-   individuals as citizens can share in the prerogative of rulership, whole both citizens and officials are subject to the rule of law.
+
+#### Some Conclusions:
+
+-   **Hobbes presumed that "it is the unity of the representer, not the unity of the represented" that gives unity to a commonwealth.**
+
+-   Democracies become tractable when people can learn from one another's experience, and learn to diagnose problems of institutional weakness and institutional failure.
+
+-   Institutions will fail. Thus institutional arrangement is not fully sufficient.
+
+    -   they must be accompanied by habits of the heart and mind that encourage the use of problem-solving.
+
+-   p.51 he basically says exactly what is happening now and that stalemate and how "one's neighbors become one's enemies." can still occur.
+
+    -   however, he doesn't really elaborate on it. He kinda does later:
+
+        -   "But such arrangements are only workable in a society where people achieve a level of learning, experience, and skill that can best be characterized as a problem-solving culture. In such circumstances, people learn to address one another as colleagues capable of inquiring about puzzles, difficulties, and conflicts under the assumption that communication and enlightenment can enable human beings to avoid the perversities whereby some oppress and exploit others."
+
+-   Shades of Putnam implicitly mentioned in here to prevent collapse of democracy in the event institutions fail and one side attempts to usurp power and bring things to a stalemate.
+
+### Chapter 3: The Conventional Basis of American Federalism: Religious Roots
+
+#### An Affinity Between Religion and Public Opinion
+
+-   Tocqueville referred to religion as "the first of their political institutions".
+
+    -   even though it took no direct part in their society.
+
+#### The Key Idea
+
+-   The constitution of order in American society is grounded in the concept of covenanting with one another in the presence of God to constitute a civil body politic, and in a commitment to one another to act in accordance with such a concept in confronting future exigencies.
+
+-   The core concept in American federalism is to rely upon processes of covenanting and combining ourselves together to form self-governing communities of relationships. These relationships began in the townships of New England...
+
+-   Pilgrim Code of Law of 1636 - first modern constitution.
+
+#### Presuppositions
+
+-   The presupposition that all men are created equal is grounded in the biblical tradition that human beings stand in a position of fundamental equality before their Creator.
+
+#### God's Law As A Method of Normative Inquiry
+
+-   The Golden Rule, as a basic moral precept, is surprisingly devoid of moral content. Instead of a rule, it can better be conceived as a method of normative inquiry that enables human beings to come to a commonly shared understanding about the meaning of value terms used as norms or criteria of choice.
+
+-   The Golden Rule is used as a conceptual scale---a cognitive device-for making interpersonal comparisons so that human beings can arrive at a common understanding of what is meant by standards of moral judgment and criteria for directing moral action.
+
+#### The Struggle to Understand
+
+-   human beings are fallible
+
+#### Conclusion
+
+-   American federalism as a great experiment cannot be understood without reference to the metaphysical presuppositions that shape the hearts and minds of a people with two commitments: to a method of normative inquiry inherent in the Golden Rule; and to the struggle that fallible creatures share in coming to terms with misconceptions and misunderstandings.
+
+-   Conflict provides an opportunity to elucidate information, extend horizons of inquiry, and achieve a level of common understanding consistent with a universe grounded in a coherent system of order in which unity can be achieved through diversity.
+
+### Chapter 4: The Meaning of Federalism in The Federalist
+
+-   The authors of The Federalist applied the term "federal" (foederal) to both the government under the Articles of Confederation and to the one proposed in the new Constitution.
+
+#### Diamond's Argument
+
+-   For Diamond, then, federalism implies a division of supreme authority between member states and a central government.
+
+-   A federal system combines states which confederally retain sovereignty within a certain sphere, with a central body that nationally possesses sovereignty within another sphere;
+
+#### The Argument in Essay 9 of The Federalist: Barrier to Faction and Insurrection
+
+-   more reps = more oligarch - Madison
+
+-   "Had every Athenian citizen been a Socrates; every Athenian assembly would still have been a mob"
+
+-   Sovereignty, conceptualized as the authority to make laws, is divided so that the people of the member republics are subordinate to the authority of the Union with respect to national affairs, but are independent with respect to those governmental prerogatives that apply to the jurisdiction of the separate states or republics. The states, in turn, serve as constituent parts of the national government by their representation in the Senate. Governments do not govern governments as such. Concurrent governments reach to the persons of individuals, including citizens and officials claiming to exercise governmental prerogatives under constitutional authority. These, I assume, are the true defining characteristics of what Madison refers to as a "proper federal system" in essay 51 of The Federalist.
+
+-   Tocqueville argues "sovereignty may be defined to be the right of making law."
+
+-   If we draw upon these distinctions, constitutions might be viewed as fundamental laws establishing the terms and conditions of government, and the enactments of governments as ordinary laws. Supreme authority is exercised by the people as they set the terms and conditions of fundamental law by covenanting and combining themselves together into civil bodies politic. It is not governments that are supreme; what is supreme is the constitutional authority of people to establish and alter the terms and conditions of government.
+
+-   Governments as such are not supreme. They are subject to fundamental law as formulated in constitutions and alterable by the people engaged in processes of constitutional choice.
+
+-   A federal republic includes multiple overlapping units of government that act with reference to individuals rather than governments as such.
+
+-   The great teaching of The Federalist, to paraphrase Diamond, is that federalism is the better way of organizing "popular systems of civil government"
+
+#### The Argument in Essay 39 of The Federalist: Using the Language of the Opposition
+
+-   We might infer, then, that the concurrent exercise of authority by a limited national government and by states exercising a limited "sovereignty" (i.e., authority to make laws) represents an essential characteristic of a "proper federal system.
+
+#### The Argument In Essays 15 and 16 of The Federalist: Conceptual Clarification
+
+-   A federal arrangement implies multiple units of government having concurrent jurisdiction. The national government is one of limited jurisdiction but with general competence to govern within that jurisdiction. The states also exercise a limited jurisdiction, with general competence to govern within that jurisdiction. In turn, each set of governments is governed by principles of constitutional law.
+
+-   **The conceptual innovation being introduced in the design of a federal system of government is the concurrent operation of a system of compound republics, each of which reaches to persons and citizens. Citizens function collectively, taking decisions of a constitutional nature in establishing the terms and conditions of government; and individually, in exercising the basic prerogatives of persons possessing constitutional rights that are correlated with limits upon governmental authority. This change in conceptualizing the place of individuals in concurrent republics altered the basic fabric in the design of American federal systems of government.**
+
+#### Conclusion
+
+-   Limits on jurisdiction to individuals are specified by reference to the provisions of the U.S. Constitution and various state constitutions.
+
+-   Diamond is thus correct in saying that the authors of The Federalist use the terms "confederation" and "federal" roughly as synonyms.
+
+-   Where interests are arrayed against interests, there must exist processes for articulating contending interests and reaching decisions with regard to matters under contention. These are prerogatives to be exercised by people in the choice of elected officials and in making decisions of a constitutional nature. The way that people exercise their prerogatives in using a constitutional system of government will determine whether the limits of constitutional law are effectively maintained.
+
+-   All of this kinda hinges on "enlightened citizenship"
+
+### Chapter 5: Garcia, The Eclipse of Federalism, And The Central-Government Trap
+
+-   Garcia v. San Antonio Authority
+
+    -   Before 1976, the San Antonio Authority paid its employees in accordance with the federal fair labor standard act.
+
+        -   In 1976, SAA stopped paying employees in accordance with the FLSA. They changed because of the Court's opinion in *National League of Cities v. Usery.*
+
+            -   In *National League of Cities,* the court held the tenth amendment, Congress can't regulate wages of state employees in traditional government function.
+
+                -   Recall the tenth amendment: Any powers not give to the federal government are reserved for the states or the people.
+
+    -   SAA argument was that the FLSA did not apply to the SAA because it was an instrument of the state.
+
+    -   However, the SC argued the FLSA did apply to the transit authority.
+
+    -   Case seems to hinge on interpretation of the Commerce Clause.
+
+    -   Garcia appears to abandon constitutional jurisdiction with reference to the substantive powers of the national government.
+
+    -   Blackmun doctrine argues that there is no criterion that could be used to place discrete limits upon the scope of federal authority.
+
+        -   Ostrom does not like this! because it means words don't matter.
+
+    -   Ostrom's big issue: Because Garcia was ruled to give congress power to regulate whatever affects or is affected by interstate commerce, the power of Congress is much more sweeping than before. This is a major power grab for the federal government because it extends their power to all aspects of American society.
+
+#### The Blackmun Doctrine and Madison's Conjecture in Essay 39 of The Federalist
+
+-   Blackmun asserted that the framers of the U.S. Constitution chose to rely upon a federal system designed so that the restraints on national powers over the states would turn principally upon the workings of the national government.
+
+#### Electoral Arrangements, Modes of Representation, and Collective Decisions
+
+-   "Blackmun confuses federal form with the eclipse of federalism."
+
+#### The Structure of Government and the Rule of Law
+
+-   The operation of distinguishable processes of law making and law adjudicating apart from law enforcing means that standards can be created that are publicly knowable, and allow for the performance of officials to be subject to a public assessment by citizens who have access to legal and judicial processes.
+
+-   The general theory of limited constitutions, as applied in the American system of governance, presumes that residual authority resides in the constitutional authority of the people in each state to establish the terms and conditions of government that apply to each state and to the system of governance within each state. The U.S. Constitution was conceived not as a general and full grant of governmental (plenary) authority but as one that is subject to an explicit delegation of limited authority.
+
+-   The Blackmun doctrine takes the position that the substantive grants of powers (that is, what is authorized) cannot be limited except where prohibitions (what is forbidden) are stated explicitly.
+
+#### The Central-Government Trap
+
+-   Blackmun doctrine abandons the limits inherent in a general theory of limited constitutions.
+
+-   More power is being transferred to the executive.
+
+    -   Ostrom doesn't really seem to discuss why that is.
+
+-   Four types of political transformation:
+
+    -   increasing centralization of authority in the national government
+
+    -   increasing erosion of legislative standards
+
+    -   increasing centralization of executive authority
+
+    -   increasing arbitrariness in the exercise of judicial authority
+
+-   Come back to this section - he talks about how all of this gives way to moral crusades.
+
+#### The Limits of "Federal Form"
+
+# Week 3: Federalism in America
+
+## Robertson, David Brian. 2012. Federalism and the Making of America. Routledge.
+
+### Chapter 1: Introduction
+
+-   Federalism: is a long-lasting institutional arrangement of political power in which both a national government and regional governments within a nation each have separate authority to maintain order, make laws, tax citizens' incomes, purchases and property, and provide public services.
+
+-   Ancient Greece was a confederacy.
+
+-   Federalism differs from other federal systems by:
+
+    -   1\) bringing smaller units of government together
+
+        -   this differs from other countries which use federalism to to help hold together politics with deep ethnic or cultural divisions in different geographical areas.
+
+    -   2\) In all other federal systems, the national government deliberately equalizes regional resources by redistributing more financial aid to the poorest regions.
+
+        -   The united states does **not** do this.
+
+    -   3\) American federalism is much more elastic than other nations.
+
+-   States compete with each other.
+
+    -   Delaware as an example
+
+        -   not sure how I feel about this.
+
+            -   doesn't this create a form of cut-throat competition?
+
+                -   if states compete for businesses and continually lower taxes, it might approach zero and thus leave the government without corporate tax revenue? **ask Ken his thoughts.**
+
+-   Federalism affects who gets what, where, when, and how.
+
+-   Federalism influences the following in different ways:
+
+    -   Freedoms and Rights
+
+        -   Federalism has a mixed record of protecting individual rights
+
+        -   if something is a right-whether to be free of environmental rules or to marry a gay partner-government should protect the right for all Americans, not just those who happen to live in some of the states.
+
+    -   Democracy
+
+        -   federalism allows citizens to better control and even resist the national government,
+
+        -   Madison: "the first and most natural attachment of the people will be to the governments of their respective States"
+
+            -   I find this somewhat suspect in modern times. Attachment to the states seem much more obvious as they existed in a time prior to the formation of the United States. That national culture had not existed yet.
+
+                -   wonder what this means for the nationalization of politics.
+
+                    -   **Ask Ken.**
+
+    -   Efficiency:
+
+        -   basically federalism gives greater flexibility to address niche problems that can't be solved with an overarching law.
+
+    -   Innovation:
+
+        -   federalism "enables a people to try experiments which could not safely be tried in a large centralized country."
+
+        -   SC Justice Louis Brandeis, "a single courageous state may, if its citizens choose, serve as a laboratory and try novel social and economic experiments without risk to the rest of the country."
+
+        -   Laboratories of Democracy.
+
+    -   Prosperity:
+
+        -   Barry Weingast contended that the federal system is "market-preserving", that is, it encouraged capitalist growth because the states have the ability and the will to compete with one another to foster their own internal prosperity. In doing so, they have a strong incentive to keep American economic regulations and taxes within limits that do not discourage investment and business expansion.
+
+            -   see my point about Delaware.
+
+                -   Might this foster a form of cut-throat competition.
+
+-   Author: "I argue that federalism plays an essential role as a battleground for all important American political conflicts
+
+    -   duh.
+
+-   Both parties have used federalism as either a weapon or a shield.
+
+-   Federalism endures because it is path dependent.
+
+    -   a tendency for an established way of doing things to become self-reinforcing for most people
+
+        -   I wonder what Americans think about federalism today.
+
+            -   I ask because it seems most Americans are fed up with the slowness of government and seem to want government to be more efficient and thus more likely to support a centralization of power? just a thought idk.
+
+-   Strategies for change and Federalism:
+
+    -   constitutional amendments, congressional laws, federal court rulings.
+
+    -   the concept of layering
+
+        -   a tactic of placing new responsibilities on the states to produced desired outcomes, usually in return for a conditional grant of money or some other benefit.
+
+    -   Third, reformers who confront obstacles at the state level sometimes try to *bypass* existing state government and political institutions by energizing new institutions that are more likely to produce the outcomes they seek.
+
+### Chapter 2: Federalism at the Founding
+
+-   How much central power?
+
+    -   this question motivates the founding fathers and pretty much all discussion of federalism.
+
+-   Constitution left an ambiguous boundary between national and state power that has produced endless fights over federalism.
+
+-   States for many reasons had different interests.
+
+    -   Slaves were a big part of those diverging interests.
+
+        -   Georgia and SC demanded more slaves and the continuation of the trade, but Virginia and NC already had plenty and were more supportive of banning slave imports.
+
+    -   States seemed to benefit themselves at the expense of others
+
+        -   Shays Rebellion.
+
+        -   the pursuit of narrow self-interest was making "the situation of this great Country weak, inefficient and disgraceful
+
+            -   George Washington said that.
+
+-   Madison & Hamilton
+
+    -   believed states should have a minor role
+
+    -   Madison believed that the states; autonomy, power, and selfish parochialism were the basic flaws in the Confederation government.
+
+    -   Wanted **Broad Nationalism**
+
+        -   Virginia plan.
+
+-   Narrow Nationalism
+
+    -   Roger Sherman of Connecticut was the big name here.
+
+    -   Advocated of narrow nationalism
+
+        -   wanted a stronger national government, but they wanted specific, narrow new powers rather than the broad authority Madison sought.
+
+-   Broad v. Narrow showdown aka the convention
+
+    -   Two issues specifically divided the Convention:
+
+        -   the states representation in Congress
+
+        -   the extent of power required by the national government.
+
+    -   Also a debate about sovereignty.
+
+        -   Hamilton was basically like "nah, the national government can only have true sovereignty."
+
+        -   But others were like "nah bro we can have shared sovereignty between the state and national government."
+
+    -   We eventually get a compromise (The Connecticut plan) - Madison wasn't there but Sherman was
+
+        -   "The delegates, then, designed American federalism by compromising on a series of conflict about the specific powers of the national government. Narrow Nationalism prevailed in protections for state power to tax, maintain a militia, and the commercial power. Broad nationalism prevailed in new national taxing, military, and commercial authority, and in flexible powers that could be expanded in the future.
+
+-   Sherman really wanted militas:
+
+    -   "the states might want their militia for defense against invasions and insurrections, and for enforcing obedience to their laws."
+
+        -   lol this flies in the face of 2nd amendment modern interpretation.
+
+-   Constitution firmly established that it and the national laws "shall be the supreme Law of the Land."
+
+-   Constitution gave the national government potentially broad authority to make all laws "necessary and proper" for executing all its enumerated powers."
+
+-   Constitution reflected a vision of broad national government responsibility "to form a more perfect union, to establish justice, insure domestic tranquility, provide for the common defense, promote the general welfare, and secure the blessings of liberty to ourselves and our posterity."
+
+-   Constitution needed some TLC to be ratified.
+
+-   Tenth amendment was added.
+
+    -   tenth provides no guidance about the precise boundary between state and national power.
+
+-   Federalist papers came into existence to argue for the constitution.
+
+-   First, The constitution allowed the states to keep the powers of everyday governing, control most of the policy tools for governing everyday American life - local and particular interests.
+
+    -   diversity lies at the heart of federalism.
+
+    -   short term interest was very powerful early on.
+
+-   Second, the constitution authorized the national government to exercise the powers of national sovereignty, that is, the tools of diplomacy, commerce, and national security exercised by other sovereign national governments.
+
+    -   states, not the national gov, had and kept the power to govern their own culture, politics, and economy.
+
+-   Third, the ambiguous boundary between state and national power has encouraged political conflict throughout American history.
+
+-   Fourth, the conflict between national and state turned American federalism into a massive arena of political conflict.
+
+    -   the first battleground - involves whether the government should act to deal with a public problem or not.
+
+    -   the second battleground - what LEVEL of government should have the power to choose whether to act.
+
+-   Interesting point by Woodrow Wilson:
+
+    -   "...It cannot, indeed, be settled by the opinion of anyone one generation because it is a question of growth, and every successive stage of our political and economic development gives it a new aspect."
+
+### Chapter 3: Federalism, Political Parties and Interests
+
+-   Federalism fules political polarization because it allows the political parties to take different states in divergent political directions.
+
+-   Voter identification laws illustrate this battle well.
+
+-   15th amendment says you cant restrict voting from certain people.
+
+    -   states got creative to prevent slaves from voting
+
+    ```         
+    -   literacy, citizenship tests, poll taxes, grandfather clause.
+    ```
+
+-   Voting Rights Act of 1965 outlaws all this stuff \^\^\^\^
+
+-   more recent stuff relates to voter ID laws.
+
+    -   Shelby v. Holder
+
+        -   the court effectively struck down a requirement from the 1960s that sates with a history of voter suppression get Federal approval before implementing new election laws like a photo identification requirement.
+
+            -   states got more emboldened to restrict voting.
+
+#### How the Constitution Shaped Political Parties and Interest Groups
+
+-   Framers thought that legislators being from different regions and thus having different constituencies would have different interests from others. Implicitly implying parties would not form because of legislators unique constituents.
+
+-   Madison had observed coalitions before. And knew they could be dangerous if gained a majority
+
+    -   he presumed that federalism and the. separation of powers would fragment the government so thoroughly that these factions owuld find it hard to cooperate to achieve their selfish, destructive purposes.
+
+-   Federalism was *a massive obstacle to national political cooperation.*
+
+    -   this is an interesting point and I think is actually a major problem now.
+
+    -   **bring this up.**
+
+#### Building Political Parties and Interest Groups in the American Federal System
+
+-   Political parties - a durable coalition of individuals who seek and hold public offices
+
+    -   this differs from Zaller's definition.
+
+-   "In part because of federalism, the United States failed to develop the coherent national political parties and strong, inclusive, and centralized business and labor organizations that shaped the political development of other wealthy democracies."
+
+    -   is he saying that the parties never crystallized around business v. labor?
+
+-   V.O. Key: "Perhaps the outstanding characteristic of American party organizations, viewed from the national aspect, is its decentralized nature."
+
+    -   interesting. Is this true now?
+
+-   Seems to be an argument that federalism (decentralization) made parties harder to centralize into national party organizations like that of other countries.
+
+-   Decentralized American parties relied heavily on patronage to keep their national coalitions together.
+
+#### Federalism and the Development of the Democratic and Republican Parties
+
+-   Federalist (Jefferson & Madison) were opposed to Hamilton's central bank.
+
+#### Political Polarization:
+
+-   Main Argument: Federalism has intensified political party polarization.
+
+    -   political polarization has intensified the use of federalism as a partisan battleground.
+
+-   **Federalism has intensified political polarization because partisan majorities who hold power in the states are actively using their powers to defeat their partisan opponents.**
+
+#### American Interest Groups:
+
+-   "A striking feature of American politics is the extent to which political parties are supplemented by private associations formed to influence public policy."
+
+-   Interest groups strength was noted by Tocqueville.
+
+-   Interest groups were naturally strong at the state level because states controlled most of the everyday governing in the nation.
+
+-   "Because federalism helped fracture business interests, it weakened American businesses' incentives to cooperate in building strong"peak" organizations that would advocate a broad, coherent, and clear program of business priorities for national action." '
+
+-   Federalism also fragmented organized labor.
+
+-   Federalism has fostered pluralism.
+
+-   Federalism has made nationwide political cooperation difficult by helping to decentralize and narrow political organization in the United States.
+
+-   Federalism is a means to an end.
+
+### Chapter 4: Federalism and Race
+
+-   Federalism allowed the states to decide whether to encourage and expand slavery, or to abolish it.
+
+-   Federalism allowed the slave-holding states to prolong the exclusion of blacks for generations, long after abolition and the military defeat of the Southern slave states in the nineteenth century.
+
+-   Federalism has fragmented efforts to deal with the consequences of slavery, segregation, and white supremacy.
+
+-   No feudalism in America -\> race and gender become the dominant, de facto, hierarchy.
+
+-   Race often marked the deepest polarizing issues in American politics. Poole & Rosenthal
+
+-   Slavery and the southern states that really fuels the debate about federalism and onwards after the convention.
+
+-   14th amendment comes out of the civil war.
+
+    -   so is the 14th amendment in response to only former slaves?
+
+        -   what did they think about other races...I guess it wasn't an issue since they passed it.
+
+-   Despite considerable federal government actions to protect African-Americans (this is of course relative, there could have been more done).
+
+    -   federalism and the fragmentation of government made it impossible to ensure other branches of government and the states would adhere faithfully.
+
+-   We get Jim Crow Laws.
+
+-   Woodrow Wilson was HELLLA racist.
+
+-   The New Deal improves many African American lives.
+
+    -   still had considerable problems though with race.
+
+    -   still allowed state and local officials to discriminate against blacks and other minorities in many New Deal programs.
+
+#### The Civil Rights Revolution
+
+-   Nazism basically inspires many Americans to start reevaluating some stuff in America.
+
+-   States started to diverge on racial policy.
+
+-   1964 Civil Rights Act
+
+    -   eliminated states' p\[power to segregate schools, public accommodations, and the workplace.
+
+    -   outlawed discriminating in hiring, firing, training, or promoting employees because of their race, color, gender, or nationality, and established an Equal Employment Opportunity Commission.
+
+-   Efforts to address past employment and college admissions discrimination resulted in affirmative action programs.
+
+-   in 1996, California voters approved Prop 209 which banned preferential treatment for "any individual or group on the basis of race, sex, color, ethnicity, or national origin in the operation of public employment, public education, or public contracting.
+
+### Chapter 5: Federalism and American Capitalism
+
+-   In a capitalist system, private owners, and not the government, own the key means of production (land and natural resources, capital, and labor) and these owners distribute products by exchanging them in free markets.
+
+-   Economist Karl Polanyi argued that governments created free markets by actively extending property rights, enforcing business agreements, and breaking down barriers to buying and selling.
+
+-   Polanyi identified a *double movement* in capitalist development:
+
+    -   constant pressure for unfettered economic growth driven by capitalism
+
+        -   in America, this kinda wins out.
+
+        -   The states competing for private enterprise made this more likely to win out.
+
+    -   and constant pressure to relieve the problems that markets created for many people.
+
+-   Economic development must be politically viable and efficient as well.
+
+-   "Federalism, then, had two effects on the management of American economic growth. First, it allowed those who opposed government efforts to restrict market expansion to dig in behind states' rights and oppose the expansion of national power to mitigate the effects. Federalism in the United States tended to be"market-preserving": it limited the ability of American public officials to restrict business and to redistribute wealth from those who profited from capitalism to others. But, second, the very fact that federalism encouraged the growth of strong private enterprises also encouraged a backlash that defined business as a hostile adversary that required strict policing and punishment.
+
+-   Hamilton wanted national government to have greater control over econ.
+
+-   States provided legal charters for corporations
+
+    -   this is important as states had different regulations and taxes
+
+        -   this is why everyone is chartered in Delaware.
+
+-   Santa Clara County v. Southern Pacific Railroad Company
+
+    -   SC interpreted the 14th amendment as a guarantee of corporate rights (equating corporations with individuals) and limited state inferences with the freedom of corporations.
+
+-   Pools become a thing
+
+    -   legal agreements to keep rates high.
+
+        -   this becomes a big thing with railroads.
+
+-   Wabash, St. Louis and Pacific Railway Company v. Illinois
+
+    -   Only congress can make regulations on interstate railroad rates *not the states.*
+
+-   Interstate Commerce Act in 1887
+
+    -   neutralize the economic weapons that railroads had used to escape state control
+
+    -   established the Interstate Commerce Commission (ICC)
+
+        -   authority to challenge the prices that interstate railroads set for freight.
+
+        -   further made it impossible for railroads to cooperate in creating a cartel.
+
+-   Sherman Antitrust Act of 1890
+
+    -   declaring illegal "every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce *among* the several state..."
+
+        -   states not the national government controlled corporate law.
+
+    -   However, giant corporations could take refuge from antitrust law by simply incorporating in a single state.
+
+-   Democrats were emboldened to use the federal government to more actively stabilize the capitalist system in the Great Depression.
+
+-   National Industrial Recovery Act (NIRA) - authorized businesses in each major industry to regulate their prices, production, and working conditions, and allowed the Federal government to enforce these agreements.
+
+    -   SC ruled against the NIRA.
+
+        -   SC argued fed was overstepping a power that was exclusively to the States.
+
+        -   Schechter Poultry Company of New York.
+
+-   Glass-Steagall Act - required commercial and investment banks to separate, and prohibited commercial banks from underwriting most securities.
+
+-   SC eventually retreats from their earlier decision and upheld national power to regulate union organizing, even within a state.
+
+-   Pollution regulation is interesting
+
+    -   initially led by the states. But there is still problems. As William D. Ruckelshaus, the first director of the U.S. EPA notes:
+
+        -   "My impression in those days was the that pollution was essentially a problem caused by competition among the states for the location of industry within their borders. When we began to enforce pollution laws, they were pretty broad in modern terms and only addressed flagrant pollution. I mean, there were a lot of cities without any sewage treatment and there were industries discharging absolutely untreated material into the waterways, killing fish. But whenever we pushed a major company very hard, there was always the threat they would move to the south where the governors said, in effect,"Come on down here, we don't care, we need your business, we need jobs.' My impression was, if you simply centralized all of this oversight and enforcement activity, you could bring such states and governors in line because there wouldn't be any place for them to run and hide."
+
+            -   really good quote.
+
+                -   further: the Automobile industry got annoyed by all the different state regulations and campaigned for a single federal law to supersede the patchwork of different state rules.
+
+-   1980s - businesses mobilized and helped conservative Republicans.
+
+    -   The Financial Services Modernization Act of 1999 - repealed New Deal era banking law and preempted states from prohibiting any of the banking activities allowed by Federal Law.
+
+### Chapter 6: Progressive Reform
+
+#### The Progressive Impulse:
+
+-   the progressive movement addressed ideas, interests, and issues stemming from the modernization of American society.
+
+#### The Expansion of Government and Democracy:
+
+-   state income tax exploded.
+
+    -   much more compared to federal government.
+
+-   progressive movement shifted power to executives and experts.
+
+-   Took power away from political parties and legislative bodies.
+
+-   Rural bias still present in state legislature.
+
+#### State Policy Innovation and its Limits
+
+-   States enacted a lot of innovative laws.
+
+#### Labor:
+
+-   American labor protections spread unevenly and state labor regulations became increasingly different in different states.
+
+-   labor was fragmented much more than in Europe.
+
+-   smaller employers hated unions too.
+
+#### Women:
+
+-   women could exert more strength simply because they were in every political jurisdiction.
+
+-   women used federalism skillfully to win the right to vote.
+
+#### Prohibition
+
+-   prohibition used federalism to successfully lobby for prohibition.
+
+-   state-by state strategy.
+
+#### Uniform Laws:
+
+-   Federal spending power that provided an alternative way to motivate states across the nation to take action.
+
+#### Layering Reform: Federal Grants-in-Aid for Activating the States
+
+-   Federal grants- in-aid could put Federal revenue to work to bypass even moribund state governments in a specific field and establish a national fabric of specific state activities nourished by Federal money.
+
+-   **Under a grant-in-aid program, the Federal government would send money in the form of grants to the states on the condition that they establish a specific kind of public agency or program and match Federal funds with some of their own funds.**
+
+### Chapter 7: The New Deal:
+
+-   New Deal established a federal minimum wage.
+
+-   Federal government required industries to include minimum wage rules in mandated codes of "fair competition"
+
+    -   it became clear that interstate competition still made it almost impossible for states to implement a minimum wage individually. Thus we get the fed min wage.
+
+#### The Great Depression and American Government
+
+-   American cities' revenues fell by forty percent in these years.
+
+-   states made the job crisis worse by cutting spending on public works.
+
+-   to make up for lost revenue from property taxes, many states implemented income taxes.
+
+#### The Transformation of Federalism
+
+-   Hoover didn't want to use the fed that much.
+
+-   Fed gov never had more employees than the states,
+
+-   fed spending grew enormously.
+
+#### Federalism and New Deal Politics:
+
+-   Southern Dems didn't like new deal because it threatened a lot of their way of life.
+
+-   also threatened agriculture and subordination of African Americans.
+
+#### The Grants Strategy and the Rise of Intergovernmental Relations:
+
+-   Enthusiasm for national power began to erode.
+
+-   instead of attacking state gov power, Roosevelt chose to build on the grants strategy to advance Federal and state activism.
+
+-   Grant-in-aid exploded.
+
+-   most were categorical grants - they were Federal funds given for specific, narrowly defined purposes like highway construction or aid to mothers with dependent children.
+
+-   "Cooperative" federalism - the Federal government emerged as an active, senior partner of the states, funding government action on a wide range of issues.
+
+#### Social Security
+
+-   Roosevelt emphasized state control over social security b/c of political issues if he didn't.
+
+-   states varied wildly
+
+-   Roosevelt refused to support health insurance.
+
+    -   they thought its inclusion would generate enough opposition to sink the whole plan.
+
+-   Congress in 1940 wanted a system of grants to the states to set up health insurance, the proposal died because of the opposition of a powerful coalition of interest groups, led by the American Medical Association and the U.S chamber of commerce.
+
+-   Alone among the provisions of the Social Security Act, the Federal government would directly manage old-age insurance for retired workers-the program now associated with the term, "Social Security".
+
+    -   Employers and workers in long-term, full-time jobs would make mandatory contributions to a Federally run trust fund.
+
+        -   Why not let the states run this?
+
+            -   1\) "Congress can't stand the pressure of the Townsend plan unless we have a real old-age insurance system..."
+
+            -   2\) no state had created a government sponsored old age insurance program, thus no state had innovated on this and no state would probably oppose as a result.
+
+            -   3\) Fed policymakers believed that nationally run social insurance for the elderly would cost less than Fed-state grants for old-age pensions.
+
+            -   4\) American workers frequently moved across state lines.
+
+            -   5\) program excluded domestic workers and agriculture workers, and for that reason, left much of the labor market in the South-particularly its racial composition-undisturbed.
+
+                -   ????????? wait what? **Ask Ken**
+
+#### Organized Labor:
+
+-   New Deal helped organized labor.
+
+-   National Labor Relations Act of 1935.
+
+-   Taft-Hartley Act of 1947 - passed by a Republican Congress over PResident Truman's veto, allowed states to prohibit the union shop (that is, workplaces that require union membership as a condition of employment.
+
+-   right-to-work laws. Used to blunt the expansion of trade unions
+
+    -   over half the states passed these,
+
+#### Legacy:
+
+-   New deal had three high costs
+
+    -   1\) more fragmentation to public policy
+
+    -   2\) grants and contracts among governments established a new arena of political conflict, one that was almost invisible to the public.
+
+    -   3\) Federal policies delivered through states made many policies vulnerable to interstate rivalry and competition.
+
+        -   review this point and the evidence for it.
+
+### Chapter 8: Liberal Activism and Intergovernmental Relations
+
+#### Health Care From the New Deal to the Great Society to Obamacare
+
+-   lots of gaps in health insurance.
+
+-   almost every president has tried to do something and they all fail.
+
+-   Lyndon B Johnson pushes for:
+
+    -   medicare: provided social security retirees with hospital insurance
+
+    -   medicaid: a program of federal-state income assistance programs.
+
+        -   medicaid varies wildly from state to state.
+
+-   Clinton pushed for another new grant-in-aid called the Children's Health Insurance Program, or CHIP.
+
+    -   CHIP encouraged states to provide insurance coverage to children in families who lacked health insurance but whose income was too high for Medicaid eligibility.
+
+        -   Obama approved the expansion of this.
+
+-   All of this created a lot of powerful political interests.
+
+-   Fed tax code subsidized employer-provided health insurance by exempting these benefits from Federal taxes.
+
+-   Obamacare was based on Romney's plan.
+
+    -   provided for insurance exchanges in each state
+
+    -   expanded Medicaid
+
+    -   required employers to provide insurance to employees, required individuals to obtain health insurance
+
+    -   and prohibited insurance companies from dumping those who become sick or have long-term health problems.
+
+-   in 2017, states refused to expand medicaid
+
+    -   28 states declined to establish insurance exchanges
+
+    -   9 states adopted laws making compliance with obamacare a crime unless the state leg approved it.
+
+#### Creative Federalism
+
+-   Creative fed differed from the new deal
+
+    -   1\) addressed new priorities of the time.
+
+        -   by Obama, healthcare grants were like 2/3 of all fed grants.
+
+    -   2\) fed grants bypassed state govs and went directly to other entities.
+
+    -   3\) fed imposed more regulations on grant recipients.
+
+        -   one type of regulation was the crosscutting requirement that mandated all those who received Federal grants had to obey a particular regulation, regardless of the purpose of the grant.
+
+    -   4\) with the major exception of Medicaid, most liberal grants were project grants
+
+        -   project grants required grant applications to propose a project to a federal agency.
+
+#### Grant Activism and the Republicans
+
+-   Nixon used block grants to redirect grants more broadly
+
+    -   a new federalism in which power, funds and responsibility will flow from Washington to the States and the people.
+
+    -   would group together several similar categorical grant programs, and turn over to the states the money and responsibility for this single block of formerly separate programs.
+
+        -   these block grants would shift money to the state level, and would allow the states much more control over how they would use this money.
+
+            -   **The Community Development Block Grant of 1974 was one of these.**
+
+-   Nixon also did general revenue sharing
+
+    -   state/local could get money and spend it how they want.
+
+-   **Nixon increased grant spending but it also shifted grants-in-aid away from the Democrats' central city constituency and toward the growing Republican constituency in suburban and rural areas and in sunbelt states.**
+
+-   The fed gov was writing checks the state and local governments and other organizations cashed and spent, particularly on the problems of health, poverty, and edu, and cities.
+
+#### Education
+
+-   Before 1950s, state and local gov controlled public edu with virtually no Federal influence
+
+-   baby boom put more pressure for new schools and more teachers
+
+-   Russia launched sputnik and the USA was like "oh shit, we need more STEM"
+
+    -   National Defense Education Act of 1958
+
+-   Fed gave money to states for them to centralize more STATE control over education.
+
+-   by 1980 the fed gov established the department of edu, further strengthening the link between the Fed government, NEA, and the state and local education establishment.
+
+    -   i want a little more history of the department of edu.
+
+### Environmental
+
+-   cities/states had different environmental policies
+
+-   need to standardize these policies b/c of wide variance.
+
+-   Federal environmental regulations imposed limits on the states, but they also reinforced state authority because they allowed states to exercise new authority in implementing the law.=
+
+#### legacy
+
+-   got hard to manage all these grants.
+
+-   some grants were not successful and struggled to be effective
+
+-   local responsibility also produced local abuses and mistakes, and unevenness across places and programs.
+
+-   this caused bad PR and strengthened critics of the fed government.
+
+-   leading to a backlash against the liberal activism in the 1980s.
+
+### Chapter 9: Federalism and Today's Issues:
+
+-   Conservatives say they like federalism but in practice have used both decentralization and centralized federal power to promote market-driven economic growth and traditional social values.
+
+    -   democratic presidents have also used a mix of federalism.
+
+#### Federalism and Climate Change
+
+-   states vary on their greenhouse emission standards.
+
+-   federalism as a tool rather than as an end.
+
+#### The Backlash against Liberalism and the Rise of Conservatism
+
+-   conservatives built think tanks to provide intellectual arguments for a free market and decentralized policy.
+
+-   republicans really start getting motivated and winning across the nation.
+
+#### Federalism and the Reagan Administration
+
+-   While other presidents since the New Deal had viewed the Federal and state governments as partners, the Reagan administration viewed them as competing sovereigns.
+
+-   Fed tax cuts and domestic spending cuts would be aimed to cut the Fed's ability to fund domestic programs, including all grants-in-aids.
+
+-   1986, fed ended general revenue sharing.
+
+#### How Political Polarization has Enlarged the Battlefield of Federalism
+
+-   partisans used federalism as a shield and sword.
+
+-   Conservatives and Republicans since 1980 have used federalism as a strategic weapon: they decentralize power when and if decentralization was likely to produce conservative results, but they expanded U.S. government power where state and local discretion would undercut their important priorities, such as reducing business regulation.
+
+    -   The Reagan administration gave the states more power to implement clean air laws, aware that many states would relax the enforcement of these regulations on businesses within the state.
+
+-   While Reagan's speeches celebrated federalism, in reality the administration "encouraged additional centralization of political power in several functional areas and prohibited state economic regulation of certain industries."
+
+-   Republicans made disputes over policy, disputes over federalism.
+
+    -   interesting point.
+
+-   more state activism during and post Reagan.
+
+    -   a return to the "laboratory of democracy."
+
+#### Federalism in a polarized era
+
+-   Clinton promised to "end welfare as we know it."
+
+-   republican states refused to provide additional welfare benefits to a family that added children.
+
+    -   what is the logic here?
+
+        -   do Republican think poor people will go "oh man we shouldn't have another kid because we will get less welfare. thus we shouldn't have a kid."
+
+            -   this of course does not happen in reality.
+
+#### Education
+
+-   Minnesota develops the charter school
+
+    -   liberals and conservatives love it.
+
+    -   charter school funded at least in part by government, operate under less restrictive rules and regulations that regular local public schools but are held accountable for results and for complying with their initial charter for operation.
+
+-   No Child Left Behind
+
+    -   STATES, not the federal government, set the standards and the tests.
+
+#### Environmental Protection
+
+-   EPA was initially bipartisan
+
+-   Reagan started cutting a shit ton.
+
+-   constant competition between the states.
+
+#### Culture Wars
+
+-   abortion and gay rights stimulate a lot of conflict
+
+-   states diverge on abortion and gay rights
+
+### Chapter 10: American Federalism in the Twenty-First Century
+
+#### Federalism and Immigration
+
+-   in the 1920s Federal law tightened immigration limits on many ethnic nationality groups who were not already a large part of the US population
+
+-   ethnic quota laws lasted for forty years
+
+    -   replaced with more liberal laws in the 1960s
+
+-   States diverge sharply on immigration
+
+-   Donald trump has threatened to cut federal aid to sanctuary cities.
+
+#### Federalism and the Making of America
+
+1.  Federalism provides a battlefield for the struggle to win and keep political, economic, and social power.
+
+2.  Federalism has had a cumulative impact on American politics, policy, and life.
+
+3.  Government expansion since 1900 has been built on top of nineteenth-century federalism
+
+-   The U.S. Constitution produced an unfinished framework for American federalism because they could not agree on the balance of national and state authority.
+
+#### Federalism as an Expedient Battlefield for Conservatives and Liberals
+
+-   Federalism endures because the states have always served the purposes of powerful political interests, and when it is selectively used, federalism often brings these interest positive returns on their political investments.
+
+#### Conservatives
+
+-   say they are for state rights but in reality are not.
+
+-   they care only for their conservative goals.
+
+-   Conservatives have:
+
+    -   historically, are just as responsible for the expansion of national power as are liberals
+
+    -   states, left to themselves, will not produce reliably conservative policies. States' rights alone were never sufficient to sustain unrestricted business behavior
+
+    -   most conservatives turn a blind eye to the national security state. A strong Federal military establishment has and must undermine federalism-as the constitution framers fully recognized.
+
+#### Liberals
+
+-   Liberals have used state and fed government to advance what they want.
+
+-   Liberals, then, must consider the possibility that the states' liberal policy innovations have been a political prerequisite for constructing a viable coalition for expanding liberal activism nationally.
+
+-   Political construction of these kinds of rights began in states, and that the construction of national political support for these rights seemed to begin with construction of concrete, supportive, and legitimating policy initiatives in important states.
+
+-   Liberals and conservatives strongly prefer national standards for all issues they consider truly important.
+
+-   FEDERALISM IS A MEANS TO A LARGER ENDS.
+
+#### Federalism and Democracy
+
+-   Federalism has served anti-democratic ends. but also the opposite
+
+-   federalism has an ambiguous record but is clearly important
+
+-   Federalism: a strategy for institutionalizing opposition.
+
+-   Author is saying voting reforms that increase enfranchisement are vital.
+
+    -   non-partisan secretaries of state
+
+    -   automatic voter reg
+
+    -   nonpartisan redistricting
+
+# Week 4:
+
+# Week 5:
+
+## Bill Bishop - *The Big Sort*
+
+## Lecture Notes:
+
+-   focus of Bishop is probably Religion - that is the big change.
+
+### Part 1: The Age of Political Segregation
+
+#### Chapter 1: The Age of Political Segregation
+
+-   looks at presidential election voting records.
+
+-   Brings up polarization in the mass public. Cities Fiorina.
+
+    -   This was written before affective polarization which comes to dominate how we think of the public and polarization.
+
+##### The Origins of Division: Gerrymandering or Conspiracy?
+
+-   Author cites two reasons that are traditionally used to explain our polarized politics. These are both suspect to me.
+
+    -   1\) Gerrymandering
+
+        -   not strong support for this.
+
+    -   2\) Holds that conservative activists built an interlocking structure of propaganda and money that moved the Republican party, and the nation, to the right.
+
+        -   This is kind of a democratic theory he describes:
+
+            -   Republicans post Goldwater built a tightly wound, highly coordinated movement from the top down. Corporations and foundations paid for think tanks and advocacy groups, which supplied the movement with ideas and leaders. The right created its own media. etc.
+
+-   Author argues those previous points are top down. What about bottom up?
+
+    -   there is more freedom to move. Americans have greater mobility to have neighborhoods reflect their opinions.
+
+    -   The Big Sort is about this bottom up shift.
+
+##### The Politics of Place: What's the Matter with Ohio?
+
+-   "Fenton...showed upper-class voters lived in tightly knit, geographically compact communities. Physical proximity made it easier for them to maintain political cohesion, to move and vote in an ideological herd."
+
+-   "In nearby Michigan, Gimpel said, working-class voters lived close to one another, and their geographic proximity powered their ideological and political intensity. In Ohio, however, workers were spread out, and the effect of this diffusion...was profound...The postman did not talk the same language as his accountant neighbor, and the accountant was in a different world from the skilled workman at Timken Roller Bearing who lived across the street...The disunity of unions and the Democratic party in Ohio was a faithful reflection of the social disorganization of their members."
+
+    -   giving shades of Marxist geography readings.
+
+-   page 36!!!!!! REALLY GOOIOOOOD!
+
+    -   "Unlike Ohio of the early 1960s, political divisions today are as much a result of values and lifestyle as they are of income and occupation. And with those divisions has come a pervasive and growing separation. Americans segregate themselves into their own political worlds, blocking out discordant voices and surrounding themselves with reassuring news and companions."
+
+        -   so good!
+
+#### Chapter 2: The Politics of Migration
+
+-   bumper sticker: Mechanism: Opposites do NOT attract.
+
+-   conservatives are more into parenthood.
+
+-   more domestic migration to republican counties
+
+    -   okay but why
+
+        -   might this be because republican counties were cheaper? ie land, rent, home cost?
+
+#### Chapter 3: The Psychology of the Tribe
+
+-   "Legislators had a decided aversion to sharing their mess table, their living quarters, and their leisure hours with colleagues from regions other than their own"
+
+    -   this is interesting. Recall Madison's point about the state being the important community.
+
+-   The cultural segregation in early America was enforced by the lack of mobility, whereas today it's the ease with which Americans are able to move that has created political segregation.
+
+-   Congress living in segregated housing.
+
+-   What we think of what we hear or see or read depends largely on who said it, did it, or wrote it, and we are likely to find evidence that confirms our preconceptions.
+
+-   face-to-face contact is powerful. The George W. Bush campaign, especially in 2004, used face-to-face contact among culturally similar people to increase voter turnout.
+
+-   Mixed company moderates; like minded company polarizes.
+
+    -   why though?
+
+        -   2 possible mechanisms:
+
+            -   1\) people in single-minded groups are privy to a large pool of ideas and arguments supporting the dominant position of the group.
+
+            -   2\) People are constantly comparing their beliefs and actions to those of the group. When a person learns that others in the group share his or her general beliefs, he or she finds it socially advantageous to adopt a position slightly more extreme than the group average.
+
+        -   people grow more extreme within homogeneous groups as a way to conform.
+
+    -   on Saint Paul: "The disciple knew that going overboard in his pursuit of Christians served him well in the homogenous society of the Jews. Paul explained that he"profited in the Jews' religion above many my equals in mine own nation, being more exceedingly zealous of the traditions of my fathers."
+
+        -   "any successful talk radio host has realized, like Paul, that acclaim (and ratings) accrue to the most zealous
+
+-   Madison and Hamilton saw heterogeneity as a source of strength.
+
+-   The "constant clashing of opinions" that Brutus feared wasn't to be avoided, according to the federalists. It was to be sought after.
+
+-   David Campbell: an even mix of dems and reps increases voter turnout - good source for walkability paper.
+
+-   Robert Huckfedlt: as communication between members of the parties diminishes, the two sides come to see each other as more extreme or radical.
+
+-   Mutz: lots of choice gives people the opportunity to sort themselves with people similar.
+
+## Part 2: The Silent Revolution
+
+### Chapter 4: Culture Shift - The 1965 Unraveling
+
+-   1950s - Americans are indifferent toward politics.
+
+-   Inglehart - people get wealthier and their social values also changed.
+
+-   social capital declining
+
+-   religion declining
+
+-   trust in everything declined.
+
+-   rise of alienation and distrust.
+
+    -   why? Americans started looking at political events.
+
+        -   but this isn't sufficient.
+
+-   Interesting discussion about post-materialism and the social changes that arise from it.
+
+-   Why did white men leave the democratic party?
+
+-   Voters were becoming more ideological by the early 1970s
+
+-   "The new politics was molded by post-materialist realities. Tradition, economic class and occupation, religious denomination, civic structures, and party politics - the ways of life that had molded the country over the previous century - were losing significance.
+
+    -   the new society was more about personal taste and worldview than public policy.
+
+### Chapter 5: The Beginning of Division - Beauty and Salvation in 1974
+
+-   spiritual awakening going on
+
+-   discordant groups found each other to reformulate the Republican party.
+
+-   class had diminished in salience and explanatory power.
+
+-   working class doesn't and shouldn't mean just income.
+
+-   or is it rural v. urban division
+
+    -   a broader question about what is the salient social cleavage.
+
+-   uneducated poor whites voted very differently.
+
+    -   education became a huge predictor!
+
+-   biblical differences are also geographic differences.
+
+-   basically this chapter is focused on religion and its role in the big sort and political preferences.
+
+### Chapter 6: The Economics of the Big Sort - Culture and Growth in the 1990s.
+
+-   Education was critical in the economics of cities
+
+-   educated people congregated at the cities. attracting jobs and further increasing the divide.
+
+-   Cities such as San Diego, Houston, Los Angeles, and Atlanta, and silicon valley all had bottom of the barrel social connections but high rates of innovation and growth and high incomes.
+
+-   I wonder if this is a story about the need for "roots"
+
+-   "This process of making connections and sharing ideas worked best when people invovled in related kinds of work could meet face-to-face and share new ideas."
+
+-   Granovetter theorized that new ideas didn't start where there were a lot of strong, stable social ties.
+
+    -   New behaviors and ideas were transmitted first and fastest through weak, peripheral relationships,
+
+    -   strong ties between people bottled up information.
+
+        -   Mark Granovetter
+
+            -   really important! Come back to this!
+
+-   Craig Johnson, managing director of a Silicon Valley venture capital firm, told Stross that having all the entrepreneurial ingredients nearby created an intensity that was missing from more **spread-out geographies.**
+
+    -   Los Angeles, after all, had great universities and talent and boatloads of money. "But in Los Angeles, people are scattered across a wide area; everything is spread out"
+
+-   "the function of cities had changed. Their reason for being and their residents' reason for living within them - was no longer to produce salable goods and services. The city's new product was lifestyle.
+
+-   high-tech cities had cultures that differed from manufacturing towns. They had lower civic engagement all around.
+
+## Part 3: The Way We Live Today
+
+#### Chapter 7: Relgion - The Missionary and the Megachurch
+
+-   basically churches attract people.
+
+-   people go to a church not for how it might change their beliefs, but for how their precepts will be reconfirmed.
+
+#### Chapter 8: Advertising - Grace Slick, Tricia Nixon, and You
+
+-   individualization of voters.
+
+-   a commodity of mass production
+
+-   The purpose of advertising was "to permit the shopper to make social-class identification".
+
+-   Peppers and Rogers described a nation of consumer "hunters and gatherers," traveling in groups "held together by a sense of common purpose, not confined by any sense of place. This is the 1:1 future...It will be a tribal society at light speed. Individuals will congregate in wandering, venturesome image tribes, held together by their pursuit of common ideas, common icons, common entertainment - linked, in other words, by nothing more than a sense of belonging. It will not be geographic community."
+
+    -   what a fucking good quote.
+
+        -   Bishop thinks they were still geographic.
+
+-   "Marketers created the electronic version of gated communities, encouraging"small slices of society to talk to themselves."
+
+#### Chapter 9: Lifestyle - Books, Beer, Bikes, and Birkenstocks
+
+-   Tiebout theorized that people would pick and choose among communities to find a desirable array of local services at an acceptable level of taxes.
+
+    -   mostly based on economics.
+
+# Week 6: Foundations of Polycentricity
+
+### Lecture Notes:
+
+-   A system where multiple overlapping governments or institutions compete or cooperate to provide public goods. Local governments act independently but also interact with higher levels of governance. Encourages competition and choice for citizens, leading to more efficient governance in theory.
+
+-   What the public sector tries to do is usually foisted upon it because of market failures.
+
+-   
+
+## Tiebout, Charles M. 1956. "A Pure Theory of Local Expenditures," Journal of Political Economy 64: 5 (October): 416-24.
+
+-   beef with Musgrave & Samuelson
+
+    -   their model assumes expenditure at the federal level. No "market" solution exists for public goods.
+
+        -   this is wrong.
+
+-   Tiebout focuses too much on local governments in isolation
+
+-   Why is Tiebout so important?
+
+    -   public econ was focused on central states
+
+        -   no way to know if states are set up optimally.
+
+            -   people can misstate their true preferences
+
+    -   Tiebout comes in and says lets focus on local governments
+
+-   Tiebout argument: local governments compete for residents, who "vote with their feet" by moving to communities that best match their preferences for taxes and public goods.
+
+-   Key Assumptions:
+
+    -   people are fully mobile
+
+    -   they have full knowledge of local policies
+
+    -   there are many municipalities to choose from
+
+    -   no externalities between communities
+
+    -   local governments act like firms, offering bundles of taxes & services.
+
+-   Tiebout is making an entrance argument.
+
+## Hirschman, Albert O. 1970. Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States. Harvard University Press.
+
+-   he is concerned with sub-optimal.
+
+-   Economist have paid little attention to repairable lapses of economic actors.
+
+    -   this is because:
+
+        -   in economics one assumes either fully and undeviatingly rational behavior
+
+            -   an unchanging level of rationality on the part of the economic actors.
+
+        -   recover from any lapse is not really essential
+
+-   "There can be no doubt that competition is one major mechanism of recuperation. It will here be argued, however (1) that the implications of this particular function of competition have not been adequately spelled out and (2) that a major alternative mecahnism can come into play weither when the competitive mechanism is unavailable or as a complement to it." p.2
+
+### Enter Exit and Voice
+
+-   Performance of a firm can go down for some reason.
+
+    -   this deterioration in performance is usually reflected in a deterioration of the *quality* of the service/product
+
+        -   management finds out about this through two routes:
+
+            -   Some customers stop buying the firm's products or some members leave the organization: **this is the *exit* option.**
+
+                -   "exit belongs to the former realm" p.15
+
+                    -   I don't think this is exclusive to econ. maybe he elaborates later?
+
+                    -   Milton Friedman advocates for this with school vouchers.
+
+                        -   Parents could express their views about schools directly, by withdrawing their children from one school and sending them to another, to a much greater extent than is now possible. In general they can now take this step only by changing their place of residence. For the rest, they c'an express their views only through cumbrous political channels.
+
+                            -   this almost will certainly exacerbate inequities present.
+
+                                -   Hirschman seems to disagree with Friedman as well.
+
+            -   The firm's customers or the organizations members express their dissatisfcation directly to management or to some other authority to which management is subordinate or through general protest addresseed to anyone who cares to listen: **this is the *voice option.***
+
+                -   "voice belongs to the political realm" p.15
+
+                    -   decentralization has been advocated in schools to make "voice" option less cumbrous
+
+-   **Purpose of the book:**
+
+    -   Under what conditions will the exit option prevail over the voice option and vice versa?
+
+    -   What is the comparative efficiency of the two options as mechanisms of recuperation?
+
+    -   In what situations do both options come into play jointly?
+
+    -   What institutions could serve to perfect each of the two options as mechanisms of recuperation?
+
+    -   Are institutions perfecting the exit option compatible with those designed to improve the working of the voice option?
+
+### Book continued
+
+-   Economic growth and technical progress does not erect secure barriers against despotism, anarchy, or irresponsible behavior.
+
+-   Common assumption of past work (and even today): While technical progress increases society's surplus above subsistence it also introduces a mechanism of the utmost complexity and delicacy, so that certain types of social misbehavior which previously had unfortunate but tolerable consequences would now be so clearly disastrous that they will be more securely barred than before.
+
+-   There is always decay. How decay comes about is not really relevant. The point is, decay marshals counterforces against it.
+
+-   "Tradition seems to require that economists argue forever about the question whether, in any disequilibrium situation, market forces acting alone are likely to restore equilibrium. Now this is certainly an interesting question. But as social scientists we surely must address ourselves also to the broader question: is the disequilibrium situation likely to be corrected at all, by market or nonmarket forces, or by both acting jointly? *It is our contention that nonmarket forces are not necessarily less "automatic" than market forces.*" p.18
+
+### Chapter 2: Exit
+
+-   If there is to be a drop in quality it is desirable that it be of the size which leads to recuperation.
+
+    -   Goldilocks - "just right" equilibrium that allows identification and reaction to be marshalled by managers.
+
+-   Exit might not be terrible insofar as the firm acquires new customers as it loses old ones
+
+    -   reminds me of gentrification.
+
+        -   voters exit the city not by choice but by economic force.
+
+    -   he mentions this occurring though if there is a industry quality decline.
+
+### Voice
+
+-   economist seem to scoff at this option (at the time).
+
+-   To resort to voice, rather than exit, is for the customer or member to make an attempt at changing the practices, policies, and outputs of the firm from which one buys or of the organization to which one belongs.
+
+    -   Voice is here defined as any attempt at all to change, rather than to escape from, an objectionable state of affairs, whether through individual or collective petititon to the management directly in charge, through appeal to a higher authority with the intention of forcing a change in management, or through various types of actions and protests, including those that are meant to mobilize public opinion.
+
+-   Voice in the realm of politics can backfire.
+
+    -   One reason, stressed by Robert Dahl, is that the ordinary failure, on the part of most citizens, to use their potential political resources to the full makes it possible for them to react with unexpected vigor-by using normally unused reserves of political power and influence-whenever their vital interests are directly threatened.
+
+        -   fire quote.
+
+-   Voice option is the only way to react when exit option is not available.
+
+    -   role of voice increases as the opportunities for exit decline
+
+        -   inequities in voice option are real.
+
+            -   this to me is especially true in the realm of housing.
+
+-   Three general statements between voice and exit can be made:
+
+    -   \(1\) In the simple model presented up to no,v, voice functions as a complement to exit, not as a substitute for it. Whatever voice is forthcoming under those conditions is a net gain from the point of view of the recuperation mechanism.
+
+    -   \(2\) The more effective voice is (the effectiveness of exit being given), the more quality-inelastic cam demand be without the chances for recuperation stemming from exit and voice combined being impaired.
+
+    -   \(3\) Considering that beyond a certain point, exit has a destructive rather than salutary effect, the optimal pattern from the point of view of maximizing the combined effectiveness of exit and voice over the whole process of deterioration may be an elastic response of demand to the first stages of deterioration and an inelastic one for the later stages.
+
+-   ***If the matter is put in this way it is immediately evident, however, that the decision whether to exit will often be taken in the light of the prospects for the effective use of voice. \*\*\*\*\****
+
+    -   if customers are sufficiently convinced that voice will be effective, then they may well postpone exit.
+
+-   There is a loyalty variable that relates to voice and exit.
+
+-   "Voice is costly and conditioned on the influence and bargaining power customers and members can bring to bear within the firm from which they buy or the organizations to which they belong.
+
+-   The presence of the exit alternative can therefore tend to atrophy the development of the art of voice.
+
+### Chapter 4: A Special Difficulty in Combining Exit and Voice
+
+-   "While it is most clearly revealed in the private-public school case, one characteristic is crucial in all of the foregoing situations: those customers who care most about the quality of the product and who, therefore, are those who would be the most active, reliable, and creative agents of voice are for that very reason also those who are apparently likely to exit first in case of deterioration." p.47
+
+    -   this exactly housing and local governance.
+
+-   The crucial point can now be made. For anyone individual, a quality change can be translated into equivalent price change. But this equivalence is frequently different for different customers of the article because appreciation of quality difers widely among them. p.48
+
+    -   a given deterioration in quality will inflict very different losses on different customers.
+
+-   "When general conditions in a neighborhood deteriorate, those who value most highly neighborhood qualities such as safety, cleanliness, good schools, and so forth will be the first to move out; they will search for housing in somewhat more expensive neighborhoods or in the suburbs and will be lost to the citizens' groups and community action programs that would attempt to stem and reverse the tide of deterioration." p.51
+
+-   page 53!
+
+### Chapter 6: On Spatial Duopoly and the Dynamics of Two-Party Systems
+
+-   so far this seems like downs
+
+-   He just cited Hotelling.
+
+-   Hotelling and downs assume no elasticity!
+
+    -   actually not quite. see p.69
+
+        -   counterbalances elastic demand with the assumption of a more or less normal frequency distribution of the voters from Left to Right.
+
+-   "For voice to function properly it is necessary that individuals possess reserves of political influence which they can bring into play when they are sufficiently aroused.
+
+-   Why Goldwater?
+
+    -   idealistic voters were far more active than the middle-of-the-roaders.
+
+### Chapter 7: Loyalty
+
+-   Ability to exercise exit or voice is in part dependent on the entity.
+
+-   does exit make loyalty less likely? Does it give more scope to voice?
+
+-   The importance of loyalty from our point of view is that it can neutralize within certain limits the tendency of the most quality-conscious customers or members to be the first to exit.
+
+-   Loyalty is a key concept in the battle between exit and voice not only because, as a result of it, members may be locked into their organizations a little longer and thus use the voice option with greater determination and resourcefulness than would otherwise be the case. It is helpful also because it implies the possibility of disloyalty, that is, exit. Just as it would be impossible to be good in a world without evil, so it makes no sense to speak of being loyal to a firm, a party, or an organization with an unbreakable monopoly. While loyalty postpones exit its very existence is predicated on the possibility of exit. That even the most loyal member can exit is often an important part of his bargaining power vis-a-vis the organization. The chances for voice to function effectively as a recuperation mechanism are appreciably strengthened if voice is backed up by the threat of exit, whether it is made openly or whether the possibility of exit is merely well understood to be an element in the situation by all concerned. p.82
+
+-   Two conclusions stand out from this discussion: (1) the detail of institutional design can be of considerable importance for the balance of exit and voice; (2) this balance, in turn, can help account for the varying extent of internal democracy in organizations.
+
+-   kinda a problem if you are super loyal but if you threaten exit and the firm gets worse it may hold you back.
+
+-   Parents who plan to shift their children from public to private school may thereby contribute to a further deterioration of public education. If they realize this prospective effect of their decision they may end up by not taking it, for reasons of general welfare or even as a result of a private cost-benefit calculation: the lives of both parents and children will be affected by the quality of public education in their community, and if this quality deteriorates the higher educational attainments of the children to be obtained by shifting them to private school have a cost which could be so large as to counsel against the shift.
+
+-   Now it can be shown that an invariant or even inverse relationship between these variables is possible. In the case of public goods, the member will compare, at any one point in the process of deterioration, the disutility, discomfort, and shame of remaining a member to the prospective damage which would be inflicted on him as a prospective nonmember and on society at large by the additional deterioration that would occur if he were to get out.
+
+### Chapter 8: Exit and Voice in American Ideology and Practice
+
+-   The United States owes its very existence and growth to millions of decisions favoring exit over voice
+
+    -   political system was populated by people coming from other places.
+
+    -   manifest destiny.
+
+-   The preceding considerations are relevant here. Many of the reasons for which the United States citizen finds it impossible to consider exit from his country apply, in only slightly altered form, to the high official as he considers exit from the government. As the former cannot bring himself to contemplate exit from the "best" country, so the latter has an overwhelming desire not to sever his ties with the "best" country's government which, moreover, is the world's most powerful.
+
+-   talks about how no one quits the gov anymore
+
+    -   lmao def not true anymore
+
+# Week 7
+
+## Lecture Notes: 
+
+-   polycentrism is type II in marx and hogan terms.
+
+-   metropolitan - density of economic interactions
+
+    -   commute patterns
+
+-   Robert Stein - Urban Alternatives
+
+    -   interactions of governments over goods and services/provisions.
+
+        -   rural has simple polycentric governance.
+
+-   Polycentrism really manifests when there are a bunch of actors.
+
+-   regional planning units are usually higher up governments.
+
+-   Denver is kind of an example of Gargantua
+
+    -   however it still has polycentrism.
+
+-   Why does polycentrism arise?
+
+    -   think type 2
+
+        -   flexible.
+
+        -   boundaries can shift
+
+        -   densities of interaction.
+
+-   Lakewood, CA:
+
+    -   contracted out everything
+
+-   Economies of scale is very important.
+
+-   Provision v. Production!
+
+-   concept of financing
+
+    -   money can come from a bunch of places.
+
+-   courts are important
+
+-   Government vs. Governance
+
+    -   government is the formal institution (legislative bodies, etc)
+
+-   Dont think of democracy as just casting a vote.
+
+-   Oliver looks at contacting an official, going to a public meeting, etc.
+
+-   homophily
+
+    -   more alike - participation goes down.
+
+-   smaller the place - more likely to be homogenous
+
+    -   which would increase partiicpation
+
+        -   but the more alike it attenuates.
+
+-   Conflict generates more participation.
+
+-   Oakerson argues Oliver leads to lower levels of participation
+
+-   More alike = more free ride.
+
+## Ostrom, Vincent, Charles M. Tiebout, and Robert Warren. 1961. "The Organization of Government in Metropolitan Areas: A Theoretical Inquiry." American Political Science Review, 55 (Dec.): 831-42.
+
+### Bumper Sticker:
+
+Polycentrism vs Gargantua
+
+### Argument:
+
+-   The assumption that each unit of local government acts independently without regard for other public interests in the metropolitan community has only a limited validity
+
+    -   advocate for "polycentrism"
+
+### Polycentrism:
+
+-   connotes many centers of decision making which are formally independent of each other
+
+-   We view the "business" of governments in metropolitan areas as providing "public goods and services
+
+### The Nature of Public Goods and Services 
+
+-   What gives rise to public goods?
+
+    -   \(1\) public goods arising from efforts to control indirect consequences, externalities, or spillover effect
+
+    -   \(2\) public goods provided because some goods and services cannot be packaged;
+
+    -   \(3\) public goods consisting of the maintenance of preferred states of community affairs
+
+-   in footnote 3:
+
+    -    Collaboration and competition among governmental units may also, of course, have detrimental effects, and require some form of central decision-making to consider the interests of the area as a whole.
+
+#### Public Good: 
+
+-   "...the line between private and public is to be drawn on the basis of the extent and scope of the consequences of acts which are so important as to need control whether by inhibition or by promotion."
+
+    -   externalities or spill-over efects.
+
+-   A function of government, then, is to internalize the externalities-positive and engative-for those goods which the producers and consumers are unable or unwilling to internalize for themselves, and this process of internalization is identified with the "public goods."
+
+-   different "publics"
+
+-   the maintenance of preferred states of community affairs\*
+
+#### Packageability
+
+-   a private good must be "packageable", susceptible of being differentiated as a commodity or service before it can be readily purchased and sold in the private market.
+
+    -   you can exclude people.
+
+-   public goods allow for free-riders.
+
+-   2 problems with public organization:
+
+    -   public goods are generally not measurable.
+
+    -   the assessment of costs upon persons who can benefit without paying directly for the good.
+
+-   **If we think of the public good as a maintenance of preferred states of community affairs, then we can make a modification to packageability**
+
+    -   **extending the exclusion principle from an individual consumer to all the inhabitants of an area within designated boundaries.**
+
+        -   think of a home heating system.
+
+### Scale Problems in Public Organiation
+
+-   boundaries are very important.
+
+-   Smog in Pasadena is a result of other cities and pasadena cannot control it because their border does not extend that far.
+
+    -   thus the need for county control of smog.
+
+#### The Criterion of Efficiency
+
+-   economies of scale of a good may necessitate cities to act jointly.
+
+-   The political design of a public organization
+
+    -   1\) scale of formal orrganization
+
+    -   2\) the public
+
+    -   3\) the political community
+
+-   Public organizations may:
+
+    -   1\) reconstitute themselvess
+
+    -   2\) voluntaryily cooperate or failing cooperation
+
+    -   3\) turn to other levels of government in a quest for an appropriate fit among the interests affecting and affected by public transactions.
+
+#### The Criterion of Local Self-Determination 
+
+-   local self-government of municipal affairs assumes that public goods can be successfully internalized.
+
+-   the choice of local public services implies there is variation across cities.
+
+### Public Organization in Gargantua 
+
+-   Gargantua does have an appropriate scale for certain public services.
+
+-   Most equipped to deal with metro-wide problems at the metro level.
+
+-   However it becomes very bureaucratic
+
+-   Bureaucratic unresponsiveness in gargantua may produce frustration and cynicism on the part of the local citizen who finds no point of access for remedying local problems of a public character
+
+    -   municipal reform may become simply a matter of "throwing the rascals out."
+
+-   We need to recognize the variety of smaller sets of publics that may exist within its boundaries.
+
+### Public Organization in a Polycentric Political System
+
+-   **The multiplicity of interests in various public goods sought by people in a metropolitan region can only be handled in the context of many different levels of organization.**
+
+-   If a polycentric political system can resolve conflict and maintain competition within appropriate bounds it can be a viable arragement for dealing with a variety of public problems in a metropolitan area.
+
+#### Competition
+
+-   variety gives rise to quasi market choice for local residents.
+
+-   with appropriate public control, competitive arrangements may afford great flexibility in taking advantage of some of the economies of scale for the production of public services in a metro area, while, at the same time, allowing substantial diversity in their provision for the more immediate communities, based upon political responsibiltiy within local patterns of community identification.
+
+#### Conflict and Conflict Resolution
+
+-   what happens when we have spill-over effects.
+
+-   there is a heavy reliance upon courts for the resolution of conflicts among local units of government unquestionably reflects an effort to minimize the risks of external control by a superior decision-maker.
+
+-   water rights is important
+
+-   cities can create informal arrangements to negotiate basic policies among local government agencies in a metro area.
+
+-   "Appeal to central authorities runs the risk of placing greater control over local metropolitan affairs in agencies such as the state legislature, while at the same time reducing the capability of local governments for dealing with their problems in the local context."
+
+### Background/Theory:
+
+-   Previous view of metropolitans is that they have duplication of functions
+
+    -   bunch of little governments.
+
+-   **This illustrates an important point, that the production of goods and services needs to be distinguished from their provision at public expense. Government provision need not involve public production-indeed, at some stage in the sequence from raw materials to finished products virtually every public good, not already a natural resource, is of private origin.**
+
+    -   VERY IMPORTANT!
+
+## Oakerson, Ronald. 2004. \"The Study of Metropolitan Governance,\" in Metropolitan Governance: Conflict, Competition, and Cooperation,\" Richard C. Feiock, ed., Georgetown University Press, pp. 17-45.
+
+-   It sounds silly but we should probably define metropolitan at some point.
+
+-   "new regionalism" - governance structures not tied to a single dominant unit of metro government.
+
+-   Governance is focused on the protection and enhancement of the public realm.
+
+    -   **Sharing a common resource, we have learned form studies of collective action, is often problematic. The problems of sharing-from the scale of a household to the scale of the planet-constitute the agenda of governance.**
+
+        -   It is impossible to maximize all such values at once in a finite world. Trade-offs are required, about which community members will often disagree, requiring joint deliberation. Governance as a process is centrally concerned with making these trade-offs.
+
+            -   Institutional design- which is the process of crafting a configuration of rules-is aimed at reducing the severity of the trade offs multiple values by shaping incentives in ways that encourage desirable behaviors.
+
+-   Coercion is not necessarily what govs have to use.
+
+    -   to facilitate the process of governance, human beings create governance structures based on willing consent.
+
+-   Governance is the work of people both inside and outside governments. - better conceived as cogovernance.
+
+-   "Governance structures are not the products of government mandates; rather, they are the world of civil society and therefore are based on a rule of willing consent."
+
+-   structure of gov -\> structure of governance
+
+-   central govs are more difficult to access.
+
+-   **Polycentrism depends on the absence of dominance among various centers of authority, whereas monocentrism depends on a single center attaining dominance.**
+
+#### Authors Argument: 
+
+-   The argument I offer below is that polycentric systems of government allow for more open governance structures that include greater "civic space," defined as the set of opportunities for nongovernmental actors to enter productively into the governance process by producing general benefits for a community.
+
+    -   polycentrism depends on two institutional conditions:
+
+        -   1\) the existence of multiple independent centers of authority
+
+        -   2\) their interdependence must not be absolute.
+
+    -   polycentrism thus describes a system of qualified independence among interdependent centers of authority.
+
+### Tocqueville's Model of Local Governance: 
+
+-   importance of civil society.
+
+-   townships
+
+    -   satisfied the first/second condition of polycentricity:
+
+        -   the existence of multiple, independent centers of authority.
+
+        -   the existence of limits on authority in recognition of interdependencies
+
+    -   courts become important.
+
+    -   Americans had extended the concept to include relationships between officials at different levels of gov.
+
+### Metropolitan Institutions of Government: 
+
+#### Institutional Architecture: 
+
+-   gov framework rests on an institutional base:
+
+    -   1\) small enough to function in a highly participatory manner
+
+    -   2\) in Tocqueville's phrase, exhibit "independence and authority."
+
+-   local governance is created by people not the state.
+
+-   Institutional architecture of government in metro areas consist of:
+
+    -   1\) an institutional base that makes possible a broad functional base of citizen participation in local governance
+
+    -   2\) institutional overlay of intermediate governmental units that supplements local municipalities and school districts, substituting for them in limited ways as needed
+
+    -   3\) an insituttional framework that
+
+        -   \(a\) uses a rule of law to limit the authortiy of local governments without diminishing their admin independence
+
+        -   \(b\) conveys to citizens the key constitutional decisions concerning the formation and dissolution of local governments
+
+        -   \(c\) reserves to state legislatures the ability to modify the arrangements specified in (a) and (b).
+
+#### Governance Structures
+
+-   government and civil society.
+
+    -   big in local governance.
+
+-   county gov principal role is to provide a forum in which municipalities can address common problems and resolve differences.
+
+-   county boundaries are very important!
+
+-   Municipal govs are closely tied to civil society through patterns of voluntarism and civic association
+
+-   municipal govs enter into relationships with one another thorugh intergovernmental associations.
+
+### Characteristics of Metropolitan Governance
+
+-   governance structure in metropolis has the following characteristics:
+
+    -   1\) higher levels of participation
+
+    -   2\) less adversarial, more consensual, style of politics
+
+    -   3\) strong representation
+
+    -   4\) a pervasive pattern of public entrepreneurship
+
+    -   5\) community differentiation and the self-sorting of residents
+
+    -   6\) patterns of accountability that greatly amplify the capabilities of individuals for self-governance.
+
+#### Citizen Participation:
+
+-   municipal size makes a substantial difference even in the midst of a large-scale metro area.
+
+-   **Participation is thus a function, not of social or psychological factros unconnected to municipal boundaries, but of the civic space created by small jurisdictions.**
+
+-   Oliver on participation:
+
+    -   1\) contact local officials
+
+    -   2\) attend board meetings
+
+    -   3\) attending organization meetings
+
+    -   4\) engaging in informal civic activity
+
+    -   5\) voting in lo cal elections.
+
+-   "The same negative relationship generally occurs between civic participation and city size.
+
+-   "smaller municipalities make participation easier, make citizens feel more empowered and interested in their communities, and bring neighbors together."
+
+-   Participation can be driven by two very different motivations:
+
+    -   1\) desire to contribute one's community out of a sense of "self-interest rightly understood"
+
+    -   2\) a desire to protect one's interests from attack by others
+
+-   Oliver is conflict model of civic participation and which is different from Tocqueville's conception of engagement as a product of shared identities, reciprocity, and common interests.
+
+-   Large-scale governments without smaller nested governments create conflict by combining highly diverse interests in a single, comprehensive political jurisdiction.
+
+-   the primary unit of government must be sufficiently small and homogenous to generate a nonadversarial style.
+
+-   Public entrepreneurs must please the voter, but along the way they must attract an array of supporters-peers, other appointed officials, and elected representatives.
+
+#### Community Diferentiation: 
+
+-   residents can vote with their feet.
+
+-   "clearly, the prospect of declining property values can motivate both local citizens and local officials to tend to municipal problems. The key is to have in place a political jurisdiction with ample incentive to respond to problems. This must be a jurisdiction closely tied to the interests of local residents."
+
+-   A single household may be subject to multiple governing agencies
+
+-   How can an individual citizen keep track of and thus hold accountable such a large number of independent public officials?
+
+### The Effects of Alternative Prescriptions for Reform: 
+
+-   I conclude that large scale metropolitan governments would lead to:
+
+    -   1\) greatly reduced citizen participation
+
+    -   2\) an exclusively adversarial style of politics
+
+    -   3\) dramatically lower levels of representation
+
+    -   4\) severely reduced levels of public entrepreneurship
+
+    -   5\) sharply weakened democratic accountability.
+
+-   disagrees with Oliver's solutions
+
+-   **Polycentrism requires civic society.**
+
+-   **polycentrism creates civic space - opportunities for constructive engagement among citizen and officials.**
+
+# Feiock, Richard C. 2009. "Metropolitan governance and institutional collective action."Urban Affairs Review 44.3, pp. 356-377.
+
+### Lecture Notes
+
+-   people in units.
+
+-   economies of scale becomes important!
+
+-   why come together?
+
+    -   externalities!
+
+### Abstract: 
+
+This article describes the institutional collective action (ICA) framework and its application to the study of governance arrangements in metropolitan areas by focusing on the tools of regional governance for solving ICA problems. Regional governance mechanisms are classified by their focus on either collective or network relationships. The role of these within these mechanisms is analyzed and the transaction costs barriers to the emergence of regional governance institutions are identified. The concluding discussion identifies the limitations of self-organizing mechanisms and develops a research agenda to investigate the emergence, evolution, and performance of regional governance institutions.
+
+### Question:
+
+-   Can voluntary collaborations among local governments provide solutions to the regional problems confronting metropolitan areas?
+
+### Argument: 
+
+-   We argue that there are an array of mechanisms that vary in the extent to which self-organization is evident in their creation and use.
+
+-   much of the literature portrays local governments as incapable of overcoming their social, economic, and political differences to address policy spillover problems.
+
+    -   recent empirical evidence strongly refutes these assumptions and suggests that self-organizing governance mechanism can and do coordinate decisions in many policy areans.
+
+### Background: 
+
+-   Institutional collective action problems arise directly from the delegation of service responsibilities to a multitude of local governments and authorities.
+
+-   vertical vs horizontal collective action problems
+
+-   a policy arena is composed of formal policy making venues with statutory authority to make policy decisions processes in each venue, and policy actors who are concerned with these policies.
+
+-   Centralized institutions and hierarchy are not the only way of resolving local ICA problems. Locally evolved self-governing institutions that are adapted to specific local circumstances may provide more effective resolution of collective action problems than central intervention in many circumstances.
+
+-   When governments and agencies in federalist systems encounter collective action problems due to fragmentation, higher level institutions have the authority to. resolve the problems by changing the geographic or functional jurisdiction to internalize the externalities.
+
+    -   regional authorities.
+
+        -   these don't do well.
+
+-   non-profits can also help coordinate.
+
+-   Most common forms of residual government organizations are
+
+    -   regional partnership organizations
+
+    -   regional councils of governments
+
+    -   metropolitan planning organizations
+
+-   Contract networks: link individual units through joint ventures, interlocal agreements, and service contracts that require the consent of those involved.
+
+-   **Networks and collective governance mechanisms may solve problems that transcend local political boundaries, but they reflect the participants' political and economic interests, so problems of conflict and negotiations remain, even after an institution is adopted.**
+
+-   trust, mutuality, and reputations that are manifestations of closely connected networked relationships facilitate collective action.
+
+-   **Feiock, Steinacker, and Park (forthcoming) report that a city\'s demographic similarity with neighbors and centrality in the social networks of local actors increase the likelihood of joint ventures. Spatial proximity also contributes to interdependencies that safeguard cooperative action and provide a larger opportunity set of reliable partners from which to develop new ventures**
+
+    -   Both strong tie networks of frequent interaction among cities and participation in weak tie associational networks increased the likelihood of development collaboration. These results suggest that collaborative groups that provide venues for local government and other organizations to interact build networks and social capital that contribute to the emergence of self-organizing solutions to metropolitan problems.
+
+### Transaction costs
+
+-   need low transaction costs for benefits to exceed the costs of collective action.
+
+-   ability of local officials to self-organize is tied to state level rules, the transaction characteristics of goods, the spatial and demographic characteristics of institutional units, and their internal political structure.
+
+-   Thus, we expect that intraorganizational and intrajurisdictional homogeneity will increase the likelihood of self-organizing institutions.
+
+-   Progressively ambitious politicians engage in regional and intergovernmental collaboration to claim credit for services provided to individuals beyond their current constituencies (Bickers and Stein 2004)
+
+# Week 8: Structural Racism and Metropolitan Order
+
+## Trounstine, Jessica. 2018. Segregation by Design: Local Politics and Inequality in American. Cambridge University Press.
+
+### Lecture Notes: 
+
+-   Poll taxes were part of your property tax
+
+    -   thus if you did not own property you would have to go the court house to pay the poll tax.
+
+-   Wagner - helped create zoning.
+
+    -   you needed to have zoning to get grants.
+
+-   Houston does not have zoning.
+
+    -   Houston still has zoning but like in a roundabout way
+
+        -   curb cuts
+
+### Introduction: 
+
+-   uneven development in cities.
+
+    -   uneven distribution of public goods.
+
+-   segregation: when poor and people of color are concentrated in residential locations apart form wealthy and white residents.
+
+#### Main Research Question: 
+
+-   This book asks how segregation becomes entrenched, why its form changes, and what the consequences are.
+
+    -   I argue that local governments have generated segregation along race and class lines. Striving to protect property values and exclusive access to high quality public goods, the preferences of white property owners have been institutionalized through the vehicle of local land use policy, shaping residential geography for more than 100 years.
+
+-   The maintenance of property values and the quality of public goods are collective endeavors. And like all collective endeavors, they require collective action for production and stability. Local governments provide this collective action. So, supported by land-oriented businesses, white homeowners have backed a succession of maneuvers to keep their property interests and public benefits insulated from change -- even as cities have grown, aged, redeveloped, suburbanized, and adjusted to industrialization. Battles over the control of urban space have always been the primary driver of city politics. At stake is the quality of life accessible to residents and markets available to commercial interests. The result has been *segregation by design*.
+
+#### Camden: 
+
+-   early adopters of zoning.
+
+    -   strategically to conserve the value of property.
+
+-   more black population.
+
+#### Cherry Hill
+
+-   also used zoning
+
+-   hostile against affordable housing.
+
+-   inequality in access to public goods was produced by local public policy.
+
+-   Homeownership = power
+
+    -   many races were excluded from owning a home.
+
+    -   property owners dictated local governemnts.
+
+        -   and pursued segregation.
+
+-   In the first half of the twentieth century, advantaged and disadvantaged neighborhoods resided within the political boundaries of large central cities. In the second half of the century, when the suburbs captured most of the population growth, the physical and -- more importantly -- political distance between advantage and disadvantage widened. Today, the most advantaged places are located outside of central cities altogether so that disadvantaged residents have no direct role to play in decisions about building affordable housing, expanding public transportation, or diversifying schools. In these advantaged places, development is restricted and residents are politically conservative; they vote at higher rates for Republican presidential candidates, support low taxes, want limited spending, and see inequality as the result of individual failings.
+
+#### Contributions to Existing Literature
+
+-   Dahl argues city politics is inherently pluralistic
+
+    -   Equality at the ballot box trumps social and economic inequalities
+
+        -   seg by design disagrees with this.
+
+-   Peterson conflates white property owners' interests with the interests of the whole city.
+
+-   the protection of property values and public goods motivates local land use policy and generates inequality and polarization.
+
+-   For instance, Tiebout\'s ([Reference Tiebout1956](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-522)) seminal article arguing that consumer-voters pick communities that best satisfy their preferences for public goods ignores the role of race, segregation, and inequality in these choices and is silent about the ways in which public goods packages are developed. In order for anyone to vote with her feet, she must first find a place to live. We cannot understand sorting (either to obtain a tax/public goods bundle or to avoid other racial groups) until we understand the ways in which housing choices, property values, and neighborhood character are structured by local governments.
+
+-   I argue that if we understand segregation as a mechanism to protect public goods and property values, increasing class segregation is predictable.
+
+### Chapter 2: A Theory of Segregation by Design 
+
+-   local policies influence property value.
+
+-   segregation is not organic or inevitable - it is a matter of design pursued through the political process, offering spoils to those with political power.
+
+-   property owners believe that local policy affects the value of their investments and the quality of life attached to their parcels, making them keenly attentive to the local political environment.
+
+#### The Need for Local Government
+
+-   segregation by race has declined since 1970 but segregation by class has increased since.
+
+-   two possible mechanism for segregation
+
+    -   individual preferences for same race and same income neighbors (tajfel vibe)
+
+    -   and market explanations
+
+-   localg governments can affect the aggregate demographic makeup of communities and the spatial distribution of residents and services, thereby generating and enforcing segregation.
+
+-   schools are the biggest factor.
+
+-   **Although cities do not (for the most part) handle the funding of schools, they play a key role in maintenance of this public good by using land-use regulation to shape who has access to which local public schools. School districts control school finances, but they cannot zone. Together, these circumstances have given property owners a powerful incentive to regulate who lives where since the earliest years of urbanization. White property owners have long been concerned with excluding certain types of people from their communities.**
+
+    -   great excerpt.
+
+-   Supreme Court had ruled racial zoning unconstintutional in 1917.
+
+    -   HOAs were created in response. These organizations were often created by real estate develoeprs to protect the value of their investment.
+
+-   Suburbs were easier to maintain racial homogeneity.
+
+-   Einstein et al. (2017) provide evidence that the accumulation of regulations reduces the supply of multifamily housing by allowing residents opposed to development to delay the process and file lawsuits.
+
+-   rights-oriented conservatism was fueled in an envirionment of racial threat (integreation in the 1940s, 1950s, and 1960s) but became entrenched in an environment of racial isolation (whiteness of the neighborhood in the 1970s)
+
+-   The marriage between rights-based conservatism and white perspectives on race was amplified in the crucible of city politics.
+
+#### The Geography of Inequality: 
+
+-   Segregation within cities and suburbanization across city lines has meant that the benefits experienced by racial and ethnic minorities and low-income individuals are inferior to the benefits experienced by whites and the wealthy.
+
+    -   Second, segregation generates political polarization between race and class groups and, ultimately, inhibits cooperation.
+
+-   Shelley v. Kraemer was a major blow for white defense of neighborhood segregation.
+
+    -   suburbs became more attractive.
+
+        -   suburbanization also freed residents from having to fight for control of the city government.
+
+-   **I wish there was more discussion of the romanticization of the suburb. She is so far looking at this from a purely racial/economic perspective.**
+
+-   Focus: the various policies that local governments use to generate segregation, and the consequences of segregation for local and national politics.
+
+-   Racial and class segregation are both DVs and IVs
+
+-   we cannot understand the development of class *without* race.
+
+-   today, local policies that generate class-based exclusion are generally upheld by courts, while race-based exclusion is not
+
+-   my analysis suffers from an inability to disentangle selection from treatment: does living in a homogenous white neighborhood make people more conservative, or do people with conservative views move to homogenous neighborhoods?
+
+### Chapter 3: Protecting Investments 
+
+-   This chapter introduces the dataset
+
+-   also charts and links changes in both demographics and service provision in metropolitan America, showing that segregation in later periods is associated with high property values and investment in public goods at earlier points in time.
+
+-   homeownership, wealth, diversity, and density were all associated with expanding municipal governments
+
+-   I argue, explains why property owners and land-oriented businesses pursued residential segregation: to protect property values and capture public goods.
+
+-   my geographical focus is on metropolitan areas as they were defined by the US Census of Population and Housing in the year 2000
+
+-   early cities were volunteer ran (the public services at least)
+
+-   City governments spent very little but this changes rapidly around the turn of the century. Why?
+
+    -   The most common view is to understand the growth of city government as the necessary response to the negative externalities of increased population growth and density such as pollution, congestion, conflagration, crime, and disease
+
+    -   Another essential driver of the development of municipal government was the desire to manage increasing racial and ethnic diversity in growing, compact cities.
+
+-   Landowners, seeking stability and profits, sought to attract population and commercial enterprises to their community. Investing in public services and infrastructure (and intensive advertising of these investments) was a strategy many places used to grow.
+
+-   DATA:
+
+    -   per capita city expenditure
+
+        -   exploded in growth from 1902 to 1937
+
+-   property owners were among the most supportive of investing in new services
+
+-   cities were responding to negative externalities of urbanizing
+
+-   **Finally, in support of *my* argument, cities with more capacity and demand (higher property values, more homeowners, and more professionals) also had larger budgets.**
+
+-   measuring class segregation
+
+    -   distribution of renters v. homeowners
+
+    -   the concentration of households in the top income threshold
+
+-   The rise of suburbs decoupled residential spaces from job spaces and encouraged suburban residents to prioritize neighborhood amenities and property values in political decision making.
+
+-   Residents can be segregated in two ways: across neighborhoods within cities, or across cities within metropolitan areas. My measure combines these two types of segregation.
+
+-   As explained previously, the *H* index measures the degree to which the diversity (*E*) of subunits differs from the diversity of a larger unit.
+
+-   city-level segregation has remained remarkably persistent.
+
+-   the correlation between race and renter segregation was 0.19. It rose to 0.32 in 2011. The correlation between race and wealth segregation increased from 0.46 to 0.51 over this same period. The link between race and wealth segregation across city lines is even stronger; it was 0.70 in 2011.
+
+-   PUNCHLINE: segregation along both race and class lines grew in tandem with the growth of cities
+
+### Chapter 4: Engineering Enclaves
+
+-   debate about cause of segregation
+
+    -   some argue individual choices of white homeowners
+
+    -   others argue its local governance
+
+-   In this chapter, I explore the factors that contributed to the adoption of zoning laws. I argue that zoning was enacted by political elites seeking to manage the distribution of public goods to their core supporters.
+
+-   As Monkonnen indicates, it was far from obvious that cities would assert control over their environments, but the rapid spread of slums, worries about skyscrapers blocking natural light, fears of conflagration, and concern about public health threats provided early inspiration for cities to invoke their policy power of regulation over nuisances (Toll [Reference Toll1969](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-525)).[Footnote^3^](https://www-cambridge-org.colorado.idm.oclc.org/core/books/segregation-by-design/engineering-enclaves/24831D246BFCFC2F60B0673C17FBCA90#FN-fn-76)
+
+-   zoning is not the same as planning
+
+-   As zoning practices spread through the 1920s, emphasis on the enhancement of property values became the dominant argument; almost universally, it was believed that the wrong sorts of people residing, or even working, in an area could negatively impact property values.
+
+-   In fact, although Jim Crow laws were widespread, most southern cities did not legislate residential segregation directly
+
+-   Following *Buchanan*, many cities sought to enact constitutionally defensible racial zoning plans by turning to comprehensive city planning
+
+-   By separating industrial, commercial, and residential uses into separate districts -- each with standard regulations regarding the use, height, and area of buildings -- zoning would make \"every town, city or village a more orderly, convenient, economic and attractive place in which to live and work\"
+
+-   In *Euclid v. Ambler* ([1926](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-598)), Justice Sutherland explained that the apartment house is often a \"mere parasite, constructed to take advantage of the open spaces and attractive surroundings ... interfering by their height and build with the free circulation of air and monopolizing the rays of the sun ... depriving children of the privilege of quiet and open spaces for play enjoyed by those in more favored localities ... until, finally, the residential character of the neighborhood and its desirability as a place of detached residences are utterly destroyed. Under these circumstances, apartment houses, which in a different environment would be not only entirely unobjectionable but highly desirable, come very near to being nuisances\" (pp. 394--95).
+
+-   the National Association of Realtors\' code of ethics stated, \"A Realtor should never be instrumental in introducing into a neighborhood a character of property or occupancy, members of any race or nationality, or any individuals who presence will clearly be detrimental to property values in that neighborhood\" (Article 34 of Part III).[Footnote](https://www-cambridge-org.colorado.idm.oclc.org/core/books/segregation-by-design/engineering-enclaves/24831D246BFCFC2F60B0673C17FBCA90#FN-fn-84)
+
+    -   **This perspective led to general support for the power of land-use regulation and zoning among real estate interests. Writing in 1924, Herbert Flint, a town planner from Cleveland, Ohio, explained that zoning plans should be developed by local planning commissions, populated with \"those well-positioned in real estate, the law, banking, manufacturing and transportation; also representative citizens who would safeguard the interests of the homeowners\"**
+
+#### Understanding the Adoption of Zoning
+
+-   I have argued that zoning was a tool that enabled elected officials to generate segregation, increase property values, and make it easier to target public goods to certain constituencies, and that it was successfully implemented where zoning supporters had political power.
+
+-   but still not super popular in 1920s
+
+-   My primary independent variables are per capita total *expenditure* and *property taxes*.
+
+    -   expect both to be positvely correlated. with zoning.
+
+-   **I argue that schools are the most important public good for homeowners to protect. So, in an additional analysis, I replace property taxes with local expenditures on *education*.**
+
+-   Zoning adoption appears to have been led by the Republican Party, except in the South, where Republican voting strength limited the likelihood of adoption of comprehensive and racial zoning ordinances.
+
+-   These results support the contention that zoning was a mechanism used to reinforce existing racial hierarchies.
+
+#### Zoning Generates Segregation
+
+-   early zoning adopters became more segregated cities
+
+-   My dependent variables in these analyses are *change* in the level of *race* and *class segregation* between about 1900 and 1970.
+
+-   I expect that racial segregation will be most closely linked to racial and comprehensive zoning (as the historical discussion indicated), while class segregation will be tied to all forms of zoning. In the analysis of racial segregation, my independent variable is a dummy variable noting whether a city adopted either a race-based or comprehensive zoning ordinance in the period between 1900 and 1930. These *early zoning adopters* are coded 1, and cities that did not adopt racial or comprehensive zoning are coded 0.
+
+-   **cities that were early adopters of zoning ordinances grew more segregated over the next fifty years, compared with cities that were not early adopters.**
+
+-   Local governments institutionalized prejudicial behavior and promoted segregation through the use of zoning ordinances.
+
+-   Political elites enacted zoning ordinances to generate growth and stability in property values and control the distribution of public goods in the city.
+
+-    In 1917, the Supreme Court ruled racial zoning ordinances unconstitutional. In response, many cities turned their attention to comprehensive zoning plans and other forms of zoning that did not make racial segregation an obvious goal. New comprehensive city plans were fueled by continuing race and class prejudice, and influenced the long-term shift from racial segregation to segregation by income level.
+
+-   Cities that were early adopters of zoning ordinances grew to be 10% more segregated over the following fifty years than did cities that were not early adopters.
+
+    -   **would be interested to see if these early adopters saw increased migration from white residents to these cities.**
+
+### Chapter 5: Living on the Wrong Side of the Tracks
+
+-   segregation makes it easier to produce inequalities in public service provision
+
+-   ghettos were a combination of a single ethnic minority and *bad housing*
+
+-   Whites paid all of the taxes so it wasn't a big deal to not support black citizens.
+
+-   This chapter shows that between 1900 and 1940, neighborhoods that were identifiably poor or inhabited by minorities were allocated lower-quality serves, including road paving, public health efforts, and sewer extensions.
+
+-   seeing only through class lens is not complete. Race is separate and meaningful.
+
+#### Jim Crow and Public Goods Inequalities: 
+
+-   schooling is the most important service.
+
+    -   until the mid 1930s, about 75% of public school revenues were completely locally derived.
+
+#### Inequalities Generated through Residential Segregation:
+
+-   sewer and water lines are important in segregation tactics.
+
+-   My theory predicts that nonwhite and renter households would have been less likely to have access to water and sewer connections in more segregated cities.
+
+-   The dependent variable in the analysis is the *total new segments* built in each ward before the next census.
+
+-   The key independent variables are the share of each ward\'s total population that is *black* and the share of occupied housing units that were *rented* (as opposed to owned). These demographic variables are interacted with each city\'s *H index of segregation* (for race and class, respectively) in a given census year.
+
+-   **The data indicate that in more segregated cities, heavily black and renter wards were unlikely to receive new sewer lines.**
+
+-   As was the case in the early period, between 1970 and 1990 renters and nonwhite residents continued to have inferior sewer access in more segregated cities.
+
+-   road paving also unequal
+
+    -   but may this be unequal because rich whites could afford to purchase a car much earlier?
+
+        -   jk she explains that even in similar neighborhoods, white areas with similar income got roads paved before.
+
+-   The historical record indicates that lower levels of segregation and more political power in the hands of blacks and the poor could mitigate such inequalities.
+
+-    Today, evidence indicates that segregation is maintained by white homeowners\' willingness and ability to pay a premium to live among white, educated neighbors (Cutler, Glaeser, and Vigdor [Reference Cutler, Glaeser and Vigdor1999](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-118)). That they have the opportunity to do so is dictated by past and present land-use regulations generated by city governments.
+
+### Chapter 6: Cracks in the Foundation - Losing Control over Protected Neighborhoods 
+
+-   lots of movement going on in 1940s
+
+-   city govs utilized diff policies to prevent minority and poor neighborhoods from expanding into white neighborhoods.
+
+-   **This chapter and chapter 8 focus on the role of city politics in the generation of neighborhood segregation and suburnaization.**
+
+    -   if the drivers of segregation and suburbanization are similar, do white homewoners choose avenue of separation over another?
+
+-   federal pressures to desegregate public schools led to an increase in segregated neighborhoods, as whites sought to utilize residential segregation to produce school homogeneity.
+
+#### Urban Renewal and Segregation
+
+-   because cities get money from property tax - the great depression messed up a lot of cities.
+
+    -   needed feds.
+
+        -   Congress steps into housing legislation for like the first time
+
+            -   1934 Housing Act and establishment of the Federal Housing Administration
+
+                -   Congress had multiple goals: the reemployment of the construction industry, the shoring up of the financial sector, and the stimulation of home ownership. But these policies were also spurred by a commitment to residential segregation.
+
+-   the Wagner-Steagall Act sought to \"provide decent, safe and sanitary housing for that large group of our population who \[could not\] afford to pay enough to cause private capital to supply their housing needs\"
+
+-   Allowing local governments to decide what land would be cleared and where new housing would be built virtually guaranteed the continuation and exacerbation of race and class segregation, because white homeowners and land-oriented businesses controlled city governments and planning commissions and opposed residential integration along either race or class lines.
+
+    -   Further, these interests quickly moved to ensure control of the new housing and renewal authorities created to direct and manage the process (Hirsch [Reference Hirsch1983](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-253); Sugrue [Reference Sugrue1996](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-508); Gotham [Reference Gotham2001](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-219)). Sugrue ([Reference Sugrue1996](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-508)) explains, \"\[L\]ocal governments had the final say over the expenditure of federal funds, the location of projects, and the type constructed\" (p. 60).
+
+-   Discussion of HOLC and redlining.
+
+-   the vigorousness with which a city pursued urban renewal affected the level of segregation after the completion of the program.
+
+#### Racially Contested Mayoral Elections: 
+
+-   Interracial electoral competition was much more likely in more segregated cities.
+
+-   racially segregated cities were much more likely to experience interracial elections -- even controlling for the share of the population that was white.
+
+#### Federal Desegregation of Schools and Increased Residential Segregation: 
+
+-   Changes in fed gov made it harder for local governments to control neighborhoods and public goods.
+
+-   desegregation orders significantly increased the share of neighborhoods that were both white defended and minority dominated. On average, desegregation orders generated about thirty new homogeneous neighborhoods in metropolitan areas. Homogeneity was achieved when whites moved within cities to new neighborhoods and to the suburbs.
+
+### Chapter 7: Segregation's Negative Consequences
+
+-   The politics of segregated cities became polarized -- pitting racially defined neighborhoods against each other. In turn, polarization made cooperation difficult. In segregated cities, local officials have trouble convincing residents to fund public goods.
+
+-   **This chapter provides evidence of the negative consequences of racial residential segregation.**
+
+#### How Segregation Creates Polarized Politics
+
+-   local politics is a battle over space
+
+-   One of the few powers reserved, nearly exclusively, by local government is that of zoning or planning. When a city is residentially segregated by race, issues cleave along racial and not just spatial lines (Massey and Denton [Reference Massey and Denton1998](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-352)).
+
+-   Neighborhood racial isolation is associated with a high degree of racial intolerance, resentment, and competition among all racial groups (Oliver [Reference Oliver2010](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-409)).
+
+    -   Enos as well.
+
+-   However, living in different types of neighborhoods may also change individuals\' perspectives. In integrated neighborhoods, regular, casual interaction may work to counteract dominant, negative stereotypes
+
+    -   ENOS
+
+-   The result of both population sorting and neighborhood influence is that individuals who live in homogeneous neighborhoods are more likely to harbor negative stereotypes about other groups
+
+    -   ENOS
+
+-   Because segregation represents preferences or attitudes that are incompatible with collective investment, the uneven distribution of groups, not diversity per se, correlates with lower public goods spending.
+
+#### Segregation and Political Polarization
+
+-    I analyze the relationship between residential segregation patterns and racial divisions in mayoral elections in the nation\'s largest cities between 1990 and 2010.
+
+-   more segregated cities are also more politically polarized
+
+-   As the third column reveals, the relationship between segregation and polarization appears to be unaffected by the conservatism of the white population. In fact, the relationship between ideology and polarization is such that cities with more conservative white populations have smaller racial divides, underscoring the conclusion that racial polarization is not driven by ideological divisions.
+
+#### Diversity and Segregation in the Aggregate
+
+-   does segregation make it harder to reach consensus?
+
+    -   if so, we should also see less support for government spending in segregated cities after accounting for racial demographics.
+
+-   segregation and public goods spending are negatively related, even in the presence of changing demographics, diverse populations, and conservative residents.
+
+-    spending on public goods is lower in cities with greater segregation.
+
+-   **At low levels of segregation, white turnout is much higher than minority turnout, but the lines converge as segregation increases. Furthermore, using the racial polarization dataset described in the first section of this chapter, I find that turnout and segregation are positively correlated in the aggregate. These patterns strongly suggest that politics is more contentious in more segregated communities. Thus, a lack of participation by residents who support high spending is not likely to be the cause of lower public goods investment.**
+
+    -   interesting.
+
+#### Evidence of Causality
+
+-   hard to assert that segregation *causes* lower public goods spending.
+
+-   She uses an instrumental variable.
+
+    -   waterways because those are natural and different from roads and railways that were explicitly used to segregate.
+
+    -   RECALL INSTRUMENTAL VARIABLES:
+
+        -   the instrumental variable is theoretically relevant to X.
+
+            -   What is our X variable?
+
+                -   segregation
+
+        -   The instrumental variable must satisfy the exclusion restriciton.
+
+            -   Z -\> X -\> Y
+
+                -   our IV is public good spending.
+
+    -   number of waterways is used as an instrument for the H index (level of segregation in a city)
+
+    -   DVs: direct general expenditure, roads, law enforcement, parks, sewers, welfare, Own source revenue
+
+#### Segregation and Sewer Overflows: 
+
+-   sewer system is strongly related to capital fund-raising.
+
+-   the vast majority of funding to reduce overflows comes from local sources
+
+-   that more segregated cities will have more trouble coming to political consensus about public goods provision, then we ought to expect more segregated cities to witness more sewer overflows -- all else equal.c
+
+-   *logged overflows per 1,000 persons* measure serves as my dependent variable
+
+-   My main independent variable is the city\'s *H* index of racial segregation, measured in 2000, if available, and 2010 if not
+
+-   The data reveal a significant correlation between segregation and sewer overflows. Living in a city with very little segregation, one can expect about 1.5 overflows per year on average. This increases to nearly 2.5 overflows in cities at the ninety-fifth percentile of the segregation distribution. Not only do segregated cities see lower spending on public goods, but they also witness worse performance as well.
+
+### Chapter 8: Locking in Segregation through Suburban Control
+
+-   Segregation between neighborhoods has declined BUT segreagtion between cities has remained stable and even rose.
+
+-   In previous chapters, I argued that segregation was pursued by local governments to enhance property values and target local public goods toward white homeowners and land-oriented businesses. Such strategies, combined with political control of city councils and mayors\' offices, ensured that local governments operated to protect the homogeneity of white homeowner neighborhoods, and provide them with disproportionate benefits.
+
+-   In this chapter, I analyze the relationships between cities within metropolitan areas. I concentrate on the ways in which the politics of the central city (the city with the largest population in the metro area) and the pull of suburban opportunities affect demographic residential patterns in the metro area.
+
+#### Understanding the Link between Segregation and Suburbanization
+
+-   People choose where they live based on the services they provide.
+
+    -   however, not all residents are equally able to match these preferences with housing location
+
+        -   critique of Tiebout.
+
+-   The rapid increase in the population of the suburbs during the postwar period was mostly not the result of white flight. Rather, rising incomes, low-cost, federally backed mortgages, the lucrative federal mortgage deduction, new housing construction in suburban tracts, and an extensive highway system all worked to bring residents to the periphery
+
+-   \"\[T\]he increased heterogeneity of suburbia as a whole is usually not matched by a greater diversification *within* particular suburbs. There are now more poor and working-class people, more minorities and more industrial and commercial sites in suburbia. But poorer, working-class or black suburbanites are likely to live in different jurisdictions separate from those inhabited by affluent or white suburbanites\"
+
+-   Overt racism has decreased dramatically over the last several decades (Schuman et al. [Reference Schuman, Steeh and Bobo1997](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-479)), but whites continue to express a preference for same-race neighbors (Charles [Reference Charles2003](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-90)) and minority neighborhoods continue to be perceived as having poor-quality amenities (Bobo, Kluegel, and Smith [Reference Bobo, Kluegel, Smith, Tuch and Martin1997](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-50); Ellen [Reference Ellen2000](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-143); Emerson, Chai, and Yancey [Reference Emerson, Chai and Yancey2001](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-147); Krysan [Reference Krysan2002](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-306); Bayer, Ferreira, and McMillian [Reference Bayer, Ferreira and McMillan2007](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-29)).
+
+-   Why, even as neighborhoods have grown more integrated, have cities become less so? The answer is politics and political control.
+
+-   If an individual holds negative stereotypes of racial minorities, she is likely to oppose government expenditures, especially when she believes that there is a racial disparity in who shoulders the tax burden and in who benefits from public services
+
+-   **This chapter shows that suburban sorting along race and class lines is linked to central city elections of minority mayors, larger city budgets, and a greater share of spending on police. It is also linked to greater use of land-use regulations in the suburbs and availability of suburban school districts.**
+
+#### Measuring Suburbanization: A New Approach
+
+-   My argument is that city politics affects segregation patterns.
+
+#### Schools, Land-Use Regulation, and Suburban Segregation
+
+-   Metro areas with larger numbers of school districts allow residents more opportunity to jurisdiction shop, thereby increasing the potential for segregation across city lines.
+
+-   Suburban land-use controls and availability of school districts are significantly related to the degree to which segregation is accounted for across, rather than within, cities in metropolitan areas.
+
+-   The data reveal that in metropolitan areas with more racial and renter segregation across cities -- that is, where whites/nonwhites, renters, and owners tend to live in different municipalities -- we see more heterogeneity in municipal budgets.
+
+-   When city policy does not favor the interests of white homeowners, these residents are more likely to trade homogenous neighborhoods within cities for new homogeneous cities instead.
+
+### Chapter 9: The Polarized Nation That Segregation Built
+
+-   Neighborhoods that successfully defended their white homeowner turf, despite the massive demographic and policy transformations of the postwar period, became the locus of modern conservatism.
+
+    -   argument made by suburban warriors.
+
+-   **In this chapter, I begin by linking white residential spaces in 1970 to three important neighborhood characteristics: property values, single-family homeownership, and the whiteness of public schools. Then, I provide evidence that the relative whiteness of a neighborhood in 1970 is a powerful predictor of political attitudes and loyalties today. People who live in places that were whiter than their metropolitan area was in 1970 were more likely to vote for the Republican presidential candidate in 2008 and are more conservative than their individual attributes (e.g., race, gender, marital status, age, education, income, presence of children) would otherwise predict.**
+
+#### The Effect of Context: 
+
+-   Why would living in a neighborhood that was white in 1970 affect political views in 2008?
+
+    -   the whiteness of a neighborhood could produce individual-level conservatism through two different mechanisms:
+
+        -   nonrandom migration of individuals into or out of whiter neighborhoods (sorting/selection)
+
+            -   conservative people moved to white neighborhoods.
+
+                -   Bill bishop argument.
+
+        -   **or by directly affecting the ideology of residents.**
+
+            -   Particular types of places can generate distinctive preferences as a result of features of the place, like population density or community size (Rodden [Reference Rodden2011](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-464); Gainsborough [Reference Gainsborough2001](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-192); Ogorzalek [Reference Ogorzalek2018](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-406); Oliver [Reference Oliver2001](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-408)).
+
+            -   That is, if your neighborhood is very dense, you may be more inclined to see the need for rodent control or sewage treatment. Places can also magnify the individual attributes of inhabitants -- such as when minority neighborhoods lack elite networks (Wilson [Reference Wilson1987](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-570); Widestrom [Reference Widestrom2015](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-564)). Neighborhood homogeneity might breed racial hostility and intolerance due to a lack of exposure to or contact with neighbors of different backgrounds (Oliver and Mendelberg [Reference Oliver and Mendelberg2000](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-410); Oliver and Wong [Reference Oliver and Wong2003](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-412)). Additionally, past political experiences can shape current views.
+
+            -   Patterns of race relations developed during early periods of American history can generate opinions and behaviors that are transmitted over time and remain detectable in modern politics (Hersh and Nall [Reference Hersh and Nall2016](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-249)). Such distinctive political attitudes are communicated through processes like neighborhood social interaction (Huckfeldt and Sprague [Reference Huckfeldt and Sprague1995](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-261)) and/or \"low-intensity cues\" -- such as the casual observation of ones\' neighbors (Cho and Rudolph [Reference Cho and Rudolph2008](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-95)). More straightforwardly, it seems reasonable to suspect that moving to a neighborhood with high property values and good schools leads homeowners to become obsessively concerned with keeping those values high and the schools good.
+
+    -   both of these mechanisms are probably at play.
+
+-   What I demonstrate is that neighborhood traits from the 1970s are associated with conservatism at aggregate, and individual levels are above and beyond the mobility of the population and the demographic makeup of the neighborhood today.
+
+#### Linking Segregation and Conservatism
+
+-   Tradition segregation was explicit
+
+-   Laws change.
+
+    -   Homeowners will talk about increased traffic, limited open space, or a change in the feel of the neighborhood as reasons for their opposition to development. They\'ll talk about their right to protect their neighborhoods and their schools from increased crime, property degradation, or poor academic performance. But they do not, usually, say that they want to limit the presence of black, Latino, or poor neighbors.
+
+-   Because the Republican Party protected defenders\' rights to choose their neighbors, it won their allegiance.
+
+-   Residents who live in defended neighborhoods today are more likely to identify as Republicans and more likely to vote for Republican presidential candidates. The local roots of modern conservatism are deep.
+
+    -   see Lisa McGirr
+
+### Chapter 10: Concluding Thoughts and New Designs 
+
+-   As Peterson ([Reference Peterson1981](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-423)), explained, local politics is \"above all the politics of land use\" (p. 25).
+
+-   I argue that the policies that generate segregation and racial inequality are driven fundamentally by whites\' economic and political self-interest, which both interact with and produce racist beliefs.
+
+-   *Segregation by Design* asserts that across time and place, white property owners have achieved power, access, and policy that is unrepresentative of their share of the population. They turn out to vote at higher rates and dominate decision-making bodies. As a result, political outcomes at the local level are not pluralistic.
+
+-   Higher levels of government have disrupted white property owners\' power. Mobilization among people of color has limited their power too. *Segregation by Design* tells this story. Of course, there are still many unanswered questions. To start, this book has neglected to interrogate how property owners differ from one another across time and place, and has completely ignored the role and agency of property owners of color. What happens when neighborhood property owners conflict with residential developers? What determines who wins? We need to know how variation in goals and perspectives may affect land-use policy, segregation, and inequality.
+
+-   State and federal governments can compel desegregation on various fronts.
+
+-   Thus, desegregating neighborhoods and schools is likely to require stripping, to some degree, local control. At a minimum, going forward, states could analyze school district and municipality incorporation with an eye toward integration, limiting fragmentation and opportunities for segregation. Importantly, states can also require the building of multifamily housing, although this latter solution may only serve to increase segregation within cities if exclusive suburbs shove multifamily housing into concentrated neighborhoods.

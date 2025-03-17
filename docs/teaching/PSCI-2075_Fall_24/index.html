@@ -1465,10 +1465,10 @@ Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2</code></
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&amp;t=2770"><img src="limperatrice.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="634" alt="L’Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45"></a></p>
+<p><a href="https://youtu.be/uce6VsWy4dw?si=NTwLTmn7N5P3l8gb&amp;t=2770"><img src="limperatrice.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="634" alt="L'Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45"></a></p>
 </figure>
 </div>
-<figcaption>L’Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45</figcaption>
+<figcaption>L'Impératrice - La Piscine (LIVE) &amp; ‘piano track killer’ @ 46:11 - 58:45</figcaption>
 </figure>
 </div>
 <p>I mean this whole thing is incredible. What I would do to be in the south of France dancing to this right now…You think I want to be here teaching you about variance?! JK I do &lt;3 variance and standard deviation are very important.</p>
@@ -2654,25 +2654,28 @@ F-statistic: 10.28 on 1 and 48 DF,  p-value: 0.002394</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
 ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
 ✔ lubridate 1.9.2     ✔ tidyr     1.3.1
-✔ purrr     1.0.2     
+✔ purrr     1.0.4     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot version</span></span>
-<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(states, <span class="fu">aes</span>(<span class="at">x =</span> cig.tax, <span class="at">y =</span> cigarettes)) <span class="sc">+</span></span>
-<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>  <span class="co"># Scatter plot of the data</span></span>
-<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line</span></span>
-<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Cigarette Taxes and Smoking"</span>,</span>
-<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Cigarette Tax/Pack"</span>,</span>
-<span id="cb82-8"><a href="#cb82-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Mean Num. of Packs Bimonthly"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot version</span></span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(states, <span class="fu">aes</span>(<span class="at">x =</span> cig.tax, <span class="at">y =</span> cigarettes)) <span class="sc">+</span></span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>  <span class="co"># Scatter plot of the data</span></span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line</span></span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Cigarette Taxes and Smoking"</span>,</span>
+<span id="cb83-7"><a href="#cb83-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Cigarette Tax/Pack"</span>,</span>
+<span id="cb83-8"><a href="#cb83-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Mean Num. of Packs Bimonthly"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
@@ -2748,9 +2751,9 @@ F-statistic: 10.28 on 1 and 48 DF,  p-value: 0.002394</code></pre>
 <section id="bivariate-regression-what-you-have-been-doing" class="level3">
 <h3 class="anchored" data-anchor-id="bivariate-regression-what-you-have-been-doing">Bivariate Regression (what you have been doing)</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
-<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>model_bivariate <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax, <span class="at">data =</span> states) <span class="co"># create regression and assign to object</span></span>
-<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_bivariate) <span class="co"># print summary statistics for regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>model_bivariate <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax, <span class="at">data =</span> states) <span class="co"># create regression and assign to object</span></span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_bivariate) <span class="co"># print summary statistics for regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -2788,8 +2791,8 @@ F-statistic: 10.28 on 1 and 48 DF,  p-value: 0.002394</code></pre>
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>model_multivariate <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax <span class="sc">+</span> median.age <span class="sc">+</span> ba.or.more <span class="sc">+</span> prcapinc, <span class="at">data =</span> states) <span class="co"># create regression and assign to object</span></span>
-<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_multivariate) <span class="co"># print summary statistics for regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>model_multivariate <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax <span class="sc">+</span> median.age <span class="sc">+</span> ba.or.more <span class="sc">+</span> prcapinc, <span class="at">data =</span> states) <span class="co"># create regression and assign to object</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_multivariate) <span class="co"># print summary statistics for regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -2918,8 +2921,8 @@ F-statistic: 8.574 on 4 and 45 DF,  p-value: 3.125e-05</code></pre>
 <section id="how-would-you-interpret-prcapinc-in-the-model-below" class="level3">
 <h3 class="anchored" data-anchor-id="how-would-you-interpret-prcapinc-in-the-model-below">How would you interpret prcapinc in the model below?</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>model_multivariate <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax <span class="sc">+</span> median.age <span class="sc">+</span> ba.or.more <span class="sc">+</span> prcapinc, <span class="at">data =</span> states) <span class="co"># create regression and assign to object</span></span>
-<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_multivariate) <span class="co"># print summary statistics for regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>model_multivariate <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax <span class="sc">+</span> median.age <span class="sc">+</span> ba.or.more <span class="sc">+</span> prcapinc, <span class="at">data =</span> states) <span class="co"># create regression and assign to object</span></span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_multivariate) <span class="co"># print summary statistics for regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -3070,15 +3073,15 @@ n-k-1
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a data frame </span></span>
-<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">trump_ft =</span> <span class="fu">c</span>(<span class="dv">49</span>, <span class="dv">21</span>, <span class="dv">64</span>, <span class="dv">83</span>),</span>
-<span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Democrat =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
-<span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Republican =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb90-6"><a href="#cb90-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb90-7"><a href="#cb90-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb90-8"><a href="#cb90-8" aria-hidden="true" tabindex="-1"></a><span class="co"># regression</span></span>
-<span id="cb90-9"><a href="#cb90-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(trump_ft<span class="sc">~</span>Democrat <span class="sc">+</span> Republican, <span class="at">data =</span> df))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a data frame </span></span>
+<span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb91-3"><a href="#cb91-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">trump_ft =</span> <span class="fu">c</span>(<span class="dv">49</span>, <span class="dv">21</span>, <span class="dv">64</span>, <span class="dv">83</span>),</span>
+<span id="cb91-4"><a href="#cb91-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Democrat =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb91-5"><a href="#cb91-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Republican =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb91-6"><a href="#cb91-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb91-7"><a href="#cb91-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb91-8"><a href="#cb91-8" aria-hidden="true" tabindex="-1"></a><span class="co"># regression</span></span>
+<span id="cb91-9"><a href="#cb91-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(trump_ft<span class="sc">~</span>Democrat <span class="sc">+</span> Republican, <span class="at">data =</span> df))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -3122,16 +3125,16 @@ F-statistic: 2.314 on 1 and 2 DF,  p-value: 0.2676</code></pre>
 <section id="stargazer" class="level3">
 <h3 class="anchored" data-anchor-id="stargazer">Stargazer!</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"stargazer"</span>)</span>
-<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"stargazer"</span>)</span>
+<span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><p>Stargazer is a very useful package. Think about what you know so far from the regression outputs we have been looking at. Why do you think this package is called stargazer?</p></li>
 <li><p>Stargazer makes our outputs pretty and easier to read. They also allow us to compare across different models.</p></li>
 <li><p>Let’s use an example. First, let’s create some regression models:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
-<span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Please cite as: </code></pre>
@@ -3142,13 +3145,13 @@ Please cite as: </code></pre>
 <div class="cell-output cell-output-stderr">
 <pre><code> R package version 5.2.3. https://CRAN.R-project.org/package=stargazer </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>model0 <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span>tariff.rate, <span class="at">data=</span>world)</span>
-<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span>tariff.rate <span class="sc">+</span> eiu.democ.bin <span class="sc">+</span> eu <span class="sc">+</span> religion, <span class="at">data=</span>world) <span class="co"># </span></span>
-<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb97-5"><a href="#cb97-5" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span> eiu.democ.bin<span class="sc">*</span>tariff.rate <span class="sc">+</span> eu, <span class="at">data=</span>world) </span>
-<span id="cb97-6"><a href="#cb97-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb97-7"><a href="#cb97-7" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(model0, model1, model2 , <span class="at">type=</span><span class="st">"text"</span>, <span class="at">report=</span><span class="st">"vcs*"</span>,<span class="at">star.char =</span> <span class="fu">c</span>(<span class="st">"+"</span>,<span class="st">"*"</span>,<span class="st">"**"</span>,<span class="st">"***"</span>),  <span class="at">star.cutoffs=</span><span class="fu">c</span>(.<span class="dv">1</span>,.<span class="dv">05</span>,.<span class="dv">01</span>,.<span class="dv">001</span>), <span class="at">notes=</span><span class="st">"+p&lt;0.1,*p&lt;0.05,**p&lt;0.01,***p&lt;0.001"</span>, <span class="at">notes.append=</span><span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a>model0 <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span>tariff.rate, <span class="at">data=</span>world)</span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span>tariff.rate <span class="sc">+</span> eiu.democ.bin <span class="sc">+</span> eu <span class="sc">+</span> religion, <span class="at">data=</span>world) <span class="co"># </span></span>
+<span id="cb98-4"><a href="#cb98-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-5"><a href="#cb98-5" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span> eiu.democ.bin<span class="sc">*</span>tariff.rate <span class="sc">+</span> eu, <span class="at">data=</span>world) </span>
+<span id="cb98-6"><a href="#cb98-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-7"><a href="#cb98-7" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(model0, model1, model2 , <span class="at">type=</span><span class="st">"text"</span>, <span class="at">report=</span><span class="st">"vcs*"</span>,<span class="at">star.char =</span> <span class="fu">c</span>(<span class="st">"+"</span>,<span class="st">"*"</span>,<span class="st">"**"</span>,<span class="st">"***"</span>),  <span class="at">star.cutoffs=</span><span class="fu">c</span>(.<span class="dv">1</span>,.<span class="dv">05</span>,.<span class="dv">01</span>,.<span class="dv">001</span>), <span class="at">notes=</span><span class="st">"+p&lt;0.1,*p&lt;0.05,**p&lt;0.01,***p&lt;0.001"</span>, <span class="at">notes.append=</span><span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 ==================================================================================================
@@ -3209,16 +3212,16 @@ Note:                                                           +p&lt;0.1,*p&lt;
 <li><p>I’ve showed you ‘ggplot2’ which is another package created for the same task.</p></li>
 <li><p>There are many different ways to visualize this stuff. This is just to expand your pallet and learn about all the options you have available!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure you have the sjPlot package installed first! </span></span>
-<span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a><span class="co"># we are using the 'model2' from the previous code chunk</span></span>
-<span id="cb99-3"><a href="#cb99-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sjPlot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb100"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure you have the sjPlot package installed first! </span></span>
+<span id="cb100-2"><a href="#cb100-2" aria-hidden="true" tabindex="-1"></a><span class="co"># we are using the 'model2' from the previous code chunk</span></span>
+<span id="cb100-3"><a href="#cb100-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sjPlot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'sjPlot' was built under R version 4.3.3</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Install package "strengejacke" from GitHub (`devtools::install_github("strengejacke/strengejacke")`) to load all sj-packages at once!</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb102"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_model</span>(model2, <span class="at">type=</span><span class="st">"pred"</span>, <span class="at">term=</span><span class="fu">c</span>(<span class="st">"tariff.rate"</span>, <span class="st">"eiu.democ.bin"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_model</span>(model2, <span class="at">type=</span><span class="st">"pred"</span>, <span class="at">term=</span><span class="fu">c</span>(<span class="st">"tariff.rate"</span>, <span class="st">"eiu.democ.bin"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -3298,10 +3301,10 @@ Note:                                                           +p&lt;0.1,*p&lt;
 <li><p>Let’s look at the example from lecture. We want to know if the effect of tariff rates on trade is conditional on whether the country is democratic or not.</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
-<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a><span class="co"># note R will include the constitutive terms automatically. </span></span>
-<span id="cb103-3"><a href="#cb103-3" aria-hidden="true" tabindex="-1"></a>model_int <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span> eiu.democ.bin<span class="sc">*</span>tariff.rate <span class="sc">+</span> eu, <span class="at">data=</span>world)</span>
-<span id="cb103-4"><a href="#cb103-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_int)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a><span class="co"># note R will include the constitutive terms automatically. </span></span>
+<span id="cb104-3"><a href="#cb104-3" aria-hidden="true" tabindex="-1"></a>model_int <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span> eiu.democ.bin<span class="sc">*</span>tariff.rate <span class="sc">+</span> eu, <span class="at">data=</span>world)</span>
+<span id="cb104-4"><a href="#cb104-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_int)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -3349,8 +3352,8 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <li>Let’s plot what this interaction looks like:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb105"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sjPlot)</span>
-<span id="cb105-2"><a href="#cb105-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_model</span>(model_int, <span class="at">type=</span><span class="st">"pred"</span>, <span class="at">term=</span><span class="fu">c</span>(<span class="st">"tariff.rate"</span>, <span class="st">"eiu.democ.bin"</span>)) <span class="co">#plot interaction from model2, with different lines for eiu.democ.bin</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sjPlot)</span>
+<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_model</span>(model_int, <span class="at">type=</span><span class="st">"pred"</span>, <span class="at">term=</span><span class="fu">c</span>(<span class="st">"tariff.rate"</span>, <span class="st">"eiu.democ.bin"</span>)) <span class="co">#plot interaction from model2, with different lines for eiu.democ.bin</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -3363,8 +3366,8 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <li>Let’s compare this plot with the same model but no interaction term. So we are just controlling and do not hypothesize a conditional hypothesis:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a>model_simple <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span> tariff.rate <span class="sc">+</span> eu <span class="sc">+</span> eiu.democ.bin, <span class="at">data=</span>world)</span>
-<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_model</span>(model_simple, <span class="at">type=</span><span class="st">"pred"</span>, <span class="at">term=</span><span class="fu">c</span>(<span class="st">"tariff.rate"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a>model_simple <span class="ot">&lt;-</span> <span class="fu">lm</span>(trade.percent.gdp<span class="sc">~</span> tariff.rate <span class="sc">+</span> eu <span class="sc">+</span> eiu.democ.bin, <span class="at">data=</span>world)</span>
+<span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_model</span>(model_simple, <span class="at">type=</span><span class="st">"pred"</span>, <span class="at">term=</span><span class="fu">c</span>(<span class="st">"tariff.rate"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -3446,35 +3449,35 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="st">"To use data we have to tell us about data we don't have!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="st">"To use data we have to tell us about data we don't have!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>I want to know how good students are doing in PSCI 2075. I sample only students in in my recitations. Is this an issue? Why?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Sampling only students in my recitation to make inferences about all students in PSCI 2075 would be problematic because I would have a selection bias. My sample is not a random sample. Students may differ in their grades because of different TAs. By only looking at my students, I fail to control for other factors (like having a different TA) on a student's grade. Thus the sample is not representative of the population of interest."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb109"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Sampling only students in my recitation to make inferences about all students in PSCI 2075 would be problematic because I would have a selection bias. My sample is not a random sample. Students may differ in their grades because of different TAs. By only looking at my students, I fail to control for other factors (like having a different TA) on a student's grade. Thus the sample is not representative of the population of interest."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>Are random samples good? Why or why not?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb109"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="st">"They are good. I won't tell you why here. You should go read about it from the book or earlier material/lecture notes to answer this question."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="st">"They are good. I won't tell you why here. You should go read about it from the book or earlier material/lecture notes to answer this question."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>There are no randomized controlled experiments that show the effectiveness of parachutes. Should I jump out of this airplane without a parachute?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Do you really need to see the answer to this?"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb111"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Do you really need to see the answer to this?"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>True or False: Research questions must be falsifiable.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb111"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="st">"True."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="st">"True."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 </ol>
@@ -3486,30 +3489,30 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A categorical variable that has a hierarchy between each category."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb113"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A categorical variable that has a hierarchy between each category."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>The mean, median, and mode are all measures of what?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb113"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Central tendency"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Central tendency"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What is the difference between variance and standard deviation?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Standard deviation is the square root of variance."</span></span>
-<span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Variance is about the spread of the data; standard deviation standardizes the spread into one number."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb115"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Standard deviation is the square root of variance."</span></span>
+<span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Variance is about the spread of the data; standard deviation standardizes the spread into one number."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What axis does the dependent variable go on? What axis does the independent variable go on?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb115"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Dependent variable goes on the Y axis."</span></span>
-<span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Independent variable goes on the X axis."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Dependent variable goes on the Y axis."</span></span>
+<span id="cb116-2"><a href="#cb116-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Independent variable goes on the X axis."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 </ol>
@@ -3525,7 +3528,7 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Because these are both continuous variables, Jon should create a scatterplot."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Because these are both continuous variables, Jon should create a scatterplot."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>Paul “Lisan Al-Gaib” Atreides wants to know the concentration of spice (melange) between the cities of Arrakeen and Sietch Tabr. With the information below, how should the Lisan Al-Gaib plot these variables?</p>
@@ -3536,10 +3539,10 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Because one variable is binary and the other is a continous, the Lisan Al-Gaib should create a boxplot."</span></span>
-<span id="cb117-2"><a href="#cb117-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb117-3"><a href="#cb117-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb117-4"><a href="#cb117-4" aria-hidden="true" tabindex="-1"></a><span class="st">"~the spice must flow~"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Because one variable is binary and the other is a continous, the Lisan Al-Gaib should create a boxplot."</span></span>
+<span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb118-4"><a href="#cb118-4" aria-hidden="true" tabindex="-1"></a><span class="st">"~the spice must flow~"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 </ol>
@@ -3551,45 +3554,45 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Return to earlier weeks to review the concept. The central limit theorem is important! It is the mechanism that allows us to do hypothesis testing! Think about what the central limit theorem is and why it might be related to null hypothesis testing."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Return to earlier weeks to review the concept. The central limit theorem is important! It is the mechanism that allows us to do hypothesis testing! Think about what the central limit theorem is and why it might be related to null hypothesis testing."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What does the Central Limit Theorem allow us to do?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="st">"The central limit theorem allows us to do hypothesis testing!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="st">"The central limit theorem allows us to do hypothesis testing!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What is the purpose of hypothesis testing?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="st">"To use data we have to tell us about data we don't have! We use it to make inferences with our sample  data. Is this a real relationship or is this just a relationship I observe due to chance? Hypothesis testing helps us understand this connection."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb121"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="st">"To use data we have to tell us about data we don't have! We use it to make inferences with our sample  data. Is this a real relationship or is this just a relationship I observe due to chance? Hypothesis testing helps us understand this connection."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What is the purpose of having a null hypothesis?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb121"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="st">"It provides a baseline to compare to. The null hypothesis represents the assumption of no relationship in the population. If the null were true, how likely are we to observe the sample we got? If it is unlikely for us to observe the sample we got (which we determine using the test stat and p-value) then it is improbable that we observed the sample to do chance."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="st">"It provides a baseline to compare to. The null hypothesis represents the assumption of no relationship in the population. If the null were true, how likely are we to observe the sample we got? If it is unlikely for us to observe the sample we got (which we determine using the test stat and p-value) then it is improbable that we observed the sample to do chance."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What is a p-value?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb123"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb123-1"><a href="#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A p-value is the probability of observing a test statistic value equal to or more extreme than the value you computed if the null were true."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What is a confidence interval?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb123"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb123-1"><a href="#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="st">"The range of true values that would give our sample (or something</span></span>
-<span id="cb123-2"><a href="#cb123-2" aria-hidden="true" tabindex="-1"></a><span class="st">further away) at least some portion of the time"</span></span>
-<span id="cb123-3"><a href="#cb123-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb123-4"><a href="#cb123-4" aria-hidden="true" tabindex="-1"></a><span class="st">"A confidence interval is the mean of your estimate plus and minus the variation in that estimate. This is the range of values you expect your estimate to fall between if you redo your test, within a certain level of confidence."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb124"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="st">"The range of true values that would give our sample (or something</span></span>
+<span id="cb124-2"><a href="#cb124-2" aria-hidden="true" tabindex="-1"></a><span class="st">further away) at least some portion of the time"</span></span>
+<span id="cb124-3"><a href="#cb124-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb124-4"><a href="#cb124-4" aria-hidden="true" tabindex="-1"></a><span class="st">"A confidence interval is the mean of your estimate plus and minus the variation in that estimate. This is the range of values you expect your estimate to fall between if you redo your test, within a certain level of confidence."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 </ol>
@@ -3601,70 +3604,70 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb124"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Interaction"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb125"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Interaction"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>How many independent variables are included in a bivariate regression?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb125"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="st">"One variable."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb126"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="st">"One variable."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What is the null hypothesis in Regression?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb126"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="st">"beta = 0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb127"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb127-1"><a href="#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="st">"beta = 0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>Why do we add control variables?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb127"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb127-1"><a href="#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A control variable is an independent variable that you believe does not have a causal effect upon the dependent variable, but would potentially bias your results by excluding from your model (i.e. age, level of education, GDP per capita, population, etc.)"</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb128"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb128-1"><a href="#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A control variable is an independent variable that you believe does not have a causal effect upon the dependent variable, but would potentially bias your results by excluding from your model (i.e. age, level of education, GDP per capita, population, etc.)"</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>I estimate a bivariate model between cigarette consumption and cigarette taxes. I don’t include age in my regression equation even though I think it is a theoretically important factor on the consumption of cigarettes by state. What type of bias is this an example of?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb128"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb128-1"><a href="#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="st">"This is considered an ommitted variable bias."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb129"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb129-1"><a href="#cb129-1" aria-hidden="true" tabindex="-1"></a><span class="st">"This is considered an ommitted variable bias."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What is a residual?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb129"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb129-1"><a href="#cb129-1" aria-hidden="true" tabindex="-1"></a><span class="st">"The residual is the difference between our observed value and the predicted value (the regression line.) Note: the residual may also sometimes be called the error."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb130"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb130-1"><a href="#cb130-1" aria-hidden="true" tabindex="-1"></a><span class="st">"The residual is the difference between our observed value and the predicted value (the regression line.) Note: the residual may also sometimes be called the error."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>What does the line of best (regression line) do?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb130"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb130-1"><a href="#cb130-1" aria-hidden="true" tabindex="-1"></a><span class="st">"It minimizes the sum of squares. Hence the name OLS - Ordinary Least Squares"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb131"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb131-1"><a href="#cb131-1" aria-hidden="true" tabindex="-1"></a><span class="st">"It minimizes the sum of squares. Hence the name OLS - Ordinary Least Squares"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>Can we do a regression with a binary independent variable?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb131"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb131-1"><a href="#cb131-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Yes! When we have a binary/categorical variable, we need to leave out one category. The category left out is our reference category. The effect we observe in the table is the effect relative to that reference category."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb132"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href="#cb132-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Yes! When we have a binary/categorical variable, we need to leave out one category. The category left out is our reference category. The effect we observe in the table is the effect relative to that reference category."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>I theorize that the relationship between my X and Y variable is conditional on some other Z variable. What should I do to account for this conditional theory in my regression model?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb132"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href="#cb132-1" aria-hidden="true" tabindex="-1"></a><span class="st">"You should run an interaction between your X and Z variable. The interaction will tell you the level of effect of Y on X, conditional on the level of Z."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb133"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="st">"You should run an interaction between your X and Z variable. The interaction will tell you the level of effect of Y on X, conditional on the level of Z."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>The beta is the ____</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb133"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="st">"slope coefficient"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb134"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="st">"slope coefficient"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 </ol>
@@ -3676,7 +3679,7 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb134"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A one unit change in X has a .38 decrease in Y, all else equal."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb135"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb135-1"><a href="#cb135-1" aria-hidden="true" tabindex="-1"></a><span class="st">"A one unit change in X has a .38 decrease in Y, all else equal."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>Let’s return to our cigarette consumption question. We want to know if cigarette taxes influence the cigarette consumption in a state. I run two models with two different specifications:</p>
@@ -3686,18 +3689,18 @@ F-statistic: 9.362 on 4 and 154 DF,  p-value: 8.456e-07</code></pre>
 </ol></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb135"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb135-1"><a href="#cb135-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
-<span id="cb135-2"><a href="#cb135-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span>
-<span id="cb135-3"><a href="#cb135-3" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax, <span class="at">data =</span> states)</span>
-<span id="cb135-4"><a href="#cb135-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb135-5"><a href="#cb135-5" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax <span class="sc">+</span> ba.or.more <span class="sc">+</span> median.age <span class="sc">+</span> prcapinc <span class="sc">+</span> religiosity3, <span class="at">data =</span> states)</span>
-<span id="cb135-6"><a href="#cb135-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb135-7"><a href="#cb135-7" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(model1, model2, </span>
-<span id="cb135-8"><a href="#cb135-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">type =</span> <span class="st">"text"</span>, <span class="co"># Change to "html" or "latex" if needed</span></span>
-<span id="cb135-9"><a href="#cb135-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span> <span class="st">"Regression Models of Cigarette Consumption"</span>,</span>
-<span id="cb135-10"><a href="#cb135-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">dep.var.labels =</span> <span class="st">"Cigarette Consumption"</span>,</span>
-<span id="cb135-11"><a href="#cb135-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">covariate.labels =</span> <span class="fu">c</span>(<span class="st">"Cigarette Tax"</span>,<span class="st">"Education (BA or more)"</span>,<span class="st">"Age"</span>, <span class="st">"Per Capita Income"</span>, <span class="st">"Religiosity Mid"</span>, <span class="st">"Religiosity High"</span>), </span>
-<span id="cb135-12"><a href="#cb135-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">align =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb136"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb136-2"><a href="#cb136-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span>
+<span id="cb136-3"><a href="#cb136-3" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax, <span class="at">data =</span> states)</span>
+<span id="cb136-4"><a href="#cb136-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb136-5"><a href="#cb136-5" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(cigarettes <span class="sc">~</span> cig.tax <span class="sc">+</span> ba.or.more <span class="sc">+</span> median.age <span class="sc">+</span> prcapinc <span class="sc">+</span> religiosity3, <span class="at">data =</span> states)</span>
+<span id="cb136-6"><a href="#cb136-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb136-7"><a href="#cb136-7" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(model1, model2, </span>
+<span id="cb136-8"><a href="#cb136-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">type =</span> <span class="st">"text"</span>, <span class="co"># Change to "html" or "latex" if needed</span></span>
+<span id="cb136-9"><a href="#cb136-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span> <span class="st">"Regression Models of Cigarette Consumption"</span>,</span>
+<span id="cb136-10"><a href="#cb136-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">dep.var.labels =</span> <span class="st">"Cigarette Consumption"</span>,</span>
+<span id="cb136-11"><a href="#cb136-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">covariate.labels =</span> <span class="fu">c</span>(<span class="st">"Cigarette Tax"</span>,<span class="st">"Education (BA or more)"</span>,<span class="st">"Age"</span>, <span class="st">"Per Capita Income"</span>, <span class="st">"Religiosity Mid"</span>, <span class="st">"Religiosity High"</span>), </span>
+<span id="cb136-12"><a href="#cb136-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">align =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Regression Models of Cigarette Consumption
@@ -3762,14 +3765,14 @@ Note:                                   *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</co
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb137"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb137-1"><a href="#cb137-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Yeah...don't do that."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb138"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Yeah...don't do that."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>True or False: The researcher can do an experiment on someone without their consent.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb138"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="st">"False. Don't do that. In general, don't do anything to anyone without their consent."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb139"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="st">"False. Don't do that. In general, don't do anything to anyone without their consent."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 </ol>
@@ -3779,55 +3782,55 @@ Note:                                   *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</co
 <ol type="1">
 <li><p>Hunter S. Thompson really wants to make a histogram of state marijuana laws in 2017. He knows the RCPA3 package has the variable called “pot.policy” in the “states” data set. However, when he runs the code below, he gets angry because it won’t work! What is he missing?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb139"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(RCPA3)</span>
-<span id="cb139-2"><a href="#cb139-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(states<span class="sc">$</span>pot.policy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb140"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb140-1"><a href="#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(RCPA3)</span>
+<span id="cb140-2"><a href="#cb140-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(states<span class="sc">$</span>pot.policy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb140"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb140-1"><a href="#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="st">"That silly dude forgot to run the 'library(RCPA3)' command!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb141"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a><span class="st">"That silly dude forgot to run the 'library(RCPA3)' command!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>How would you code a logarithmic transformation of the variable ‘population’ from the world dataset? You can name the new variable whatever you want.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb141"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a>world<span class="sc">$</span>moo_deng <span class="ot">&lt;-</span> <span class="fu">log10</span>(world<span class="sc">$</span>population)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb142"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb142-1"><a href="#cb142-1" aria-hidden="true" tabindex="-1"></a>world<span class="sc">$</span>moo_deng <span class="ot">&lt;-</span> <span class="fu">log10</span>(world<span class="sc">$</span>population)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>Carmen Berzatto just yelled “GET THE F- OFF MY LAPTOP” at his groupmate for failing to run the proper regression code. The code the group ran is below, how would you fix this and what would you say to Chef Carmen?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb142"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb142-1"><a href="#cb142-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
-<span id="cb142-2"><a href="#cb142-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(min.wage <span class="sc">~</span> population <span class="sc">+</span> land.area <span class="sc">+</span> hs.or.more))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb143"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href="#cb143-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb143-2"><a href="#cb143-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(min.wage <span class="sc">~</span> population <span class="sc">+</span> land.area <span class="sc">+</span> hs.or.more))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb143"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href="#cb143-1" aria-hidden="true" tabindex="-1"></a><span class="st">"the command should be: 'lm(min.wage ~ population + land.area + hs.or.more, data = states)', they forgot to tell R what data frame these variables come from."</span></span>
-<span id="cb143-2"><a href="#cb143-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb143-3"><a href="#cb143-3" aria-hidden="true" tabindex="-1"></a><span class="st">"~Yes Chef~"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb144"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb144-1"><a href="#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="st">"the command should be: 'lm(min.wage ~ population + land.area + hs.or.more, data = states)', they forgot to tell R what data frame these variables come from."</span></span>
+<span id="cb144-2"><a href="#cb144-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-3"><a href="#cb144-3" aria-hidden="true" tabindex="-1"></a><span class="st">"~Yes Chef~"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>Rupaul provided the contestants a variable and the code to make a histogram with. However, the code provided was incorrect…on purpose. The challenge was to find out what was wrong and make the fix. The variable was ‘corrections.incarc.rate’.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb144"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb144-1"><a href="#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
-<span id="cb144-2"><a href="#cb144-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(states<span class="sc">$</span>corrections.incac.rate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb145"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href="#cb145-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb145-2"><a href="#cb145-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(states<span class="sc">$</span>corrections.incac.rate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb145"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href="#cb145-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Look very very very closely."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb146"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Look very very very closely."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 <li><p>Sabrina is mad at Barry because he didn’t pay attention during the interaction term week. She turns to you and asks ‘Please, please, please show me how to do this. Here is my code but it isn’t right.’ What do you fix?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb146"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
-<span id="cb146-2"><a href="#cb146-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(min.wage <span class="sc">~</span> population <span class="sc">+</span> land.area <span class="sc">+</span> hs.or.more <span class="sc">+</span> population<span class="sc">$</span>land.area, <span class="at">data =</span> states))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb147"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a href="#cb147-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RCPA3)</span>
+<span id="cb147-2"><a href="#cb147-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(min.wage <span class="sc">~</span> population <span class="sc">+</span> land.area <span class="sc">+</span> hs.or.more <span class="sc">+</span> population<span class="sc">$</span>land.area, <span class="at">data =</span> states))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the answer</summary>
-<div class="sourceCode cell-code" id="cb147"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a href="#cb147-1" aria-hidden="true" tabindex="-1"></a><span class="st">"The $ symbol has a different purpose in R. You should use '*' for interactions."</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb148"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb148-1"><a href="#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="st">"The $ symbol has a different purpose in R. You should use '*' for interactions."</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div></li>
 </ol>

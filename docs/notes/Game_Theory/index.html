@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stone Neilon">
+<meta name="dcterms.date" content="2025-01-14">
+<meta name="description" content="Professor: Josh Strayhorn">
+
+<title>Stone Neilon - Introductory Game Theory</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Stone Neilon</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://drive.google.com/file/d/1eZT7KaLsqdW3k4WxoeloMPm_9cdf-9A6/view?usp=sharing"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#week-1-utility-decision-theory-rationality" id="toc-week-1-utility-decision-theory-rationality" class="nav-link active" data-scroll-target="#week-1-utility-decision-theory-rationality">Week 1: Utility, Decision theory, Rationality</a>
+  <ul class="collapse">
+  <li><a href="#needed-skills" id="toc-needed-skills" class="nav-link" data-scroll-target="#needed-skills">Needed Skills:</a></li>
+  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments:</a></li>
+  <li><a href="#what-is-game-theory" id="toc-what-is-game-theory" class="nav-link" data-scroll-target="#what-is-game-theory">What is Game Theory:</a></li>
+  <li><a href="#reading-chapter-1" id="toc-reading-chapter-1" class="nav-link" data-scroll-target="#reading-chapter-1">Reading (Chapter 1)</a>
+  <ul class="collapse">
+  <li><a href="#decision-problem-has-3-features" id="toc-decision-problem-has-3-features" class="nav-link" data-scroll-target="#decision-problem-has-3-features">Decision Problem has 3 features:</a></li>
+  </ul></li>
+  <li><a href="#notation" id="toc-notation" class="nav-link" data-scroll-target="#notation">Notation</a></li>
+  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a></li>
+  <li><a href="#payoff-function" id="toc-payoff-function" class="nav-link" data-scroll-target="#payoff-function">Payoff function:</a></li>
+  <li><a href="#rational-choice-paradigm" id="toc-rational-choice-paradigm" class="nav-link" data-scroll-target="#rational-choice-paradigm">Rational Choice Paradigm:</a></li>
+  <li><a href="#chapter-2" id="toc-chapter-2" class="nav-link" data-scroll-target="#chapter-2">Chapter 2</a>
+  <ul class="collapse">
+  <li><a href="#rational-decision-making-with-uncertainty" id="toc-rational-decision-making-with-uncertainty" class="nav-link" data-scroll-target="#rational-decision-making-with-uncertainty">Rational Decision Making with Uncertainty:</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#week-2-discrete-choice-games-in-normal-form" id="toc-week-2-discrete-choice-games-in-normal-form" class="nav-link" data-scroll-target="#week-2-discrete-choice-games-in-normal-form">Week 2: Discrete Choice Games in Normal Form</a>
+  <ul class="collapse">
+  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes:</a>
+  <ul class="collapse">
+  <li><a href="#nash-equilibrium" id="toc-nash-equilibrium" class="nav-link" data-scroll-target="#nash-equilibrium">Nash Equilibrium</a></li>
+  <li><a href="#rationtalizable" id="toc-rationtalizable" class="nav-link" data-scroll-target="#rationtalizable">Rationtalizable</a></li>
+  </ul></li>
+  <li><a href="#chapter-3-preliminaries" id="toc-chapter-3-preliminaries" class="nav-link" data-scroll-target="#chapter-3-preliminaries">Chapter 3: Preliminaries</a>
+  <ul class="collapse">
+  <li><a href="#static-games" id="toc-static-games" class="nav-link" data-scroll-target="#static-games">Static Games:</a></li>
+  <li><a href="#games-of-complete-information" id="toc-games-of-complete-information" class="nav-link" data-scroll-target="#games-of-complete-information">Games of Complete Information</a></li>
+  <li><a href="#normal-form-games-with-pure-strategies" id="toc-normal-form-games-with-pure-strategies" class="nav-link" data-scroll-target="#normal-form-games-with-pure-strategies">Normal-form Games with Pure Strategies</a></li>
+  <li><a href="#example-the-prisoners-dilemma" id="toc-example-the-prisoners-dilemma" class="nav-link" data-scroll-target="#example-the-prisoners-dilemma">Example: The Prisoner’s Dilemma</a></li>
+  <li><a href="#example-battle-of-the-sexes" id="toc-example-battle-of-the-sexes" class="nav-link" data-scroll-target="#example-battle-of-the-sexes">Example: Battle of the Sexes</a></li>
+  <li><a href="#solution-concept" id="toc-solution-concept" class="nav-link" data-scroll-target="#solution-concept">Solution Concept:</a></li>
+  <li><a href="#equilibrium" id="toc-equilibrium" class="nav-link" data-scroll-target="#equilibrium">Equilibrium:</a></li>
+  <li><a href="#non-cooperative-game-theory" id="toc-non-cooperative-game-theory" class="nav-link" data-scroll-target="#non-cooperative-game-theory">Non-Cooperative game theory:</a></li>
+  <li><a href="#pareto-optimality" id="toc-pareto-optimality" class="nav-link" data-scroll-target="#pareto-optimality">Pareto Optimality:</a></li>
+  </ul></li>
+  <li><a href="#chapter-4-rationality-and-common-knowledge" id="toc-chapter-4-rationality-and-common-knowledge" class="nav-link" data-scroll-target="#chapter-4-rationality-and-common-knowledge">Chapter 4: Rationality and Common Knowledge</a>
+  <ul class="collapse">
+  <li><a href="#dominant-strategy" id="toc-dominant-strategy" class="nav-link" data-scroll-target="#dominant-strategy">Dominant Strategy</a></li>
+  </ul></li>
+  <li><a href="#iterated-elimination-of-strictly-dominated-pure-strategies" id="toc-iterated-elimination-of-strictly-dominated-pure-strategies" class="nav-link" data-scroll-target="#iterated-elimination-of-strictly-dominated-pure-strategies">Iterated Elimination of Strictly Dominated Pure Strategies</a>
+  <ul class="collapse">
+  <li><a href="#cournot-duopoly" id="toc-cournot-duopoly" class="nav-link" data-scroll-target="#cournot-duopoly">Cournot Duopoly</a></li>
+  <li><a href="#beliefs-best-response-and-rationalizability" id="toc-beliefs-best-response-and-rationalizability" class="nav-link" data-scroll-target="#beliefs-best-response-and-rationalizability">Beliefs, Best Response, and Rationalizability</a></li>
+  <li><a href="#rationalizability" id="toc-rationalizability" class="nav-link" data-scroll-target="#rationalizability">Rationalizability</a></li>
+  </ul></li>
+  <li><a href="#chapter-5-pinning-down-beliefs-nash-equilibrium" id="toc-chapter-5-pinning-down-beliefs-nash-equilibrium" class="nav-link" data-scroll-target="#chapter-5-pinning-down-beliefs-nash-equilibrium">Chapter 5: Pinning Down Beliefs: Nash Equilibrium</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Introductory Game Theory</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Spring</div>
+    <div class="quarto-category">2025</div>
+    <div class="quarto-category">American</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Professor: Josh Strayhorn
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://stoneneilon.github.io/">Stone Neilon</a> <a href="https://orcid.org/0009-0006-6026-4384" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colorado.edu/polisci/people/graduate-students/stone-neilon">
+            PhD student of political science @ The University of Colorado Boulder
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 14, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="week-1-utility-decision-theory-rationality" class="level1">
+<h1>Week 1: Utility, Decision theory, Rationality</h1>
+<section id="needed-skills" class="level2">
+<h2 class="anchored" data-anchor-id="needed-skills">Needed Skills:</h2>
+<ul>
+<li><p>be able to solve for X.</p></li>
+<li><p>Know some calculus.</p>
+<ul>
+<li><p>taking derivative</p>
+<ul>
+<li>power rule basically.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="assignments" class="level2">
+<h2 class="anchored" data-anchor-id="assignments">Assignments:</h2>
+<ul>
+<li><p>Problem sets: homework assignments due the week after they are handed out.</p>
+<ul>
+<li>you will get stuck.</li>
+</ul></li>
+<li><p>One exam</p>
+<ul>
+<li><p>after bootcamp</p></li>
+<li><p>closed note exam</p></li>
+</ul></li>
+<li><p>One paper</p>
+<ul>
+<li>equilibrium spaces and comparative statics is important for the paper.</li>
+</ul></li>
+</ul>
+</section>
+<section id="what-is-game-theory" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-game-theory">What is Game Theory:</h2>
+<ul>
+<li><p>Strategic interaction - two or more players with potentially conflicting goals.</p>
+<ul>
+<li>Players’ choices depend on what others might do.</li>
+</ul></li>
+<li><p>Interdependence!</p></li>
+<li><p>Two assumptions:</p>
+<ul>
+<li><p><strong>Common knowledge:</strong> something is common knowledge if everyone knows it, everyone knows that everyone knows it.</p>
+<ul>
+<li><p>structure of game is always common knowledge</p></li>
+<li><p>breaking this assumption gets interesting but is hard.</p></li>
+<li><p>don’t forget that it is there!</p></li>
+</ul></li>
+<li><p><strong>Rationality:</strong> players will act to maximize utility</p>
+<ul>
+<li><p>players are goal-oriented</p></li>
+<li><p>trying to achieve the most value of the game</p></li>
+<li><p>not making moves arbitrary.</p></li>
+<li><p>players are trying to accomplish <em>something</em>.</p></li>
+<li><p>utility is a rank-ordering of outcomes.</p>
+<ul>
+<li><p>actions: rock, paper, scissors</p></li>
+<li><p>outcomes: win, lose, draw</p>
+<ul>
+<li><p>actors are concerned with the outcome space</p>
+<ul>
+<li>actions are instrumental.</li>
+</ul></li>
+</ul></li>
+<li><p>players are playing to win the <em>game.</em></p></li>
+</ul></li>
+<li><p>Players assume all other players are rational.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Models must specify:</p>
+<ul>
+<li><p>actors</p></li>
+<li><p>strategies (their available choices or actions)</p></li>
+<li><p>interests (utilities over outcomes)</p></li>
+</ul></li>
+<li><p>Utility:</p>
+<ul>
+<li><p>assigns numbers to outcomes in some way</p></li>
+<li><p>we want to be able to do math on our utility functions.</p></li>
+<li><p>utility is just a rank ordering</p>
+<ul>
+<li>a utility function is where assign some number to it.</li>
+</ul></li>
+</ul></li>
+<li><p>Utility Functions:</p>
+<ul>
+<li><p><strong>Function</strong>: a mapping of inputs to outputs</p></li>
+<li><p>the input is an outcome of the game.</p></li>
+<li><p>vertical line rule!</p>
+<ul>
+<li>every input must return a unique output.</li>
+</ul></li>
+<li><p>should work smoothly with respect to lotteries/gambles.</p></li>
+<li><p>discrete = finite</p></li>
+</ul></li>
+<li><p>Expected utility (EU)</p>
+<ul>
+<li><p>preference ranking</p></li>
+<li><p>averaging across discrete events</p></li>
+<li><p>used to explore how decisions are made - how we compare choices to one another under uncertainty.</p></li>
+</ul></li>
+<li><p>VNM axioms:</p>
+<ul>
+<li><p>Completeness:</p>
+<ul>
+<li><p>For any A,B, either A &gt; B, B &gt; A, or A = B</p></li>
+<li><p>intuitively: utility value is assigned to everything</p></li>
+</ul></li>
+<li><p>Continuity:</p>
+<ul>
+<li>if A &gt; B &gt; C, there exist some <span class="math inline">\(p \in [0,1]: pA + (1-p)C = B\)</span></li>
+</ul></li>
+<li><p>Transitivity:</p>
+<ul>
+<li><p>A &gt;B and B&gt;C, A&gt;C</p></li>
+<li><p>no preference cycles</p></li>
+</ul></li>
+<li><p>Independence:</p>
+<ul>
+<li><p>if A &gt; B, then for any <span class="math inline">\(p \in [0,1], pA+(1-p)C&gt;pB+(1-p)C\)</span></p></li>
+<li><p>preference between A and B should be the same regardless of irrelevant alternative C.</p></li>
+</ul></li>
+</ul></li>
+<li><p>All we are assuming is that actors have goals and we can rank those goals.</p>
+<ul>
+<li>this is rationality.</li>
+</ul></li>
+<li><p>Thin vs.&nbsp;Thick rationality</p>
+<ul>
+<li><p>thin: just assume goal oriented</p>
+<ul>
+<li><p>you could make Charles Manson rational with this</p></li>
+<li><p>kinda like overfitting</p></li>
+</ul></li>
+<li><p>Thick: more bounded.</p>
+<ul>
+<li>convention</li>
+</ul></li>
+</ul></li>
+<li><p>Changing the utility function mapping captures risk-aversion</p>
+<ul>
+<li>can also do risk-acceptance</li>
+</ul></li>
+<li><p>Convex vs.&nbsp;concave utility</p>
+<ul>
+<li><p><strong>Convex:</strong> risk acceptant</p>
+<ul>
+<li><p>opens upward</p>
+<ul>
+<li>“concave up” - Josh</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Concave:</strong> is risk averse</p>
+<ul>
+<li><p>opens downward</p>
+<ul>
+<li>“concave down” - Josh</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="reading-chapter-1" class="level2">
+<h2 class="anchored" data-anchor-id="reading-chapter-1">Reading (Chapter 1)</h2>
+<section id="decision-problem-has-3-features" class="level3">
+<h3 class="anchored" data-anchor-id="decision-problem-has-3-features">Decision Problem has 3 features:</h3>
+<ol type="1">
+<li><p>Actions: all the alternatives from which the player can choose.</p></li>
+<li><p>Outcomes: the possible consequences that can results from any of the actions</p></li>
+<li><p>Preferences: describe how the player ranks the set of possible outcomes from most desired to least desired. The <strong>preference relation</strong> describes the player’s preferences and the notation <span class="math inline">\(x \succsim y\)</span> means “x is at least as good as y.”</p></li>
+</ol>
+</section>
+</section>
+<section id="notation" class="level2">
+<h2 class="anchored" data-anchor-id="notation">Notation</h2>
+<p><span class="math inline">\(x \succsim y\)</span> means “x is at least as good as y.” - preference relation</p>
+<p><span class="math inline">\(x \succ y\)</span> means “x is strictly better than y.” - Strict preference relation</p>
+<p><span class="math inline">\(x \thicksim y\)</span> means “x and y are equally as good.” - indifference relation</p>
+</section>
+<section id="assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="assumptions">Assumptions</h2>
+<ul>
+<li><p>Players must be able to rank outcomes.</p>
+<ul>
+<li>The completeness Axiom</li>
+</ul></li>
+<li><p>Transitive axiom.</p>
+<ul>
+<li>at least one best outcome.</li>
+</ul></li>
+</ul>
+</section>
+<section id="payoff-function" class="level2">
+<h2 class="anchored" data-anchor-id="payoff-function">Payoff function:</h2>
+<ul>
+<li><p>The ability to rank our decisions numerically.</p></li>
+<li><p>assigning a value to our preferences that can be ranked.</p></li>
+<li><p>How we actually assign the value is not important</p>
+<ul>
+<li>so long as they represent the correct ordering of our preferences.</li>
+</ul></li>
+</ul>
+</section>
+<section id="rational-choice-paradigm" class="level2">
+<h2 class="anchored" data-anchor-id="rational-choice-paradigm">Rational Choice Paradigm:</h2>
+<ul>
+<li><p>An individual is rational in that he chooses actions that maximize his well-being as defined by his payoff function over the resulting outcomes</p></li>
+<li><p>This assumption is the rational choice paradigm.</p></li>
+<li><p>We make assumptions within this paradigm</p>
+<ul>
+<li><p>The player fully understands the decision problem by knowing:</p>
+<ul>
+<li><p>all possible actions; A</p></li>
+<li><p>all possible outcomes; X</p></li>
+<li><p>exactly how each action affects which outcome will materialize</p></li>
+<li><p>his rational preferences (payoffs) over outcomes.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="chapter-2" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-2">Chapter 2</h2>
+<ul>
+<li><p>Decision trees are useful to visualize actions and outcomes.</p></li>
+<li><p>A= {g,s}; these are the sets of all possible actions</p></li>
+<li><p>X = {0,10} these represent the outcomes (in profit terms).</p></li>
+<li><p>We can utilize a decision tree to describe the player’s decision problem that includes uncertainty.</p></li>
+<li><p>How do players make choices?</p>
+<ul>
+<li><p>they sum over the probabilities of the events they want.</p>
+<ul>
+<li>figure 2.2. Player would choose the action that has the highest probability of achieving the output they desire.</li>
+</ul></li>
+</ul></li>
+<li><p>Expected payoff from the lottery</p>
+<ul>
+<li><p>maybe there is a cost associated</p>
+<ul>
+<li><p>figure 2.3</p></li>
+<li><p>we still average out.</p>
+<ul>
+<li>whichever expected payoff is higher, the actor should choose.</li>
+</ul></li>
+</ul></li>
+<li><p>v(a) is used to define the expected payoff of an action</p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p>v(g) = 6.5</p></li>
+<li><p>v(s) = 5</p>
+<ul>
+<li><p>we read this as the expected payoff of taking action g is 6.5 and the expected payoff of taking action s is 5.</p>
+<ul>
+<li>the player should choose action g as it has the higher expected payoff.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>When we choose to use expected payoff then the intensity of preferences matters.</p></li>
+</ul>
+<section id="rational-decision-making-with-uncertainty" class="level3">
+<h3 class="anchored" data-anchor-id="rational-decision-making-with-uncertainty">Rational Decision Making with Uncertainty:</h3>
+<ol type="1">
+<li><p>We define a rational player as one who chooses an action that maximizes his payoffs among the set of all possible actions.</p></li>
+<li><p>FIGURE 2.4</p></li>
+<li><p>One thing im struggling with is how we determine the payoffs and cost.</p></li>
+</ol>
+</section>
+<section id="applications" class="level3">
+<h3 class="anchored" data-anchor-id="applications">Applications</h3>
+<ul>
+<li>When decisions lead to stochastic outcomes, our rational player chooses his action to maximize his expected payoff so that <em>on average</em> he is making the right choice.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="week-2-discrete-choice-games-in-normal-form" class="level1">
+<h1>Week 2: Discrete Choice Games in Normal Form</h1>
+<section id="lecture-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-notes">Lecture Notes:</h2>
+<ul>
+<li><p>Homework is suppose to be hard.</p></li>
+<li><p>Turn in hard copy and include your scratch work.</p></li>
+<li><p>Normal Form aka strategic form</p></li>
+<li><p>extensive form games are the trees</p>
+<ul>
+<li>more flexible</li>
+</ul></li>
+<li><p>Prisoner’s Dilemma</p>
+<ul>
+<li><p>keep quiet or talk</p></li>
+<li><p>games have players, action/outcome, interests.</p></li>
+<li><p>normal form game</p></li>
+<li><p>cell entries are outcomes</p></li>
+<li><p>strategies are talk or quiet</p></li>
+</ul></li>
+<li><p>Player 1 always the ROW player</p></li>
+<li><p>Player 2 always the COLUMN PLAYER</p></li>
+<li><p>player 1, player 2</p></li>
+<li><p>Normal form games are <strong>always simultaneous</strong></p>
+<ul>
+<li><strong>Utility function -</strong> input is the final decisions (the strategy combinations) -&gt; outputs is a cardinal rank order of the strategy combinations.</li>
+</ul></li>
+<li><p>A solution is a prediction about how game will be played.</p>
+<ul>
+<li><strong>We want to identify ‘reasonable’ ways to play.</strong></li>
+</ul></li>
+<li><p>We want a systematic rule to produce solutions</p>
+<ul>
+<li><p>we need some standard</p></li>
+<li><p>any rule that produces solution is a <strong>solution concept</strong></p>
+<ul>
+<li><p>josh thinks of solution concepts as gatekeeprs</p>
+<ul>
+<li><p>they eliminate unreasonable strategies rather than identifying reasonable ones.</p></li>
+<li><p>it is often more informative that something is not a Nash equilibrium than that something is.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="nash-equilibrium" class="level3">
+<h3 class="anchored" data-anchor-id="nash-equilibrium">Nash Equilibrium</h3>
+<ul>
+<li><p>2nd most important concept in this course.</p></li>
+<li><p>Nash depends on the concept of: <strong>best reply or best response</strong></p>
+<ul>
+<li><strong>this is the most important thing.</strong></li>
+</ul></li>
+<li><p>best response correspondence</p>
+<ul>
+<li>going through every possible strategy by one player and figuring out the other’s best response.</li>
+</ul></li>
+<li><p>Nash is a set of mutual best replies</p>
+<ul>
+<li><p>in prisoner dilemma - the both defect cell is a nash.</p></li>
+<li><p>no regret basically</p></li>
+</ul></li>
+<li><p>To find Nash - we assume or stipulate a strategy profile.</p>
+<ul>
+<li>if no individual can profitably deviate from that profile, it is Nash.</li>
+</ul></li>
+<li><p>never compare across diagonals!</p></li>
+<li><p>Nash is based off rational anticipation.</p></li>
+<li><p>Nash involves a common conjecture</p></li>
+<li><p>I play x because I think you’ll play y; I also think it’s reasonable for you to play y given I will play x.</p></li>
+<li><p><em>Beliefs:</em> <strong>what one player believes the other’s strategy will be.</strong></p></li>
+<li><p>every game has at least one Nash Equilibrium*</p></li>
+<li><p><strong>a profile that fails to be Nash does not have a mutually-reinforcing common conjecture.</strong></p></li>
+<li><p>Nash doesn’t make predictions about which equilibrium actually happens.</p></li>
+</ul>
+</section>
+<section id="rationtalizable" class="level3">
+<h3 class="anchored" data-anchor-id="rationtalizable">Rationtalizable</h3>
+<ul>
+<li><p>A strategy is rationalizable if it is a best reply to at least one strategy that can be played by the opponent.</p></li>
+<li><p>in prisoner dilemma, Cooperate is not rationalizable because it is never a best reply under any conditions.</p></li>
+<li><p>thought process being modeled.</p></li>
+</ul>
+</section>
+</section>
+<section id="chapter-3-preliminaries" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-3-preliminaries">Chapter 3: Preliminaries</h2>
+<ul>
+<li><p>3 elements</p>
+<ul>
+<li><p>possible actions</p></li>
+<li><p>the deterministic or probabilistic relationship between actions and outcomes</p></li>
+<li><p>the decision maker’s preferences over the possible outcomes.</p></li>
+</ul></li>
+<li><p>We need to understand what other players are going to do.</p></li>
+</ul>
+<pre><code>-   what is the strategic environment.</code></pre>
+<ul>
+<li><strong>Strategic environment:</strong> you have to think hard about what other players are doing in order to decide what is best for you - knowing that the other players are going through the same difficulties.</li>
+</ul>
+<section id="static-games" class="level3">
+<h3 class="anchored" data-anchor-id="static-games">Static Games:</h3>
+<ul>
+<li><p>a player makes a once-and-for-all decision, after which outcomes are realized.</p></li>
+<li><p>2 steps - these settle what we mean by <em>static</em>:</p>
+<ul>
+<li><p>1) Each player simultaneously and independently chooses an action.</p></li>
+<li><p>2) Conditional on the players’ choices of actions, payoffs are distributed to each player.</p></li>
+</ul></li>
+<li><p>Complete information:</p>
+<ul>
+<li>all players understand the environment they are in - that is, the game they are playing- in every way.</li>
+</ul></li>
+</ul>
+</section>
+<section id="games-of-complete-information" class="level3">
+<h3 class="anchored" data-anchor-id="games-of-complete-information">Games of Complete Information</h3>
+<ol type="1">
+<li><p>All the possible actions of all the players</p></li>
+<li><p>all the possible outcomes</p></li>
+<li><p>how each combination of actions of all players affects which outcome will materialize</p></li>
+<li><p>the preferences of each and every player over outcomes.</p></li>
+</ol>
+<ul>
+<li><p>Common knowledge:</p>
+<ul>
+<li>Everyone knows E, everyone knows that everyone knows E.</li>
+</ul></li>
+</ul>
+</section>
+<section id="normal-form-games-with-pure-strategies" class="level3">
+<h3 class="anchored" data-anchor-id="normal-form-games-with-pure-strategies">Normal-form Games with Pure Strategies</h3>
+<ul>
+<li><p>A Normal-form game consists of three features:</p>
+<ul>
+<li><p>set of players</p>
+<ul>
+<li><span class="math inline">\(N={1,2….,n}\)</span></li>
+</ul></li>
+<li><p>set of actions for each player</p>
+<ul>
+<li><p>a collection of sets of pure strategies</p>
+<ul>
+<li><span class="math inline">\({S_1, S_2,….,S_n}\)</span></li>
+</ul></li>
+</ul></li>
+<li><p>a set of payoff functions for each player that give a payoff value to each combination of the players’ chosen actions.</p></li>
+</ul></li>
+<li><p>Strategy: a plan of action intended to accomplish a specific goal.</p></li>
+<li><p>A <strong>pure strategy</strong> for player i is a deterministic plan of action. The set of all <strong>pure strategies</strong> for player i is denoted <span class="math inline">\(S_i\)</span>.</p></li>
+<li><p>only focusing on deterministic pure strategy right now. Not stochastic.</p></li>
+</ul>
+</section>
+<section id="example-the-prisoners-dilemma" class="level3">
+<h3 class="anchored" data-anchor-id="example-the-prisoners-dilemma">Example: The Prisoner’s Dilemma</h3>
+<ul>
+<li><p>static game</p></li>
+<li><p>complete information</p></li>
+<li><p>best strategy is to confess.</p></li>
+</ul>
+</section>
+<section id="example-battle-of-the-sexes" class="level3">
+<h3 class="anchored" data-anchor-id="example-battle-of-the-sexes">Example: Battle of the Sexes</h3>
+<ul>
+<li><p>There is no strategy that is always best.</p></li>
+<li><p>playing F is best of your opponent plays F.</p></li>
+<li><p>playing O is best if your opponent plays O.</p></li>
+<li><p>does not provide a useful solution concept.</p></li>
+</ul>
+</section>
+<section id="solution-concept" class="level3">
+<h3 class="anchored" data-anchor-id="solution-concept">Solution Concept:</h3>
+<ul>
+<li><p>a method of analyzing games with the objective of restricting the set of <em>all possible outcomes</em> to those that are <em>more reasonable than others.</em></p></li>
+<li><p>We will consider some reasonable and consistent assumptions about the behavior and beliefs of players that will divide the space of outcomes into “more likely” and “less likely”</p></li>
+<li><p>if rules are set, how people are going to react - this is the solution concept.</p></li>
+<li><p>There are different solution concepts.</p>
+<ul>
+<li><p>Dominant strategy</p></li>
+<li><p>Rationalization</p></li>
+<li><p>Nash Equilibrium</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="equilibrium" class="level3">
+<h3 class="anchored" data-anchor-id="equilibrium">Equilibrium:</h3>
+<ul>
+<li><p>For any one strategy profiles that emerges as on of the solution concept’s predictions</p></li>
+<li><p>We often think of equilibria as the <em>actual predictions</em> of our theory.</p></li>
+<li><p>we add a fourth assumption</p>
+<ul>
+<li><p>self-enforcement.</p>
+<ul>
+<li><p>constrains the set of out outcomes that are reasonable.</p>
+<ul>
+<li>critical assumption for noncooperative game theory</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="non-cooperative-game-theory" class="level3">
+<h3 class="anchored" data-anchor-id="non-cooperative-game-theory">Non-Cooperative game theory:</h3>
+<ul>
+<li><p>Each player is in control of his own actions and he will stick to an action only if he finds it to be in his best interest.</p></li>
+<li><p>If a profile of strategies is to be an equilibrium, we will require each player to be happy with his own choice given how the others make their own choices.</p></li>
+<li><p>Competitive environments where players act independently and don’t form alliances.</p></li>
+</ul>
+</section>
+<section id="pareto-optimality" class="level3">
+<h3 class="anchored" data-anchor-id="pareto-optimality">Pareto Optimality:</h3>
+<ul>
+<li><p>an outcome is considered to be socially undesirable if there is a different outcome that would make some people better off without harming anyone else.</p></li>
+<li><p>efficiency, no waste.</p></li>
+<li><p>kinda seems like another way to say you cannot “iterate” any further? Not sure if this is correct.</p></li>
+</ul>
+</section>
+</section>
+<section id="chapter-4-rationality-and-common-knowledge" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-4-rationality-and-common-knowledge">Chapter 4: Rationality and Common Knowledge</h2>
+<section id="dominant-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="dominant-strategy">Dominant Strategy</h3>
+<ul>
+<li><p>In a prisoner dilemma, defection strictly dominates cooperation</p>
+<ul>
+<li>There is a dominant strategy</li>
+</ul></li>
+<li><p>Rational players <strong>never</strong> play a strictly dominated strategy.</p></li>
+<li><p>In the Battle of the Sexes game</p>
+<ul>
+<li><p>Neither players has a dominant strategy.</p></li>
+<li><p>if we stick to the solution concept of strict dominance where there is no equilibrium.</p>
+<ul>
+<li>most games do not have strict dominance.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="iterated-elimination-of-strictly-dominated-pure-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="iterated-elimination-of-strictly-dominated-pure-strategies">Iterated Elimination of Strictly Dominated Pure Strategies</h2>
+<ol type="1">
+<li><p>A rational player will never play a dominated strategy.</p></li>
+<li><p>If a rational player has a strictly dominated strategy then he will play it.</p></li>
+</ol>
+<section id="cournot-duopoly" class="level3">
+<h3 class="anchored" data-anchor-id="cournot-duopoly">Cournot Duopoly</h3>
+<ul>
+<li><p>firms simultaneously chooses a quantity of production.</p></li>
+<li><p>firms want to maximize profit.</p></li>
+<li><p>firms are in equilibrium when each does not want to change what it is doing given the other firm’s strategy.</p></li>
+</ul>
+</section>
+<section id="beliefs-best-response-and-rationalizability" class="level3">
+<h3 class="anchored" data-anchor-id="beliefs-best-response-and-rationalizability">Beliefs, Best Response, and Rationalizability</h3>
+<ul>
+<li><p>Strict dominance and IESDS are based on eliminating actions that players would never play.</p></li>
+<li><p>An alt approach: what possible strategies might players choose to play and under what conditions?</p></li>
+<li><p>Difference between decision theory and game:</p>
+<ul>
+<li>in a game your optimal decision not only depends on the structure of the game, but it will often depend on what the other players are doing.</li>
+</ul></li>
+<li><p>qualify strategy</p></li>
+<li><p><strong>In order for a player to be optimizing in a game, he has to choose a best strategy as a response to the strategy of his opponents.</strong></p></li>
+<li><p>if i think my opponents are doing <span class="math inline">\(s_{-i}\)</span> , then I should do <span class="math inline">\(s_i\)</span></p></li>
+</ul>
+</section>
+<section id="rationalizability" class="level3">
+<h3 class="anchored" data-anchor-id="rationalizability">Rationalizability</h3>
+<ul>
+<li><p>Instead of asking what your opponents might be doing, you asked</p>
+<ul>
+<li><p>“what would a rational player not do?”</p>
+<ul>
+<li>we are now going to do basically the inverse.</li>
+</ul></li>
+</ul></li>
+<li><p>“What might a rational player do?”</p>
+<ul>
+<li>a rational player will select only one strategies that are a best response to some profile of his opponents.</li>
+</ul></li>
+<li><p>We can eliminate all strategies that are never a best response.</p></li>
+<li><p>What survives is called the set of rationalizable strategies.</p></li>
+<li><p>Rationalizability and IESDS are basically two sides of the same coin</p>
+<ul>
+<li>some slight difference is mentioned that will be elaborated later.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="chapter-5-pinning-down-beliefs-nash-equilibrium" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-5-pinning-down-beliefs-nash-equilibrium">Chapter 5: Pinning Down Beliefs: Nash Equilibrium</h2>
+<ul>
+<li><p>For dominant strategy equilibrium we required only that players be rational</p></li>
+<li><p>IESDS and rationalizability we required common knowledge of rationality</p></li>
+<li><p><strong>Nash Equilibrium:</strong> is a system of beliefs and a profile of actions for which each player is playing a best response to his beliefs and, moreover, players have <strong>correct</strong> beliefs.</p></li>
+<li><p>best response to a best response.</p></li>
+<li><p>Requirements for Nash Equilibrium:</p>
+<ul>
+<li><p>Each player is playing a best response to his beleifs</p></li>
+<li><p>the beliefs of the players about their opponents are correct.</p></li>
+</ul></li>
+<li><p>does not guarantee pareto optimality.</p></li>
+<li><p>self-enforcing outcomes.</p></li>
+<li><p>left to their own devices, people in many situations will do what is best for them, at the expense of social efficiency.</p></li>
+</ul>
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2025,
+  author = {Neilon, Stone},
+  title = {Introductory {Game} {Theory}},
+  date = {2025-01-14},
+  url = {https://stoneneilon.github.io/notes/Game_Theory/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-neilon2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Neilon, Stone. 2025. <span>“Introductory Game Theory.”</span> January
+14, 2025. <a href="https://stoneneilon.github.io/notes/Game_Theory/">https://stoneneilon.github.io/notes/Game_Theory/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
