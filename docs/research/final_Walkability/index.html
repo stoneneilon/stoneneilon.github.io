@@ -212,20 +212,22 @@ window.Quarto = {
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
   <ul class="collapse">
-  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">Appendix A</a>
+  <li><a href="#appendix-a-spherical-error-checks" id="toc-appendix-a-spherical-error-checks" class="nav-link" data-scroll-target="#appendix-a-spherical-error-checks">Appendix A: Spherical Error Checks</a>
   <ul class="collapse">
-  <li><a href="#spherical-error-checks" id="toc-spherical-error-checks" class="nav-link" data-scroll-target="#spherical-error-checks">Spherical error checks:</a></li>
+  <li><a href="#general-election-spherical-error-checks" id="toc-general-election-spherical-error-checks" class="nav-link" data-scroll-target="#general-election-spherical-error-checks">General Election Spherical Error Checks:</a></li>
+  <li><a href="#primary-election-spherical-error-checks" id="toc-primary-election-spherical-error-checks" class="nav-link" data-scroll-target="#primary-election-spherical-error-checks">Primary Election Spherical Error Checks:</a></li>
   </ul></li>
   <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">Appendix B</a>
   <ul class="collapse">
   <li><a href="#controls" id="toc-controls" class="nav-link" data-scroll-target="#controls">Controls:</a></li>
   </ul></li>
-  <li><a href="#appendix-individual-level-results" id="toc-appendix-individual-level-results" class="nav-link" data-scroll-target="#appendix-individual-level-results">Appendix Individual Level Results</a>
+  <li><a href="#appendix-individual-level-results---still-need-to-complete" id="toc-appendix-individual-level-results---still-need-to-complete" class="nav-link" data-scroll-target="#appendix-individual-level-results---still-need-to-complete">Appendix Individual Level Results - STILL NEED TO COMPLETE</a>
   <ul class="collapse">
   <li><a href="#individual-level-data" id="toc-individual-level-data" class="nav-link" data-scroll-target="#individual-level-data">Individual Level Data</a></li>
   <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary Statistics</a></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
   </ul></li>
-  <li><a href="#appendix-for-qp-defense" id="toc-appendix-for-qp-defense" class="nav-link" data-scroll-target="#appendix-for-qp-defense">Appendix for QP Defense</a></li>
   </ul></li>
   <li><a href="#works-cited" id="toc-works-cited" class="nav-link" data-scroll-target="#works-cited">Works Cited</a></li>
   </ul>
@@ -578,8 +580,8 @@ Voter\ Turnout_{ikj} = Walkability_{ikj}\ + Aggregate\ Level \ Controls_{ikj}
 <p>Where <span class="math inline">\(i\)</span> is the Census block group</p>
 <p>Where <span class="math inline">\(k\)</span> is the Metropolitan Statistical Area</p>
 <p>Where <span class="math inline">\(j\)</span> is the election year.</p>
-<p>The control variables were chosen based on previous studies of walkability and traditional factors that influence voter turnout. Because we are measuring this at the Census block group level, our controls include population density, median home age, home value, proportion of various social and racial demographics, and the proportion of party ID. We also create a dummy variable for Mail-in-ballots at the state level. A full list of controls can be found in Appendix TK.</p>
-<p>Because we nest Census block groups within an MSA, we study both the within and between variation in our data set. We cluster our standard errors to account for correlation among the Census block groups nested in each MSA, thus non-independence of our observations. Choosing not to cluster our standard errors would produce underestimated (too small) standard errors. Additionally, we run a fixed effects model to account for between variation of MSAs. Both of these robustness checks can be found in Appendix TK.</p>
+<p>The control variables were chosen based on previous studies of walkability and traditional factors that influence voter turnout. Because we are measuring this at the Census block group level, our controls include population density, median home age, home value, proportion of various social and racial demographics, and the proportion of party ID. We also create a dummy variable for Mail-in-ballots at the state level. A full list of controls can be found in Appendix B.</p>
+<p>Because we nest Census block groups within an MSA, we study both the within and between variation in our data set. We cluster our standard errors to account for correlation among the Census block groups nested in each MSA, thus non-independence of our observations. Choosing not to cluster our standard errors would produce underestimated (too small) standard errors. Additionally, we run a fixed effects model to account for between variation of MSAs.</p>
 <section id="sorting-the-sort---need-help-here.---incomplete-step." class="level3">
 <h3 class="anchored" data-anchor-id="sorting-the-sort---need-help-here.---incomplete-step.">Sorting the Sort - need help here. - incomplete step.</h3>
 <p>A major concern in this body of work, is the role of endogenous sorting of individuals into more walkable neighborhoods. Individuals can chose where to live based off the amenities offered <span class="citation" data-cites="tiebout1956pure">(<a href="#ref-tiebout1956pure" role="doc-biblioref">Tiebout 1956</a>)</span>. Thus, individuals who are already likely to vote may sort into a walkable neighborhood. Of the few previous built environment and political participation studies, only <span class="citation" data-cites="nathan2023grids">Nathan (<a href="#ref-nathan2023grids" role="doc-biblioref">2023</a>)</span> controls for endogenous sorting using survey questions. Because we use a voter file rather than a survey to measure voter turnout, we are unable to follow a similar design. We do, however, use <span class="citation" data-cites="brown2021measurement">Brown and Enos (<a href="#ref-brown2021measurement" role="doc-biblioref">2021</a>)</span>’s partisan exposure measure as a control for potential partisan sorting. Measuring endogenous sorting with a measure of partisan sorting is an imperfect measure. However, growing evidence points to Democrats selecting into more walkable areas and Republicans selecting into suburban/rural areas. This assumption is reflected in the growing evidence between an urban/rural divide and lifestyle choices among Democrats and Republican <span class="citation" data-cites="lyons2023you">(<a href="#ref-lyons2023you" role="doc-biblioref">Lyons and Utych 2023</a>)</span> <span class="citation" data-cites="bishop2009big">(<a href="#ref-bishop2009big" role="doc-biblioref">Bishop and Cushing 2009</a>)</span> <span class="citation" data-cites="brown2021measurement">(<a href="#ref-brown2021measurement" role="doc-biblioref">Brown and Enos 2021</a>)</span> <span class="citation" data-cites="williamson2008sprawl">(<a href="#ref-williamson2008sprawl" role="doc-biblioref">Williamson 2008</a>)</span>.</p>
@@ -1082,21 +1084,25 @@ Voter\ Turnout_{ikj} = Walkability_{ikj}\ + Aggregate\ Level \ Controls_{ikj}
 </section>
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
-<p><em>Note: substantial revisions of this section will be completed after the survey.</em></p>
-<p><em>Does walkability influence voter turnout?</em> We find a significant association between the walkability of Census block group and voter turnout across all elections. Our statistical results appear modest, however, the level of effect between the lowest walkable block group (0) and the highest (20) roughly equates to a 2% voter turnout difference. With continued polarization, elections are growing increasingly close.</p>
+<p><em>Note: substantial additions of this section will be completed after the survey.</em></p>
+<p><em>Does walkability influence voter turnout?</em> We find a significant association between the walkability of Census block group and voter turnout across all elections. Our statistical results appear modest, however, the level of effect between the lowest walkable block group (0) and the highest (20) roughly equates to a 2% voter turnout difference. With continued polarization, elections are growing increasingly close. These results show the design of the built environment can have important consequences for election results. However, we don’t know how these differences on different populations.</p>
 <p>It is worth mentioning that each election tested is characterized by Donald Trump’s presence. Trump being a polarizing figure in politics at the time motivated unique political activation among the populous.</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
+<p><em>Note: substantial additions of this section will be completed after the survey.</em></p>
 <p>To our knowledge, this is the largest test of built environment factors on voter turnout in the United States. Our results add to the growing evidence between the built environment and political phenomenon.</p>
 <p>While the internet has changed the way we communicate with others politically, we should not discount the role of face-to-face communication.</p>
 </section>
 <section id="appendix" class="level1">
 <h1>Appendix</h1>
-<section id="appendix-a" class="level2">
-<h2 class="anchored" data-anchor-id="appendix-a">Appendix A</h2>
-<section id="spherical-error-checks" class="level3">
-<h3 class="anchored" data-anchor-id="spherical-error-checks">Spherical error checks:</h3>
+<section id="appendix-a-spherical-error-checks" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-a-spherical-error-checks">Appendix A: Spherical Error Checks</h2>
+<section id="general-election-spherical-error-checks" class="level3">
+<h3 class="anchored" data-anchor-id="general-election-spherical-error-checks">General Election Spherical Error Checks:</h3>
+</section>
+<section id="primary-election-spherical-error-checks" class="level3">
+<h3 class="anchored" data-anchor-id="primary-election-spherical-error-checks">Primary Election Spherical Error Checks:</h3>
 </section>
 </section>
 <section id="appendix-b" class="level2">
@@ -1192,22 +1198,114 @@ Voter\ Turnout_{ikj} = Walkability_{ikj}\ + Aggregate\ Level \ Controls_{ikj}
 </table>
 </section>
 </section>
-<section id="appendix-individual-level-results" class="level2">
-<h2 class="anchored" data-anchor-id="appendix-individual-level-results">Appendix Individual Level Results</h2>
-<p>Because the individual level voter file is so large, I restrict my individual level analysis to just the 2018 primary. My goal is to have all elections in the future. However, I am using a 3rd party data management hub that requires me to purchase computational credits to complete the full analysis. I am only allotted a certain amount of computation power to run these analysis and thus I can only do the 2018 primary at this time.</p>
-<p>I selected the 2018 primary because I felt it would be the most substantively interesting.</p>
+<section id="appendix-individual-level-results---still-need-to-complete" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-individual-level-results---still-need-to-complete">Appendix Individual Level Results - STILL NEED TO COMPLETE</h2>
+<p>Because the individual level voter file is so large, I restrict my individual level analysis to just the 2016 primary. My goal is to have all elections in the future. However, I am using a 3rd party data management hub that requires me to purchase computational credits to complete the full analysis. I am only allotted a certain amount of computation power to run these analysis and thus I can only do the 2016 primary at this time.</p>
+<p>I selected the 2016 primary because I felt it minimized unaccounted variation.</p>
 <section id="individual-level-data" class="level3">
 <h3 class="anchored" data-anchor-id="individual-level-data">Individual Level Data</h3>
+<p>The L2 voter file is 5tb and contains data on every voter since 2014. Each row in the file is a voter in an election, thus there are over 7 billion observations. This data was accessed through the UCLA library.</p>
 </section>
 <section id="summary-statistics" class="level3">
 <h3 class="anchored" data-anchor-id="summary-statistics">Summary Statistics</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Voted</th>
+<th>17,041,438</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Not Voted</strong></td>
+<td><strong>55,217,065</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Total Observations</strong></td>
+<td><strong>72,258,503</strong></td>
+</tr>
+</tbody>
+</table>
 </section>
+<section id="method" class="level3">
+<h3 class="anchored" data-anchor-id="method">Method</h3>
+<p>LOGIT</p>
+<p><strong><em>NOTE: I need to buy credits to get more computation power. Only the bivariate model could be completed.</em></strong></p>
 </section>
-<section id="appendix-for-qp-defense" class="level2">
-<h2 class="anchored" data-anchor-id="appendix-for-qp-defense">Appendix for QP Defense</h2>
-<ul>
-<li>This section is to help me remember the issue I am having with solving the sorting problem.</li>
-</ul>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">Results</h3>
+<p><em>NOTE: I KNOW THIS IS WRONG</em></p>
+<div>
+<table data-quarto-postprocess="true" class="table">
+<tbody>
+<tr class="odd">
+<td colspan="2" style="border-bottom: 1px solid black"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td><em>Dependent variable:</em></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="border-bottom: 1px solid black"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td>voted_binary</td>
+</tr>
+<tr class="odd">
+<td colspan="2" style="border-bottom: 1px solid black"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NatWalkInd</td>
+<td>-0.010<sup>***</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td>(0.0002)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Constant</td>
+<td>-1.067<sup>***</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td>(0.002)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td colspan="2" style="border-bottom: 1px solid black"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations</td>
+<td>10,000,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Log Likelihood</td>
+<td>-5,462,110.000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Akaike Inf. Crit.</td>
+<td>10,924,224.000</td>
+</tr>
+<tr class="even">
+<td colspan="2" style="border-bottom: 1px solid black"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Note:</em></td>
+<td style="text-align: right;"><sup>*</sup>p&lt;0.1; <sup>**</sup>p&lt;0.05; <sup>***</sup>p&lt;0.01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </section>
 </section>
 <section id="works-cited" class="level1">

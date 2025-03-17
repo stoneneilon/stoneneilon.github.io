@@ -4506,5 +4506,19 @@
     "title": "The Effects of Walkability on Voter Turnout",
     "section": "Appendix for QP Defense",
     "text": "Appendix for QP Defense\n\nThis section is to help me remember the issue I am having with solving the sorting problem."
+  },
+  {
+    "objectID": "research/final_Walkability/index.html#appendix-a-spherical-error-checks",
+    "href": "research/final_Walkability/index.html#appendix-a-spherical-error-checks",
+    "title": "The Effects of Walkability on Voter Turnout",
+    "section": "Appendix A: Spherical Error Checks",
+    "text": "Appendix A: Spherical Error Checks\n\nGeneral Election Spherical Error Checks:\n\n\nPrimary Election Spherical Error Checks:"
+  },
+  {
+    "objectID": "research/final_Walkability/index.html#appendix-individual-level-results---still-need-to-complete",
+    "href": "research/final_Walkability/index.html#appendix-individual-level-results---still-need-to-complete",
+    "title": "The Effects of Walkability on Voter Turnout",
+    "section": "Appendix Individual Level Results - STILL NEED TO COMPLETE",
+    "text": "Appendix Individual Level Results - STILL NEED TO COMPLETE\nBecause the individual level voter file is so large, I restrict my individual level analysis to just the 2016 primary. My goal is to have all elections in the future. However, I am using a 3rd party data management hub that requires me to purchase computational credits to complete the full analysis. I am only allotted a certain amount of computation power to run these analysis and thus I can only do the 2016 primary at this time.\nI selected the 2016 primary because I felt it minimized unaccounted variation.\n\nIndividual Level Data\nThe L2 voter file is 5tb and contains data on every voter since 2014. Each row in the file is a voter in an election, thus there are over 7 billion observations. This data was accessed through the UCLA library.\n\n\nSummary Statistics\n\n\n\nVoted\n17,041,438\n\n\n\n\nNot Voted\n55,217,065\n\n\nTotal Observations\n72,258,503\n\n\n\n\n\nMethod\nLOGIT\nNOTE: I need to buy credits to get more computation power. Only the bivariate model could be completed.\n\n\nResults\nNOTE: I KNOW THIS IS WRONG\n\n\n\n\n\n\n\n\nDependent variable:\n\n\n\n\n\n\n\nvoted_binary\n\n\n\n\n\nNatWalkInd\n-0.010***\n\n\n\n(0.0002)\n\n\n\n\n\n\nConstant\n-1.067***\n\n\n\n(0.002)\n\n\n\n\n\n\n\n\n\nObservations\n10,000,000\n\n\nLog Likelihood\n-5,462,110.000\n\n\nAkaike Inf. Crit.\n10,924,224.000\n\n\n\n\n\nNote:\n*p&lt;0.1; **p&lt;0.05; ***p&lt;0.01"
   }
 ]
