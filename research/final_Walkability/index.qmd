@@ -664,7 +664,7 @@ To test the potential mechanisms, we randomly assign respondents to 1 of 3 condi
 
 > Imagine you live in a highly walkable neighborhood where businesses and homes blend together, with tree-lined sidewalks, bike lanes, and bus stops. Grocery stores, coffee shops, restaurants, and retail shops are just a short walk away, and people are out and about.  Moreover, post offices, libraries, churches, and community centers are just a short walk away, making regular errands and occasional activities easy to access.
 
-### Treatment 2: Sociliaztion/Social Pressure:
+### Treatment 2: Socialization/Social Pressure:
 
 > Imagine you live in a highly walkable neighborhood where businesses and homes blend together, with tree-lined sidewalks, bike lanes, and bus stops. Grocery stores, coffee shops, restaurants, and retail shops are just a short walk away, and people are out and about.  It is a vibrant, socially-connected community where people know each others' names, notice things, and expect people to look out for one another.
 
@@ -682,7 +682,7 @@ Each respondent is then asked three questions on a 0-10 scale, with 0 = extremel
 
 *To come after completion of survey.*
 
-#  Discussion
+# Discussion
 
 *Note: substantial additions of this section will be completed after the survey.*
 
