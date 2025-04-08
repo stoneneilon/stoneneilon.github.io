@@ -865,7 +865,7 @@ The reallocation of authority upward, downward, and sideways from central states
 
 -   Madison had observed coalitions before. And knew they could be dangerous if gained a majority
 
-    -   he presumed that federalism and the. separation of powers would fragment the government so thoroughly that these factions owuld find it hard to cooperate to achieve their selfish, destructive purposes.
+    -   he presumed that federalism and the. separation of powers would fragment the government so thoroughly that these factions would find it hard to cooperate to achieve their selfish, destructive purposes.
 
 -   Federalism was *a massive obstacle to national political cooperation.*
 
@@ -1925,7 +1925,7 @@ The reallocation of authority upward, downward, and sideways from central states
 
 # Week 7
 
-## Lecture Notes: 
+## Lecture Notes:
 
 -   polycentrism is type II in marx and hogan terms.
 
@@ -2013,7 +2013,7 @@ Polycentrism vs Gargantua
 
 -   We view the "business" of governments in metropolitan areas as providing "public goods and services
 
-### The Nature of Public Goods and Services 
+### The Nature of Public Goods and Services
 
 -   What gives rise to public goods?
 
@@ -2025,9 +2025,9 @@ Polycentrism vs Gargantua
 
 -   in footnote 3:
 
-    -    Collaboration and competition among governmental units may also, of course, have detrimental effects, and require some form of central decision-making to consider the interests of the area as a whole.
+    -   Collaboration and competition among governmental units may also, of course, have detrimental effects, and require some form of central decision-making to consider the interests of the area as a whole.
 
-#### Public Good: 
+#### Public Good:
 
 -   "...the line between private and public is to be drawn on the basis of the extent and scope of the consequences of acts which are so important as to need control whether by inhibition or by promotion."
 
@@ -2087,13 +2087,13 @@ Polycentrism vs Gargantua
 
     -   3\) turn to other levels of government in a quest for an appropriate fit among the interests affecting and affected by public transactions.
 
-#### The Criterion of Local Self-Determination 
+#### The Criterion of Local Self-Determination
 
 -   local self-government of municipal affairs assumes that public goods can be successfully internalized.
 
 -   the choice of local public services implies there is variation across cities.
 
-### Public Organization in Gargantua 
+### Public Organization in Gargantua
 
 -   Gargantua does have an appropriate scale for certain public services.
 
@@ -2141,7 +2141,7 @@ Polycentrism vs Gargantua
 
     -   VERY IMPORTANT!
 
-## Oakerson, Ronald. 2004. \"The Study of Metropolitan Governance,\" in Metropolitan Governance: Conflict, Competition, and Cooperation,\" Richard C. Feiock, ed., Georgetown University Press, pp. 17-45.
+## Oakerson, Ronald. 2004. "The Study of Metropolitan Governance," in Metropolitan Governance: Conflict, Competition, and Cooperation," Richard C. Feiock, ed., Georgetown University Press, pp. 17-45.
 
 -   It sounds silly but we should probably define metropolitan at some point.
 
@@ -2169,7 +2169,7 @@ Polycentrism vs Gargantua
 
 -   **Polycentrism depends on the absence of dominance among various centers of authority, whereas monocentrism depends on a single center attaining dominance.**
 
-#### Authors Argument: 
+#### Authors Argument:
 
 -   The argument I offer below is that polycentric systems of government allow for more open governance structures that include greater "civic space," defined as the set of opportunities for nongovernmental actors to enter productively into the governance process by producing general benefits for a community.
 
@@ -2181,7 +2181,7 @@ Polycentrism vs Gargantua
 
     -   polycentrism thus describes a system of qualified independence among interdependent centers of authority.
 
-### Tocqueville's Model of Local Governance: 
+### Tocqueville's Model of Local Governance:
 
 -   importance of civil society.
 
@@ -2197,9 +2197,9 @@ Polycentrism vs Gargantua
 
     -   Americans had extended the concept to include relationships between officials at different levels of gov.
 
-### Metropolitan Institutions of Government: 
+### Metropolitan Institutions of Government:
 
-#### Institutional Architecture: 
+#### Institutional Architecture:
 
 -   gov framework rests on an institutional base:
 
@@ -2289,7 +2289,7 @@ Polycentrism vs Gargantua
 
 -   Public entrepreneurs must please the voter, but along the way they must attract an array of supporters-peers, other appointed officials, and elected representatives.
 
-#### Community Diferentiation: 
+#### Community Diferentiation:
 
 -   residents can vote with their feet.
 
@@ -2299,7 +2299,7 @@ Polycentrism vs Gargantua
 
 -   How can an individual citizen keep track of and thus hold accountable such a large number of independent public officials?
 
-### The Effects of Alternative Prescriptions for Reform: 
+### The Effects of Alternative Prescriptions for Reform:
 
 -   I conclude that large scale metropolitan governments would lead to:
 
@@ -2331,7 +2331,7 @@ Polycentrism vs Gargantua
 
     -   externalities!
 
-### Abstract: 
+### Abstract:
 
 This article describes the institutional collective action (ICA) framework and its application to the study of governance arrangements in metropolitan areas by focusing on the tools of regional governance for solving ICA problems. Regional governance mechanisms are classified by their focus on either collective or network relationships. The role of these within these mechanisms is analyzed and the transaction costs barriers to the emergence of regional governance institutions are identified. The concluding discussion identifies the limitations of self-organizing mechanisms and develops a research agenda to investigate the emergence, evolution, and performance of regional governance institutions.
 
@@ -2339,7 +2339,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   Can voluntary collaborations among local governments provide solutions to the regional problems confronting metropolitan areas?
 
-### Argument: 
+### Argument:
 
 -   We argue that there are an array of mechanisms that vary in the extent to which self-organization is evident in their creation and use.
 
@@ -2347,7 +2347,7 @@ This article describes the institutional collective action (ICA) framework and i
 
     -   recent empirical evidence strongly refutes these assumptions and suggests that self-organizing governance mechanism can and do coordinate decisions in many policy areans.
 
-### Background: 
+### Background:
 
 -   Institutional collective action problems arise directly from the delegation of service responsibilities to a multitude of local governments and authorities.
 
@@ -2379,7 +2379,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   trust, mutuality, and reputations that are manifestations of closely connected networked relationships facilitate collective action.
 
--   **Feiock, Steinacker, and Park (forthcoming) report that a city\'s demographic similarity with neighbors and centrality in the social networks of local actors increase the likelihood of joint ventures. Spatial proximity also contributes to interdependencies that safeguard cooperative action and provide a larger opportunity set of reliable partners from which to develop new ventures**
+-   **Feiock, Steinacker, and Park (forthcoming) report that a city's demographic similarity with neighbors and centrality in the social networks of local actors increase the likelihood of joint ventures. Spatial proximity also contributes to interdependencies that safeguard cooperative action and provide a larger opportunity set of reliable partners from which to develop new ventures**
 
     -   Both strong tie networks of frequent interaction among cities and participation in weak tie associational networks increased the likelihood of development collaboration. These results suggest that collaborative groups that provide venues for local government and other organizations to interact build networks and social capital that contribute to the emergence of self-organizing solutions to metropolitan problems.
 
@@ -2397,7 +2397,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 ## Trounstine, Jessica. 2018. Segregation by Design: Local Politics and Inequality in American. Cambridge University Press.
 
-### Lecture Notes: 
+### Lecture Notes:
 
 -   Poll taxes were part of your property tax
 
@@ -2413,7 +2413,7 @@ This article describes the institutional collective action (ICA) framework and i
 
         -   curb cuts
 
-### Introduction: 
+### Introduction:
 
 -   uneven development in cities.
 
@@ -2421,7 +2421,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   segregation: when poor and people of color are concentrated in residential locations apart form wealthy and white residents.
 
-#### Main Research Question: 
+#### Main Research Question:
 
 -   This book asks how segregation becomes entrenched, why its form changes, and what the consequences are.
 
@@ -2429,7 +2429,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   The maintenance of property values and the quality of public goods are collective endeavors. And like all collective endeavors, they require collective action for production and stability. Local governments provide this collective action. So, supported by land-oriented businesses, white homeowners have backed a succession of maneuvers to keep their property interests and public benefits insulated from change -- even as cities have grown, aged, redeveloped, suburbanized, and adjusted to industrialization. Battles over the control of urban space have always been the primary driver of city politics. At stake is the quality of life accessible to residents and markets available to commercial interests. The result has been *segregation by design*.
 
-#### Camden: 
+#### Camden:
 
 -   early adopters of zoning.
 
@@ -2467,11 +2467,11 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   the protection of property values and public goods motivates local land use policy and generates inequality and polarization.
 
--   For instance, Tiebout\'s ([Reference Tiebout1956](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-522)) seminal article arguing that consumer-voters pick communities that best satisfy their preferences for public goods ignores the role of race, segregation, and inequality in these choices and is silent about the ways in which public goods packages are developed. In order for anyone to vote with her feet, she must first find a place to live. We cannot understand sorting (either to obtain a tax/public goods bundle or to avoid other racial groups) until we understand the ways in which housing choices, property values, and neighborhood character are structured by local governments.
+-   For instance, Tiebout's ([Reference Tiebout1956](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-522)) seminal article arguing that consumer-voters pick communities that best satisfy their preferences for public goods ignores the role of race, segregation, and inequality in these choices and is silent about the ways in which public goods packages are developed. In order for anyone to vote with her feet, she must first find a place to live. We cannot understand sorting (either to obtain a tax/public goods bundle or to avoid other racial groups) until we understand the ways in which housing choices, property values, and neighborhood character are structured by local governments.
 
 -   I argue that if we understand segregation as a mechanism to protect public goods and property values, increasing class segregation is predictable.
 
-### Chapter 2: A Theory of Segregation by Design 
+### Chapter 2: A Theory of Segregation by Design
 
 -   local policies influence property value.
 
@@ -2509,7 +2509,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   The marriage between rights-based conservatism and white perspectives on race was amplified in the crucible of city politics.
 
-#### The Geography of Inequality: 
+#### The Geography of Inequality:
 
 -   Segregation within cities and suburbanization across city lines has meant that the benefits experienced by racial and ethnic minorities and low-income individuals are inferior to the benefits experienced by whites and the wealthy.
 
@@ -2533,7 +2533,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   my analysis suffers from an inability to disentangle selection from treatment: does living in a homogenous white neighborhood make people more conservative, or do people with conservative views move to homogenous neighborhoods?
 
-### Chapter 3: Protecting Investments 
+### Chapter 3: Protecting Investments
 
 -   This chapter introduces the dataset
 
@@ -2605,13 +2605,13 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   Following *Buchanan*, many cities sought to enact constitutionally defensible racial zoning plans by turning to comprehensive city planning
 
--   By separating industrial, commercial, and residential uses into separate districts -- each with standard regulations regarding the use, height, and area of buildings -- zoning would make \"every town, city or village a more orderly, convenient, economic and attractive place in which to live and work\"
+-   By separating industrial, commercial, and residential uses into separate districts -- each with standard regulations regarding the use, height, and area of buildings -- zoning would make "every town, city or village a more orderly, convenient, economic and attractive place in which to live and work"
 
--   In *Euclid v. Ambler* ([1926](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-598)), Justice Sutherland explained that the apartment house is often a \"mere parasite, constructed to take advantage of the open spaces and attractive surroundings ... interfering by their height and build with the free circulation of air and monopolizing the rays of the sun ... depriving children of the privilege of quiet and open spaces for play enjoyed by those in more favored localities ... until, finally, the residential character of the neighborhood and its desirability as a place of detached residences are utterly destroyed. Under these circumstances, apartment houses, which in a different environment would be not only entirely unobjectionable but highly desirable, come very near to being nuisances\" (pp. 394--95).
+-   In *Euclid v. Ambler* ([1926](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-598)), Justice Sutherland explained that the apartment house is often a "mere parasite, constructed to take advantage of the open spaces and attractive surroundings ... interfering by their height and build with the free circulation of air and monopolizing the rays of the sun ... depriving children of the privilege of quiet and open spaces for play enjoyed by those in more favored localities ... until, finally, the residential character of the neighborhood and its desirability as a place of detached residences are utterly destroyed. Under these circumstances, apartment houses, which in a different environment would be not only entirely unobjectionable but highly desirable, come very near to being nuisances" (pp. 394--95).
 
--   the National Association of Realtors\' code of ethics stated, \"A Realtor should never be instrumental in introducing into a neighborhood a character of property or occupancy, members of any race or nationality, or any individuals who presence will clearly be detrimental to property values in that neighborhood\" (Article 34 of Part III).[Footnote](https://www-cambridge-org.colorado.idm.oclc.org/core/books/segregation-by-design/engineering-enclaves/24831D246BFCFC2F60B0673C17FBCA90#FN-fn-84)
+-   the National Association of Realtors' code of ethics stated, "A Realtor should never be instrumental in introducing into a neighborhood a character of property or occupancy, members of any race or nationality, or any individuals who presence will clearly be detrimental to property values in that neighborhood" (Article 34 of Part III).[Footnote](https://www-cambridge-org.colorado.idm.oclc.org/core/books/segregation-by-design/engineering-enclaves/24831D246BFCFC2F60B0673C17FBCA90#FN-fn-84)
 
-    -   **This perspective led to general support for the power of land-use regulation and zoning among real estate interests. Writing in 1924, Herbert Flint, a town planner from Cleveland, Ohio, explained that zoning plans should be developed by local planning commissions, populated with \"those well-positioned in real estate, the law, banking, manufacturing and transportation; also representative citizens who would safeguard the interests of the homeowners\"**
+    -   **This perspective led to general support for the power of land-use regulation and zoning among real estate interests. Writing in 1924, Herbert Flint, a town planner from Cleveland, Ohio, explained that zoning plans should be developed by local planning commissions, populated with "those well-positioned in real estate, the law, banking, manufacturing and transportation; also representative citizens who would safeguard the interests of the homeowners"**
 
 #### Understanding the Adoption of Zoning
 
@@ -2643,7 +2643,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   Political elites enacted zoning ordinances to generate growth and stability in property values and control the distribution of public goods in the city.
 
--    In 1917, the Supreme Court ruled racial zoning ordinances unconstitutional. In response, many cities turned their attention to comprehensive zoning plans and other forms of zoning that did not make racial segregation an obvious goal. New comprehensive city plans were fueled by continuing race and class prejudice, and influenced the long-term shift from racial segregation to segregation by income level.
+-   In 1917, the Supreme Court ruled racial zoning ordinances unconstitutional. In response, many cities turned their attention to comprehensive zoning plans and other forms of zoning that did not make racial segregation an obvious goal. New comprehensive city plans were fueled by continuing race and class prejudice, and influenced the long-term shift from racial segregation to segregation by income level.
 
 -   Cities that were early adopters of zoning ordinances grew to be 10% more segregated over the following fifty years than did cities that were not early adopters.
 
@@ -2661,7 +2661,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   seeing only through class lens is not complete. Race is separate and meaningful.
 
-#### Jim Crow and Public Goods Inequalities: 
+#### Jim Crow and Public Goods Inequalities:
 
 -   schooling is the most important service.
 
@@ -2675,7 +2675,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   The dependent variable in the analysis is the *total new segments* built in each ward before the next census.
 
--   The key independent variables are the share of each ward\'s total population that is *black* and the share of occupied housing units that were *rented* (as opposed to owned). These demographic variables are interacted with each city\'s *H index of segregation* (for race and class, respectively) in a given census year.
+-   The key independent variables are the share of each ward's total population that is *black* and the share of occupied housing units that were *rented* (as opposed to owned). These demographic variables are interacted with each city's *H index of segregation* (for race and class, respectively) in a given census year.
 
 -   **The data indicate that in more segregated cities, heavily black and renter wards were unlikely to receive new sewer lines.**
 
@@ -2689,9 +2689,9 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   The historical record indicates that lower levels of segregation and more political power in the hands of blacks and the poor could mitigate such inequalities.
 
--    Today, evidence indicates that segregation is maintained by white homeowners\' willingness and ability to pay a premium to live among white, educated neighbors (Cutler, Glaeser, and Vigdor [Reference Cutler, Glaeser and Vigdor1999](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-118)). That they have the opportunity to do so is dictated by past and present land-use regulations generated by city governments.
+-   Today, evidence indicates that segregation is maintained by white homeowners' willingness and ability to pay a premium to live among white, educated neighbors (Cutler, Glaeser, and Vigdor [Reference Cutler, Glaeser and Vigdor1999](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-118)). That they have the opportunity to do so is dictated by past and present land-use regulations generated by city governments.
 
-### Chapter 6: Cracks in the Foundation - Losing Control over Protected Neighborhoods 
+### Chapter 6: Cracks in the Foundation - Losing Control over Protected Neighborhoods
 
 -   lots of movement going on in 1940s
 
@@ -2715,23 +2715,23 @@ This article describes the institutional collective action (ICA) framework and i
 
                 -   Congress had multiple goals: the reemployment of the construction industry, the shoring up of the financial sector, and the stimulation of home ownership. But these policies were also spurred by a commitment to residential segregation.
 
--   the Wagner-Steagall Act sought to \"provide decent, safe and sanitary housing for that large group of our population who \[could not\] afford to pay enough to cause private capital to supply their housing needs\"
+-   the Wagner-Steagall Act sought to "provide decent, safe and sanitary housing for that large group of our population who \[could not\] afford to pay enough to cause private capital to supply their housing needs"
 
 -   Allowing local governments to decide what land would be cleared and where new housing would be built virtually guaranteed the continuation and exacerbation of race and class segregation, because white homeowners and land-oriented businesses controlled city governments and planning commissions and opposed residential integration along either race or class lines.
 
-    -   Further, these interests quickly moved to ensure control of the new housing and renewal authorities created to direct and manage the process (Hirsch [Reference Hirsch1983](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-253); Sugrue [Reference Sugrue1996](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-508); Gotham [Reference Gotham2001](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-219)). Sugrue ([Reference Sugrue1996](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-508)) explains, \"\[L\]ocal governments had the final say over the expenditure of federal funds, the location of projects, and the type constructed\" (p. 60).
+    -   Further, these interests quickly moved to ensure control of the new housing and renewal authorities created to direct and manage the process (Hirsch [Reference Hirsch1983](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-253); Sugrue [Reference Sugrue1996](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-508); Gotham [Reference Gotham2001](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-219)). Sugrue ([Reference Sugrue1996](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-508)) explains, "\[L\]ocal governments had the final say over the expenditure of federal funds, the location of projects, and the type constructed" (p. 60).
 
 -   Discussion of HOLC and redlining.
 
 -   the vigorousness with which a city pursued urban renewal affected the level of segregation after the completion of the program.
 
-#### Racially Contested Mayoral Elections: 
+#### Racially Contested Mayoral Elections:
 
 -   Interracial electoral competition was much more likely in more segregated cities.
 
 -   racially segregated cities were much more likely to experience interracial elections -- even controlling for the share of the population that was white.
 
-#### Federal Desegregation of Schools and Increased Residential Segregation: 
+#### Federal Desegregation of Schools and Increased Residential Segregation:
 
 -   Changes in fed gov made it harder for local governments to control neighborhoods and public goods.
 
@@ -2753,7 +2753,7 @@ This article describes the institutional collective action (ICA) framework and i
 
     -   Enos as well.
 
--   However, living in different types of neighborhoods may also change individuals\' perspectives. In integrated neighborhoods, regular, casual interaction may work to counteract dominant, negative stereotypes
+-   However, living in different types of neighborhoods may also change individuals' perspectives. In integrated neighborhoods, regular, casual interaction may work to counteract dominant, negative stereotypes
 
     -   ENOS
 
@@ -2765,7 +2765,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 #### Segregation and Political Polarization
 
--    I analyze the relationship between residential segregation patterns and racial divisions in mayoral elections in the nation\'s largest cities between 1990 and 2010.
+-   I analyze the relationship between residential segregation patterns and racial divisions in mayoral elections in the nation's largest cities between 1990 and 2010.
 
 -   more segregated cities are also more politically polarized
 
@@ -2779,7 +2779,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   segregation and public goods spending are negatively related, even in the presence of changing demographics, diverse populations, and conservative residents.
 
--    spending on public goods is lower in cities with greater segregation.
+-   spending on public goods is lower in cities with greater segregation.
 
 -   **At low levels of segregation, white turnout is much higher than minority turnout, but the lines converge as segregation increases. Furthermore, using the racial polarization dataset described in the first section of this chapter, I find that turnout and segregation are positively correlated in the aggregate. These patterns strongly suggest that politics is more contentious in more segregated communities. Thus, a lack of participation by residents who support high spending is not likely to be the cause of lower public goods investment.**
 
@@ -2811,7 +2811,7 @@ This article describes the institutional collective action (ICA) framework and i
 
     -   DVs: direct general expenditure, roads, law enforcement, parks, sewers, welfare, Own source revenue
 
-#### Segregation and Sewer Overflows: 
+#### Segregation and Sewer Overflows:
 
 -   sewer system is strongly related to capital fund-raising.
 
@@ -2821,7 +2821,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   *logged overflows per 1,000 persons* measure serves as my dependent variable
 
--   My main independent variable is the city\'s *H* index of racial segregation, measured in 2000, if available, and 2010 if not
+-   My main independent variable is the city's *H* index of racial segregation, measured in 2000, if available, and 2010 if not
 
 -   The data reveal a significant correlation between segregation and sewer overflows. Living in a city with very little segregation, one can expect about 1.5 overflows per year on average. This increases to nearly 2.5 overflows in cities at the ninety-fifth percentile of the segregation distribution. Not only do segregated cities see lower spending on public goods, but they also witness worse performance as well.
 
@@ -2829,7 +2829,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   Segregation between neighborhoods has declined BUT segreagtion between cities has remained stable and even rose.
 
--   In previous chapters, I argued that segregation was pursued by local governments to enhance property values and target local public goods toward white homeowners and land-oriented businesses. Such strategies, combined with political control of city councils and mayors\' offices, ensured that local governments operated to protect the homogeneity of white homeowner neighborhoods, and provide them with disproportionate benefits.
+-   In previous chapters, I argued that segregation was pursued by local governments to enhance property values and target local public goods toward white homeowners and land-oriented businesses. Such strategies, combined with political control of city councils and mayors' offices, ensured that local governments operated to protect the homogeneity of white homeowner neighborhoods, and provide them with disproportionate benefits.
 
 -   In this chapter, I analyze the relationships between cities within metropolitan areas. I concentrate on the ways in which the politics of the central city (the city with the largest population in the metro area) and the pull of suburban opportunities affect demographic residential patterns in the metro area.
 
@@ -2843,7 +2843,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   The rapid increase in the population of the suburbs during the postwar period was mostly not the result of white flight. Rather, rising incomes, low-cost, federally backed mortgages, the lucrative federal mortgage deduction, new housing construction in suburban tracts, and an extensive highway system all worked to bring residents to the periphery
 
--   \"\[T\]he increased heterogeneity of suburbia as a whole is usually not matched by a greater diversification *within* particular suburbs. There are now more poor and working-class people, more minorities and more industrial and commercial sites in suburbia. But poorer, working-class or black suburbanites are likely to live in different jurisdictions separate from those inhabited by affluent or white suburbanites\"
+-   "\[T\]he increased heterogeneity of suburbia as a whole is usually not matched by a greater diversification *within* particular suburbs. There are now more poor and working-class people, more minorities and more industrial and commercial sites in suburbia. But poorer, working-class or black suburbanites are likely to live in different jurisdictions separate from those inhabited by affluent or white suburbanites"
 
 -   Overt racism has decreased dramatically over the last several decades (Schuman et al. [Reference Schuman, Steeh and Bobo1997](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-479)), but whites continue to express a preference for same-race neighbors (Charles [Reference Charles2003](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-90)) and minority neighborhoods continue to be perceived as having poor-quality amenities (Bobo, Kluegel, and Smith [Reference Bobo, Kluegel, Smith, Tuch and Martin1997](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-50); Ellen [Reference Ellen2000](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-143); Emerson, Chai, and Yancey [Reference Emerson, Chai and Yancey2001](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-147); Krysan [Reference Krysan2002](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-306); Bayer, Ferreira, and McMillian [Reference Bayer, Ferreira and McMillan2007](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-29)).
 
@@ -2875,7 +2875,7 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   **In this chapter, I begin by linking white residential spaces in 1970 to three important neighborhood characteristics: property values, single-family homeownership, and the whiteness of public schools. Then, I provide evidence that the relative whiteness of a neighborhood in 1970 is a powerful predictor of political attitudes and loyalties today. People who live in places that were whiter than their metropolitan area was in 1970 were more likely to vote for the Republican presidential candidate in 2008 and are more conservative than their individual attributes (e.g., race, gender, marital status, age, education, income, presence of children) would otherwise predict.**
 
-#### The Effect of Context: 
+#### The Effect of Context:
 
 -   Why would living in a neighborhood that was white in 1970 affect political views in 2008?
 
@@ -2893,7 +2893,7 @@ This article describes the institutional collective action (ICA) framework and i
 
             -   That is, if your neighborhood is very dense, you may be more inclined to see the need for rodent control or sewage treatment. Places can also magnify the individual attributes of inhabitants -- such as when minority neighborhoods lack elite networks (Wilson [Reference Wilson1987](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-570); Widestrom [Reference Widestrom2015](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-564)). Neighborhood homogeneity might breed racial hostility and intolerance due to a lack of exposure to or contact with neighbors of different backgrounds (Oliver and Mendelberg [Reference Oliver and Mendelberg2000](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-410); Oliver and Wong [Reference Oliver and Wong2003](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-412)). Additionally, past political experiences can shape current views.
 
-            -   Patterns of race relations developed during early periods of American history can generate opinions and behaviors that are transmitted over time and remain detectable in modern politics (Hersh and Nall [Reference Hersh and Nall2016](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-249)). Such distinctive political attitudes are communicated through processes like neighborhood social interaction (Huckfeldt and Sprague [Reference Huckfeldt and Sprague1995](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-261)) and/or \"low-intensity cues\" -- such as the casual observation of ones\' neighbors (Cho and Rudolph [Reference Cho and Rudolph2008](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-95)). More straightforwardly, it seems reasonable to suspect that moving to a neighborhood with high property values and good schools leads homeowners to become obsessively concerned with keeping those values high and the schools good.
+            -   Patterns of race relations developed during early periods of American history can generate opinions and behaviors that are transmitted over time and remain detectable in modern politics (Hersh and Nall [Reference Hersh and Nall2016](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-249)). Such distinctive political attitudes are communicated through processes like neighborhood social interaction (Huckfeldt and Sprague [Reference Huckfeldt and Sprague1995](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-261)) and/or "low-intensity cues" -- such as the casual observation of ones' neighbors (Cho and Rudolph [Reference Cho and Rudolph2008](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-95)). More straightforwardly, it seems reasonable to suspect that moving to a neighborhood with high property values and good schools leads homeowners to become obsessively concerned with keeping those values high and the schools good.
 
     -   both of these mechanisms are probably at play.
 
@@ -2905,24 +2905,262 @@ This article describes the institutional collective action (ICA) framework and i
 
 -   Laws change.
 
-    -   Homeowners will talk about increased traffic, limited open space, or a change in the feel of the neighborhood as reasons for their opposition to development. They\'ll talk about their right to protect their neighborhoods and their schools from increased crime, property degradation, or poor academic performance. But they do not, usually, say that they want to limit the presence of black, Latino, or poor neighbors.
+    -   Homeowners will talk about increased traffic, limited open space, or a change in the feel of the neighborhood as reasons for their opposition to development. They'll talk about their right to protect their neighborhoods and their schools from increased crime, property degradation, or poor academic performance. But they do not, usually, say that they want to limit the presence of black, Latino, or poor neighbors.
 
--   Because the Republican Party protected defenders\' rights to choose their neighbors, it won their allegiance.
+-   Because the Republican Party protected defenders' rights to choose their neighbors, it won their allegiance.
 
 -   Residents who live in defended neighborhoods today are more likely to identify as Republicans and more likely to vote for Republican presidential candidates. The local roots of modern conservatism are deep.
 
     -   see Lisa McGirr
 
-### Chapter 10: Concluding Thoughts and New Designs 
+### Chapter 10: Concluding Thoughts and New Designs
 
--   As Peterson ([Reference Peterson1981](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-423)), explained, local politics is \"above all the politics of land use\" (p. 25).
+-   As Peterson ([Reference Peterson1981](https://www-cambridge-org.colorado.idm.oclc.org/core/product/identifier/9781108555722%23EMT-rl-1/type/BOOK_PART#REFe-r-423)), explained, local politics is "above all the politics of land use" (p. 25).
 
--   I argue that the policies that generate segregation and racial inequality are driven fundamentally by whites\' economic and political self-interest, which both interact with and produce racist beliefs.
+-   I argue that the policies that generate segregation and racial inequality are driven fundamentally by whites' economic and political self-interest, which both interact with and produce racist beliefs.
 
 -   *Segregation by Design* asserts that across time and place, white property owners have achieved power, access, and policy that is unrepresentative of their share of the population. They turn out to vote at higher rates and dominate decision-making bodies. As a result, political outcomes at the local level are not pluralistic.
 
--   Higher levels of government have disrupted white property owners\' power. Mobilization among people of color has limited their power too. *Segregation by Design* tells this story. Of course, there are still many unanswered questions. To start, this book has neglected to interrogate how property owners differ from one another across time and place, and has completely ignored the role and agency of property owners of color. What happens when neighborhood property owners conflict with residential developers? What determines who wins? We need to know how variation in goals and perspectives may affect land-use policy, segregation, and inequality.
+-   Higher levels of government have disrupted white property owners' power. Mobilization among people of color has limited their power too. *Segregation by Design* tells this story. Of course, there are still many unanswered questions. To start, this book has neglected to interrogate how property owners differ from one another across time and place, and has completely ignored the role and agency of property owners of color. What happens when neighborhood property owners conflict with residential developers? What determines who wins? We need to know how variation in goals and perspectives may affect land-use policy, segregation, and inequality.
 
 -   State and federal governments can compel desegregation on various fronts.
 
 -   Thus, desegregating neighborhoods and schools is likely to require stripping, to some degree, local control. At a minimum, going forward, states could analyze school district and municipality incorporation with an eye toward integration, limiting fragmentation and opportunities for segregation. Importantly, states can also require the building of multifamily housing, although this latter solution may only serve to increase segregation within cities if exclusive suburbs shove multifamily housing into concentrated neighborhoods.
+
+# Week 9: Urban Theory
+
+-   Clarence Stone
+
+    -   Major figure
+
+        -   heavily influenced by Arendt
+
+            -   Arendt described politics as people acting together to make things happen that otherwise would not occur.
+
+                -   Stone's view of politics emphasize building relationships, as well as how those relationships are arranged, modified, and sustained, and on whose terms.
+
+    -   Urban regime:
+
+        -   public and private sector individuals must accommodate the division between state and society.
+
+            -   this involves civil society.
+
+        -   informal arrangements by which public bodies and private interests function together in order to be able to make and carry out governing decisions.
+
+-   Stone is focused on power at local government
+
+    -   he coins the term: systematic bias
+
+        -   public officials operate in an environment that is class stratified.
+
+            -   resources become a major factor in the urban regime
+
+                -   a progressive regime to work REQUIRES an attentive electorate and the organization/active involvement of the lower strata.
+
+-   Can this systemic pattern be treated in power terms?
+
+    -   I will argue "yes" to this last question. The core of my argument is that we must take into account contextual forces---the facet of community decision making I-label "systemic power." In brief, this argument runs as follows: public officials form their alliances, make their decisions and plan their futures in a context in which strategically important resources are hierarchically arranged-that is, officials operate in a stratified society. The system of stratification is a motivating factor in all that they do; it predisposes them to favor upper- over lower-strata interests. Systemic power therefore has to do with the impact of the larger socioeconomic system on the predispositions of public officials.
+
+        -   reminds me of raj chetty's work or at least I wonder how he factors in?
+
+-   The overall argument here is that upper-strata interests do "exert" extraordinary influence, but that this influence is not usually overt.
+
+### Chapter 4: Urban Regimes and the Capacity to Govern
+
+-   The version of regime theory propounded here holds that public policies are shaped by three factors: (1) the composition of a community's governing coalition, (2) the nature of the relationships among members of the governing coalition, and (3) the resources that the members bring to the governing coalition.
+
+-   got beef with Dahl
+
+-   pluralism vs regime
+
+    -   pluralism
+
+        -   voting is central. it is the main mechanism.
+
+        -   private and public distinct
+
+        -   pluralists argue that the media of communication and the process of socialization themselves are pluralistic. Competing ideas can be heard and information is sufficiently available for the public to find out about any issue that concerns it.
+
+        -   To treat elections as centrally important is to assume that the governments they control and guide are significant instruments of power. However, the social control model of power, emphasizing as it does the cost of compliance, suggests that government is mainly an aggregator of preferences; hence it operates largely by incrementalism and mutual adjustment.
+
+    -   Regime Theory:
+
+        -   Urban regime theory assumes that the effectiveness of local government depends greatly on the cooperation of nongovernmental actors and on the combination of state capacity with nongovernmental resources.
+
+        -   If governance is furthering the welfare and assuring the survival of a body of citizens, then actors and activities labeled private are de facto an integral part of the governmental process and elections are of limited importance.
+
+        -   While accepting the obvious point that society is too complex to be controlled by a single force, regime theory suggests that universal suffrage and social differentiation have limited explanatory power for urban politics.
+
+-   politics is not just preference aggregation.
+
+-   pg.87 interesting at the bottom. some argument about how social itneractions shape preferences.
+
+-   In short, the ready availability of means rather than
+
+    the will of dominant actors may explain what is pursued and why. Hence, hegemony in a capitalist order may be more a matter of ease of cooperation around profit oriented activities than the unchallenged ascendancy of core ideas.
+
+-   The lesson of New Haven is not that an urban regime must be activist. Rather, it is that political leaders and professional administrators of an activist inclination need coalition partners who can provide resources useful in launching major projects and managing the resulting conflict.
+
+    -   If preference is influenced by perceived feasibility, then the will of the governing coalition was shaped by what was seen as achievable. The availability of federal money and the structure of the urban renewal program were strong inducements for the formation of a business-government partnership.
+
+-   Let us add one final dimension to the matter of preference formation. Preferences do not emerge from atomistic relationships. Social bonds matter enormously, not only because they inform us, but because we want to maintain them. What the isolated individual might prefer is modified by a desire or need to take into account the consequences of that want on someone else. This is what Crick's definition of politics is about: a situation in which differing interests take one another into account by sharing in governance. This ideal is seldom met on a universally inclusive basis, but a significant degree of mutual "account taking" is surely an integral part of building and maintaining a coalition.
+
+    -   Hannah Arendt (1961, 164) captures the point nicely when she observes, "All political business is, and always has been, transmitted within an elaborate framework of ties and bonds for the future." For Arendt, the process of governing is one of acting within a set of relationships and acting with an eye on the future state of these relationships. Coalition partners thus educate one another in two ways. One is a simple exchange of information. The other is educating one another about the nature of their interdependence. Mere information about another can be disregarded. The understanding of an interdependent relationship is a more insistent matter. Indeed, at its most profound level, such an understanding may redefine identity. That is a major reason why the composition of a governing coalition and the nature of the relationship between its members have a profound effect on policy.
+
+-   The very act of cooperating with other people enlarges what is thinkable, and it may give rise to new or expanded preferences.
+
+-   **Preferences change because understanding changes. In this process we alter the boundaries of social intelligence, not by force of intellectual effort, but by the experience of interacting purposefully with others. The nature and composition of a governing coalition is thus vitally important, not only for who is included, but also for who is not. A narrow governing coalition means that policy is guided by a narrow social understanding and a struggle to alter participation in the coalition may ensue. It is appropriate, then, to turn to the issue of political conflict and policy change.**
+
+-   In order for a governing coalition to be viable, it must be able to mobilize resources commensurate with its main policy agenda. Participation in governance, especially for those who are not public officials, is based heavily on the goals they want to achieve. Participation may modify these goals, but participation is still purposeful. It follows that, if a coalition cannot deliver on the agenda that holds it together, then the members will disengage, leaving the coalition open to reconstitution. In the same manner, doable actions help secure commitments and perhaps attract others with similar or consistent aims.
+
+#### Typology:
+
+1.  Maintenance Regimes
+
+2.  Development Regimes
+
+3.  Middle Class progressive regimes
+
+4.  Regimes devoted to lower-class opportunity expansion
+
+-   Policy choice is a matter of regime building
+
+### Chapter 6:
+
+-   Arendt: Politics is what people can do together.
+
+### Lecture Notes
+
+-   Democracy is more than just voting.
+
+-   Ostrom pins discourse as vital. Democracy starts in the classroom and home. Interchange of ideas DISCOURSE!
+
+-   Stone is less about discussion and more about action. Coalitions! Coalition are going to be bias.
+
+-   Why do business owners have such sway?
+
+    -   they have capital
+
+        -   control of capital is a huge resource.
+
+            -   competition among cities!
+
+        -   control jobs.
+
+        -   there is an implied threat.
+
+-   Power over - 1st phase of power
+
+-   non-decision making - second phase of power
+
+    -   business interest have this power
+
+        -   allows some things to not get debated.
+
+-   Dimensions of stratification
+
+    -   economic: upper/middle/lower.
+
+    -   associational position:
+
+    -   social position and lifestyle
+
+# Week 10?
+
+-   zoning is downstream of capitalization.
+
+### An Asset-Market Approach to Local Government
+
+Main Argument:
+
+-   The property tax must be analyzed as part of a system of local government that provides public services with less economic waste than others. Proposals to detach it from local units and distribute it on a metropolitan or statewide basis undermine this advantage
+
+-   Schools that are funded (not simply administered) locally perform better than those whose funds come largely from the state. The school-finance reforms intituated by state judges are a "natural experiment" in fiscal centralization, and the results are disappointing. The loss of local fiscal control has, according to many studies, resulted in declines in test scores and, in some important cases, diminished voter support for education.
+
+-   Local governments are in fact so skeptical of the adverse environmental effects of new commerce and industry that their behavior is better characterized as a "race to the top" of the environmental pyramid. This race is propelled by risk-averse homeowners, who cannot insure their major asset from adverse. Nor are homeowners in one community eager to degrade the environment of neighboring communities for their own fiscal benefits, in part because municpal neighbors are locked into a web of reciprocal relationships that are sensitive to unprincipled opportunism.
+
+-   The history of local government formation demonstrates that zoning is an essential ingredient of municipal formation and function. Reforms of land-use regulation should recognize that no local government will surrender much of that authority to a metropolitan-wide government. The reforms most likely to succeed are those that address the fundamental reason that homewoners are so skittish about neighborhood change. Financial carrots and sticks are essential to the orderly and equitable development of metropolitan areas.
+
+-   **The homevoter hypothesis holds that homeowners, who are the most numerous and politically influential group within most localities, are guided by their concern for the value of their homes to make political decisions that are more efficient than those that would be made at a higher level of government.**
+
+    -   There is already an issue bubbling - the entrance of higher governments is because we get negative externalities arise because each municipality - with motivated homeowners -- are all doing this exact thing.
+
+-   I am arguing that, subject to some important qualifications, local governments perform localized services more efficiently than the state or national government would. - His claim.
+
+-   HE seems to be making somewhat of a retrospective argument - homeowners are able to see and properly evaluate the results of their expenditures and punish accordingly.
+
+-   NIMBYism is weird only if you think solely about the rationally expected outcome from development. NIMBYism makes perfectly good sense if you think about the variance in expected outocmes, and the fact there is no way to insure against neighborhood or community-wide decline.
+
+    -   Since residents cannot insure against neighborhood change, zoning offers a kind of second-best instiution. If homeowners were insured against enighborhood decline, they wouldn't worry so much about unlikely scenarios and behave like NIMBYs.
+
+-   Commuting from one town to another on a daily basis was not feasible for most people. Until the late 1800s , even the biggest cities were walkable cities, and the upper classes lived closest to work, in contrast to twentieth-century suburban patters where the rich live in the far suburbs (LeRoy and Sonstelie 1983).
+
+    -   As I shall demonstrate further in Section 9.3, the local political framework changed to favor homeowners in the first three decades of the twentieth century. Intraurban commuting became widespread first with the streetcars and soon after with buses and automobiles. Urban homeownership also increased considerably in the same period.
+
+### Local Government's Corporate Form
+
+-   Homeowners have not diversified their assets. Their assets are their home.
+
+-   local governance is very much operated like a business structure - board of directors/CEO = council/manager
+
+-   homeowners basically elect the "board of directors".
+
+### Capitalization, Zoning, and the Tiebout Hypothesis
+
+-   Capitalization: the expected future flow of benefits or costs that accrue to something you own-a share of stock in Microsoft, a Russian government bond, your home- is systematically reflected in the present value of your asset.
+
+-   How well do housing prices reflect differences in public service quality and taxes among communities within a metropolitan area, not among widely separated areas.
+
+    -   would a metropolitan or state government would do better than local governance?
+
+        -   these case for localism hinges in large part on how well the housing market conveys the proper information and incentives to the political actors in the local communities
+
+-   What is zoning doing?
+
+    -   zoning and related land-use controls generate this community-wide ineqlasticity.
+
+    -   the collective ability by homeowners to control net additions to the number of housing units in the community, just as stockholders can collectively control (via voting or via their elected board of directs) net additions to the number of ownership shares.
+
+        -   Collective control is necessary because some desirable characteristics of the community are subject to congestion by additional residents. If a local public project-a park, for instance - is subject to crowding, which lowers its value as more people use it, the local government must be able to limit net additions to the housing stock in order for the benefits of the park to be reflected in existing home values. Zoning and other strands in the web of land-use controls are a way of doing that.
+
+-   A second precondition for capitalization - homeowners must be aware of differences in communities.
+
+### The Median Voter in Local Government Politics
+
+-   Harder to "exit" when your home is your main asset. Much more likely to use voice.
+
+-   people that do move cite state policy - not local policy.
+
+-   Median voter
+
+    -   this is not DOWNS!
+
+-   rent control turns tenants into homeowners. This is interesting!
+
+-   low participation can be a sign of satisfaction
+
+-   homogeneous = lower rates of participation
+
+    -   enos study backs this up.
+
+### Serrano and the California Tax Revolt
+
+-   His argument is that the Serrano decision - which equalized school spending in the 1970s, caused proposition 13, which dramatically cut property taxes in the state in 1978.
+
+-   "the more general proposition explored in this chapter is that voters tolerate property taxes only when the public services financed by them are capitalized in home values.
+
+-   prop 13 origin story is a bit sus. I'm not super convinced.
+
+### The Fruits of School-Finance Centralization
+
+### How Homevoters Remade Metropolitan Areas
+
+-   Zoning is central for a suburb to maintain its autonomous status
+
+-   homeowners could become conscious
+
+-   car changes the way people live
+
+-   I agree with him in chapter 9.
+
+-   he is pointing out the problem of zoning and fragmentation issues but seems to gloss over it.
