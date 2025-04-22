@@ -5125,20 +5125,23 @@ no one is talking about the form of these social networks. That is difference be
 
 7 +- 2 relates to working memory
 
-## Bond, Robert M., et al. 2012. \"A 61-million-person Experiment in Social Influence and Political Mobilization.\" Nature. 489:295-8.
+## Bond, Robert M., et al. 2012. "A 61-million-person Experiment in Social Influence and Political Mobilization." Nature. 489:295-8.
 
-### Abstract: 
+### Abstract:
 
-Human behaviour is thought to spread through face-to-face social networks, but it is difficult to identify social influence effects in observational studies^[9](https://www.nature.com/articles/nature11421#ref-CR9 "Christakis, N. A. & Fowler, J. H. Social contagion theory: examining dynamic social networks and human behavior. Preprint at 
-                  http://arXiv.org/abs/1109.5235v2
-                  
-                 (2011)"),[10](https://www.nature.com/articles/nature11421#ref-CR10 "Aral, S., Muchnik, L. & Sundararajan, A. Distinguishing influence-based contagion from homophily-driven diffusion in dynamic networks. Proc. Natl Acad. Sci. USA 106, 21544–21549 (2009)"),[11](https://www.nature.com/articles/nature11421#ref-CR11 "Christakis, N. A. & Fowler, J. H. The spread of obesity in a large social network over 32 years. N. Engl. J. Med. 357, 370–379 (2007)"),[12](https://www.nature.com/articles/nature11421#ref-CR12 "Fowler, J. H. & Christakis, N. A. The dynamic spread of happiness in a large social network. Br. Med. J. 337, a2338 (2008)"),[13](https://www.nature.com/articles/nature11421#ref-CR13 "Christakis, N. A. & Fowler, J. H. The collective dynamics of smoking in a large social network. N. Engl. J. Med. 358, 2249–2258 (2008)")^, and it is unknown whether online social networks operate in the same way^[14](https://www.nature.com/articles/nature11421#ref-CR14 "Salganik, M. J., Dodds, P. S. & Watts, D. J. Experimental study of inequality and unpredictability in an artificial cultural market. Science 311, 854–856 (2006)")--[19](https://www.nature.com/articles/nature11421#ref-CR19 "Traud, A. L., Kelsic, E. D., Mucha, P. J. & Porter, M. A. Comparing community structure to characteristics in online collegiate social networks. SIAM Rev. 53, 526–543 (2011)")^. Here we report results from a randomized controlled trial of political mobilization messages delivered to 61 million Facebook users during the 2010 US congressional elections. The results show that the messages directly influenced political self-expression, information seeking and real-world voting behaviour of millions of people. Furthermore, the messages not only influenced the users who received them but also the users\' friends, and friends of friends. The effect of social transmission on real-world voting was greater than the direct effect of the messages themselves, and nearly all the transmission occurred between \'close friends\' who were more likely to have a face-to-face relationship. These results suggest that strong ties are instrumental for spreading both online and real-world behaviour in human social networks.
+Human behaviour is thought to spread through face-to-face social networks, but it is difficult to identify social influence effects in observational studies[^1](https://www.nature.com/articles/nature11421#ref-CR9 "Christakis, N. A. & Fowler, J. H. Social contagion theory: examining dynamic social networks and human behavior. Preprint at http://arXiv.org/abs/1109.5235v2
+
+[^1]: 9
+
+```         
+             (2011)"),[10](https://www.nature.com/articles/nature11421#ref-CR10 "Aral, S., Muchnik, L. & Sundararajan, A. Distinguishing influence-based contagion from homophily-driven diffusion in dynamic networks. Proc. Natl Acad. Sci. USA 106, 21544–21549 (2009)"),[11](https://www.nature.com/articles/nature11421#ref-CR11 "Christakis, N. A. & Fowler, J. H. The spread of obesity in a large social network over 32 years. N. Engl. J. Med. 357, 370–379 (2007)"),[12](https://www.nature.com/articles/nature11421#ref-CR12 "Fowler, J. H. & Christakis, N. A. The dynamic spread of happiness in a large social network. Br. Med. J. 337, a2338 (2008)"),[13](https://www.nature.com/articles/nature11421#ref-CR13 "Christakis, N. A. & Fowler, J. H. The collective dynamics of smoking in a large social network. N. Engl. J. Med. 358, 2249–2258 (2008)")^, and it is unknown whether online social networks operate in the same way^[14](https://www.nature.com/articles/nature11421#ref-CR14 "Salganik, M. J., Dodds, P. S. & Watts, D. J. Experimental study of inequality and unpredictability in an artificial cultural market. Science 311, 854–856 (2006)")--[19](https://www.nature.com/articles/nature11421#ref-CR19 "Traud, A. L., Kelsic, E. D., Mucha, P. J. & Porter, M. A. Comparing community structure to characteristics in online collegiate social networks. SIAM Rev. 53, 526–543 (2011)")^. Here we report results from a randomized controlled trial of political mobilization messages delivered to 61 million Facebook users during the 2010 US congressional elections. The results show that the messages directly influenced political self-expression, information seeking and real-world voting behaviour of millions of people. Furthermore, the messages not only influenced the users who received them but also the users\' friends, and friends of friends. The effect of social transmission on real-world voting was greater than the direct effect of the messages themselves, and nearly all the transmission occurred between \'close friends\' who were more likely to have a face-to-face relationship. These results suggest that strong ties are instrumental for spreading both online and real-world behaviour in human social networks.
+```
 
 ### Research Question:
 
 -   Can online networks, which harness social information from face-to-face networks, can be used effectively to increase the likelihood of behaviour change and social contagion.
 
-### Hypothesis: 
+### Hypothesis:
 
 -   Political behavior can spread through an online social network
 
@@ -5148,7 +5151,7 @@ Human behaviour is thought to spread through face-to-face social networks, but i
 
 -   Close ties? weak ties?
 
-### Data: 
+### Data:
 
 -   randomized controlled trial with all users of at least 18 years of age in the USA who accessed Facebook website on 2 November 2010, the day of the US congressional elections.
 
@@ -5164,11 +5167,13 @@ Human behaviour is thought to spread through face-to-face social networks, but i
 
 -   To test weak ties:
 
-    -    to distinguish users who are likely to have close relationships, we used the degree to which Facebook friends interacted with each other on the sites.
+    -   to distinguish users who are likely to have close relationships, we used the degree to which Facebook friends interacted with each other on the sites.
 
-        -   higher levels of interaction indicate that friends are more likely to be phisically proximate and suggest a higher level of commitment to the friendship,
+    ```         
+    -   higher levels of interaction indicate that friends are more likely to be phisically proximate and suggest a higher level of commitment to the friendship,
+    ```
 
-### Results: 
+### Results:
 
 -   social message were 2.08% more likely to click on the I Voted button than those who received the informational message.
 
@@ -5188,11 +5193,11 @@ Human behaviour is thought to spread through face-to-face social networks, but i
 
     -   I wonder, at the time of this study, online usage was a bit different than now. I wonder if things have changed.
 
-## Carlson, Taylor. 2019. \"Through the Grapevine: Informational Consequences of Interpersonal Political Communication.\" American Political Science Review.
+## Carlson, Taylor. 2019. "Through the Grapevine: Informational Consequences of Interpersonal Political Communication." American Political Science Review.
 
-### Abstract: 
+### Abstract:
 
-Much of the US public acquires political information socially. However, the consequences of acquiring information from others instead of the media are under-explored. I conduct a \"telephone-game\" experiment to examine how information changes as it flows from official reports to news outlets to other people, finding that social information is empirically different from news articles. In a second experiment on a nationally representative sample, I randomly assign participants to read a news article or a social message about that article generated in Study 1. Participants exposed to social information learned significantly less than participants who were exposed to the news article. However, individuals exposed to information from someone who is like-minded and knowledgeable learned the same objective facts as those who received information from the media. Although participants learned the same factual information from these ideal informants as they did from the media, they had different subjective evaluations.
+Much of the US public acquires political information socially. However, the consequences of acquiring information from others instead of the media are under-explored. I conduct a "telephone-game" experiment to examine how information changes as it flows from official reports to news outlets to other people, finding that social information is empirically different from news articles. In a second experiment on a nationally representative sample, I randomly assign participants to read a news article or a social message about that article generated in Study 1. Participants exposed to social information learned significantly less than participants who were exposed to the news article. However, individuals exposed to information from someone who is like-minded and knowledgeable learned the same objective facts as those who received information from the media. Although participants learned the same factual information from these ideal informants as they did from the media, they had different subjective evaluations.
 
 ### Research Question:
 
@@ -5200,7 +5205,7 @@ Much of the US public acquires political information socially. However, the cons
 
 -   I argue that social information transmission could still have a meaningful impact on opinion.
 
-### Background: 
+### Background:
 
 -   More information available than ever.
 
@@ -5222,7 +5227,7 @@ Much of the US public acquires political information socially. However, the cons
 
     -   what about repeated frequent exposure?
 
-### Method: 
+### Method:
 
 -   Tests to see how information changes as it moves through the telephone game.
 
@@ -5230,7 +5235,7 @@ Much of the US public acquires political information socially. However, the cons
 
 -   Focus on news articles about economic performance.
 
-#### Study 1: 
+#### Study 1:
 
 -   How info changes
 
@@ -5244,7 +5249,7 @@ Much of the US public acquires political information socially. However, the cons
 
 -   differences in tone. socially generated information can be prone to partisan biases absent in information from the media.
 
-#### Study 2: 
+#### Study 2:
 
 -   Consequences of these differences by examining changes in information recall and subjective evaluations after exposure to a randomly assigned information treatment
 
@@ -5280,7 +5285,7 @@ Much of the US public acquires political information socially. However, the cons
 
             -   these are sourced from the ANES - four question.
 
-                -   The questions were as follows: (1) \"Do you happen to know how many times an individual can be elected President of the United States under current laws?\" (2) \"For how many years is a United States Senator elected---that is, how many years are there in one full term of office for a US Senator?\" (3) \"What is Medicare?\" and (4) \"On which of the following does the US federal government currently spend the least?\"
+                -   The questions were as follows: (1) "Do you happen to know how many times an individual can be elected President of the United States under current laws?" (2) "For how many years is a United States Senator elected---that is, how many years are there in one full term of office for a US Senator?" (3) "What is Medicare?" and (4) "On which of the following does the US federal government currently spend the least?"
 
 -   Results:
 
@@ -5292,7 +5297,7 @@ Much of the US public acquires political information socially. However, the cons
 
     -   No difference in learning between those who received information from an ideal informant and those who received information from the media, even though social generated information is substantially different from and shorter than the news article.
 
-#### Other: 
+#### Other:
 
 -   Breaking apart the two conditions of being an ideal informant (knowledge and copartisanship), we see that there was no difference in motivation based on knowledge level, but those who wrote to copartisans were significantly more likely to report that they were trying to objectively inform than those who wrote to out-partisan
 
@@ -5302,7 +5307,7 @@ Much of the US public acquires political information socially. However, the cons
 
 -   regardless of partisanship, participants in the social treatments did not significantly alter their economic confidence when exposed to socially supplied information about the economy. However, in the media treatment, only Democrats and Independents had significantly lower economic confidence after exposure to the news article; Republicans were not influenced by the news article.
 
-## Huckfeldt, Beck, Dalton, and Levine. 1995. \"Political Environments, Cohesive Social Groups, and the Communication of Public Opinion.\" AJPS. 39(4): 1025-54.
+## Huckfeldt, Beck, Dalton, and Levine. 1995. "Political Environments, Cohesive Social Groups, and the Communication of Public Opinion." AJPS. 39(4): 1025-54.
 
 -   love this article. I see a connection between this and some Clarence Stone's work on citizens preferences.
 
@@ -5310,7 +5315,7 @@ Much of the US public acquires political information socially. However, the cons
 
 -   
 
-### Abstract: 
+### Abstract:
 
 Theory: A theory of political communication is employed which stresses the importance of citizen discussion beyond the boundaries of cohesive groups for the dissemination of public opinion.
 
@@ -5320,11 +5325,11 @@ Methods: We analyze a 1992 election survey which includes a battery of questions
 
 Results: Individuals are differentially exposed to larger environments of opinion depending on micro environmental patterns of social interaction and political communication. Hence, the construction of a citizen's social network serves as a filter on the macro environmental flow of political information. In this way, the consequences of the larger environment of opinion depend on the existence of micro environments which expose citizens to surrounding opinion distributions.
 
-### Bumper Sticker: 
+### Bumper Sticker:
 
 The primary task of this paper is the identification of communication patterns that serve to create and transmit public opinion.
 
-### Research Question: 
+### Research Question:
 
 -   To what extent do cohesive social groups and weak social ties serve to advance or retard the communication and dissemination of public opinion in the larger environment?
 
@@ -5336,7 +5341,7 @@ The primary task of this paper is the identification of communication patterns t
 
 -   Side Question: Do people with proportionately more non-relative discussants demonstrate larger effects due to the climate of opinion withini their counties of residence.
 
-### Background: 
+### Background:
 
 -   "Neither individual preference nor the environment is solely determinate, and thus the information that citizens ultimately obtain through social channels of communication is contingent on the particular intersection between the individual and the environment. The nature of this intersection, in turn, depends on the construction of the citizen's social network-a micro environmental filter that might expose individuals to, or seclude them from, these larger environments of information."
 
@@ -5356,7 +5361,7 @@ The primary task of this paper is the identification of communication patterns t
 
 -   While political discussion occurs frequently within socially cohesive groups, communication that occurs across the boundaries of cohesive groups may be more crucial to the dissemination of public opinion.
 
-### Methods: 
+### Methods:
 
 -   the relationship between individual exposure and the environmental supply not only in terms of individual preference, but also in terms of the construction of social networks and groups.
 
@@ -5384,7 +5389,7 @@ The primary task of this paper is the identification of communication patterns t
 
 -   higher proportions of non-relative discussants enhance the magnitude of the county effect on perceived Clinton support in respondents' micro environments.
 
-### Results: 
+### Results:
 
 -   Table 4 demonstrates a micro environmental filter on the macro environmental flow of information. Those citizens whose patterns and habits of social interaction are contained within the bounded, cohesive confines of the family are also secluded from socially communicated information that is distinctive to the larger environment. In this sense, then, they are cut off from the informational consequences of divergent public opinion distributions, and their own opinions are uninformed by the partisan composition of the larger environment.
 
@@ -5414,13 +5419,13 @@ The primary task of this paper is the identification of communication patterns t
 
         -   we've grown more individualistic through DIGITAL interaction. There is something about face-to-face interaction.
 
-## Klar, Samara. 2014. \"Partisanship in a Social Setting.\" AJPS 58:687-704.
+## Klar, Samara. 2014. "Partisanship in a Social Setting." AJPS 58:687-704.
 
-### Abstract: 
+### Abstract:
 
 No factor appears more powerful in explaining how individuals evaluate political information and form political preferences than partisanship. Yet, virtually all work on the effects of partisanship on preference formation neglects the crucial role of social settings. In this study, I examine how social settings can fundamentally change the influence of partisanship on preferences. I demonstrate that, in fact, social settings exert an independent influence over preference formation---one that is even larger than the influence of partisan ambivalence. The central implication of these findings is that, going forward, we cannot fully explore how citizens apply their partisanship in evaluating political information without also accounting for the social settings in which individuals find themselves.
 
-### Hypothesis: 
+### Hypothesis:
 
 1.  Overall, univalent (i.e., less ambivalent) partisans express a stronger preference for attitudinally congruent information (i.e., their own party's policy) than do ambivalent partisans
 
@@ -5432,7 +5437,7 @@ No factor appears more powerful in explaining how individuals evaluate political
 
 5.  b\) Respondents in heterogenous groups perceive their own party's policy to be less effective and the opposing party's to be more effective, as compared with those in nonsocial settings.
 
-### Background: 
+### Background:
 
 -   Partisanship - an individual's adherence to a particular political party or platform-tends to be highly stable over one's lifetime.
 
@@ -5466,7 +5471,7 @@ No factor appears more powerful in explaining how individuals evaluate political
 
 -   Starting on the left, homogeneous groups lead to perception of extreme ineffectiveness for the Republican energy solution among both univalent (2.56) and ambivalent (2.95) partisans. Heterogeneous groups in both cases lead to more positive assessments of the Republican policy, both for univalent (3.42) and ambivalent (4.1) partisans. On the right side, we see the same pattern: homogeneous social settings lead to more negative evaluations among univalent (3.63) and ambivalent (3.95) partisans, whereas heterogeneous settings improve these evaluations for both groups (4.84 among univalent partisans, 5.13 among ambivalent partisans).
 
-## Klofstad et al. 2013. \"Disagreeing about Disagreement: How Conflict in Social Networks Affects Political Behavior.\" AJPS. 57(1): 120-34.
+## Klofstad et al. 2013. "Disagreeing about Disagreement: How Conflict in Social Networks Affects Political Behavior." AJPS. 57(1): 120-34.
 
 -   mutz and huckfeldt were talking past each other.
 
@@ -5480,7 +5485,7 @@ No factor appears more powerful in explaining how individuals evaluate political
 
         -   but decreases political participation.
 
-### Abstract: 
+### Abstract:
 
 At the center of debates on deliberative democracy is the issue of how much deliberation citizens experience in their social networks.These "disagreements about disagreement" come in a variety of forms, with scholars advocating different empirical approaches (e.g., Huckfeldt, Johnson, and Sprague 2004; Mutz 2006) and coming to different substantive conclusions. We address these discrepancies by going back to the basics: investigating the consequences of conceptual and measurement differences for key findings relating interpersonal political disagreement to political attitudes and behaviors. Drawing on the 2008--2009 ANES panel study, we find evidence that different measures of disagreement have distinct effects when it comes to individuals' preferences, patterns of engagement, and propensities to participate. We discuss the implications for the study of social influence; as interpersonal disagreement can mean different things, scholars should think carefully about how to study it and should exercise caution when making pronouncements about its empirical and democratic consequences.
 
@@ -5593,3 +5598,463 @@ At the center of debates on deliberative democracy is the issue of how much deli
 -   How does indirect mobilization work? Although I cannot pin down this process as precisely as might be ideal, we can speculate that citizens communicate to each other their own level of involvement in the political system through a variety of means, and that this communication increases the effective size of the social network relevant to the turnout decision.
 
 -   Regardless of the conversational content, however, exposure to higher levels of political discussion, I suggest, increases the likelihood of voting. In terms of the model of social decision making, additional discussion increases the size of the reference group used by a citizen when deciding whether or not to vote, thus in effect increasing the size of one's social network.
+
+# Week 13: Participation
+
+## Lecture Notes:
+
+-   Civic Volunteerism Model - know this for comps
+
+    -   Resources
+
+        -   SES
+
+    -   Recruitment
+
+        -   Being mobilized - asked to participate
+
+    -   engagement
+
+        -   interest
+
+            -   motive
+
+## Djupe, Sokhey, and Gilbert. 2007. "Present but Not Accounted For? Churches, Institutional Treatment, and Gender Differences in Civic Resources." AJPS. 51(4): 906-920.
+
+### Abstract:
+
+*We investigate the sources of an important form of social inequality: the social processes by which men and women acquire participatory resources in organizations. In particular, we investigate the extent to which men and women acquire civic skills and are targets for political recruitment within churches. Integrating theory about social interaction within an organizational structure, we hypothesize that the ways in which women gain politically relevant resources from the church are simply different from those of men. Three factors explain the institutional treatment of women in churches: (1) women's political contributions are devalued; (2) women respond to social cues more than men do; (3) women respond to political cues from clergy---especially female clergy---whereas men do not. Our findings of gender differences in civic resource acquisition provide a more nuanced treatment of the mobilization process and have broad implications for the relationship between political difference and participatory democracy*.
+
+### Question
+
+1.  Do women participate in resource building church activities at differentrates than men?
+
+2.  Are women recruited to participate in politics at lower rates than men?
+
+3.  And most importantly, how does the social structure of congregations and women'sorientations to politics contribute to these patterns?
+
+### Argument
+
+-   The assumption that all citizens gain equally from their organizational involvements is suspect.
+
+-   Gender differences in civic resources from church :
+
+    -   women's political contributions are devalued
+
+    -   women respond to social cues more than men do and in different ways
+
+    -   women respond more than men to political cues from clergy-especially female clergy.
+
+### Background
+
+-   Ties into Mutz. less interaction of women means less cross-cutting relationships.
+
+-   The most acknowledged finding of the social interaction approach is that exposure to political differences within a discussion network depresses political participation
+
+    -   is this right?
+
+### Data
+
+-   2400 clergy members
+
+-   We operationalize civic skills as the practice of one or more of four activities in the past year: writing a letter, giving a speech or presentation, planning a meeting, and studying or discussing a political issue with a group.
+
+### Determinants of Political Resource Acquisition
+
+-   Organizational Engagement
+
+-   Social Network Composition
+
+-   The Role of Clergy
+
+-   Community Orientations
+
+## Einstein et al. 2018. "Who Participates in Local Government? Evidence from Meeting Minutes." Perspectives on Politics.
+
+### Abstract:
+
+Scholars and policymakers have highlighted institutions that enable community participation as a potential buffer against existing political inequalities. Yet these venues may bias policy discussions in favor of an unrepresentative group of individuals. To explore who participates, we compile a novel data set by coding thousands of instances of citizens speaking at planning and zoning board meetings concerning housing development. We match individuals to a voter file to investigate local political participation in housing and development policy. We find that individuals who are older, male, longtime residents, voters in local elections, and homeowners are significantly more likely to participate in these meetings. These individuals overwhelmingly (and to a much greater degree than the general public) oppose new housing construction. These participatory inequalities have important policy implications and may be contributing to rising housing costs.
+
+## Hertel-Fernandez, A. 2017. "American Employers as Political Machines." Journal of Politics. 79(1).
+
+### Abstract:
+
+American employers are increasingly engaging their workers in the political process. Drawing on original surveys of f irms and workers, this paper examines the extent to which employers act as political machines, channeling their employees into politics in ways intended to support corporate interests. I show that employer political requests greatly increased the likelihood that employees would report participating in politics around the 2014 election and employer requests were roughly as effective as those from unions and political parties. I also find that employer mobilization was most effective when employers used warnings of job loss to motivate participation and when employers could monitor the behavior of their employees, suggesting that employers are indeed acting as a type of political machine. My results shed light on the ways that American firms recruit workers into politics and show that employer mobilization of workers may be an important source of political power for business.
+
+### Bumper Sticker
+
+-   Employers are political machines
+
+### Argument:
+
+-   The political machine literature helpfully draws our attention to the ways that machines can use two strategies--- **monitoring** and **threats of economic losses or reward**s---to increase individuals' responsiveness to machine political requests. I argue that a similar focus is appropriate in the American context, as employers are making use of these two relatively unusual tactics in recruiting their employees into politics.
+
+### Background:
+
+-   businesses have always been some kind of machine
+
+    -   only back then they could use violence and was more overt
+
+-   clientalism
+
+    -   political organizations can mobilize support for candidates by providing targeted benefits or using physical or economic threats to change voter behavior, dubbing these organizations political machines.
+
+-   Using the political machine framework, we can think of American employers as using their relationship with workers to channel support to elect specific candidates and pass legislation that benefits the firm.
+
+-   Monitoring
+
+    -   important because employers need to know if they voted and if voted correctly.
+
+    -   need to also monitor other activities:
+
+        -   legislative contacting, contributions to political campaigns, and volunteering for political candidates and parties
+
+    -   **The individual-level prediction from this framework is that workers will be more responsive to employers' political requests if they believe their employer has the capacity to closely monitor their attitudes and behaviors for fear of politically motivated reprisal.**
+
+### Data:
+
+-   2015 CCES
+
+-   My main outcome is a sum of these five participatory acts (Participation Index). The median worker in the 2015 CCES had engaged in one participatory act.
+
+-   "How likely is it that your employer can track your political behaviors and attitudes, such as keeping track of whether you voted or which candidates you support?"
+
+    -   IV: Employer monitoring
+
+-   I therefore asked if workers received a warning that their employer might need to cut jobs or close plants along with managers' political messages
+
+    -   threat
+
+-   To capture the context of recruitment, I account for the Cook Partisan Voting Index of respondents' districts, indicating how much a district's share of the twoparty presidential vote deviated from the national average over the 2008 and 2012 election cycles (Cook Political Report 2013)
+
+## Makse, Minkoff, and Sokhey. 2019. Politics on Display: Yard Signs and Politicization of Social Spaces. Oxford University Press.\* (chapters, tbd- skim)
+
+### Chapter 3:
+
+In this chapter, we explore a variety of factors that influence an individual's decision to display a campaign yard sign. First, we consider the displaying of signs from the perspective of traditional models of political participation. Using national data from the 2012 Cooperative Congressional Election Study, we explore demographic and attitudinal predictors of sign displaying, as well as measures of the political environment, such as residence in a swing state. Then, relying on our observational data from the 2008 and 2012 elections, we turn our attention to more localized factors that may encourage or inhibit the displaying of signs. In keeping with recent contextual work, we explore linkages between property traits, neighborhood traits, and the displaying of signs. Finally, we consider personality and whether individuals who display signs share traits such as the desire to make one's views known and the propensity to initiate political conversations.
+
+-   Looking at the model's predictions, we see an interesting set of social and political factors emerge: stronger ideologues and stronger partisans are more likely than others to report displaying a sign
+
+-   We expect that households will be more likely to display a sign in highly participatory social spaces, a result supported by studies of participation generally and at least one study that references the displaying of signs specifically ([Kenny 1992](javascript:;)).
+
+-   One of the premises of this book is that some people view their neighborhoods as a politicized social space, and it stands to reason that there are two distinguishing traits of individuals who take that view: high levels of political engagement and a personality conducive to externalizing the primacy of politics.
+
+-   If we view sign displaying as a communicative act, somewhat akin to starting a conversation (or even as a provocation), we might expect displayers to initiate conversations more often than those who participate in politics less publicly and less communicatively.
+
+### Chapter 6:
+
+In this chapter, we confront the stereotype of the "yard sign war" in which the politically engaged respond to their neighbors' displays by displaying signs of their own. Another possibility, one that is more consistent with our understanding of social interaction, is that households feel empowered by the presence of same-party signs and deterred by the presence of other-party signs. Focusing on the 2008 and 2012 presidential elections, we look for evidence of these patterns in our geo-coded observational data of sign display. To assess these competing characterizations, we introduce two measures: a clustering measure that describes the distribution of a single sign across a sample space and a joint clustering measure that captures the similarity of two signs' spatial patterns. Overall, we find little evidence of yard sign wars and consistent evidence that Democratic and Republican signs inhabit distinct spaces in neighborhoods.
+
+-   In this chapter, we focus on patterns such as these, seeking to elucidate why different patterns of sign displaying emerge across neighborhoods.
+
+-   Tobler's First Law of Geography ([Tobler 1970](javascript:;)) states that "everything is related to everything else, but near things are more related than distant things." This applies to political participation in general, as near individuals are more likely to be subject to similar political conditions than far ones *and* near individuals are likely to have made decisions about where to live based on common attributes.
+
+-   Similarly, sorting may occur not just on the basis of political preferences, but on the basis of political involvement. We lack direct evidence that individuals choose neighborhoods due to participatory norms, but [Hopkins and Williamson (2012)](javascript:;) argue that participation is driven by design features of neighborhoods, particularly in suburbia. If individuals sort by political persuasion and neighborhood design is inextricably linked with engagement, it is no great leap to imagine that individuals may by clustered together on the basis of neighborhood engagement.
+
+-   In other words, we see no evidence that in-person contacts by campaigns were systematically concentrated in certain areas of the Broomfield research site.
+
+-   The findings are highly consistent: sign patterns of competing presidential candidates exhibit disjoint clustering, meaning that households displaying Democratic signs are less likely to have Republican signs as their nearest neighbor than we would expect, and vice versa.
+
+-   Having accounted for the prevalence of yard signs in the neighborhood, we find that the impact of voter turnout among one's neighbors is reduced. Undoubtedly, this is because both of these are capturing a similar factor: neighborhood political participation. However, the fact that sign prevalence is predictive of sign displaying above and beyond the contextual turnout measure gives us confidence that sign prevalence is not merely a proxy for neighborhood participation.
+
+    -   interesting?
+
+-   It may be the case that some individuals display signs in defiance of neighbors who support another candidate, but neither the spatial analyses nor the regression models are consistent with the notion that this is the modal behavior. Indeed, put in the language of our earlier analyses, when people are motivated by the desire to "let their neighbors know where they stand," it is far more likely that they are communicating a message of solidarity rather than a message of dissent or defiance---that is, a message of support for their in-group
+
+### Chapter 8:
+
+In this chapter, we investigate how the prevalence of signs influences social spaces. We begin by exploring how signs impact perceptions of a neighborhood's activism and partisan balance and, more specifically, whether signs make those perceptions more, or less, accurate. Second, using a hypothetical scenario in which respondents are asked to consider a neighbor who supports the opposing candidate, we consider how signs shape interactions among neighbors. Third, we analyze the relationship between sign prevalence and how individuals interact with their neighborhood discussion partners. We focus on two key metrics: whether individuals discuss politics with greater frequency during the campaign than they do otherwise, and whether they report *heated* discussions with their neighbors. Leveraging ego-centric network batteries---a tool commonly used to analyze interpersonal influence but rarely used to analyze neighborhood-specific networks---we find several patterns consistent with the notion that the mere presence of yard signs structures patterns of political discussion in neighborhoods.
+
+-   In these extreme spaces, we might expect individuals to socialize differently with people who live around them.
+
+-   When it comes to perceptions of activism, the overall presence of signs might inform residents about the neighborhood. However, with perceptions of partisanship, signs for each party should push perceptions in opposite directions. Thus, we expect that more Democratic signs will lead to the perception that the neighborhood is more Democratic and that the opposite will hold for Republican signs.
+
+-   **That is, does the politicization of space also have an influence on whether and how citizens talk with the people who share spaces with them?**
+
+-   Sign displays can potentially affect social interactions in *at least* two ways. First, they can directly affect the relationships among discussion partners, invoking feelings of solidarity or causing tension when one---or both---members of the dyad have a sign on their front lawn, making politics a more conspicuous topic. Second, signs in the social context can influence *all* relationships among people in that space, regardless of whether both, one, or neither of the individuals is a sign displayer.
+
+-   We find some evidence that the neighbor networks of sign displayers are a bit distinctive, but signs seem to call everyone to conversation
+
+## Walker, Hannah. 2020. "Targeted: The Mobilizing Effect of Perceptions of Unfair Policing Practices." Journal of Politics. 82(1).
+
+### Abstract:
+
+Criminal justice contact is increasingly routine for Americans, and preemptive policing tactics render contact a feature ofeveryday life for minorities and the poor. Scholars interested in the impact of criminal justice contact on politicaloutcomes largely ﬁnd that all types of contact decrease voting and trust in government. Yet, qualitative evidence suggeststhat sometimes individuals are mobilized by their experiences. I leverage theoretical differences between custodial citizenship and having a loved one who is a custodial citizen, referred to as proximal contact, to identify the conditions underwhich criminal justice experiences catalyze political action. Individuals with proximal contact face fewer barriers toparticipation than do custodial citizens, and when they view negative experiences as a product of a system that targetspeople like them on the basis of group afﬁliation, contact can spur participation in activities other than voting.
+
+### Question:
+
+-   Under what conditions (if at all) does proximal criminal justice contact increase engagement?
+
+### Argument:
+
+-   I argue that while politicalaction catalyzed by contact may include voting, it is mostlikely to manifest nonelectorally.
+
+### Background:
+
+-   Custodial Citizenship: Personal contact via arrest and incarceration
+
+-   Proxmial contact: knowing someone whos is a custodial citizen
+
+-   **If you believe the custodial citizen is a target of some systematic bias = mobilize.**
+
+-   Scholars leverage theories of political learning to argue that contact, both personal and proximal, is politically demobilizing
+
+    -   less voting
+
+-   This research contends thatcollective racial identity develops from a shared history withinstitutional discrimination
+
+    -   linked fate
+
+### Research Design:
+
+-   National Crime and Politics Survey 2013
+
+-   American National Election Studies 2016
+
+### DV: Political Participation
+
+-   participation battery
+
+### IV: Contact and Justice
+
+-   Proximal contact is main IV
+
+    -   "What about someone you know, such as a close friend or family member? Do you know someone who has been arrested, charged or questioned by the police, even if they weren't guilty, excluding minor trafﬁc stops such as speeding?"
+
+        -   NCPS
+
+    -   The 2016 ANES asked: "In past 12 months anyfamily membered stopped/questioned by the police?" About 20% of all respondents indicated they had proximal contact,which reached 27% among blacks. Proximal contact is coded dichotomously (0 = no contact, 1 = proximal contact)
+
+-   NCPS also asks about sense of injustice
+
+    -   basically perceptions of police and if their actions are justifiable
+
+### Results:
+
+-   The ﬁndings presented here support the argument that asense of injustice underlies the positive association between contact and participation.
+
+-   Findings demonstrate that proximal criminal justice experiences increasenegative evaluations of community police and perceived discrimination. I further offer evidence for the claim that a sense of unfairness, and the belief that one was targeted bycriminal justice policy on the basis of race, class, and place,motivates political action
+
+## *The Oxford Handbook of Political Participation* (2022), edited by Giugni and Grasso: Chapter 2: Political Science and Political Participation, *Kay Lehman Schlozman and Henry Brady*
+
+The right of citizens to participate freely in political life is essential to democracy. \* Acting on their own or with others, online or off, citizens in democracies can engage in a variety of acts with the intent or effect of influencing government, either indirectly through participation in the electoral process or directly through expressions of preferences. Although the menu varies from place to place, participatory acts include, most importantly, voting, as well as contacting a public official, signing a petition, attending a protest, joining a political party or an organization that takes stands in politics, working in a campaign, attending a rally, or donating money to a campaign or political cause. 1 When they take part, citizens can influence who holds governmental power and what they do with it, communicate preferences and needs for government action to public officials, and hold them accountable for their actions.
+
+### Resources, Mobilization, and Psychological Factors
+
+-   Why don't people take part in politics?
+
+    -   They can't
+
+    -   they don't want to
+
+    -   nobody asked
+
+-   Education and income are important
+
+-   One argument says education is actually a sorting mechanism
+
+    -   placing those who achieve educationally into occupational situations and social networks that facilitate political participation.
+
+#### Because They Want To: Psychological Orientations
+
+-   Political participation:
+
+    -   Political Interest
+
+    -   Political Efficacy
+
+    -   Political Information
+
+    -   Strength of Partisanship
+
+    -   Strong commitment on a political issue
+
+-   Causality is hard to tease out - very endogenous with everything
+
+-   Big 5 personality traits
+
+    -   extraversion
+
+    -   agreeableness
+
+    -   conscientiousness
+
+    -   emotional stability
+
+    -   openness to experience
+
+#### Because Somebody Asked: Political Mobilization
+
+-   easier to recruit because of internet (suspect about this)
+
+-   Requests to take part politically arise from a variety of sources: through social media, or in a sermon at church, or from the newsletter of an organization of which one is a member, or directly from a friend, neighbor, or co-​ worker. Because those who attempt to get others involved in politics act as "rational prospectors," the ordinary processes through which people are asked to take part do not ameliorate the class bias in individual political voice.
+
+#### Individuals in Context
+
+-   Experiences in the family, at school, in the workplace, in voluntary organizations, and in church affect the resources, motivations, and exposures to political mobilization that, in turn, affect political participation.
+
+-   political learning
+
+-   intergenerational transmisssion - family background
+
+-   In sum, at least in the United States, children who have the good fortune to be born to well-​ educated, affluent parents are not only more likely to grow up in a politically stimulating environment but also more likely as adults to achieve positions and statuses that facilitate political participation.
+
+#### The Context of Political Institutions
+
+-   Laws - literally instituional factors
+
+-   history explanations
+
+-   policy makes politics
+
+#### Does Political Participation Matter
+
+-   policymakers do not seem to seek out and respond to information about the preferences and needs of lower-​ income constituents. In fact, they seem to be especially responsive to upper-​ income constituents---​ in particular, to donors.
+
+# Week 14: Space/Geography meets Psychology
+
+-   Walkability influences sociability?
+
+-   Most generally, political geography seeks to show "the relevance of the spatially of all types of power and their interaction" (Flint 2003, p.107)
+
+    -   Ethington and McDaniel (2007)
+
+-   Tobler's Law
+
+    -   "everything is related to everything else, but near things are more related than distant things"
+
+-   Ecological Fallacy
+
+-   Modifiable Areal Unit Problem
+
+-   Clayton Noll UCSB - Highways
+
+## Brown and Enos. 2021. \"The Measurement of Partisan Sorting for 180-Million Voters.\" Nature Human Behavior.
+
+### Abstract
+
+Segregation across social groups is an enduring feature of nearly all human societies and is associated with numerous social maladies. In many countries, reports of growing geographic political polarization raise concerns about the stability of democratic governance. Here, using advances in spatial data computation, we measure individual partisan segregation by calculating the local residential segregation of every registered voter in the United States, creating a spatially weighted measure for more than 180 million individuals. With these data, we present evidence of extensive partisan segregation in the country. A large proportion of voters live with virtually no exposure to voters from the other party in their residential environment. Such high levels of partisan isolation can be found across a range of places and densities and are distinct from racial and ethnic segregation. Moreover, Democrats and Republicans living in the same city, or even the same neighbourhood, are segregated by party.
+
+### Background
+
+-   A large proportion of US voters live with very low levels of residential exposure to neighbours from the other party.
+
+### Data/Methods
+
+-    For each of *n* = 180,660,202 geocoded individuals, we measure the distance to their *k* = 1,000 nearest neighbours as defined by the closest geodesic distances from the registered voters\' residences, creating a distance measure for *n* × *k* (over 180 billion) dyadic relationships. Thus, for every voter, we identify how near they live to each of their 1,000 nearest neighbours and combine this information with data on their neighbours\' partisanship to construct individual-level measures of partisan exposure and isolation.
+
+-   partisan exposure weighted by distance to individual.
+
+## Brown et al. 2021. "Childhood cross-ethnic exposure predicts political behavior seven decades later: Evidence from linked administrative data." Science Advances.
+
+### Abstract:
+
+Does contact across social groups influence sociopolitical behavior? This question is among the most studied in the social sciences with deep implications for the harmony of diverse societies. Yet, despite a voluminous body of scholarship, evidence around this question is limited to cross-sectional surveys that only measure short-term consequences of contact or to panel surveys with small samples covering short time periods. Using advances in machine learning that enable large-scale linkages across datasets, we examine the long-term determinants of sociopolitical behavior through an unprecedented individual-level analysis linking contemporary political records to the 1940 U.S. Census. These linked data allow us to measure the exact residential context of nearly every person in the United States in 1940 and, for men, connect this with the political behavior of those still alive over 70 years later. We find that, among white Americans, early-life exposure to black neighbors predicts Democratic partisanship over 70 years later.
+
+### Bumper Sticker:
+
+-   Early life exposure to diversity is important for later politics!
+
+### Background
+
+-   World is more diverse
+
+-   Does interpersonal relationships reduce prejudice?
+
+### Results: 
+
+-   Using an empirical strategy of increasingly fine-grained geographic comparisons to account for sorting at small levels of geography, we show that white men who had a black neighbor in 1940, compared to white men who did not, are more likely to be associated with racially liberal politics, as indicated by their registration with the Democratic Party even as late as 2017.
+
+## McCarty et al. 2018. "Geography, Uncertainty and Polarization." Political Science Research and Methods.
+
+### Abstract
+
+Using new data on roll-call voting of US state legislators and public opinion in their districts, we explain how ideological polarization of voters within districts can lead to legislative polarization. In so-called "moderate" districts that switch hands between parties, legislative behavior is shaped by the fact that voters are often quite heterogeneous: the ideological distance between Democrats and Republicans within these districts is often greater than the distance between liberal cities and conservative rural areas. We root this intuition in a formal model that associates intradistrict ideological heterogeneity with uncertainty about the ideological location of the median voter. We then demonstrate that among districts with similar median voter ideologies, the difference in legislative behavior between Democratic and Republican state legislators is greater in more ideologically heterogeneous districts. Our findings suggest that accounting for the subtleties of political geography can help explain the coexistence of polarized legislators and a mass public that appears to contain many moderates.
+
+### Question:
+
+1.  Is the mass public responsible for ideological polarization in legislatures
+
+    1.  thrust of previous lit on this question is NO.
+
+        1.  elites polarized first then the public.
+
+2.  Why would electoral competition in these pivotal but heterogeneous districts generate such polarized legislative representation?
+
+    1.  The remainder of the paper develops a simple intuition: relative to a homogeneous district where voters are clustered around the district median, candidates in such heterogeneous districts face weaker incentives for platform convergence due to uncertainty about the ideology of the median voter.
+
+### Background
+
+-   Theory: who argue that policy-motivated candidates might adopt divergent positions in the face of uncertainty about voter preferences. When candidates are uncertain about the ideological location of the median voter, they shade their platforms toward their or their party's more extreme ideological preferences.
+
+-   **MAIN ARGUMENT: Voter heterogeneity produces more uncertainty about the median voter and therefore more polarization.**
+
+-   Based on our findings, we find it quite plausible that the rise of polarization in the US Congress has been driven in part by increasing within-district heterogeneity associated with the demographic and residential transformations of recent decades
+
+-   The most internally heterogeneous districts are those in the middle of the ideological spectrum.
+
+### Results:
+
+-   Heterogenous districts have the largest divergence
+
+-   also look at elections in same year
+
+    -   results still hold
+
+    -   district heterogeneity and legislator partisan divergence are quite strongly related
+
+-   **Our key findings can be summarized as follows. Partisan polarization within state legislatures emerges in large part from the fact that Democrats and Republicans represent districts with similar mean characteristics very differently. We have discovered that these differences are especially large in districts that are most internally heterogeneous. Further, we have discovered that these internally diverse districts are especially prevalent in the ideologically "centrist" places that most frequently change partisan hands in the course of electoral competition.**
+
+## Strickler, Ryan. 2016. \"A \'Sorted\' America? Geographic Polarization and Value Overlap in the American Electorate.\" Social Science Quarterly.
+
+### Abstract: 
+
+Geographic political polarization is an increasingly salient topic of academic and popular discourse. Using Bill Bishop's bestseller The Big Sort as a foil, this article tests the claim that America has split into "ideologically inbred" "red" and "blue" communities. Method. Drawing on Bishop's concept of "landslide" Democratic and Republican counties, the article uses survey data to measure the overlap in opinion between respondents from opposing "landslide" counties. This is done both graphically and with a quantitative measure developed by Levendusky and Pope (2011). Results. Across economic, social, and cultural value dimensions, there is vastly more common ground than difference between respondents from "landslide" Democratic and Republican counties. Conclusion. Hyperbolic claims of a "sorted" country aside, geographic polarization in the United States is limited at best. Partisan polarization could be a real and consequential phenomenon in the electorate, but it has little geographic, "red versus blue" manifestation.
+
+### Bumper Sticker
+
+-   Geographical sorting isn't really going on and people have more in common than THEY THINK!
+
+### Background:
+
+-   If the country is sorted, it implies the gridlock in Washington is not the result of cynical political elites, activists, and media.
+
+    -   BUT a genuine reflection of the public sentiment
+
+-   Author argues there is common ground in political values between "landslide" democrat and republican counties.
+
+-   I think geographic sorting is a post hoc result of polarization.
+
+### Measuring Polarization
+
+-   Should we care about the opinions of people or their party id?
+
+-   The value statements used in this analysis are also more appropriate than using self-reported ideology, as the public is often more attracted to the symbolism of ideological labels than to their actual policy implications (Ellis and Stimson, 2012).
+
+-   create an index
+
+### Landslide Respondents
+
+-   To test whether the country is geographically polarized along the value dimensions created above, each of the survey respondents was grouped into one of four categories---"landslide Democratic," "competitive Democratic," "competitive Republican," and "landslide Republican." Respondents were coded in the "landslide" Democratic (Republican) category if the margin of victory for the Democratic (Republican) candidate in their county for the 2012 election was 20 percent or greater. If the Democratic (Republican) candidate won a plurality with less than a 20 percent margin, the respondent is coded in the "competitive" Democratic (Republican) category.
+
+-   There is difference...but also a lot of overlap.
+
+### Unit of Analysis: 
+
+-   County level
+
+-   they try others.
+
+### Discussion 
+
+-   Sorting is overblown
+
+-   we look at opinion but the connection to opinion and candidate needs to be explored
+
+    -   sure there may be overlap - but savy candidates exploit those differences and make them salient.
+
+-   Sure...they share commonality - but they don't perceive that shared common ground.
+
+    -   a natural question is how much do these people interact with each other and the result of that?
+
+    -   the fact they they share overlap is interesting but if we still elect more extreme candidates - it may be due to the lack of interaction to help individuals realize their common ground.
