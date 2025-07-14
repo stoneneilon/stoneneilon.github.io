@@ -5929,7 +5929,7 @@ The right of citizens to participate freely in political life is essential to de
 
 -   Clayton Noll UCSB - Highways
 
-## Brown and Enos. 2021. \"The Measurement of Partisan Sorting for 180-Million Voters.\" Nature Human Behavior.
+## Brown and Enos. 2021. "The Measurement of Partisan Sorting for 180-Million Voters." Nature Human Behavior.
 
 ### Abstract
 
@@ -5941,7 +5941,7 @@ Segregation across social groups is an enduring feature of nearly all human soci
 
 ### Data/Methods
 
--    For each of *n* = 180,660,202 geocoded individuals, we measure the distance to their *k* = 1,000 nearest neighbours as defined by the closest geodesic distances from the registered voters\' residences, creating a distance measure for *n* × *k* (over 180 billion) dyadic relationships. Thus, for every voter, we identify how near they live to each of their 1,000 nearest neighbours and combine this information with data on their neighbours\' partisanship to construct individual-level measures of partisan exposure and isolation.
+-   For each of *n* = 180,660,202 geocoded individuals, we measure the distance to their *k* = 1,000 nearest neighbours as defined by the closest geodesic distances from the registered voters' residences, creating a distance measure for *n* × *k* (over 180 billion) dyadic relationships. Thus, for every voter, we identify how near they live to each of their 1,000 nearest neighbours and combine this information with data on their neighbours' partisanship to construct individual-level measures of partisan exposure and isolation.
 
 -   partisan exposure weighted by distance to individual.
 
@@ -5961,7 +5961,7 @@ Does contact across social groups influence sociopolitical behavior? This questi
 
 -   Does interpersonal relationships reduce prejudice?
 
-### Results: 
+### Results:
 
 -   Using an empirical strategy of increasingly fine-grained geographic comparisons to account for sorting at small levels of geography, we show that white men who had a black neighbor in 1940, compared to white men who did not, are more likely to be associated with racially liberal politics, as indicated by their registration with the Democratic Party even as late as 2017.
 
@@ -6005,9 +6005,9 @@ Using new data on roll-call voting of US state legislators and public opinion in
 
 -   **Our key findings can be summarized as follows. Partisan polarization within state legislatures emerges in large part from the fact that Democrats and Republicans represent districts with similar mean characteristics very differently. We have discovered that these differences are especially large in districts that are most internally heterogeneous. Further, we have discovered that these internally diverse districts are especially prevalent in the ideologically "centrist" places that most frequently change partisan hands in the course of electoral competition.**
 
-## Strickler, Ryan. 2016. \"A \'Sorted\' America? Geographic Polarization and Value Overlap in the American Electorate.\" Social Science Quarterly.
+## Strickler, Ryan. 2016. "A 'Sorted' America? Geographic Polarization and Value Overlap in the American Electorate." Social Science Quarterly.
 
-### Abstract: 
+### Abstract:
 
 Geographic political polarization is an increasingly salient topic of academic and popular discourse. Using Bill Bishop's bestseller The Big Sort as a foil, this article tests the claim that America has split into "ideologically inbred" "red" and "blue" communities. Method. Drawing on Bishop's concept of "landslide" Democratic and Republican counties, the article uses survey data to measure the overlap in opinion between respondents from opposing "landslide" counties. This is done both graphically and with a quantitative measure developed by Levendusky and Pope (2011). Results. Across economic, social, and cultural value dimensions, there is vastly more common ground than difference between respondents from "landslide" Democratic and Republican counties. Conclusion. Hyperbolic claims of a "sorted" country aside, geographic polarization in the United States is limited at best. Partisan polarization could be a real and consequential phenomenon in the electorate, but it has little geographic, "red versus blue" manifestation.
 
@@ -6039,13 +6039,13 @@ Geographic political polarization is an increasingly salient topic of academic a
 
 -   There is difference...but also a lot of overlap.
 
-### Unit of Analysis: 
+### Unit of Analysis:
 
 -   County level
 
 -   they try others.
 
-### Discussion 
+### Discussion
 
 -   Sorting is overblown
 
@@ -6058,3 +6058,227 @@ Geographic political polarization is an increasingly salient topic of academic a
     -   a natural question is how much do these people interact with each other and the result of that?
 
     -   the fact they they share overlap is interesting but if we still elect more extreme candidates - it may be due to the lack of interaction to help individuals realize their common ground.
+
+# Week 15: Representation (and Reflection)
+
+-   Read Elements of Reason - cognition, choices, and the bonds of rationality
+
+-   Achens & Bartels focus on groups
+
+-   read of all Stimson
+
+## Tides of Consent by James Stimson. Chapter 1, 3, 6
+
+### Chapter 1:
+
+-   Carter got destroyed by the Iranians and it helped Reagan
+
+-   But alone cant be explained by the Iranians - Reagan was a conservative movement.
+
+-   Why does public sentiment (on a large scale, not the day to day) ebb and flow over time? What starts them?
+
+-   what moves the tides.
+
+-   Is it a campaign story? Referenda of the incumbent story? Or is about what voters want in policy?
+
+    -   these are all true but its a combination of all three.
+
+-   Crisis change stuff
+
+-   In three stories about opinion change,one thing is constant.In all three opinion moves. Important things happen in politics because opinion at one time is different than it was earlier.
+
+    -   pace is different though.
+
+-   This book is about all three dynamics. It is about how public opinion ebbs and flowsover time,what moves it,why it moves,and what we can understand about predicting and explaining those movements.
+
+-   people are ignorant and calculating about politics
+
+-   opinions where ephemeral
+
+-   public is inconsistent with opinions
+
+-   Some people some of the time pay attention to Government
+
+-   Some people some of the time care what government does
+
+-   Some of those who pay no attention to government will nonetheless form public opinion
+
+-   Much public opinion is media influenced
+
+-   Opinion is dominated by those who pay *some* attention
+
+    -   why?
+
+        -   aggregation gain
+
+            -   central limit theorem vibe
+
+            -   if some people become more conservative when government undertakes liberal actions and others respond randomly, the the public on average becomes more conservative.
+
+            -   **The conclusion I have been building to is this: if just some people pay attention to politics and just some care a little bit about it, never mind all those who don't pay attention and don't care, the average of opinions will predominantly reflect those who pay attention and care.**
+
+                -   this is what we observe in public opinion.
+
+        -   opinion leadership
+
+            -   all it takes is for some to care and the rest follows.
+
+### Chapter 3: Left and Right Movements in Preference
+
+-   abortion during Roe was not originally aligned with the parties.
+
+-   chapter focuses on how controversy structure Americans' reactiosn to the parties and what happens when some new issue causes that number to expand.
+
+    -   why and how do issues emerge, how they evolve, and how multiple facets of conflict come to be encapsulated in a two-sided struggle between the parties.
+
+-   too many issues to focus on
+
+    -   the elections constrains what is important - it is a bottleneck for policy choices.
+
+-   think of voting as a 'bit'
+
+-   Valence issues - these are really just assertions of support for values that are nearly universally held.
+
+    -   these are different from "position" issues. Which are actually controversies.
+
+-   How do issues evolve?
+
+    -   Story 1 - Candidates:
+
+    -   Story 2 - Voters:
+
+        -   how do voters decided between candidates in a primary?
+
+        -   path dependence
+
+-   tax cuts were not a big thing before Reagan.
+
+-   Goldwater moves the democratic south to the Republican party.
+
+-   critical is the idea of a 'critical moment' - a catalyst
+
+-   the story so far he is painting is savvy political candidates.
+
+-   Central Question: What do Americans want government to do, and how do preferences change over time?
+
+-   cycle of preferences.
+
+-   Ideology: operational and symbolic
+
+    -   We observe Americans prefer a government that does more rather than less - they are, that is, operationally liberal - when asked to describe their political identitiy, almost two of three choose the label conservative over the label liberal.
+
+    -   Americans are symbolically conservative and operationally liberal.
+
+        -   this is a puzzle.
+
+-   Differences lie in how much and how fast to grow the government, not whether it should be larger or smaller
+
+    -   yes but also im a bit unsure of this. I suppose in the aggregate yes.
+
+-   Lots of symbolic conservatives that are operationally liberals
+
+    -   this is considerably less vice versa.
+
+    -   This is problematic - it means that candidates and parties that call themselves by that same label will in general be more appealing to them.
+
+-   Republicans are good with symbols.
+
+### Chapter 6:
+
+-   Passionate \> The scorekeepers \> The Uninvolved
+
+-   What moves the scorekeepers is critical.
+
+-   We now have two ideas: that important political change occurs at the margin and that the citizens who produce it are a rare substratum of those who are dispassionate and still reasonably well informed.
+
+-   Mood becomes more conservative under liberal governments,more liberal under conservative regimes.
+
+    -   this requires some attentiveness of the citizenry.
+
+    -   This would seem to call for more knowledge,more attentiveness to public affairs, than is typical of mass electorates.
+
+        -   but not all need to be.
+
+            -   If politics works at the margin, we can observe the aggregate responsiveness of mood if only some citizens are knowledgeable and attentive while others are either fixed in place or moving in response to a cacophony of false signals.
+
+-   scorekeeprs care about outcomes.
+
+    -   these are your nature of the time voters.
+
+-   This book points to the conclusion that citizens - in the aggregate and at the margin - do succeed in communicating their preferences to government
+
+    -   of course, these preferences are not steady and are suspetible to elite influence.
+
+## Warshaw, C. 2019. "Local Elections and Representation in the United States." Annual Reviews of Political Science.
+
+### Abstract:
+
+In recent years, there has been a surge in the study of representation and elections in local politics. Scholars have made progress on many of the empirical barriers that stymied earlier researchers. As a result, the study of representation and elections in local politics has moved squarely into the center of American politics. The findings of recent research show that local politics in the modern, polarized era is much more similar to other areas of American politics than previously believed. Scholars have shown that partisanship and ideology play important roles in local politics. Due to the growing ideological divergence between Democrats and Republicans, Democratic elected officials increasingly take more liberal positions, and enact more liberal policies, than Republican ones. As a result, despite the multitude of constraints on local governments, local policies in the modern era tend to largely reflect the partisan and ideological composition of their electorates.
+
+### Bumper Sticker
+
+Partisanship exists in local elections.
+
+### Research Question:
+
+Lit Review.
+
+### Background:
+
+-   local elections low turnout
+
+-   conservative interests are more likely to win out in local elections and shrink the size of governemnt -
+
+    -   i don't know if I agree with this.
+
+-   voters can use party as a heuristic even in ostensibly nonpartisan races.
+
+-   state and local elections have been fairly nationalized since at least the early 1990s.
+
+-   Local governments do not really reflect hte demographic composition of their citizens.
+
+-   there is difference in municipal spending changes in response to changes in prsidential voting patterns.
+
+-   there are differences at the local level in voting patterns of city officials based off partisanship.
+
+-   but there isnt much data on policy effect between partisanship at local level
+
+## Persuasion in Parallel
+
+### Chapter 1:
+
+-   This chapter is Persuasion in Parallel in miniature. It explains the backlash prediction from the motivated reasoning literature and foreshadows how the empirical evidence for backlash rests on weak research designs. It introduces the persuasion in parallel hypothesis that the treatment effect of persuasive information on target attitudes is small, positive, and durable for everyone, taking care to distinguish between persuasive information and group cues. The chapter provides evidence from one survey experiment that Republicans and Democrats update their tax policy preferences in the same direction and by about the same amount in response to an op-ed in support of the flat tax. Lastly, the chapter connects the persuasion in parallel hypothesis to the classic parallel publics finding from the public opinion literature, contrasting the survey experiment and rolling cross-sectional survey research designs.
+
+-   Motivated reasoning
+
+    -   wanting to get it right
+
+    -   wanting to arrive at a particular conclusion
+
+-   Motivated reasoning is a result of **backlash**
+
+    -   A key prediction of motivated reasoning theory is backlash: **exposure to counter-attitudinal evidence will cause people to hold more strongly to their preexisting positions.**
+
+-   Book is going to try to push back a bit against motivated reasoning.
+
+-   Persuasion occurs in parallel
+
+    -   when people encounter new information, they don't distort it to further entrench their preexisting views---instead, they are persuaded in the direction of that information
+
+-   argues that backlash isnt really a big thing.
+
+-   this seems highly reliant on the stimulus given.
+
+-   effect of persuasion decreases over time.
+
+-   First and foremost: *the other side is persuadable*.
+
+#### Chapter 5:
+
+-   This chapter describes each survey experiment as a case study first, then meta-analyzes all the studies together. The chapter culminates in Figure 5.16, which provides strong evidence for the persuasion in parallel hypothesis by showing how strongly correlated the effects are across various subdivisions of society. If the effect is large and positive for Democrats, the effect for Republicans is likely to be large and positive as well; similar patterns hold for liberals and conservatives, White and Black Americans, men and women, younger and older Americans, and the better- and less-educated. The chapter also shows how the effect of exposure to two-sided messages is well-approximated by the sum of the effects of each message, which is to say they mostly cancel.
+
+#### Chapter 8:
+
+-   This concluding chapter insists on the political implications of this work: despite claims to the contrary, it is not counterproductive to try to persuade the other side. The chapter discusses three cognitive errors that make it seem like persuasion is counterproductive: mistaking levels for changes, mistaking affective evaluations for target policy attitudes, and mistaking differential exposure for differential treatment response. Persuasive attempts work in the sense of changing target attitudes, so we should continue to deliver persuasive information to everyone, not just those who are amenable to our perspectives.
+
+-   Persuasion in parallel means that people are heterogeneous in their political views but homogeneous in their responses to persuasive treatments.

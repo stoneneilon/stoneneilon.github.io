@@ -1,0 +1,130 @@
+---
+title: "Various Book Notes"
+description: "Notes from various books that are not tied to any specific class"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 07-10-2025
+categories: [Other] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/American_Behavior/
+image: brain.jpg
+draft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Liberalism Against Populism - William H. Riker
+
+## Chapter 1
+
+-   **The Theory of Social Choice:** a theory about the way the tastes, preferences, or values of individual persons are amalgamated and summarized into the choice fo a collective group or society.
+
+    -   A theory of social choice = a theory of voting
+
+-   **Paradox of voting:** Coexistence of coherent individual valuations and a collectively incoherent choice by majority rule.
+
+-   Democracy is both an ends and a means.
+
+    -   A democratic end CAN ONLY be achieved by a democratic means.
+
+        -   but what if the means cannot achieve the ends? Then what?
+
+            -   This is the central tension of the book.
+
+-   A theory of social choice is the analytical framework by which we can help answer the point above.
+
+### The Attainability of Justice
+
+-   Plato defines justice as *a condition in which everyone is doing the job best fitted to his or her talents.*
+
+-   Marxian definition of justice is *the distribution of material goods according to needs was proposed along with a concrete method of achieving it - namely, the dictatorship of the proletariat led by its vanguard, the Communist party.*
+
+-   It seems Riker's point here is to say these paradigms and their "means" are not capable of achieving the ends they want. This logic, has been applied to basically everything EXCEPT democracy. Thus, Riker lays out the purpose of this book:
+
+-   **PURPOSE OF THE BOOK**: Does democratic means equate to a democratic end? Does voting = the ideals of democracy?
+
+### What is a Democracy? 
+
+-   Lots of definitions but **voting is the central act.** Democracy boils down to three main properties:
+
+    -   Participation
+
+        -   popular participation in government
+
+        -   voting is a necessary but not sufficient condition for democracy.
+
+        -   Is an end and a practical method. Cites Aristotle and "good citizenship"
+
+    -   Liberty
+
+        -   Ability to pursue one's goals.
+
+        -   Liberty resides in participation in government - Rousseau
+
+        -   "Thus the historic purpose of these fundamental democratic liberties has been not to provide freedom as an end in itself, but to render effective both political participation and the process of choice in voting."
+
+        -   Democratic liberty originates as an instrument to organize voting and popular participation in government.
+
+    -   Equality
+
+        -   to permit serious inequality means to deny to some people the chance to the self-control and cooperative management involved in democratic justice. Equality thus becomes an instrument facilitating self-respect and self-realization.
+
+        -   Like the other two - it's logical base lies in the instrumental value of making voting work.
+
+-   These three properties are all focused on the action of voting. They were instrumental in the action of voting.
+
+### The Meaning of Democracy
+
+-   "The ultimate moral ideal of democracy is the self-respect and self-realization that are made possible by self-control and the concomitant cooperative control of the environment. Whether that ideal is achieved depends on how individuals view themselves and what they themselves do to realize their potentials. The function of political justice is to facilitate that achievement by creating appropriate social conditions. In a society characterized by democratic justice, people are free (by reason of democratic liberty) and have the chance (by reason of democratic equality) to seek self-respect and self-control (through some kind of democratic participation)." **The democratic method to achieve this ideal is these same three principles viewed as a means rather than as ends.**
+
+-   This whole point is tell us why we should care about voting. He needs to justify why social choice theory and democratic theory should have any connection.
+
+    -   A theory of democracy must be intimately involved with a theory of social choice.
+
+    -   If Riker's goal is to show if democratic means = democratic ends and is going to use social choice theory as the method in which to see if we can achieve the democratic end, then he has to make them theoretically connected...that is what he did in this section.
+
+### The Liberal Interpretation of Voting
+
+-   What does voting actually accomplish? What does voting mean?
+
+-   There are two types: Liberal/Madisonian AND populist/Rousseaustic
+
+-   **Liberal View of Voting:** The function of voting is to control officials, and *no more.*
+
+    -   Madison is the champion of this view.
+
+    -   Nothing about the quality of popular decision, whether good or bad, is relevant.
+
+-   Limited tenure is sufficient and ensures liberty.
+
+    -   Prevents people from taking away liberty as there is another election.
+
+-   Officials will restrict themselves from implementing bad policies because of the next election
+
+-   Shifting majorities makes it difficult for a tyranny of the majority and thus maintain liberty by warding off politicians from pursuing problematic actions as they run the risk of facing similar consequences in the next election by a different majority.
+
+-   "Since this future majority cannot at any moment be clearly specified, officials seeking to placate it in advance must anticipate several kinds of potential majorities, the union of which is often most of the electorate. By reason of this anticipation of the next election, officials are, even in the liberal view, subject to electoral discipline as the agents of democratic self-control."
+
+### The Populist Interpretation of Voting
+
+-   **Populist View of Voting**: Liberty and hence self-control through participation are obtained by embodying the will of the people in the action of officials.
+
+-   Rousseau is the champion of this.
+
+-   The way to discover the general will is to compute it by consulting the citizens.
+
+    -   We know in a general sense, people don't know or think about politics very much.
+
+-   People choose only the common interests and not their private/personal interests.
+
+### Main Questions of the Book:
+
+1.  Can voting restrain officials if the outcome of voting is inconsistent? How can restraint occur if it is not clear what restraint is imposed?
+
+2.  If someone, supposedly restrained at the polls, merely kept in or out of office accidentally? If the outcome of voting might be *x y z x* or *y z x y* or *z x y z*, does not an accident of institutions, rather than popular taste, select the winner? And if the antecedent constitution, rather than the people, chooses, how can any kind of democracy be said to operate?
+
+3.  If liberty is embodied in an inconsistent law, is not liberty itself defective? If alternative laws are in a cycle, *x y z x,* then which alternative ought to be regarded as the will of the people and their liberty?
+
+4.  When an absolute good produced by voting is inconsistent, can that absolute have any moral significance? To say that *x* is morally right because *x* beat *y* seems difficult to defend if *z* also beat *x.*

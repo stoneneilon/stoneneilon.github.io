@@ -2,8 +2,8 @@
 title: "Welcome!"
 about:
   template: trestles
-  image: IMG_0123.jpeg
-  links:
+  image: IMG_0091.jpeg
+  links:  
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/stone-neilon/
