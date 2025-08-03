@@ -45,7 +45,7 @@ draft: true # setting this to `true` will prevent your post from appearing on yo
 
 -   **PURPOSE OF THE BOOK**: Does democratic means equate to a democratic end? Does voting = the ideals of democracy?
 
-### What is a Democracy? 
+### What is a Democracy?
 
 -   Lots of definitions but **voting is the central act.** Democracy boils down to three main properties:
 
@@ -128,3 +128,225 @@ draft: true # setting this to `true` will prevent your post from appearing on yo
 3.  If liberty is embodied in an inconsistent law, is not liberty itself defective? If alternative laws are in a cycle, *x y z x,* then which alternative ought to be regarded as the will of the people and their liberty?
 
 4.  When an absolute good produced by voting is inconsistent, can that absolute have any moral significance? To say that *x* is morally right because *x* beat *y* seems difficult to defend if *z* also beat *x.*
+
+## Chapter 2
+
+-   Democracy boils down to social summaries of citizens' decisions in elections and legislators' decisions in representative bodies.
+
+    -   Is there coherence in these summaries?
+
+    -   Are they imposed by manipulation?
+
+-   Institution design can influence the results from identical distributions of preference.
+
+    -   it is then impossible to show a method is superior to all others.
+
+-   **Purpose: "Chapter 2, therefore, is devoted to an examination of a few instances in which one has good reason to question the quality of social summaries of individual preferences."**
+
+### Evidence from Elections
+
+-   the USA has produced the "wrong" result twice. (more now since Riker's time of writing)
+
+-   USA = 2 systems:
+
+    -   choosing candidate by simple majority
+
+    -   choosing candidate among several by a plurality.
+
+-   However, single-member districts are not alone.
+
+    -   Different methods of summarizing can produce different results in proportional representation.
+
+### Evidence from Experiments
+
+-   The french and US examples are not enough because they do not hold preference stable nor do we know voters full preferences
+
+-   Scientists ranked preferences for trajectory for important space stuff.
+
+    -   It was a real mission and the scientists certainly put more effort into their choices compared to the average person in political decision making.
+
+-   amalgamating is suspect - despite the same preferences - the method in which we amalgamate leads to different results.
+
+-   But perhaps there is a *morally* correct way to amalgamate?
+
+    -   this is difficult to answer and is the focus of the next chapters.
+
+## Chapter 3
+
+-   Is one method of aggregation superior?
+
+    -   An attractive option is a simple majority
+
+-   simple majority rule is only attractive when there are ONLY two options
+
+    -   almost always more options in nature.
+
+    -   We have institutions that reduce alternatives:
+
+        -   "Simply because we force ourselves into a binary choice should not obscure the fact that we really start out with many alternatives and that we can never be certain that our institutions have narrowed the choice down to the right pair for us to choose between."
+
+-   **This chapter will explain why simple majority is *attractive.***
+
+    -   But will also show that it is still problematic in some sense.
+
+-   Properties of simple majority decision
+
+    -   Monotonicity
+
+        -   We should (theoretically) reject all non-monotonic systems.
+
+        ```         
+        -   riker does not seem to like a single-transferable vote.
+        ```
+
+    -   Undifferentiatedness (Anonymity)
+
+        -   "The best name for the condition is undifferentiatedness because this is primarily what it provides-namely, that one vote cannot be distinguished from another. This feature allows for anonymity, and anonymity in turn allows for equality."
+
+    -   Neutrality
+
+        -   the method does not favor either alternative
+
+-   simple majority decision seems to be the morally correct method for Riker
+
+    -   however, it still is problematic since there is hardly anything in nature that is binary. This is especially true for politics that generally require institutions to dwindle decisions to a binary choice.
+
+        -   "It is indeed true that simple majority voting is, on the grounds just set forth, an attractive method of social decision. But it is limited in applcation. If it could be used universally, then we might be justified in conceding its general superiority. Unfortunately, it is probably extremely rare for binary alternatives to occur naturally without any human intervention. Instead, society acquires binary alternatives, which allow for a fair procedure, only by reducing the size of the set of alternatives-a reduction that is often (possibly always) in itself unfair."
+
+            -   **"In this case, however fair simple majority decision on binary alternatives is in the abstract, it is unfair in practice because the institutions to generate binary alternatives are unfair, mainly because they are not neutral. The institutions give some alternatives advantages over others."**
+
+-   Oof this chapter is a bit dense in theoretic modeling - need to talk this over with Josh.
+
+## Chapter 4
+
+-   For simple majority decision to be viable, we need some mechanism to constrain the number of alternatives available.
+
+    -   There must be a leader or elite that does this.
+
+-   Every voting system has some issue
+
+    -   there is no convincing way to show that one decision method is truly better than another
+
+-   Simple majority is unattractive because it requires unfair institutions to operate it
+
+    -   Three or more alternatives is shown to be not fair or reasonable.
+
+-   Riker wants to show the notion of a "true and fair" amalgamatoin is neither obvious nor simple, which is why we cannot easily choose among the voting methods discussed in chapter 2.
+
+-   Three families of 3+ alternative voting methods
+
+    -   Majoritarian methods
+
+        -   Majoritarian systems are those in which the principles of simple majority voting are extended to three or more alternatives
+
+            -   assumption this makes: the defect of limiting alternatives can be offset by admitting all desired alternatives.
+
+                -   For Riker, this is completely wrong.
+
+        -   Condorcet method
+
+            -   paradox of voting
+
+        -   If a condorcet winner does not exists, the rules to pick a winner may in fact pick what many would regard as a loser, and there is no consensus on what ought to be regarded as a winner.
+
+    -   positional methods
+
+        -   majoritarian methods also restrict information to binary pairs - if the set is expanded to more than two members, there is much more information, which changes things.
+
+            -   positional methods attempt to solve this.
+
+        -   There are three positional methods:
+
+            -   plurality voting
+
+                -   only uses information about first place
+
+                -   plurality = selecting the alternative with the most votes.
+
+            -   approval voting
+
+                -   uses information about a variable number of places
+
+                -   permits the voter to cast one vote for as many candidates as she or he chooses, and the candidate with the most votes wins.
+
+                -   if this was implemented - it would probably benefit moderates.
+
+            -   scoring functions
+
+                -   uses information about all places.
+
+    -   utilitarian methods
+
+        -   voting methods should reveal not only that x is ahead of y, but by how much.
+
+## Chapter 5
+
+-   Arrows Theorem: no method of amalgamating individual judgements can simultaneously satisfy some reasonable conditions of fairness on the method and a condition of logicality on the result. In a sense this theorem is the proposition that something like the paradox is possible in any fair system of amalgamating values. AKA General Possibility Theorem.
+
+    -   every possible method of amalgamation or choice that satisfies the fairness conditions fails to ensure a social ordering. And if society cannot, with fair methods, be certain to order its outcome, then it is not clear that we can know what the outcomes of a fair method mean. This conclusion appears to be devastating, for it consigns democratic outcomes-and hence the democratic method-to the world of arbitrary nonsense, at least some of the time.
+
+        -   most people faced with this, try to attack the theory that this rests on.
+
+-   **This chapter is focused on whether Arrow's theorem has practical importance or if there is something wrong with the theory it rests on.**
+
+-   Conditions of fairness:
+
+    -   Universal admissibility of individual orderings
+
+    -   Monotonicity
+
+    -   Citizens' sovereignty or nonimposition
+
+    -   Unanimity or Pareto optimality
+
+    -   Independence from irrrelevant alternatives
+
+    -   Nondictatoryship
+
+-   Arrows theorem: under any stem of voting or amalgamation, instance of intransitive or cyclical outcomes can occur.
+
+    -   this indeterminance puts power into some sort of *chooser.*
+
+-   The unavoidable inference is, therefore, that, so long as a society preserves democratic institutions, its members can expect that soem of their social choices will be unordered or inconsistent. And when this is true, no meaningful choice can be made.
+
+    -   If *y* is in fact chosen-given the mechanism of choice and the profile of individual valuations-then to say that *x* is best or right or more desired is probably false. But it would also be equally false to say that *y* is best or right or most desired. And in that sense, the choice lacks meaning.
+
+## Chapter 6
+
+-   So far, Riker has shown that amalgamation and the various forms can lead to incoherent and different choices in alternatives. Given this, we should be suspect of there existing a "general will" or "public interest"
+
+    -   The consequences of this are either that
+
+        -   power is concentrated in a society
+
+        -   or any system of voting can be maniuplated to produce outcomes advantageous to the manipulators or at least different from outcomes in the absence of manipulation.
+
+            -   2 methods of manipulation
+
+                -   1\) those in control of procedures can manipulate the agenda (by restricting alternatives or by arranging the order in which they are brought up).
+
+                -   2\) those not in control can still manipulate outcomes by false revelations of values.
+
+-   Because strategic voting is a thing - it makes it even harder to say that it is "the will of the people", or that amalgamation has any coherence.
+
+## Chapter 7
+
+-   This is about equilibriums and disequillibrium
+
+    -   this was a dense chapter of economic modeling jargon.
+
+## Chapter 8
+
+-   What explains the perpetual flux of politics?
+
+-   previous explanations explain the origin but not the operation of tastes.
+
+-   Leaders are like entrepreneurs
+
+    -   it seems like the dem leadership's product is offering the status quo.
+
+-   just because the rise and decline of issues is random does not mean we cannot generalize
+
+-   "For example, it seems possible that different kinds of constitutions make for different rates of evolution of issues."
+
+-   predicting the rise and fall of issues is probably impossible

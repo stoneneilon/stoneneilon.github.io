@@ -26,7 +26,7 @@ copyright:
 bibliography: ref.bib
 csl: ajps.csl
 link-citations: true
-draft: false
+draft: true
 citation: 
   url: https://stoneneilon.github.io/research/final_core
 ---

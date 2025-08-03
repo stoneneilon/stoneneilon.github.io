@@ -1,5 +1,5 @@
 ---
-title: "Research (In Progress)"
+title: "Research"
 listing: 
   contents: research # all Quarto docs in the `notes` directory will be included on your listing page
   type: table # or `default` or `table`; each type has its own set of yaml options to include
