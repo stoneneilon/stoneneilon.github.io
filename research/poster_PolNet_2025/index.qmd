@@ -1,5 +1,5 @@
 ---
-title: "Does The Built Environment Shape the Presence and Degree of Interpersonal Political Interactions?"
+title: "Do Environments Shape the Presence and Degree of Interpersonal Political Interactions?"
 date: 2025-08-12
 categories: [Poster, Summer 2025] 
 author:
@@ -31,7 +31,6 @@ author:
         state: WI
         url: https://www.wisc.edu/
 abstract: > 
-   Cross-cutting interpersonal interactions have been shown to reduce affective polarization and increase tolerance for different perspectives. And, earlier evidence pointed to the workplace as a particularly effective social setting for fostering these types of social experiences with political difference. However, by many accounts America has grown politically sorted along social, geographical, and lifestyle dimensions, and the Covid-19 pandemic upended many traditional workplace dynamics. These developments lead us ask new questions about where cross-cutting interactions might occur, both in presence and degree. In this paper we look at the relationship between broader built environments and the nature of people's core and bacquaintance networks. Using items placed on modules of the Cooperative Election Study between 2018 and 2024, we look at how different measures of built environments (including walkability, density, and segregation) relate to the amount of exposure to inpartisans and outpartisans people experience in both their core and acquaintance networks.   
 
 keywords:
   - Built Environment
@@ -53,6 +52,18 @@ citation:
 The purpose of this page is to provide any additional information of context that could not be included in the physical poster for PolNet 2025. Some information is repeated from the poster.
 
 # Poster
+
+![](images/PolNet_2025_Poster_FINAL-1.png){fig-align="center"}
+
+## Key Highlights 
+
+-    We theorized two types of environments that can shape interpersonal political interactions: \\textbf{demographic environments} and \\textbf{built environments}.
+
+-   We find significant support for demographic environment effects on core and acquaintance network composition. But find null results for the built environment's influence at various model specifications. We presume this is due to measuring the built environment at the county level.
+
+-   A greater supply of Republicans in a county, increases (decreases) Republican (Democrat) acquaintances.
+
+-   While some research has proclaimed "the death of the local", we show that local environments still influence who and how people talk politics. However, we do not know the degree to which this has changed over time.
 
 ## Data
 
@@ -98,6 +109,26 @@ We provide 23 possible attributes for individuals to describe their acquaintance
 
 ### **National Neighborhood Data Archive**
 
-To extend our further and better account for local environent features, we include a measure of partisan segregation at the county level. The National Neighborhood Data Archive (NaNDA): Voter Registration, Turnout, and Partisanship by County, United States, 2004-2022 can be sourced \[[here](https://www.icpsr.umich.edu/web/ICPSR/studies/38506)\]. We use the variable, **PARTISAN_INDEX_REP**: Republican partisanship index (% votes cast, past 6 years) as our measure of partisan segregation. With an actual measure of partisan segregation, we are able to see how the presence of out-partisans can influence individuals' core and acquaintance network.
+To extend our further and better account for local environent features, we include a measure of partisan segregation at the county level. The National Neighborhood Data Archive (NaNDA): Voter Registration, Turnout, and Partisanship by County, United States, 2004-2022 can be sourced \[[here](https://www.icpsr.umich.edu/web/ICPSR/studies/38506)\]. We use the variable, **PARTISAN_INDEX_REP**: Republican partisanship index (% votes cast, past 6 years) as our measure of partisan makeup of an area. With this, we are able to see how the presence of out-partisans can influence individuals' core and acquaintance network.
+
+## Results 
+
+### Core Network Composition
+
+### Acquaintance Network Composition
+
+### The Built Environment and Network Composition 
+
+## Discussion 
+
+## Limitations 
+
+## Future Research 
+
+Moving forward, we hope to reevaluate our results at different levels of geographical aggregation. We plan to use zip code data provided from the Covid States Project. While zip codes are ultimately postal routes and are certainly far from perfect geographical aggregations, they at least provide a more granular geographic level to study.
+
+In addition, partisan index measure is at the county level. We intend to source a partisan segregation measure at the zip code level to better analyse the partisan demographic environment effect.
+
+Since our measure of walkability is sourced from 2019, we hope to recreate this variable at different time intervals. While this would be a substantial undertaking, the Google Earth engine provides the tools to recreate the walkability index over time. Using this, we can couple already existing survey data with our measure of walkability.
 
 # Bibliography
