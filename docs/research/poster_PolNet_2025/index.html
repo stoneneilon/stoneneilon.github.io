@@ -12,7 +12,7 @@
 <meta name="dcterms.date" content="2025-08-12">
 <meta name="keywords" content="Built Environment, Network">
 
-<title>Stone Neilon - Do Environments Shape the Presence and Degree of Interpersonal Political Interactions?</title>
+<title>Stone Neilon - How Do Environments Shape the Presence and Degree of Interpersonal Political Interactions?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,11 +133,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#poster" id="toc-poster" class="nav-link" data-scroll-target="#poster">Poster</a>
   <ul class="collapse">
   <li><a href="#key-highlights" id="toc-key-highlights" class="nav-link" data-scroll-target="#key-highlights">Key Highlights</a></li>
+  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory">Theory</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
   <ul class="collapse">
+  <li><a href="#core-and-acquaintance-networks-the-covid-states-project" id="toc-core-and-acquaintance-networks-the-covid-states-project" class="nav-link" data-scroll-target="#core-and-acquaintance-networks-the-covid-states-project">Core and Acquaintance Networks: The Covid States Project</a></li>
+  <li><a href="#county-partisan-index" id="toc-county-partisan-index" class="nav-link" data-scroll-target="#county-partisan-index">County Partisan Index</a></li>
   <li><a href="#national-walkability-index" id="toc-national-walkability-index" class="nav-link" data-scroll-target="#national-walkability-index">National Walkability Index</a></li>
-  <li><a href="#covid-states-project-data" id="toc-covid-states-project-data" class="nav-link" data-scroll-target="#covid-states-project-data">Covid States Project Data</a></li>
-  <li><a href="#national-neighborhood-data-archive" id="toc-national-neighborhood-data-archive" class="nav-link" data-scroll-target="#national-neighborhood-data-archive"><strong>National Neighborhood Data Archive</strong></a></li>
+  <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link" data-scroll-target="#descriptive-statistics">Descriptive Statistics</a></li>
   </ul></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
   <ul class="collapse">
@@ -146,10 +148,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-built-environment-and-network-composition" id="toc-the-built-environment-and-network-composition" class="nav-link" data-scroll-target="#the-built-environment-and-network-composition">The Built Environment and Network Composition</a></li>
   </ul></li>
   <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
-  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
   <li><a href="#future-research" id="toc-future-research" class="nav-link" data-scroll-target="#future-research">Future Research</a></li>
   </ul></li>
-  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Bibliography</a></li>
   </ul>
 </nav>
     </div>
@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Do Environments Shape the Presence and Degree of Interpersonal Political Interactions?</h1>
+<h1 class="title">How Do Environments Shape the Presence and Degree of Interpersonal Political Interactions?</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Poster</div>
     <div class="quarto-category">Summer 2025</div>
@@ -240,99 +240,132 @@ ul.task-list li input[type="checkbox"] {
 <section id="key-highlights" class="level2">
 <h2 class="anchored" data-anchor-id="key-highlights">Key Highlights</h2>
 <ul>
-<li><p>We theorized two types of environments that can shape interpersonal political interactions: \textbf{demographic environments} and \textbf{built environments}.</p></li>
-<li><p>We find significant support for demographic environment effects on core and acquaintance network composition. But find null results for the built environment’s influence at various model specifications. We presume this is due to measuring the built environment at the county level.</p></li>
-<li><p>A greater supply of Republicans in a county, increases (decreases) Republican (Democrat) acquaintances.</p></li>
-<li><p>While some research has proclaimed “the death of the local”, we show that local environments still influence who and how people talk politics. However, we do not know the degree to which this has changed over time.</p></li>
+<li><p>We investigate how two types of environments shape interpersonal political interactions: <strong>demographic environments</strong> and <strong>built environments</strong>.</p></li>
+<li><p>We find relationships between the demographic (partisan) environment effects and both core and acquaintance network composition.</p></li>
+<li><p>Individuals residing in counties with more Democrats (Republicans) name more Democrats (Republicans) in their core networks, as well as in their acquaintance networks.</p></li>
+<li><p>We find little support that the built environment – at least as measured – predicts patterns of interpersonal political interaction.</p></li>
+</ul>
+</section>
+<section id="theory" class="level2">
+<h2 class="anchored" data-anchor-id="theory">Theory</h2>
+<p>Today, individuals can form communities irrespective of geography – indeed, the rise of the internet and its concomitant changes in communication have led some to question the importance of the sub-national contexts for political behavior [1]. But scholars have long noted how environments may constrain the choices individuals make about their political interactions [2], and there is still reason to think that offline interactions remain subject to local dynamics.</p>
+<p>Accordingly, we examine how two types of environments potentially shape interpersonal interactions: <strong>Demographic Environments</strong> and <strong>Built Environments</strong>.</p>
+<ul>
+<li><p>Do individuals report more interactions with Republicans (Democrats) if they reside in counties that have more Republicans (Democrats)?</p></li>
+<li><p>Does the walkability of a county determine whether its partisan composition translates into more interactions?</p></li>
 </ul>
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 <p>Below you will find links and further descriptions of the three data sets we use.</p>
+<section id="core-and-acquaintance-networks-the-covid-states-project" class="level3">
+<h3 class="anchored" data-anchor-id="core-and-acquaintance-networks-the-covid-states-project">Core and Acquaintance Networks: The Covid States Project</h3>
+<p>We included questions gauging individuals’ core and acquaintance networks on wave 24 of the Covid States Project (fielded 08/11/2022 to 09/13/2022)</p>
+<ul>
+<li><p><strong>Core network</strong> information was collected via a name generator, and asked individuals to “think about the 3 people living outside your household with whom you have the strongest, closest relationship.”</p></li>
+<li><p><strong>Acquaintance network</strong> information was gathered with an aggregate relational data (“ARD”) battery [e.g.&nbsp;3]: “Think of all the people that you are acquainted with (meaning that you know their name and would stop and talk at least for a moment if you ran into the person on street or in a store). How many of these people are you pretty sure have the following attributes?” We asked about 23 different attributes, but here focus on people who “Identify as Republicans” and people who “Identity as Democrats.”</p></li>
+</ul>
+</section>
+<section id="county-partisan-index" class="level3">
+<h3 class="anchored" data-anchor-id="county-partisan-index">County Partisan Index</h3>
+<p>To capture the demographic environment of each respondent, we source a partisan index at the county level [4]. This index measures the level of Republican partisanship by % votes cast for the past 6 years in each county.</p>
+<p>The National Neighborhood Data Archive (NaNDA): Voter Registration, Turnout, and Partisanship by County, United States, 2004-2022 can be sourced [<a href="https://www.icpsr.umich.edu/web/ICPSR/studies/38506">here</a>]. We use the variable, <strong>PARTISAN_INDEX_REP</strong>: Republican partisanship index (% votes cast, past 6 years) as our measure of partisan makeup of an area. With this, we are able to see how the presence of out-partisans can influence individuals’ core and acquaintance network.</p>
+</section>
 <section id="national-walkability-index" class="level3">
 <h3 class="anchored" data-anchor-id="national-walkability-index">National Walkability Index</h3>
 <p>The National Walkability Index was created in 2019 by the Environmental Protection Agency (EPA). It was a one off project that the EPA does not expect to conduct again. Walkability is measured at the Census block group level. Attached [here] is the official documentation from the EPA for the construction of the walkability index. The index ranges from 1 (lowest walkability) to 20 (highest walkability).</p>
 <p>A Census block group is larger than the smallest Census unit (block). A block group contains multiple Census blocks. The Census tract is the aggregation above a Census block group. A Census tract contains multiple block groups. A Census block group typically contains a population of 600 to 3,000 people. More information regarding Census blocks and block groups can be found [<a href="https://www2.census.gov/geo/pdfs/reference/GARM/Ch11GARM.pdf">here</a>].</p>
 <p>While measured at the Census block group, we chose to aggregate this measure to county level. In other sections of the poster and this memo, we have discussed our reasoning for doing so and are aware of the issues with this geographical unit. Since counties are a Census recognized geographical division, census block groups <em>must</em> fit inside a county. In other words, Census block groups <em>cannot</em> overlap other counties. Since each block group has a 12 digit FIPS code, we simply use the first 5 digits (State + County FIPS) to identify which block groups belong to which county. We then simply group these block groups together by common county and average out their walkability score.</p>
-<p>We provide the distribution of mean county walkability scores below.</p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="mean_county_walkability_histogram.png" class="img-fluid figure-img"></p>
-<figcaption>Mean distribution of county walkability scores</figcaption>
-</figure>
-</div>
 <p>While our measure of walkability was created in 2019, we feel confident in using it for 2022 survey data. We stake our confidence on the simple fact that the built environment does not change rapidly. Construction of just one building can take many years. Our assumption is that between 2019 and 2022, the built environment changes very little. In addition to the simple observation that construction takes considerable time, we also observed construction come to a halt during the Covid-19 pandemic.</p>
 </section>
-<section id="covid-states-project-data" class="level3">
-<h3 class="anchored" data-anchor-id="covid-states-project-data">Covid States Project Data</h3>
-<p>From March 2020, the <a href="https://www.covidstates.org/">Covid States Project</a> samples individuals across all 50 states with the explicit goal of helping researchers understand the links between social behavior and virus transmission.</p>
-<p>We field our module on wave 24 of the Covid States Project, conducted between 08/11/2022 and 09/13/2022. Additional sample augments were used to oversample African American, Asian, and Hispanic respondents.</p>
-<p>The initial data set had 15,000+ respondents. After merging and cleaning, we are left with 14,721 valid observations. The data set is unique in that it provides questions related to an individual’s core <em>and acquaintance</em> network.</p>
-<section id="identifying-core-network" class="level4">
-<h4 class="anchored" data-anchor-id="identifying-core-network">Identifying Core Network</h4>
-<p>To identify an individual’s core network, we asked the following:</p>
-<blockquote class="blockquote">
-<p>[alter] For the next few questions, think about the 3 people living outside your household with whom you have the strongest, closest relationship. You can write their initials below to remind yourself who each person is as you answer the following questions.</p>
-</blockquote>
-<p>After identifying three individuals, the respondent was then asked various questions about their relationship with and perception of those individuals.</p>
-</section>
-<section id="identifying-acquaintance-network" class="level4">
-<h4 class="anchored" data-anchor-id="identifying-acquaintance-network">Identifying Acquaintance Network</h4>
-<p>To identify an individual;s acquaintance network, we asked the following:</p>
-<blockquote class="blockquote">
-<p>[ard] Think of all of the people that you are acquainted with (meaning that you know their name and would stop and talk at least for a moment if you ran into the person on the street or in a store). How many of these people are you pretty certain have the following attributes?</p>
-</blockquote>
-<p>We provide 23 possible attributes for individuals to describe their acquaintance network.</p>
-</section>
-</section>
-<section id="national-neighborhood-data-archive" class="level3">
-<h3 class="anchored" data-anchor-id="national-neighborhood-data-archive"><strong>National Neighborhood Data Archive</strong></h3>
-<p>To extend our further and better account for local environent features, we include a measure of partisan segregation at the county level. The National Neighborhood Data Archive (NaNDA): Voter Registration, Turnout, and Partisanship by County, United States, 2004-2022 can be sourced [<a href="https://www.icpsr.umich.edu/web/ICPSR/studies/38506">here</a>]. We use the variable, <strong>PARTISAN_INDEX_REP</strong>: Republican partisanship index (% votes cast, past 6 years) as our measure of partisan makeup of an area. With this, we are able to see how the presence of out-partisans can influence individuals’ core and acquaintance network.</p>
+<section id="descriptive-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="descriptive-statistics">Descriptive Statistics</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><embed src="combined_desc_plot.pdf" width="496" height="300"></p>
+<figcaption>Descriptive statistics for relevant variables.</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
 <section id="core-network-composition" class="level3">
 <h3 class="anchored" data-anchor-id="core-network-composition">Core Network Composition</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dem_core_patchwork-1.png" class="img-fluid figure-img"></p>
+<figcaption>Democrat Core Network Composition</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="rep_core_patchwork-1.png" class="img-fluid figure-img"></p>
+<figcaption>Republican Core Network Composition</figcaption>
+</figure>
+</div>
 </section>
 <section id="acquaintance-network-composition" class="level3">
 <h3 class="anchored" data-anchor-id="acquaintance-network-composition">Acquaintance Network Composition</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Dem_acq_patchwork-1.png" class="img-fluid figure-img"></p>
+<figcaption>Democrat Acquaintance Network Composition</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Rep_acq_patchwork-1.png" class="img-fluid figure-img"></p>
+<figcaption>Republican Acquaintance Network Composition</figcaption>
+</figure>
+</div>
 </section>
 <section id="the-built-environment-and-network-composition" class="level3">
 <h3 class="anchored" data-anchor-id="the-built-environment-and-network-composition">The Built Environment and Network Composition</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="location_patchwork-1.png" class="img-fluid figure-img"></p>
+<figcaption>Coefficient plots across different model specifications</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="discussion" class="level2">
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
-</section>
-<section id="limitations" class="level2">
-<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>Our analysis suggests the demographic (partisan) environment predicts the partisan composition of both core networks and acquaintance networks. The built environment predicts neither core nor acquaintance networks.</p>
+<p>In <strong>core networks</strong>, we observe a relationship between the number of partisan alters named and the environmental supply of partisans in counties of residence (Figures 2 and 3). The rightmost tiles display the predicted number of partisans' inparty alters from models that include county partisanship, measures of in- and outparty acquaintances, and an interaction between county partisanship and the number of outparty acquaintances. The effects are more additive than interactive – people with more copartisans in their core networks tend to also have more (outparty) acquaintances.</p>
+<p>For <strong>acquaintance networks</strong> (Figures 4 and 5), we find even stronger relationships. As the environmental supply of Republicans increases, Democrats report fewer Democratic acquaintances (the opposite dynamic emerges for Republicans). In the case of acquaintance networks, we see some evidence that the relationship between broader exposure and environmental (county-partisan) supply is conditional on core networks. The rightmost tiles display the predicted number of inparty acquaintances from models that include a measure of outparty acquaintances, county partisanship, the number of outparty core alters, and an interaction between county partisanship and the number of outparty alters. There is some evidence of conditioning for Republicans, with those surrounded by outpartisans in their corenetworks being more responsive to the county context.</p>
+<p>When we include county walkability (Figure 6) in models predicting named acquaintances – and even after stratifying by urban, suburban, and rural location – we find little evidence of built environments structuring reports of interaction, or conditioning relationships with county partisan context. The coefficient plots show specifications that begin with the bivariate relationship between walkability and Democratic acquaintances, before introducing other variables.</p>
+<ul>
+<li><p>The patterns suggest that local environments remain important for structuring interpersonal political interaction.</p></li>
+<li><p>The findings for acquaintances are a reminder that only looking at core networks paints an incomplete picture of social interaction.</p></li>
+<li><p>While we find no effects for the built environment, further inquiry is needed. Physical distance has been shown to matter for network dynamics and demographic exposure [5][6], not to mention political participation [7][8].</p></li>
+<li><p>We suspect that aggregating the built environment measure to the county level mutes considerable variation in local contexts, and more specifically in how respondents experience their local contexts. More granular measures are needed to more effectively study the built environment's effect on interpersonal interaction.</p></li>
+<li><p>We are not able to determine whether these relationships have changed over time.</p></li>
+</ul>
 </section>
 <section id="future-research" class="level2">
 <h2 class="anchored" data-anchor-id="future-research">Future Research</h2>
 <p>Moving forward, we hope to reevaluate our results at different levels of geographical aggregation. We plan to use zip code data provided from the Covid States Project. While zip codes are ultimately postal routes and are certainly far from perfect geographical aggregations, they at least provide a more granular geographic level to study.</p>
-<p>In addition, partisan index measure is at the county level. We intend to source a partisan segregation measure at the zip code level to better analyse the partisan demographic environment effect.</p>
+<p>In addition, partisan index measure is at the county level. We intend to source a partisan index measure at the zip code level to better analyse the partisan demographic environment effect.</p>
 <p>Since our measure of walkability is sourced from 2019, we hope to recreate this variable at different time intervals. While this would be a substantial undertaking, the Google Earth engine provides the tools to recreate the walkability index over time. Using this, we can couple already existing survey data with our measure of walkability.</p>
-</section>
-</section>
-<section id="bibliography" class="level1">
-<h1>Bibliography</h1>
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2025,
   author = {Neilon, Stone and E. Sokhey, Anand and T. Pietryka, Matthew},
-  title = {Do {Environments} {Shape} the {Presence} and {Degree} of
-    {Interpersonal} {Political} {Interactions?}},
+  title = {How {Do} {Environments} {Shape} the {Presence} and {Degree}
+    of {Interpersonal} {Political} {Interactions?}},
   date = {2025-08-12},
   url = {https://stoneneilon.github.io/research/polnet_2025},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-neilon2025" class="csl-entry quarto-appendix-citeas" role="listitem">
-Neilon, Stone, Anand E. Sokhey, and Matthew T. Pietryka. 2025. <span>“Do
-Environments Shape the Presence and Degree of Interpersonal Political
-Interactions?”</span> <a href="https://stoneneilon.github.io/research/polnet_2025">https://stoneneilon.github.io/research/polnet_2025</a>.
+Neilon, Stone, Anand E. Sokhey, and Matthew T. Pietryka. 2025.
+<span>“How Do Environments Shape the Presence and Degree of
+Interpersonal Political Interactions?”</span> <a href="https://stoneneilon.github.io/research/polnet_2025">https://stoneneilon.github.io/research/polnet_2025</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
