@@ -310,7 +310,7 @@ The answer strategy is what we use to summarize the data produced by the data st
 
 # Week 4
 
-## Measurement! 
+## Measurement!
 
 -   We care about the effect of the concept that Z represents on the concept that Y represents
 
