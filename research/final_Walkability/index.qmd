@@ -69,7 +69,9 @@ citation:
 ```
 
 ::: embed-container
-<iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
+<iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px">
+
+</iframe>
 :::
 
 ------------------------------------------------------------------------
