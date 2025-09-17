@@ -15,13 +15,14 @@ image: TK
 draft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-# Political Networks Workshop/Conference 
+# Political Networks Workshop/Conference
 
 ## Day 1 - **Introduction to Network Analysis in R by Michael Heaney**
 
 -   Multimodal Political Networks - good book if i want to learn methods about more than 1 mode. Still not super good.
 
-## Day 1 - Network Visualization with R by [Katya Ognyanova](https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fkateto.net%2F&data=05%7C02%7Cstone.neilon%40colorado.edu%7C6788e3940fd240b691de08ddd6d031ad%7C3ded8b1b070d462982e4c0b019f46057%7C1%7C1%7C638902912093163556%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2B8mKl%2FYs7wW1IaXtizZdU0CW6vL4uSJTW4FD54IP1Bk%3D&reserved=0 "Original URL:
+## Day 1 - Network Visualization with R by \[Katya Ognyanova\](https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fkateto.net%2F&data=05%7C02%7Cstone.neilon%40colorado.edu%7C6788e3940fd240b691de08ddd6d031ad%7C3ded8b1b070d462982e4c0b019f46057%7C1%7C1%7C638902912093163556%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2B8mKl%2FYs7wW1IaXtizZdU0CW6vL4uSJTW4FD54IP1Bk%3D&reserved=0 "Original URL:
+
 https://kateto.net/
 
 Click to follow link.")

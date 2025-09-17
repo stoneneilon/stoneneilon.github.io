@@ -1,0 +1,223 @@
+---
+title: "Applied Econometrics"
+description: "Professor: Brian Cadena"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 01-14-2025
+categories: [Fall, 2025, Methods] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/American_Behavior/
+image: na.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Week 1
+
+-   Period (.) is an NA value.
+
+-   mean of a dummy variable does tell us something.
+
+-   Words in blue is actually just a labeling scheme to another value. This makes it easier to read but still keeping same value.
+
+-   Why do you log? Heteroskedasticity and interpretation.
+
+## Regression Review
+
+-   Regression as an Estimate of the CEF
+
+    -   Conditional Expectation Function E\[y\|x\]
+
+    -   Regression is a way of calculating means for different types of observations with different values of x.
+
+-   We are trying to come up with a CEF that fits a cloud of points.
+
+-   Regression: lets pick a line that minimizes the sum of squared residuals.
+
+-   don't forget the "on average" part when interpreting.
+
+-   the intercept is a specific Conditional expectation value.
+
+-   Constant is the expected value when all values of X are zero. This is why we don't really care about it because it is substantively unimportant.
+
+-   We need to contextualize the size of our coefficient.
+
+-   important to rescale the x variable.
+
+-   **coefficient / standard error = t stat.**
+
+    -   know what null hypothesis is!
+
+    -   in the example: $$t = \frac{\hat{\beta}-0}{se}$$
+
+        -   0 is our null hypothesis.
+
+        -   let's say the null wasn't zero
+
+            -   see slides and do file.
+
+            -   also look at the confidence interval
+
+-   t- stat and p-value are saying the same thing.
+
+-   Start with the null hypothesis being true. If the Null is true then the probability of observing the value we observed is the p-value.
+
+    -   if its null is zero, is it strange to get the coefficient i got?
+
+-   The null hypothesis in a constant is zero. The line goes through the origin is the null basically.
+
+-   iid!
+
+-   homoscedasticity is an important assumption!
+
+    -   its basically never true.
+
+-   standard error is square root of the VCV matrix.
+
+-   What are robust standard errors
+
+    -   robust to heteroskedasticity
+
+        -   robust means resistant/strong.
+
+        -   these are standard errors that are robust even if if our errors have heteroskedasitcity. The standard errors are strong enough.
+
+            -   wont change our coefficients.
+            -   usually when we robust, our SE will get bigger - more conservative in our hypothesis testing.
+
+-   What goes in the omega matrix
+
+    -   residuals squared on the main diagonal and zeros on the off diagonal.
+
+-   We pretty much always use robust standard errors.
+
+    -   reg wage points, robust
+
+        -   this is the code to have robust standard errors.
+
+        -   wont change our betas but will influence our standard errors and t-stats and p-values.
+
+-   The upper and lower bounds of our CI will tell us the values that have exactly a p-value of .05.
+
+-   Don't just look at stars.
+
+-   lincom - take the recent regression, linear combination.
+
+-   Regression output - see do file. for latex just do "tex" for latex output.
+
+### Functional Form Changes
+
+-   suppose we want to log our y
+
+    -   gen logwage = log(wage)
+
+    -   reg logwage points, robust
+
+-   the log salary increase is .09.
+
+    -   proprotional change in y when x goes up by one unit.
+
+        -   so it is percent.
+
+            -   one unit change in x = a 9% change in y
+
+-   Log of constant is pretty lame and irrelevant.
+
+-   Why log y or x?
+
+    -   it doesnt make sense to log variables that are already proportions.
+
+    -   Goal is to approximate CEF with linear form.
+
+        -   the reason people log is because we are trying to approximate the CEF with a linear form!
+
+            -   "I think the real world works in a proportional sense"
+
+                -   does one of those sentences make more sense than the other (log vs non log results)
+
+            -   reasonable shared effect of x on y.
+
+                -   counties grew on average by 15k OR counties grew on average of 2%
+
+### Polynomials of x
+
+-   Why square the x?
+
+-   providing flexibility - don't think of x\^2 as a control
+
+-   $y = \beta_0 + \beta_1x+\beta_2x^2$
+
+    -   $\frac{dy}{dx} = \beta_1+2\beta_2x$
+
+-   Null hypothesis in class example for quadratic is the line straight?
+
+### Categorical variables
+
+-   Cardinal - the numerical value has a meaning
+
+    -   treating an x as continuous imposes cardinality. if you cannot justify that assumption, treat as if unordered.
+
+        -   it doesn't make sense race increases by one unit. Thus, you should always treat as unordered and run as a factor.
+
+-   ordinal -
+
+-   unordered -
+
+F stat - is joint slopes are all equal to 0.
+
+-   Dummy variable trap = include all categories, you get perfect multicollinearity.
+
+    -   non-invertable matrix is what is happening under the hood.
+
+-   What happens if you leave out too many categories?
+
+    -   lets say we leave out two cats
+
+        -   constant is just average of cat1 or cat 2.
+
+        -   interpretation just sucks.
+
+### Interactions
+
+TK MAKE SURE YOU INCLUDE TABLE OUTPUT!
+
+-   Is the relationship between y and x, the same for 2 different groups/subsets/types (or more).
+
+-   the coefficient in female is just the difference compared to the coefficient. (for in class example)
+
+    -   yeared coefficient is the slope for men.
+
+-   the reason we run an interaction is not because we didnt know anyhting among hte coefficients but it is because we are interested in everything after. We know they are different slopes but are they statistically different?
+
+-   take derivative with respect to female.
+
+    -   0 + beta1 + 0 + beta2 yearsed
+
+    -   derivatives are your friend in interactions.
+
+### Control Variables
+
+-   To some extent we actually keep doing bivariate regressions but in a weird way.
+
+-   saying hold this one variable constant.
+
+-   when you say all else equal it insinuates a causal claim.
+
+-   need to standardize coefficients for interpretation.
+
+-   scale of x variable determines the scale of your coefficient.
+
+-   Frisch Waugh Lovel FWL Theorem
+
+    -   aftq on loginc
+
+    -   aftq on years of ed
+
+    -   look closely at multiple regression stata do file.
+
+    -   we are basically running extra regressions.
+
+        -   its not magic - using regressions to purge influence of X2 on X1 and Y.

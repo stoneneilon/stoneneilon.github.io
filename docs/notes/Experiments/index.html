@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stone Neilon">
+<meta name="dcterms.date" content="2025-01-14">
+<meta name="description" content="Professor: Alex Siegel">
+
+<title>Stone Neilon - Experiments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Stone Neilon</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://drive.google.com/file/d/1RgKR73KnxS3K_AP2nqiTiZZzAL-zJZ2N/view?usp=sharing"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#week-1" id="toc-week-1" class="nav-link active" data-scroll-target="#week-1">Week 1</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-theory" id="toc-what-is-a-theory" class="nav-link" data-scroll-target="#what-is-a-theory">What is a Theory?</a></li>
+  <li><a href="#what-is-a-mechanism" id="toc-what-is-a-mechanism" class="nav-link" data-scroll-target="#what-is-a-mechanism">What is a Mechanism?</a></li>
+  <li><a href="#what-is-a-hypothesis" id="toc-what-is-a-hypothesis" class="nav-link" data-scroll-target="#what-is-a-hypothesis">What is a Hypothesis?</a></li>
+  <li><a href="#why-preregister" id="toc-why-preregister" class="nav-link" data-scroll-target="#why-preregister">Why Preregister?</a></li>
+  <li><a href="#activity" id="toc-activity" class="nav-link" data-scroll-target="#activity">Activity:</a></li>
+  </ul></li>
+  <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2">Week 2</a></li>
+  <li><a href="#week-3" id="toc-week-3" class="nav-link" data-scroll-target="#week-3">Week 3</a>
+  <ul class="collapse">
+  <li><a href="#readings-book-chapters" id="toc-readings-book-chapters" class="nav-link" data-scroll-target="#readings-book-chapters">Readings: Book Chapters</a>
+  <ul class="collapse">
+  <li><a href="#mida" id="toc-mida" class="nav-link" data-scroll-target="#mida">MIDA</a></li>
+  </ul></li>
+  <li><a href="#lecture" id="toc-lecture" class="nav-link" data-scroll-target="#lecture">Lecture</a>
+  <ul class="collapse">
+  <li><a href="#declare-design" id="toc-declare-design" class="nav-link" data-scroll-target="#declare-design">Declare Design</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question</a></li>
+  <li><a href="#mida-1" id="toc-mida-1" class="nav-link" data-scroll-target="#mida-1">MIDA</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4">Week 4</a>
+  <ul class="collapse">
+  <li><a href="#measurement" id="toc-measurement" class="nav-link" data-scroll-target="#measurement">Measurement!</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Experiments</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Fall</div>
+    <div class="quarto-category">2025</div>
+    <div class="quarto-category">Methods</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Professor: Alex Siegel
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://stoneneilon.github.io/">Stone Neilon</a> <a href="https://orcid.org/0009-0006-6026-4384" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colorado.edu/polisci/people/graduate-students/stone-neilon">
+            PhD student of political science @ The University of Colorado Boulder
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 14, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="week-1" class="level1">
+<h1>Week 1</h1>
+<p>What is an experiment?</p>
+<ul>
+<li><p>Gold standard for causal inference.</p></li>
+<li><p>Research design and purposefully manipulating a treatment and uses random assignment to create comparable groups, so differences in outcomes can be attributed to the treatment (a causal effect).</p></li>
+</ul>
+<p><strong>Unit</strong>: unit of analysis</p>
+<p><strong>Treatment</strong>: well-defined manipulation with clear versions (dose, timing, delivery, content). Must be implementable and replicable.</p>
+<p><strong>Outcome</strong>: Pre-specified primary measure (behavioral, attitudinal, etc.)</p>
+<p><strong>Assignment mechanism</strong>: the stochastic rule mapping units to treatments (complete, Bernouli, blocked/stratified).</p>
+<p><strong>Randomization</strong>: implementation of the assignment mechanism so that treatment is independent of {Y(1). Y(0)} ( in expectation); enables unbiased diff-in-means and design-based inference.</p>
+<p><strong>Estimand</strong>: The quantity you want to learn from a study (ATE, ITT, LATE, CATE) defined for a population and a contrast between interventions.</p>
+<p><strong>Causal inference:</strong> Is learning how outcomes would change under different, well-defined interventions for specified units, settings, and times.</p>
+<ul>
+<li>How outcomes would change under different treatment effects.</li>
+</ul>
+<p>We can get close to causal inference in lots of ways, but we need to be clear about what our assumptions are.</p>
+<p>Social science theories are almost always causal in nature.</p>
+<p>Manski: data + assumptions = conclusions -&gt; experiments make assumptions clearer and lighter.</p>
+<ul>
+<li><p>Every causal claim rests on assumptions. Experiments makes them explicit and often weaker.</p></li>
+<li><p>SUTVA - Stable unit treatment value assumption</p></li>
+</ul>
+<p>Old way: kitchen-sink regression + causal weasel words (“associated with,” “linked to,” “drives”, “increases”, “predicts”)</p>
+<p><strong>Fundamental Problem of Causal Inference:</strong> For unit i, cannot observe <span class="math inline">\(Y_i(1)\)</span> and <span class="math inline">\(Y_i(0)\)</span> simultaneously</p>
+<p><strong>Good experimental design requires good theory</strong> - <strong>WHAT IS THE MANIPULABLE LEVER</strong></p>
+<section id="what-is-a-theory" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-theory">What is a Theory?</h2>
+<ul>
+<li>A logically coherent explanation of why/how a manipulable cause changes an outcome, within stated scope conditions, yielding testable implications.</li>
+</ul>
+</section>
+<section id="what-is-a-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-mechanism">What is a Mechanism?</h2>
+<ul>
+<li>The sequence of intermediate changes that transmit the effect from cause -&gt; outcome (use verbs: inform -&gt; update beliefs -&gt; shift norms -&gt; act).</li>
+</ul>
+</section>
+<section id="what-is-a-hypothesis" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-hypothesis">What is a Hypothesis?</h2>
+<ul>
+<li>a falsifiable prediction about a causal contrast (treatment vs control) derived from theory.</li>
+</ul>
+</section>
+<section id="why-preregister" class="level2">
+<h2 class="anchored" data-anchor-id="why-preregister">Why Preregister?</h2>
+<ul>
+<li><p>Clarifies the estimand, outcomes, and analysis before seeing data.</p></li>
+<li><p>reduces p-hacking/HARKing and garden of forking paths.</p></li>
+<li><p>increased credibility with reviewers, partners, and future you.</p></li>
+<li><p>make deviations transparent: changes are documented and justified.</p></li>
+<li><p>What counts as preregistration?</p>
+<ul>
+<li><p>a time stamped, accessible record</p></li>
+<li><p>can be a public or embargoed until data collection ends.</p></li>
+<li><p>not a prison: you can amend; just explain why.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="activity" class="level2">
+<h2 class="anchored" data-anchor-id="activity">Activity:</h2>
+<p>Does the walkability of an environment increase voter turnout?</p>
+<p>Yes it was causal</p>
+<p>design: Get a walkability data set and a voter turnout data set and run a regression. Controlling for various factors. Problem - I have endogeneity as people can move and sort themselves - it is possible that people that move to</p>
+<p>Among individuals between the 2016 - 2020 elections, what is the effect of living in a walkable vs.&nbsp;non-walkable area on voter turnout?</p>
+</section>
+</section>
+<section id="week-2" class="level1">
+<h1>Week 2</h1>
+<ul>
+<li><p>Causal questions are always about counterfactuals.</p>
+<ul>
+<li><p>Does the minimum wage increase the unemployment rate?</p>
+<ul>
+<li>Counterfactual: would it have gone up if the increase had not occurred?</li>
+</ul></li>
+</ul></li>
+<li><p>Causal inference = a missing data problem.</p></li>
+<li><p>Political canvassing study example</p></li>
+<li><p>Pretreatment covariates -</p></li>
+<li><p>we want the unit causal effect. However, we don’t have two states of the world for any given person.</p></li>
+<li><p>SATE - sample average treatment effect</p>
+<ul>
+<li><p>average causal effect for the exact units in this study.</p></li>
+<li><p>complete randomization means unbiased for SATE.</p></li>
+</ul></li>
+<li><p>SATT - Sample Average Treatment Effect on the Treated</p>
+<ul>
+<li>RCT (randomized controlled trial)</li>
+</ul></li>
+<li><p>PATE (population ATE)</p></li>
+<li><p>CATE: conditional average treatment effect</p>
+<ul>
+<li><p>heterogeneous effects</p></li>
+<li><p>subgroups.</p></li>
+</ul></li>
+<li><p>Z means assignment to treatment.</p></li>
+<li><p>actual receipt: D (some accept, some don’t)</p>
+<ul>
+<li>someone was assigned to watch a movie (the treatment), however they got a snack and didn’t actually <em>receive it.</em></li>
+</ul></li>
+<li><p>CACE/LATE assumptions:</p>
+<ul>
+<li><p>Random Z (independence)</p></li>
+<li><p>Exclusion: Z affects Y only via D.</p></li>
+<li><p>Monotonicity: no defiers</p></li>
+</ul></li>
+<li><p>DEFINE estimands: ATE/ITT/CACE/CATE clearly.</p></li>
+<li><p>First present ITT first, then CACE with the Wald ratio + SE/CI</p></li>
+<li><p>For CATE: pre-specificy subgroups or honest discovery; show subgroup baselines.</p></li>
+<li><p>Post-treatment adjustment: don’t control for variables affected by D.</p></li>
+<li><p>attrition/truncation: outcomes defined only for a subset</p></li>
+<li><p>Interference: if spillovers likely, redesign or redefine estimand.</p></li>
+<li><p>issue of bundled treatment major issue in like everything i do.</p></li>
+</ul>
+</section>
+<section id="week-3" class="level1">
+<h1>Week 3</h1>
+<section id="readings-book-chapters" class="level2">
+<h2 class="anchored" data-anchor-id="readings-book-chapters">Readings: Book Chapters</h2>
+<section id="mida" class="level3">
+<h3 class="anchored" data-anchor-id="mida">MIDA</h3>
+<section id="model" class="level4">
+<h4 class="anchored" data-anchor-id="model">Model</h4>
+<ul>
+<li><p>The <em>M</em> in <em>MIDA</em>&nbsp;does not necessarily represent our beliefs about how the world actually works. Instead, it describes a set of possible worlds in enough detail that we can assess how our design would perform&nbsp;<em>if</em>&nbsp;the real world worked like those in&nbsp;<em>M</em></p></li>
+<li><p>Examples of models:</p>
+<ul>
+<li><p>Contact theory: When two members of different groups come into contact under specific conditions, they learn more about each other, which reduces prejudice, which in turn reduces discrimination.</p></li>
+<li><p>Prisoner’s dilemma. When facing a collective action problem, each of two people will choose non-cooperative actions independent of what the other will do.</p></li>
+<li><p>Health intervention with externalities. When individuals receive deworming medication, school attendance rates increase for them and for their neighbors, leading to improved labor market outcomes in the long run.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="inquiry" class="level4">
+<h4 class="anchored" data-anchor-id="inquiry">Inquiry</h4>
+<ul>
+<li>Think of inquiry as the question.</li>
+</ul>
+</section>
+<section id="data-strategy" class="level4">
+<h4 class="anchored" data-anchor-id="data-strategy">Data Strategy</h4>
+<ul>
+<li><p>The data strategy is the full set of procedures we use to gather information from the world. The three basic elements of data strategies parallel the three features of inquiries:&nbsp;<em>units</em>&nbsp;are selected,&nbsp;<em>conditions</em> are assigned, and&nbsp;<em>outcomes</em>&nbsp;are measured.</p></li>
+<li><p>What are our sampling procedures? Treatment-assignment procedures? Measurement procedures?</p></li>
+</ul>
+</section>
+<section id="answer-strategy" class="level4">
+<h4 class="anchored" data-anchor-id="answer-strategy">Answer Strategy</h4>
+<p>The answer strategy is what we use to summarize the data produced by the data strategy. Just like the inquiry summarizes a part of the model, the answer strategy summarizes a part of the data.</p>
+<ul>
+<li><p>Multilevel modeling and poststratification</p></li>
+<li><p>Bayesian process tracing</p></li>
+<li><p>Difference-in-means estimation</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="lecture" class="level2">
+<h2 class="anchored" data-anchor-id="lecture">Lecture</h2>
+<section id="declare-design" class="level3">
+<h3 class="anchored" data-anchor-id="declare-design">Declare Design</h3>
+<ul>
+<li><p>Use their package!</p></li>
+<li><p><strong>MI</strong> (theoretical) sets the challenge</p></li>
+<li><p><strong>DA</strong> (empirical) is your response</p></li>
+<li><p>Chapter 18 reread! Very important but dense.</p></li>
+</ul>
+</section>
+<section id="research-question" class="level3">
+<h3 class="anchored" data-anchor-id="research-question">Research Question</h3>
+<ul>
+<li><p>Template: Among <strong>units</strong> in <strong>setting/time</strong>, what is the effect of <strong>A vs B</strong> on <strong>outcome?</strong></p></li>
+<li><p>Think of counterfactual!</p></li>
+<li><p><strong>Hypotheses must match structure of research questions (falsifiable)!</strong></p></li>
+<li><p><strong>MEAN DETECTABLE EFFECT!</strong></p>
+<ul>
+<li>if significant and Mean Detectable Effect equal to or greater than X, what will a policymaker/org do.</li>
+</ul></li>
+</ul>
+</section>
+<section id="mida-1" class="level3">
+<h3 class="anchored" data-anchor-id="mida-1">MIDA</h3>
+<ul>
+<li><p>M: Model- set of plausible worlds.</p></li>
+<li><p>I: Inquiry: the estimands your questions target</p></li>
+<li><p>D: Data Strategy: sampling, assignment, measurement</p>
+<ul>
+<li><p>SAMPLING - who is going to be in your sample</p>
+<ul>
+<li><p>convenience sampling:</p>
+<ul>
+<li><p>non-probability sampling - easy and cheap</p></li>
+<li><p>MTurk/Prolific, campus pools, social ads</p></li>
+<li><p>mechanism or existence of proofs: your testing whether a causal pathway can operate (not how big it is in a target population)</p></li>
+<li><p>Pick a sample that the mechanism might be most likely to detect OR least likely.</p></li>
+<li><p>You get the <strong>SATE of the panel.</strong> External validity is limited.</p></li>
+</ul></li>
+<li><p>Probability/Stratified</p>
+<ul>
+<li><p>units drawn with known inclusion probabilities from a defined frame.</p>
+<ul>
+<li>stratified random sampling: list-based (e.g., voter file/registry)</li>
+</ul></li>
+<li><p>Strength: supports <strong>PATE</strong> with principled weights/post-stratification; clear coverage assumptions.</p></li>
+</ul></li>
+<li><p>Quota/ Balanced Convenience</p>
+<ul>
+<li>non-probability sample with quotes so sample margins match benchmarks</li>
+</ul></li>
+</ul></li>
+<li><p>ASSIGNMENT - who is getting the treatment/control</p>
+<ul>
+<li><p>Complete RA (CRA) - randomize across the full sample to a fixed share; covariate balance holds in expectation</p>
+<ul>
+<li><strong>No strong-priors/ simple baseline? -&gt; Complete RA</strong></li>
+</ul></li>
+<li><p>Blocked/Stratified RA (BRA): Randomize within pre-defined strata so key covaraites are balanced by design.</p>
+<ul>
+<li><p>GOAL: Make units wtihin strata more similar on Y’s drivers -&gt; smaller SEs.</p></li>
+<li><p>Best single choice: a pre-treatment measure of the outcome (lagged turnout, protest score, baseline index)</p></li>
+<li><p>Block for subgroup guarantees you care about to ensure CATE sample sizes.</p></li>
+<li><p>Clustered trials: pair/block on cluster level baselines, cluster size, region.</p></li>
+<li><p>Keep it parsimonious</p></li>
+<li><p><strong>Need precision + good predictors? -&gt; Block Stratify</strong></p></li>
+</ul></li>
+<li><p>Clustered RA: Randomize whole groups (schools, villages, teams) together when delivery or spillovers are group-level.</p>
+<ul>
+<li><strong>Delivery or a interference is group level? -&gt; Cluster.</strong></li>
+</ul></li>
+<li><p>Redistricted/Re-randomization: Draw randomization but only accept those that meet pre–set balance criteria.</p>
+<ul>
+<li><strong>Care about global covariate balances but can’t block finely? -&gt; restricted re-randomization.</strong></li>
+</ul></li>
+<li><p>Stepped-wedge: stagger rollout across periods so everyone is treated by the end; analyze interim contrasts.</p>
+<ul>
+<li><strong>Ethics/logistics require treating all eventually or few units available? -&gt; stepped wedge.</strong></li>
+</ul></li>
+<li><p>Randomized saturation: Randomize cluster-level treatments % (e.g., 25% vs 75%) then assign individauls accordingly to study spillovers.</p>
+<ul>
+<li><strong>Want spillover/saturation effects? -&gt; randomized saturation</strong></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>A: Answer Strategy: estimators, SEs.</p>
+<ul>
+<li><p>Complete RA -&gt; OLS with robust SEs</p></li>
+<li><p>Blocked RA -&gt; block Fixed Effects</p></li>
+<li><p>Clustered RA -&gt; Cluster Robust SEs</p></li>
+<li><p>Probability sample -&gt; survey weights/ post-stratification</p></li>
+<li><p>Noncompliance -&gt; IV/2SLS for CACE.</p></li>
+<li><p>Multiple comparisons: pre-specify families; Bonferroni corrections) if needed.</p></li>
+</ul></li>
+<li><p>POWER ANALYSIS: What it is &amp; why it matters</p>
+<ul>
+<li>Power: the chance your study detects a real effect (returns a significant result when the true effect is at least the size you care about).</li>
+<li>MDE - minimal delectable effect - is it worth it to do the study?</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="week-4" class="level1">
+<h1>Week 4</h1>
+<section id="measurement" class="level2">
+<h2 class="anchored" data-anchor-id="measurement">Measurement!</h2>
+<ul>
+<li><p>We care about the effect of the concept that Z represents on the concept that Y represents</p></li>
+<li><p>Valid inference requires: design validity and measurement validity for both Z and Y.</p></li>
+<li><p>Validity:</p>
+<ul>
+<li><p>content - assess the degree to which an indicator represents the universe of content entailed in the systematized concept being measured.</p></li>
+<li><p>construct - the data behaves like theory predicts</p></li>
+<li><p>convergent - correlates with related measures</p></li>
+<li><p>discriminant -</p></li>
+</ul></li>
+<li><p>Bundled treatment - compound bundles of many things.</p></li>
+<li><p>Define compliance to match the concept (information actually processed, not merely door opened)</p></li>
+<li><p>Manipulation checks - did they understand? comprehension checks. Perception checks, did they notice the attribute? and behavioral probes.</p></li>
+<li><p>Pre-register checks!</p></li>
+<li><p>Hawthorne - knowing you are being observed.</p></li>
+<li><p>non-systematic noise - independent of Z; inflates variance, hurts power.</p></li>
+<li><p>Systematic error - correlated with Z: induces bias.</p></li>
+<li><p>as long as it is not correlated with treatment - we are okay!</p></li>
+<li><p>more noise = more standard error.</p></li>
+<li><p>multiple noise indicators can improve precision</p></li>
+<li><p>Gains: higher correlation with latent construct, tighter CIs, greater power.</p></li>
+<li><p>If X is an index - bundled treatment</p></li>
+</ul>
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2025,
+  author = {Neilon, Stone},
+  title = {Experiments},
+  date = {2025-01-14},
+  url = {https://stoneneilon.github.io/notes/American_Behavior/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-neilon2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Neilon, Stone. 2025. <span>“Experiments.”</span> January 14, 2025. <a href="https://stoneneilon.github.io/notes/American_Behavior/">https://stoneneilon.github.io/notes/American_Behavior/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

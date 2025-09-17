@@ -1,0 +1,137 @@
+---
+title: "Geography"
+description: "Professor: Guofeng Cao"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 01-14-2025
+categories: [Fall, 2025, Methods] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/American_Behavior/
+image: na.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Week 1
+
+-   .gdb is the esri file type. It is messy inside.
+
+-   save as project.
+
+-   .gdb only contains the data
+
+-   project file will contain the changes we make (like the symbology) and what we actually do.
+
+-   Two types of data:
+
+    -   coordinate - pairs or triplets of numbers defining location
+
+    -   atrribute - text, numbers, images (non-spatial data)
+
+-   Spatial objects
+
+    -   points - 0 dimensions
+
+    -   lines - 1 dimensions
+
+    -   areas - 2 dimensions
+
+    -   surfaces
+
+    -   volumes
+
+-   Raster and vector
+
+    -   these are layer types
+
+-   Object view:
+
+    -   discrete objects
+
+        -   buildings, lakes, etc.
+
+-   Field view:
+
+    -   continuously
+
+        -   oceans, terrain
+
+-   raster is a giant matrix basically.
+
+    -   there are cells.
+
+## Bolstad et al:
+
+-   Coordinate Systems:
+
+    -   coordinates are used to define the spatial location and the extent of geographic objects.
+
+-   Digital spatial data:
+
+    -   vector data model: this model uses discrete elements such as points, lines, polygons. to represent geometry of real-world entities.
+
+        -   farm fields, roads, wetlands, cities, and census tracts are examples of entities that are often represented by discrete vector objects.
+        -   poins, lines, polygons.
+
+    -   Raster data model:
+
+        -   grid ceells - think of a matrix.
+
+            -   generally used for continuous variables.
+
+                -   elevation, temperature, slope, average rainfall.
+
+            -   can also be used for scirete features
+
+                -   political units, vegetation.
+
+        -   They have cell dimensions
+
+            -   smaller cells = more detail = more data space on your comp.
+
+    -   the line starting and eding points are often called nodes, and intermediate points used to represent the line shape are called vertices.
+
+# Week 2:
+
+## Understanding Cartographic Scale & Spatial Resolution
+
+-   Map scale:
+
+    -   the ratio between map distance and real world distance
+
+    -   "Amount of reduction in the representation of a real world phenomenon on a map"
+
+    -   Geometric error greater for smaller area
+
+    -   1:250,000 is larger scale than 1:1,000,000
+
+    -   Large scale maps cover small area but more detail ( we assume constant paper size)
+
+-   Resolution:
+
+    -   smallest spatial addressable unit in our representation
+
+        -   smallest unit the map can present
+
+-   Line length decreases with more generalization.
+
+# Week 3:
+
+Datum = reference point.
+
+Longitude was actually very hard to figure out.
+
+Map projection: a means of fitting features from the 3-D globe to a 2-D medium (map, computer screen)
+
+No proper way to represent everything - THERE WILL BE DISTORTIONS.
+
+use UTM zones for specific state maps - this will minimize distortion.
+
+False Nothing
+
+False Easting: 500,000m west of the zone's central meridian
+
+US State Plane Coord system - better for study of states.

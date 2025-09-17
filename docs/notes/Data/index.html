@@ -23,6 +23,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -121,7 +155,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://drive.google.com/file/d/1eZT7KaLsqdW3k4WxoeloMPm_9cdf-9A6/view?usp=sharing"> 
+    <a class="nav-link" href="https://drive.google.com/file/d/1RgKR73KnxS3K_AP2nqiTiZZzAL-zJZ2N/view?usp=sharing"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
@@ -238,6 +272,8 @@ window.Quarto = {
   <li><a href="#interactions-increase-multicollinearity" id="toc-interactions-increase-multicollinearity" class="nav-link" data-scroll-target="#interactions-increase-multicollinearity">Interactions increase multicollinearity</a></li>
   <li><a href="#include-all-constitutive-terms" id="toc-include-all-constitutive-terms" class="nav-link" data-scroll-target="#include-all-constitutive-terms">Include all constitutive terms</a></li>
   <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#interpretation-continued" id="toc-interpretation-continued" class="nav-link" data-scroll-target="#interpretation-continued">Interpretation continued</a></li>
+  <li><a href="#example-case" id="toc-example-case" class="nav-link" data-scroll-target="#example-case">Example Case</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#section-4-basic-questions-you-are-too-afraid-to-ask" id="toc-section-4-basic-questions-you-are-too-afraid-to-ask" class="nav-link" data-scroll-target="#section-4-basic-questions-you-are-too-afraid-to-ask">Section 4: Basic Questions You Are Too Afraid To Ask</a>
@@ -255,6 +291,11 @@ window.Quarto = {
   <li><a href="#what-is-the-difference-between-variance-and-standard-deviation" id="toc-what-is-the-difference-between-variance-and-standard-deviation" class="nav-link" data-scroll-target="#what-is-the-difference-between-variance-and-standard-deviation">What is the difference between variance and standard deviation?</a></li>
   <li><a href="#why-is-ordinary-least-squares-ols-so-powerful" id="toc-why-is-ordinary-least-squares-ols-so-powerful" class="nav-link" data-scroll-target="#why-is-ordinary-least-squares-ols-so-powerful">Why is Ordinary Least Squares (OLS) so powerful?</a></li>
   <li><a href="#when-is-ols-not-good-why-use-other-ones" id="toc-when-is-ols-not-good-why-use-other-ones" class="nav-link" data-scroll-target="#when-is-ols-not-good-why-use-other-ones">When is OLS not good? Why use other ones?</a></li>
+  <li><a href="#mediator-versus-moderator" id="toc-mediator-versus-moderator" class="nav-link" data-scroll-target="#mediator-versus-moderator">Mediator versus Moderator</a>
+  <ul class="collapse">
+  <li><a href="#mediator" id="toc-mediator" class="nav-link" data-scroll-target="#mediator">Mediator:</a></li>
+  <li><a href="#moderator" id="toc-moderator" class="nav-link" data-scroll-target="#moderator">Moderator:</a></li>
+  </ul></li>
   <li><a href="#how-is-standard-error-difference-from-standard-deviation" id="toc-how-is-standard-error-difference-from-standard-deviation" class="nav-link" data-scroll-target="#how-is-standard-error-difference-from-standard-deviation">How is standard error difference from standard deviation?</a></li>
   <li><a href="#are-the-assumptions-about-regression-related-to-the-sample-or-population" id="toc-are-the-assumptions-about-regression-related-to-the-sample-or-population" class="nav-link" data-scroll-target="#are-the-assumptions-about-regression-related-to-the-sample-or-population">Are the assumptions about regression related to the sample or population?</a></li>
   <li><a href="#why-is-it-called-ordinary-least-squares-ols" id="toc-why-is-it-called-ordinary-least-squares-ols" class="nav-link" data-scroll-target="#why-is-it-called-ordinary-least-squares-ols">Why is it called Ordinary Least Squares (OLS)?</a></li>
@@ -271,8 +312,62 @@ window.Quarto = {
   <li><a href="#is-ols-a-causal-inference-model" id="toc-is-ols-a-causal-inference-model" class="nav-link" data-scroll-target="#is-ols-a-causal-inference-model">Is OLS a causal Inference model?</a></li>
   <li><a href="#why-do-we-use-the-normal-distribution" id="toc-why-do-we-use-the-normal-distribution" class="nav-link" data-scroll-target="#why-do-we-use-the-normal-distribution">Why do we use the normal distribution?</a></li>
   </ul></li>
-  <li><a href="#section-5-notation" id="toc-section-5-notation" class="nav-link" data-scroll-target="#section-5-notation">Section 5: Notation</a></li>
-  <li><a href="#section-6-list-of-resources-that-helped-me" id="toc-section-6-list-of-resources-that-helped-me" class="nav-link" data-scroll-target="#section-6-list-of-resources-that-helped-me">Section 6: List of Resources That Helped Me</a></li>
+  <li><a href="#section-7-interpretation-deep-dive" id="toc-section-7-interpretation-deep-dive" class="nav-link" data-scroll-target="#section-7-interpretation-deep-dive">Section 7: Interpretation Deep Dive</a>
+  <ul class="collapse">
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#interpreting-control-variables" id="toc-interpreting-control-variables" class="nav-link" data-scroll-target="#interpreting-control-variables">Interpreting Control Variables</a></li>
+  </ul></li>
+  <li><a href="#section-8-thinking-deeper" id="toc-section-8-thinking-deeper" class="nav-link" data-scroll-target="#section-8-thinking-deeper">Section 8: Thinking Deeper</a>
+  <ul class="collapse">
+  <li><a href="#unbiased-inferences" id="toc-unbiased-inferences" class="nav-link" data-scroll-target="#unbiased-inferences">Unbiased Inferences</a></li>
+  <li><a href="#efficiency" id="toc-efficiency" class="nav-link" data-scroll-target="#efficiency">Efficiency</a></li>
+  <li><a href="#bias-vs.-efficiency" id="toc-bias-vs.-efficiency" class="nav-link" data-scroll-target="#bias-vs.-efficiency">Bias vs.&nbsp;Efficiency</a></li>
+  </ul></li>
+  <li><a href="#section-9-causal-inference" id="toc-section-9-causal-inference" class="nav-link" data-scroll-target="#section-9-causal-inference">Section 9: Causal Inference</a>
+  <ul class="collapse">
+  <li><a href="#readings-associated" id="toc-readings-associated" class="nav-link" data-scroll-target="#readings-associated">Readings Associated:</a></li>
+  <li><a href="#what-is-causal-inference" id="toc-what-is-causal-inference" class="nav-link" data-scroll-target="#what-is-causal-inference">What is Causal Inference?</a></li>
+  <li><a href="#the-fundamental-problem-of-causal-inference" id="toc-the-fundamental-problem-of-causal-inference" class="nav-link" data-scroll-target="#the-fundamental-problem-of-causal-inference">The Fundamental Problem of Causal Inference</a></li>
+  <li><a href="#components-of-causal-inference" id="toc-components-of-causal-inference" class="nav-link" data-scroll-target="#components-of-causal-inference">Components of Causal Inference</a>
+  <ul class="collapse">
+  <li><a href="#identification" id="toc-identification" class="nav-link" data-scroll-target="#identification">Identification</a></li>
+  </ul></li>
+  <li><a href="#identification-strategies" id="toc-identification-strategies" class="nav-link" data-scroll-target="#identification-strategies">Identification Strategies</a></li>
+  </ul></li>
+  <li><a href="#section-9.5-likelihood" id="toc-section-9.5-likelihood" class="nav-link" data-scroll-target="#section-9.5-likelihood">Section 9.5: Likelihood</a>
+  <ul class="collapse">
+  <li><a href="#why-do-we-need-maximum-likelihood" id="toc-why-do-we-need-maximum-likelihood" class="nav-link" data-scroll-target="#why-do-we-need-maximum-likelihood">Why do we need maximum likelihood?</a></li>
+  <li><a href="#the-basic-structure-of-mle" id="toc-the-basic-structure-of-mle" class="nav-link" data-scroll-target="#the-basic-structure-of-mle">The Basic Structure of MLE</a>
+  <ul class="collapse">
+  <li><a href="#stochastic-component" id="toc-stochastic-component" class="nav-link" data-scroll-target="#stochastic-component">Stochastic component</a></li>
+  <li><a href="#systematic-component" id="toc-systematic-component" class="nav-link" data-scroll-target="#systematic-component">Systematic component</a></li>
+  </ul></li>
+  <li><a href="#difference-between-mle-and-ols" id="toc-difference-between-mle-and-ols" class="nav-link" data-scroll-target="#difference-between-mle-and-ols">Difference between MLE and OLS?</a></li>
+  </ul></li>
+  <li><a href="#section-10-generalized-linear-models-glm" id="toc-section-10-generalized-linear-models-glm" class="nav-link" data-scroll-target="#section-10-generalized-linear-models-glm">Section 10: Generalized Linear Models (GLM)</a>
+  <ul class="collapse">
+  <li><a href="#logit" id="toc-logit" class="nav-link" data-scroll-target="#logit">Logit</a>
+  <ul class="collapse">
+  <li><a href="#link-function" id="toc-link-function" class="nav-link" data-scroll-target="#link-function">Link Function:</a></li>
+  <li><a href="#logit-interpretation" id="toc-logit-interpretation" class="nav-link" data-scroll-target="#logit-interpretation">Logit Interpretation</a></li>
+  <li><a href="#can-we-just-use-ols" id="toc-can-we-just-use-ols" class="nav-link" data-scroll-target="#can-we-just-use-ols">Can We Just Use OLS?</a></li>
+  </ul></li>
+  <li><a href="#probit" id="toc-probit" class="nav-link" data-scroll-target="#probit">Probit</a>
+  <ul class="collapse">
+  <li><a href="#probit-interpretation" id="toc-probit-interpretation" class="nav-link" data-scroll-target="#probit-interpretation">Probit Interpretation</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#section-11-model-selection" id="toc-section-11-model-selection" class="nav-link" data-scroll-target="#section-11-model-selection">Section 11: Model Selection</a>
+  <ul class="collapse">
+  <li><a href="#ordinary-least-squares-ols" id="toc-ordinary-least-squares-ols" class="nav-link" data-scroll-target="#ordinary-least-squares-ols">Ordinary Least Squares (OLS)</a></li>
+  <li><a href="#stage-least-squares" id="toc-stage-least-squares" class="nav-link" data-scroll-target="#stage-least-squares">2 Stage Least Squares</a></li>
+  <li><a href="#logit-1" id="toc-logit-1" class="nav-link" data-scroll-target="#logit-1">Logit</a></li>
+  <li><a href="#probit-1" id="toc-probit-1" class="nav-link" data-scroll-target="#probit-1">Probit</a></li>
+  <li><a href="#negative-binomial" id="toc-negative-binomial" class="nav-link" data-scroll-target="#negative-binomial">Negative Binomial</a></li>
+  <li><a href="#poisson" id="toc-poisson" class="nav-link" data-scroll-target="#poisson">Poisson</a></li>
+  <li><a href="#multinomial-logit" id="toc-multinomial-logit" class="nav-link" data-scroll-target="#multinomial-logit">Multinomial Logit</a></li>
+  <li><a href="#ordinal-logit" id="toc-ordinal-logit" class="nav-link" data-scroll-target="#ordinal-logit">Ordinal Logit</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -339,6 +434,7 @@ window.Quarto = {
 <section id="section-1-descriptive-statistics" class="level1">
 <h1>Section 1: Descriptive Statistics</h1>
 <p>While simple, it is critical you understand these. It is okay if you forget (and you will), just remember to keep reviewing. It helps to walk through the formula step by step. I have provided some commentary on the rationale behind the formula in the sections below.</p>
+<p>You should always include descriptive statistics because it convinces your audience that they care. And it provides a guide to interpreting later analysis.</p>
 <section id="mean-average" class="level2">
 <h2 class="anchored" data-anchor-id="mean-average">Mean (Average)</h2>
 <p><span class="math display">\[
@@ -1049,7 +1145,7 @@ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x
 <section id="interactions" class="level2">
 <h2 class="anchored" data-anchor-id="interactions">Interactions:</h2>
 <p>Interactions are used when we believe the relationship is <em>conditional</em>. For example, X causes Y, only if Z is active. The effect of X on Y depends on the level of Z. In other words, the effect of one independent variable on the dependent variable is conditioned by another variable.</p>
-<p>To accommodate a relationship such as this one, we multiply the two variables together rather than adding.</p>
+<p>To accommodate a relationship such as this one, we multiply the two variables together rather than adding. Goal: deterime whether the function <span class="math inline">\(\textbf{E}[y|x]\)</span> is constant for different subsamples.</p>
 <section id="interactions-increase-multicollinearity" class="level3">
 <h3 class="anchored" data-anchor-id="interactions-increase-multicollinearity">Interactions increase multicollinearity</h3>
 <p>THIS IS OKAY.</p>
@@ -1063,6 +1159,107 @@ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x
 <section id="interpretation" class="level3">
 <h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
 <p>When interactions are dichotomous or categorical, interpretation is relatively easy. When the interaction includes a continuous variable, interpretation from the table becomes difficult.</p>
+</section>
+<section id="interpretation-continued" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation-continued">Interpretation continued</h3>
+<p>Focusing on individual coefficients for interaction is not advisable. When a model includes interaction terms, the association between the focal predictor and the outcomes is no longer captured by a single coefficient, but rather by a combination of coefficients. See Rohrer &amp; Bundock Models as Prediction Machines: How to Convert Confusing Coefficients into Clear Quantities.</p>
+</section>
+<section id="example-case" class="level3">
+<h3 class="anchored" data-anchor-id="example-case">Example Case</h3>
+<p>Let’s use the example from applied econometrics.</p>
+<p>Let’s look at the log of wages log(inc95) as our dependent variable and education as our main independent variable. We first restrict our analysis to only females.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># bivariate regression </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>m1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(inc95) <span class="sc">~</span> yeared, <span class="at">data =</span> <span class="fu">subset</span>(nlsy, female <span class="sc">==</span> <span class="dv">1</span>))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = log(inc95) ~ yeared, data = subset(nlsy, female == 
+    1))
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.1738 -0.3063  0.0281  0.3476  2.0734 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 8.036830   0.109053   73.70   &lt;2e-16 ***
+yeared      0.145182   0.007943   18.28   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.5913 on 1608 degrees of freedom
+Multiple R-squared:  0.172, Adjusted R-squared:  0.1715 
+F-statistic: 334.1 on 1 and 1608 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>What does the table tell us? Recall we are only focusing on women!</p>
+<p><strong>Intercept: 8.036830</strong> - This is the average of log earnings of women when years of education is 0.</p>
+<p><strong>yeared: 0.145182</strong> - This is our slope. A one unit increase in years of education increases earnings by 15%.</p>
+<p>Now let’s run the same regression but only on males.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>m2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(inc95) <span class="sc">~</span> yeared, <span class="at">data =</span> <span class="fu">subset</span>(nlsy, female <span class="sc">==</span> <span class="dv">0</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(m2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = log(inc95) ~ yeared, data = subset(nlsy, female == 
+    0))
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.2828 -0.3398  0.0287  0.3482  1.6835 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 8.628191   0.090547   95.29   &lt;2e-16 ***
+yeared      0.128389   0.006577   19.52   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.5932 on 2002 degrees of freedom
+Multiple R-squared:  0.1599,    Adjusted R-squared:  0.1595 
+F-statistic:   381 on 1 and 2002 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>What does the table tell us? Recall we are only focusing on men!</p>
+<p><strong>Intercept: 8.628191 -</strong> This is the average of log earnings of men when years of education is 0.</p>
+<p><strong>yeared: 0.128389</strong> - This is our slope. A one unit increase in years of education increases earnings by 13%.</p>
+<p>What is the point of these simple regressions? This becomes clear once we actually run an interaction. In this conception, our question becomes: Is the effect of education on wages, conditional on gender? We just showed that there are different estimates and intercepts for each. But what we don’t know is that if they are <em>statistically different</em> from each other.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>m3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(inc95) <span class="sc">~</span> yeared<span class="sc">*</span>female, <span class="at">data =</span> nlsy)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(m3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = log(inc95) ~ yeared * female, data = nlsy)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.1738 -0.3107  0.0281  0.3476  2.0734 
+
+Coefficients:
+               Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)    8.628191   0.090417  95.426  &lt; 2e-16 ***
+yeared         0.128389   0.006568  19.548  &lt; 2e-16 ***
+female        -0.591361   0.141812  -4.170 3.12e-05 ***
+yeared:female  0.016793   0.010317   1.628    0.104    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.5924 on 3610 degrees of freedom
+Multiple R-squared:  0.2259,    Adjusted R-squared:  0.2252 
+F-statistic: 351.1 on 3 and 3610 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>Let’s look at this carefully. You may see some numbers that look familiar!</p>
+<p><strong>Intercept: 8.628191</strong> - This the average of log wages when education is 0 <strong><em>for MALES.</em></strong></p>
+<p><strong>yeared: .128389</strong> - a one year increase in education results in a 13% change in wages, <strong><em>for MALES.</em></strong></p>
+<p><strong>female: -0.591361</strong> - now hold on, this is a new number. Actually, it isn’t. Add the intercept (8.628191) to the coefficient of female (-.591361). What do you get? You get <span class="math inline">\(8.03683\)</span>! That should look familiar because it is the intercept we estimated when we just ran the simple bivariate regression when the data was subset to only female. At <code>yeared = 0</code>, women earn <strong>0.591 log points less than men</strong>.</p>
+<p><strong>yeared:female: 0.016793</strong> - While it is a new number, it actually isn’t. This tells us how much the slope differs for female. The slope for male is yeared = .128389. For women, the slope is the male slope plus .016793. What does that equal? .128 + .017 = .145. Is the coefficient of .145 look familiar? It should, because that is exactly the slope coefficient we estimated in m1 earlier.</p>
+<p>But interactions aren’t special for these reasons, they are special because they quantify whether these effects are different for each subsample. Of course, the coefficients are both different but we need to know if they are <em>statistically different.</em> Based off the interaction term, we see a low t-score and a high p-value, indicating that we fail to reject the null hypothesis that the effect of education on wages is the same for male and female. However, even if we have significance, it is important to plot it. Just looking at the table will not tell us <em>where</em> the slopes are statistically different from each other.</p>
 </section>
 </section>
 </section>
@@ -1120,6 +1317,17 @@ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x
 <ol type="1">
 <li>OLS is not good with a categorical dependent variable.</li>
 </ol>
+</section>
+<section id="mediator-versus-moderator" class="level2">
+<h2 class="anchored" data-anchor-id="mediator-versus-moderator">Mediator versus Moderator</h2>
+<section id="mediator" class="level3">
+<h3 class="anchored" data-anchor-id="mediator">Mediator:</h3>
+<p>A mediator explains how an independent variable predicts an outcome, outlining the causal mechanism. A mediator tells us why or how something works.</p>
+</section>
+<section id="moderator" class="level3">
+<h3 class="anchored" data-anchor-id="moderator">Moderator:</h3>
+<p>A moderator variable changes the strength or direction of a relationship between two variables. Moderators tell us when or for whom something works. Influences the <em>strength</em> of a relationship. The built environment is a moderator for how people interact, it influences the nature and strength of interaction. But it does not explain how people interact.</p>
+</section>
 </section>
 <section id="how-is-standard-error-difference-from-standard-deviation" class="level2">
 <h2 class="anchored" data-anchor-id="how-is-standard-error-difference-from-standard-deviation">How is standard error difference from standard deviation?</h2>
@@ -1180,6 +1388,7 @@ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x
 <section id="why-should-we-use-an-instrumental-variable" class="level3">
 <h3 class="anchored" data-anchor-id="why-should-we-use-an-instrumental-variable">Why should we use an instrumental variable?</h3>
 <p>The need for an instrumental variable arises when we are concerned for confounding variables or measurement error.</p>
+<p>Most of the time these suck. You need to defend them rigorously with theory and even then are hard. Rainfall is one that is used in many cases with success. If asked to use one, the classic rainfall instrumental variable might work.</p>
 </section>
 </section>
 <section id="should-we-care-about-r2" class="level2">
@@ -1187,6 +1396,7 @@ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x
 <p>It depends on your question. Chances are you want to find some variable (X) that causes another variable (Y). In this instance, your <span class="math inline">\(R^2\)</span> is mostly irrelevant. You want to see whether that X variable is statistically having an effect on your Y variable. For example, my data 1 project was on the relationship between walkability and voter turnout. I wanted to see if the walkability of an area had an impact on voter turnout in 2016, 2018, and 2020 general elections. Once I accounted for confounding variables, all I cared about was the significance of my variable of interest (walkability). <span class="math inline">\(R^2\)</span> told me nothing that helped me answer this question.&nbsp;</p>
 <p>However, R^2 is very important for questions surrounding prediction. TK</p>
 <p>Also we should focus on adjusted R^2</p>
+<p>We are in the business of beta hats not y hats.</p>
 </section>
 <section id="everyone-talks-about-endogeneity.-what-is-it" class="level2">
 <h2 class="anchored" data-anchor-id="everyone-talks-about-endogeneity.-what-is-it">Everyone talks about endogeneity. What is it?!</h2>
@@ -1206,13 +1416,235 @@ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x
 <h2 class="anchored" data-anchor-id="why-do-we-use-the-normal-distribution">Why do we use the normal distribution?</h2>
 </section>
 </section>
-<section id="section-5-notation" class="level1">
-<h1>Section 5: Notation</h1>
+<section id="section-7-interpretation-deep-dive" class="level1">
+<h1>Section 7: Interpretation Deep Dive</h1>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
 </section>
-<section id="section-6-list-of-resources-that-helped-me" class="level1">
-<h1>Section 6: List of Resources That Helped Me</h1>
+<section id="interpreting-control-variables" class="level2">
+<h2 class="anchored" data-anchor-id="interpreting-control-variables">Interpreting Control Variables</h2>
+<p>Our model, of whatever specification, will likely include numerous control variables. Each of these variables included will have their own coefficient estimated. Of course, we have our main IV, but should we bother to interpret the other variables in our model? No.&nbsp;This is known as the “Table 2 fallacy”.</p>
+</section>
+</section>
+<section id="section-8-thinking-deeper" class="level1">
+<h1>Section 8: Thinking Deeper</h1>
+<section id="unbiased-inferences" class="level2">
+<h2 class="anchored" data-anchor-id="unbiased-inferences">Unbiased Inferences</h2>
+<p>“If we apply a method of inference again and again, we will get estimates that are sometimes too small. Across a large number of applications, do we get the right answer <em>on average</em>? If yes, then this method, or estimator, is said to be <strong><em>unbiased.</em></strong>” - KKV</p>
+<p>Bias occurs when there is a systematic error in the measure that shifts the estimate more in on e direction than another over a set of replications. Note there is <em>statistical bias</em> and <em>substantive bias.</em></p>
+<p>An estimator of <span class="math inline">\(\mu\)</span> is said to be unbiased if it equals <span class="math inline">\(\mu\)</span> on average over many hypothetical replications of the same experiment.</p>
+</section>
+<section id="efficiency" class="level2">
+<h2 class="anchored" data-anchor-id="efficiency">Efficiency</h2>
+<p>We generally only get to estimate once. We want confidence that the one estimate we get is close to the right one.</p>
+<p>Efficiency is measured by calculating the variance of the estimator across hypothetical replications. For unbiased estimators, the smaller the variance, the more efficient (the better) the estimator.</p>
+</section>
+<section id="bias-vs.-efficiency" class="level2">
+<h2 class="anchored" data-anchor-id="bias-vs.-efficiency">Bias vs.&nbsp;Efficiency</h2>
+<p>It is a tradeoff!</p>
+</section>
+</section>
+<section id="section-9-causal-inference" class="level1">
+<h1>Section 9: Causal Inference</h1>
+<section id="readings-associated" class="level2">
+<h2 class="anchored" data-anchor-id="readings-associated">Readings Associated:</h2>
+<ol type="1">
+<li>Keele, Luke. 2015. “The Statistics of Causal Inference: A View from Political Methodology.” Political Analysis 23(3): 313–335</li>
+<li></li>
+</ol>
+</section>
+<section id="what-is-causal-inference" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-causal-inference">What is Causal Inference?</h2>
+<p>Causality refers to the realtional concept where on set of events causes another. Causal inference is the process by which we make claims about causal relationships. Testing causality is done udner the counterfactual model, that is, causation is defined in terms of observable and unobservable events.</p>
+<p>Why should we are about the counterfactual model and how is this different from statistics broadly?</p>
+<ol type="1">
+<li>the counterfactual approach has provided new insighs in the assumptions needed for data to be informative about causality.</li>
+<li>a renewed emphasis on research design and design-based appraoch.</li>
+</ol>
+</section>
+<section id="the-fundamental-problem-of-causal-inference" class="level2">
+<h2 class="anchored" data-anchor-id="the-fundamental-problem-of-causal-inference">The Fundamental Problem of Causal Inference</h2>
+<p>It is actually very difficult to say on thing actually caused another. Why? Because we can never observe the real counterfactual. We live in one universe. You cannot observe someone taking both the treatment and placebo pill. You only see the universe in which they took one or the other.</p>
+</section>
+<section id="components-of-causal-inference" class="level2">
+<h2 class="anchored" data-anchor-id="components-of-causal-inference">Components of Causal Inference</h2>
+<section id="identification" class="level3">
+<h3 class="anchored" data-anchor-id="identification">Identification</h3>
+<p>We say a parameter in a model is identified if it is theoretically possible to learn the true value of that parameter with an infinite number of observations. We seek to describe the <em>conclusions</em> that can be drawn with an infinite sample. Inference requires two components: identification and statistical. Studies of statistical inference on the other hand focus on what can be learned with finite samples. The causal identification step is important to see if it’s possible to estimate the effect of <em>Treatment</em> on <em>Outcome</em>.</p>
+<section id="estimands" class="level4">
+<h4 class="anchored" data-anchor-id="estimands">Estimands</h4>
+<p>What is an estimand. You can think of them as an inquiry. However, the inquiry is the function that operates on events generated by the real world or a simulated world. The estimand is the value of that function. We use “inquiry” to refer to the question and “estimand” to refer to the answer to the question.</p>
+<p>Average Treatment Effect (ATE): <span class="math inline">\(ATE=\mathbb{E}[Y_{i1} -Y_{i0}]\)</span></p>
+<ul>
+<li>The ATE is the average difference in the pair of potential outcomes average over the entire population of interest.</li>
+</ul>
+<p>Average Treatment Effect of the Treated (ATT): <span class="math inline">\(ATT=\mathbb{E}[Y_{i1} -Y_{i0} |D_i=1]\)</span></p>
+<ul>
+<li><p>The ATE defined for the subpopulation exposed to the treatment</p>
+<ul>
+<li>We might average over subpopulations defined by pretreatment covariates such as sex and estimate the ATE for females only = ATT.</li>
+</ul></li>
+</ul>
+</section>
+<section id="threats-to-identification" class="level4">
+<h4 class="anchored" data-anchor-id="threats-to-identification">Threats to Identification</h4>
+<p>Confounding due to a common cause</p>
+<p>Confounding due to a common effect</p>
+</section>
+<section id="assumptions" class="level4">
+<h4 class="anchored" data-anchor-id="assumptions">Assumptions</h4>
+<ol type="1">
+<li>Assumption of independence between treatment and potential outcomes.</li>
+<li>The stable unit treatment value assumption (SUTVA) - Rubin 1986
+<ol type="1">
+<li>there are no hidden forms of treatment, which implies that for for unit <span class="math inline">\(i\)</span> under <span class="math inline">\(D_i=d\)</span>, we assume that <span class="math inline">\(Y_{id}=Y_i\)</span>
+<ol type="1">
+<li>AKA the consistency assumption</li>
+</ol></li>
+<li>a subject’s potential outcome is not affected by other subjects’ exposure to the treatment.
+<ol type="1">
+<li>This is a big problem and must be avoided - think of it as contamination. Your no longer looking at treated vs.&nbsp;control but now between a treated unit and partially treated unit.
+<ol type="1">
+<li>if we have no knowledge of these spillovers, causal parameters cannot be identified.</li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="identification-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="identification-strategies">Identification Strategies</h2>
+<p>A research design intended to solve the causal inference identification problem (Angrist and Pischke 2010). To ask what is your identification strategy IS to ask what research design (and assumptions) one intends to use for the indemnification of a causal effect.</p>
+<section id="random-experiments" class="level4">
+<h4 class="anchored" data-anchor-id="random-experiments">Random Experiments</h4>
+<p>Randomize recipients of treatment. The typical estimand is the ATE (equivalent in this to the ATT).</p>
+<ul>
+<li><p>Critical strength of experiments is that the researcher has the ability to impose independence between treatment status and potential outcomes on a set of units because they can impose a particular type of assignment process.</p>
+<ul>
+<li>The researcher can assert that the treated and control groups will be identical in all respects, observable and unobserervable. EXCEPT for who got the treatment which is known.</li>
+</ul></li>
+</ul>
+</section>
+<section id="natural-experiments" class="level4">
+<h4 class="anchored" data-anchor-id="natural-experiments">Natural Experiments</h4>
+</section>
+<section id="instrumental-variables" class="level4">
+<h4 class="anchored" data-anchor-id="instrumental-variables">Instrumental Variables</h4>
+</section>
+<section id="regression-discontinuity-designs" class="level4">
+<h4 class="anchored" data-anchor-id="regression-discontinuity-designs">Regression Discontinuity Designs</h4>
+</section>
+<section id="selection-on-observables" class="level4">
+<h4 class="anchored" data-anchor-id="selection-on-observables">Selection on Observables</h4>
+</section>
+<section id="selection-on-observables-with-temporal-data" class="level4">
+<h4 class="anchored" data-anchor-id="selection-on-observables-with-temporal-data">Selection on Observables with Temporal Data</h4>
+</section>
+<section id="partial-identification" class="level4">
+<h4 class="anchored" data-anchor-id="partial-identification">Partial Identification</h4>
+</section>
+<section id="mediation-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="mediation-analysis">Mediation Analysis</h4>
+</section>
+<section id="reasoning-about-assumptions" class="level4">
+<h4 class="anchored" data-anchor-id="reasoning-about-assumptions">Reasoning About Assumptions</h4>
+</section>
+</section>
+</section>
+<section id="section-9.5-likelihood" class="level1">
+<h1>Section 9.5: Likelihood</h1>
+<p>The principle of maximum likelihood is based on the idea that the observed data (even if it is not a random sample) are more likely to have come about as a result of a particular set of parameters. Thus, we flip the problem on its head. <em>Rather than consider the data as random and the parameters as fixed, the principle of maximum likelihood treats the observed data as fixed and asks: “What parameter values are most likely to have generated the data?”</em> Thus, the parameters are random variables.</p>
+<p>The key innovation in the likelihood framework is treating the observed data as fixed and asking what combination of probability model and parameter values are the most likely to have generated these specific data.</p>
+<section id="why-do-we-need-maximum-likelihood" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-we-need-maximum-likelihood">Why do we need maximum likelihood?</h2>
+<p>We use it anytime our dependent variables has a distribution that was not generated by a Gaussian (normal) process. We are trying to estimate the <span class="math inline">\(\theta\)</span> (parameter) values based on the data we have been given.</p>
+</section>
+<section id="the-basic-structure-of-mle" class="level2">
+<h2 class="anchored" data-anchor-id="the-basic-structure-of-mle">The Basic Structure of MLE</h2>
+<section id="stochastic-component" class="level3">
+<h3 class="anchored" data-anchor-id="stochastic-component">Stochastic component</h3>
+<p>Stochastic component: <span class="math inline">\(Y_i\sim f(\theta_i)\)</span></p>
+<p>Here, <span class="math inline">\(f\)</span> is some probability distribution or mass function. These can be Gaussian, binomial, Poisson, Weibull, etc. The stochastic statement describes our assumptions about the probability distributions that govern our data-generating process.</p>
+</section>
+<section id="systematic-component" class="level3">
+<h3 class="anchored" data-anchor-id="systematic-component">Systematic component</h3>
+<p>Systematic component: <span class="math inline">\(\theta_i = \beta_0+ \beta_1x_i\)</span></p>
+<p>The systematic statement describes our model for the parameters of the assumed probability distribution.</p>
+</section>
+</section>
+<section id="difference-between-mle-and-ols" class="level2">
+<h2 class="anchored" data-anchor-id="difference-between-mle-and-ols">Difference between MLE and OLS?</h2>
+<p>They are equivalent, and the OLS estimator can be derived under weaker assumptions. But the OLS approach assumes a linear model and unbounded, continuous outcome. The linear model is a good one, but the world around can be both nonlinear and bounded. The ML approach permits us to specify nonlinear models quite easily if warranted by either our theory or data. The flexibility to model categorical and vounded variables is a benefit of the maximum likelihood approach.</p>
+</section>
+</section>
+<section id="section-10-generalized-linear-models-glm" class="level1">
+<h1>Section 10: Generalized Linear Models (GLM)</h1>
+<section id="logit" class="level2">
+<h2 class="anchored" data-anchor-id="logit">Logit</h2>
+<p>Models the probability of an event. Dependent variable is binary (0 or 1). The logit is a cumulative density function</p>
+<section id="link-function" class="level3">
+<h3 class="anchored" data-anchor-id="link-function">Link Function:</h3>
+<p><span class="math display">\[
+f(x) = \frac{1}{1+e^{-X_i\beta}}
+\]</span></p>
+</section>
+<section id="logit-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="logit-interpretation">Logit Interpretation</h3>
+</section>
+<section id="can-we-just-use-ols" class="level3">
+<h3 class="anchored" data-anchor-id="can-we-just-use-ols">Can We Just Use OLS?</h3>
+<ul>
+<li><p>You could. In fact, many (mostly economists) argue that this is economical and won’t be too much different.</p>
+<ul>
+<li><p>Linear interpretations of betas</p></li>
+<li><p>simple</p></li>
+<li><p>Works well if <span class="math inline">\(X_i\)</span> is also distributed Bernoulli</p></li>
+</ul></li>
+<li><p>Problems:</p>
+<ul>
+<li><p>impossible predictions</p></li>
+<li><p>TK</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="probit" class="level2">
+<h2 class="anchored" data-anchor-id="probit">Probit</h2>
+<section id="probit-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="probit-interpretation">Probit Interpretation</h3>
+</section>
+</section>
+</section>
+<section id="section-11-model-selection" class="level1">
+<h1>Section 11: Model Selection</h1>
+<p>This section is intended for application purposes. What model do we used based on our data and application purpose? The bulk of this decision is driven by the structure of our data, specifically the dependent variable.</p>
+<section id="ordinary-least-squares-ols" class="level2">
+<h2 class="anchored" data-anchor-id="ordinary-least-squares-ols">Ordinary Least Squares (OLS)</h2>
+</section>
+<section id="stage-least-squares" class="level2">
+<h2 class="anchored" data-anchor-id="stage-least-squares">2 Stage Least Squares</h2>
+</section>
+<section id="logit-1" class="level2">
+<h2 class="anchored" data-anchor-id="logit-1">Logit</h2>
+</section>
+<section id="probit-1" class="level2">
+<h2 class="anchored" data-anchor-id="probit-1">Probit</h2>
+</section>
+<section id="negative-binomial" class="level2">
+<h2 class="anchored" data-anchor-id="negative-binomial">Negative Binomial</h2>
+</section>
+<section id="poisson" class="level2">
+<h2 class="anchored" data-anchor-id="poisson">Poisson</h2>
+</section>
+<section id="multinomial-logit" class="level2">
+<h2 class="anchored" data-anchor-id="multinomial-logit">Multinomial Logit</h2>
+</section>
+<section id="ordinal-logit" class="level2">
+<h2 class="anchored" data-anchor-id="ordinal-logit">Ordinal Logit</h2>
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,

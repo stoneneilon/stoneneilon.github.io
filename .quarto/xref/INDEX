@@ -115,5 +115,17 @@
   },
   "notes/Networks_POLNET/index.qmd": {
     "index.html": "e96a7516"
+  },
+  "research/test/test.qmd": {
+    "test.html": "dc2efb0d"
+  },
+  "notes/Experiments/index.qmd": {
+    "index.html": "6de93913"
+  },
+  "notes/Microecon/index.qmd": {
+    "index.html": "7405d4cc"
+  },
+  "notes/Geography/index.qmd": {
+    "index.html": "f0ad5db5"
   }
 }

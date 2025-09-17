@@ -25,6 +25,8 @@ Reminder: These are notes and do not encompass every idea or detail associated w
 
 While simple, it is critical you understand these. It is okay if you forget (and you will), just remember to keep reviewing. It helps to walk through the formula step by step. I have provided some commentary on the rationale behind the formula in the sections below.
 
+You should always include descriptive statistics because it convinces your audience that they care. And it provides a guide to interpreting later analysis.
+
 ## Mean (Average)
 
 $$
@@ -672,7 +674,7 @@ I emailed Andy about this and figured it might be beneficial to include it here.
 
 Interactions are used when we believe the relationship is *conditional*. For example, X causes Y, only if Z is active. The effect of X on Y depends on the level of Z. In other words, the effect of one independent variable on the dependent variable is conditioned by another variable.
 
-To accommodate a relationship such as this one, we multiply the two variables together rather than adding.
+To accommodate a relationship such as this one, we multiply the two variables together rather than adding. Goal: deterime whether the function $\textbf{E}[y|x]$ is constant for different subsamples.
 
 ### Interactions increase multicollinearity
 
@@ -689,6 +691,68 @@ It is essential that you include the constitutive terms and the interaction in t
 ### Interpretation
 
 When interactions are dichotomous or categorical, interpretation is relatively easy. When the interaction includes a continuous variable, interpretation from the table becomes difficult.
+
+### Interpretation continued
+
+Focusing on individual coefficients for interaction is not advisable. When a model includes interaction terms, the association between the focal predictor and the outcomes is no longer captured by a single coefficient, but rather by a combination of coefficients. See Rohrer & Bundock Models as Prediction Machines: How to Convert Confusing Coefficients into Clear Quantities.
+
+### Example Case
+
+Let's use the example from applied econometrics.
+
+```{r, echo=FALSE, output = FALSE}
+library(haven)
+setwd("~/Stone_Website/notes/Data")
+nlsy <- read_dta("nlsy.dta")
+
+```
+
+Let's look at the log of wages log(inc95) as our dependent variable and education as our main independent variable. We first restrict our analysis to only females.
+
+```{r}
+# bivariate regression 
+
+m1 <- lm(log(inc95) ~ yeared, data = subset(nlsy, female == 1))
+summary(m1)
+```
+
+What does the table tell us? Recall we are only focusing on women!
+
+**Intercept: 8.036830** - This is the average of log earnings of women when years of education is 0.
+
+**yeared: 0.145182** - This is our slope. A one unit increase in years of education increases earnings by 15%.
+
+Now let's run the same regression but only on males.
+
+```{r}
+m2 <- lm(log(inc95) ~ yeared, data = subset(nlsy, female == 0))
+summary(m2)
+```
+
+What does the table tell us? Recall we are only focusing on men!
+
+**Intercept: 8.628191 -** This is the average of log earnings of men when years of education is 0.
+
+**yeared: 0.128389** - This is our slope. A one unit increase in years of education increases earnings by 13%.
+
+What is the point of these simple regressions? This becomes clear once we actually run an interaction. In this conception, our question becomes: Is the effect of education on wages, conditional on gender? We just showed that there are different estimates and intercepts for each. But what we don't know is that if they are *statistically different* from each other.
+
+```{r}
+m3 <- lm(log(inc95) ~ yeared*female, data = nlsy)
+summary(m3)
+```
+
+Let's look at this carefully. You may see some numbers that look familiar!
+
+**Intercept: 8.628191** - This the average of log wages when education is 0 ***for MALES.***
+
+**yeared: .128389** - a one year increase in education results in a 13% change in wages, ***for MALES.***
+
+**female: -0.591361** - now hold on, this is a new number. Actually, it isn't. Add the intercept (8.628191) to the coefficient of female (-.591361). What do you get? You get $8.03683$! That should look familiar because it is the intercept we estimated when we just ran the simple bivariate regression when the data was subset to only female. At `yeared = 0`, women earn **0.591 log points less than men**.
+
+**yeared:female: 0.016793** - While it is a new number, it actually isn't. This tells us how much the slope differs for female. The slope for male is yeared = .128389. For women, the slope is the male slope plus .016793. What does that equal? .128 + .017 = .145. Is the coefficient of .145 look familiar? It should, because that is exactly the slope coefficient we estimated in m1 earlier.
+
+But interactions aren't special for these reasons, they are special because they quantify whether these effects are different for each subsample. Of course, the coefficients are both different but we need to know if they are *statistically different.* Based off the interaction term, we see a low t-score and a high p-value, indicating that we fail to reject the null hypothesis that the effect of education on wages is the same for male and female. However, even if we have significance, it is important to plot it. Just looking at the table will not tell us *where* the slopes are statistically different from each other.
 
 # Section 4: Basic Questions You Are Too Afraid To Ask
 
@@ -747,6 +811,16 @@ Despite its power, OLS has shortfalls. However, it is still important to know OL
 OLS has numerous advantages. However, OLS has shortfalls that other methods can fix/correct.
 
 1.  OLS is not good with a categorical dependent variable.
+
+## Mediator versus Moderator
+
+### Mediator:
+
+A mediator explains how an independent variable predicts an outcome, outlining the causal mechanism. A mediator tells us why or how something works.
+
+### Moderator:
+
+A moderator variable changes the strength or direction of a relationship between two variables. Moderators tell us when or for whom something works. Influences the *strength* of a relationship. The built environment is a moderator for how people interact, it influences the nature and strength of interaction. But it does not explain how people interact.
 
 ## How is standard error difference from standard deviation?
 
@@ -808,6 +882,8 @@ It is very difficult to find an instrument that is both related to X and does no
 
 The need for an instrumental variable arises when we are concerned for confounding variables or measurement error.
 
+Most of the time these suck. You need to defend them rigorously with theory and even then are hard. Rainfall is one that is used in many cases with success. If asked to use one, the classic rainfall instrumental variable might work.
+
 ## Should we care about $R^2$?
 
 It depends on your question. Chances are you want to find some variable (X) that causes another variable (Y). In this instance, your $R^2$ is mostly irrelevant. You want to see whether that X variable is statistically having an effect on your Y variable. For example, my data 1 project was on the relationship between walkability and voter turnout. I wanted to see if the walkability of an area had an impact on voter turnout in 2016, 2018, and 2020 general elections. Once I accounted for confounding variables, all I cared about was the significance of my variable of interest (walkability). $R^2$ told me nothing that helped me answer this question. 
@@ -815,6 +891,8 @@ It depends on your question. Chances are you want to find some variable (X) that
 However, R\^2 is very important for questions surrounding prediction. TK
 
 Also we should focus on adjusted R\^2
+
+We are in the business of beta hats not y hats.
 
 ## Everyone talks about endogeneity. What is it?!
 
@@ -834,6 +912,200 @@ Simply put, orthogonality means "uncorrelated". An orthogonal model means that a
 
 ## Why do we use the normal distribution?
 
-# Section 5: Notation
+# Section 7: Interpretation Deep Dive
 
-# Section 6: List of Resources That Helped Me
+### Example
+
+```{r}
+
+```
+
+## Interpreting Control Variables
+
+Our model, of whatever specification, will likely include numerous control variables. Each of these variables included will have their own coefficient estimated. Of course, we have our main IV, but should we bother to interpret the other variables in our model? No. This is known as the "Table 2 fallacy".
+
+# Section 8: Thinking Deeper
+
+## Unbiased Inferences
+
+"If we apply a method of inference again and again, we will get estimates that are sometimes too small. Across a large number of applications, do we get the right answer *on average*? If yes, then this method, or estimator, is said to be ***unbiased.***" - KKV
+
+Bias occurs when there is a systematic error in the measure that shifts the estimate more in on e direction than another over a set of replications. Note there is *statistical bias* and *substantive bias.*
+
+An estimator of $\mu$ is said to be unbiased if it equals $\mu$ on average over many hypothetical replications of the same experiment.
+
+## Efficiency
+
+We generally only get to estimate once. We want confidence that the one estimate we get is close to the right one.
+
+Efficiency is measured by calculating the variance of the estimator across hypothetical replications. For unbiased estimators, the smaller the variance, the more efficient (the better) the estimator.
+
+## Bias vs. Efficiency
+
+It is a tradeoff!
+
+# Section 9: Causal Inference
+
+## Readings Associated:
+
+1.  Keele, Luke. 2015. "The Statistics of Causal Inference: A View from Political Methodology." Political Analysis 23(3): 313--335
+2.  
+
+## What is Causal Inference?
+
+Causality refers to the realtional concept where on set of events causes another. Causal inference is the process by which we make claims about causal relationships. Testing causality is done udner the counterfactual model, that is, causation is defined in terms of observable and unobservable events.
+
+Why should we are about the counterfactual model and how is this different from statistics broadly?
+
+1.  the counterfactual approach has provided new insighs in the assumptions needed for data to be informative about causality.
+2.  a renewed emphasis on research design and design-based appraoch.
+
+## The Fundamental Problem of Causal Inference
+
+It is actually very difficult to say on thing actually caused another. Why? Because we can never observe the real counterfactual. We live in one universe. You cannot observe someone taking both the treatment and placebo pill. You only see the universe in which they took one or the other.
+
+## Components of Causal Inference
+
+### Identification
+
+We say a parameter in a model is identified if it is theoretically possible to learn the true value of that parameter with an infinite number of observations. We seek to describe the *conclusions* that can be drawn with an infinite sample. Inference requires two components: identification and statistical. Studies of statistical inference on the other hand focus on what can be learned with finite samples. The causal identification step is important to see if it's possible to estimate the effect of *Treatment* on *Outcome*.
+
+#### Estimands
+
+What is an estimand. You can think of them as an inquiry. However, the inquiry is the function that operates on events generated by the real world or a simulated world. The estimand is the value of that function. We use "inquiry" to refer to the question and "estimand" to refer to the answer to the question.
+
+Average Treatment Effect (ATE): $ATE=\mathbb{E}[Y_{i1} -Y_{i0}]$
+
+-   The ATE is the average difference in the pair of potential outcomes average over the entire population of interest.
+
+Average Treatment Effect of the Treated (ATT): $ATT=\mathbb{E}[Y_{i1} -Y_{i0} |D_i=1]$
+
+-   The ATE defined for the subpopulation exposed to the treatment
+
+    -   We might average over subpopulations defined by pretreatment covariates such as sex and estimate the ATE for females only = ATT.
+
+#### Threats to Identification
+
+Confounding due to a common cause
+
+Confounding due to a common effect
+
+#### Assumptions
+
+1.  Assumption of independence between treatment and potential outcomes.
+2.  The stable unit treatment value assumption (SUTVA) - Rubin 1986
+    1.  there are no hidden forms of treatment, which implies that for for unit $i$ under $D_i=d$, we assume that $Y_{id}=Y_i$
+        1.  AKA the consistency assumption
+    2.  a subject's potential outcome is not affected by other subjects' exposure to the treatment.
+        1.  This is a big problem and must be avoided - think of it as contamination. Your no longer looking at treated vs. control but now between a treated unit and partially treated unit.
+            1.  if we have no knowledge of these spillovers, causal parameters cannot be identified.
+
+## Identification Strategies
+
+A research design intended to solve the causal inference identification problem (Angrist and Pischke 2010). To ask what is your identification strategy IS to ask what research design (and assumptions) one intends to use for the indemnification of a causal effect.
+
+#### Random Experiments
+
+Randomize recipients of treatment. The typical estimand is the ATE (equivalent in this to the ATT).
+
+-   Critical strength of experiments is that the researcher has the ability to impose independence between treatment status and potential outcomes on a set of units because they can impose a particular type of assignment process.
+
+    -   The researcher can assert that the treated and control groups will be identical in all respects, observable and unobserervable. EXCEPT for who got the treatment which is known.
+
+#### Natural Experiments
+
+#### Instrumental Variables
+
+#### Regression Discontinuity Designs
+
+#### Selection on Observables
+
+#### Selection on Observables with Temporal Data
+
+#### Partial Identification
+
+#### Mediation Analysis
+
+#### Reasoning About Assumptions
+
+# Section 9.5: Likelihood
+
+The principle of maximum likelihood is based on the idea that the observed data (even if it is not a random sample) are more likely to have come about as a result of a particular set of parameters. Thus, we flip the problem on its head. *Rather than consider the data as random and the parameters as fixed, the principle of maximum likelihood treats the observed data as fixed and asks: "What parameter values are most likely to have generated the data?"* Thus, the parameters are random variables.
+
+The key innovation in the likelihood framework is treating the observed data as fixed and asking what combination of probability model and parameter values are the most likely to have generated these specific data.
+
+## Why do we need maximum likelihood?
+
+We use it anytime our dependent variables has a distribution that was not generated by a Gaussian (normal) process. We are trying to estimate the $\theta$ (parameter) values based on the data we have been given.
+
+## The Basic Structure of MLE
+
+### Stochastic component
+
+Stochastic component: $Y_i\sim f(\theta_i)$
+
+Here, $f$ is some probability distribution or mass function. These can be Gaussian, binomial, Poisson, Weibull, etc. The stochastic statement describes our assumptions about the probability distributions that govern our data-generating process.
+
+### Systematic component
+
+Systematic component: $\theta_i = \beta_0+ \beta_1x_i$
+
+The systematic statement describes our model for the parameters of the assumed probability distribution.
+
+## Difference between MLE and OLS?
+
+They are equivalent, and the OLS estimator can be derived under weaker assumptions. But the OLS approach assumes a linear model and unbounded, continuous outcome. The linear model is a good one, but the world around can be both nonlinear and bounded. The ML approach permits us to specify nonlinear models quite easily if warranted by either our theory or data. The flexibility to model categorical and vounded variables is a benefit of the maximum likelihood approach.
+
+# Section 10: Generalized Linear Models (GLM)
+
+## Logit
+
+Models the probability of an event. Dependent variable is binary (0 or 1). The logit is a cumulative density function
+
+### Link Function:
+
+$$
+f(x) = \frac{1}{1+e^{-X_i\beta}}
+$$
+
+### Logit Interpretation
+
+### Can We Just Use OLS?
+
+-   You could. In fact, many (mostly economists) argue that this is economical and won't be too much different.
+
+    -   Linear interpretations of betas
+
+    -   simple
+
+    -   Works well if $X_i$ is also distributed Bernoulli
+
+-   Problems:
+
+    -   impossible predictions
+
+    -   TK
+
+## Probit
+
+### Probit Interpretation
+
+# Section 11: Model Selection
+
+This section is intended for application purposes. What model do we used based on our data and application purpose? The bulk of this decision is driven by the structure of our data, specifically the dependent variable.
+
+## Ordinary Least Squares (OLS)
+
+## 2 Stage Least Squares
+
+## Logit
+
+## Probit
+
+## Negative Binomial
+
+## Poisson
+
+## Multinomial Logit
+
+## Ordinal Logit

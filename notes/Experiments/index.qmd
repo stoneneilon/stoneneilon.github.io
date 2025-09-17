@@ -1,0 +1,351 @@
+---
+title: "Experiments"
+description: "Professor: Alex Siegel"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 01-14-2025
+categories: [Fall, 2025, Methods] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/American_Behavior/
+image: TK.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Week 1
+
+What is an experiment?
+
+-   Gold standard for causal inference.
+
+-   Research design and purposefully manipulating a treatment and uses random assignment to create comparable groups, so differences in outcomes can be attributed to the treatment (a causal effect).
+
+**Unit**: unit of analysis
+
+**Treatment**: well-defined manipulation with clear versions (dose, timing, delivery, content). Must be implementable and replicable.
+
+**Outcome**: Pre-specified primary measure (behavioral, attitudinal, etc.)
+
+**Assignment mechanism**: the stochastic rule mapping units to treatments (complete, Bernouli, blocked/stratified).
+
+**Randomization**: implementation of the assignment mechanism so that treatment is independent of {Y(1). Y(0)} ( in expectation); enables unbiased diff-in-means and design-based inference.
+
+**Estimand**: The quantity you want to learn from a study (ATE, ITT, LATE, CATE) defined for a population and a contrast between interventions.
+
+**Causal inference:** Is learning how outcomes would change under different, well-defined interventions for specified units, settings, and times.
+
+-   How outcomes would change under different treatment effects.
+
+We can get close to causal inference in lots of ways, but we need to be clear about what our assumptions are.
+
+Social science theories are almost always causal in nature.
+
+Manski: data + assumptions = conclusions -\> experiments make assumptions clearer and lighter.
+
+-   Every causal claim rests on assumptions. Experiments makes them explicit and often weaker.
+
+-   SUTVA - Stable unit treatment value assumption
+
+Old way: kitchen-sink regression + causal weasel words ("associated with," "linked to," "drives", "increases", "predicts")
+
+**Fundamental Problem of Causal Inference:** For unit i, cannot observe $Y_i(1)$ and $Y_i(0)$ simultaneously
+
+**Good experimental design requires good theory** - **WHAT IS THE MANIPULABLE LEVER**
+
+## What is a Theory?
+
+-   A logically coherent explanation of why/how a manipulable cause changes an outcome, within stated scope conditions, yielding testable implications.
+
+## What is a Mechanism?
+
+-   The sequence of intermediate changes that transmit the effect from cause -\> outcome (use verbs: inform -\> update beliefs -\> shift norms -\> act).
+
+## What is a Hypothesis?
+
+-   a falsifiable prediction about a causal contrast (treatment vs control) derived from theory.
+
+## Why Preregister?
+
+-   Clarifies the estimand, outcomes, and analysis before seeing data.
+
+-   reduces p-hacking/HARKing and garden of forking paths.
+
+-   increased credibility with reviewers, partners, and future you.
+
+-   make deviations transparent: changes are documented and justified.
+
+-   What counts as preregistration?
+
+    -   a time stamped, accessible record
+
+    -   can be a public or embargoed until data collection ends.
+
+    -   not a prison: you can amend; just explain why.
+
+## Activity:
+
+Does the walkability of an environment increase voter turnout?
+
+Yes it was causal
+
+design: Get a walkability data set and a voter turnout data set and run a regression. Controlling for various factors. Problem - I have endogeneity as people can move and sort themselves - it is possible that people that move to
+
+Among individuals between the 2016 - 2020 elections, what is the effect of living in a walkable vs. non-walkable area on voter turnout?
+
+# Week 2
+
+-   Causal questions are always about counterfactuals.
+
+    -   Does the minimum wage increase the unemployment rate?
+
+        -   Counterfactual: would it have gone up if the increase had not occurred?
+
+-   Causal inference = a missing data problem.
+
+-   Political canvassing study example
+
+-   Pretreatment covariates -
+
+-   we want the unit causal effect. However, we don't have two states of the world for any given person.
+
+-   SATE - sample average treatment effect
+
+    -   average causal effect for the exact units in this study.
+
+    -   complete randomization means unbiased for SATE.
+
+-   SATT - Sample Average Treatment Effect on the Treated
+
+    -   RCT (randomized controlled trial)
+
+-   PATE (population ATE)
+
+-   CATE: conditional average treatment effect
+
+    -   heterogeneous effects
+
+    -   subgroups.
+
+-   Z means assignment to treatment.
+
+-   actual receipt: D (some accept, some don't)
+
+    -   someone was assigned to watch a movie (the treatment), however they got a snack and didn't actually *receive it.*
+
+-   CACE/LATE assumptions:
+
+    -   Random Z (independence)
+
+    -   Exclusion: Z affects Y only via D.
+
+    -   Monotonicity: no defiers
+
+-   DEFINE estimands: ATE/ITT/CACE/CATE clearly.
+
+-   First present ITT first, then CACE with the Wald ratio + SE/CI
+
+-   For CATE: pre-specificy subgroups or honest discovery; show subgroup baselines.
+
+-   Post-treatment adjustment: don't control for variables affected by D.
+
+-   attrition/truncation: outcomes defined only for a subset
+
+-   Interference: if spillovers likely, redesign or redefine estimand.
+
+-   issue of bundled treatment major issue in like everything i do.
+
+# Week 3
+
+## Readings: Book Chapters
+
+### MIDA
+
+#### Model
+
+-   The *M* in *MIDA* does not necessarily represent our beliefs about how the world actually works. Instead, it describes a set of possible worlds in enough detail that we can assess how our design would perform *if* the real world worked like those in *M*
+
+-   Examples of models:
+
+    -   Contact theory: When two members of different groups come into contact under specific conditions, they learn more about each other, which reduces prejudice, which in turn reduces discrimination.
+
+    -   Prisoner's dilemma. When facing a collective action problem, each of two people will choose non-cooperative actions independent of what the other will do.
+
+    -   Health intervention with externalities. When individuals receive deworming medication, school attendance rates increase for them and for their neighbors, leading to improved labor market outcomes in the long run.
+
+#### Inquiry
+
+-   Think of inquiry as the question.
+
+#### Data Strategy
+
+-   The data strategy is the full set of procedures we use to gather information from the world. The three basic elements of data strategies parallel the three features of inquiries: *units* are selected, *conditions* are assigned, and *outcomes* are measured.
+
+-   What are our sampling procedures? Treatment-assignment procedures? Measurement procedures?
+
+#### Answer Strategy
+
+The answer strategy is what we use to summarize the data produced by the data strategy. Just like the inquiry summarizes a part of the model, the answer strategy summarizes a part of the data.
+
+-   Multilevel modeling and poststratification
+
+-   Bayesian process tracing
+
+-   Difference-in-means estimation
+
+## Lecture
+
+### Declare Design
+
+-   Use their package!
+
+-   **MI** (theoretical) sets the challenge
+
+-   **DA** (empirical) is your response
+
+-   Chapter 18 reread! Very important but dense.
+
+### Research Question
+
+-   Template: Among **units** in **setting/time**, what is the effect of **A vs B** on **outcome?**
+
+-   Think of counterfactual!
+
+-   **Hypotheses must match structure of research questions (falsifiable)!**
+
+-   **MEAN DETECTABLE EFFECT!**
+
+    -   if significant and Mean Detectable Effect equal to or greater than X, what will a policymaker/org do.
+
+### MIDA
+
+-   M: Model- set of plausible worlds.
+
+-   I: Inquiry: the estimands your questions target
+
+-   D: Data Strategy: sampling, assignment, measurement
+
+    -   SAMPLING - who is going to be in your sample
+
+        -   convenience sampling:
+
+            -   non-probability sampling - easy and cheap
+
+            -   MTurk/Prolific, campus pools, social ads
+
+            -   mechanism or existence of proofs: your testing whether a causal pathway can operate (not how big it is in a target population)
+
+            -   Pick a sample that the mechanism might be most likely to detect OR least likely.
+
+            -   You get the **SATE of the panel.** External validity is limited.
+
+        -   Probability/Stratified
+
+            -   units drawn with known inclusion probabilities from a defined frame.
+
+                -   stratified random sampling: list-based (e.g., voter file/registry)
+
+            -   Strength: supports **PATE** with principled weights/post-stratification; clear coverage assumptions.
+
+        -   Quota/ Balanced Convenience
+
+            -   non-probability sample with quotes so sample margins match benchmarks
+
+    -   ASSIGNMENT - who is getting the treatment/control
+
+        -   Complete RA (CRA) - randomize across the full sample to a fixed share; covariate balance holds in expectation
+
+            -   **No strong-priors/ simple baseline? -\> Complete RA**
+
+        -   Blocked/Stratified RA (BRA): Randomize within pre-defined strata so key covaraites are balanced by design.
+
+            -   GOAL: Make units wtihin strata more similar on Y's drivers -\> smaller SEs.
+
+            -   Best single choice: a pre-treatment measure of the outcome (lagged turnout, protest score, baseline index)
+
+            -   Block for subgroup guarantees you care about to ensure CATE sample sizes.
+
+            -   Clustered trials: pair/block on cluster level baselines, cluster size, region.
+
+            -   Keep it parsimonious
+
+            -   **Need precision + good predictors? -\> Block Stratify**
+
+        -   Clustered RA: Randomize whole groups (schools, villages, teams) together when delivery or spillovers are group-level.
+
+            -   **Delivery or a interference is group level? -\> Cluster.**
+
+        -   Redistricted/Re-randomization: Draw randomization but only accept those that meet pre--set balance criteria.
+
+            -   **Care about global covariate balances but can't block finely? -\> restricted re-randomization.**
+
+        -   Stepped-wedge: stagger rollout across periods so everyone is treated by the end; analyze interim contrasts.
+
+            -   **Ethics/logistics require treating all eventually or few units available? -\> stepped wedge.**
+
+        -   Randomized saturation: Randomize cluster-level treatments % (e.g., 25% vs 75%) then assign individauls accordingly to study spillovers.
+
+            -   **Want spillover/saturation effects? -\> randomized saturation**
+
+-   A: Answer Strategy: estimators, SEs.
+
+    -   Complete RA -\> OLS with robust SEs
+
+    -   Blocked RA -\> block Fixed Effects
+
+    -   Clustered RA -\> Cluster Robust SEs
+
+    -   Probability sample -\> survey weights/ post-stratification
+
+    -   Noncompliance -\> IV/2SLS for CACE.
+
+    -   Multiple comparisons: pre-specify families; Bonferroni corrections) if needed.
+
+-   POWER ANALYSIS: What it is & why it matters
+
+    -   Power: the chance your study detects a real effect (returns a significant result when the true effect is at least the size you care about).
+    -   MDE - minimal delectable effect - is it worth it to do the study?
+
+# Week 4
+
+## Measurement! 
+
+-   We care about the effect of the concept that Z represents on the concept that Y represents
+
+-   Valid inference requires: design validity and measurement validity for both Z and Y.
+
+-   Validity:
+
+    -   content - assess the degree to which an indicator represents the universe of content entailed in the systematized concept being measured.
+
+    -   construct - the data behaves like theory predicts
+
+    -   convergent - correlates with related measures
+
+    -   discriminant -
+
+-   Bundled treatment - compound bundles of many things.
+
+-   Define compliance to match the concept (information actually processed, not merely door opened)
+
+-   Manipulation checks - did they understand? comprehension checks. Perception checks, did they notice the attribute? and behavioral probes.
+
+-   Pre-register checks!
+
+-   Hawthorne - knowing you are being observed.
+
+-   non-systematic noise - independent of Z; inflates variance, hurts power.
+
+-   Systematic error - correlated with Z: induces bias.
+
+-   as long as it is not correlated with treatment - we are okay!
+
+-   more noise = more standard error.
+
+-   multiple noise indicators can improve precision
+
+-   Gains: higher correlation with latent construct, tighter CIs, greater power.
+
+-   If X is an index - bundled treatment
