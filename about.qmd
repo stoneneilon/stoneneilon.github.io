@@ -2,7 +2,7 @@
 title: "About"
 about:
   template: trestles
-  image: IMG_0123.jpeg
+  image: IMG_6311.CR3
   links:
     - icon: linkedin
       text: linkedin
@@ -15,12 +15,8 @@ I am a PhD student at the University of Colorado Boulder. I fields are american 
 
 ## Education
 
-University of Colorado Boulder | Boulder, CO |
-PhD Student in Political Science | Aug 2023 - Present
+University of Colorado Boulder \| Boulder, CO \| PhD Student in Political Science \| Aug 2023 - Present
 
-University of California, Los Angeles | Los Angeles, CA |
-B.A in Political Science | Graduated December 2020
+University of California, Los Angeles \| Los Angeles, CA \| B.A in Political Science \| Graduated December 2020
 
-College of the Desert | Palm Desert, CA | 
-AA-T in Political Science | Graduated May 2018
----
+College of the Desert \| Palm Desert, CA \| AA-T in Political Science \| Graduated May 2018 ---

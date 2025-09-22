@@ -2,7 +2,7 @@
 title: "Welcome!"
 about:
   template: trestles
-  image: IMG_0091.jpeg
+  image: IMG_6311.jpeg
   links:  
     - icon: linkedin
       text: LinkedIn
@@ -10,6 +10,9 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/stoneneilon
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/stoneneilon.bsky.social
     - icon: envelope
       text: Email
       href: "mailto:stone.neilon@colorado.edu"
