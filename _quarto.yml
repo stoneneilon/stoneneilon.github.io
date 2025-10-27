@@ -10,8 +10,6 @@ website:
         left:
             - text: "CV"
               href: https://drive.google.com/file/d/1RgKR73KnxS3K_AP2nqiTiZZzAL-zJZ2N/view?usp=sharing
-            - text: "Blog"
-              href: posts.html
             - text: "Teaching" 
               href: teaching.html
             - text: "Research"

@@ -38,10 +38,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -125,10 +127,6 @@ window.Quarto = {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
@@ -143,6 +141,7 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -166,6 +165,15 @@ window.Quarto = {
   <li><a href="#interactions" id="toc-interactions" class="nav-link" data-scroll-target="#interactions">Interactions</a></li>
   <li><a href="#control-variables" id="toc-control-variables" class="nav-link" data-scroll-target="#control-variables">Control Variables</a></li>
   </ul></li>
+  </ul></li>
+  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4">Week 4</a></li>
+  <li><a href="#regression-and-causality" id="toc-regression-and-causality" class="nav-link" data-scroll-target="#regression-and-causality">Regression and Causality</a></li>
+  <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a></li>
+  <li><a href="#propensity-score-matching" id="toc-propensity-score-matching" class="nav-link" data-scroll-target="#propensity-score-matching">Propensity Score Matching</a></li>
+  <li><a href="#panel-data" id="toc-panel-data" class="nav-link" data-scroll-target="#panel-data">Panel Data</a></li>
+  <li><a href="#diff-in-diff" id="toc-diff-in-diff" class="nav-link" data-scroll-target="#diff-in-diff">Diff-in-Diff</a>
+  <ul class="collapse">
+  <li><a href="#when-to-use-it" id="toc-when-to-use-it" class="nav-link" data-scroll-target="#when-to-use-it">When to Use It:</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -416,9 +424,184 @@ window.Quarto = {
 </ul></li>
 </ul></li>
 </ul>
-
-
 </section>
+</section>
+</section>
+<section id="week-4" class="level1">
+<h1>Week 4</h1>
+<ul>
+<li><p>Problem set 3 answers posted.</p></li>
+<li><p>Problem set 4 is long.</p></li>
+<li><p>internal validity: will this research design give me an unbiased estimate of the parameter that I am claiming ot estimate</p>
+<ul>
+<li>RCT - want to estimate ATE. - will my design actually give me an unbiased estimate of the ATE.</li>
+</ul></li>
+<li><p>external validity: does this parameter generalize?</p></li>
+<li><p>why include control variables in a RCT regression.</p></li>
+<li><p>ATE - best case scenario:</p>
+<ul>
+<li><p>Required Assumption to identify parameter: Randomization done correctly</p></li>
+<li><p>Fights with reviewers: External Validity, Sample Size (precision)</p></li>
+</ul></li>
+<li><p>Estimand - the target - what we are trying to learn</p></li>
+<li><p>estimator - the thing we actually do with out data. We use this to estimate our estimand.</p></li>
+</ul>
+</section>
+<section id="regression-and-causality" class="level1">
+<h1>Regression and Causality</h1>
+<ul>
+<li><p>Imagine you didn’t run an experiment - or there is no obvious natural experiment.</p>
+<ul>
+<li><p>we just have some cross sectional data.</p>
+<ul>
+<li><p>i am interested in this variable but it wasn’t randomly assigned.</p>
+<ul>
+<li><p>but i have a lot of other variables I can use to control for.</p>
+<ul>
+<li>when do i actually have a causal model?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Can we ever get causality from a regression?</p>
+<ul>
+<li><p><strong>when the conditional independence assumption holds.</strong></p>
+<ul>
+<li><p>what is that?</p>
+<ul>
+<li><p>actual treatment status is independent of the outcomes.</p>
+<ul>
+<li><p>if you could take your data and find observations that have the same values on everything but have variation on some treated/untreated variable - what is the effect?</p></li>
+<li><p>basically you are finding the counterfactual.</p>
+<ul>
+<li>not perfect - example - look at Prince Charles and Ozzy Osbourne.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p><span class="math inline">\(Y_{si}=f_i(s)\)</span></p>
+<ul>
+<li>notation for all possible potential outcomes</li>
+</ul></li>
+<li><p>CIA suggests that we can estimate many causal effects, but need more structure for regression motivation.</p></li>
+<li><p>no i on coefficient on CIA to regression slide.</p></li>
+<li><p>This is basically all just omitted variable bias</p></li>
+<li><p>Question: if a full regression model has a causal interp. and I leave out a variable, what goes wrong?</p>
+<ul>
+<li><strong>It is a bias estimate of the truth!!!!!</strong></li>
+</ul></li>
+<li><p>Long regression vs short regression:</p>
+<ul>
+<li><p>what happens when you have OVB?</p>
+<ul>
+<li>See slides with the big formuals</li>
+</ul></li>
+</ul></li>
+<li><p>OVB it moves your bias on a number line - It has a direction! it is either positive or negative!</p></li>
+</ul>
+</section>
+<section id="week-5" class="level1">
+<h1>Week 5</h1>
+<ul>
+<li><p>Does FWL give me variation that is as good as an experiment?</p></li>
+<li><p>it is fine to leave out variables that don t have an effect on the outcome.</p></li>
+<li><p>also fine to leave out variables that are uncorrelated with x_1 even if they have an effect on outcome.</p>
+<ul>
+<li>OVB is a product of these two. If one is zero then you are safe.</li>
+</ul></li>
+<li><p>You can leave out mediators.</p>
+<ul>
+<li><p>think school years -&gt; income</p>
+<ul>
+<li>you can leave out writing ability because it is a mediator.</li>
+</ul></li>
+</ul></li>
+<li><p>I have a causal research question - wish i had a better research design but i don’t - thus this is the best I can do.</p></li>
+<li><p>Propensity Score Matching</p></li>
+</ul>
+</section>
+<section id="propensity-score-matching" class="level1">
+<h1>Propensity Score Matching</h1>
+<ul>
+<li><p>Matching helps with figuring out an estimand</p></li>
+<li><p>Balance is very important because it can bias our estimand.</p>
+<ul>
+<li>matching essentially allows you to rebalance your data</li>
+</ul></li>
+<li><p>we are not in RCT land.</p></li>
+<li><p>we are going to need to match on more than just one variable</p></li>
+<li><p>exact matching vs.&nbsp;propensity score in matching.</p></li>
+<li><p>why use matching?</p>
+<ul>
+<li><p>no linear form assumption</p></li>
+<li><p>OLS uses everyone. Matching only uses similar untreated obs.</p></li>
+</ul></li>
+<li><p>matching does not fix OVB.</p></li>
+<li><p>tough part: how do we assign the weight on the untreated outcome.</p></li>
+<li><p>OLS is not quite the same. What OLS is doing residuals on residuals.</p></li>
+<li><p>Propensity score : the probability of being treated conditional on some Xs.</p>
+<ul>
+<li><p>we are going to collapse all of our Xs into one number 0-1 (probability)</p></li>
+<li><p>Rosenbaum and Rubin (1983)</p></li>
+</ul></li>
+<li><p>prediction problem - what is the probability of being treated conditional on all the Xs.</p></li>
+<li><p>Compare treated vs.&nbsp;untreated obs that have very similar propensity score matching.</p></li>
+<li><p>need to show common support ALWAYS.</p></li>
+<li><p>Nearest Neighbor Matching: find an obs that has the closest propensity score and use their untreated outcome.</p></li>
+</ul>
+</section>
+<section id="panel-data" class="level1">
+<h1>Panel Data</h1>
+<ul>
+<li><p>we’ve only been thinking about causality with cross sectional data.</p></li>
+<li><p>but now we have data over time.</p></li>
+<li><p>need to know long vs wide</p></li>
+<li><p>Long data = multiple dates per cross-sectional data</p>
+<ul>
+<li>multiple rows for each observation across time</li>
+</ul></li>
+<li><p>Wide data = one observation - variables items are over time</p></li>
+<li><p>stata panel commands want your data LONG.</p></li>
+<li><p>reshape switches data from long to wide or vice versa.</p></li>
+</ul>
+</section>
+<section id="diff-in-diff" class="level1">
+<h1>Diff-in-Diff</h1>
+<section id="when-to-use-it" class="level2">
+<h2 class="anchored" data-anchor-id="when-to-use-it">When to Use It:</h2>
+<ul>
+<li><p>RCT is not an option</p></li>
+<li><p>natural experiment = quasi-random event changes our ability to see treated vs.&nbsp;untreated outcomes.</p>
+<ul>
+<li><p>Good news: you don’t have to randomize anything</p></li>
+<li><p>Bad news: frequently randomization is less than ideal</p>
+<ul>
+<li><p>usually treatment given to whole population</p></li>
+<li><p>no obvious control group - you need to choose a comparison group.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Diff-in-diff is just basically you wanting to compare two groups.</p></li>
+<li><p>basically it is 4 sub-group means.</p>
+<ul>
+<li><p>we can see</p>
+<ul>
+<li><p>g = group</p></li>
+<li><p>t = period of being treated</p></li>
+</ul></li>
+</ul></li>
+<li><p>Equal trends assumption is very important.</p>
+<ul>
+<li>fundamentally an assumption.</li>
+</ul></li>
+<li><p>Time is additive and separable</p></li>
+<li><p>this hinges on who you select as the counterfactual.</p></li>
+<li><p>you need to go to bat for your assumption.</p></li>
+<li><p>we are going to impose the equal counterfactual assumption</p></li>
+<li><p>KEY ASSUMPTION: Change over time for comparison group estimates counterfactual, i.e.&nbsp;what would have happened to treated group w/o treatment.</p></li>
+</ul>
+
+
 </section>
 </section>
 
@@ -453,6 +636,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

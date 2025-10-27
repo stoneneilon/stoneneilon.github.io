@@ -12,6 +12,7 @@ categories: [Spring, Fall, 2024, Methods, 2023] # self-defined categories
 citation: 
   url: https://stoneneilon.github.io/notes/Data/
 image: oppy.jpg
+bibliography: ref.bib
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
@@ -232,6 +233,10 @@ Can we believe this finding? Is this a *real* relationship? Hypothesis testing h
 These test correspond with a specific distribution a.k.a a probability distribution. A probability distribution TK
 
 When we use these tests, we are using their respective probability distributions.
+
+## What is a Test Statistic?
+
+A value that assesses how far the sample result is from what we would expect if the null were true. There are different test statistic values. They vary based on the data we are using. There is a z-score, t-test, F-test, $\chi^2$ test. The most common for us will be the t-test, which is what we use in regression.
 
 ## t-Test
 
@@ -506,6 +511,76 @@ $y_i=x_{i1}\beta_1+x_{i2}\beta_2+...+X_{iK}\beta_K+\epsilon_i$
     -   ![](beta-2.png){width="514"}
 
     -   Compare figure 3.3 to figure 3.2. They are the same thing. However in 3.3 we have added an additional dimension because of the additional variable. What we are doing remains the same however we now just have more dimensions and we are still trying to find the minimum of that parabola(?) plane(?)
+
+## Controlling for other variables:
+
+A bivariate regression is not a causal model. If we want to know the effect of some variable on Y, then we need to know what other factors might be confounding this relationship. Thus, we move from a bivariate to a multi-variate regression.
+
+### Frisch-Waugh-Lovell (FWL) Theorem
+
+The FWL theorem can help explain some of the intuition of what is going on when we have a multi-variate regression. Imagine we have some multivariate regression:
+
+$$
+Y=β1​X1​+β2​X2​+⋯+βk​Xk​+u
+$$
+
+We can simply run the full regression, but the FWL states we can get the same coefficient for $\beta_1$ using the FWL. Again, the FWL is not something you use as an alternative estimation method to regression (you could but that's not the point of it), but it shows the intuition behind what is happening with our main variable and other controls.
+
+The FWL shows we can derive $\beta_1$ through three smaller steps:
+
+#### FWL: Step 1
+
+Regress Y on all other X's **except** $X_1$ and collect the residuals. Recall residuals are the difference between our line of best fit (the predicted value) and our actual observation. Basically, how much does our prediction not explain.
+
+$$
+Y=β2​X2​+⋯+βk​Xk​+u
+$$
+
+We run that regression then we take the residuals of that regression:
+
+$$
+Y - \hat{Y} = \bar{Y}
+$$
+
+These are the parts of Y **NOT EXPLAINED** by the other controls.
+
+#### FWL: Step 2
+
+Regress $X_1$ on all other X's (except itself) and get the residuals. In other words, run the same regression as above but have $X_1$ as your *dependent variable.*
+
+$$
+X_1=β2​X2​+⋯+βk​Xk​+u
+$$
+
+We run that regression then we take the residuals of that regression:
+
+$$
+X_1 - \hat{X_1}=\bar{X}
+$$
+
+These are the parts of $X_1$ **NOT EXPLAINED** by the other controls
+
+#### FWL: Step 3
+
+Now have the residuals from both **Step 1** and **Step 2.** We take these residuals and run a regression with them. We have the residuals from step 1: $\bar{Y}$ and the residuals from step 2: $\bar{X}$. Thus we run the following regression:
+
+$$
+\bar{Y}=\bar{X} +\bar{\mu}
+$$
+
+When we run this regression, our coefficient for $X_1$ will be the *exact same* as the coefficient in our normal multivariate regression.
+
+#### FWL: Intuition
+
+Step by step, what we just did was:
+
+-   purge Y of the influence of other regressors
+
+-   purge $X_1$ of the influence of other regressors
+
+-   Then we see how those "cleaned" up versions of $X_1$ and Y move together.
+
+This is the partial effect of \$X_1 on Y aka the multiple regression coefficient.
 
 ## Omega Matrix
 
@@ -953,12 +1028,12 @@ It is a tradeoff!
 
 ## What is Causal Inference?
 
-Causality refers to the realtional concept where on set of events causes another. Causal inference is the process by which we make claims about causal relationships. Testing causality is done udner the counterfactual model, that is, causation is defined in terms of observable and unobservable events.
+Causality refers to the relational concept where on set of events causes another. Causal inference is the process by which we make claims about causal relationships. Testing causality is done under the counterfactual model, that is, causation is defined in terms of observable and unobservable events.
 
 Why should we are about the counterfactual model and how is this different from statistics broadly?
 
-1.  the counterfactual approach has provided new insighs in the assumptions needed for data to be informative about causality.
-2.  a renewed emphasis on research design and design-based appraoch.
+1.  the counterfactual approach has provided new insights in the assumptions needed for data to be informative about causality.
+2.  a renewed emphasis on research design and design-based approach.
 
 ## The Fundamental Problem of Causal Inference
 
@@ -972,7 +1047,7 @@ We say a parameter in a model is identified if it is theoretically possible to l
 
 #### Estimands
 
-What is an estimand. You can think of them as an inquiry. However, the inquiry is the function that operates on events generated by the real world or a simulated world. The estimand is the value of that function. We use "inquiry" to refer to the question and "estimand" to refer to the answer to the question.
+What is an estimand? You can think of them as an inquiry. However, the inquiry is the function that operates on events generated by the real world or a simulated world. The estimand is the value of that function. We use "inquiry" to refer to the question and "estimand" to refer to the answer to the question.
 
 Average Treatment Effect (ATE): $ATE=\mathbb{E}[Y_{i1} -Y_{i0}]$
 
@@ -1012,6 +1087,10 @@ Randomize recipients of treatment. The typical estimand is the ATE (equivalent i
 
     -   The researcher can assert that the treated and control groups will be identical in all respects, observable and unobserervable. EXCEPT for who got the treatment which is known.
 
+## Randomization
+
+Randomization eliminates selection bias.
+
 #### Natural Experiments
 
 #### Instrumental Variables
@@ -1028,11 +1107,45 @@ Randomize recipients of treatment. The typical estimand is the ATE (equivalent i
 
 #### Reasoning About Assumptions
 
+## Is OLS A Causal Inference Model?
+
+It can be, but hinges important on the Conditional Independence Assumption (CIA). The CIA assumes that treatment status is independent of both potential outcomes. If you can argue, controlling for all these other variables, that the treatment is assigned as if random (like in an RCT), then you can argue that you do not have selection bias (or OVB) and your OLS estimate is a causal effect.
+
+### Defending your OLS as a causal
+
+-   Be clear on what is not a threat.
+
+-   At least sign the bias on remaining threats.
+
 # Section 9.5: Likelihood
 
-The principle of maximum likelihood is based on the idea that the observed data (even if it is not a random sample) are more likely to have come about as a result of a particular set of parameters. Thus, we flip the problem on its head. *Rather than consider the data as random and the parameters as fixed, the principle of maximum likelihood treats the observed data as fixed and asks: "What parameter values are most likely to have generated the data?"* Thus, the parameters are random variables.
+The principle of maximum likelihood is based on the idea that the observed data (even if it is not a random sample) are more likely to have come about as a result of a particular set of parameters. Thus, we flip the problem on its head. *Rather than consider the data as random and the parameters as fixed, the principle of maximum likelihood treats the observed data as fixed and asks: "What parameter values are most likely to have generated the data?"* Thus, the parameters are random variables @ward2018maximum.
+
+-   TK - I think it helps to explain what we mean by parameters....
+
+    -   parameters ARE RANDOM VARIABLES!
+
+        -   mean, variance, coefficients, etc
+
+        -   the
+
+*Likelihood* can be thought of as the join probability of the data as a function of parameter values for a particular density or mass function.
 
 The key innovation in the likelihood framework is treating the observed data as fixed and asking what combination of probability model and parameter values are the most likely to have generated these specific data.
+
+likelihood is the product of probability distributions, evaluated at each of our observed data points. When we select a model, we have to choose a convenient distribution for our data. Convenenient distribution in this case refers to a a parametric probability distribution.
+
+**In Maximum likelihood, we specify our distrubtion based on the type of data and then we are estimating that distribution's respective parameters. Each distribution, whether poisson, bernoulli, normal, etc. will have some parameter that describes the shape of distribution.**
+
+-   $\theta=$ "the set of parameters" that define your chosen distribution.
+
+-   Example: in a Normal model, $\theta=(\mu, \sigma^2)$
+
+-   In MLE, you find the $\theta$ that maximizes how likely your data are under that distribution.
+
+    -   thus, this hinges on us specifying the stochastic component correctly.
+
+I dont really understand the iid.
 
 ## Why do we need maximum likelihood?
 
@@ -1044,13 +1157,43 @@ We use it anytime our dependent variables has a distribution that was not genera
 
 Stochastic component: $Y_i\sim f(\theta_i)$
 
-Here, $f$ is some probability distribution or mass function. These can be Gaussian, binomial, Poisson, Weibull, etc. The stochastic statement describes our assumptions about the probability distributions that govern our data-generating process.
+Here, $f$ is some probability distribution or mass function. These can be Gaussian, binomial, Poisson, Weibull, etc. The stochastic statement describes our assumptions about the probability distributions that govern our data-generating process. The outcome needs to come from an exponential family.
+
+-   What does the theory tell us about the underlying PDF?
+
+-   What do the realized values, $y_i$, tell us? (using histograms, summary stats...)
+
+-   Is your random variable discrete or continuous?
+
+-   Basically: know what type of data you are working with! Is this count, discrete, continuous, time till failure?
+
+-   The most common exponential families in GLM:
+
+    -   Normal
+
+    -   Binomial
+
+    -   Poisson
+
+    -   Gamma
+
+    -   Bernoulli
+
+    -   Multinomial
+
+    -   Negative Binomial
+
+    -   many more...
 
 ### Systematic component
 
 Systematic component: $\theta_i = \beta_0+ \beta_1x_i$
 
-The systematic statement describes our model for the parameters of the assumed probability distribution.
+The systematic statement describes our model for the parameters of the assumed probability distribution. We characterize the systematic components by creating a vector of explanatory variables that are linear in the predictors...these are just our normal betas setup in regression. These are the factors that affect the conditional mean of $Y_i, \mu$.
+
+### The third component (link function)
+
+The third component which is somewhat of an afterthought compared the the previous two, is the "link function". The link function literally *links* the random component with the systematic component.
 
 ## Difference between MLE and OLS?
 
@@ -1058,9 +1201,31 @@ They are equivalent, and the OLS estimator can be derived under weaker assumptio
 
 # Section 10: Generalized Linear Models (GLM)
 
+GLMS have three components:
+
+-   Random component: This specifies the response variable y and its probability distribution.
+
+-   Linear predictor: Xb
+
+-   link function: this a function g applied to each component of E(y) that relates
+
+    -   the link function connects the random component with the linear predictor.
+
+## Linear Regression
+
+Linear regression is a type of generalized linear model.
+
+**What are the advantages of the MLE approach in the case of ordinary least squares?**
+
+-   none, they are equivalent, and the OLS estimator can be derived under weaker assumptions. But the OLS approach assumes a linear model and unbounded, continuous outcome. @agresti2015foundations
+
+The maximum likelihood approach permits us to specify nonlinear models quite easily if warranted by either our theory or data. The flexibility to model categorical and bounded variables is a benefit of the maximum likelihood approach.
+
+do we still estimate the betas the same though?
+
 ## Logit
 
-Models the probability of an event. Dependent variable is binary (0 or 1). The logit is a cumulative density function
+Models the probability of an event. Dependent variable is binary (0 or 1). The logit is a cumulative density function -it can be thought of as a distribution.
 
 ### Link Function:
 
@@ -1069,6 +1234,22 @@ f(x) = \frac{1}{1+e^{-X_i\beta}}
 $$
 
 ### Logit Interpretation
+
+The output from the logit is the log odds value. Literally an odds ratio logged.
+
+#### Odds Ratio
+
+What is an odds ratio?
+
+$$
+Odds = \frac{Probability \ Event \ Occurs\ (p)}{ Probability \ Event \ Does \ Not\ Occur \ (1-p)}
+$$
+
+#### Logit Limitations
+
+-   In small samples, ML estimates of logit model coefficients have substantial bias away from zero @rainey2021estimating
+
+    -   you can use a penalized maximum likelihood to fix this issue.
 
 ### Can We Just Use OLS?
 
@@ -1094,6 +1275,8 @@ $$
 
 This section is intended for application purposes. What model do we used based on our data and application purpose? The bulk of this decision is driven by the structure of our data, specifically the dependent variable.
 
+![Source: @agresti2015foundations](model_selection.jpg){fig-align="center"}
+
 ## Ordinary Least Squares (OLS)
 
 ## 2 Stage Least Squares
@@ -1109,3 +1292,49 @@ This section is intended for application purposes. What model do we used based o
 ## Multinomial Logit
 
 ## Ordinal Logit
+
+# Section X: Bias
+
+## What is Bias?
+
+Bias is
+
+## Where does bias show up?
+
+Bias relates to our coefficients ($\beta$)'s!
+
+## Types of Bias:
+
+### Selection Bias
+
+As social scientists, we are interested in making causal arguments, our X causes variation in Y. In reality, when we use data, we have some variable of interest and a list of theorized control variables. We can think of our variable of interest as *the treatment*. However, we are not assigning our treatment randomly; there are likely specific (or latent) factors of a person that may influence their likelihood to receive the treatment. In this case, our treatment is not randomly assigned.
+
+Let's use an example from my own study. I am interested in the effects of a walkable environment on voting turnout. I wan't to make the case that living in a walkable area *causes* people to vote more. However, I cannot randomly assign people to live in walkable or non-walkable areas. People can *self-select* (for the most part) where they want to live. I have data on people's voting history and where they live. I decide to a run a regression with voter turnout as my DV and the walkability of where they live as my IV, with an assortment of related control variables. I find a positive association, thus, living in a walkable area *causes* people to turnout to vote at a higher rate, right? No, what I have described is textbook selection bias occurring. My treatment (walkability of an area) is **not** randomly assigned. People can move for a variety of reasons. Maybe there is something about people wanting to live in a walkable environment (self-selecting) and being more likely to vote. Thus our estimate we derived earlier is biased as it does not account for people self-selecting into the treatment.
+
+**To make a causal argument, we need to make sure that our potential outcomes are independent of the treatment status so that we can argue that we have no selection bias (this is the CIA). Randomization ensures the treatment status is independent of our observation's untreated outcomes.** This is possible in a randomized control trial (RCT), but when we can't do an RCT, we rely on our data. If we can argue that our treatment assignment is independent of our variables, then we can make a causal argument.
+
+### Omitted Variable Bias (OVB)
+
+Remember that we are trying to estimate the effect of some X on Y. However, if we do a simple regression, and say this is the effect of X on Y, then we are likely engaging in an OVB. Basically, OVB occurs when you are missing an important control variable. Your regression is *mis-specified.*
+
+OVB biases our coefficient on a number line. It is always positive or negative.
+
+#### Signing the bias
+
+|             |                   |                   |
+|-------------|-------------------|-------------------|
+|             | $Corr(x_1,x_2)>0$ | $Corr(x_1,x_2)<0$ |
+| $\beta_2>0$ | positive bias     | negative bias     |
+| $\beta_2<0$ | negative bias     | positive bias     |
+
+: Signing the Bias Table
+
+This table helps to understand what variables you should control for. Just because a variable influences our dependent variable, does ***not*** mean you need to control for it. If that were the case, we would need to basically include a million variables. We only need to control when that variable influences our DV ***AND*** correlates with our main independent variable of interest. In simple terms, OVB is just not including the right control variables which causes a mis-specification of our regression.
+
+The direction tells us how our OVB is influencing our coefficient between our main independent variable and our DV.
+
+# Section X: Bias v. Inefficiency Tradeoff
+
+# Section X: What influences our Standard Errors?
+
+# Section X: Panel Data

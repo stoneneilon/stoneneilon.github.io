@@ -98,10 +98,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
@@ -139,6 +135,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#understanding-cartographic-scale-spatial-resolution" id="toc-understanding-cartographic-scale-spatial-resolution" class="nav-link" data-scroll-target="#understanding-cartographic-scale-spatial-resolution">Understanding Cartographic Scale &amp; Spatial Resolution</a></li>
   </ul></li>
   <li><a href="#week-3" id="toc-week-3" class="nav-link" data-scroll-target="#week-3">Week 3:</a></li>
+  <li><a href="#vector-raster" id="toc-vector-raster" class="nav-link" data-scroll-target="#vector-raster">Vector Raster</a></li>
+  <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a></li>
   </ul>
 </nav>
     </div>
@@ -254,13 +252,13 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p>Raster data model:</p>
 <ul>
-<li><p>grid ceells - think of a matrix.</p>
+<li><p>grid cells - think of a matrix.</p>
 <ul>
 <li><p>generally used for continuous variables.</p>
 <ul>
 <li>elevation, temperature, slope, average rainfall.</li>
 </ul></li>
-<li><p>can also be used for scirete features</p>
+<li><p>can also be used for discrete features</p>
 <ul>
 <li>political units, vegetation.</li>
 </ul></li>
@@ -309,6 +307,31 @@ ul.task-list li input[type="checkbox"] {
 <p>False Nothing</p>
 <p>False Easting: 500,000m west of the zone’s central meridian</p>
 <p>US State Plane Coord system - better for study of states.</p>
+</section>
+<section id="vector-raster" class="level1">
+<h1>Vector Raster</h1>
+<ul>
+<li><p>two parts: coordinates and attributes</p>
+<ul>
+<li>spatial and non-spatial part.</li>
+</ul></li>
+<li><p>spaghetti models:</p>
+<ul>
+<li><p>easy to use</p></li>
+<li><p>bad: duplicate info</p></li>
+<li><p>can be inefficient</p></li>
+<li><p>editing and querying can be diffiicult</p></li>
+</ul></li>
+<li><p>Topology: geometric properties that do not change with changing shapes (adjacency, connectivity, containment)</p></li>
+<li><p>share boundaries = neighbors.</p></li>
+<li><p>Euclidean vs network distance.</p>
+<ul>
+<li>distance means different things</li>
+</ul></li>
+</ul>
+</section>
+<section id="week-5" class="level1">
+<h1>Week 5</h1>
 
 
 </section>

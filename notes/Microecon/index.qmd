@@ -221,3 +221,193 @@ TK MAKE SURE YOU INCLUDE TABLE OUTPUT!
     -   we are basically running extra regressions.
 
         -   its not magic - using regressions to purge influence of X2 on X1 and Y.
+
+# Week 4
+
+-   Problem set 3 answers posted.
+
+-   Problem set 4 is long.
+
+-   internal validity: will this research design give me an unbiased estimate of the parameter that I am claiming ot estimate
+
+    -   RCT - want to estimate ATE. - will my design actually give me an unbiased estimate of the ATE.
+
+-   external validity: does this parameter generalize?
+
+-   why include control variables in a RCT regression.
+
+-   ATE - best case scenario:
+
+    -   Required Assumption to identify parameter: Randomization done correctly
+
+    -   Fights with reviewers: External Validity, Sample Size (precision)
+
+-   Estimand - the target - what we are trying to learn
+
+-   estimator - the thing we actually do with out data. We use this to estimate our estimand.
+
+# Regression and Causality
+
+-   Imagine you didn't run an experiment - or there is no obvious natural experiment.
+
+    -   we just have some cross sectional data.
+
+        -   i am interested in this variable but it wasn't randomly assigned.
+
+            -   but i have a lot of other variables I can use to control for.
+
+                -   when do i actually have a causal model?
+
+-   Can we ever get causality from a regression?
+
+    -   **when the conditional independence assumption holds.**
+
+        -   what is that?
+
+            -   actual treatment status is independent of the outcomes.
+
+                -   if you could take your data and find observations that have the same values on everything but have variation on some treated/untreated variable - what is the effect?
+
+                -   basically you are finding the counterfactual.
+
+                    -   not perfect - example - look at Prince Charles and Ozzy Osbourne.
+
+-   $Y_{si}=f_i(s)$
+
+    -   notation for all possible potential outcomes
+
+-   CIA suggests that we can estimate many causal effects, but need more structure for regression motivation.
+
+-   no i on coefficient on CIA to regression slide.
+
+-   This is basically all just omitted variable bias
+
+-   Question: if a full regression model has a causal interp. and I leave out a variable, what goes wrong?
+
+    -   **It is a bias estimate of the truth!!!!!**
+
+-   Long regression vs short regression:
+
+    -   what happens when you have OVB?
+
+        -   See slides with the big formuals
+
+-   OVB it moves your bias on a number line - It has a direction! it is either positive or negative!
+
+# Week 5
+
+-   Does FWL give me variation that is as good as an experiment?
+
+-   it is fine to leave out variables that don t have an effect on the outcome.
+
+-   also fine to leave out variables that are uncorrelated with x_1 even if they have an effect on outcome.
+
+    -   OVB is a product of these two. If one is zero then you are safe.
+
+-   You can leave out mediators.
+
+    -   think school years -\> income
+
+        -   you can leave out writing ability because it is a mediator.
+
+-   I have a causal research question - wish i had a better research design but i don't - thus this is the best I can do.
+
+-   Propensity Score Matching
+
+# Propensity Score Matching
+
+-   Matching helps with figuring out an estimand
+
+-   Balance is very important because it can bias our estimand.
+
+    -   matching essentially allows you to rebalance your data
+
+-   we are not in RCT land.
+
+-   we are going to need to match on more than just one variable
+
+-   exact matching vs. propensity score in matching.
+
+-   why use matching?
+
+    -   no linear form assumption
+
+    -   OLS uses everyone. Matching only uses similar untreated obs.
+
+-   matching does not fix OVB.
+
+-   tough part: how do we assign the weight on the untreated outcome.
+
+-   OLS is not quite the same. What OLS is doing residuals on residuals.
+
+-   Propensity score : the probability of being treated conditional on some Xs.
+
+    -   we are going to collapse all of our Xs into one number 0-1 (probability)
+
+    -   Rosenbaum and Rubin (1983)
+
+-   prediction problem - what is the probability of being treated conditional on all the Xs.
+
+-   Compare treated vs. untreated obs that have very similar propensity score matching.
+
+-   need to show common support ALWAYS.
+
+-   Nearest Neighbor Matching: find an obs that has the closest propensity score and use their untreated outcome.
+
+# Panel Data
+
+-   we've only been thinking about causality with cross sectional data.
+
+-   but now we have data over time.
+
+-   need to know long vs wide
+
+-   Long data = multiple dates per cross-sectional data
+
+    -   multiple rows for each observation across time
+
+-   Wide data = one observation - variables items are over time
+
+-   stata panel commands want your data LONG.
+
+-   reshape switches data from long to wide or vice versa.
+
+# Diff-in-Diff
+
+## When to Use It:
+
+-   RCT is not an option
+
+-   natural experiment = quasi-random event changes our ability to see treated vs. untreated outcomes.
+
+    -   Good news: you don't have to randomize anything
+
+    -   Bad news: frequently randomization is less than ideal
+
+        -   usually treatment given to whole population
+
+        -   no obvious control group - you need to choose a comparison group.
+
+-   Diff-in-diff is just basically you wanting to compare two groups.
+
+-   basically it is 4 sub-group means.
+
+    -   we can see
+
+        -   g = group
+
+        -   t = period of being treated
+
+-   Equal trends assumption is very important.
+
+    -   fundamentally an assumption.
+
+-   Time is additive and separable
+
+-   this hinges on who you select as the counterfactual.
+
+-   you need to go to bat for your assumption.
+
+-   we are going to impose the equal counterfactual assumption
+
+-   KEY ASSUMPTION: Change over time for comparison group estimates counterfactual, i.e. what would have happened to treated group w/o treatment.

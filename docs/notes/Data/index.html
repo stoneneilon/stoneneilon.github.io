@@ -57,7 +57,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,10 +92,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -159,10 +181,6 @@ window.Quarto = {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
@@ -177,6 +195,7 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -205,6 +224,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#section-2-statisticalhypothesis-testing" id="toc-section-2-statisticalhypothesis-testing" class="nav-link" data-scroll-target="#section-2-statisticalhypothesis-testing">Section 2: Statistical/Hypothesis Testing</a>
   <ul class="collapse">
+  <li><a href="#what-is-a-test-statistic" id="toc-what-is-a-test-statistic" class="nav-link" data-scroll-target="#what-is-a-test-statistic">What is a Test Statistic?</a></li>
   <li><a href="#t-test" id="toc-t-test" class="nav-link" data-scroll-target="#t-test">t-Test</a>
   <ul class="collapse">
   <li><a href="#probability-distribution" id="toc-probability-distribution" class="nav-link" data-scroll-target="#probability-distribution">Probability Distribution:</a></li>
@@ -260,6 +280,10 @@ window.Quarto = {
   <li><a href="#assumption-6-epsilon-is-normally-distributed" id="toc-assumption-6-epsilon-is-normally-distributed" class="nav-link" data-scroll-target="#assumption-6-epsilon-is-normally-distributed">Assumption 6: <span class="math inline">\(\epsilon\)</span> is normally distributed</a></li>
   </ul></li>
   <li><a href="#formula-for-deriving-beta" id="toc-formula-for-deriving-beta" class="nav-link" data-scroll-target="#formula-for-deriving-beta">Formula for deriving <span class="math inline">\(\beta\)</span></a></li>
+  <li><a href="#controlling-for-other-variables" id="toc-controlling-for-other-variables" class="nav-link" data-scroll-target="#controlling-for-other-variables">Controlling for other variables:</a>
+  <ul class="collapse">
+  <li><a href="#frisch-waugh-lovell-fwl-theorem" id="toc-frisch-waugh-lovell-fwl-theorem" class="nav-link" data-scroll-target="#frisch-waugh-lovell-fwl-theorem">Frisch-Waugh-Lovell (FWL) Theorem</a></li>
+  </ul></li>
   <li><a href="#omega-matrix" id="toc-omega-matrix" class="nav-link" data-scroll-target="#omega-matrix">Omega Matrix</a>
   <ul class="collapse">
   <li><a href="#conversation-with-andy-about-omega-matrix" id="toc-conversation-with-andy-about-omega-matrix" class="nav-link" data-scroll-target="#conversation-with-andy-about-omega-matrix">Conversation with Andy about Omega Matrix:</a></li>
@@ -333,6 +357,11 @@ window.Quarto = {
   <li><a href="#identification" id="toc-identification" class="nav-link" data-scroll-target="#identification">Identification</a></li>
   </ul></li>
   <li><a href="#identification-strategies" id="toc-identification-strategies" class="nav-link" data-scroll-target="#identification-strategies">Identification Strategies</a></li>
+  <li><a href="#randomization" id="toc-randomization" class="nav-link" data-scroll-target="#randomization">Randomization</a></li>
+  <li><a href="#is-ols-a-causal-inference-model-1" id="toc-is-ols-a-causal-inference-model-1" class="nav-link" data-scroll-target="#is-ols-a-causal-inference-model-1">Is OLS A Causal Inference Model?</a>
+  <ul class="collapse">
+  <li><a href="#defending-your-ols-as-a-causal" id="toc-defending-your-ols-as-a-causal" class="nav-link" data-scroll-target="#defending-your-ols-as-a-causal">Defending your OLS as a causal</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#section-9.5-likelihood" id="toc-section-9.5-likelihood" class="nav-link" data-scroll-target="#section-9.5-likelihood">Section 9.5: Likelihood</a>
   <ul class="collapse">
@@ -341,11 +370,13 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#stochastic-component" id="toc-stochastic-component" class="nav-link" data-scroll-target="#stochastic-component">Stochastic component</a></li>
   <li><a href="#systematic-component" id="toc-systematic-component" class="nav-link" data-scroll-target="#systematic-component">Systematic component</a></li>
+  <li><a href="#the-third-component-link-function" id="toc-the-third-component-link-function" class="nav-link" data-scroll-target="#the-third-component-link-function">The third component (link function)</a></li>
   </ul></li>
   <li><a href="#difference-between-mle-and-ols" id="toc-difference-between-mle-and-ols" class="nav-link" data-scroll-target="#difference-between-mle-and-ols">Difference between MLE and OLS?</a></li>
   </ul></li>
   <li><a href="#section-10-generalized-linear-models-glm" id="toc-section-10-generalized-linear-models-glm" class="nav-link" data-scroll-target="#section-10-generalized-linear-models-glm">Section 10: Generalized Linear Models (GLM)</a>
   <ul class="collapse">
+  <li><a href="#linear-regression" id="toc-linear-regression" class="nav-link" data-scroll-target="#linear-regression">Linear Regression</a></li>
   <li><a href="#logit" id="toc-logit" class="nav-link" data-scroll-target="#logit">Logit</a>
   <ul class="collapse">
   <li><a href="#link-function" id="toc-link-function" class="nav-link" data-scroll-target="#link-function">Link Function:</a></li>
@@ -368,6 +399,19 @@ window.Quarto = {
   <li><a href="#multinomial-logit" id="toc-multinomial-logit" class="nav-link" data-scroll-target="#multinomial-logit">Multinomial Logit</a></li>
   <li><a href="#ordinal-logit" id="toc-ordinal-logit" class="nav-link" data-scroll-target="#ordinal-logit">Ordinal Logit</a></li>
   </ul></li>
+  <li><a href="#section-x-bias" id="toc-section-x-bias" class="nav-link" data-scroll-target="#section-x-bias">Section X: Bias</a>
+  <ul class="collapse">
+  <li><a href="#what-is-bias" id="toc-what-is-bias" class="nav-link" data-scroll-target="#what-is-bias">What is Bias?</a></li>
+  <li><a href="#where-does-bias-show-up" id="toc-where-does-bias-show-up" class="nav-link" data-scroll-target="#where-does-bias-show-up">Where does bias show up?</a></li>
+  <li><a href="#types-of-bias" id="toc-types-of-bias" class="nav-link" data-scroll-target="#types-of-bias">Types of Bias:</a>
+  <ul class="collapse">
+  <li><a href="#selection-bias" id="toc-selection-bias" class="nav-link" data-scroll-target="#selection-bias">Selection Bias</a></li>
+  <li><a href="#omitted-variable-bias-ovb" id="toc-omitted-variable-bias-ovb" class="nav-link" data-scroll-target="#omitted-variable-bias-ovb">Omitted Variable Bias (OVB)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#section-x-bias-v.-inefficiency-tradeoff" id="toc-section-x-bias-v.-inefficiency-tradeoff" class="nav-link" data-scroll-target="#section-x-bias-v.-inefficiency-tradeoff">Section X: Bias v. Inefficiency Tradeoff</a></li>
+  <li><a href="#section-x-what-influences-our-standard-errors" id="toc-section-x-what-influences-our-standard-errors" class="nav-link" data-scroll-target="#section-x-what-influences-our-standard-errors">Section X: What influences our Standard Errors?</a></li>
+  <li><a href="#section-x-panel-data" id="toc-section-x-panel-data" class="nav-link" data-scroll-target="#section-x-panel-data">Section X: Panel Data</a></li>
   </ul>
 </nav>
     </div>
@@ -660,6 +704,10 @@ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x
 <p>Can we believe this finding? Is this a <em>real</em> relationship? Hypothesis testing helps us answer those questions. There are different types of tests we can do. Below are the “basic” tests. More complicated models will use these tests in some manner. For example, Ordinary Least Squares (OLS) uses a t-test to help us understand whether the relationship (the beta) is statistically significant.</p>
 <p>These test correspond with a specific distribution a.k.a a probability distribution. A probability distribution TK</p>
 <p>When we use these tests, we are using their respective probability distributions.</p>
+<section id="what-is-a-test-statistic" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-test-statistic">What is a Test Statistic?</h2>
+<p>A value that assesses how far the sample result is from what we would expect if the null were true. There are different test statistic values. They vary based on the data we are using. There is a z-score, t-test, F-test, <span class="math inline">\(\chi^2\)</span> test. The most common for us will be the t-test, which is what we use in regression.</p>
+</section>
 <section id="t-test" class="level2">
 <h2 class="anchored" data-anchor-id="t-test">t-Test</h2>
 <section id="probability-distribution" class="level3">
@@ -981,6 +1029,61 @@ r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x
 <li><p>Compare figure 3.3 to figure 3.2. They are the same thing. However in 3.3 we have added an additional dimension because of the additional variable. What we are doing remains the same however we now just have more dimensions and we are still trying to find the minimum of that parabola(?) plane(?)</p></li>
 </ul></li>
 </ul>
+</section>
+<section id="controlling-for-other-variables" class="level2">
+<h2 class="anchored" data-anchor-id="controlling-for-other-variables">Controlling for other variables:</h2>
+<p>A bivariate regression is not a causal model. If we want to know the effect of some variable on Y, then we need to know what other factors might be confounding this relationship. Thus, we move from a bivariate to a multi-variate regression.</p>
+<section id="frisch-waugh-lovell-fwl-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="frisch-waugh-lovell-fwl-theorem">Frisch-Waugh-Lovell (FWL) Theorem</h3>
+<p>The FWL theorem can help explain some of the intuition of what is going on when we have a multi-variate regression. Imagine we have some multivariate regression:</p>
+<p><span class="math display">\[
+Y=β1​X1​+β2​X2​+⋯+βk​Xk​+u
+\]</span></p>
+<p>We can simply run the full regression, but the FWL states we can get the same coefficient for <span class="math inline">\(\beta_1\)</span> using the FWL. Again, the FWL is not something you use as an alternative estimation method to regression (you could but that’s not the point of it), but it shows the intuition behind what is happening with our main variable and other controls.</p>
+<p>The FWL shows we can derive <span class="math inline">\(\beta_1\)</span> through three smaller steps:</p>
+<section id="fwl-step-1" class="level4">
+<h4 class="anchored" data-anchor-id="fwl-step-1">FWL: Step 1</h4>
+<p>Regress Y on all other X’s <strong>except</strong> <span class="math inline">\(X_1\)</span> and collect the residuals. Recall residuals are the difference between our line of best fit (the predicted value) and our actual observation. Basically, how much does our prediction not explain.</p>
+<p><span class="math display">\[
+Y=β2​X2​+⋯+βk​Xk​+u
+\]</span></p>
+<p>We run that regression then we take the residuals of that regression:</p>
+<p><span class="math display">\[
+Y - \hat{Y} = \bar{Y}
+\]</span></p>
+<p>These are the parts of Y <strong>NOT EXPLAINED</strong> by the other controls.</p>
+</section>
+<section id="fwl-step-2" class="level4">
+<h4 class="anchored" data-anchor-id="fwl-step-2">FWL: Step 2</h4>
+<p>Regress <span class="math inline">\(X_1\)</span> on all other X’s (except itself) and get the residuals. In other words, run the same regression as above but have <span class="math inline">\(X_1\)</span> as your <em>dependent variable.</em></p>
+<p><span class="math display">\[
+X_1=β2​X2​+⋯+βk​Xk​+u
+\]</span></p>
+<p>We run that regression then we take the residuals of that regression:</p>
+<p><span class="math display">\[
+X_1 - \hat{X_1}=\bar{X}
+\]</span></p>
+<p>These are the parts of <span class="math inline">\(X_1\)</span> <strong>NOT EXPLAINED</strong> by the other controls</p>
+</section>
+<section id="fwl-step-3" class="level4">
+<h4 class="anchored" data-anchor-id="fwl-step-3">FWL: Step 3</h4>
+<p>Now have the residuals from both <strong>Step 1</strong> and <strong>Step 2.</strong> We take these residuals and run a regression with them. We have the residuals from step 1: <span class="math inline">\(\bar{Y}\)</span> and the residuals from step 2: <span class="math inline">\(\bar{X}\)</span>. Thus we run the following regression:</p>
+<p><span class="math display">\[
+\bar{Y}=\bar{X} +\bar{\mu}
+\]</span></p>
+<p>When we run this regression, our coefficient for <span class="math inline">\(X_1\)</span> will be the <em>exact same</em> as the coefficient in our normal multivariate regression.</p>
+</section>
+<section id="fwl-intuition" class="level4">
+<h4 class="anchored" data-anchor-id="fwl-intuition">FWL: Intuition</h4>
+<p>Step by step, what we just did was:</p>
+<ul>
+<li><p>purge Y of the influence of other regressors</p></li>
+<li><p>purge <span class="math inline">\(X_1\)</span> of the influence of other regressors</p></li>
+<li><p>Then we see how those “cleaned” up versions of <span class="math inline">\(X_1\)</span> and Y move together.</p></li>
+</ul>
+<p>This is the partial effect of $X_1 on Y aka the multiple regression coefficient.</p>
+</section>
+</section>
 </section>
 <section id="omega-matrix" class="level2">
 <h2 class="anchored" data-anchor-id="omega-matrix">Omega Matrix</h2>
@@ -1455,11 +1558,11 @@ F-statistic: 351.1 on 3 and 3610 DF,  p-value: &lt; 2.2e-16</code></pre>
 </section>
 <section id="what-is-causal-inference" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-causal-inference">What is Causal Inference?</h2>
-<p>Causality refers to the realtional concept where on set of events causes another. Causal inference is the process by which we make claims about causal relationships. Testing causality is done udner the counterfactual model, that is, causation is defined in terms of observable and unobservable events.</p>
+<p>Causality refers to the relational concept where on set of events causes another. Causal inference is the process by which we make claims about causal relationships. Testing causality is done under the counterfactual model, that is, causation is defined in terms of observable and unobservable events.</p>
 <p>Why should we are about the counterfactual model and how is this different from statistics broadly?</p>
 <ol type="1">
-<li>the counterfactual approach has provided new insighs in the assumptions needed for data to be informative about causality.</li>
-<li>a renewed emphasis on research design and design-based appraoch.</li>
+<li>the counterfactual approach has provided new insights in the assumptions needed for data to be informative about causality.</li>
+<li>a renewed emphasis on research design and design-based approach.</li>
 </ol>
 </section>
 <section id="the-fundamental-problem-of-causal-inference" class="level2">
@@ -1473,7 +1576,7 @@ F-statistic: 351.1 on 3 and 3610 DF,  p-value: &lt; 2.2e-16</code></pre>
 <p>We say a parameter in a model is identified if it is theoretically possible to learn the true value of that parameter with an infinite number of observations. We seek to describe the <em>conclusions</em> that can be drawn with an infinite sample. Inference requires two components: identification and statistical. Studies of statistical inference on the other hand focus on what can be learned with finite samples. The causal identification step is important to see if it’s possible to estimate the effect of <em>Treatment</em> on <em>Outcome</em>.</p>
 <section id="estimands" class="level4">
 <h4 class="anchored" data-anchor-id="estimands">Estimands</h4>
-<p>What is an estimand. You can think of them as an inquiry. However, the inquiry is the function that operates on events generated by the real world or a simulated world. The estimand is the value of that function. We use “inquiry” to refer to the question and “estimand” to refer to the answer to the question.</p>
+<p>What is an estimand? You can think of them as an inquiry. However, the inquiry is the function that operates on events generated by the real world or a simulated world. The estimand is the value of that function. We use “inquiry” to refer to the question and “estimand” to refer to the answer to the question.</p>
 <p>Average Treatment Effect (ATE): <span class="math inline">\(ATE=\mathbb{E}[Y_{i1} -Y_{i0}]\)</span></p>
 <ul>
 <li>The ATE is the average difference in the pair of potential outcomes average over the entire population of interest.</li>
@@ -1526,6 +1629,10 @@ F-statistic: 351.1 on 3 and 3610 DF,  p-value: &lt; 2.2e-16</code></pre>
 </ul></li>
 </ul>
 </section>
+</section>
+<section id="randomization" class="level2">
+<h2 class="anchored" data-anchor-id="randomization">Randomization</h2>
+<p>Randomization eliminates selection bias.</p>
 <section id="natural-experiments" class="level4">
 <h4 class="anchored" data-anchor-id="natural-experiments">Natural Experiments</h4>
 </section>
@@ -1551,11 +1658,44 @@ F-statistic: 351.1 on 3 and 3610 DF,  p-value: &lt; 2.2e-16</code></pre>
 <h4 class="anchored" data-anchor-id="reasoning-about-assumptions">Reasoning About Assumptions</h4>
 </section>
 </section>
+<section id="is-ols-a-causal-inference-model-1" class="level2">
+<h2 class="anchored" data-anchor-id="is-ols-a-causal-inference-model-1">Is OLS A Causal Inference Model?</h2>
+<p>It can be, but hinges important on the Conditional Independence Assumption (CIA). The CIA assumes that treatment status is independent of both potential outcomes. If you can argue, controlling for all these other variables, that the treatment is assigned as if random (like in an RCT), then you can argue that you do not have selection bias (or OVB) and your OLS estimate is a causal effect.</p>
+<section id="defending-your-ols-as-a-causal" class="level3">
+<h3 class="anchored" data-anchor-id="defending-your-ols-as-a-causal">Defending your OLS as a causal</h3>
+<ul>
+<li><p>Be clear on what is not a threat.</p></li>
+<li><p>At least sign the bias on remaining threats.</p></li>
+</ul>
+</section>
+</section>
 </section>
 <section id="section-9.5-likelihood" class="level1">
 <h1>Section 9.5: Likelihood</h1>
-<p>The principle of maximum likelihood is based on the idea that the observed data (even if it is not a random sample) are more likely to have come about as a result of a particular set of parameters. Thus, we flip the problem on its head. <em>Rather than consider the data as random and the parameters as fixed, the principle of maximum likelihood treats the observed data as fixed and asks: “What parameter values are most likely to have generated the data?”</em> Thus, the parameters are random variables.</p>
+<p>The principle of maximum likelihood is based on the idea that the observed data (even if it is not a random sample) are more likely to have come about as a result of a particular set of parameters. Thus, we flip the problem on its head. <em>Rather than consider the data as random and the parameters as fixed, the principle of maximum likelihood treats the observed data as fixed and asks: “What parameter values are most likely to have generated the data?”</em> Thus, the parameters are random variables <span class="citation" data-cites="ward2018maximum">Ward and Ahlquist (<a href="#ref-ward2018maximum" role="doc-biblioref">2018</a>)</span>.</p>
+<ul>
+<li><p>TK - I think it helps to explain what we mean by parameters….</p>
+<ul>
+<li><p>parameters ARE RANDOM VARIABLES!</p>
+<ul>
+<li><p>mean, variance, coefficients, etc</p></li>
+<li><p>the</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><em>Likelihood</em> can be thought of as the join probability of the data as a function of parameter values for a particular density or mass function.</p>
 <p>The key innovation in the likelihood framework is treating the observed data as fixed and asking what combination of probability model and parameter values are the most likely to have generated these specific data.</p>
+<p>likelihood is the product of probability distributions, evaluated at each of our observed data points. When we select a model, we have to choose a convenient distribution for our data. Convenenient distribution in this case refers to a a parametric probability distribution.</p>
+<p><strong>In Maximum likelihood, we specify our distrubtion based on the type of data and then we are estimating that distribution’s respective parameters. Each distribution, whether poisson, bernoulli, normal, etc. will have some parameter that describes the shape of distribution.</strong></p>
+<ul>
+<li><p><span class="math inline">\(\theta=\)</span> “the set of parameters” that define your chosen distribution.</p></li>
+<li><p>Example: in a Normal model, <span class="math inline">\(\theta=(\mu, \sigma^2)\)</span></p></li>
+<li><p>In MLE, you find the <span class="math inline">\(\theta\)</span> that maximizes how likely your data are under that distribution.</p>
+<ul>
+<li>thus, this hinges on us specifying the stochastic component correctly.</li>
+</ul></li>
+</ul>
+<p>I dont really understand the iid.</p>
 <section id="why-do-we-need-maximum-likelihood" class="level2">
 <h2 class="anchored" data-anchor-id="why-do-we-need-maximum-likelihood">Why do we need maximum likelihood?</h2>
 <p>We use it anytime our dependent variables has a distribution that was not generated by a Gaussian (normal) process. We are trying to estimate the <span class="math inline">\(\theta\)</span> (parameter) values based on the data we have been given.</p>
@@ -1565,12 +1705,33 @@ F-statistic: 351.1 on 3 and 3610 DF,  p-value: &lt; 2.2e-16</code></pre>
 <section id="stochastic-component" class="level3">
 <h3 class="anchored" data-anchor-id="stochastic-component">Stochastic component</h3>
 <p>Stochastic component: <span class="math inline">\(Y_i\sim f(\theta_i)\)</span></p>
-<p>Here, <span class="math inline">\(f\)</span> is some probability distribution or mass function. These can be Gaussian, binomial, Poisson, Weibull, etc. The stochastic statement describes our assumptions about the probability distributions that govern our data-generating process.</p>
+<p>Here, <span class="math inline">\(f\)</span> is some probability distribution or mass function. These can be Gaussian, binomial, Poisson, Weibull, etc. The stochastic statement describes our assumptions about the probability distributions that govern our data-generating process. The outcome needs to come from an exponential family.</p>
+<ul>
+<li><p>What does the theory tell us about the underlying PDF?</p></li>
+<li><p>What do the realized values, <span class="math inline">\(y_i\)</span>, tell us? (using histograms, summary stats…)</p></li>
+<li><p>Is your random variable discrete or continuous?</p></li>
+<li><p>Basically: know what type of data you are working with! Is this count, discrete, continuous, time till failure?</p></li>
+<li><p>The most common exponential families in GLM:</p>
+<ul>
+<li><p>Normal</p></li>
+<li><p>Binomial</p></li>
+<li><p>Poisson</p></li>
+<li><p>Gamma</p></li>
+<li><p>Bernoulli</p></li>
+<li><p>Multinomial</p></li>
+<li><p>Negative Binomial</p></li>
+<li><p>many more…</p></li>
+</ul></li>
+</ul>
 </section>
 <section id="systematic-component" class="level3">
 <h3 class="anchored" data-anchor-id="systematic-component">Systematic component</h3>
 <p>Systematic component: <span class="math inline">\(\theta_i = \beta_0+ \beta_1x_i\)</span></p>
-<p>The systematic statement describes our model for the parameters of the assumed probability distribution.</p>
+<p>The systematic statement describes our model for the parameters of the assumed probability distribution. We characterize the systematic components by creating a vector of explanatory variables that are linear in the predictors…these are just our normal betas setup in regression. These are the factors that affect the conditional mean of <span class="math inline">\(Y_i, \mu\)</span>.</p>
+</section>
+<section id="the-third-component-link-function" class="level3">
+<h3 class="anchored" data-anchor-id="the-third-component-link-function">The third component (link function)</h3>
+<p>The third component which is somewhat of an afterthought compared the the previous two, is the “link function”. The link function literally <em>links</em> the random component with the systematic component.</p>
 </section>
 </section>
 <section id="difference-between-mle-and-ols" class="level2">
@@ -1580,9 +1741,28 @@ F-statistic: 351.1 on 3 and 3610 DF,  p-value: &lt; 2.2e-16</code></pre>
 </section>
 <section id="section-10-generalized-linear-models-glm" class="level1">
 <h1>Section 10: Generalized Linear Models (GLM)</h1>
+<p>GLMS have three components:</p>
+<ul>
+<li><p>Random component: This specifies the response variable y and its probability distribution.</p></li>
+<li><p>Linear predictor: Xb</p></li>
+<li><p>link function: this a function g applied to each component of E(y) that relates</p>
+<ul>
+<li>the link function connects the random component with the linear predictor.</li>
+</ul></li>
+</ul>
+<section id="linear-regression" class="level2">
+<h2 class="anchored" data-anchor-id="linear-regression">Linear Regression</h2>
+<p>Linear regression is a type of generalized linear model.</p>
+<p><strong>What are the advantages of the MLE approach in the case of ordinary least squares?</strong></p>
+<ul>
+<li>none, they are equivalent, and the OLS estimator can be derived under weaker assumptions. But the OLS approach assumes a linear model and unbounded, continuous outcome. <span class="citation" data-cites="agresti2015foundations">Agresti (<a href="#ref-agresti2015foundations" role="doc-biblioref">2015</a>)</span></li>
+</ul>
+<p>The maximum likelihood approach permits us to specify nonlinear models quite easily if warranted by either our theory or data. The flexibility to model categorical and bounded variables is a benefit of the maximum likelihood approach.</p>
+<p>do we still estimate the betas the same though?</p>
+</section>
 <section id="logit" class="level2">
 <h2 class="anchored" data-anchor-id="logit">Logit</h2>
-<p>Models the probability of an event. Dependent variable is binary (0 or 1). The logit is a cumulative density function</p>
+<p>Models the probability of an event. Dependent variable is binary (0 or 1). The logit is a cumulative density function -it can be thought of as a distribution.</p>
 <section id="link-function" class="level3">
 <h3 class="anchored" data-anchor-id="link-function">Link Function:</h3>
 <p><span class="math display">\[
@@ -1591,6 +1771,23 @@ f(x) = \frac{1}{1+e^{-X_i\beta}}
 </section>
 <section id="logit-interpretation" class="level3">
 <h3 class="anchored" data-anchor-id="logit-interpretation">Logit Interpretation</h3>
+<p>The output from the logit is the log odds value. Literally an odds ratio logged.</p>
+<section id="odds-ratio" class="level4">
+<h4 class="anchored" data-anchor-id="odds-ratio">Odds Ratio</h4>
+<p>What is an odds ratio?</p>
+<p><span class="math display">\[
+Odds = \frac{Probability \ Event \ Occurs\ (p)}{ Probability \ Event \ Does \ Not\ Occur \ (1-p)}
+\]</span></p>
+</section>
+<section id="logit-limitations" class="level4">
+<h4 class="anchored" data-anchor-id="logit-limitations">Logit Limitations</h4>
+<ul>
+<li><p>In small samples, ML estimates of logit model coefficients have substantial bias away from zero <span class="citation" data-cites="rainey2021estimating">Rainey and McCaskey (<a href="#ref-rainey2021estimating" role="doc-biblioref">2021</a>)</span></p>
+<ul>
+<li>you can use a penalized maximum likelihood to fix this issue.</li>
+</ul></li>
+</ul>
+</section>
 </section>
 <section id="can-we-just-use-ols" class="level3">
 <h3 class="anchored" data-anchor-id="can-we-just-use-ols">Can We Just Use OLS?</h3>
@@ -1619,6 +1816,12 @@ f(x) = \frac{1}{1+e^{-X_i\beta}}
 <section id="section-11-model-selection" class="level1">
 <h1>Section 11: Model Selection</h1>
 <p>This section is intended for application purposes. What model do we used based on our data and application purpose? The bulk of this decision is driven by the structure of our data, specifically the dependent variable.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="model_selection.jpg" class="img-fluid figure-img"></p>
+<figcaption>Source: <span class="citation" data-cites="agresti2015foundations">Agresti (<a href="#ref-agresti2015foundations" role="doc-biblioref">2015</a>)</span></figcaption>
+</figure>
+</div>
 <section id="ordinary-least-squares-ols" class="level2">
 <h2 class="anchored" data-anchor-id="ordinary-least-squares-ols">Ordinary Least Squares (OLS)</h2>
 </section>
@@ -1642,12 +1845,82 @@ f(x) = \frac{1}{1+e^{-X_i\beta}}
 </section>
 <section id="ordinal-logit" class="level2">
 <h2 class="anchored" data-anchor-id="ordinal-logit">Ordinal Logit</h2>
+</section>
+</section>
+<section id="section-x-bias" class="level1">
+<h1>Section X: Bias</h1>
+<section id="what-is-bias" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-bias">What is Bias?</h2>
+<p>Bias is</p>
+</section>
+<section id="where-does-bias-show-up" class="level2">
+<h2 class="anchored" data-anchor-id="where-does-bias-show-up">Where does bias show up?</h2>
+<p>Bias relates to our coefficients (<span class="math inline">\(\beta\)</span>)’s!</p>
+</section>
+<section id="types-of-bias" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-bias">Types of Bias:</h2>
+<section id="selection-bias" class="level3">
+<h3 class="anchored" data-anchor-id="selection-bias">Selection Bias</h3>
+<p>As social scientists, we are interested in making causal arguments, our X causes variation in Y. In reality, when we use data, we have some variable of interest and a list of theorized control variables. We can think of our variable of interest as <em>the treatment</em>. However, we are not assigning our treatment randomly; there are likely specific (or latent) factors of a person that may influence their likelihood to receive the treatment. In this case, our treatment is not randomly assigned.</p>
+<p>Let’s use an example from my own study. I am interested in the effects of a walkable environment on voting turnout. I wan’t to make the case that living in a walkable area <em>causes</em> people to vote more. However, I cannot randomly assign people to live in walkable or non-walkable areas. People can <em>self-select</em> (for the most part) where they want to live. I have data on people’s voting history and where they live. I decide to a run a regression with voter turnout as my DV and the walkability of where they live as my IV, with an assortment of related control variables. I find a positive association, thus, living in a walkable area <em>causes</em> people to turnout to vote at a higher rate, right? No, what I have described is textbook selection bias occurring. My treatment (walkability of an area) is <strong>not</strong> randomly assigned. People can move for a variety of reasons. Maybe there is something about people wanting to live in a walkable environment (self-selecting) and being more likely to vote. Thus our estimate we derived earlier is biased as it does not account for people self-selecting into the treatment.</p>
+<p><strong>To make a causal argument, we need to make sure that our potential outcomes are independent of the treatment status so that we can argue that we have no selection bias (this is the CIA). Randomization ensures the treatment status is independent of our observation’s untreated outcomes.</strong> This is possible in a randomized control trial (RCT), but when we can’t do an RCT, we rely on our data. If we can argue that our treatment assignment is independent of our variables, then we can make a causal argument.</p>
+</section>
+<section id="omitted-variable-bias-ovb" class="level3">
+<h3 class="anchored" data-anchor-id="omitted-variable-bias-ovb">Omitted Variable Bias (OVB)</h3>
+<p>Remember that we are trying to estimate the effect of some X on Y. However, if we do a simple regression, and say this is the effect of X on Y, then we are likely engaging in an OVB. Basically, OVB occurs when you are missing an important control variable. Your regression is <em>mis-specified.</em></p>
+<p>OVB biases our coefficient on a number line. It is always positive or negative.</p>
+<section id="signing-the-bias" class="level4">
+<h4 class="anchored" data-anchor-id="signing-the-bias">Signing the bias</h4>
+<table class="table">
+<caption>Signing the Bias Table</caption>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><span class="math inline">\(Corr(x_1,x_2)&gt;0\)</span></td>
+<td><span class="math inline">\(Corr(x_1,x_2)&lt;0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\beta_2&gt;0\)</span></td>
+<td>positive bias</td>
+<td>negative bias</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\beta_2&lt;0\)</span></td>
+<td>negative bias</td>
+<td>positive bias</td>
+</tr>
+</tbody>
+</table>
+<p>This table helps to understand what variables you should control for. Just because a variable influences our dependent variable, does <strong><em>not</em></strong> mean you need to control for it. If that were the case, we would need to basically include a million variables. We only need to control when that variable influences our DV <strong><em>AND</em></strong> correlates with our main independent variable of interest. In simple terms, OVB is just not including the right control variables which causes a mis-specification of our regression.</p>
+<p>The direction tells us how our OVB is influencing our coefficient between our main independent variable and our DV.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="section-x-bias-v.-inefficiency-tradeoff" class="level1">
+<h1>Section X: Bias v. Inefficiency Tradeoff</h1>
+</section>
+<section id="section-x-what-influences-our-standard-errors" class="level1">
+<h1>Section X: What influences our Standard Errors?</h1>
+</section>
+<section id="section-x-panel-data" class="level1">
+
+
 
 
 </section>
-</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Section X: Panel Data</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-agresti2015foundations" class="csl-entry" role="listitem">
+Agresti, Alan. 2015. <em>Foundations of Linear and Generalized Linear Models</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-rainey2021estimating" class="csl-entry" role="listitem">
+Rainey, Carlisle, and Kelly McCaskey. 2021. <span>“Estimating Logit Models with Small Samples.”</span> <em>Political Science Research and Methods</em> 9 (3): 549–64.
+</div>
+<div id="ref-ward2018maximum" class="csl-entry" role="listitem">
+Ward, Michael D, and John S Ahlquist. 2018. <em>Maximum Likelihood for Social Science: Strategies for Analysis</em>. Cambridge University Press.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,
   author = {Neilon, Stone},
   title = {Data 1 \&amp; 2},
   date = {2024-05-15},
@@ -1677,6 +1950,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

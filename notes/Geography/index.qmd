@@ -78,13 +78,13 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
     -   Raster data model:
 
-        -   grid ceells - think of a matrix.
+        -   grid cells - think of a matrix.
 
             -   generally used for continuous variables.
 
                 -   elevation, temperature, slope, average rainfall.
 
-            -   can also be used for scirete features
+            -   can also be used for discrete features
 
                 -   political units, vegetation.
 
@@ -135,3 +135,29 @@ False Nothing
 False Easting: 500,000m west of the zone's central meridian
 
 US State Plane Coord system - better for study of states.
+
+# Vector Raster
+
+-   two parts: coordinates and attributes
+
+    -   spatial and non-spatial part.
+
+-   spaghetti models:
+
+    -   easy to use
+
+    -   bad: duplicate info
+
+    -   can be inefficient
+
+    -   editing and querying can be diffiicult
+
+-   Topology: geometric properties that do not change with changing shapes (adjacency, connectivity, containment)
+
+-   share boundaries = neighbors.
+
+-   Euclidean vs network distance.
+
+    -   distance means different things
+
+# Week 5
