@@ -489,3 +489,137 @@ The answer strategy is what we use to summarize the data produced by the data st
     -   allowing a little more leeway basically.
 
     -   Basically, just think of it is as not sharp.
+
+# Conjoints
+
+-   What is a conjoint:
+
+    -   a stated-preference experiment where respondents rate/choose profiles defined by multiple randomized attributes and levels.
+
+    -   outcome: choice (binary) or rating/rank (ordinal/continous)
+
+    -   common use cases: candidate choice, policy bundles, asylum cases.
+
+    -   key benefit: identify the marginal causal effect of an attribute level while averaging over the distribution of other features.
+
+-   AMCE:
+
+    -   Average Marginal Component Effect: expected change in outcome when an attribute level changes from a to a prime averaged over the joint distirbution of other attributes.
+
+-   Identification conditions: Randomization of attribute levels
+
+    -   you cant randomize EVERYTHING in a conjoint
+
+        -   you can get balance issues where there is not enough of one feature being showed.
+
+        -   some attributes don't make sense - like a 16 year old but then they have a phd.
+
+    -   make sure there is nothing systematic in the order.
+
+    -   No SUTVA violation - stable preferences across tasks; SUTVA within respondent-profile pair.
+
+-   AMCE: contrasts levels (difference from baseline/reference); model-based or linear probability with dummies.
+
+-   Marginal Means (MM): average potential otucome for each level (probabGoal:ility of choice if that level were set, averaged over others)
+
+-   AMCE is better for hypothesis testing.
+
+-   Always include fixed effects and clustered SE
+
+-   Clustered SE - accounting for autocorrelation in the errors.
+
+-   Fixed Effects is dealing with time invariant trains between respondents
+
+# Week...im not sure
+
+-   regression is just equal to the difference in means for estimand.
+
+-   interaction is just the difference
+
+-   What happens if we have multiple arms
+
+    -   we do different equations and then we need to theorize what comparisons matter.
+
+-   write everything out as an estimand and estimator
+
+# Adaptive Experiments
+
+-   What is an adaptive experiment?
+
+    -   Randomization probabilities change over time based on accumulating outcomes.
+
+    -   Goal: learn treatment effects and allocate more units to promising arms.
+
+-   Motivations: ethical allocation, operational efficiency, online platforms.
+
+-   Social media companies do a lot of this
+
+    -   they want more engagement so they adapt as they go.
+
+-   Explore-Exploit Trade-off
+
+    -   Explore: assign across arms to reduce uncertainty
+
+    -   Exploit: assign to currently best arm to maximize outcomes now.
+
+    -   Adaptive rules balance both; too much exploit risks lock-in to false winners
+
+-   Epsilon-Greedy
+
+    -   assign to current best arm 1-epsilon
+
+-   Thompson Sampling
+
+-   When do we want to use adaptive experiments?
+
+    -   Resource constrained interventions where outcomes accrue quickly.
+
+    -   Ethical motivation to shift away from harmful/ineffective arms
+
+    -   Less appropriate when outcomes are slow, rare, or when spillovers dominate.
+
+# Pre-Registered Reports
+
+-   Accepted in principle - if you can actually carry out the experiment - then journal will publish what the final project is
+
+-   **Framing:** intro, theory, and testable hypothesis tied to clear estimands
+
+-   **Eligibility/prior unobservability:** document that outcome data are not yet observed; specify access controls and plan to register Stage-1 materials before data access.
+
+    -   pilot data.
+
+-   **Design/methods:** sampling frames and vendor, randomization unit and procedure, treatments (exact stimuli), outcome measures with validity checks, and prespecified inclusion/exclusion rules.
+
+-   I should write this up in qualtrics.
+
+-   **Data quality & contingency planning:** attention & manipulation checks, missingness/attrition handing; define what makes the study informative under nulls.
+
+-   have bot captures
+
+-   **Analysis plan:** estimands, estimators, model specs, covariates, clustering, multiple-comparisons plan (Bonferroni correction), robustness tests.
+
+-   **Power/sample:** justify effects and variance target high power (.9) report MDEs aligned to planned tests.
+
+    -   need to be able to interpret a null result
+
+        -   effect not big as our theorized tau.
+
+    -   power analysis for low and upper bounds.
+
+    -   think about substantively effect size for null interpretation.
+
+-   multiple outcomes: DO A BONFERRONI CORRECTION!
+
+    -   even with simulated data - show one with and without correction.
+
+-   robustness check - could be a diff model - could use OLS for likert scale and then check with ordered logit.
+
+    -   main analysis is an index
+
+        -   robustness check - breaking down individual results.
+
+-   **mock results**
+
+-   Get IRB Approval in advance.
+
+-   Design Table!!!!!

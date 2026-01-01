@@ -749,7 +749,7 @@ I emailed Andy about this and figured it might be beneficial to include it here.
 
 Interactions are used when we believe the relationship is *conditional*. For example, X causes Y, only if Z is active. The effect of X on Y depends on the level of Z. In other words, the effect of one independent variable on the dependent variable is conditioned by another variable.
 
-To accommodate a relationship such as this one, we multiply the two variables together rather than adding. Goal: deterime whether the function $\textbf{E}[y|x]$ is constant for different subsamples.
+To accommodate a relationship such as this one, we multiply the two variables together rather than adding. Goal: determine whether the function $\textbf{E}[y|x]$ is constant for different sub-samples.
 
 ### Interactions increase multicollinearity
 
@@ -1133,7 +1133,7 @@ The principle of maximum likelihood is based on the idea that the observed data 
 
 The key innovation in the likelihood framework is treating the observed data as fixed and asking what combination of probability model and parameter values are the most likely to have generated these specific data.
 
-likelihood is the product of probability distributions, evaluated at each of our observed data points. When we select a model, we have to choose a convenient distribution for our data. Convenenient distribution in this case refers to a a parametric probability distribution.
+likelihood is the product of probability distributions, evaluated at each of our observed data points. When we select a model, we have to choose a convenient distribution for our data. Convenient distribution in this case refers to a a parametric probability distribution.
 
 **In Maximum likelihood, we specify our distrubtion based on the type of data and then we are estimating that distribution's respective parameters. Each distribution, whether poisson, bernoulli, normal, etc. will have some parameter that describes the shape of distribution.**
 
@@ -1201,7 +1201,7 @@ They are equivalent, and the OLS estimator can be derived under weaker assumptio
 
 # Section 10: Generalized Linear Models (GLM)
 
-GLMS have three components:
+GLMS have three components: a structural component, a link function, and a response distribution
 
 -   Random component: This specifies the response variable y and its probability distribution.
 
@@ -1210,6 +1210,8 @@ GLMS have three components:
 -   link function: this a function g applied to each component of E(y) that relates
 
     -   the link function connects the random component with the linear predictor.
+    -   THE LINK FUNCTION BOUNDS!
+        -   The link function (actually the inverse link, in an accident of naming) in a GLM fixes this up by transforming the output of the linear function to lie in the acceptable range of parameters for distribution family.
 
 ## Linear Regression
 
@@ -1221,7 +1223,7 @@ Linear regression is a type of generalized linear model.
 
 The maximum likelihood approach permits us to specify nonlinear models quite easily if warranted by either our theory or data. The flexibility to model categorical and bounded variables is a benefit of the maximum likelihood approach.
 
-do we still estimate the betas the same though?
+do we still estimate the betas the same though? In MLE, NO! We estimate betas my maximizing the likelihood. Partial derivative stuff and calculus.
 
 ## Logit
 
@@ -1232,6 +1234,8 @@ Models the probability of an event. Dependent variable is binary (0 or 1). The l
 $$
 f(x) = \frac{1}{1+e^{-X_i\beta}}
 $$
+
+The link function is the cumulative density function (CDF)
 
 ### Logit Interpretation
 
@@ -1269,7 +1273,17 @@ $$
 
 ## Probit
 
+Probit is a different model but is used for exactly the same purposes when our dependent variable is dichotomous. So what is the difference? The probit uses a different link function.
+
+more flexible -
+
 ### Probit Interpretation
+
+### Logit over Probit? 
+
+Which one should we use? To be honest, I haven't seemed to find a good answer to this. They are both nearly identical in results. However, the logit is considered the *canonical link function*, and thus has considerably more resources on it. Additionally, the logit uses the log of odds-ratios for interpretation.
+
+Aside from greater resources available for the use of the logit, it seems the logits popularity might also be a result of it's coefficients being larger than probits. It is not that logit estimates a different true effect, it's just that the coefficient is higher because of the units our estimation is using. While it is not actually bigger, it gives the appearance of being bigger. Perhaps the best reason I can give for its' use is that bigger = better.
 
 # Section 11: Model Selection
 
@@ -1277,9 +1291,11 @@ This section is intended for application purposes. What model do we used based o
 
 ![Source: @agresti2015foundations](model_selection.jpg){fig-align="center"}
 
+The table above is useful because it defines most of what we do once we specify the stochastic component (the dependent variable). The random component specifies the data-generating distribution. Once you specify the random component, you are essentially saying, "I believe $Y | X$ comes from *this* exponential-family distribution." Once this is selected, we are essentially *furnished* with a link to connect the random to the systematic component. Where does this link come from? It comes from super nerds in statistics back in the day that have already done the math to solve it. These link functions are the canonical link functions, meaning they are the "default" link functions. However, this should not mean that you are restricted to these link functions. For example, while logit is the canonical link function for the binomial distribution, there is also the probit that can be used.
+
 ## Ordinary Least Squares (OLS)
 
-## 2 Stage Least Squares
+## 2 Stage Least Squares this is an instrumental variable
 
 ## Logit
 
@@ -1333,8 +1349,152 @@ This table helps to understand what variables you should control for. Just becau
 
 The direction tells us how our OVB is influencing our coefficient between our main independent variable and our DV.
 
-# Section X: Bias v. Inefficiency Tradeoff
-
 # Section X: What influences our Standard Errors?
 
 # Section X: Panel Data
+
+# Section X: Econometrics Midterm Review 1
+
+This section is to review the questions and my answers on the midterm. I provide my (mostly) incorrect answers and then provide the updated (correct) answer.
+
+## Question 1:
+
+### Part a:
+
+### Part b:
+
+*The researcher then adds a quadratic term and runs the following regression:*
+
+$$
+AsmthaHosp\_2024_j = \beta_0 +\beta_1 AvgAnnualPM2.5\_2024_j+\beta_2AvgAnnualPM2.5\_2024^2_j + \epsilon_j 
+$$
+
+*The estimates are* $\hat{\beta_1}=2.4(1.1)$ *and* $\hat{\beta_2}=.12(.06)$ *with standard errors in parentheses.*
+
+#### Question: Interpret the magnitudes of these coefficients, ignoring whether they are statistically significant and continuing not to use causal language.
+
+##### Original Answer: 5 points available only received 1 point.
+
+A one unit increase in particulate matter is associated with a 2.4 unit increase in asthma hospitalizations. Magnitude is substantial.
+
+##### Corrected Answer:
+
+$\beta_1$ represents the effect of particulate matter on Asthma hospitalizations in 2024. On average, a one unit increase in particulate matter is associated with 2.4 more hospitalizations per 100,000 residents in 2024. Given our independent variable is measured in micrograms per cubic meter, the effect of a one unit increase resulting in 2.4 more hospitalizations on average appears substantial.
+
+$\beta_2$ is the quadratic term. We make this functional form change if we believe the effect of X on Y is not constant. That is, the effect might decrease or increase at certain points. Adding the quadratic term allows us to test this specification. Our $\beta_2$ coefficient is .12, this means for every one unit change in annual particulate matter, the effect of particulate matter on hospitalizations increases.
+
+As an example, imagine X=5
+
+$$
+AsmthaHosp\_2024_j = \beta_0 +2.4(5)+.12(5)^2 + \epsilon_j 
+$$
+
+When we take the derivative of Y with respect to X we get:
+
+$$
+AsmthaHosp\_2024_j = \beta_0 +2.4+.24(5) + \epsilon_j 
+$$
+
+Ignoring the intercept, we get a value of 3.6. Thus, when X is 5, the expected value of hospitalizations increases by 3.6 units. If we did this at different levels of X, we will get different slopes, indicating that as X increases, the rate of hospitalizations increases.
+
+X=0 -\> slope is 2.4
+
+X=5 -\> slope is 3.6
+
+X=10 -\> slope is 4.8
+
+#### Question: (4 points) The regression results list a t-stat of 2.00 and a p-value of 0.0455 in the for for $\beta^2$. Explain the meaning of the null hypothesis being tested and what the researcher should conclude based on a p-value of 0.0455.
+
+##### Original Answer: 4 points available; received full credit
+
+The null of our quadratic term is simply a linear form. Our alternative hypothesis is our *quadratic is not linear*. Given our t-score + p-value, our quadratic term is significant at the .05 level. We can reject the null hypothesis. ***Our quadratic is not linear.***
+
+##### Corrected Answer:
+
+I received maximum points but I want to expand a little. What does this mean in plain english? Basically, this question is asking, as X grows, does the slope marginally increase? Is the effect linear (a straight upwards line) OR does the effect curve up (the slope getting steeper as X increases - think of a hill)? Our result here indicates that it is the latter. As particulate matter increases, the effect on hospitalizations grows marginally bigger. The effect *accelerates* as X increases. It is **convex.**
+
+### Part c:
+
+Now consider the original bivariate regression:
+
+$$
+AsmthaHosp\_2024_j = \beta_0 +\beta_1 AvgAnnualPM2.5\_2024_j + \epsilon_j 
+$$
+
+#### Question: (2 points) Name a specific variable you think the author should add as a control variable to address omitted variable bias. When describing the variable, remember that the observations are counties.
+
+##### Original Answer: 2 points available; received full credit
+
+Areas prone to wildfire. More wildfires can increase who goes to hospital for asthma treatment. More wildfires increase particulate matter.
+
+##### 
+
+#### Question: Make an argument for the sign of the bias on $\beta_1$ in the short (bivariate regression when leaving out the variable you named in the previous question.
+
+##### Original Answer: 4 points available; received 3/4 points
+
+$$
+Wildfires \ = \ \beta>0 \ and \ corr(x_1,x_2)>0
+$$
+
+Given both are positive, we are observing a positive omitted variable bias.
+
+*Note: this control sucks and sounds more like an instrument*
+
+##### Correct Answer:
+
+There are two things we are doing here:
+
+1\) finding an omitted variable
+
+2\) signing the bias of the omitted variable
+
+Let's first identify a better control variable that we are omitting. I chose wildfires in a panic. How do we think of a control variable? What is a variable that influences asthma hospitalizations AND correlates with annual particulate matter? One that comes to mind is TK
+
+## Question 2:
+
+Consider a randomized controlled trial (RCT) evaluating whether an intervention that deletes streaming video apps from students' phones improves their grades. Before agreeing to be in the study, students need to give their phone pin to the research team and to give them permission to uninstall apps. If they are randomized into the treatment group, the researchers uninstall all streaming video apps from the student's phone and install software to make sure that the student does not re-install the apps or access streaming video through the website. Students in the control group read a handout about how streaming video re-wires people's brains to focus on shorter term psychological rewards, but the researchers do not adjust anything on the control group's phones. The main outcome is the end-of-semester GPA, measure on a 4.0 scale.
+
+### Part a:
+
+Before the RCT, student success center offered students the ability to receive this service on a voluntary basis. A researcher considers using administrative data to determine the effect of this service. Specifically they consider comparing students' average grade in semesters when students opted in to the service to the students' own average grades from the semester before they opted in.
+
+#### Question: (5 points) Explain why this comparison is unlikely to give the causal effect of the streaming video deletion intervention.
+
+##### Original Answer: 4/5 points received.
+
+We have a selection bias as individuals opted into the service. This means the treatment assignment was **not** random. The endogenous treatment assignment biases our results results because there is likely some features about a person that opts in that makes them systematically different from those that do not.
+
+Also, the previous semester was different classes. Comparing two different semesters is problematic because it does not give us an appropriate conterfactual.
+
+## True or False Section
+
+### Question 3:
+
+True or False: Even if study participants can select whether to participate based on the gains they would experience (so that $E[Y_{1i} - Y_{0i} | D_i =1] \neq E[Y_{1i} - Y_{0i} | D_i =0]$), is it possible for the difference in mean observed outcomes for the treated and untreated groups ($E[Y_{i}| D_i =1] - E[Y_{i}| D_i =0]$) to have a causal interpretation.
+
+# Section X: Causal Inference
+
+With a working understanding of different statistical models, we move to the land of *causal inference.* It is important to note here that while causal inference gets treated as a separate enterprise, *it is not.* Causal inference is a paradigm and framework we use in tandem with our statistical models to make causal claims about the world. If your econometrics training is like mine, you have probably learned about all these models and how they help you understand how X relates to Y conditional on a bunch of other variables (Z). But you've been told the effect of X is still not causal.
+
+# Section X: Robustness Checks
+
+# Section X:
+
+Lean towards being opinionated
+
+don't hedge.
+
+# Section X: Confidence Intervals 
+
+What are they?
+
+In both cases the width of the confidence interval is proportional to the standard error of the estimator. That is, the larger the standard error, the larger is the width of the confidence interval. The larger the standard error of the estimator, the greater is the uncertainty of estimating the true value of the unknown parameter. Thus, the standard error of an estimator is often described as a measure of the **precision** of the estimator. (how precisely the estimator measures the true population value).
+
+The confidence interval gives us the set of all null hypotheses that we would have been unable to reject. To get the 95% confidence interval, you simply add and subtract 1.96 standard errors to your estimated coefficient. 99%? Just add/subtract 2.33 standard errors to both sides.
+
+Data from a representative sample were used to generate a 95% confidence interval for the proportion of female babies born each year. The result yields an upper bound of 0.56 and a lower bound of 0.48. This 95% confidence interval is reported as 95% CI (0.48, 0.56). Associatively, there is a 95% confidence level that this interval will contain the true population proportion.
+
+Informally, a confidence interval (CI) is a range of values (aka an interval) which is likely to contain a population value (aka a parameter) for "something" that is being estimated. This interval contains/surrounds what is known as an estimate (aka a point estimate). Ideally, a narrow confidence interval (CI) if desirable because it conveys a better estimation of the actual population value.
+
+Why don't econ papers report t-stats and p-values sometimes? They only care about the coefficient and SE - they can derive the rest fairly easily with those two values.

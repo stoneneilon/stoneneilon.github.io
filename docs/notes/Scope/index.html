@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stone Neilon">
+<meta name="dcterms.date" content="2024-05-15">
+<meta name="description" content="Scope and Methods Prep">
+
+<title>Stone Neilon - Scope and Methods Prep/Causal Inference</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Stone Neilon</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://drive.google.com/file/d/1RgKR73KnxS3K_AP2nqiTiZZzAL-zJZ2N/view?usp=sharing"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <ul class="collapse">
+  <li><a href="#useful-resources" id="toc-useful-resources" class="nav-link" data-scroll-target="#useful-resources">Useful Resources</a></li>
+  </ul></li>
+  <li><a href="#section-1-ways-of-knowing" id="toc-section-1-ways-of-knowing" class="nav-link" data-scroll-target="#section-1-ways-of-knowing">Section 1: Ways of Knowing</a>
+  <ul class="collapse">
+  <li><a href="#important-readings" id="toc-important-readings" class="nav-link" data-scroll-target="#important-readings">Important Readings</a></li>
+  <li><a href="#an-important-but-annoying-debate-quantitative-v.-qualitative" id="toc-an-important-but-annoying-debate-quantitative-v.-qualitative" class="nav-link" data-scroll-target="#an-important-but-annoying-debate-quantitative-v.-qualitative">An important but annoying debate: Quantitative v. Qualitative</a></li>
+  <li><a href="#thinking-of-a-political-science-question-to-ask" id="toc-thinking-of-a-political-science-question-to-ask" class="nav-link" data-scroll-target="#thinking-of-a-political-science-question-to-ask">Thinking of a political science question to ask</a></li>
+  <li><a href="#science-must-be-falsifiable" id="toc-science-must-be-falsifiable" class="nav-link" data-scroll-target="#science-must-be-falsifiable">Science must be falsifiable</a></li>
+  <li><a href="#making-inferences" id="toc-making-inferences" class="nav-link" data-scroll-target="#making-inferences">Making Inferences</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#two-views-of-random-variation" id="toc-two-views-of-random-variation" class="nav-link" data-scroll-target="#two-views-of-random-variation">Two Views of Random Variation:</a></li>
+  </ul></li>
+  <li><a href="#causality" id="toc-causality" class="nav-link" data-scroll-target="#causality">Causality</a>
+  <ul class="collapse">
+  <li><a href="#what-is-causality" id="toc-what-is-causality" class="nav-link" data-scroll-target="#what-is-causality">What is causality?</a></li>
+  <li><a href="#the-fundamental-problem-of-causal-inference" id="toc-the-fundamental-problem-of-causal-inference" class="nav-link" data-scroll-target="#the-fundamental-problem-of-causal-inference">The Fundamental Problem of Causal Inference</a></li>
+  <li><a href="#the-counterfactual" id="toc-the-counterfactual" class="nav-link" data-scroll-target="#the-counterfactual">The Counterfactual</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#causal-mechanisms" id="toc-causal-mechanisms" class="nav-link" data-scroll-target="#causal-mechanisms">Causal Mechanisms</a></li>
+  <li><a href="#multiple-causality" id="toc-multiple-causality" class="nav-link" data-scroll-target="#multiple-causality">Multiple Causality</a></li>
+  <li><a href="#systematic-and-asymetric-causality" id="toc-systematic-and-asymetric-causality" class="nav-link" data-scroll-target="#systematic-and-asymetric-causality">Systematic and Asymetric Causality</a></li>
+  <li><a href="#causal-notation-estimands" id="toc-causal-notation-estimands" class="nav-link" data-scroll-target="#causal-notation-estimands">Causal Notation &amp; Estimands</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#section-2-the-experiment" id="toc-section-2-the-experiment" class="nav-link" data-scroll-target="#section-2-the-experiment">Section 2: The Experiment</a>
+  <ul class="collapse">
+  <li><a href="#what-is-an-experiment-actually" id="toc-what-is-an-experiment-actually" class="nav-link" data-scroll-target="#what-is-an-experiment-actually">What is an experiment actually?</a></li>
+  <li><a href="#randomization" id="toc-randomization" class="nav-link" data-scroll-target="#randomization">Randomization</a></li>
+  <li><a href="#how-do-we-do-an-experiment" id="toc-how-do-we-do-an-experiment" class="nav-link" data-scroll-target="#how-do-we-do-an-experiment">How do we do an experiment?</a></li>
+  <li><a href="#how-do-we-interpret-results-from-an-experiment" id="toc-how-do-we-interpret-results-from-an-experiment" class="nav-link" data-scroll-target="#how-do-we-interpret-results-from-an-experiment">How do we interpret results from an experiment?</a></li>
+  <li><a href="#experiments-with-researcher-treatment-assignment" id="toc-experiments-with-researcher-treatment-assignment" class="nav-link" data-scroll-target="#experiments-with-researcher-treatment-assignment">Experiments with researcher treatment assignment</a></li>
+  </ul></li>
+  <li><a href="#section-x-causal-claims-with-observational-data" id="toc-section-x-causal-claims-with-observational-data" class="nav-link" data-scroll-target="#section-x-causal-claims-with-observational-data">Section X: Causal Claims with Observational Data</a>
+  <ul class="collapse">
+  <li><a href="#unit-homogeneity" id="toc-unit-homogeneity" class="nav-link" data-scroll-target="#unit-homogeneity">Unit Homogeneity</a></li>
+  <li><a href="#conditional-independence-assumption-cia" id="toc-conditional-independence-assumption-cia" class="nav-link" data-scroll-target="#conditional-independence-assumption-cia">Conditional Independence Assumption (CIA)</a>
+  <ul class="collapse">
+  <li><a href="#what-is-the-cia" id="toc-what-is-the-cia" class="nav-link" data-scroll-target="#what-is-the-cia">What is the CIA?</a></li>
+  <li><a href="#conditionally-conditional-independence" id="toc-conditionally-conditional-independence" class="nav-link" data-scroll-target="#conditionally-conditional-independence">(Conditionally) Conditional Independence</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#section-x-instrumental-variables-2sls" id="toc-section-x-instrumental-variables-2sls" class="nav-link" data-scroll-target="#section-x-instrumental-variables-2sls">Section X: Instrumental Variables (2SLS)</a>
+  <ul class="collapse">
+  <li><a href="#why-use-an-instrumental-variable" id="toc-why-use-an-instrumental-variable" class="nav-link" data-scroll-target="#why-use-an-instrumental-variable">Why use an Instrumental variable?</a></li>
+  <li><a href="#requirements-for-instrumental-variables" id="toc-requirements-for-instrumental-variables" class="nav-link" data-scroll-target="#requirements-for-instrumental-variables">Requirements for Instrumental Variables</a>
+  <ul class="collapse">
+  <li><a href="#condition-1-instrument-relates-to-x" id="toc-condition-1-instrument-relates-to-x" class="nav-link" data-scroll-target="#condition-1-instrument-relates-to-x">Condition 1: Instrument relates to X</a></li>
+  <li><a href="#condition-2-exclusion-restriction" id="toc-condition-2-exclusion-restriction" class="nav-link" data-scroll-target="#condition-2-exclusion-restriction">Condition 2: Exclusion restriction</a></li>
+  </ul></li>
+  <li><a href="#what-is-the-perfect-instrumental-variable" id="toc-what-is-the-perfect-instrumental-variable" class="nav-link" data-scroll-target="#what-is-the-perfect-instrumental-variable">What is the perfect instrumental variable?</a></li>
+  <li><a href="#some-popular-instruments-you-may-encounter" id="toc-some-popular-instruments-you-may-encounter" class="nav-link" data-scroll-target="#some-popular-instruments-you-may-encounter">Some popular instruments you may encounter</a>
+  <ul class="collapse">
+  <li><a href="#rain" id="toc-rain" class="nav-link" data-scroll-target="#rain">Rain</a></li>
+  <li><a href="#distance" id="toc-distance" class="nav-link" data-scroll-target="#distance">Distance</a></li>
+  <li><a href="#waterways" id="toc-waterways" class="nav-link" data-scroll-target="#waterways">Waterways</a></li>
+  <li><a href="#altitude" id="toc-altitude" class="nav-link" data-scroll-target="#altitude">Altitude</a></li>
+  </ul></li>
+  <li><a href="#compliers-in-an-instrumental-variable-setup" id="toc-compliers-in-an-instrumental-variable-setup" class="nav-link" data-scroll-target="#compliers-in-an-instrumental-variable-setup">Compliers in an instrumental variable setup</a></li>
+  <li><a href="#the-pitfalls-of-instrumental-variables" id="toc-the-pitfalls-of-instrumental-variables" class="nav-link" data-scroll-target="#the-pitfalls-of-instrumental-variables">The pitfalls of instrumental variables</a></li>
+  <li><a href="#writing-a-research-paper-with-an-instrumental-variable" id="toc-writing-a-research-paper-with-an-instrumental-variable" class="nav-link" data-scroll-target="#writing-a-research-paper-with-an-instrumental-variable">Writing a research paper with an instrumental variable</a></li>
+  <li><a href="#example-paper-early-marriage-age-of-menarche-and-female-schooling-attainment-in-bangladesh.-erica-field-attila-ambrus" id="toc-example-paper-early-marriage-age-of-menarche-and-female-schooling-attainment-in-bangladesh.-erica-field-attila-ambrus" class="nav-link" data-scroll-target="#example-paper-early-marriage-age-of-menarche-and-female-schooling-attainment-in-bangladesh.-erica-field-attila-ambrus">Example paper: <em>Early Marriage, Age of Menarche, and Female Schooling Attainment in Bangladesh.</em> Erica Field &amp; Attila Ambrus</a>
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract:</a></li>
+  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question">Question:</a></li>
+  <li><a href="#instrumental-variable" id="toc-instrumental-variable" class="nav-link" data-scroll-target="#instrumental-variable">Instrumental variable:</a></li>
+  <li><a href="#why-the-need-for-an-instrumental-variable" id="toc-why-the-need-for-an-instrumental-variable" class="nav-link" data-scroll-target="#why-the-need-for-an-instrumental-variable">Why the need for an instrumental variable?</a></li>
+  <li><a href="#breaking-this-down" id="toc-breaking-this-down" class="nav-link" data-scroll-target="#breaking-this-down">Breaking this down:</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation:</a></li>
+  <li><a href="#estimation-strategy" id="toc-estimation-strategy" class="nav-link" data-scroll-target="#estimation-strategy">Estimation Strategy</a></li>
+  <li><a href="#exclusion-restriction" id="toc-exclusion-restriction" class="nav-link" data-scroll-target="#exclusion-restriction">Exclusion Restriction</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#section-x-bias-and-efficiency" id="toc-section-x-bias-and-efficiency" class="nav-link" data-scroll-target="#section-x-bias-and-efficiency">Section X: Bias and Efficiency</a>
+  <ul class="collapse">
+  <li><a href="#bias" id="toc-bias" class="nav-link" data-scroll-target="#bias">Bias</a>
+  <ul class="collapse">
+  <li><a href="#bias-formally" id="toc-bias-formally" class="nav-link" data-scroll-target="#bias-formally">Bias Formally</a></li>
+  <li><a href="#statistical-bias" id="toc-statistical-bias" class="nav-link" data-scroll-target="#statistical-bias">Statistical Bias</a></li>
+  <li><a href="#substantive-bias" id="toc-substantive-bias" class="nav-link" data-scroll-target="#substantive-bias">Substantive Bias</a></li>
+  <li><a href="#types-of-bias" id="toc-types-of-bias" class="nav-link" data-scroll-target="#types-of-bias">Types of Bias</a></li>
+  <li><a href="#other-causes-of-bias" id="toc-other-causes-of-bias" class="nav-link" data-scroll-target="#other-causes-of-bias">Other Causes of Bias</a></li>
+  </ul></li>
+  <li><a href="#efficiency" id="toc-efficiency" class="nav-link" data-scroll-target="#efficiency">Efficiency</a>
+  <ul class="collapse">
+  <li><a href="#how-do-we-measure-efficiency" id="toc-how-do-we-measure-efficiency" class="nav-link" data-scroll-target="#how-do-we-measure-efficiency">How do we measure efficiency?</a></li>
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1">Example</a></li>
+  <li><a href="#efficiency-formally" id="toc-efficiency-formally" class="nav-link" data-scroll-target="#efficiency-formally">Efficiency Formally:</a></li>
+  </ul></li>
+  <li><a href="#bias-and-efficiency-trade-off" id="toc-bias-and-efficiency-trade-off" class="nav-link" data-scroll-target="#bias-and-efficiency-trade-off">Bias and Efficiency Trade-off</a></li>
+  <li><a href="#measurement-error" id="toc-measurement-error" class="nav-link" data-scroll-target="#measurement-error">Measurement Error</a>
+  <ul class="collapse">
+  <li><a href="#measurement" id="toc-measurement" class="nav-link" data-scroll-target="#measurement">Measurement</a></li>
+  <li><a href="#systematic-measurement-error" id="toc-systematic-measurement-error" class="nav-link" data-scroll-target="#systematic-measurement-error">Systematic Measurement Error</a></li>
+  <li><a href="#nonsystematic-measurement-error" id="toc-nonsystematic-measurement-error" class="nav-link" data-scroll-target="#nonsystematic-measurement-error">Nonsystematic Measurement Error</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#section-x-natural-experiments" id="toc-section-x-natural-experiments" class="nav-link" data-scroll-target="#section-x-natural-experiments">Section X: Natural Experiments</a></li>
+  <li><a href="#section-x-diff-in-diff" id="toc-section-x-diff-in-diff" class="nav-link" data-scroll-target="#section-x-diff-in-diff">Section X: Diff-in-diff</a>
+  <ul class="collapse">
+  <li><a href="#assumptions-in-diff-in-diff" id="toc-assumptions-in-diff-in-diff" class="nav-link" data-scroll-target="#assumptions-in-diff-in-diff">Assumptions in diff-in-diff</a></li>
+  <li><a href="#writing-a-diff-in-diff-paper" id="toc-writing-a-diff-in-diff-paper" class="nav-link" data-scroll-target="#writing-a-diff-in-diff-paper">Writing a diff-in-diff paper</a></li>
+  <li><a href="#extensions-of-diff-in-diff-framework" id="toc-extensions-of-diff-in-diff-framework" class="nav-link" data-scroll-target="#extensions-of-diff-in-diff-framework">Extensions of diff-in-diff framework</a>
+  <ul class="collapse">
+  <li><a href="#triple-diff-in-diff" id="toc-triple-diff-in-diff" class="nav-link" data-scroll-target="#triple-diff-in-diff">Triple Diff-in-diff</a></li>
+  <li><a href="#placebo-analysis" id="toc-placebo-analysis" class="nav-link" data-scroll-target="#placebo-analysis">Placebo Analysis</a></li>
+  <li><a href="#synthetic-diff-in-diff" id="toc-synthetic-diff-in-diff" class="nav-link" data-scroll-target="#synthetic-diff-in-diff">Synthetic Diff-in-diff</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Scope and Methods Prep/Causal Inference</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Spring</div>
+    <div class="quarto-category">Fall</div>
+    <div class="quarto-category">2024</div>
+    <div class="quarto-category">Methods</div>
+    <div class="quarto-category">2023</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Scope and Methods Prep
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://stoneneilon.github.io/">Stone Neilon</a> <a href="https://orcid.org/0009-0006-6026-4384" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colorado.edu/polisci/people/graduate-students/stone-neilon">
+            PhD student of political science @ The University of Colorado Boulder
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 15, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="preface" class="level1">
+<h1>Preface</h1>
+<section id="useful-resources" class="level2">
+<h2 class="anchored" data-anchor-id="useful-resources">Useful Resources</h2>
+<p>I am a firm believer that this material is best learned through multiple channels. You need to hear and see this material repeatedly from different individuals. Each individual may explain a concept from a different perspective, helping you get closer to fully understanding what is going on. In this section, I provide all the resources that helped me create this document and learn about econometrics/causal inference. To be clear, much of this document is a compilation of material/notes from these resources. I do not want to claim that this material is all my doing. I am simply the messenger of these resources, further translated into a framework that was useful for me. Here is a (non-exhaustive) list of all the resources and individuals that helped me understand econometrics:</p>
+<ol type="1">
+<li>Anand Sokhey</li>
+<li>Andy Philips</li>
+<li>Brian C</li>
+<li>Josh Strayhorn</li>
+<li>Alex Siegel</li>
+<li>The Effect: An Introduction to Research Design and Causality</li>
+<li>The Mixtape</li>
+<li>KKV</li>
+</ol>
+</section>
+</section>
+<section id="section-1-ways-of-knowing" class="level1">
+<h1>Section 1: Ways of Knowing</h1>
+<p>As a PhD student, you are embarking on a journey to create new knowledge. Engage in scientific method is how we create that knowledge. Rigorous testing and iterations.</p>
+<section id="important-readings" class="level2">
+<h2 class="anchored" data-anchor-id="important-readings">Important Readings</h2>
+<p>There are many articles and books you can read regarding this subject. It is by nature a philosophical topic/debate. The readings here are to bring you up to speed on these philosophical arguments and provide enough information for you to understand how modern political science thinks of what science is and it’s purpose.</p>
+</section>
+<section id="an-important-but-annoying-debate-quantitative-v.-qualitative" class="level2">
+<h2 class="anchored" data-anchor-id="an-important-but-annoying-debate-quantitative-v.-qualitative">An important but annoying debate: Quantitative v. Qualitative</h2>
+<p>Perhaps as a result of improper readings of KKV, first year graduate students tend to devolve into debates about the merits and shortcomings of both quantitative and qualitative work. In my opinion, this debate is silly and entirely unproductive. Our interest in pursuing a PhD is to make credible claims about the world. To make these credible claims, we need to ensure that our claim is well founded, can be reproduced, and is scientific. Anyone can make claims about the world, the difference between you as a PhD student is that you are not making these claims solely off ‘vibes’. Qualitative and quantitative methods are simply tools we use to make credible inferences about the world.</p>
+</section>
+<section id="thinking-of-a-political-science-question-to-ask" class="level2">
+<h2 class="anchored" data-anchor-id="thinking-of-a-political-science-question-to-ask">Thinking of a political science question to ask</h2>
+<p>Don’t over think this. Asking questions is somewhat of an art form. Don’t bash your head against a wall trying to find a research question.</p>
+<p>If there is any advice I wish to impart on you regarding how best to ask a research question, it is this: <strong><em>the best research questions are the most personal.</em></strong> Trust your gut! Trust your worldview! If you think something is weird, that might be the start of a research question. If you can tell yourself “huh, that’s weird” then there is probably a question for you to pursue! You aren’t stupid, what is weird to you is either because you simply don’t know about it and either someone has done research before that you can read and fill in those gaps <em>or</em> is an opportunity for you to explore and fill in the gaps yourself.</p>
+</section>
+<section id="science-must-be-falsifiable" class="level2">
+<h2 class="anchored" data-anchor-id="science-must-be-falsifiable">Science must be falsifiable</h2>
+<p>Championed by Karl Popper, the key aspect of science is in our ability to dis-confirm theories.</p>
+<p>“By Popper’s rule, theories based on the assumption of rational choice would have been rejected long ago since they have been falsified in many specific instances. However, social scientists often choose to retain the assumption, suitably modified, because it provides considerable power in many kinds of research problems. The same point applies to virtually every other social science theory of interest. The process of trying to falsify theories in the social sciences is really one of searching for their bounds of applicability. If some observable implication indicates that the theory does not apply, we learn something; similarly, if the theory works, we learn something too.” p.99 KKV</p>
+<p>Formal modeling is a practice for producing internally consistent theories. This research produces plausible hypothesis. Formality helps us reason more clearly, but it does not resolve issues of empirical evaluation of social science thoeries. Formal models are abstractions of the world! A good formal model should be abstract so that the key features of the problem can be apparent and mathamatically reasoning can be easily applied. <strong>Formal models are extremely useful for clarifying our thinking and devloping internally consistent theories.</strong></p>
+</section>
+<section id="making-inferences" class="level2">
+<h2 class="anchored" data-anchor-id="making-inferences">Making Inferences</h2>
+<p>The fundamental goals of inference is to distinguish the systematic component from the nonsystematic component of the phenomenon we study.</p>
+<p>Our goal is to learn about systematic features of the random variables Y_1…,Y_n</p>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+</section>
+<section id="two-views-of-random-variation" class="level3">
+<h3 class="anchored" data-anchor-id="two-views-of-random-variation">Two Views of Random Variation:</h3>
+<section id="perspective-1-a-probabilistic-world" class="level4">
+<h4 class="anchored" data-anchor-id="perspective-1-a-probabilistic-world">Perspective 1: A probabilistic world</h4>
+<p>Random variation exists in nature and the social and political worlds and can never be eliminated. Even if we measured all variables without error, collected a census (rather than only a sample) of data, and included every conceivable explanatory variable, our analysis would still never generate perfect predictions. A researcher can divide the world into apparently systematic and apparently nonsystematic components and often improve on predictions, but nothing a researcher does to analyze data can have any effect on reducing the fundamental amount of nonsystematic variation existing in various parts of the empirical world.</p>
+</section>
+<section id="perspective-2-a-deterministic-world" class="level4">
+<h4 class="anchored" data-anchor-id="perspective-2-a-deterministic-world">Perspective 2: A deterministic world</h4>
+<p>Random variation is only that portion of the world for which we have no explanation. The division between systematic and stochastic variation is imposed by the analyst and depends on what explanatory variables are available and included in the analysis. Given the right explanatory variables, the world is entirely predictable.</p>
+</section>
+</section>
+</section>
+<section id="causality" class="level2">
+<h2 class="anchored" data-anchor-id="causality">Causality</h2>
+<section id="what-is-causality" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-causality">What is causality?</h3>
+<p>When you are thinking through a casual relationship, I find it helpful to think about your variable of interest (your treatment) as a <em>pill</em>. While we do not deal with medicine as social scientist (unless you are on a healthy dose of Adderall) I find thinking about your treatment as a pill helps orient you back in an a useful experimental framework. Once you recognize your variable as a “pill”, you will naturally start thinking about how that pill is assigned. Who is my sample? Who got the pill and who got the placebo?</p>
+<p>The causal effect is the difference between the systematic component of observations made when the explanatory variable takes one value and the systematic component of comparable observations when the explanatory variable takes on another value.</p>
+</section>
+<section id="the-fundamental-problem-of-causal-inference" class="level3">
+<h3 class="anchored" data-anchor-id="the-fundamental-problem-of-causal-inference">The Fundamental Problem of Causal Inference</h3>
+<p>Initially introduced by Holland (1986), the fundamental problem of causal inference, is that we will never know a causal inference is certain. Why is that? Let’s stick with our pill framework. You are sick and given a pill to help you feel better. You take the pill and feel better. Did the pill actually <em>cause</em> you to feel better? The problem is that you do not know how you would be feeling if you did not take the pill because you did take the pill. The fundamental problem of causal inference is that you only observe the one possibility and not the other. If we could observe both dimensions where you did and did not take the pill then we would be able to produce the true causal effect. While this is an obtuse example, this fundamental problem boils down to a lack of a <em>counterfactual</em>.</p>
+</section>
+<section id="the-counterfactual" class="level3">
+<h3 class="anchored" data-anchor-id="the-counterfactual">The Counterfactual</h3>
+<p>What is a counterfactual? Well, it is exactly what the name implies, <em>it is counter to fact.</em> The counterfactual is critical to how we will make causal claims about the world.</p>
+<p>While you may wish to be god and observe how events may unfolded in a different universe without the variable we are interested in, we can’t. In lieu of this, your job will be to hunt for an appropriate counterfactual. For most of the social sciences, this is what getting a PhD entails. From here on, if you wish to make causal claims, you will be confronted with situations where you need to find an appropriate counterfactual, that counterfactual will be easier to find in some research questions than others, then you make some assumptions, defend those assumptions, and then do a little math. If everything works and you can defend your assumption, you have a causal estimate.</p>
+<p>Counterfactuals can feel abstract. Especially if the counterfactual is something like, America if the Revolutionary War didn’t exist. Sure, that is theoretically a counterfactual, but is so ridiculous and unknowable it is a pointless avenue to take. Nonetheless, counterfactuals take that form but vary considerably in their “believability”. The point of a counterfactual is to identify the causal effect of some <em>parameter.</em> When your counterfactual is America without the Revolutionary War, you are basically trying to understand what is the causal effect of the Revolutionary War, which again, is a rather silly exercise. Now of course, that alternate reality, where the Revolutionary War did not happen, does not exist. So you need to find a similar State, that is similar to the United States in almost every way except they differ in experiencing the Revolutionary War. The closest would be Canada, but again this is still problematic for a myriad of reasons and thus, is not a good counterfactual. However, this exercise still illustrates how we will use the counterfactual to make causal claims about the world. In short, <em>your counterfactual needs to be reasonable.</em></p>
+</section>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<p>From KKV: Congress passes a tax bill that is intended to have a particular consequence-lead to particular investment, increase revenue by a certain amount, and change consumption patterns. Does it have this effect? We can observe what happens after the tax is passed to see if the intended consequences appear; but even if they do, it is never certain that they result from the law. The change in investment policy might have happened anyway. If we could rerun history with and without the new regulation, then we would have much more leverage in estimating the causal effect of this law. Of course, we cannot do this. But the logic will help us design research to give us an approximate answer to our question.</p>
+</section>
+<section id="causal-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="causal-mechanisms">Causal Mechanisms</h3>
+<p>While causality is now defined, we need to tackle some nuances of the definition and open up the can of worms a little bit more. A causal mechanism is one of these worms. In a nutshell when we are estimating a causal effect, a causal mechanism is the “vehicle” in which that our variable influences the outcome. In our tax bill example, we are attempting to estimate the causal effect on consumption patterns. But how is it doing that? What is the vehicle in which this bill is causing change in consumption patterns? The answer to that is our causal estimate. <strong>Any coherent account of causality needs to specify how its effects are exerted.</strong> Much of this part requires detailing extensively in your theory section.</p>
+</section>
+<section id="multiple-causality" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-causality">Multiple Causality</h3>
+<p>Almost nothing in social sciences has one “cause”. In short, multiple causality refers to the phenomenon under investigation has alternative determinants. In essence, different explanatory variables can account for the same outcome on a dependent variable. We address these through the use of interactions. What this requires of the researcher is to more clearly define what our counterfactual is. We don’t need to identify all causal effects, we just need to focus on the one effect of interest, make conclusions, and then move onto others.</p>
+</section>
+<section id="systematic-and-asymetric-causality" class="level3">
+<h3 class="anchored" data-anchor-id="systematic-and-asymetric-causality">Systematic and Asymetric Causality</h3>
+<p>Causal effects aren’t always linear, the effect may change at different values of X. If the causal relationship between <span class="math inline">\(X_1\)</span> and <span class="math inline">\(Y\)</span> is symmetrical or truly reversible, then the effect on <span class="math inline">\(Y\)</span> of an increase in <span class="math inline">\(X_1\)</span> will disappear if <span class="math inline">\(X_1\)</span> shifts back to its earlier level (assuming that all other conditions are constant).</p>
+</section>
+<section id="causal-notation-estimands" class="level3">
+<h3 class="anchored" data-anchor-id="causal-notation-estimands">Causal Notation &amp; Estimands</h3>
+</section>
+</section>
+</section>
+<section id="section-2-the-experiment" class="level1">
+<h1>Section 2: The Experiment</h1>
+<p>Philosophical discussions aside, I think it is important to focus our attention on what an experiment is. At this point, you intuitively know what an experiment is. You know one group gets a pill and the other gets a placebo. Importantly, you randomize who gets which pill. But you probably haven’t thought <em>that</em> deeply about what is going on here and the logic that motivates the steps and decisions we make in an experiment. In my opinion, understanding what makes experiments the gold standard is <strong>critical</strong> to understanding all those other methods you will learn to try to get as close as possible to your main goal as a researcher: <strong><em>making causal claims about the world.</em></strong></p>
+<section id="what-is-an-experiment-actually" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-an-experiment-actually">What is an experiment actually?</h2>
+<p>While there are many types of experiments (which I will discuss later), an experiment can be simply described as observing how one thing causes another thing to happen by changing something.</p>
+</section>
+<section id="randomization" class="level2">
+<h2 class="anchored" data-anchor-id="randomization">Randomization</h2>
+<p>If there is anything you should take away from all of this, it is the importance of <strong><em>randomization.</em></strong> What is randomization? Randomization is the process of random assignment. Individuals are assigned to different groups or treatments based on chance. Importantly with randomization, <strong>there is no factor that predicts who gets which treatment</strong>. Every individual has an equal opportunity of getting the treatment but how they are chosen is a random process.</p>
+<p>We avoid selection bias in large-n studies if observations are randomly selected, because a random rule is uncorrelated with all possible explanatory or dependent variables. Randomness provides a selection procedure that is <em>automatically</em> uncorrelated with all variables. Randomness rids us of selection and omitted variable bias. Thus, we are able to estimate a causal effect.</p>
+<p>Randomization is advantageous when we have a sufficient <em>n</em> or as <em>n</em> grows larger. Randomization is not advantageous when we have little observations. With a large <em>n</em>, random assignment of values of the explanatory variable eliminates the possibility of endogeneity (since they cannot be influenced by the dependent variable) and measurement error (so long as we accurately record which treatment is administered). <em>Importantly, random assignment makes omitted variable bias extremely unlikely, because the explanatory variable with randomly assigned values will be uncorrelated with all omitted variable, even those that influence the dependent variable.</em> Omitted variable bias in a properly randomized large-n study, is harmless.</p>
+<p>This of course is easy when we as researchers control the assignment process, but what happens if we do not? We open ourselves up to issues for causal inference! When subjects select the values of their own explanatory variables or when other factors influence choice, the possibilities of selection bias, endogeneity, and other sources of bias and efficiency greatly increase.</p>
+<section id="selecting-on-observables" class="level4">
+<h4 class="anchored" data-anchor-id="selecting-on-observables">Selecting on Observables</h4>
+</section>
+</section>
+<section id="how-do-we-do-an-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-do-an-experiment">How do we do an experiment?</h2>
+</section>
+<section id="how-do-we-interpret-results-from-an-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-interpret-results-from-an-experiment">How do we interpret results from an experiment?</h2>
+<p>This section assumes some knowledge of regression and interpretation. Even if you do not, I believe you can still get an understanding of how to interpret results from experiment.</p>
+</section>
+<section id="experiments-with-researcher-treatment-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="experiments-with-researcher-treatment-assignment">Experiments with researcher treatment assignment</h2>
+</section>
+</section>
+<section id="section-x-causal-claims-with-observational-data" class="level1">
+<h1>Section X: Causal Claims with Observational Data</h1>
+<p>Up until this point, we have talked about experiments, to which, are the gold standard for inference. However, our ability to make causal claims in experiments rests on our ability to randomize (or get as close as possible to randomizations) the treatment. This is great if we have control over this, but we almost never do, especially when we are using observational data. And as we discussed, we are interested in making causal claims about the world. So if we cannot control how the treatment assigned, can we make causal claims outside of an experiment? We can, but it will take some additional work and assumptions to do so.</p>
+<p>I want to make an important point here: statistical models are not inherently causal or not. OLS <em>can be a causal model.</em> In fact any of the models can provide estimates of a <em>causal</em> effect. However, causality is not determined by some esoteric statistical manipulation, rather, causality should be thought of as a paradigm - it is determined by our methodology.</p>
+<p>To make causal claims about the world we must satisfy, or at least, argue that we have satisfied, three conditions:</p>
+<ol type="1">
+<li>Unit homogeneity</li>
+<li>No selection bias</li>
+<li>No omitted variable bias</li>
+<li>A theoretical argument that X causes Y.</li>
+</ol>
+<p>The fourth point is rather obvious, there needs to be a logical connection for X to cause Y. Given the obviousness of this point, I will not focus on it for this section. Instead I want to focus on the first three points. Combined, these are the critical assumptions we make for causal inference. The latter two (points 2 and 3) are what we need to support <strong><em>the conditional independence assumption (CIA)</em></strong>. If you want to make causal claims, then you must be able to provide support that you have satisfied the CIA.</p>
+<section id="unit-homogeneity" class="level2">
+<h2 class="anchored" data-anchor-id="unit-homogeneity">Unit Homogeneity</h2>
+<p>We cannot rerun history at the same time and place with different values to yield the causal estimate - this is the fundamental problem of casual inference. So what can we do? We can make our second-best assumption: we can rerun our experiment in two different units that are “homogeneous”. However, humans are infinitely complex, how is it possible that two people can be the same? They aren’t, and stating that is not what we refer to in unit homogeneity. When we say two units are homogeneous, we mean: <em>the expected values of the dependent variables from each unit are the same when our explanatory variable takes on a particular value.</em> Unit homogeneity in fundamentally an <em>assumption</em> - all units with the same value of the explanatory variables have the same expected value of the dependent variable. It is what we base our counterfactual on, since we cannot observe two different dimensions, we must find units that are similar in every observable way but differ only in our variable of interest.</p>
+<p><strong>Remember:</strong> Unit homogeneity is an assumption. It is ultimately untestable. So long as we are explicit and clear about our units and how they relate/do not relate, we can strengthen the causal inferences we might make.</p>
+</section>
+<section id="conditional-independence-assumption-cia" class="level2">
+<h2 class="anchored" data-anchor-id="conditional-independence-assumption-cia">Conditional Independence Assumption (CIA)</h2>
+<p>This assumption is critical and must be understood when you attempt to make a causal inference. To be clear, you may have already been exposed to this assumption in its more jargony form: “your <span class="math inline">\(X\)</span>’s are correlated with your error (<span class="math inline">\(\epsilon\)</span>)”. When you hear this statement, it is equivalent to saying that the reviewer does not believe you have satisfied the conditional independence assumption.</p>
+<section id="what-is-the-cia" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-cia">What is the CIA?</h3>
+<p>It is the assumption that values are assigned to explanatory variables independently of the values taken by the dependent variable. In simple terms, your treatment variable is assigned as-if randomly. The CIA is the reason we start learning about randomization and experiments first as they represent the gold standard of research design. But as we discussed earlier, we cannot always run an experiment and randomly assign people to different treatments. Thus, to yield a causal estimate when we are using observational data, we need to lean on the CIA and sometimes be creative to help support this assumption. Like unit homogeneity, the CIA is an <em>assumption,</em> we cannot prove it.</p>
+<p>Again, the CIA refers to our treatment variable being assigned <em>independently</em> of the dependent variable and all other confounding variables. To belabor the point, we want to approximate randomization because if we have randomization then we automatically satisfy conditional independence:</p>
+<ol type="1">
+<li>that the process of assigning values to the explanatory variables is independent of the dependent variable (no endogeneity problem)</li>
+<li>that selection bias is absent</li>
+<li>that omitted variable bias is absent</li>
+</ol>
+<p>When you can argue (not prove) that you have accounted for these forms of bias, then you can begin to make causal claims about your phenomenon. In math notation, the CIA looks as such:</p>
+<p>$$</p>
+<p>$$</p>
+</section>
+<section id="conditionally-conditional-independence" class="level3">
+<h3 class="anchored" data-anchor-id="conditionally-conditional-independence">(Conditionally) Conditional Independence</h3>
+<p>While I stated above that we need to get as-if randomization to make causal inference, that should not be interpreted as that we must have something be assigned randomly in the world (this of course would help and is the basis for a natural experiment). Much of what we study is <em>not random</em>. However, it might be random, conditional on other variables. If we know what those variables are, we can control for them. In doing so, we are arguing that our treatment is as-if random, when accounting for these other variables. Students familiar with regression or any other statistical estimator may start to realize how this seems similar to the concept of omitted variable bias (OVB) and that is because it is!</p>
+</section>
+</section>
+</section>
+<section id="section-x-instrumental-variables-2sls" class="level1">
+<h1>Section X: Instrumental Variables (2SLS)</h1>
+<p>What is an instrumental variable and why should we care about them? Instrumental variables are a tool to help us make causal inferences. Confusingly, they are also called 2-Stage Least Squares (2SLS).</p>
+<p>Instrumental variables help us deal with endogeneity, specifically omitted variable bias; remember, to make causal claims, we need to overcome selection bias and omitted variable bias! We want to isolate the causal effect of <span class="math inline">\(X\)</span> on <span class="math inline">\(Y\)</span>, but we need to make sure our <span class="math inline">\(X\)</span> is not correlated with our error term (this is omitted variable bias).</p>
+<section id="why-use-an-instrumental-variable" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-an-instrumental-variable">Why use an Instrumental variable?</h2>
+<p>Remember that we are using observational data to make causal claims. If you don’t want to make causal claims then all of this is irrelevant to you. Using an instrumental variable is motivated by our inability to randomly assign the treatment. As we discussed earlier, we can still gain leverage and approximate randomization of our treatment with different techniques. Instrumental variables are one of those techniques.</p>
+<p>In your regression, you want to estimate the effect of some variable on the outcome. Imagine we want to know the effect of education on earnings. The problem is that people choose their level of <em>education</em> for a variety of reasons, which also affect <em>earnings.</em> If we observe people with higher education earn more, we cannot properly estimate the causal effect of education. This is because we have endogeneity - was it really education OR was it family income, motivation, ability, or something else? Of course, we could control for some of these, like family income, but how can we control for family income or motivation? Think of unobservable variables are those that we don’t have in our data - literally unobserved. The effect of education on earnings is biased because X is correlated with our error term. This is textbook omitted variable bias, our effect of education on earnings is biased because we did not account for those unobserved variables like ability.</p>
+<p>Let’s put this in math form:</p>
+<p><span class="math display">\[
+y_i=\alpha +\rho s_i +X'_i\beta+A'_i\gamma+\epsilon
+\]</span></p>
+<p>Sticking with our education and earnings questions:</p>
+<p><span class="math inline">\(y_i\)</span> = earnings</p>
+<p><span class="math inline">\(\alpha\)</span> = constant/intercept</p>
+<p><span class="math inline">\(\rho s_i\)</span> = the effect of education on earnings</p>
+<p><span class="math inline">\(X'_i\beta\)</span> = our included control variables</p>
+<p><span class="math inline">\(A'_i\gamma\)</span> = our <strong>unobserved</strong> variable, for simplicity, this will just represent the effect of ability on earnings.</p>
+<p><span class="math inline">\(\epsilon\)</span> = our error term</p>
+<p>Despite the notation, this form should look familiar; it is our simple regression equation. <strong>This is the regression we want to run, but can’t.</strong> Why can’t we run this? Well, because ‘ability’ is unobserved. We would like to control for it but for numerous reasons we <em>can’t.</em> The regression we do run is:</p>
+<p><span class="math display">\[
+y_i=\alpha +\rho s_i +X'_i\beta+\epsilon
+\]</span></p>
+<p>However, the <span class="math inline">\(A'_i\gamma\)</span> is still technically there. Where is it? It is in our error term!</p>
+<p><span class="math display">\[
+\epsilon_i=A'_i\gamma+\eta_i
+\]</span></p>
+<p>This equation is our residual. <span class="math inline">\(\eta_i\)</span> just represents everything else we cannot explain. But the effect of ability is in our error term, causing our coefficient <span class="math inline">\(\rho\)</span> to be biased since we are not controlling for it. So if we cannot control for this, how can we get around endogeneity and the bias this causes? And here is how we get to the role of instrumental variables. In short, you should think of an instrumental variable as a tool that changes the <em>assignment of the treatment</em>. <strong>A valid instrumental variable acts like a quasi-random treatment assigner</strong>. So a good instrumental variable will make the variation in the treatment <strong><em>orthogonal</em></strong> to all confounders, observed <em>and</em> unobserved. Think about how similar this is to our experiment framework!</p>
+<p>To make this more clear, let’s use a DAG to illustrate the role of an instrumental variable.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dag_IV.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="626"></p>
+</figure>
+</div>
+<p><span class="math inline">\(Z\)</span> is the instrumental variable</p>
+<p><span class="math inline">\(D\)</span> is our main variable of interest</p>
+<p><span class="math inline">\(Y\)</span> Is our outcome variable</p>
+<p><span class="math inline">\(U\)</span> is <em>unobserved variables.</em></p>
+<p>So what is this saying? <span class="math inline">\(Z\)</span> varies, <span class="math inline">\(D\)</span> varies, which causes <span class="math inline">\(Y\)</span> to change. Ok, so what? Why do we need <span class="math inline">\(Z\)</span>? Can’t we just look at the effect of <span class="math inline">\(D\)</span> on <span class="math inline">\(Y\)</span>, controlling for other variables? We could, but remember that <span class="math inline">\(U\)</span> is <em>unobserved</em> variables,</p>
+</section>
+<section id="requirements-for-instrumental-variables" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-for-instrumental-variables">Requirements for Instrumental Variables</h2>
+<p>There are two essential requirements for an instrumental variable. You <em>must</em> satisfy both conditions; however, as we will see, the second condition is quite difficult to justify. The two critical components are: 1) the instrument must be related to our X (variable of interest) and 2) must satisfy the exclusion restriction.</p>
+<section id="condition-1-instrument-relates-to-x" class="level3">
+<h3 class="anchored" data-anchor-id="condition-1-instrument-relates-to-x">Condition 1: Instrument relates to X</h3>
+<p><span class="math display">\[
+Cov(z,s) \neq 0
+\]</span></p>
+<p><span class="math inline">\(Z\)</span> needs to influence <span class="math inline">\(s\)</span> (remember <span class="math inline">\(s\)</span> is the notation we are using for main variable of interest). All this is saying, is that <span class="math inline">\(Z\)</span> needs to influence <span class="math inline">\(s\)</span>!</p>
+<p>If <span class="math inline">\(Z\)</span> does not change <span class="math inline">\(X\)</span> then that means it does not change how the treatment is assigned. This is a non-starter and if we can’t do this, then we don’t have a good instrumental variable. This assumption is <em>testable</em> and is fairly straightforward. It is the easiest part of your IV setup to defend, since it requires a simple regression of your X on Z.</p>
+</section>
+<section id="condition-2-exclusion-restriction" class="level3">
+<h3 class="anchored" data-anchor-id="condition-2-exclusion-restriction">Condition 2: Exclusion restriction</h3>
+<p><span class="math display">\[
+Cov(z, \epsilon) =0
+\]</span></p>
+<p>This is where instrumental variables usually get taken down. And for this assumption, you have to defend theoretically - you cannot “prove” you have satisfied the exclusion restriction. The exclusion restriction states that your instrumental variable must not be correlated with your <span class="math inline">\(y\)</span>. This is somewhat of a misnomer, your <span class="math inline">\(Z\)</span> can be correlated with <span class="math inline">\(Y\)</span> but <em>only through</em> <span class="math inline">\(X\)</span> (in the example DAG above, <span class="math inline">\(X\)</span> is <span class="math inline">\(D\)</span>).</p>
+</section>
+</section>
+<section id="what-is-the-perfect-instrumental-variable" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-perfect-instrumental-variable">What is the perfect instrumental variable?</h2>
+<p>Think for a second about this. <em>Remember why we are using an instrumental variable in the first place.</em></p>
+<p>A perfect instrumental variable is just a variable that perfectly randomizes the assignment of our treatment! A random number generator is technically an instrumental variable. It relates to X by assigning some people to different levels of X. Further, it does not relate to Y (or at least only relates to Y through X). Always remember the goal for causal inference with observational data: <strong>we want our treatment variable assignment to be as close as possible to random assignment. We can’t control the assignment, so we have to be creative!</strong></p>
+</section>
+<section id="some-popular-instruments-you-may-encounter" class="level2">
+<h2 class="anchored" data-anchor-id="some-popular-instruments-you-may-encounter">Some popular instruments you may encounter</h2>
+<p>Some instruments I have come across in the discipline. Whether you think these are good instruments is up to you. I am merely documenting them.</p>
+<section id="rain" class="level3">
+<h3 class="anchored" data-anchor-id="rain">Rain</h3>
+<p>There is perhaps no more popular instrumental variable than <em>rain.</em> Rain is the quintessential instrumental variable. I have seen it used extensively in papers related to voter turnout.</p>
+</section>
+<section id="distance" class="level3">
+<h3 class="anchored" data-anchor-id="distance">Distance</h3>
+<p>This IV may exist in different forms. In any sense, it generally refers to proximity, or the distance from some <em>thing.</em> Below I provide an example of distance as an instrumental variable. This example uses David Card’s famous estimation of the causal effect of education on earnings. Card uses proximity to a university as the instrumental variable. The paper can be found [<a href="https://www.nber.org/system/files/working_papers/w4483/w4483.pdf">here</a>].</p>
+</section>
+<section id="waterways" class="level3">
+<h3 class="anchored" data-anchor-id="waterways">Waterways</h3>
+<p>Waterways was an instrumental variable I came across in Jessica Trounstine’s book: <em>Segregation by Design: Local Politics and Inequality in American Cities.</em></p>
+</section>
+<section id="altitude" class="level3">
+<h3 class="anchored" data-anchor-id="altitude">Altitude</h3>
+<p>Altitude was an instrumental variable I came across on another individual’s research at an APSA panel.</p>
+</section>
+</section>
+<section id="compliers-in-an-instrumental-variable-setup" class="level2">
+<h2 class="anchored" data-anchor-id="compliers-in-an-instrumental-variable-setup">Compliers in an instrumental variable setup</h2>
+<p>Now that we have a decent understanding of what an instrumental variable is doing, we can complicate it a little more. Remember that we want to argue our instrument variable is exogenously assigning the treatment and they gets us closer to being able to argue our treatment assignment is as-if random. BUT, there may be heterogeneous effects of that instrument variable on different people. That is, the instrument may be valid for determining the treatment status of some individuals but not others. You should think of these as compliers. What are the different ways someone may receive the treatment? Possible groups include:</p>
+<ul>
+<li><p><em>Never-taker</em> - never receives the treatment, regardless of the assignment status</p></li>
+<li><p><em>Always-taker -</em> always in the treatment group, regardless of the assignment status</p></li>
+<li><p><em>Complier -</em> Gets the treatment when assigned to the treatment group; does not get the treatment otherwise</p></li>
+<li><p><em>Defier -</em> Always does the opposite of assignment: does not get the treatment when assigned, but does get the treatment when not assigned</p></li>
+</ul>
+<p>For example, imagine we want to know the causal effect of education on earnings. Now, you might recognize the problem with this, education is endogenous to earnings. People choose their level of education for a variety of observed and unobservered reasons. We cannot randomly assign people to different levels of education, so we must try to find an instrument if we want to know the causal effect of education on earnings. One candidate instrument is <strong><em>proximity to a 4-year university.</em></strong> If this setup sounds familiar, it is because it is the instrument Nobel prize winning economist, David Card used for this same question. Like a good student of econometrics, you are probably struggling to understand how this might be a good instrument. There are many reasons to be skeptical of this instrument in regards to satisfying the exclusion restriction.</p>
+<p>Card goes on to defend the instrument’s validity, but he makes an important distinction in regards to men from poor families. He argues the instrumental variable identifies the causal effect for the marginal student. Men from less-educated or poor families are more sensitive to college proximity. These individuals are <strong>the marginal compliers who drive the IV estimate.</strong> His point here is that men from poorer backgrounds are less likely to endogenously sort into these areas, that conditional on other variables, the proximity to college exogenously assigns their level of education. <strong>For this group, proximity to college randomly assigns the level of education.</strong> The use of the instrument is to make the argument that for this group of men, the treatment is effectively a random assignment and allows us to isolate the causal effect of education on earnings. Card has estimated the <strong><em>Local Average Treatment Effect (LATE).</em></strong> The point here is that the instrument only credibly determines the treatment status for some group of people. In Card’s case, the instrument is valid for individuals from poor families but not for wealthier families. Card hedges his language a bit here, but note that you need to further defend this assumption, which requires additional defense and argumentation. For this example, do you actually believe proximity to college is assigned as-if random just for men from poor families?</p>
+</section>
+<section id="the-pitfalls-of-instrumental-variables" class="level2">
+<h2 class="anchored" data-anchor-id="the-pitfalls-of-instrumental-variables">The pitfalls of instrumental variables</h2>
+<p>In my opinion, instrumental variables are quite convincing in <em>theory.</em> However, they start falling apart pretty quickly in reality. Some researchers think finding a useful instrumental variable is impossible. I am somewhat agnostic to that point. I think the main issue with instrumental variables is not necessarily because that they tend to violate the exclusionary principle in some way, but rather because they muddy our story. It is really hard to find a good instrumental variable. Reviewers and readers alike will usually latch on to your instrument and attack it relentlessly. When IVs get used in research, the researcher has to spend considerable time arguing about why their instrument is a good instrument. If you read the paper I discuss below using puberty as an instrument, you will see what I mean. In my opinion, this long diatribe starts to muddy the focus of what we are actually interested in and is the major reason why instrumental variables are frowned upon. They turn into a paper that just ends up being a defense against critiques of why the instrumental variable they chose is not problematic. In any sense, the vibe I get is that political science is not super into instrumental variables, while economist are a bit more into them, but even they have some considerable debates about their validity.</p>
+</section>
+<section id="writing-a-research-paper-with-an-instrumental-variable" class="level2">
+<h2 class="anchored" data-anchor-id="writing-a-research-paper-with-an-instrumental-variable">Writing a research paper with an instrumental variable</h2>
+</section>
+<section id="example-paper-early-marriage-age-of-menarche-and-female-schooling-attainment-in-bangladesh.-erica-field-attila-ambrus" class="level2">
+<h2 class="anchored" data-anchor-id="example-paper-early-marriage-age-of-menarche-and-female-schooling-attainment-in-bangladesh.-erica-field-attila-ambrus">Example paper: <em>Early Marriage, Age of Menarche, and Female Schooling Attainment in Bangladesh.</em> Erica Field &amp; Attila Ambrus</h2>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract:</h3>
+<p>Using data from rural Bangladesh, we explore the hypothesis that women attain less schooling as a result of social and ﬁnancial pressure to marry young. We isolate the causal effect of marriage timing using age of menarche as an instrumental variable. Our results indicate thateach additional year that marriage is delayed is associated with 0.22 additional year of schooling and 5.6 percent higher literacy. Delayed marriage is also associated with an increase in use of preventive health services. In the context of competitive marriage markets, we use the above results to obtain estimates of the change in equilibrium female education that would arise from introducing age of consent laws.</p>
+</section>
+<section id="question" class="level3">
+<h3 class="anchored" data-anchor-id="question">Question:</h3>
+<p>Do women in rural Bangladesh attain less schooling because of pressures to marry young?</p>
+</section>
+<section id="instrumental-variable" class="level3">
+<h3 class="anchored" data-anchor-id="instrumental-variable">Instrumental variable:</h3>
+<p>Menarche - the age of the first menstrual cycle</p>
+</section>
+<section id="why-the-need-for-an-instrumental-variable" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-need-for-an-instrumental-variable">Why the need for an instrumental variable?</h3>
+<p>Statistical evidence indicates that women who marry young fare worse. However, it is difficult to assess the extent to which these outcomes are driven by the timing of marriage as opposed to common factors related to poverty and traditional gender views that also hinder female advancement.</p>
+<p>Child marriage is most common in impoverished and culturally traditional settings. The observation that women who married young have on average less education does not imply that forcing girls to postpone wedlock would improve their outcome.</p>
+</section>
+<section id="breaking-this-down" class="level3">
+<h3 class="anchored" data-anchor-id="breaking-this-down">Breaking this down:</h3>
+<p>The authors want to know if early marriage causes less education. <strong>The problem:</strong> early marriage and less education are confounded by low income and traditional values. There are unobservable differences in family background influencing both adolescent maturation and adult outcomes.</p>
+<p>Let <span class="math inline">\(X\)</span> is the age of the girl when she is married.</p>
+<p>Let <span class="math inline">\(Y\)</span> be educational attainment of the girl.</p>
+<p>Authors want to show that the lower <span class="math inline">\(X\)</span> is, the less education the girl will receive. Perhaps we can control for income, but we cannot really control for traditional values. As such, the age of marriage is not a random assignment, it is influenced by rates of income and traditional values. So we need an instrument that helps us assign the X <em>as-if</em> random. There is a strong incentive to marry daughters as young as possible; however, girls in Bangladesh are typically withheld from the marriage market until the onset of puberty.</p>
+<p>They argue: <strong><em>“In particular, natural variation in the timing of first menstruation within athe age range of 11-16 generates quasi-random differences in the earliest age at which girls are at risk of marrying.”</em></strong></p>
+<section id="what-the-authors-need-to-show" class="level4">
+<h4 class="anchored" data-anchor-id="what-the-authors-need-to-show">What the authors need to show:</h4>
+<ol type="1">
+<li>They need to show that age of first menstrual cycle relates to the age of marriage.</li>
+<li>The age of menstrual cycle has no effect or does not relate to education attainment.</li>
+</ol>
+</section>
+</section>
+<section id="motivation" class="level3">
+<h3 class="anchored" data-anchor-id="motivation">Motivation:</h3>
+<ul>
+<li><p>Girls drop out of school much higher than boys.</p></li>
+<li><p>early marriage is a big reason</p></li>
+</ul>
+</section>
+<section id="estimation-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="estimation-strategy">Estimation Strategy</h3>
+<ul>
+<li>Age of first marriage is traditionally bounded below menarche, <strong>these differences generate exogenous variation in girls’ risk of marrying young.</strong></li>
+</ul>
+<p><span class="math display">\[
+Y_i=\alpha_0+\alpha_1A_i+\alpha_2'X_i + \upsilon_i
+\]</span></p>
+<p>Where <span class="math inline">\(Y_i\)</span> is the outcome of interest, <span class="math inline">\(A_i\)</span> is individual <span class="math inline">\(i\)</span>’s age at marriage, and <span class="math inline">\(Z_i\)</span> is <span class="math inline">\(i\)</span>’s age at menarche. <span class="math inline">\(X\)</span> includes the following set of controls: adult height, family background and family composition characteristics, religion, and a dummy variable indicating whether the women currently resides in a district of Matlab that is part of the treatment region for the national fertility intervention.</p>
+<p>So above we have the regression but as we know, age of marriage <span class="math inline">\(A\)</span> is influenced by unobservable characteristics. So we need a variable that exogeneously influences <span class="math inline">\(A\)</span>. This will be our instrument aka age of first menstrual cycle. Thus:</p>
+<p><span class="math display">\[
+A_i = \beta_0 + \beta_1Z_i+\beta_2'X_i +\upsilon_i
+\]</span></p>
+<p>This equation is saying <span class="math inline">\(A_i\)</span> is influenced by our set of controls <strong><em>AND</em></strong> our instrumental variable: age of first menstrual cycle. Basically:</p>
+<ul>
+<li><p>Marriage age <span class="math inline">\(A_i\)</span> varies with the instrument <span class="math inline">\(Z_i\)</span> (age at menarche).</p></li>
+<li><p><strong>AFTER</strong> conditioning on controls <span class="math inline">\(X_i\)</span></p></li>
+<li><p><span class="math inline">\(\beta_1\)</span> must be <strong>non-zero</strong> for the instrument to be relevant.</p></li>
+</ul>
+<p>So does age of menstrual cycle covary with age of marriage? They find it does. This is the first stage regression aka the instrument relates to the variable of interest. Every additional year that puberty is delayed, marriage is postponed an estimated .74 year. These findings are robust under different specifications.</p>
+</section>
+<section id="exclusion-restriction" class="level3">
+<h3 class="anchored" data-anchor-id="exclusion-restriction">Exclusion Restriction</h3>
+<ul>
+<li><p>The exclusion restriction requires that the relationship between puberty and adult outcomes is fully mediated by changes in age at first marriage, such that delayed marriage is the only pathway though physical maturation influences school.</p></li>
+<li><p><strong><em>This set of evidence suggests that much of the variation in timing of first menstruation is uncorrelated with determinants of adult well-being other than marriage age and that differences in family background according to age of menarche are unlikely to confound the analysis.</em></strong></p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="section-x-bias-and-efficiency" class="level1">
+<h1>Section X: Bias and Efficiency</h1>
+<p>Bias and efficiency are critical components in how we interpret our results. They have both theoretical and data implications. 333</p>
+<section id="bias" class="level2">
+<h2 class="anchored" data-anchor-id="bias">Bias</h2>
+<p>When we use data to generate inferences, we prefer those inferences to be <em>unbiased,</em> that is, <strong>correct on average. <span class="citation" data-cites="kkv">@kkv</span></strong> We generally only get one sample, but theoretically, if we were to do multiple samples, we should expect slightly different inferences but, on average, center on truth. The variation around the true value (which we fundamentally cannot know) should not be systematic. Bias occurs when there is a <strong>systematic</strong> error in the measure that shifts the estimate more in one direction than another over a set of replications. An unbiased procedure will be correct when taken as an average many applications-even if no single application is correct. Achieving unbiased inferences depends on the original collection of data and its later use. Bias refers to the coefficient, our <span class="math inline">\(\beta\)</span>!</p>
+<p>Bias manifests in our research design and data collection!</p>
+<p>An estimator <span class="math inline">\(\mu\)</span> is said to be unbiased if it equals <span class="math inline">\(\mu\)</span> on average over many hypothetical replications of the same experiment.</p>
+<section id="bias-formally" class="level3">
+<h3 class="anchored" data-anchor-id="bias-formally">Bias Formally</h3>
+<p><span class="math display">\[
+E(Y_i)=\beta X_i
+\]</span></p>
+<p><span class="math inline">\(\beta\)</span> represents the true effect (the Random Causal Effect in the language of KKV), which we do <strong>not</strong> observe. But we can estimate <span class="math inline">\(\beta\)</span> with our realized (observed) estimate of the phenomenon, <span class="math inline">\(b\)</span>. We can estimate <span class="math inline">\(\beta\)</span> using least squares regression:</p>
+<p><span class="math display">\[
+E(b) = E(\frac{\Sigma X_iY_i}{\Sigma X^2_i})
+\]</span> When you complete solve this equation you will get:</p>
+<p><span class="math display">\[
+b = \beta
+\]</span></p>
+<p>meaning that <span class="math inline">\(b\)</span> is an unbiased estimator of <span class="math inline">\(\beta\)</span>.</p>
+</section>
+<section id="statistical-bias" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-bias">Statistical Bias</h3>
+</section>
+<section id="substantive-bias" class="level3">
+<h3 class="anchored" data-anchor-id="substantive-bias">Substantive Bias</h3>
+</section>
+<section id="types-of-bias" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-bias">Types of Bias</h3>
+<section id="selection-bias" class="level4">
+<h4 class="anchored" data-anchor-id="selection-bias">Selection Bias</h4>
+<p>Selection bias refers to choosing observations in a manner that systematically distorts the population from which they were drawn.</p>
+<p>Any selection rule correlated with the dependent variable attenuates estimates of causal effects on average.</p>
+</section>
+<section id="omitted-variable-bias" class="level4">
+<h4 class="anchored" data-anchor-id="omitted-variable-bias">Omitted Variable Bias</h4>
+<p>Omitted variable bias (OVB) refers to the exclusion of some control variable that might influence a seeming causal connection between our explanatory variables and that which we want to explain.33</p>
+<p><em>We do not need control variables, even if they have a strong influence on the dependent variable, as long as they do not vary with the included explanatory variable.</em></p>
+<p>For you to have OVB, your confounding variable must influence <span class="math inline">\(Y\)</span> and correlate with <span class="math inline">\(X_1\)</span></p>
+<section id="signing-ovb-table" class="level5">
+<h5 class="anchored" data-anchor-id="signing-ovb-table">Signing OVB Table</h5>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td></td>
+<td><span class="math inline">\(Corr(x_1,x_2)&gt;0\)</span></td>
+<td><span class="math inline">\(Corr(x_1,x_2)&lt;0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\beta_2&gt;0\)</span></td>
+<td>positive bias</td>
+<td>negative bias</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\beta_2&lt;0\)</span></td>
+<td>negative bias</td>
+<td>positive bias</td>
+</tr>
+</tbody>
+</table>
+<p>We need to always account for OVB, of course, there may be times we cannot. Perhaps we don’t have that data. While not ideal, this may not be fatal. The table above allows us to think how and in what direction is the exclusion of this control variable biasing our result. We can then infer it’s effect and be clear about it in our results.</p>
+</section>
+<section id="control-for-everything" class="level5">
+<h5 class="anchored" data-anchor-id="control-for-everything">Control for everything?</h5>
+<p>Concern for OVB should not lead us to automatically include every variable with these conditions. In general, we should not control for an explanatory variable that is in part a consequence of our key causal variable.</p>
+</section>
+</section>
+</section>
+<section id="other-causes-of-bias" class="level3">
+<h3 class="anchored" data-anchor-id="other-causes-of-bias">Other Causes of Bias</h3>
+<section id="truncation" class="level4">
+<h4 class="anchored" data-anchor-id="truncation">Truncation</h4>
+<p>Truncation is a problem with our sampling (some observations are not sampled).</p>
+<p>Truncation can attenuate bias</p>
+</section>
+<section id="censoring" class="level4">
+<h4 class="anchored" data-anchor-id="censoring">Censoring</h4>
+<p>Censoring can also attenuate bias. Remember that censoring is a problem with our measurement (some observations are measured inaccurately</p>
+</section>
+</section>
+</section>
+<section id="efficiency" class="level2">
+<h2 class="anchored" data-anchor-id="efficiency">Efficiency</h2>
+<p>An efficient use of data involves maximizing the information used for descriptive or causal inference. We want to be confident that the one estimate we get is close to the right one. Efficiency provides a way of distinguishing among unbiased estimator.</p>
+<section id="how-do-we-measure-efficiency" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-measure-efficiency">How do we measure efficiency?</h3>
+<p>Efficiency is a relative concept that is measured by calculating the variance of the estimator across hypothetical replications. For unbiased estimators, the smaller the variance, the more efficient (the better) the estimator. Our <strong>standard errors</strong> are directly related to the concept of efficiency. They tell us the <em>certainty</em> of our estimate.</p>
+<p>We gain greater efficiency with more observations!</p>
+<p>We lose efficiency if we include a control variable that does not influence the DV but is correlated with our main explanatory value, thus leading to a less efficient estimate of the causal effect - chose your control variables carefully!</p>
+</section>
+<section id="example-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1">Example</h3>
+<p>We can borrow KKV’s example, suppose we are interested in estimating the average level of conflict between Palestinians and Israelis in the West bank and are evaluating two methods: a single observation of one community, chosen to be typical, and similar observations of, for example, twenty-five communities. Efficiency provides us the ability to compare the estimators of these two and which is better. IF applied properly, both estimators should be unbiased, that is, they should center on truth and are not systematically predicted. When we calculate the variance of these estimators, the estimator with one observation will just provide the variance. However, the estimator with 25 observations will be that variance divided by 25, yielding a smaller number. This smaller number translates to a smaller variance and thus a more efficient estimate. There is less <em>variability</em> in our estimator. If we were to conduct the test again, we would likely get a different estimate (due to random error) but, because our variance is low, our estimate is likely to be very close to that original estimator.</p>
+</section>
+<section id="efficiency-formally" class="level3">
+<h3 class="anchored" data-anchor-id="efficiency-formally">Efficiency Formally:</h3>
+</section>
+</section>
+<section id="bias-and-efficiency-trade-off" class="level2">
+<h2 class="anchored" data-anchor-id="bias-and-efficiency-trade-off">Bias and Efficiency Trade-off</h2>
+<p>AKA: Bias v. Variance Trade-off; Precision v. TK</p>
+<p>To belabor bias and efficiency one more time, it useful to think of any inference as an estimate of a particular point with an interval around it.</p>
+<p>When we think of bias and efficiency, we of course want low bias and high efficiency. However, this is not always possible.</p>
+<p>I think understanding this trade-off is actually a little bit abstract and does not become clearer until you learn about other models, specifically non-parametric (machine learning) models. In these non-parametric models, we are trying to estimate the coefficient as closely as possible. These models are called “black boxes”. This is because we throw many variables into them (we usually have millions of observations) and they use all that information to make the closest possible estimate. This does have perks, but there is an important sacrifice that occurs in these models. Since these models are maximizing predictions, they tend to overfit. <strong>Overfitting occurs when a model starts to memorize the aspects of the training set and in turn loses the ability to generalize.</strong> In abstract terms, imagine our simple regression line, in non-parametric models we can allow the line to flex and break and curve based off the of the data, this will yield extremely precise predictions (low bias).</p>
+<p>Alternatively, a high bias, but low variance model may be a simple curve/line in a cloud of points. This may seem like regression (to some extent it is) however, the point is that regression is so sought after because it generally strikes that appropriate balance between bias and efficiency.</p>
+<p>The goal is more information relevant to our hypothesis: we need to make judgments as to whether this information can best be obtained by more observations within existing cases or collecting more data.</p>
+<p>The formal way to evaluate the bias-efficiency trade-off is through the calculation of the mean square error (MSE).</p>
+</section>
+<section id="measurement-error" class="level2">
+<h2 class="anchored" data-anchor-id="measurement-error">Measurement Error</h2>
+<p>At first glance, this section may seem out of place. However, measurement (and subsequently measurement error) have important implications for bias and efficiency.</p>
+<section id="measurement" class="level3">
+<h3 class="anchored" data-anchor-id="measurement">Measurement</h3>
+<p>When we have settled on a question and selected our observations, our focus then turns to how we measure the concepts we are interested in. How we measure some phenomenon has major implications for the internal validity of our study. If our theory is about democracy, and we include a state like Russia, there is clearly a gap between our theory of democracy and what we measured.</p>
+<p>When collecting data we need to focus on two aspects of how we measure:</p>
+<ol type="1">
+<li>validity</li>
+<li>reliability</li>
+</ol>
+<p>We should always strive to maximize the <strong>validity</strong> of our measurements. Validity refers to measuring what we think we are measuring. We want our concept to be clean and easily definable so that when we measure it, the measurement is internally consistent with our theory. We do not want other concepts to cloud how we measure it.</p>
+<p>We should always strive to ensure that data-collection methods are <strong>reliable.</strong> Reliability means that applying the same procedure in the same way will always produce the same measure. A reliable measure should produce the same results when applied by different researchers.</p>
+</section>
+<section id="systematic-measurement-error" class="level3">
+<h3 class="anchored" data-anchor-id="systematic-measurement-error">Systematic Measurement Error</h3>
+<p>Systematic measurement error, such as a measure being a consistent overestimate for certain type of units, can sometimes cause bias and inconsistency in estimating causal effects. <em>Any systematic measurement error will bias descriptive inferences.</em> Systematic measurement error which affects <em>all units</em> by the same constant amount causes no bias in causal inference. If everyone in the survey over reports their income earned, the causal estimate of our variable of interest will be the exact same since the error is present across all observations.</p>
+<p>But what if there is systematic measurement error <em>in one part of the sample</em>? This is where we start running into problems. When this occurs, both descriptive and causal inference about the causal effect is biased.</p>
+</section>
+<section id="nonsystematic-measurement-error" class="level3">
+<h3 class="anchored" data-anchor-id="nonsystematic-measurement-error">Nonsystematic Measurement Error</h3>
+<p>Random measurement error does not bias the variable’s measurement. Random measurement error means that values are sometimes too high and sometimes too low but correct on average, which can lead to obvious inefficiencies but not bias in <em>descriptive inference.</em> For causal inference, random measurement error can lead to different effects depending on where it is.</p>
+<section id="nonsystematic-measurement-error-in-the-dependent-variable" class="level4">
+<h4 class="anchored" data-anchor-id="nonsystematic-measurement-error-in-the-dependent-variable">Nonsystematic Measurement Error in the Dependent Variable</h4>
+<p>Random measurement error in the dependent variable reduces the <strong>efficiency</strong> of the causal estimate but does not bias it. This will lead to causal estimates that are sometimes too large and sometimes too small. <em>The result is that random measurement error in the dependent variable produces estimates of causal effects that are less efficient and more uncertain.</em></p>
+<p>To overcome this, we can improve efficiency by 1) increasing the accuracy of our observations, or 2) increasing the number of imperfectly measured observations in different communities. Both of these options increase the amount of information we bring to this problem.</p>
+<p>influences vertical deviations of line!</p>
+<section id="formalized-example" class="level5">
+<h5 class="anchored" data-anchor-id="formalized-example">Formalized Example:</h5>
+</section>
+</section>
+<section id="nonsystematic-measurement-error-in-the-explanatory-variable" class="level4">
+<h4 class="anchored" data-anchor-id="nonsystematic-measurement-error-in-the-explanatory-variable">Nonsystematic Measurement Error in the Explanatory Variable</h4>
+<p>Random error in an explanatory variable can also reduce the <strong>efficiency</strong> of the causal estimate but can also produce bias in the estimate of the relationship between the explanatory and dependent variable. <strong>The bias this measurement error produces results in the estimation of a weaker causal relationship than is the case.</strong> It is biased in the direction of zero or no relationship.</p>
+</section>
+<section id="practical-guidelines-for-measurement-error-in-the-explanatory-variable" class="level4">
+<h4 class="anchored" data-anchor-id="practical-guidelines-for-measurement-error-in-the-explanatory-variable">Practical Guidelines for Measurement Error in the Explanatory Variable:</h4>
+<ol type="1">
+<li>If an analysis suggests no effect to begin with, then the true effect is difficult to ascertain since the direction of bias is unknown; the analysis will then be largely indeterminate and should be described as such. The true effect may be zero, negative, or positive, and nothing in the data will provide an indication of which it is.</li>
+<li>However, if analysis suggests that the explanatory variable with random measurement error has a small positive effect, then we should use the results in this section as justification for concluding the true effect is probably even larger than we found. Similarly, if we find a small negative effect, the results in this section can be used as evidence that the true effect is probably an even larger negative relationship.</li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+<section id="section-x-natural-experiments" class="level1">
+<h1>Section X: Natural Experiments</h1>
+<p>Natural experiments are experiments where the researcher does not exercise control over how the treatment is assigned. In short, nature assigns the randomization. These class of research has a lot of ‘cache’ and is quite fun to read. In my opinion, people like these types of experiments because they usually leverage some ‘odd’ thing that happened in the world to estimate a causal effect. However, these experiments suffer a bit because you will have to explain and defend how nature randomized the treatment. There are different flavors of natural experiments, some are good and some are not so good. I will discuss those here.</p>
+</section>
+<section id="section-x-diff-in-diff" class="level1">
+<h1>Section X: Diff-in-diff</h1>
+<p>Literally standing for the ‘differences in the difference’, diff-in-diff is a common natural experiment framework model you will come across. The framework is somewhat straight forward; some exogenous event occurs, which is assigned to a certain population, leading to some outcome <span class="math inline">\(y\)</span>. Since we want to estimate a causal parameter, we need a counterfactual. In diff-in-diff, we are going to make an argument that we our counterfactual is similar to those that got treated, and the effect of our variable of interest is the difference in effect in our population over that time period compared to the difference in population that did not get the treatment. The difference of these two is our causal effect of <span class="math inline">\(x\)</span>, thus the ‘diff-in-diff’. As with all of our models, we do need to make assumptions.</p>
+<section id="assumptions-in-diff-in-diff" class="level2">
+<h2 class="anchored" data-anchor-id="assumptions-in-diff-in-diff">Assumptions in diff-in-diff</h2>
+<p>For this to work, you must be able to identify a suitable comparison group.</p>
+<p>Your comparison group is the same in everything else and the only difference is that they did not receive the treatment. They represent your counterfactual. Your treatment group would have had the exact same trend that your comparison group had, if they did not receive the treatment.</p>
+<p>The most critical assumption made in a diff-in-diff is the ‘equal trends assumption’. <strong>You cannot prove you have satisfied the equal trends assumption.</strong> The equal trends assumption is an assumption that you can provide support for, but ultimately, you cannot completely satisfy it. You are trying to convince the reader that assumption you have made is reasonable.</p>
+<p>Equal trends and Constant Treatment Effect (ATE)</p>
+<p>The equal trends assumption (also colloquially called the parallel trends assumption) is what will give you the causal estimate of your treatment. <strong>You cannot prove you have satisfied this assumption.</strong> In simple terms, the assumption is that had no treatment occurred, the gap between treated and untreated groups would have remained constant. <em>The critical component of this design is to use the change in the untreated group to represent all non-treatment changes in the treated group.</em> You need to argue that the only reason for the diverging trends was a result of the treatment group receiving the treatment.</p>
+<p>So what do we do to help us argue in favor of the equal trends assumption? We can test prior trends, that is, did the treatment group and the untreated groups, have similar trends in the period <em>before</em> the treatment? If they were, this gives <em>credibility</em> to our parallel trends assumption (IT DOES NOT PROVE THE ASSUMPTION).</p>
+</section>
+<section id="writing-a-diff-in-diff-paper" class="level2">
+<h2 class="anchored" data-anchor-id="writing-a-diff-in-diff-paper">Writing a diff-in-diff paper</h2>
+<p>Defend against the “Ashenfelter dip”</p>
+</section>
+<section id="extensions-of-diff-in-diff-framework" class="level2">
+<h2 class="anchored" data-anchor-id="extensions-of-diff-in-diff-framework">Extensions of diff-in-diff framework</h2>
+<p>The following frameworks are extensions to the simple diff-in-diff. These will be fairly similar with a slight variation. Our choice to use these will depend on our theory and the nature of our data. I don’t go in depth here, these are just to expose and introduce extensions and their subsequent logic motivating their existence.</p>
+<section id="triple-diff-in-diff" class="level3">
+<h3 class="anchored" data-anchor-id="triple-diff-in-diff">Triple Diff-in-diff</h3>
+<p>In our estimate of the diff-in-diff, we use an interaction to estimate the causal effect. In the triple diff, we do the same thing, but add another interaction to that previous interaction. In a nutshell, it is a three way interaction.</p>
+<p>For example, perhaps we have already estimate the effect of the diff in diff. But now we are interested in knowing if this effect is conditional on income level. A triple diff is simply this. We are going to test if this effect is conditional. Thus, we are comparing how low v. high income differs in the treated group relative to how they differ in the control group. But the mayor also hires a new DA, potentially confounding our treatment effect.</p>
+</section>
+<section id="placebo-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="placebo-analysis">Placebo Analysis</h3>
+<p>In a placebo analysis, we are doing the exact same thing as a diff-in-diff, only we change our outcome variable to something else. Only, we hope for null results. The logic here is straight forward, we are testing the effect of X on a different outcome variable that should have no effect. Say we are interested in the effect of the mayor hiring more police on crime rates. But the mayor also hires a new DA, potentially confounding our treatment effect. Hiring more police unlikely to affect tax fraud, but if new mayor hires more police and replaces DA, both outcomes could be affected. So we run our placebo analysis of hiring more police on our new (placebo) outcome variable: tax fraud. These two should be unrelated, if they are related, this implies we have a violation of our parallel trends assumption due to other contemporaneous changes.</p>
+<p>Is my treated effect picking up the true effect or is it just picking up correlated noise? Remember that our goal is to show that these two groups would have the same trend had one of them not received the treatment. When we use a placebo, we are testing an outcome that should <strong>not</strong> respond to our treatment. If it does, this means our model has some omitted variable and that your treatment variable is not the causal effect but actually correlates with some other unobserved variable. In simpler terms: if the diff-in-diff shows a treatment effect on the placebo, then:</p>
+<ol type="1">
+<li>that treatment effect must be coming from something other than the treatment</li>
+<li>therefore, the treated and control groups must have different trends, violating our parallel trends assumption.</li>
+</ol>
+</section>
+<section id="synthetic-diff-in-diff" class="level3">
+<h3 class="anchored" data-anchor-id="synthetic-diff-in-diff">Synthetic Diff-in-diff</h3>
+<p>This one is quite statistically ‘progressive’ - it’s a bit magical. A synthetic diff-in-diff is used when we do not have an obvious counterfactual (an obvious comparison group) to conduct our normal diff-in-diff. So what do we do? Well, we synthetically create a control (comparison) group. This method uses a lot of statistical modeling to estimate how best to construct this group. This synthetic group will be constructed from “donor data”. We will use donor data that is similar to the treatment group in every way, but since they did not receive the treatment, they will differ only in that variable. This will hinge entirely on how we tell the model what variables to estimate on to construct the synthetic comparison group. Let’s work through a quick example.</p>
+<p>Perhaps we are interested in understanding the effect of of governmental ‘handouts’ on the employment rate. One theory is that more governmental assistance will decrease employment, since they now have more money supplanted by the government. Or it is possible, that more money may have no impact on employment rate and actually increase economic output since that money increases the spending power, potentially increasing jobs needed; more money -&gt; more demand -&gt; more jobs needed. How can we figure this out?</p>
+<p>Luckily, Alaska provides a unique research opportunity to study this exact question. In 1982, <strong>all</strong> Alaskans began receiving dividend checks from oil revenue occurring in the state. This treatment is a great one theoretically to help us answer the question we outlined above; however, we have a technical problem, if we want to estimate the causal effect, who do we compare Alaskans to? While they are American, a comparison of any state to Alaska will be tough given how much different Alaska is. And since, all Alaskans received the dividend, there is no sub-population within Alaska to use as a comparison group. What do we do? We construct a <em>synthetic</em> Alaska.</p>
+<p>We are going to construct synthetic Alaska from donor data. This donor data will be individuals from other states. We are basically going to match that donor data with Alaskan data on specified covariates. We are making a fake Alaska that resembles the true Alaska as close as possible. Importantly, we choose the covariates to ‘match’ to, how do we this is researcher defined and thus must be justified and defended. We still make the same equal trends assumption, and our synthetic data should have parallel trends extremely similar to the true Alaska. Since, our synthetic data does not include the treatment variable, we are able to compare the treatment effect in the diff-in-diff between real and synthetic Alaska.</p>
+<p>In simple terms, the structure of a synthetic diff-in-diff is as follows:</p>
+<ol type="1">
+<li>Setup: Natural Experiment with a single treated group.</li>
+<li>take obs from donor pool -&gt; created weighted average of donor pool then use as counterfactual.</li>
+<li>Algorithm will pick what observations to pick from donor pool (you decide what variables)</li>
+<li>Make sure it worked (check equal trends assumption) - note a synthetic diff in diff will have very similar equal trends.</li>
+<li>Now just do a regular diff-in-diff.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="section-1" class="level1">
+<h1></h1>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,
+  author = {Neilon, Stone},
+  title = {Scope and {Methods} {Prep/Causal} {Inference}},
+  date = {2024-05-15},
+  url = {https://stoneneilon.github.io/notes/Data/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-neilon2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Neilon, Stone. 2024. <span>“Scope and Methods Prep/Causal
+Inference.”</span> May 15, 2024. <a href="https://stoneneilon.github.io/notes/Data/">https://stoneneilon.github.io/notes/Data/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

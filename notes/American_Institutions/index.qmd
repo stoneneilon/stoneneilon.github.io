@@ -12,7 +12,190 @@ categories: [2023, American, Fall] # self-defined categories
 citation: 
   url: https://stoneneilon.github.io/notes/American_Institutions/
 image: flag.png
+bibliography: ref.bib
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-In progress.
+# Preface
+
+Substantial revision of this page occurred in preparation for the American comprehensive exams.
+
+# What is an institution?
+
+In broad terms, institutions are the rules of the game in a society. @north1990institutions defines institutions formally as the human devised constraints that shape human interaction. Their design is paramount as the structure interaction and behavior of individuals. They shape incentives, information flows, and constraints by policymakers; in turn shaping the outcomes that can occur from a body politic @besley2003political. But what constitutes a rule, and how do these come about? Culture (convenctions and codes of behavior) could be broadly construed as a rule and thus, an informal institution. To be clear, institutionalist tend to focus their attention on formal constraints. Formal constraints are those in which human beings have purposely devised. Institutional constraints are the framework within which human activities take place.
+
+By structuring human interaction, institutions reduce uncertainty.
+
+This initial definition given by @north1990institutions is useful; however, subsequent scholars have defined institutions further. @shepsle2008old breaks institutions into two additional categories: *institutions as game forms* and *institutions as equilibria.*
+
+## Institutions as Game Forms
+
+## Institutions as Equilibria
+
+# Why Care About Institutions?
+
+Now that we have defined what an institution is, a natural question arises within any subject; should we care? Given institutions and their design dictate the rules in which we govern and engage with others, they are paramount to the study of political science and should be taken with the highest level of seriousness. The central point of the study of institutions is that *rules matter,* institutions determine how preferences and interests are translated into policy @besley2003political. When stated plainly, this is somewhat obvious. However,
+
+# How Do We Compare Institutions?
+
+If institutions structure how actors will operate, then we should be able to study what institutions lead to what kind of outcome and thus make useful predictions and gain deeper understandings of institutions that are useful for the functioning of democracy, right? Unfortunately, this answer is significantly more complicated than it would initially appear and comparative political scienctist are intimately aware of this situation more than others. The fundamental issue in the study of institutions in a comparative context is due to the simple fact that institutions are *endogenous*[^1]*.* @przeworski2009science takes this point seriously and uses the logic of causal inference to make this point. If institutions are endogenous and come from within, how can we reasonably compare two institutions and their outcomes if individuals selected these institutions? To further illustrate the problem,
+
+[^1]: Endogenous means "from within". An institution is endogenous because it a self creation of the people.
+
+It is important to take a moment to state a somewhat obvious fact, but one I think is critical for the study of institutions and how they come about and evolve. *There is no perfect institution.* If there was an obvious institution that was demonstrably better than others, political science would cease to exist and that institutional structure would be pervasive. Of course, we can reasonably deduce some institutional arrangements might be better than others, but the conditions to determine that are somewhat subjective. We can of course operate with reasonable assumptions to make determinations about institutional structure and the quality of their outcomes @przeworski2004institutions @przeworski2009science.
+
+However, the broader point about no perfect institution existing is one intimately debated by @riker1988liberalism. To make his point, Riker uses social choice theory to mathematically prove that the amalgamation of rational preferences can lead to *irrational outcomes*. Further, the method in which these preferences get amalgamated range considerably and lead to different outcomes. The quality of this outcome is not one that can be decided by math but only by theory. To return to the earlier point, if there is no perfect institution and the institution we choose to amalgamate preferences is intractable, how should we compare institutions and their outcome if they are both endogenous and intractable? Despite this, a study of institutions is possible but requires some assumptions of varying degrees to realize @przeworski2009science.
+
+## Comparing Institutions in a Comparative Context
+
+## Comparing Institutions in an American Context
+
+The federal structure of the United States provides ample variation in institutional arrangements. Whether between local governments or states.
+
+# Where do institutions come from?
+
+> **Projects of institutional reform must take as their point of departure the actual conditions, not blueprints based on institutions that have been successful elsewhere. 'institutions can be at most imported, never exported.' @przeworski2004institutions**
+
+As indicated earlier, institutions are endogenous.
+
+This isn't to say institutional structure isn't or cannot be influenced by outside forces. Take for instance Germany or Japan. Both their institutions are marked by features and characteristics of the United States. This of course is due to the historical context of WW2 and the United States occupation of both countries. Despite the obvious influence of the United States on institutional arrangement in these countries, they do not *stay* in that arrangement. These countries, with their own beliefs, needs, perspectives, shape the institution in a different direction. This ultimately leads to the next section, *how do institutions evolve?*
+
+# How do institutions evolve?
+
+# How should we study institutions?
+
+The institution literature has considerable roots, much too long to get into here. However, it seems useful to start at @diermeier2003institutionalism's paper typifying the three developed methods to study institutions. These three methods are categorized by: *historical institutionalism, rational choice institutionalism,* and *sociological institutionalism.*
+
+To be clear, we should not look to classify institutions into these three categories nor should we
+
+## Historical Institutionalism
+
+Historical institutionalism as a method of inquiry of institutions uses TK
+
+From a zoomed out perspective, historical institutionalism does a good job of explaining how specific institutions come into existence.
+
+## Rational Choice Institutionalism
+
+Rational choice institutionalism was developed from economists.
+
+## Sociological Institutionalism
+
+# American Institutions: A Deep Dive Into Their Structure and Operation
+
+This being developed for institutions
+
+@grumbach2022laboratories
+
+# 
+
+# Misc: Reading Outlines
+
+## Institutions, Institutional Change and Economic Performance. Douglass C. North 1990.
+
+### Chapter 1: An Introduction to Institutions and Institutional Change
+
+-   Institutions are the rules of the game in a society.
+
+    -   the humanly devised constraints that shape human interaction.
+
+    -   **they structure incentives in human exchange.**
+
+-   Institutional change shapes the way societies evolve through time and hence is the key to understanding historical change.
+
+-   institutions reduce uncertainty.
+
+-   Institutions include any form of constraints that human beings devise to shape human interaction.
+
+    -   formal or informal
+
+-   an essential part of the functioning of institutions is the costliness of ascertaning violations and the severity of punishment.
+
+-   Institutions are NOT organizations.
+
+    -   they are similar.
+
+-   Organizations include political bodies
+
+    -   parties, Senate, city council, a regulatory agency, economic bodies, firms, trade unions, family farms, social bodies, churches, clubs athletic associations, educational bodies, schools, universities, vocational training centers.
+
+    -   They are groups of individuals bound by some common purpose to achieve objectives.
+
+-   Organizations are influenced by the institutional framework - in turn shaping how the institution evolves.
+
+    -   they are seen as the agents
+
+    -   interaction between institutions and organizations.
+
+    -   "Organizations are created with purposive intent in consequence of the opportunity set resulting from the existing set of constraints (institutional ones as well as the traditional ones of the economic theory) and in the course of attempts to accomplish their objectives are a major agent of institutional change.
+
+-   Institutions affect the performance of the economy by their effect on the cost of exchange and production. The provide INFORMATION.
+
+-   **INSTITUTIONS REDUCE UNCERTAINTY BY STRUCTURING HUMAN INTERACTION**
+
+-   "Institutions, together with the standard constraints of economic theory, determine the opportunities in a society. Organizations are created to take advantage of those opportunities, and, as the organizations evolve, they alter the institutions." pg 7
+
+-   Incremental change comes from the perceptions of the entrepreneuers in organizations thinking they could do better by altering the existing institutional framework at some margin. These perceptions however are crucially dependent on both the information they receive and the way they process that information.
+
+### Chapter 2: Cooperation: the theoretical problem
+
+-   When it is costly to transact, institutions matter.
+
+-   Cooperation is difficult to sustain when the game is not repeated, when information on other players is lacking, and when there are large numbers of players.
+
+    -   this all boils down to information
+
+-   "The so-called prisoner's dilemma that has been a mainstay of game theory is closely allied to Mancur Olson's (1965) free-rider dilemma. Both suggest a discouraging perspective on the problems of human cooperation and coordination. However, the most dismal aspects of Olson's analysis and prisoner dilemma problems reflect the static nature of the analysis and the fact that it is a one-shot game. That is, when the prisoner's dilemma game is played only once, it is a dominant strategy for players to defect and therefore not to achieve what would be an efficient outcome with respect to the aggregate well-being of the players. However, it is well known that defection is not necessarily the dominant strategy if the sutation is repeated over and over again, as many collective action problems are. In an iterated prisoner's dilemma game, one that is repeated, there is no dominant strategy. In a now-famous tournament, Robert Axelrod found that the winning strategy under these conditions of continuous repeated play is a strategy of tit-for-tat, one in which a player responds in kind to the action of the other player. This led to Axelrod's celebrated The Evolution of Cooperation (1984), an optimistic book about the ability of human beings to devise cooperative solutions to problems without the intervention of a coercive state."
+
+-   "The fundamental theoretical problem underlying the question of cooperation is the manner by which individuals attain knowledge of each others preferences and likely behavior. Moreover, the problem is one of common knowledge, since each individual, i, is required not only to have information about others preferences, but also to know that the others have knowledge about i's own preferences and strategies."
+
+-   **In the restricted N-person PD, it might be possible to argue that this problem is partially resolvable, in the sense that certain types of actors might have good reason to believe that others are of a particular type. In the restricted context of a community, Taylor's argument makes good sense: social norms will be well understood and will provide the basis for common knowledge and this knowledge will be maintained by mechanisms designed to make acts intelligible. In more general social situations, however, individuals will be less able to make reasonable guesses about other individuals' beliefs. The theoretical problems underlying cooperation can be stated thus: what is the minimal amount that one agent must know in a given milieu about the beliefs and wants of other agents to be able to form coherent notions about their behavior and for this knowledge to be communicable to the others? It seems to me that this problem is the heart of any analysis of community, convention, and cooperation.**
+
+    -   LOVE LOVE LOVE LOVE LOVE LOVE.
+
+-   Game theory provides us with a theory of the underlying costs of transacting and how those costs are altered by different institutional structures.
+
+-   Individuals act on incomplete information and with subjectively derived models that are frequently erroneous.
+
+-   Institutions are not necessarily or even usually created to be socially efficient; rather they, or at least the formal rules, are created to serve the interests of those with bargaining power to devise new rules.
+
+### Chapter 3: The behavioral assumptions in a theory of institutions
+
+-   We have traditionally used rational choice theory in our approach of institutions and behavior.
+
+    -   this is an assumption and aren't human behavior
+
+        -   they are useful though!
+
+-   Argues we need to rethink these assumptions a bit more for science to progress.
+
+-   People make choices on their subjective views.
+
+-   "Only when we understand these modifications in the behavior of the actors can we make sense out of the existence and structure of institutions and explain the direction of institutional change."
+
+-   The environment is complicated - this relates to the information available. We know from the previous chapter that institutions help provide information.
+
+-   Rational choice is useful and has applicability. It rests on critical assumptions
+
+    -   It does NOT imply everyones behavior is consistent with rational choice. It does rest fundamentally on the assumption that competitive forces will see that those who behave in a rational manner, as described above, will survive, and those who do not will fail.
+
+-   Short comings of rational choice
+
+    -   1\) motivation
+
+        -   human behavior is much more complicated than the individual utility function posed by economists.
+
+    -   2\) deciphering the environment
+
+        -   people decipher the environment by processing information through preexisting mental constructs through which they understand the environment and solve problems they confront.
+
+-   where the price to individuals of being able to express their own values and interests is low, they will loom large in the choices made; but where the price one pays for expressing one's own ideology, or norms, or preferences is extremely high, they will account much less for human behavior
+
+    -   **institutions basically alter the price individuals pay and hence lead to ideas, ideologies, and dogmas frequently playing a major role in the choices individuals make.**
+
+-   **Institutions exist to reduce the uncertainties involved in human interaction.**
+
+    -   these uncertainties arise because of the complexity of the problems to be solved and the problem-solving software (our mental capacity)
+
+        -   this does NOT imply institutions are efficient.
+
+-   **From this capacity taken in conjunction with the uncertainties involved in deciphering the environment, rules and procedures evolve to simplify the process. The consequent institutional framework, by structuring human interaction, limits the choice set of the actors.**

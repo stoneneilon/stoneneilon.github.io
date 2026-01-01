@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -38,10 +58,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,12 +114,8 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://drive.google.com/file/d/1eZT7KaLsqdW3k4WxoeloMPm_9cdf-9A6/view?usp=sharing"> 
+    <a class="nav-link" href="https://drive.google.com/file/d/1RgKR73KnxS3K_AP2nqiTiZZzAL-zJZ2N/view?usp=sharing"> 
 <span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../posts.html"> 
-<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../teaching.html"> 
@@ -114,6 +132,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -123,7 +142,43 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#what-is-an-institution" id="toc-what-is-an-institution" class="nav-link" data-scroll-target="#what-is-an-institution">What is an institution?</a>
+  <ul class="collapse">
+  <li><a href="#institutions-as-game-forms" id="toc-institutions-as-game-forms" class="nav-link" data-scroll-target="#institutions-as-game-forms">Institutions as Game Forms</a></li>
+  <li><a href="#institutions-as-equilibria" id="toc-institutions-as-equilibria" class="nav-link" data-scroll-target="#institutions-as-equilibria">Institutions as Equilibria</a></li>
+  </ul></li>
+  <li><a href="#why-care-about-institutions" id="toc-why-care-about-institutions" class="nav-link" data-scroll-target="#why-care-about-institutions">Why Care About Institutions?</a></li>
+  <li><a href="#how-do-we-compare-institutions" id="toc-how-do-we-compare-institutions" class="nav-link" data-scroll-target="#how-do-we-compare-institutions">How Do We Compare Institutions?</a>
+  <ul class="collapse">
+  <li><a href="#comparing-institutions-in-a-comparative-context" id="toc-comparing-institutions-in-a-comparative-context" class="nav-link" data-scroll-target="#comparing-institutions-in-a-comparative-context">Comparing Institutions in a Comparative Context</a></li>
+  <li><a href="#comparing-institutions-in-an-american-context" id="toc-comparing-institutions-in-an-american-context" class="nav-link" data-scroll-target="#comparing-institutions-in-an-american-context">Comparing Institutions in an American Context</a></li>
+  </ul></li>
+  <li><a href="#where-do-institutions-come-from" id="toc-where-do-institutions-come-from" class="nav-link" data-scroll-target="#where-do-institutions-come-from">Where do institutions come from?</a></li>
+  <li><a href="#how-do-institutions-evolve" id="toc-how-do-institutions-evolve" class="nav-link" data-scroll-target="#how-do-institutions-evolve">How do institutions evolve?</a></li>
+  <li><a href="#how-should-we-study-institutions" id="toc-how-should-we-study-institutions" class="nav-link" data-scroll-target="#how-should-we-study-institutions">How should we study institutions?</a>
+  <ul class="collapse">
+  <li><a href="#historical-institutionalism" id="toc-historical-institutionalism" class="nav-link" data-scroll-target="#historical-institutionalism">Historical Institutionalism</a></li>
+  <li><a href="#rational-choice-institutionalism" id="toc-rational-choice-institutionalism" class="nav-link" data-scroll-target="#rational-choice-institutionalism">Rational Choice Institutionalism</a></li>
+  <li><a href="#sociological-institutionalism" id="toc-sociological-institutionalism" class="nav-link" data-scroll-target="#sociological-institutionalism">Sociological Institutionalism</a></li>
+  </ul></li>
+  <li><a href="#american-institutions-a-deep-dive-into-their-structure-and-operation" id="toc-american-institutions-a-deep-dive-into-their-structure-and-operation" class="nav-link" data-scroll-target="#american-institutions-a-deep-dive-into-their-structure-and-operation">American Institutions: A Deep Dive Into Their Structure and Operation</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#misc-reading-outlines" id="toc-misc-reading-outlines" class="nav-link" data-scroll-target="#misc-reading-outlines">Misc: Reading Outlines</a>
+  <ul class="collapse">
+  <li><a href="#institutions-institutional-change-and-economic-performance.-douglass-c.-north-1990." id="toc-institutions-institutional-change-and-economic-performance.-douglass-c.-north-1990." class="nav-link" data-scroll-target="#institutions-institutional-change-and-economic-performance.-douglass-c.-north-1990.">Institutions, Institutional Change and Economic Performance. Douglass C. North 1990.</a>
+  <ul class="collapse">
+  <li><a href="#chapter-1-an-introduction-to-institutions-and-institutional-change" id="toc-chapter-1-an-introduction-to-institutions-and-institutional-change" class="nav-link" data-scroll-target="#chapter-1-an-introduction-to-institutions-and-institutional-change">Chapter 1: An Introduction to Institutions and Institutional Change</a></li>
+  <li><a href="#chapter-2-cooperation-the-theoretical-problem" id="toc-chapter-2-cooperation-the-theoretical-problem" class="nav-link" data-scroll-target="#chapter-2-cooperation-the-theoretical-problem">Chapter 2: Cooperation: the theoretical problem</a></li>
+  <li><a href="#chapter-3-the-behavioral-assumptions-in-a-theory-of-institutions" id="toc-chapter-3-the-behavioral-assumptions-in-a-theory-of-institutions" class="nav-link" data-scroll-target="#chapter-3-the-behavioral-assumptions-in-a-theory-of-institutions">Chapter 3: The behavioral assumptions in a theory of institutions</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -178,11 +233,215 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In progress.</p>
+<section id="preface" class="level1">
+<h1>Preface</h1>
+<p>Substantial revision of this page occurred in preparation for the American comprehensive exams.</p>
+</section>
+<section id="what-is-an-institution" class="level1">
+<h1>What is an institution?</h1>
+<p>In broad terms, institutions are the rules of the game in a society. <span class="citation" data-cites="north1990institutions">North (<a href="#ref-north1990institutions" role="doc-biblioref">1990</a>)</span> defines institutions formally as the human devised constraints that shape human interaction. Their design is paramount as the structure interaction and behavior of individuals. They shape incentives, information flows, and constraints by policymakers; in turn shaping the outcomes that can occur from a body politic <span class="citation" data-cites="besley2003political">Besley and Case (<a href="#ref-besley2003political" role="doc-biblioref">2003</a>)</span>. But what constitutes a rule, and how do these come about? Culture (convenctions and codes of behavior) could be broadly construed as a rule and thus, an informal institution. To be clear, institutionalist tend to focus their attention on formal constraints. Formal constraints are those in which human beings have purposely devised. Institutional constraints are the framework within which human activities take place.</p>
+<p>By structuring human interaction, institutions reduce uncertainty.</p>
+<p>This initial definition given by <span class="citation" data-cites="north1990institutions">North (<a href="#ref-north1990institutions" role="doc-biblioref">1990</a>)</span> is useful; however, subsequent scholars have defined institutions further. <span class="citation" data-cites="shepsle2008old">Shepsle (<a href="#ref-shepsle2008old" role="doc-biblioref">2008</a>)</span> breaks institutions into two additional categories: <em>institutions as game forms</em> and <em>institutions as equilibria.</em></p>
+<section id="institutions-as-game-forms" class="level2">
+<h2 class="anchored" data-anchor-id="institutions-as-game-forms">Institutions as Game Forms</h2>
+</section>
+<section id="institutions-as-equilibria" class="level2">
+<h2 class="anchored" data-anchor-id="institutions-as-equilibria">Institutions as Equilibria</h2>
+</section>
+</section>
+<section id="why-care-about-institutions" class="level1">
+<h1>Why Care About Institutions?</h1>
+<p>Now that we have defined what an institution is, a natural question arises within any subject; should we care? Given institutions and their design dictate the rules in which we govern and engage with others, they are paramount to the study of political science and should be taken with the highest level of seriousness. The central point of the study of institutions is that <em>rules matter,</em> institutions determine how preferences and interests are translated into policy <span class="citation" data-cites="besley2003political">Besley and Case (<a href="#ref-besley2003political" role="doc-biblioref">2003</a>)</span>. When stated plainly, this is somewhat obvious. However,</p>
+</section>
+<section id="how-do-we-compare-institutions" class="level1">
+<h1>How Do We Compare Institutions?</h1>
+<p>If institutions structure how actors will operate, then we should be able to study what institutions lead to what kind of outcome and thus make useful predictions and gain deeper understandings of institutions that are useful for the functioning of democracy, right? Unfortunately, this answer is significantly more complicated than it would initially appear and comparative political scienctist are intimately aware of this situation more than others. The fundamental issue in the study of institutions in a comparative context is due to the simple fact that institutions are <em>endogenous</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><em>.</em> <span class="citation" data-cites="przeworski2009science">Przeworski (<a href="#ref-przeworski2009science" role="doc-biblioref">2009</a>)</span> takes this point seriously and uses the logic of causal inference to make this point. If institutions are endogenous and come from within, how can we reasonably compare two institutions and their outcomes if individuals selected these institutions? To further illustrate the problem,</p>
+<p>It is important to take a moment to state a somewhat obvious fact, but one I think is critical for the study of institutions and how they come about and evolve. <em>There is no perfect institution.</em> If there was an obvious institution that was demonstrably better than others, political science would cease to exist and that institutional structure would be pervasive. Of course, we can reasonably deduce some institutional arrangements might be better than others, but the conditions to determine that are somewhat subjective. We can of course operate with reasonable assumptions to make determinations about institutional structure and the quality of their outcomes <span class="citation" data-cites="przeworski2004institutions">Przeworski (<a href="#ref-przeworski2004institutions" role="doc-biblioref">2004</a>)</span> <span class="citation" data-cites="przeworski2009science">Przeworski (<a href="#ref-przeworski2009science" role="doc-biblioref">2009</a>)</span>.</p>
+<p>However, the broader point about no perfect institution existing is one intimately debated by <span class="citation" data-cites="riker1988liberalism">Riker (<a href="#ref-riker1988liberalism" role="doc-biblioref">1988</a>)</span>. To make his point, Riker uses social choice theory to mathematically prove that the amalgamation of rational preferences can lead to <em>irrational outcomes</em>. Further, the method in which these preferences get amalgamated range considerably and lead to different outcomes. The quality of this outcome is not one that can be decided by math but only by theory. To return to the earlier point, if there is no perfect institution and the institution we choose to amalgamate preferences is intractable, how should we compare institutions and their outcome if they are both endogenous and intractable? Despite this, a study of institutions is possible but requires some assumptions of varying degrees to realize <span class="citation" data-cites="przeworski2009science">Przeworski (<a href="#ref-przeworski2009science" role="doc-biblioref">2009</a>)</span>.</p>
+<section id="comparing-institutions-in-a-comparative-context" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-institutions-in-a-comparative-context">Comparing Institutions in a Comparative Context</h2>
+</section>
+<section id="comparing-institutions-in-an-american-context" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-institutions-in-an-american-context">Comparing Institutions in an American Context</h2>
+<p>The federal structure of the United States provides ample variation in institutional arrangements. Whether between local governments or states.</p>
+</section>
+</section>
+<section id="where-do-institutions-come-from" class="level1">
+<h1>Where do institutions come from?</h1>
+<blockquote class="blockquote">
+<p><strong>Projects of institutional reform must take as their point of departure the actual conditions, not blueprints based on institutions that have been successful elsewhere. ‘institutions can be at most imported, never exported.’ <span class="citation" data-cites="przeworski2004institutions">Przeworski (<a href="#ref-przeworski2004institutions" role="doc-biblioref">2004</a>)</span></strong></p>
+</blockquote>
+<p>As indicated earlier, institutions are endogenous.</p>
+<p>This isn’t to say institutional structure isn’t or cannot be influenced by outside forces. Take for instance Germany or Japan. Both their institutions are marked by features and characteristics of the United States. This of course is due to the historical context of WW2 and the United States occupation of both countries. Despite the obvious influence of the United States on institutional arrangement in these countries, they do not <em>stay</em> in that arrangement. These countries, with their own beliefs, needs, perspectives, shape the institution in a different direction. This ultimately leads to the next section, <em>how do institutions evolve?</em></p>
+</section>
+<section id="how-do-institutions-evolve" class="level1">
+<h1>How do institutions evolve?</h1>
+</section>
+<section id="how-should-we-study-institutions" class="level1">
+<h1>How should we study institutions?</h1>
+<p>The institution literature has considerable roots, much too long to get into here. However, it seems useful to start at <span class="citation" data-cites="diermeier2003institutionalism">Diermeier and Krehbiel (<a href="#ref-diermeier2003institutionalism" role="doc-biblioref">2003</a>)</span>’s paper typifying the three developed methods to study institutions. These three methods are categorized by: <em>historical institutionalism, rational choice institutionalism,</em> and <em>sociological institutionalism.</em></p>
+<p>To be clear, we should not look to classify institutions into these three categories nor should we</p>
+<section id="historical-institutionalism" class="level2">
+<h2 class="anchored" data-anchor-id="historical-institutionalism">Historical Institutionalism</h2>
+<p>Historical institutionalism as a method of inquiry of institutions uses TK</p>
+<p>From a zoomed out perspective, historical institutionalism does a good job of explaining how specific institutions come into existence.</p>
+</section>
+<section id="rational-choice-institutionalism" class="level2">
+<h2 class="anchored" data-anchor-id="rational-choice-institutionalism">Rational Choice Institutionalism</h2>
+<p>Rational choice institutionalism was developed from economists.</p>
+</section>
+<section id="sociological-institutionalism" class="level2">
+<h2 class="anchored" data-anchor-id="sociological-institutionalism">Sociological Institutionalism</h2>
+</section>
+</section>
+<section id="american-institutions-a-deep-dive-into-their-structure-and-operation" class="level1">
+<h1>American Institutions: A Deep Dive Into Their Structure and Operation</h1>
+<p>This being developed for institutions</p>
+<p><span class="citation" data-cites="grumbach2022laboratories">Grumbach (<a href="#ref-grumbach2022laboratories" role="doc-biblioref">2022</a>)</span></p>
+</section>
+<section id="section" class="level1">
+<h1></h1>
+</section>
+<section id="misc-reading-outlines" class="level1">
+<h1>Misc: Reading Outlines</h1>
+<section id="institutions-institutional-change-and-economic-performance.-douglass-c.-north-1990." class="level2">
+<h2 class="anchored" data-anchor-id="institutions-institutional-change-and-economic-performance.-douglass-c.-north-1990.">Institutions, Institutional Change and Economic Performance. Douglass C. North 1990.</h2>
+<section id="chapter-1-an-introduction-to-institutions-and-institutional-change" class="level3">
+<h3 class="anchored" data-anchor-id="chapter-1-an-introduction-to-institutions-and-institutional-change">Chapter 1: An Introduction to Institutions and Institutional Change</h3>
+<ul>
+<li><p>Institutions are the rules of the game in a society.</p>
+<ul>
+<li><p>the humanly devised constraints that shape human interaction.</p></li>
+<li><p><strong>they structure incentives in human exchange.</strong></p></li>
+</ul></li>
+<li><p>Institutional change shapes the way societies evolve through time and hence is the key to understanding historical change.</p></li>
+<li><p>institutions reduce uncertainty.</p></li>
+<li><p>Institutions include any form of constraints that human beings devise to shape human interaction.</p>
+<ul>
+<li>formal or informal</li>
+</ul></li>
+<li><p>an essential part of the functioning of institutions is the costliness of ascertaning violations and the severity of punishment.</p></li>
+<li><p>Institutions are NOT organizations.</p>
+<ul>
+<li>they are similar.</li>
+</ul></li>
+<li><p>Organizations include political bodies</p>
+<ul>
+<li><p>parties, Senate, city council, a regulatory agency, economic bodies, firms, trade unions, family farms, social bodies, churches, clubs athletic associations, educational bodies, schools, universities, vocational training centers.</p></li>
+<li><p>They are groups of individuals bound by some common purpose to achieve objectives.</p></li>
+</ul></li>
+<li><p>Organizations are influenced by the institutional framework - in turn shaping how the institution evolves.</p>
+<ul>
+<li><p>they are seen as the agents</p></li>
+<li><p>interaction between institutions and organizations.</p></li>
+<li><p>“Organizations are created with purposive intent in consequence of the opportunity set resulting from the existing set of constraints (institutional ones as well as the traditional ones of the economic theory) and in the course of attempts to accomplish their objectives are a major agent of institutional change.</p></li>
+</ul></li>
+<li><p>Institutions affect the performance of the economy by their effect on the cost of exchange and production. The provide INFORMATION.</p></li>
+<li><p><strong>INSTITUTIONS REDUCE UNCERTAINTY BY STRUCTURING HUMAN INTERACTION</strong></p></li>
+<li><p>“Institutions, together with the standard constraints of economic theory, determine the opportunities in a society. Organizations are created to take advantage of those opportunities, and, as the organizations evolve, they alter the institutions.” pg 7</p></li>
+<li><p>Incremental change comes from the perceptions of the entrepreneuers in organizations thinking they could do better by altering the existing institutional framework at some margin. These perceptions however are crucially dependent on both the information they receive and the way they process that information.</p></li>
+</ul>
+</section>
+<section id="chapter-2-cooperation-the-theoretical-problem" class="level3">
+<h3 class="anchored" data-anchor-id="chapter-2-cooperation-the-theoretical-problem">Chapter 2: Cooperation: the theoretical problem</h3>
+<ul>
+<li><p>When it is costly to transact, institutions matter.</p></li>
+<li><p>Cooperation is difficult to sustain when the game is not repeated, when information on other players is lacking, and when there are large numbers of players.</p>
+<ul>
+<li>this all boils down to information</li>
+</ul></li>
+<li><p>“The so-called prisoner’s dilemma that has been a mainstay of game theory is closely allied to Mancur Olson’s (1965) free-rider dilemma. Both suggest a discouraging perspective on the problems of human cooperation and coordination. However, the most dismal aspects of Olson’s analysis and prisoner dilemma problems reflect the static nature of the analysis and the fact that it is a one-shot game. That is, when the prisoner’s dilemma game is played only once, it is a dominant strategy for players to defect and therefore not to achieve what would be an efficient outcome with respect to the aggregate well-being of the players. However, it is well known that defection is not necessarily the dominant strategy if the sutation is repeated over and over again, as many collective action problems are. In an iterated prisoner’s dilemma game, one that is repeated, there is no dominant strategy. In a now-famous tournament, Robert Axelrod found that the winning strategy under these conditions of continuous repeated play is a strategy of tit-for-tat, one in which a player responds in kind to the action of the other player. This led to Axelrod’s celebrated The Evolution of Cooperation (1984), an optimistic book about the ability of human beings to devise cooperative solutions to problems without the intervention of a coercive state.”</p></li>
+<li><p>“The fundamental theoretical problem underlying the question of cooperation is the manner by which individuals attain knowledge of each others preferences and likely behavior. Moreover, the problem is one of common knowledge, since each individual, i, is required not only to have information about others preferences, but also to know that the others have knowledge about i’s own preferences and strategies.”</p></li>
+<li><p><strong>In the restricted N-person PD, it might be possible to argue that this problem is partially resolvable, in the sense that certain types of actors might have good reason to believe that others are of a particular type. In the restricted context of a community, Taylor’s argument makes good sense: social norms will be well understood and will provide the basis for common knowledge and this knowledge will be maintained by mechanisms designed to make acts intelligible. In more general social situations, however, individuals will be less able to make reasonable guesses about other individuals’ beliefs. The theoretical problems underlying cooperation can be stated thus: what is the minimal amount that one agent must know in a given milieu about the beliefs and wants of other agents to be able to form coherent notions about their behavior and for this knowledge to be communicable to the others? It seems to me that this problem is the heart of any analysis of community, convention, and cooperation.</strong></p>
+<ul>
+<li>LOVE LOVE LOVE LOVE LOVE LOVE.</li>
+</ul></li>
+<li><p>Game theory provides us with a theory of the underlying costs of transacting and how those costs are altered by different institutional structures.</p></li>
+<li><p>Individuals act on incomplete information and with subjectively derived models that are frequently erroneous.</p></li>
+<li><p>Institutions are not necessarily or even usually created to be socially efficient; rather they, or at least the formal rules, are created to serve the interests of those with bargaining power to devise new rules.</p></li>
+</ul>
+</section>
+<section id="chapter-3-the-behavioral-assumptions-in-a-theory-of-institutions" class="level3">
+<h3 class="anchored" data-anchor-id="chapter-3-the-behavioral-assumptions-in-a-theory-of-institutions">Chapter 3: The behavioral assumptions in a theory of institutions</h3>
+<ul>
+<li><p>We have traditionally used rational choice theory in our approach of institutions and behavior.</p>
+<ul>
+<li><p>this is an assumption and aren’t human behavior</p>
+<ul>
+<li>they are useful though!</li>
+</ul></li>
+</ul></li>
+<li><p>Argues we need to rethink these assumptions a bit more for science to progress.</p></li>
+<li><p>People make choices on their subjective views.</p></li>
+<li><p>“Only when we understand these modifications in the behavior of the actors can we make sense out of the existence and structure of institutions and explain the direction of institutional change.”</p></li>
+<li><p>The environment is complicated - this relates to the information available. We know from the previous chapter that institutions help provide information.</p></li>
+<li><p>Rational choice is useful and has applicability. It rests on critical assumptions</p>
+<ul>
+<li>It does NOT imply everyones behavior is consistent with rational choice. It does rest fundamentally on the assumption that competitive forces will see that those who behave in a rational manner, as described above, will survive, and those who do not will fail.</li>
+</ul></li>
+<li><p>Short comings of rational choice</p>
+<ul>
+<li><p>1) motivation</p>
+<ul>
+<li>human behavior is much more complicated than the individual utility function posed by economists.</li>
+</ul></li>
+<li><p>2) deciphering the environment</p>
+<ul>
+<li>people decipher the environment by processing information through preexisting mental constructs through which they understand the environment and solve problems they confront.</li>
+</ul></li>
+</ul></li>
+<li><p>where the price to individuals of being able to express their own values and interests is low, they will loom large in the choices made; but where the price one pays for expressing one’s own ideology, or norms, or preferences is extremely high, they will account much less for human behavior</p>
+<ul>
+<li><strong>institutions basically alter the price individuals pay and hence lead to ideas, ideologies, and dogmas frequently playing a major role in the choices individuals make.</strong></li>
+</ul></li>
+<li><p><strong>Institutions exist to reduce the uncertainties involved in human interaction.</strong></p>
+<ul>
+<li><p>these uncertainties arise because of the complexity of the problems to be solved and the problem-solving software (our mental capacity)</p>
+<ul>
+<li>this does NOT imply institutions are efficient.</li>
+</ul></li>
+</ul></li>
+<li><p><strong>From this capacity taken in conjunction with the uncertainties involved in deciphering the environment, rules and procedures evolve to simplify the process. The consequent institutional framework, by structuring human interaction, limits the choice set of the actors.</strong></p></li>
+</ul>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-besley2003political" class="csl-entry" role="listitem">
+Besley, Timothy, and Anne Case. 2003. <span>“Political Institutions and Policy Choices: Evidence from the United States.”</span> <em>Journal of Economic Literature</em> 41 (1): 7–73.
+</div>
+<div id="ref-diermeier2003institutionalism" class="csl-entry" role="listitem">
+Diermeier, Daniel, and Keith Krehbiel. 2003. <span>“Institutionalism as a Methodology.”</span> <em>Journal of Theoretical Politics</em> 15 (2): 123–44.
+</div>
+<div id="ref-grumbach2022laboratories" class="csl-entry" role="listitem">
+Grumbach, Jacob. 2022. <em>Laboratories Against Democracy: How National Parties Transformed State Politics</em>. Vol. 184. Princeton University Press.
+</div>
+<div id="ref-north1990institutions" class="csl-entry" role="listitem">
+North, Douglass C. 1990. <span>“Institutions, Institutional Change and Economic Performance.”</span> <em>Cambridge University</em>.
+</div>
+<div id="ref-przeworski2004institutions" class="csl-entry" role="listitem">
+Przeworski, Adam. 2004. <span>“Institutions Matter? 1.”</span> <em>Government and Opposition</em> 39 (4): 527–40.
+</div>
+<div id="ref-przeworski2009science" class="csl-entry" role="listitem">
+———. 2009. <span>“Is the Science of Comparative Politics Possible?”</span>
+</div>
+<div id="ref-riker1988liberalism" class="csl-entry" role="listitem">
+Riker, William H. 1988. <em>Liberalism Against Populism: A Confrontation Between the Theory of Democracy and the Theory of Social Choice</em>. Waveland press.
+</div>
+<div id="ref-shepsle2008old" class="csl-entry" role="listitem">
+Shepsle, Kenneth A. 2008. <span>“Old Questions and New Answers about Institutions: The Riker Objection Revisited.”</span>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Endogenous means “from within”. An institution is endogenous because it a self creation of the people.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,
   author = {Neilon, Stone},
   title = {American {Institutions}},
   date = {2024-12-15},
@@ -213,6 +472,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

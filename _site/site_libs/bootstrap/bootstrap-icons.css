@@ -1434,6 +1434,7 @@ url("./bootstrap-icons.woff?2820a3852bdb9a5832199cc61cec4e65") format("woff");
 .bi-yin-yang::before { content: "\f67e"; }
 .bi-bandaid-fill::before { content: "\f680"; }
 .bi-bandaid::before { content: "\f681"; }
+.bi-bluesky::before { content: "\f7f9"; }
 .bi-bluetooth::before { content: "\f682"; }
 .bi-body-text::before { content: "\f683"; }
 .bi-boombox::before { content: "\f684"; }

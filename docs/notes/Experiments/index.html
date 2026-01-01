@@ -194,6 +194,10 @@ window.Quarto = {
   <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a></li>
   <li><a href="#field-experiments" id="toc-field-experiments" class="nav-link" data-scroll-target="#field-experiments">Field Experiments</a></li>
   <li><a href="#natural-experiment" id="toc-natural-experiment" class="nav-link" data-scroll-target="#natural-experiment">Natural Experiment</a></li>
+  <li><a href="#conjoints" id="toc-conjoints" class="nav-link" data-scroll-target="#conjoints">Conjoints</a></li>
+  <li><a href="#weekim-not-sure" id="toc-weekim-not-sure" class="nav-link" data-scroll-target="#weekim-not-sure">Week…im not sure</a></li>
+  <li><a href="#adaptive-experiments" id="toc-adaptive-experiments" class="nav-link" data-scroll-target="#adaptive-experiments">Adaptive Experiments</a></li>
+  <li><a href="#pre-registered-reports" id="toc-pre-registered-reports" class="nav-link" data-scroll-target="#pre-registered-reports">Pre-Registered Reports</a></li>
   </ul>
 </nav>
     </div>
@@ -672,6 +676,121 @@ window.Quarto = {
 <li><p>allowing a little more leeway basically.</p></li>
 <li><p>Basically, just think of it is as not sharp.</p></li>
 </ul></li>
+</ul>
+</section>
+<section id="conjoints" class="level1">
+<h1>Conjoints</h1>
+<ul>
+<li><p>What is a conjoint:</p>
+<ul>
+<li><p>a stated-preference experiment where respondents rate/choose profiles defined by multiple randomized attributes and levels.</p></li>
+<li><p>outcome: choice (binary) or rating/rank (ordinal/continous)</p></li>
+<li><p>common use cases: candidate choice, policy bundles, asylum cases.</p></li>
+<li><p>key benefit: identify the marginal causal effect of an attribute level while averaging over the distribution of other features.</p></li>
+</ul></li>
+<li><p>AMCE:</p>
+<ul>
+<li>Average Marginal Component Effect: expected change in outcome when an attribute level changes from a to a prime averaged over the joint distirbution of other attributes.</li>
+</ul></li>
+<li><p>Identification conditions: Randomization of attribute levels</p>
+<ul>
+<li><p>you cant randomize EVERYTHING in a conjoint</p>
+<ul>
+<li><p>you can get balance issues where there is not enough of one feature being showed.</p></li>
+<li><p>some attributes don’t make sense - like a 16 year old but then they have a phd.</p></li>
+</ul></li>
+<li><p>make sure there is nothing systematic in the order.</p></li>
+<li><p>No SUTVA violation - stable preferences across tasks; SUTVA within respondent-profile pair.</p></li>
+</ul></li>
+<li><p>AMCE: contrasts levels (difference from baseline/reference); model-based or linear probability with dummies.</p></li>
+<li><p>Marginal Means (MM): average potential otucome for each level (probabGoal:ility of choice if that level were set, averaged over others)</p></li>
+<li><p>AMCE is better for hypothesis testing.</p></li>
+<li><p>Always include fixed effects and clustered SE</p></li>
+<li><p>Clustered SE - accounting for autocorrelation in the errors.</p></li>
+<li><p>Fixed Effects is dealing with time invariant trains between respondents</p></li>
+</ul>
+</section>
+<section id="weekim-not-sure" class="level1">
+<h1>Week…im not sure</h1>
+<ul>
+<li><p>regression is just equal to the difference in means for estimand.</p></li>
+<li><p>interaction is just the difference</p></li>
+<li><p>What happens if we have multiple arms</p>
+<ul>
+<li>we do different equations and then we need to theorize what comparisons matter.</li>
+</ul></li>
+<li><p>write everything out as an estimand and estimator</p></li>
+</ul>
+</section>
+<section id="adaptive-experiments" class="level1">
+<h1>Adaptive Experiments</h1>
+<ul>
+<li><p>What is an adaptive experiment?</p>
+<ul>
+<li><p>Randomization probabilities change over time based on accumulating outcomes.</p></li>
+<li><p>Goal: learn treatment effects and allocate more units to promising arms.</p></li>
+</ul></li>
+<li><p>Motivations: ethical allocation, operational efficiency, online platforms.</p></li>
+<li><p>Social media companies do a lot of this</p>
+<ul>
+<li>they want more engagement so they adapt as they go.</li>
+</ul></li>
+<li><p>Explore-Exploit Trade-off</p>
+<ul>
+<li><p>Explore: assign across arms to reduce uncertainty</p></li>
+<li><p>Exploit: assign to currently best arm to maximize outcomes now.</p></li>
+<li><p>Adaptive rules balance both; too much exploit risks lock-in to false winners</p></li>
+</ul></li>
+<li><p>Epsilon-Greedy</p>
+<ul>
+<li>assign to current best arm 1-epsilon</li>
+</ul></li>
+<li><p>Thompson Sampling</p></li>
+<li><p>When do we want to use adaptive experiments?</p>
+<ul>
+<li><p>Resource constrained interventions where outcomes accrue quickly.</p></li>
+<li><p>Ethical motivation to shift away from harmful/ineffective arms</p></li>
+<li><p>Less appropriate when outcomes are slow, rare, or when spillovers dominate.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="pre-registered-reports" class="level1">
+<h1>Pre-Registered Reports</h1>
+<ul>
+<li><p>Accepted in principle - if you can actually carry out the experiment - then journal will publish what the final project is</p></li>
+<li><p><strong>Framing:</strong> intro, theory, and testable hypothesis tied to clear estimands</p></li>
+<li><p><strong>Eligibility/prior unobservability:</strong> document that outcome data are not yet observed; specify access controls and plan to register Stage-1 materials before data access.</p>
+<ul>
+<li>pilot data.</li>
+</ul></li>
+<li><p><strong>Design/methods:</strong> sampling frames and vendor, randomization unit and procedure, treatments (exact stimuli), outcome measures with validity checks, and prespecified inclusion/exclusion rules.</p></li>
+<li><p>I should write this up in qualtrics.</p></li>
+<li><p><strong>Data quality &amp; contingency planning:</strong> attention &amp; manipulation checks, missingness/attrition handing; define what makes the study informative under nulls.</p></li>
+<li><p>have bot captures</p></li>
+<li><p><strong>Analysis plan:</strong> estimands, estimators, model specs, covariates, clustering, multiple-comparisons plan (Bonferroni correction), robustness tests.</p></li>
+<li><p><strong>Power/sample:</strong> justify effects and variance target high power (.9) report MDEs aligned to planned tests.</p>
+<ul>
+<li><p>need to be able to interpret a null result</p>
+<ul>
+<li>effect not big as our theorized tau.</li>
+</ul></li>
+<li><p>power analysis for low and upper bounds.</p></li>
+<li><p>think about substantively effect size for null interpretation.</p></li>
+</ul></li>
+<li><p>multiple outcomes: DO A BONFERRONI CORRECTION!</p>
+<ul>
+<li>even with simulated data - show one with and without correction.</li>
+</ul></li>
+<li><p>robustness check - could be a diff model - could use OLS for likert scale and then check with ordered logit.</p>
+<ul>
+<li><p>main analysis is an index</p>
+<ul>
+<li>robustness check - breaking down individual results.</li>
+</ul></li>
+</ul></li>
+<li><p><strong>mock results</strong></p></li>
+<li><p>Get IRB Approval in advance.</p></li>
+<li><p>Design Table!!!!!</p></li>
 </ul>
 
 

@@ -307,7 +307,7 @@ draft: true # setting this to `true` will prevent your post from appearing on yo
 
     -   this indeterminance puts power into some sort of *chooser.*
 
--   The unavoidable inference is, therefore, that, so long as a society preserves democratic institutions, its members can expect that soem of their social choices will be unordered or inconsistent. And when this is true, no meaningful choice can be made.
+-   The unavoidable inference is, therefore, that, so long as a society preserves democratic institutions, its members can expect that some of their social choices will be unordered or inconsistent. And when this is true, no meaningful choice can be made.
 
     -   If *y* is in fact chosen-given the mechanism of choice and the profile of individual valuations-then to say that *x* is best or right or more desired is probably false. But it would also be equally false to say that *y* is best or right or most desired. And in that sense, the choice lacks meaning.
 
@@ -350,6 +350,24 @@ draft: true # setting this to `true` will prevent your post from appearing on yo
 -   "For example, it seems possible that different kinds of constitutions make for different rates of evolution of issues."
 
 -   predicting the rise and fall of issues is probably impossible
+
+## Talk with Josh:
+
+-   big sea change is new institutionalism.
+
+-   institutions actually come into existence.
+
+-   march and olsen 1984 - new instutionalism - rat choice, socioalism, and historical
+
+-   institutiosn are everything for riker.
+
+-   institutions change
+
+-   think about affective side is that bottom-up.
+
+-   riker is thinking probably in terms of party systems.
+
+-   everyone is unidimensional now a days.
 
 # Travel and Built Environment: A Meta Analysis - Reid Ewing & Robert Cervero
 
@@ -424,3 +442,2019 @@ The elasticities we derived in this meta-analysis may be used to adjust outputs 
         -   of the motorized trips that are produced, reduce travel distances and increase vehical occupancy levels (encourage shorter trips and more travel by transit, paratransit, and ride sharing).
 
             -   the proponents of these urban planning philosophies argue reducing these, will lessen negative consequence of an automobile-oriented society - namely reduction in air pollution, fossil fuel consumption, and class and social segregation.
+
+# Democracy For Realists: Why Elections Do Not Produce Responsive Government
+
+## Chapter 1: Democratic Ideals and Realities
+
+-   Two approaches to Democracy:
+
+    -   populist
+
+        -   politicians carry out the "will" of the people or people rule through direct democracy
+
+    -   liberal aka "leadership selection"
+
+-   Democracy is not that strong in people's minds it turns out
+
+-   **The Folk Theory of Democracy**
+
+    -   citizens are informed and engaged in political matters
+
+        -   however, people are busy and not informed
+
+    -   The idea of popular sovereignty is somewhat suspect
+
+    -   Converse, Lazarsfeld, and Campbell tell different stories but all basically show the folk theory is bleak.
+
+-   Bartels and Achens argument:
+
+    -   Convetional thinking about democracy has collapsed in the face of modern social-scientific research.
+
+    -   elections do NOT ensure ideological responsiveness to the popular will - very Riker argument.
+
+    -   "we concluude that group and partisan loyalties, not policy preferences or ideologies, are fundamental in democratic politics."
+
+## Chapter 2: The Elusive Mandate: Elections and the Mirage of Popular Control
+
+-   Dahl's *populistic democracy* is basically what they call the *folk theory of democracy*
+
+-   two major intellectual challenges to the folk theory of democracy/populism:
+
+    -   Economist/Game Theory Challenge
+
+        -   Duncan Black
+
+        -   Kenneth Arrow
+
+        -   Anthony Downs
+
+        -   Riker
+
+        -   Relate to a spatial model of voting.
+
+        -   Aggregation of preferences is a mess
+
+        -   logical incoherence: "If collective choices depend crucially on"how parties and leaders shape the alternatives from which the choice is made," and on the detailed workings of political institutions that are themselves ultiamtely created by collective choices, in what sense can those choices be said to reflect popular will?"
+
+            -   deliberation might be a solution to this.
+
+                -   still problems - these are multidimensional issues that require being shaped into a uni-dimensional issue. But the choice to divide those into uni-dimensional issue will shape the outcome of collective choice in some way that is, from a purely populist standpoint, fundamentally arbitrary. Thus, deliberation provides no easy escapee from the theoretical challenge posed by Arrow's theorem.
+
+        -   Basically, what all of this amounts to: aggregation of people's preferences cannot produce a "will of the people"
+
+        -   populist cant hold because it seems impossible any sort of electoral process could reliably aggregate potentially complex individual preferences into a coherent "will of the people"
+
+    -   Political behavior challenge
+
+        -   Researchers found time and time again, the opinions and behavior of ordinary citizens comported poorly with expectations derived from democratic theory as they understood it - that is, the folk theory.
+
+        -   Authors associated:
+
+            -   Lazarsfeld, Berelson, and Gaudet 1948
+
+            -   Barelson, Lazarsfeld, and McPhee 1954
+
+            -   Converse
+
+                -   many citizens do not have meaningful beliefs, even on issues that have formed the basis for intense political controversy among elites for substantial periods of time.
+
+                -   "constraint among political idea-elements - especially across issue domains - was primarily a matter of social learning rather than logical reasoning."
+
+                -   stability of attitudes is also horrific. But party identification fairs much better.
+
+                    -   zaller goes deeper on this part.
+
+                -   public is mostly ideologically innocent.
+
+            -   Campbell
+
+        -   Voters fall short.
+
+        -   Thinking about this today it is the same on AVERAGE BUT there is more VARIATION!
+
+        -   "Changes in the structure of the mass media have allowed people with an uncommon taste for public affairs to find an unprecedented quantity and variety of political news; but they have also allowed people with more typical tastes to abandon traditional newspapers and television news for round-the-clock sports, pet tricks, or pornography, producing an increase in the variance of political information levels but no change in the average level of political information."
+
+    -   On issue positions:
+
+        -   "Subsequent work by Gabriel Lenz provided substantial additional grounds for skepticism regarding inferences of this sort. Lenz used repeated interviews with the same individuals to show that persuasion plays a large role- and policy oriented evaluation remarkably little role-in accounting for observed associations between issue positions and votes. That is, candidate choices determine issue positions, not vice versa.
+
+    -   Does issue voting compel both parties to adopt policy positions close to those of the median voter, as the spatial theory of elections implies?
+
+        -   "Zaller 2012:"the penalty for extremism, if real, is not large"
+
+        -   issue voting doesn't really discpline politicians according to Erikson, MacKuen, and Stimson
+
+        -   "the implication is that citizens affect public policy-insofar as they affect it all-almost entirely by voting out one partisan team and replacing it with another."
+
+        -   The key point is that represetnatatives' voting behavior was not strongly constrained by their constituents' views. Elections do not force successful candidates to reflect the policy preferences of the median voter, as Downsian logic implies
+
+## Chapter 3: Tumbling Down into a Democratical Republick: "Pure Democracy" and the Pitfalls of Popular Control
+
+-   Madison in Federalist 10 argued that the system of represetnation they proposed would "refine and enlarge the public views, by passing them through the medium of a chosen body of citizens, whose wisdom may best discern the true interest of their country, and whose patriotism and love of justice will be least likely to sacrifice it to temporary or partial considerations. Under such a regulation, it may well happen that the public voice, pronounced by the representatives of the people, will be more consonant to the public good than if pronounced by the people themselves, convened for the purpose."
+
+-   Most americans think Democracy means rule by the people, democracy is unambiguously good, and the only possible cure for the ills of democracy is more democracy. This is the folk theory of democracy.
+
+-   Direct democracy is appealing in emotionally appealing but has some difficulties
+
+-   Why do Americans hold such a "populist" view of democracy?
+
+-   What is the appropriate role of political parties in a democracy?
+
+    -   Schattschneider - Democracy is not to be found in the parties but between the parties.
+
+    -   open primary is directly related to the folk theory.
+
+    -   open primary doesn't necessarily take power away from elites it just changes it.
+
+    -   open primary did not live up to the hopes of reformers.
+
+    -   direct primaries represented an attempt to circumvent party bosses and allow ever citizen to exercise his choice by direct vote without the intervention or interference of any political agency
+
+        -   this aim is to restore absolute. sovereignty of the people.
+
+        -   this does not do what was intended, elites still control the process differently.
+
+-   And when parties stray from that role, how are they to be reformed?
+
+-   Does the establishment of initiative and referendum procedures actually shift power from political elites and special interests to ordinary citizens?
+
+    -   "What the initiative really does is to transfer that function \[of framing laws\] from official lawmakers to non-official lawmakers. But every such non-official lawmaker, being self-appointed and extra-constitutional, occupies an irresponsible position very similar to that of the party machine boss who holds no public office." - Hollingsworth 1912.
+
+    -   direct democracy just creates a new set of election entrepreneurs.
+
+    -   Does direct democracy change candidates that get selected?
+
+-   Main critique of direct democracy:
+
+    -   people know very little
+
+    -   still under the same pressure and control from special interest/elites.
+
+    -   bad policy outcomes can occur.
+
+-   "We suspect that American government would function better if the poor were better organized and more economically secure, if turnout in elections were higher and more equal, and if campaigns were financed with public funds rather than with contributions from billionaires, ideologues, and special interest groups.
+
+-   Founders believed that popular preferences needed to be tempered by political experience and judgment.
+
+-   more democracy is not the solution to everything.
+
+-   trustee model is superior\*
+
+-   "...elections are seen as a mechanism by which voters can hold elected officials accountable, after the fact, for the success or failure of whatever policies they choose to pursue."
+
+## Chapter 4: A Rational God of Vengeance and of Reward? The Logic of Retrospective Accountability
+
+-   Alternative theory of democracy: voters could exert substantial control over their leaders, despite knowing little about the details of public policy, simply by assessing the performance of incumbent officials, rewarding success and punishing failures.
+
+-   **Retrospective voting - V.O. Key 1966 - " the electorate in its great, and perhaps principal, role as an appraiser of past events, past performance, and past actions. It judges retrospectively; it commands prospectively on insofar as it expresses either approval or disapproval of that which has happened before."**
+
+-   retrospective voting kinda saves the voters from being uninformed
+
+-   Key, Fiorinna, Kramer, etc all like retrospective voting but its not sunshine and rainbows.
+
+-   Donald Stokes (1973) - Stokes insisted upon the electoral significance of "valence-issues...that merely involve the linking of the parties with some condition that is positively or negatively valued by the electorate" in contrast to "position issues of the sort represented in Downs's model:"in American presidential elections of the past generation it is remarkable how many valence-issues have held the center of the state," from depression and recovery in the 1930s and 1940s to the Korean War and corruption in 1952 to America's international prestige in 1960.
+
+-   economic conditions are substantial on electoral outcomes
+
+-   retrospective voting depends on the avaialable evidence of that party and/or candidate.
+
+-   CAnes-Wrone, Herron, and Shott's analysis identifies the circumstances under which an incumbent may be tempted to pander - implementing the policy preferred by the voters even though her private information suggests that it will not serve their interests. In their basic model, pandering occurs when the probability is not too high that the inferiority of the voters' preferred policy will be revealed before the next election (and if the expected quality of a prospective challenger is strong enough that the incumbent has to worry about her public standing at election time"
+
+-   "Alexander Hamilton argued in Federalist Number 71 that politicians' temptation to pander depends in part on the length of their terms in office, with longer terms encouraging politicians"to be the guardians of those \[genuine\] interests to withstand the temporary delusion.
+
+## Chapter 5: Blind Retrospection: Electoral Responses to Droughts, Floods, and Shark Attacks
+
+-   natural disasters - despite being random, can threaten a regime
+
+-   Did shark attackes in 1916 influence the presidential election in hte affected areas of New Jersey?
+
+-   But is this going to be a reaction to actual shark attacks OR the response of the government to the shark attacks?
+
+    -   i am really skeptical on this - they aren't tackling this question.
+
+    -   the government was helpless is their argument and to some extent that is true but im not sure i need more here. I am reminded of the debate after the LA fires in many ways. Of course that was different but still.
+
+    -   they eventually retort that social programs and our understanding of social aid as we know it now didnt exist back then. And thus, the government had even less levers/capability to do anything.
+
+-   "Our argument is that voters consistently and systematically punish incumbents for conditions beyond their control."
+
+-   "IF the voters learn in disasters where they had hitherto not suspected-namely that stronger government intervention in the economy is needed-then droughts ought to push electorates to the ideological left. **What they actually do, however is reduce support for incumbents regardless of their ideological commitments."**
+
+-   I think psychologically - the natural disaster illicits a mood/temperature that is negative and this puts voters into an evaluation process of other things an admin does and further associates it in a negative light. Basically, natural disasters just put voters in a bad mood.
+
+-   voters didnt punish George Bush for 9/11 - i suppose that is different.
+
+-   "Either way, in the wake of a disaster the government will look inept or uncaring to a devastated and emotionally shaken electorate. Hence, the voters will punish most of the time. But doing so can neither relieve their distress nor produce more competent or caring political leaders."
+
+-   Disaster effect is an internaction with elite rhetoric.
+
+    -   Elites have to supply the cue to blame the incumbent for the natural disaster at some sufficient level.
+
+-   Policy is complex - voters struggle to properly attribute blame
+
+    -   retrospective voting can produce misguided blame
+
+-   "a healthy democratic culture among political elites, can no doubt, help significantly to constrain the scapegoat impulses of democratic electorates
+
+# Institutions Matter? Adam Przeworski
+
+## New Institutionalism
+
+-   Institutions matter: They influence norms, beliefs, and actions; therefor the shape outcomes
+
+-   Institutions are endogenous: their form and their functioning depend on the conditions which they emerge and endure.
+
+-   How do we distinguish effects of institutions from those of the conditions that give rise to them?
+
+-   How can we determine what people would or would not have done, if the institutions were not there?
+
+    -   this requires counterfactuals and that is something we lack in institutions.
+
+-   Why did similar institutions succeed under some but not under other conditions?
+
+    -   take for instance Germany and Japan compared to Haiti. These countries were all influenced by the USA but their institutional outcomes were different - specifically, Haiti.
+
+-   who has power pre-institution
+
+-   "We could change the rules, say lower the height of one of the baskets, and equalize the chances." But if tall people are the ones who decide what the rules should be, if the people who have brute power are the ones who mold the institutions, they will not agree to it. After all - we can go back to Rousseau for this observation - institutions are established in a society that has some power relations and they must reflect the distribution of this power. Otherwise, they will not last. In the political science jargon, they will not be self-enforcing."
+
+-   **And here lies the crux of the difficulty: if different institutions are possible only under different conditions, how can we tell whether what matters are institutions or the conditions?**
+
+-   Herodotus: if all men are equally strong and equally armed, he thought, then the reading of votes tells everyone what would happen if things came to blows.
+
+    -   Why doe losers go home?
+
+        -   Accepting the majority (winner's) pov is the most practical and peaceful way to organize society. Majority rule isn't chosen because it leads to truth or the best decisions, they chose it because it keeps society peaceful - its better for stability to give authority to the group that has the most power (the majority). - Condorcet
+
+-   I am led to conclude, therefore, that the institutions of choosing the government by elections is endogenous with regard to conditions.
+
+-   To be able to tell whether institutions matter we must be able to isolate their effect from that of the conditions under which they function. - this is pretty fucking hard.
+
+-   Comparing institutions is hard - we have to make inferences using what we observed and a hypothetical one. And even these inferences are subject to different biases:
+
+    -   Baseline difference - the units observed as democracies may have had different performance as dictatorships to those that wer in fact dictatorships or vice versa.
+
+    -   Effect of the treatment on the treated - the units observed as dictatorships may have performed differently under democracy to those that were actually observed as democracies or vice versa.
+
+    -   Post-treatment effect - the problem here is that changing just the regime and nothing else that affects the rate of growth may be impossible.
+
+    -   Distance Effect -
+
+    -   Aggregate effect - violation of stable unit treatment value assumption - observations are independent, which implies that realizations of counterfactuals do not alter the values actually observed.
+
+-   "**Projects of institutional reform must take as their point of departure the actual conditions, not blueprints based on institutions that have been successful elsewhere. 'institutions can be a most imported, never exported.'"**
+
+# Political Institutions and Policy Choices: Evidence from the United States. Timothy Besley and Anne Case
+
+## Abstract:
+
+A rich array of institutional diversity make the United States an excellent place to study the relationship between political institutions and public policy outcomes. This essay has three main aims. First, it reviews existing empirical evidence on the relationship between institutional rules, political representation and policy outcomes. It aims to place the literature into a broader context of theoretical and empirical work in the field of political economy. Second, it develops a parallel empirical analysis that updates studies in the literature and re-examines some of the claims made, in a setting unified both in terms of policy outcomes and the period under study. Third, the paper develops some new directions for research presenting a small number of novel exploratory results.
+
+## Main Point:
+
+The paper explores how political institutions influence public policy in the United States.
+
+Builds on the political agency model: politicians (agents) choose policies under institutional constraints, and voters (principals) evaluate outcomes.
+
+Institutions shape incentives, information flows, and constraints faced by policymakers.
+
+Central idea: rules matter- institutions determine how preferences and interest are translated into policy.
+
+## Background:
+
+-   What are institutions?
+
+    -   Douglass North (1990) - the humanly devised constraints that structure human interaction
+
+-   Institutional rules are of two broad kinds:
+
+    -   electoral rules: restrictions on who can vote, whether proportional representation is used etc.
+
+    -   decision making rules: the use of line item vetoes, whether certain agencies are independent
+
+-   To understand the effect of institutional change on policy outcomes requires an underlying model of the policy process.
+
+-   The importance of institutions on policy formation:
+
+    -   institutions may affect policy preferences directly and their expression at the ballot box.
+
+    -   second, in a multi-issue world, institutions can affect policy priorities.
+
+    -   third, institutions can change the ability of the policy process and particular politicians to commit.
+
+## Overview:
+
+-   There is little doubt that variations in institutions affecting voting, primaries, redistricting and campaign finance have significant consequences for political outcomes. Voter turnout, party representation, the degree of competition in the legislature, and the distance between the ideology of voters and their representatives are all correlated with political institutions. However, for these to have real effects on policy, it must be the case that these political outcomes are also drivers of policy.
+
+## Endogenous Institutions
+
+-   The common assumption in the vast majority of cross-state studies is that the institutions are exogenous
+
+-   When is appropriate to take institutions as exogenous?
+
+-   it is very difficult to distinguish between a genuine institutional effect and the possibility that tastes for citizens' initiatives and taxation are correlated.
+
+# Leadership and Pandering: A Theory of Executive Policymaking. Canes-Wrone, Herron, and Shotts (2001)
+
+## Abstract
+
+We develop an informational theory that analyzes conditions under which a reelection-seeking executive will act in the public interest. The theory considers factors such as executive competence, challenger quality, and the likelihood that voters will learn the consequences of policy decisions before an upcoming election. We find that an executive who has information suggesting that a popular policy is contrary to voters' interests may or may not pander to voters by choosing it; under certain conditions, the executive can actually increase his probability of reelection by choosing an unpopular policy that is in the public interest. However, we also show that an executive will sometimes face electoral incentives to enact a policy that is both unpopular and contrary to voters' interests. Our theory is illustrated with examples involving President Abraham Lincoln, California Governor Earl Warren, and President Gerald Ford.
+
+# Old Questions and New Answers about Institutions: The Riker Objection Revisited. Kenneth Shepsle
+
+## Abstract
+
+This article revisits some old issues about institutions and suggests some new considerations. The article is focused on micro-analytical aspects of institutions and on interpretations of institutions that are micro-analytical, and that explicitly involve human agency, and are game theoretic. It then determines how institutions are chosen and maintained, before moving on to a discussion of the Riker Objection and modes of procedural change.
+
+## Question
+
+-   What are institutions?
+
+-   How are institutions chosen?
+
+-   Once chose, how are institutions maintained or changed?
+
+## Background
+
+-   Riker Objection:
+
+    -   institutions, like the policies subsequently chosen under them, are endogenous
+
+## What are institutions?
+
+-   Institutions as game forms
+
+    -   institutions are the rules of the game in a society or more formally, are the human devised constraints that shape human interaction.
+
+    -   The institution qua game form specifies the set of players, what actions players may take (must take, may not take, etc.), informational conditions under which they make their choices, the timing of moves, the role and timing of exogenous events, and the outcome that results from a distribution of choices and the realization of all random factors
+
+    -   **An institution, then, is a venue for strategic social interaction and choice.**
+
+    -   **Focused mostly on the consequences of institutional arrangment NOT their origin.**
+
+-   Institutions as equilibria
+
+## How are institutions chosen?
+
+# Political Science and the Three New Institutionalisms. Peter Hall & Rosemary C.R. Taylor
+
+# Institutions and Social Conflict. Jack Knight. 1992
+
+## Chapter 1:
+
+-   Social institutions are both formal and informal.
+
+-   Understanding how institutions evolve help us understand the history of a society and its contemporary events.
+
+    -   from a **critical perspective,** an understanding of institutional change allows us to determine whether our existing institutions further those goals by which they are usually justified.
+
+        -   From a **normative perspective,** an understanding of how isntitutions evolve influneces our ability to reform them.
+
+-   A social institution: *a set of rules that structure social interactions in particular ways*
+
+    -   Second, for a set of rules to be an institution, *knowledge of these rules must be shared by the members of the relevant community or society.*
+
+-   Enforcement not need to come from external (State) authority but could coem from informal/self-enforcing.
+
+-   Organization: a collective group of actors.
+
+-   **Two Schools of Social and Institutional Change:**
+
+    -   First, development and change stresses the **collective benefits** of social institutions for the community as a whole.
+
+        -   coordination of interests
+
+            -   this conception has dominated contemporary thinking.
+
+            -   Four central mechanisms for institutional change
+
+                -   1\) the contract
+
+                    -   Hobbes
+
+                    -   less emphasis in the book as the book is concerned with evolution and not their design/reform.
+
+                -   2\) spontaneous emergence
+
+                    -   social actors resolve this problem over time in the process of being confronted by it in their repeated interactions with one another.
+
+                    -   *Through a process of trial and error the actors begin to recognize that certain patters of behavior become the standard responses to questions of property division.*
+
+                    -   Hume - norms of justice and property are therefore artificial and not the product of conscious design. The key is that some norm is necessary for the collective benefit of the community as a whole.
+
+                    -   Adam smith also espouses this idea.
+
+                -   3\) exchange coordinated by the market
+
+                    -   Adam smith - spontaneous emergence is part of the institutional development of capitalism - but is supplemented by the concept of institutional development through exchange coordinated by the market.
+
+                    -   also trial and error. Internal and external sanctions to restrain self-interested actions.
+
+                    -   constrain self-interested behavior.
+
+                    -   **Through exchanges, individual actors devise patterns of behavior that allow them to exploit their gains from specialization and trade.**
+
+                        -   The market coordinates these individual contracts for the benefit of the communtiy as a whole.
+
+                            -   1\) the pressures of the market prevent individual actors from using their bargaining power to produce institutional arrangements that would harm either other individuals or the whole community.
+
+                            -   2\) The competitive pressures of the market encourage greater efficiency in the development of economic institutions. Over time, more efficient contract exchanges emerge - producing collectively beneficial economic institutions.
+
+                -   4\) social selection
+
+                    -   Social selection explains the development of social institutions according to the criterion of fitness:
+
+                        -   Social institutions arise and persist to the extent they help societies survive in a competitive world.
+
+                            -   evolutionary process - variation, selection, and inheritance.
+
+                        -   Kinda a conquering thing he is describing. "for Spencer, this competition is ultimately manifested as war and struggle among societies, with those societies that grow in both number and abilities conquering those less able to adapt. The remaining societies pass on collectively beneficial institutional forms to future generations.
+
+    -   Second school emphasizes the discriminating benefits of such institutions, the disproportionate advantages for some segments of a community produced by an institutional framework.
+
+        -   competition among interests
+
+        -   **According to this approach: social institutions can be explained in terms of their beneficial effects on particular segments of the community. Karl Marx and Max Weber are the individuals associated with this school.**
+
+            -   Marx: social/institutional change not a a smooth path of collective improvements - rather, a sequence of fluctuations between stability and substantial change, with each change shuffling those social groups who most benefited from the dominant institutional arrangements.
+
+                -   Historical materialism and class conflict.
+
+                    -   **Historical Materialism:** proposed a societal-level dynamic of change driven by a functional relationship between the forces and the relations of production. When the relations of production (the existing institutions) no longer satisfied the functional requirement for the continued growth of the force of productions, an institutional revolution would occur, creating new institutional relations more functionally suitable for continued economic growth.
+
+                        -   basically each instituional setting holds the seeds for the new one. Revolutions occur when the institutions hold back economic growth and thus new ones form. Feudalism -\> Capitalism.
+
+                    -   **Class Conflict:** The tension between the interests and capacities of different economic classes and suggest that this tension would be manifest in a fundamental social revolution. How though does this give way to new institutions that are functionally superior to the previous?
+
+            -   Weber: also explains bias inherent in social institutions. He focuses on why institutions favoring some groups and not others, survive.
+
+-   **Contemporary Theories of Institutional Change**
+
+    -   Institutionalizes = problem of collective action.
+
+        -   institutions role = resolve recurring problems in society; institutions are constraints that help individuals avoid negative effects of collective action; they enable social actors to work together to produce beneficial social goals.
+
+        -   Kinda a continuation of the Hume/Smith argument (institutions as coordination)
+
+    -   Institutional maintenance and stability
+
+        -   institutions produce collective goods or benefits for the relevant group or community. This could be efficiency, social optimality, minimization of transaction costs, stability, or satisfaction of some other functional need.
+
+            -   naive - assumes social institutions produce efficient or socially optimal outcomes
+
+            -   sophisticated - allows for the possibility that suboptimal institutions may develop and persist, but it retains the conception of collective benefits and seeks to explain these inefficiencies in the context of failures or weaknesses within the community.
+
+    -   Mechanism for institutional change
+
+        -   Institutions can have the classical elements
+
+        -   institutions as the intentional product of either:
+
+            -   1\) an enforceable exchange of resources or benefits among private actors
+
+            -   2\) political competition over the influence of public policymaking.
+
+-   Author main argument: need to analyze how the asymmetries of poer in a society influence the evolution of social institutions.
+
+-   Institutions define "legitimately expected behavior"
+
+-   "The individual as member of community" the center of our conception of political and social life.
+
+-   Whereas rational choice approaches are usually associated with self interested desires and goals, the analysis need not be limited to the type common in economic analysis. All we need to assume is that individuals act intentionally and optimally toward some specific goals. Through their actions, individuals produce social outcomes.
+
+-   Institutional rules provide two types of information:
+
+    -   the nature of sanctions for noncompliance
+
+    -   the probably future actions of others.
+
+-   A theory of institutions should:
+
+    -   explain the mechanism by which an institution initially develops
+
+        -   What process does a rule become the socially shared standard in a community?
+
+        -   Why does the rule take the particular form that it does
+
+    -   explain how the established rule changes
+
+        -   How and why was the stability of the existing rule undermined
+
+        -   how was the new rule established.
+
+-   **Rather than conceiving of social institutions as the product of effors to constrain social actors as a collectiveity, *social institutions are conceived of as a product of the efforts of some to constrain the actions of others with whom they interact.***
+
+    -   Hes not necessarilly disagreeing with the previous conceptions but he argues it is better to think of institutions in this way.
+
+    -   "my explanation of insittutional emergence concentrates on the conflict over social expectations and on the credibility of efforts to establish them.
+
+-   ***The main consequence of this analysis that the ongoing development of social institutions is not best explained as a Pareto-superior response to collective goals or benefits but, rather, as a by-product of conflicts over distributional gains.***
+
+## Chapter 2: The Primary Importance of Distributional Conflict
+
+-   What is the impact of a social institution on social life?
+
+-   What are the benefits of social institutions?
+
+    -   Measures of time and space
+
+    -   property rights
+
+        -   Coase 1960
+
+    -   Marriage and other rules governing the family
+
+    -   the organization of economic production and distribution
+
+    -   Political institutions of the state
+
+-   benefits can be called:
+
+    -   gains from trade
+
+    -   gains from cooperation
+
+    -   advatanges of coordination.
+
+-   The benefits are clear BUT institutions take many forms!
+
+-   There is more than one way to structure social institutions in order to produce gains from cooperation, coordination, or exchange.
+
+    -   they all produce gains from acting collectively, however, the distribute these benefits differently.
+
+        -   why did this institution develop and not this other?
+
+            -   One theory: we can explain the development of a particular social institution by the fact that it does a better job than do competing institutional forms of providing these collective benefits. - Pareto superior.
+
+-   Rational Choice accounts of social institutions
+
+    -   based on the intentions and motivations of social actors.
+
+    -   Individual self-interest - **narrow rationality** - by adopting a narrow persepctive on the motivations underlying social institutions, we can use our conclusions as a baseline to compare explanations that relax this assumption. If we understand what the nature of social institutions would be in a world of narrowly rational social actors, we can then focus on the changes that might results if these actors adopted more other-grading preferences.
+
+    -   this perspective serves as the basis for other analyses of the rationality of social institutions.
+
+    -   Are strategic actors motivated by the narrow self interested assumed by standard analyeses?
+
+        -   no
+
+    -   Transaction costs serve here not explain the existence of social institutions but, rather, to explain the constrains on efficient institutional development.
+
+    -   inefficiency also arises from many actors.
+
+        -   because rulers may have interests that conflict with those of their subjects and because the choose rules that maximize their own interests, they may produce property right schemes that do not maximize the collective welfare. Thus, the creation of socially efficient rights is thwarted by the contrary interests of political actors.
+
+-   The primary motivation for social institutions cannot be the achievement of collective goals.
+
+    -   these goals are inconsistent with the narrow rationality underlying these insitutions.
+
+    -   **rather, institutional rules are created by and communicated through the claims and actions of rational actors.**
+
+        -   **Rather than focusing on collective goals, self-interested actors want institutions that produce those social outcomes that are best for them as individual strategic actors.**
+
+-   **The main point here is that such gains cannot serve as the basis for a social explanantion; rather these benefits are merely a by-product of the pursuit of individual gain.**
+
+-   ***Institutions are not created to constrain groups or societies in an effort to avoid suboptimal outcomes but, rather, are the by-product of substantive conflicts over the distributions inherent in social outcomes.***
+
+    -   The main goal of those who devleop institutional rules is to gain strategic advantage vis-a-vis other actors and therefore, the substantive content of those rules should generally reflect distributional concerns.
+
+        -   translation: basically institutions emerge out of real power struggles between different groups in society. - conflicts over who gets what.
+
+            -   institutions REFLECT those distributional conflicts.
+
+-   Power = constrain of resources and choices.
+
+-   **What are the implications for designing and creating the institution most favorable to me?**
+
+    -   cost
+
+        -   Cost of institutional development can significantly affect the final form of institutional arragements.
+
+            -   rights that produce greater gains from trade may be rejected because of cost of enforcement.
+
+            -   transaction costs of collective action prevent agreement on new rules that would increase the community's aggregate output.
+
+    -   uncertainty
+
+        -   Uncertainty about the relationship between our actions and the outcomes they produce makes rational action difficult.
+
+        -   If we do not know the exact relationship between the rule of an institutional rule and the subsequent effects of that rule, the quest for the institutionalization of strategic and distributional advantage will be hampered.
+
+        -   **Social actors may not be able to establish a distributional advantage if they do not understand how an institutional rule works. Here we might expect two types of behavior: either experimentation with different institutional forms in an effort to obtain more information about institutional effects or the establishment of rules that can easily be changed.**
+
+# What is an institution? John Searle. 2005
+
+-   It is implicit in the theory of speech acts that, if you have a community of people talking to each other, performing speech acts, you already have a social contract
+
+-   Difference between observer indepedent features and observer relative features
+
+    -   independent: mass, gravity, photosynthesis, tectonic plates
+
+        -   natural sciences
+
+    -   relative: money, government, property, marriage, social clubs, presidential elections.
+
+        -   social sciences
+
+-   How can there be a social and institutional reality, including economic reality, within a universe consisting entirely of physical particles in fields of force?
+
+-   What is an institutional fact?
+
+    -   they are facts that can only exist given certain human institutions.
+
+        -   I am an American citizen, the peice of paper in my hand is a 20 dollar bill, I own stock in AT&T - these are institutional facts and can only exist as facts given certain human institutions.
+
+-   Three primitive notions necessary to explain social and institutional reality:
+
+    -   Collective intentionality
+
+        -   emotions
+
+        -   directedness of the mind.
+
+        -   When I am engaged in collective action, I am doing what I am doing as part of our doing what we are doing.
+
+            -   an agent is acting, and doing what he or she does, only as part of a collective action
+
+        -   What is special about human collective intentionality that enables us to create special forms of social reality that go beyond the general animal forms?
+
+    -   the assignment of function
+
+        -   assignment of function on objects where the object does not have the function intrinsicually, but only in the virute of the assignment of function.
+
+    -   Status functions
+
+        -   "The third item we need, to account for the move from social facts to instintutional facts, is a special kind of assignment of function where the object or person to whom the funciton is assigned cannot perform the function just in virtue of its physical structure, but rather can perform the function only in virtue of the fact there is a collective assignment of certain status, and the object or person performs its function only in virtue of collective acceptance by the community that the object or person has the requisite status."
+
+            -   X counts as Y in context C
+
+                -   such and such a position in check counts as a checkmate
+
+                -   such and such a set of procedures counts as the election of a president in the US.
+
+    -   It seems feeble that institution structure rests on these but they stack (iterate indefinitely)
+
+    -   **When the procedure or practice of counting X as Y becomes regularized it becomes a rule. And rules of the form X coutns as Y in C are the constittutive of institutional structures.**
+
+        -   I make certain sounds through my mouth, making those sounds counts as uttering sentences of Egnlish; but uttering those sentences of English counts as making a promise; and, in that context, making a promise coutns as undertaking a contract. Making that kind of contract in that context coutns as getting married, and so on upward.
+
+-   **An institution is any system of constitutive rules of the form X counts as Y in C. Once an institution becomes established, it then provides a structure within which we can create institutional facts.**
+
+-   ***The essential role of human institutions and the purpose of having institutions is not to constrain people as such, but, rather, to create new sorts of power relationships. Human institutions are enabling - they create power.***
+
+    -   rights, duties, obligations, authorizations, permissions, empowerments, requirements, and certifications. - DEONTIC POWERS.
+
+-   **INSTUTIONAL STRUCTURES CREATE DESIRE-INDEPENDENT REASONS FOR ACTION**
+
+    -   you act because you recognize a rule, duty, or norm that gives you a reason to.
+
+        -   You are not acting simply because you want to!
+
+        -   When you acknowledge that something is your **duty**, you're already accepting that there's a **reason** for doing it that doesn't come from your personal desires.
+
+            -   reminds me a bit of sociological instituionalism.
+
+-   The desire to get rich, to become president, to get a phd, to get tenure all presuppose that there is a recognition of the deontic relationships. Without the recogniction, ackowledgement, and acceptance of the deontic relationships, your power is not worth a damn. It is only worthwhile to have money or a university degree or to be president of the USA if othe r people recognize you as having that status, and recognize that status as giving desire-independent reasons for behaving in certain ways.
+
+-   Big point: previous accounts of institutions dont take language into account.
+
+-   A \$20 bil does not buy just in virtue of its phyiscal structure.
+
+    -   it can only function as money if itis recognized, accepted, and acknowledged as valid currency.
+
+-   ***A status function must be represented as existing in order to exist at all, and language or symbolism of some kind provides the means of representation.***
+
+-   no language -\> no status functions. no status functions -\> no institutional deontology.
+
+-   Basically, if my reading is right, institutions are reified facts. And. we can use language to do this, which makes us unique.
+
+# Political Institutions: The Neglected Side of the Story. Terry Moe. 1990
+
+-   Political Institutions serve two different purposes:
+
+    -   **help mitigate collective-action problems,** particularly commitment and enforcement problems so debilitating to political exchange, and thus allow the various actors in politics to cooperate in the realization of gains from trade
+
+    -   **Alternatively, political institutions are also weapons of coercion and redistribution.** They are structural means by which political winners pursue their own interests, often at the great expense of political losers.
+
+-   Focus is on bureaucracy and how it is understudied.
+
+-   Two basic concerns for positive theory of institutions (rat choice)
+
+    -   Where they come from and why they take the forms they do.
+
+    -   The effects of institutions on political and social behavior.
+
+-   **What explains institutions?**
+
+-   problem: political scientists have removed politics from their theories of institutions by focusing on their logical/mathmatical models.
+
+-   Problem: positive theorists have taken too much of the politics out of the politics of structural choice.
+
+    -   This is because
+
+        -   focus is heavily oriented by the methodlogy of social choice
+
+        -   positivists are increasingly taking advtangae of the new economics of orgnaization, which sees politics as an extension of economics.
+
+-   Weingast - legislative organization allows - committees, eclusive jurisdictions, seniority, and all the rest - serve to do: they constrain everyone's opportunities and incentives to renege, thus facilitating credible commitments, durable legislative deals, and mutual realization of gains from trade.
+
+    -   but Moe argues politics is not econ - its not firms!.
+
+    -   Political actors cannot simply engage in market exchange. They must make decisions under majority rule, which is inherently unstable as a result of the insurmountable transaction problems of striking durable contracts.
+
+        -   Political actors face different transactional problems.
+
+-   Shepsle - congress - committe system etc. severely constrains the instabilities of majority rule and allows Congress to commit to stable policies on which external social actors can subsequently rely in making their own decisions.
+
+    -   Then, the explanation for the forms taken by political institutions is that they help solve the problem of government commitment, thereby enabling government to take effect action in seeking to enhance social efficiency.
+
+        -   both weingast and shepsle: institutions facilitate cooperation and are beneficial to all concerned.
+
+-   **Institutions are solutions to collective action problems taht facilitate gains from trade and make everyone better off BUT there is more to the story.**
+
+-   ***Most political institutions are instances of the exercise of public authority. They arise out of a politics of structural choice in which the winners use their temporary hold on public authority to design new structures and impose them on the polity as a whole. These structures are simply vehicles by which they pursue their own interests, often at the expense of losers. Some structures may administer programs that supply the winners with any manner of benefits. Others may extract resources or costly behavioral adjustments from losers. Still others may impose new constraints on the way the political game will be played in the future, constraints that give today's winners advantages over their opponents in tomorrow's jockeying to exercise public authority.***
+
+-   Moe thinks we should not focus our attention to Congress but to public bureaucracy.
+
+-   Bureaucracies have goods and services they produce. These organizations need to carry out their missions productively.
+
+-   The politics of structural choice in terms of two fundamental problems that decision makers must confront and somehow resolve:
+
+    -   1\) hierarchical control - building an organization that will take action conducive to the best interests of its creators
+
+        -   uncertainty - constraining enemies opportunities but also themselves in future.
+
+            -   political movers are threatened by uncertainty - they want their organizations to be effective, AND they also want to control them. but they do not have the luxury of designing them for effectiveness and control.
+
+                -   their property rights are not guaranteed.
+
+-   What about the losers?
+
+    -   In a system such as the American, in which public authority is purposely fragmented, compromise is typically necessary if the contending political forces are to get a measure of what they want.
+
+    -   institutions as a means to an end.
+
+        -   for public agencies, the ends in question would seem to be their policy mandates.
+
+            -   their structure is commonly understood as the means by which these mandates are implemented.
+
+                -   my point: it seems worthwhile here to wonder about how americans actually see institutions. I'd doubt all of them see it as this vehicle to get what they want (means). But rather see it as an end in of itself.
+
+    -   The point is that you have to have some sort of compromise thus in structuring agencies, losers are also part of this.
+
+-   Public authority is at the hands of agents.
+
+    -   because they have a measure of autonomy, they can use their authority to *structure the behavior of their principals.*
+
+        -   this is a reverse of the standard principle agent we observe in econ relationships.
+
+            -   here the principals comply with the wishes of the agents
+
+-   Presidents play a much bigger role than is considered in literature.
+
+    -   legislators and presidents have two different constituents.
+
+-   "When the economy goes bad, when an agency does its job poorly, when a social problem fails to be addressed, when a scandal hits the headlines, it is the president who gets the blame and whose popularity, reputation, and histrocial legacy are on the line. All presidents are acutely aware of this, and they respond by trying to build and deploy an institutional capacity for effective governance."
+
+    -   presidents are motivated to create a unified, coordinated, centrally directed bureaucratic system. they want to control from the top.
+
+-   In separation of powers system: lots of players have authority, but it is extremely difficult to make law- and this very difficulty promotes extensive reliance on formal structure
+
+    -   American system - agreements about structure are in large measure enforceable by law.
+
+-   In a parliamentary system: authority is concentrated in the majority party, and it is so easy to make law that the law itself cannot be relied upon for protection: most of the action surrounds informal and extralegal means building desirable institutions
+
+    -   structural choice appears to rely extensively on self-enforcing cooperative arrangements among the various participants.
+
+# DiMaggio, Paul. 1998. "The New Institutionalisms: Avenues for Collaboration," Journal of Institutional and Theoretical Economics
+
+# 
+
+Hall, Peter and Rosemary Taylor. 1996. "Political Science and the Three New Institutionalisms," Political Studies
+
+## What is new institutionalism?
+
+-   NOT a unified body of thought
+
+-   represents three different analytical approaches.
+
+    -   **Historical institutionalism (HI)**
+
+        -   How do HI define institutions?
+
+            -   they define them as the formal or informal procedures, routines, norms and conventions embedded in the organizational structure of the polity or political economy.
+
+        -   HI agree that conflict among rival groups for scarce resources is at the heart of politics but they want better explanations for the variance that occur in these outcomes.
+
+        -   they see the institutional organization of the polity or or political economy as the principal factors structuring collective behavior and generating distinctive outcomes.
+
+        -   Structural \> functional explanation for institutions.
+
+        -   state is not neutral - complex - social and political institutions are shaped by and shape future interactions -\> distinctive trajectories.
+
+        -   Four distinct features:
+
+            -   1\) HI tend to conceptualize the relationship between institutions and individual behavior in relatively broad terms.
+
+                -   calculus approach vs. cultural approach - this debate underlies how to answer three seminal questions:**HI use BOTH of these approaches.**
+
+                    -   How do actors behave?
+
+                        -   **Calculus**: individuals seek to maximize goals by specific preference function. = behave strategically.
+
+                        -   **Cultural:** stresses behavior is not fully strategic but bounded by an individual's worldview. Humans aren't utility maximizers per say, actions depend on subjective interpretation of a situation rather than pure instrumental calculation.
+
+                    -   what do institutions do?
+
+                        -   **Calculus:** Institutions affect behavior primarily by providing actors with more information about future behavior of other actors. Enforcement mechanisms for agreements, penalties for defection, and the like. **They affect individual action by altering the expectations an actor has about the actions that others are likely to take in response to or simultaneously with his own action.**
+
+                        -   **Cultural:** Institutions provide moral or cognitive templates for interpretation and action. Institutions provide strategically-useful information, they also affect the very identities, self-images and preferences of the actors.
+
+                    -   and why do institutions persist over time?
+
+                        -   **Calculus:** institutions persist because they embody something like a nash equilibrium (best response to a best response). Deviation from these patterns of behavior = individuals worse off than will adherence -\> institutions persists.
+
+                        -   **Cultural:** institutions are so 'convenctional' or taken for granted that tehy escape direct scrutiny and, as collective constructions, cannot readily be transformed by the actions of any one individual. Institutions are resistant to redesign ultimately because they structure the very choices about reform that the individual is likely to make.
+
+            -   2\) they emphasize the asymmetries of power associated with the operation and development of institutions.
+
+                -   institutions distribute power unevenly.
+
+                -   institutions give some groups or interests disproportionate access to the decision-making process. They tend to stress how some groups lose while others win.
+
+                    -   Steinmo and tax policy = variation in cross national tax policy is a result of political institutions historical structure that were shaped by social interests that made them.
+
+            -   3\) They tend to have a view of institutional development that emphasizes path dependence and unintended consequences
+
+                -   they stress the unintended consequences and inefficiencies generated by existing institutions in contrast to images of institutions as more purposive and efficient.
+
+                -   critical junctures - moments when substantial institutional change takes place thereby creating a branching point from which historical development moves onto a new path.
+
+            -   4\) concerned to to integrate institutional analysis with the contribution that other kinds of factors, such as ideas, can make to political outcomes.
+
+                -   institutions are not the only causal force in politics.
+
+                -   institutions are in a causal chain
+
+                    -   socioeconomic development and diffusion of ideas.
+
+                -   more complex world than rat choice.
+
+    -   **Rational choice institutionalism**
+
+        -   Arose from the study of congress.
+
+        -   big problem rat choice initially deals with:
+
+            -   it should be difficult to secure stable majorities for legislation in the US Congress, where the multiple preference-orderings of legislators and multidimensional character of issues should lead to rapid 'cycling' from one bill to another as new majorities appear to overturn any bill that is passed.
+
+                -   HOWEVER -\> we actually have considerable stability
+
+                    -   This is where rat choice carves out its lane to answer this discrepancy.
+
+        -   The answer to the discrepancy is institutions.
+
+            -   rules of procedures and committees of Congress structure the choices and information available to its members.
+
+        -   solve many of the collective action problems.
+
+        -   Four notable features:
+
+            -   1\) rational choice institutionalists employ a characteristic set of behavioral assumptions
+
+                -   actors have a fixed set of preferences
+
+                -   behave instrumentally to maximize attainment of these preferences
+
+                -   do so in a highly strategic manner that presumes calculation
+
+            -   2\) They tend to see politics as a series of collective action dilemmas.
+
+            -   3\) they postulate, that an actor's behavior is likely to be driven, not by impersonal historical forces, but by a strategic calculus and, second, that this calculus will be deeply affected by the actor's expectations about how others are likely to behave as well.
+
+                -   **institutions structure such interactions, by affecting the range and sequence of alternatives on the choice-agenda or by providing information and enforcement mechanisms that reduce uncertainty about the corresponding behavior of others and allow "gains from exchange". Thereby leading actors toward particular calculations and potentially better social outcomes.**
+
+            -   4\) They stress the process of instituional creation usually revolves around voluntary agreement by the relevant actors; and, if the institution is subject to a process of competitive selection, ut survives primarily because it provides more benefits to the relevant actors than alternate institutional forms.
+
+                -   very similar to the economic/market example.
+
+    -   **Sociological institutionalism**
+
+        -   From the subfield of organization theory.
+
+        -   **Argue that many of the institutional forms and procedures used by modern organizations were not adopted simply because they were most efficient for the tasks at hand, in line with some transcendent 'rationality'.**
+
+            -   **They argued that many of these forms and procedures should be seen as culturally-specific practices, akin to the myths and ceremonies devised by many societies, and assimilated into organizations, not necessarily to enhance their formal means-ends efficiency, but as a result of the kind of processes associated with the transmission of cultural practices more generally.**
+
+        -   Three distinct features:
+
+            -   1\) define institutions much more broadly than political scientists do to include, not just formal rules, procedures or norms, but the symbol systems, cognitive scripts, and moral templates that provide the 'frames of meaning' guiding human action.
+
+                -   the others think of culture and institutions as separate - this does not.
+
+            -   2\) norms of behavior - institutions influence behavior not simply by specifying what one should do but also by specifying what one can imagine oneself doing in a given context.
+
+                -   institutions also affect actor most basic preferences and very identity.
+
+                -   reification of the institution on identity -\> how actors act.
+
+                -   **rational action is itself socially constituted and they conceptualize the goals toward which an actor is striving in much broader terms than others do.**
+
+            -   3\) Argue that organizations often adopt a new institutional practice, not because it advances the means-ends efficiency of the organization but because it enhances the social legitiamcy of the organization or its participants.
+
+                -   **Organizations embrace specific institutional forms or practices becasue the latter are widely value within a broader cultural environment.**
+
+                    -   ex: policies toward immigrants adopted by many states were pursued, not because they were most functional for the state, but because the evolving conceptions of human rights promulgated by international regimes made such polices seem appropriate and others illegitimate in the eyes of national authorities.
+
+                        -   Im not sure why but im thinking Foucault.
+
+## Comparing Institutionalisms
+
+-   All three advance our understanding of the world but are not identical in any way
+
+-   Historical instituionalism is weak in explaning how institutions affect behavior.
+
+    -   very INDUCTIVE
+
+-   RCT = good at explaining institutions and behavior but bad at incorporating more complicated schema.
+
+    -   good: why institutions remain and continue to exist= persistence of an institution often depends upon the benefits it can deliver.
+
+    -   weakness: highly funcitonalist.
+
+        -   assumes creation is highly purposive. -\> heroic assumptions.
+
+        -   bad at explaining how institutions come to exist.
+
+-   Sociological = good at explaining oddities in behavior.
+
+    -   can miss the fact that institutional creation or reform entails a lot of bloodshed or clash of powers.
+
+-   Both sociological and historical both imply institutions are created or adopted in a world already replete with institutions.
+
+# Legislative Leviathan
+
+## Introduction
+
+-   previous literature says american parties are weak
+
+-   For Cox and Mccubbins - reevaluate parties and committees
+
+-   **Our view is that parties in the House - especially majority parties - are a species of "legislative cartel."**
+
+-   Possession of rule making power leads to two main consequenceS:
+
+    -   1\) the legislative process in general - and the committee system in particular is stacked in favor of majority party interests
+
+    -   2\) because members of the majority party have all the structural advantages, the key players in most legislative deals are members of the majority party and the majority party's central agreements are facilitated by cartel rules and policed by the cartels leadership.
+
+-   Just like members of other cartels, members of majority parties face continual incentives to "cheat" on the deals that have been struck. These incentives to cheat threaten both the existence of the cartel and the efficient operation of therelevant "market"--in this case, in legislative trades. The structure of the majority party and the structure that the majority party imposes on the House can be viewed as resolving or ameliorating m
+
+### Weakness of parties
+
+-   Authors document the decline of party importance in 70s and 80s.
+
+-   Despite this, they came to be seen in this time as having a limited role.
+
+    -   parties were seen as primarily floor voting coalitions that have relatively little systematic influence on prefloor behavior.
+
+    -   \[arties are primarily procedural coaliutions that have relatively little influence over the substance of legislation.
+
+    -   Party leaders' actions in Congress are conditional on the support of the party membership on a case by case basis, rather tha ntaken as part of a more general and unconditional delegation of power, as in Great Britain.
+
+-   Rat choice focuses on individuals as unitary actors. Ignoring party from their theories.
+
+### Author's Argument:
+
+-   **Like traditional theorist, we think parties act as both floor and procedural coalitions, and that more homogeneous parties are more likely to be active on both regards. Like rational choice theorists, we are impressed by the theoretical difficulty of taking American parties as unitary actors.**
+
+    -   These concerns, it should be noted, are at odds with oneanother. The first impatiently says, "Of course parties exist. Of course they engage in various activities. Let us get on with the task of studying them." The second says "But a dominant theme in the literature is that parties are so internally divided that they can rarely act with any vigor and purpose. Any theory of parties, therefore, must start at a lower, more fundamental, level-- that of the individual, reelection-seeking legislatorand build up from there."
+
+### Committee Government
+
+-   Basically, in the post war period, scholars thought of parties as weak, and the committee rained supreme. commitee was somewhat separate from party.
+
+-   Committees rained supreme and were independent of external influences (like parties)
+
+-   Subcommittees rained supreme during the Rayburn House
+
+-   Committees are regional and specialized. This opens them up to special interest influence. It is easy for special interest to influence the committee rather than the whole congress.
+
+### summary
+
+-   Rayburn house was decentralized
+
+-   Committees rained supreme and lots of autonomy
+
+-   members of committees were largely self selected and had a seniority system which protected members.
+
+-   Parties seemed weak and their influence was confined to the floor.
+
+-   PARTIES MATTER FOR COX AND MCCUBBINS
+
+## The Autonomy and Distinctiveness of Committees
+
+-   **"We reevaluate the role of parties and committees in the postwar House of Reps, arguing that parties are a kind of legislative cartle that seizes the structural power of the House and that committees are definitely not autonomous."**
+
+## Chapter 1: Self- Selection and the Subgovernment Thesis
+
+-   The iron trangle - cozy attachment between congressional committee members, executive agents, and interest group lobbyists
+
+-   **Focus of this chapter: committee assignment process**
+
+    -   previous lit argues these are self-selected.
+
+    -   members get what they get because it has some relation to their constituency - electoral connection.
+
+-   **Authors push back against self-selection model. These are also very much partisan instruments.**
+
+-   How members get on committees, advance, and leave, is NOT autonomous.
+
+### Self-Selection
+
+-   self-selection onto committees was seen as dominant theory
+
+    -   self-selection occurs when two conditions are met:
+
+        -   members request assignments based on the committee affects their consitutents interests.
+
+        -   each party's committee on committees accommodates member requests.
+
+-   Seen as a routine, parties try their best to accomodate the wishes of the member.
+
+### Constituency Interests and Assignment Requests
+
+-   Do members get committee assignments that actually reflect their constituency's interest?
+
+-   Author's argue it makes logical sense but the statistical evidence is weak.
+
+    -   spotty at best.
+
+    -   Fenno shows this qualitatively. But, it does not systematically reveal how much constituency drives committee selection.
+
+-   In short, constituency and assignment requests have some credibility but it is spotty and only shown to occur in some cases and not in others.
+
+### Accommodation of Assignment Requests
+
+-   Do members of the house receive the committee assignments that they request?
+
+-   Again, some evidence of this. Members, more than half the time get their forst choice.
+
+-   however, their first choice is endogenous. freshman members might have been influenced and thus their stated preference might not have been their true preference.
+
+### Accommodation of Transfer Requests
+
+-   Given the possibility of cooptation of members to serve on the more prestigious committees, and of "impressment" of members to serve on the less prestigious committees, the finding in Table1.6 that most transfers to non control committees were, as far as anyone can document, unrequested, is inconsistent with the self-selection model.
+
+### The Routinization of the Assignment Process
+
+-   conventional wisdom argues the assignment process is routine.
+
+## Chapter 2 - The Seniority System in Congress
+
+-   One of the primary building blocks of the committee government model is the idea that members, once appointed to a standing committee, are automatically ensured security of tenure and promotion by seniority.
+
+-   **Argument: Although violations of seniority were indeed few in the early postwar years, to infer committee autonomy from this is invalid.**
+
+-   committees were not unaccountable to their pary.
+
+-   The reason seniority violations were rare was that (1) the party was divided into two regional factions, both of which could veto the punishment of any of their own; and (2) the seniority system produced a mix of committee chairs that, until the 1970s, accurately reflected the regional balance in the party
+
+## Chapter 3 - Subgovernments and the Representativeness of Committees
+
+-   One notion about committee government: many congressional committeees are unrepresetnative of their parent chambers.
+
+    -   this is partly motivated by the idea that members self-select and thus represent a biased view of the policy. However, we know from the earlier chapter the evidence is suspect.
+
+-   Is congress a giant logroll among subgovernments?
+
+### The Previous Literature
+
+-   committee represetnativeness
+
+    -   ideological dimension
+
+    -   regional dimension
+
+-   Results show a majority of members of Congress do not serve on committees that are dominated by preference outliers.
+
+-   committees are not independent.
+
+-   **Committees are AGENTS not Principals.**
+
+-   this will incorporate the importance of party leadership.
+
+    -   agenda control cannot be explained by committee extremism alone.
+
+-   Congressional committees are more representative of their parent chamber than subgovernment theories suggest, implying that committee autonomy is limited and ultimately subordinate to party and chamber control.
+
+-   Committees are representative most of the time
+
+## Part Two - A Theory of Organization
+
+-   Why and how might a group of legally equal and often contentious legislators nonetheless create and main parties?
+
+    -   Answer: Theory of the firm.
+
+        -   parties are invented, structured, and restructured in order to solve a variety of collective dilemmas that legislators face.
+
+        -   These collective dilemmas - sutations in which the rational but unorganized action of group members may lead to an outcome that all consider worse than outcomes attainable by organized action - are inherent in the drive to be reelected in a mass electorate and in the process of passing legislation by majority rule.
+
+## Chapter 4 - Institutions as Solutions to Collective Dilemmas
+
+-   Parties as legislative cartels.
+
+-   How do institutions solve collective dilemmas?
+
+-   What are the costs entailed by institutional solutions?
+
+### Collective dilemmas
+
+-   A collective dilemma is a situation in which rational behavior on the part of individuals can lead to unanimously dispreferred outcomes.
+
+-   focus on prisoners dilemma.
+
+### Central Authority: The Basics
+
+-   Political entrepreneurs. They solve prisoner's dilemmas
+
+    -   bear the direct costs of monitoring the community faced with the collective dilemma
+
+    -   they possess selective incentives with which to reward those whom they find cooperating or punish those whom they find "defecting"
+
+    -   they are paid in various ways, for the valuable service they provide.
+
+-   Buisness entrepreneurs - a similar type to political entrepreneurs
+
+    -   specialists in monitoring, whose function is to prevent shirking by workers engaged in team producting
+
+    -   they alone have the right to hire and ifre individual workers and to negotiate pay
+
+    -   they have a residual claim to all profits produced by the enterprise.
+
+-   The Hobbesian State
+
+    -   Solution to n-prisoner's dilemma
+
+        -   the state
+
+            -   absolute sovereign
+
+-   Central Agents
+
+    -   All the institutional theories surveyed here involve a central agent, whether politicall entrepreneur, businessperson, or monarch - with three common features:
+
+        -   the agent bears the direct costs of monitoring the population faced with the collective dilemma
+
+        -   the agent possesses, by virtue of his or her instiutional position, selective incentives with which to punish noncooperative and reward cooperative behavior
+
+        -   the agent is motivated to bear the costs of monitoring and to expand scarce resources on selective incentives in punishing and rewarding those he or she monitors, either by receiving a substantial share of the collective output or by receiving a claim to the residual of collective output above some preassigned level or by some other compenation scheme designed to align the personal interests of the agent with the level of collective output.
+
+        -   **The central agent as provider of justice also visible within parties. Mayhew's work on party loyalty among Congresspersons provides a number of examples of the leadership helping to hold together Democratic logrolls on the floor.**
+
+### Why Central Authority is Sometimes Necessary
+
+-   a group of workers in an industry where workers cannot monitor one another are inevitably faced with a collective dilemma.
+
+-   These twin problems besetting the institution of central authority recall Madison's comment in Federalist No. 51: "In framing a government to be administered by men over men, the great difficulty lies in this: you must f irst enable the government to control the governed; and in the next place oblige it to control itself." When Madison wrote this the American people had recently experienced both government too strong (under George III) and government too weak (under the Articles of Confederation). His dictum simply recalled this experience to his readers' minds. From a contractarian perspective, Madison's statement haunts any institution that relies on central authority to solve collective dilemmas: what is the point of central authority if it fails, through weakness or through strength, to effect a Pareto improvement?
+
+### Conclusion:
+
+tk
+
+## Chapter 5 - A Theory of Legislative Parties
+
+-   Definitions of parties come from two main perspectives:
+
+    -   structure
+
+        -   defines parties according to various observable features of their organization
+
+    -   purpose
+
+        -   defines and cateogrizes political parties by the goals that they pursue
+
+            -   Edmund Burke's definition: a group of men who seek to further "some particular principle in which they are all agreed" 1975
+
+            -   Schattschneider def: "an organized attempt to get...control of the government"
+
+            -   Downs: "a political party is a team of men seeking to control the governing apparatus by gaining office in a duly constituted election.
+
+        -   These definitions assume too much about the internal unity of parties. These formal definitions make parties into unitary actors who single mindedly seek to maximize votes.
+
+-   Chapter goals: explain how a party with substantial, if not perfect, coherence of collective purpose might emerge from the voluntary interaction of individual politicans.
+
+    -   how can a grup of formally equal and self-interested legislators, with demonstrably diverse preferences on many issues, agree on the creation or maintenance of a party, on the organizational design of a party, and on the setting of collective goals?
+
+### The Reelection goal
+
+-   the goals of individual legislators, accepting the usual emphasis on releection but highliting factors that improve the reelection probabilities of all members of a given party.
+
+-   authors do not beleive legislators are single minded in their pusuit of reelection. but it is important.
+
+-   **"The primary task of this section is to defend the notion that the probability of reelection of the typical member of Congress depends not just on such individual characteristics as race, sex, and voting record but also on the collective characteristics of the member's party.**
+
+    -   MY ARGUMENT: THIS COLLECTIVE CHARACTERISTIC IS NEVER DECIDED IN ISOLATION. IT IS SHAPED BY A MULTITUDE OF ACTORS AND THIS LEADS TO DIFFERENT PERCEPTIONS OF THE COLLECTIVE ENTITY.
+
+    -   the image of the collective entity has become more important.
+
+-   p_i represents the public record of the ith legislator's party. This record consists of actions, beliefs, and outcomes commonly attributed to the party as a whole.
+
+    -   a party's record is the central tendency in citizens' beliefs about the actions, beliefs, and outcomes attributable to the national party. BELEIFS ABOUT THE PARTY!
+
+-   Party's record, thus, is a commonly accepted summary of the past actions, beliefs, and outcomes with which it is associated.
+
+    -   how are these beliefs shaped.
+
+    -   it is the central tendency in mass beliefs.
+
+        -   **different individuals may identify the party with different actions, beliefs, and outcomes. Some may have erroneous views.**
+
+        -   "Of course, the difference between the Democratic Party's record in Alabama and in Massachusetts is rather large, which is why our definition refers to national parties. There is no doubt that the Democratic Party's record in Alabama was influenced by George Wallace and other state party figures. The actions, beliefs, and outcomes attributed to the national party, however, can vary independently of state and local factors"
+
+            -   however, this has become more pronounced with nationalization. See Hopkins and Grumbach.
+
+        -   "The logical extreme of JAcobson's argument could take the form of a self-fulfilling prophecy, with candidates' and contributors' responses to electoral chimeras working to transform rumor into reality."
+
+            -   This is exactly what is going on in my paper. Strategists get swept up in the rumors and opinions of their party and they influence how they perceive their own party and seek to change it. These are motivated by the fortunes and level of influence from non-partisan actors.
+
+-   Party records often can be changed in ways that affect the vast majority of party members' reelection probabilities in the same way.
+
+    -   members recognize this and seek to shed parts of their party record if they are PERCEIVED as negative and central to the party record of people. The most sophisticated members are most influenced by this because they are exposed to so much more discussion of their party and it's perception from all types of partisans AND NON-PARTISANS!
+
+        -   This is not to deny that what is good for the legislative party may be bad for the presidential party. Individual Democratic legislators can run for reelection by picking and choosing the aspects of the overall party record that they wish to emphasize, avow, or disavow. Walter Mondale, in contrast, found it hard to repel the image of a party beholden to special interests that candidate Reagan conjured up during the 1984 presidential campaign. FOOTNOTE - PAGE 103
+
+-   Are electoral fates of members of the same party, tied together?
+
+    -   strong evidence - yes
+
+-   The perception of partisan electoral tides
+
+    -   Do members of the house recognize their electoral fate is tied?
+
+        -   use retirement comments to test this.
+
+            -   "The argument in the rest of this chapter depends crucially on the premise that party records have at least a"noticeable" impacy on the reelec tion probabilities of their members. We cannot quantify the degree of impact, but we can say that the stronger the reader believes the electoral impact of a party records to be, the more convincing will be the arguments to come. "
+
+    -   "It is not enough that what parties do - as encapsulated in their party records - affects the (re)election chances of their members. Some view national partisan swings as largely outside the control of members of Congress. For example, Mayhew (1974,28) writes that"national swings in the congressional vote are normally judgments on what the president is doing...rather than on what Congress is doing."
+
+    -   If one believes that legislation can have a substantial impact on presidential popularity (or macroeconomic health) and that members of Congress are aware of this, then one must conclude that presidential popularity (or macroeconomic health) is the outcome of a game in which both Congress and the president have a role (see Kernell 1991). Members of Congress, in other words, collectively can influence the variables that influence partisan electoral tides.
+
+### Reelection maximizers and electoral inefficiencies
+
+-   The element of commonality in the electoral chances of incumbents of the same party is strong enough to merit attention; parties that organize sufficiently to capture these potential colllective benefits will be more successful electorally, hence more likely to prosper, that parties that do not.
+
+-   Individuals have perceptions about what is best for collective. They seek to engage in that collective crafting to improve their electibility.
+
+-   The difficulty facing collective-benefits legislation of this kind can be exposed in the simple question: who is to bear the costs of drafting and negotiating logrolls in support of such legislation?
+
+### Party Leadership
+
+-   Political parties can help to prevent electoral inefficiencies of this kind.
+
+-   This is all really good stuff but I think it's short side is that it takes the perception of the party as a result of the legislative outcomes.
+
+-   Speakers are faced with a mixture of three motivations
+
+    -   maximization of their personal probability of reelection
+
+    -   maximization of the probability that their party secures a majority
+
+    -   maximization of the probability that they are releected as a leader of their party.
+
+-   We view each Speakership as embodying a certain set of policy deals within the majority party, but the alternatives to these deals are not as clear as they are in the spatial model.
+
+    -   For this reason, we view speakerships as equibiria to coordination games rather than as equilibria to spatial voting games.
+
+    -   Once a speakership has been launched, the Speaker serves to police and enforce a particular set of deals.
+
+-   **The bottom line of this discussion is that, by creating a leadership post that is both attractive and elective, a party can induce its leader to internalize the collective electoral fate of the party. In Olsonian terms, creation of a position whose occupant is personally motivated to pursue collective interests serves to make the party a privileged group.**
+
+### Some Criticisms of our theory and our rejoinder
+
+-   Lipinski (2004) shows that members do indeed send constituents messages about congressional performance based largely on their partisanship; that is, they do not "run against Congress," but they "run with hteir party."
+
+-   Members of Congress can avoid blame for their parties' actions, so the collective brand name is unaffected by legislative action. Put another way, this cirticism is that the negative ellectoral externlities that stem from sharign a label are negligible because members are highly skilled at disassociating themselves from inconvenient aspects of their parties' overall reputatiuons (Fenno 1978).
+
+    -   however this is costly.
+
+-   Third, a possible criticism of our model is that what legislative parties do is only weakly linked to what people think of them. One vairateny of this critique stresses that party identification at the indviidual level or macro partisanship at the aggregate level changes only slowly.
+
+    -   Another stresses that the primary force affecting the reputations of legislative parties is what the president does, not what the legislative parties do.
+
+### Conclusion
+
+-   parties as solutions to collective dilemmas that their members face.
+
+-   The collective dilemmas facing a party are "solved" chiefly through the stablishment of p\[arty leadership positions that are both attractive and elective. The trick is to induce those who occupy or seek to occupy leadership positions to internalize the collective interests of the party, thereby converting the party into a priviledged group for osome purposes.
+
+-   parties coordinate behavior to protect the party's electoral brand
+
+-   partly leadership is principal agent relationship
+
+    -   rank and file members deleage authority to leaders
+
+        -   leaders are empowered to contorl the agenda, structure debate, allocate committee positions.
+
+            -   if they fail, they are removed.
+
+-   Negative Agenda Control
+
+    -   The most important power is blocking legislation, not passing it.
+
+    -   Even bills that would pass with bipartisan support may never reach the floor if they hurt the majoirty party.
+
+## Part Three - Parties as Floor-Voting Coalitions
+
+-   Parties as floor voting coalitions ought to be conducted in terms of loyalty to party leaders and not, as has usually be done in the previous literature, in terms of general party cohesion.
+
+-   Conditional party government - a system in which the majority party leadership is active on an issue only when the party rank and file is substantially in agreement on what should be done.
+
+-   decrease in party homogeneity will lead not to decreases in the support that leaders receive when they take a clear stand but rather to leaders taking fewer stands.
+
+## Chapter 6 - On the Decline of Party Voting in Congress
+
+-   Previous research showed parties to have less importance in the 20th century in voting.
+
+-   Three purposes of this chapter:
+
+    -   discuss some recent work dealing with trends in party voting since 1980
+
+    -   to review the methods used and results found in the literature on the pre-1980 period
+
+    -   to provide a new perspective on historical trends in party voting since the New Deal.
+
+        -   this perspective centers on the activity of party leaders rather tahn party majorities.
+
+            -   they look at party leadership votes - defined as roll calls in which the Republican and Democratic leaderships oppose on another.
+
+                -   they will push back against the literature that says parties were not super important in 20th century.
+
+### Party Voting: Trends Since 1980
+
+-   80s see more polarization among legislators.
+
+-   Gingrich goes crazy with this.
+
+### Party Voting: Trends from 1910 to the 1970s
+
+-   Was the decline in party voting down to 1980 substantial and steady?
+
+    -   two variables:
+
+        -   relative frequency of party votes
+
+        -   average levels of party cohesion
+
+## Part Four - Parties as Procedural Coalitions (Committee Appointments)
+
+-   Do parties - the majority in particular -- controll the standing committees of the House.
+
+-   **"We are interested in whether committees function to some degree as agents of the majority party."**
+
+    -   this seems like obvious yes? Especially now...
+
+-   The literature has three different views on agency
+
+    -   committees have been considered as agents of no one but thesmelves
+
+    -   agents of the house
+
+        -   clearest expression in historical surveys of the early development of the committee system
+
+    -   agents of the majority party
+
+        -   appears mostly in descriptions of Congress at the turn of the twentieth century, during the era of strong speakers.
+
+-   Lit seems to focus on the first and second views.
+
+-   Authors focus on the third: committees are vehicles of party government.
+
+-   Authors argue against groseclose and king for why the majority stomachs inclusion of the minority into committees.
+
+    -   Groseclose and king argue the centrists in the majority would revolt and thus insist on it.
+
+    -   "We think the presence of minority-party members on committees is consistent with party theory, along the lines indicated in our discussion of the distribution of legislative resources.
+
+    -   **having minority-pparty members on committees does not much constrain what the majority can pass.**
+
+        -   also gives the appearance of fairness.
+
+    -   **The greater the agenda power conferred on a particular committee, the smaller the share of seats the minority should get.**
+
+## Chapter 7 - Party Loyalty and Committee Assignments
+
+-   In this chapter we investigate whether partisan criteria enter the assignment process in a statistically discernable fashion.
+
+-   Do party leaders affect committee assignment decisions?
+
+    -   again this seems pretty fucking obvious...
+
+-   We analyze the hypothesis that loyalty to the party leadership leads to more favorable intial commitee assignments and a greater satisfaction of transfer requests for members of the majority party.
+
+-   "The chairs will deliver on the leadership's agenda, because they know that if they fail, they won't be chairs anymore" Hastert
+
+-   Our results, based on a substantially larger data set than previously available, indicate that loyalty to the party leadership is a statistically and substantively important determinant of who gets what assignment.
+
+## Chapter 8 - Contingents and Parties
+
+-   Partisan selection model
+
+    -   assignments to committees are made in order to further some collective goal, such as the number of seats that the party will win at the next election.
+
+    -   Committees with broad and important jurisdictions, in contrast, will be kept more firmly in hand by making sure that the party's contingent is broadly representative of the party as a whole.
+
+    -   The gist of the model - committee contingents will be structured so that they internalize all of the party's significant electoral interests.
+
+    -   **Which committees should we expect to be representative and which to be unrepresentative?**
+
+        -   key characteristic: the character of the committee's jurisdiction
+
+            -   uniform externalities
+
+                -   contigents that are microcosms of their party caucuses
+
+            -   mixed externalities
+
+                -   cant say much
+
+            -   targeted externalities
+
+                -   party contingents that are unrepresentative of the party caucus on one or more dimensions.
+
+-   self-selection only half the story.
+
+-   Parties are valuable in policy areas with high uncertainty, long time horizons, significant delegation.
+
+-   protects party over time.
+
+-   Majority party uses institutions to manage uncertainty and risk.
+
+## Chapter 9
+
+-   We consider how the structural advantages contrived by the majority party helps its committee based and elective leaders control the legislative agenda.
+
+    -   focus os on the power to schedule legislation, beginning with the majority leadership's control of the floor agenda and moving backward to the chairperson's control of the committee agenda.
+
+-   Thus, among those bills that the leaders would like to see passed, they will schedule those that (1) have better chances at passage; (2) have higher payoffs, if passed; and (3) will take less time on the floor. Because the payoffs of the majority leadership reflect the collective interests of the party (as explained in Chapter 6), the leadership's scheduling preferences do too.
+
+## Chapter 10
+
+-   Of course committees are agents of the house
+
+    -   the argument is over who exercises the power that the House undoubtedly possesses
+
+    -   Authors argue that the most important function of the majority party is precisely to seize the House's power to structure the committee system.
+
+-   How does the majority party structure the committee system for control
+
+    -   instruments
+
+        -   In principle, the majority party might seek to control committees in the same way that management in other large organizations attempts to controlsub units: by creating and destroying them, by assigning them tasks and giving them the resources to accomplish those tasks, by regulating their personnel, and by providing for the review and revision of their decisions.
+
+    -   how members agree to the instruments usage
+
+        -   can the members agree to use these instruments? How often?
+
+-   The picture of the postwar House that this chapter and Chapter 9 have painted is one in which the majority party acts as a structuring coalition, stacking the deck in its own favor-- both on the floor and in committeeso as to create a kind of "legislative cartel" that dominates the legislative agenda.
+
+-   The majority party promotes its agenda-setting advantage in two basic ways: by giving its members greater power to veto legislative initiatives and by giving its members greater power to push legislative initiatives onto the floor.
+
+## Conclusion:
+
+-   We argue that legislators recognize the collective reputations that tie them together; although much of their time is spent in pursuit of their own parochial electoral interests, they nonetheless support partisan institutions that both regulate the amount and mitigate the external electoral effects of self-serving behavior.
+
+-   Within the House, Representatives have another reason to create and maintain partisan institutions-- so that policy deals can be more efficiently struck, policed, and incorporated in law
+
+-   In our view, congressional parties are a species of legislative cartel. These cartels usurp the rule-making power of the House in order to endow their members with differential power (e.g., the power of committee chairs) and to facilitate and stabilize legislative trades that benefit their members.1 Most of the cartel's efforts are focused on securing control of the legislative agenda for its members. This book has focused upon various aspects of these efforts to control the agenda.
+
+    -   Legislative cartels, just like other cartels, are potentially unstable because their members face incentives to free ride and renege on agreements. But parties have an advantage over many other cartels in that they can adopt rules that bind all groups smaller than a House majority (and impede even House majorities). It is through these rules, which dictate the structure of the legislative process, that legislative coalitions achieve a measure of stability and longevity.
+
+-   **ENDING QUESTION TO THINK ABOUT: WHY DO SOME CARTELS "WORK" AND OTHERS DO NOT? WHAT MAKES THEM SUCCESSFUL. ALL MAJORITY COALITIONS STRIVE TO BE A CARTEL. BUT SOME ARE BETTER THAN OTHERS...WHY IS THAT?**
+
+    -   More discussion of the president? Maybe Trump has influenced the ability for an efficient legislative cartel to operate because he is the acting on and is very incoherent.
+
+# Accountability Reconsidered: Voters, Interests, and Information in US Policymaking.
+
+## Can Citizens Assess Policies Based on Programs' Costs and Benefits? Patashnik; Tucker; Gerber
+
+### Main Question:
+
+Can citizens deliver sensible rewards and punishments to politicians for their performance?
+
+### Takeaway
+
+-   The results underscore that citizens can make reasonable assessments about government performance if they are given information that helps them to put the magnitude of policy effects into context.
+
+-   little evidence that reading five stories (amount of messaging) is associated with higher levels of approval
+
+    -   we find higher levels of legislator approval with fewer messages.
+
+        -   however this is probably due to the way they did their survey (they sent a shit ton of messages wiithin 15 minutes rather than 5 days like Grimmer and co)
+
+-   When taken in tandem with our previous findings, citizens appear to be particularly sensitive to negative information. This result is consistent with political science research showing that negatively valenced frames "stick in the mind" more than positively valanced frames (Boydstun,Ledgerwood,and Sparks,2019; Soroka,2014).
+
+### Summary
+
+-   Survey experiments to examine how citizens assess policies and their advocates based on program's cost and benefits
+
+-   It seems these will be conducted in a vacuum, without partisanship influencing. Of course, we know from other lit, that partisanship/identity influences the ability for this information to be taken in.
+
+-   **authors argue that their evidence shows citizens can make reasonable assessments when they are given a yardstick or another simple reference point that enables them to readily grasp the magnitude of policy effects.**
+
+    -   these are mediated by biases
+
+        -   citizens punish incumbents who underperform
+
+        -   some evidence that citizens negatively evaluate policies that concentrate benefits and harms among a small slice of the population.
+
+-   **This paper seems to be centered on pork and voters ability to assess pork and the ramifications of it.**
+
+### How can citizens hold politicians accountable?
+
+-   One way is that citizens can carry out a cost-benefit analysis
+
+    -   this of course is not a good model for a variety of reasons.
+
+    -   but if they can perceive costs and benefits, the it is plausible.
+
+-   A second way: Citizens evaluate how well politicans perform compared to other public officials.
+
+    -   "yardstick competition"
+
+### Background
+
+-   Legislators engage in credit claiming
+
+-   LEgislators can deceive because voters lack the time/resources to track what they do.
+
+-   Authors argue, we need benchmarks to help voters assess proper levels.
+
+-   Previous studies showed respondents are not moved a lot by the dollar amount
+
+    -   authors argue that is because it lacks a benchmark.
+
+        -   once this is accounted for, it drastically changes how voters view the legislator/pork approval.
+
+## Fire Alarms and Democratic Accountability; Cameron; Gordon
+
+### Bumper Sticker:
+
+Fire Alarms are back
+
+### Puzzle:
+
+-   how many voters have the knowledge to assess whether a given action by an incumbent actually improved their welfare, all things considered?
+
+### Question
+
+-   Do fire alarms help voters overcome informational cost and enhance electoral accountability?
+
+### Background
+
+-   A lack of transparency about actions and the obscurity between means and ends can further render nominal accountability moot in practice.
+
+    -   *mechanisms that lower informational costs for voters ought to enhance electoral accountability*
+
+-   if voters had access to mechanisms that lower their information costs-- at least for the "right" kind of information-- then democratic accountability might be enhanced,to the benefit of voters.
+
+-   What is a fire alarm?
+
+    -   connotes a readily perceived,reliable notice about bad agent performance that-- criticallycomes free or nearly free to the principal herself.
+
+        -   performance of an incumbent
+
+-   Paper builds on the congressional oversight firealarm mechanism and extends it to voters/electoral policy.
+
+-   "sentinels" - third parties that give the fire alarm. They can see:
+
+    -   the politicans action
+
+    -   the consequence of action
+
+    -   state of the world at the time the incumbent took action
+
+-   Fire alarms reduce informational costs, improving the principal-agent
+
+-   Arnold 1993 - He argued that political activists may have, and electoral challengers certainly do have, strong incentives to sound an alarm in the event of legislative malfeasance or error
+
+    -   threat might motivate compliance
+
+-   The consequence of electoral fire alarms for voters depends on four factors
+
+    -   whether information provided by sentinels is verifiable (at sufficiently low cost) to voters
+
+    -   the relative rates at which different policy choices generate verifiable information about their consequences
+
+    -   whether the sentinel is neutral (and passes along all available information); a challenger (who simply wants to publicize bad news for the incumbent) or an interested party (who wants to publicize favorable news when it concerns a favored policy, and bad news when it concerns a hated one)
+
+    -   whether incumbents can offset bad news via credit-claiming.
+
+-   If the sentinel reports truthfully
+
+    -   it moves the voter from one infromation environment to another.
+
+        -   The President raised tariffs" or "The President abused his power
+
+-   Two important questions regarding sentinels:
+
+    -   What incentives motivate different sentinels to make reports?
+
+    -   What factors make sentinel reports credible for the voter?
+
+-   Three types of sentinels:
+
+    -   neutral conduits
+
+        -   analytic benchmark
+
+        -   all info; no coverup
+
+        -   **disinterested**
+
+            -   this is an interesting point!
+
+                -   authors argue this is scientific experts or press
+
+                    -   i think there is room to expand a bit more though
+
+            -   if they exist - they are very powerful to the voter!
+
+                -   so the author is indicating these are perception driven.
+
+    -   interested parties (or activists)
+
+        -   definite stake in a particular policy that it may hold irrespective of the actual state of the world
+
+        -   and potentially even irrespective of the identity of the incumbent officeholder
+
+    -   challengers
+
+        -   they are in conflict with the incumbent
+
+        -   Suppose the incumbent has correctly matched the state, supporting the infrastructure plan if it was needed and opposing it if it was not. The challenger will not want to point this out to voters, as doing so will make the incumbent look skillful. The challenger will therefore remain silent. However, if the incumbent failed to correctly match the state, the challenger will delight in pointing out the incumbent's blunder and apparent incompetence.
+
+### The Model
+
+-   Players:
+
+    -   incumbent (She)
+
+    -   voter (they)
+
+    -   sentinel (he)
+
+-   There is a state of the world - take values of 0 or 1.
+
+-   Incumbent can be described either "low" or "high" (L or H)
+
+    -   incumbent initially knows type
+
+-   **voter has uncertainty about incumbent**
+
+-   the incumbent receives a signal about the state of the world
+
+    -   quality of this signal depends on incumbent type
+
+        -   high type get perfect signals - they know the state of the world
+
+        -   low type get imperfect signals.
+
+            -   signals are correct with probability q.
+
+-   Incumbent has two actions
+
+    -   do nothing
+
+    -   do something
+
+-   If the incumbent action match the state of the world
+
+    -   = good result for voters
+
+-   if they dont match
+
+    -   = bad result for voters
+
+### Model Implications
+
+-   With no sentinel there are four information environments:
+
+    -   No Transparency
+
+        -   voters do not observe the incumbent action or whether it was correct
+
+            -   incumbent cant alter voter beliefs
+
+    -   Non Transparent Consequences
+
+        -   actions are observable but consequences are not
+
+    -   Non-Transparent Actions
+
+        -   actions are not observable but outcomes are observable
+
+    -   Full Transparency
+
+        -   Actions and Consequences are observable
+
+-   No news is informative
+
+    -   either the sentinel had no information to transmit; or, the sentinel had information but suppressed it.
+
+-   A biased sentinel thus creates an inherent trade-off: while it may create a richer informational environment, which helps voters weed out poor-quality incumbents; its presence may distort an incumbent's incentives, which hurts them. As shown in the case study of policing, fire alarms provide no easy panacea for an ill-informed electorate.
+
+## Achieving Accountability: Aligning Institutions and Behavior; John Patty
+
+-   Focus: political accountability
+
+-   Institutional design and accountability
+
+-   To what extent are citizens able to control their government in a representative system?
+
+    -   a central question - Arnold 1990
+
+-   Accountability should be defined within the principal-agent framework
+
+    -   The agent is someone who is faced with making some decisions that will affect the principal. The principal is allowed to offer some reward to (or threaten some punishment of) the agent based on how the agent's choice affects the principal. When these rewards and punishments are such that the agent finds it in his or her interest to make the choice that maximizes the principal's welfare, then full accountability has been achieved.
+
+        -   When the rewards and punishments are such that the agent's choice is independent of the principal's welfare, then zero accountability has been achieved.
+
+-   Moral hazard
+
+    -   describes the challenge of making sure that an agent makes the choice that the principal wants even though the principal may not be able to observe the agent's choice
+
+-   Adverse selection
+
+    -   which emerges when the agent has private information that the principal cares about but that the agent may want to hide from the principal.
+
+        -   Author focuses on this part.
+
+### Adverse Selection in Policy-Making
+
+-   emerges because which policy is best is uncertain
+
+-   overcoming adverse selection is HARD
+
+    -   fire alarm oversight can amplify biased interest.
+
+    -   bureaucrats have expertise that congress does not have OR would need to have if they eliminated them.
+
+-   overcoming requires aligning the agent's incentives with the principals.
+
+    -   how?
+
+        -   selective rewards
+
+            -   material incentives, praise, social rewards.
+
+            -   "Goldilocks principle": the rewards need to be large enough to alter the agents' decisions, but without being so large that the agents consider nothing else when making their choices.
+
+        -   diagnostic information
+
+            -   institutional structure determines how such information is generated, recorded, and reported
+
+-   institutional design can affect the agent's decision-making process by altering how the agent perceives and evaluates his or her various choices.
+
+### Bracketing and Decision Making
+
+-   Bracketing: refers to how individuals contrast and compare alternatives when making choices
+
+-   I apply the bracketing framework to the question of how to design incentives to achieve accountability in policy-making. The relationship is bidirectional: the effects of bracketing on individual decision-making has implications for how to design institutions, and institutional design affects how individuals bracket their decisions
+
+-   Broad vs. Narrow Bracketing
+
+# The New Economics of Organization. Terry Moe (1984)
+
+## Abstract
+
+Over the last ten years or so, an important new approach to the study of organizations has emerged within economics. It is perhaps best characterized by three elements: a contractual perspective on organizational relationships, a theoretical focus on hierarchical control, and formal analysis via principal-agent models. This paper provides political scientists with an overview of the "new economics of organization" and explores its implications for the study of public bureaucracy.
+
+## Theory
+
+-   There hasn't been much focus on the bureaucracy
+
+-   Puprose: provide an overview for political scientist of the new economics of organization
+
+### The Neoclassical firm
+
+-   it centers around the entrepreneur, a hypothetical individual who, by assumption, makes all decisions for the firm and is endowed with a range of idealized properties defining his knowledge, goals, computational skills, and transaction costs.
+
+-   model firm is a black box
+
+### Coase
+
+-   asks a fundamental question: Why do firms exist?
+
+-   Why do economic agents in real economic contexts tend to arrange themselves hierarchically and coordinate their decisions via central authority rather than relying upon voluntary exchange and the automatic coordination provided by the market?
+
+    -   his answer: hierarchy is more efficient
+
+    -   there are lots of costs in transactions
+
+        -   many such costs can often be eliminated or substantially reduced by shifting to an alternative, nonmarket arrangement that internalizes some of the agent's transactions with factor-owners and alters his contractual arrangements with them:
+
+### Simon
+
+-   individuals are not rational and we need to think about our models more closely with this in mind. This is Simon's contribution
+
+-   Individuals throughout the organization, precisely because they are boundedly rational, will behave in the routine, patterned ways characteristic of structured behavior; and (boundedly rational) managers, in seeking to shape and coordinate individual programs into an organized, efficient structure, impose behavioral routines via hierarchy, division of labor, communications flows, and training programs. Thus emerge the basic structural aspects of organization, all of them anchored in the inherent limitations on human decisionmakers.
+
+-   On authority:
+
+    -   authority relation is not characterized by fiat or command
+
+    -   The subordinate has a "zone of acceptance" within which he willingly allows the employer to direct his behavior. Thus, the nature of authority relation and whether or how well it works depend upon both parties to the agreement.
+
+### Alchian
+
+-   Economic natural selection
+
+    -   like Darwin
+
+-   Firms survive because they make positive profits.
+
+    -   its not maximizing
+
+        -   its even simpler - they just make profit and keep doing it and thus survive.
+
+-   But firms evolve and mutate. This upgrades their efficiency.
+
+-   system more than individual explanation
+
+### What is the new economics of organization?
+
+-   the contractual nature of organizations,
+
+-   markets vs. hierarchies, transactions costs,
+
+-   the rationality of structure,
+
+-   individualistic explanation,
+
+-   and economic methods of analysis.
+
+-   There is a free rider problem still - "shirking" - this needs to be presented
+
+    -   firm employs monitoring but only to a optimal level.
+
+        -   problem still - who will monitor the monitor?
+
+            -   The hierarchical relationship that results is not one of fiat or dominance, but a contractual quid pro quo into which they all voluntarily enter in pursuit of greater gain.
+
+            -   monitor is the entreprenuer
+
+-   Alchian and Demsetz
+
+    -   The logic implies that hierarchy, monitoring, incentives to shirk, and member productivity are integrally bound up with one another.
+
+-   On corporation structure: it allows funds from large numbers of unrelated, decisionally uninvolved investors to be productively employed by specialized, skilled decision-makers, while the shirking problems that otherwise threaten productive efficiency are substantially mitigated
+
+### Delegation
+
+-   tasks get delegated to lower level units
+
+    -   these units will use their specialized knowledge and productive capacities toward organizational ends.
+
+        -   **HOWEVER, information assyemtries arise and create incentive problems**
+
+            -   the focus is how to minimize this
+
+-   Moral hazard and adverse selection
+
+-   What is the principal-agent relationship?
+
+    -   The principal-agent model is an analytic expression of the agency relationship, in which one party, the principal, considers entering into a contractual agreement with another, the agent, in the expectation that the agent will subsequently choose actions that produce outcomes desired by the principal.
+
+        -   FUNDAMENTAL PROBLEM: there is no guarantee the agent will do what the principal wants efficiently or in their best interest.
+
+### Principal-Agent in Public Bureaucracy
+
+-   Three questions:
+
+    -   Why do public bureaus exist, as opposed to alternative arrangements for the provision of public services?
+
+    -   How can bureaucratic superiors control bureaucratic subordinates?
+
+    -   How can politicians, as principals, control their bureaucratic agents?
+
+#### Why does public bureaus exist?
+
+-   Start with an "economic state of nature" - free market with economic agents
+
+-   politicians choose between public bureaucracy and contracting out, they are generally not choosing on efficiency grounds-nor are they, in the conventional sense, seeking an optimally balanced set of hierarchical controls and monitoring mechanisms in designing the details of the contractual arrangement.
+
+-   bureaucracies do NOT exist solely because they are "efficient"
+
+-   They exists and takes peculiar structural forms because it conduces to the well-being of critically located politicians.
+
+-   there is no hidden hand like the private sector
+
+-   public sector not under market pressures
+
+#### How Can Bureaucratic Superiors Control Their Subordinates?
+
+-   residual
+
+-   The entrepreneur is given marketable title to the residual in order to induce him to monitor team members efficiently; he has maximal interest in properly measuring member productivity-and in increasing it through hiring, firing, and reorganization-because the outcomes of member efforts accrue to him alone.
+
+    -   this residual in public bureaucracy is not the same.
+
+        -   the "culture" might be one but it seems weak - my thoughts. Think morale
+
+#### How can politicians control bureaucrats?
+
+-   citizens are principals
+
+-   politicians are agents
+
+-   politicians are principals
+
+-   bureaucrats are agents
+
+-   politicians are not interested in everything the bureaucracy does
+
+-   stockholders, like politicians, are burdened by similar information asymmetries in their efforts to control corporate managers, but they are also blessed by certain external mechanisms that substitute remarkably well for direct knowledge-stock market evaluation of the company's profitability, labor market evaluation of a manager's economic value, the threat of takeovers.
+
+-   Another important tool is the "decibel meter" (Weingast, 1983; McCubbins and Schwartz, 1984), which refers to the feedback politicians receive from constituency groups affected by bureaucratic performance. By complaining about service delivery or demanding services of different kinds, groups provide politicians with critical inputs that are directly relevant both to monitoring the bureacracy and furthering their reelection goals.
+
+    -   this seems like fire alarms.
+
+-   **bureaus have multiple principals**
+
+# Follow the Leader? How Voters Respond to Politicians' Policies and Performances. Gabriel S. Lenz
+
+## Chapter 1: Rum Punch or Issue Voting?
+
+-   Do voters still judge politicians on such irrelevant or superficial characteristics or do they vote on substantive matters?
+
+    -   previous views (dahl and Pennock) argue voters express preferences on policy
+
+        -   This is called ISSUE voting
+
+            -   this of course is suspect now.
+
+        -   This view assumes citizens lead and politicians follow.
+
+    -   Other view: elections are periodic referendum on the incumbents
+
+        -   Riker; schumpeter
+
+            -   think previous success or "voting the bums out"
+
+    -   The other OTHER view: voters don't have good judgement of policy or incumbent performance and follow preferred views of favored politicians/party.
+
+        -   bartels + achens
+
+        -   politicians lead and citizens follow
+
+            -   the politicians leading is now somewhat suspect
+
+-   Lenz: Which of these views best reflect modern reality? Do citizens lead politicians on policy? Do they judge them on performance-related characteristics? or do they merely follow politicians?
+
+-   Early hinted results:
+
+    -   Voters pass relatively easy tests of judging politicians on performance.
+
+        -   when they think politiicans has performed well - they reward
+
+            -   this assume voters can connect action to policy.
+
+        -   When people perceive a politician as having desirable character traits relevant to performance, such as honesty, they become or remain likely to vote for politician
+
+    -   Voters FAIL policy tests
+
+        -   **voters first decide they like a politician for other reasons, then adopt his or her policy views.**
+
+        -   Voters seem to follow rather blindly, adopting a particular politician's specific policies even when they know little about the politicians ideology.
+
+-   A problem: Did people have opinion then select candidate or did they have views of the candidate than form their opinion over the policy?
+
+    -   reverse causality story - see Lazarsfeld
+
+-   Campbell - American voter
+
+    -   views party identification as the core of voters' political behavior
+
+        -   people identify with political parties early in life and rarely, if ever, change
+
+            -   this comes from parents, policy views and party performance.
+
+-   Fiorina - 1981
+
+    -   different school of thought - voters mainly vote on performance
+
+-   Both of these schools have evidence...so which is it?
+
+-   Converse: "Surely the most familiar fact to arise from sample surveys in all countries is that popular levels of information about public affairs are, from the point of the informed observer, astonishingly low"
+
+-   voters do not appear to be leading politicians on policy.
+
+    -   i wonder if Clarence Stone has a connection here?
+
+-   Gelman and King - Lenz argues they may have the story backward p.16
+
+    -   campaigns increase knowledge but it makes it easier for voters to follow not lead.
+
+## Chapter 2: Rewarding Performance? Priming the Economy

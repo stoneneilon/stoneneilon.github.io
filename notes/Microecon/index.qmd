@@ -411,3 +411,299 @@ TK MAKE SURE YOU INCLUDE TABLE OUTPUT!
 -   we are going to impose the equal counterfactual assumption
 
 -   KEY ASSUMPTION: Change over time for comparison group estimates counterfactual, i.e. what would have happened to treated group w/o treatment.
+
+# Beyond 2x2 DiD - Single Treatment Time
+
+-   TWFE - group and time fixed effect
+
+-   the goal is to convince the reader that you have equal counterfactual trends
+
+## Placebo Analysis
+
+-   key idea: run diff-in-diff using an alternative outcome that should be unaffected. Hope for null results
+
+-   this is basically a robustness check.
+
+-   you do this after a diff-in-diff.
+
+-   there is still linger concerns over the counterfactual so let me do this.
+
+-   Rhetorically, it comes after the main results
+
+## Triple Difference Setup
+
+-   key idea: run diff-in-diff on two different subgroups of observations
+
+## WHEN WE USE DIFF IN DIFF AS AN EMPIRICAL STRATEGY
+
+-   we are making an assumption about a counterfactual outcome
+
+-   we cannot prove the counterfactual assumption
+
+-   we can make it more believable
+
+-   DID depends on an assumption about a counterfactual; there is nothing you can do to formally test whether it's true
+
+-   Don't say you have tested your fundamental assumption and passed.
+
+## Synthetic Diff-in-Diff
+
+-   Setup: Natural Experiment with a single treated group.
+
+-   take obs from donor pool -\> created weighted averge of donor pool then use as counterfactual.
+
+-   I have real california then i need to make fake california - which is a weighted average from other states.
+
+-   You use this instead of a diff-in-diff if there is no obvious counteractual case.
+
+-   sythentic diff-in-diff is going to have really good equal trends but its going to be still a messy - you are still going to have defend that your synthetic control and its donor pool is going to be needed to defended because if you are just looking at lets say a treatment in california, your donor pool and sysntehtic control may get based off people from vermont and wyoming and etc. Which youll need to defend.
+
+-   Algorithm picks it
+
+-   you choose what to match on and what the donor pool is so there is still some research control.
+
+-   Abadie, A., Diamond, A. and Hainmueller, J., 2010. Synthetic Control MEthods fo Comparative Case Studies: Estimating the effect of Californias tobacco control program. JASA
+
+-   This method is good to get a point estimate of the treatment.
+
+## Staggered Adoption Methods
+
+-   Very active recently
+
+-   different groups and different time periods AND treatments are turning off and on
+
+# Fixed Effects and Panel Data
+
+-   Fixed effects as a research methodology
+
+-   Fixed effects isolates variation that we think identifies a causal relation
+
+-   Grouped Data - usually same cross-sectional units in multiple time periods
+
+-   "it" subscripts - an individual in a year.
+
+-   unions operate in an area that is not perfectly competitive.
+
+    -   if the firm is at the zero profit condition -\> then we dont expect unions -\> because a union would ask for more money and the union would say no -\> if they did, the firm would shutdown cause they wouldn't be able to afford it.
+
+-   We believe that $A_{it}$ are the only thing standing between us and causality.
+
+-   Required assumptions:
+
+    -   Normally, we can't do anything when we can only apply the CIA to a conditional expectation that includes unobservables in the conditioning set.
+
+        -   we'll assume the problem away.
+
+            -   Expectation is linear and additive in all terms
+
+            -   $A_{it} = A_i$ (Time-constant unobservables)
+
+            -   constant treatment effects.
+
+-   Controlling for who the person is!
+
+    -   it is a categorical variable for basically "who is this".
+
+    -   partialling out the effect of WHO these people are.
+
+    -   its going to change our comparison
+
+        -   we are going compare people WITHIN.
+
+-   we are just treating the person as a categorical variable.
+
+-   shifting comparison from across to WITHIN!
+
+-   for the union example
+
+    -   looking at variation over time in union status (hopefully you have variation for that)
+
+        -   so then you can say when that person is in a union job, they earn more versus when they arent.
+
+        -   you are losing a lot of data because you need a lot of within variation.
+
+        -   fixed effects increases standard errors.
+
+            -   need to talk to brian about SE and FE and how they relate - bring in clustered SE discussion.
+
+-   If FE is run, should we ever believe their estimated effect?
+
+    -   FE Doesn't give us a causal estimate naturally. It is very hard.
+
+-   time-invariant is important. FE can only account for TIME INVARIANT!
+
+    -   need to make sure that OVB is time invariant.
+
+-   FE IS SWITCHING FROM ACROSS TO WITHIN.
+
+-   Why do i even have variation left?
+
+    -   thought process - what out there in the world is leading to me having within variation.
+
+-   what kind of bias do we get with classical measurement error
+
+    -   measurement error in y goes into the error
+
+    -   measurement error in x is attenuation bias - bias towards zero!
+
+        -   x with noise!
+
+            -   effects our beta
+
+-   FE helps with OVB BUT we might have measurement error in within variation that is not in cross-sectional.
+
+    -   switch to variation that has a lot more noise with the within estimator leading to an attenuation.
+
+# Instrumental Variables
+
+-   Do problem set 7 and 8 for the midterm
+
+-   IV helps solve OVB
+
+-   If you can find an IV you can get the causal effect.
+
+-   An IV must
+
+    -   be related to x
+
+    -   AND exclusion restriction
+
+        -   only reason you have a relationship between z and y is because of z affecting x.
+
+        -   Z CANNOT affect y DIRECTLY
+
+        ```         
+        -   it does not say z and y are unrelated.
+
+            -   THEY ARE RELATED BUT ONLY THROUGH OUR X VARIABLE!
+
+            -   z needs to be unrelated to the error term. Which are these observable
+        ```
+
+-   2 stage least squares IS instrumental variable.
+
+-   The reason we do an IV is because we think this variable on Y is more interesting than the THIS STORM on Y.
+
+    -   Structural equation is more interesting than the reduced form equation (See slides) THEN RUN AN IV!
+
+-   reduced form divided by the first stage coefficient
+
+-   IV convincing when something actually doing randomizaiton.
+
+-   INSTURMENT HAS TO GO THROUGH ENTIRELY THROUGH S
+
+-   When reading/writing an IV paper
+
+    -   start by defending the CIA for the reduced form - NECESSARY!
+
+        -   reduced form regression is the causal effect of the instrument on the outcome!
+
+            -   instrument is as good as randomly assigned
+
+    -   Figure 1 and Figure 2 - first stage and reduced form, same z on the x-axis
+
+    -   show the change from OLS - remember whole point is that OLS biased
+
+    -   Defend the exclusion restriction - False experiments with unaffected groups/time periods
+
+    -   specific suggestions for Bartik/examiner designs in papers on reading list.
+
+-   Late over ate is an external validity question
+
+    -   can i take this causal estimate and generalize it beyond the context of this study.
+
+-   
+
+# First differences
+
+-   measurement error in x leads to attenuation bias.
+
+-   fixed effects is a linearity functional form. you assume it.
+
+-   Subtract row from above it for each individual.
+
+-   Which one to choose? Think about the DGP
+
+-   FE compares all the time periods when someone is treated vs someone not treated.
+
+    -   FD when a man goes to married from unmarried, is his income bigger?
+
+        -   Do workers get bigger raises (From marriages) in the year the treatment occurs.
+
+-   FD is kinda like regression discontinuity - effect of treatment is immediate
+
+-   FD is good if effect of treatment is immediate.
+
+-   regression is a tool for making comparisons
+
+    -   it is a tool to compare observations to other observations
+
+        -   what comparison are we going to make
+
+            -   what regression is 'right' dependends on what comparison is 'right'
+
+# Standard Errors
+
+Standard deviation of our estimated parameter
+
+-   standard error is an estimation of the standard deviation of our $\beta$
+
+-   When we talk about a SE - it is our estimate of the standard deviation of the distribution of that $\hat{\beta}$
+
+-   denominator in our t-stat
+
+-   determines how wide our confidence interval is
+
+-   THESE ARE ESTIMATED!
+
+-   We are worried over rejecting a null.
+
+-   how variable our beta hat is.
+
+-   ROBUST SE IS JSUT TAKING THE MAIN DIAGONAL OF THE OMEGA MATRIX AND PUTTING THAT OMEGA INTO OUR SE. OFF DIAGONAL REMAINS 0
+
+    -   INSTEAD OF AVERAGE, OBSERVATION SPECIFIC EPSILON HAT SQUARES ON DIAGONAL
+
+    -   OMEGA MATRIX IS STILL IN OLS SE BUT WE ASSUME ITS THE IDENTITY MATRIX
+
+-   Cluster SE is blocking the omega matrix along the main diagonal.
+
+-   The cdf is the integral of our pdf
+
+-   robust standard error literally calculates the main diagonal but then imposes zero on the off diagonals.
+
+-   Four potential fixes
+
+    -   parametric fixes - model the correlation
+
+    -   clustering - use white-like var-cov matrix, but allow for non-zero off-diagonal elements
+
+        -   literally block along the main diagonal and some off diagonal. Errors are correlated with each other in each block.
+
+    -   run group-level regressions
+
+    -   block bootstrap
+
+        -   
+
+## The Moulton Problem
+
+Fixed effects vs. Random Effects
+
+-   Random effects is the solution to
+
+    -   unobserved things about the individual effect value of y and individual specific intercept
+
+        -   uncorrelated with the treatment
+
+        -   random effects does not influence
+
+            -   not including individual demeaning
+
+            -   not worried about omitted variable bias - we are just worried we dont have independent observations.
+
+-   Random effects is really just about autocorrelation. Fixed effects is to solve OVB.
+
+-   Random effects is an alternative to clustering
+
+-   
