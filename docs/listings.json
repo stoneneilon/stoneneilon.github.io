@@ -32,6 +32,7 @@
     "listing": "/notes.html",
     "items": [
       "/notes/Text_Data/index.html",
+      "/notes/Scope/index.html",
       "/notes/Rule_of_Law/index.html",
       "/notes/ICPSR_Machine_Learning/index.html",
       "/notes/MLE/index.html",

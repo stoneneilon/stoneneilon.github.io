@@ -7,13 +7,17 @@ author:
     orcid: 0009-0006-6026-4384
     affiliation: PhD student of political science @ The University of Colorado Boulder
     affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
-date: 05-15-2024
-categories: [Spring, Fall, 2024, Methods, 2023] # self-defined categories
+date: 01-01-2026
+categories: [Methods, 2026] # self-defined categories
 citation: 
   url: https://stoneneilon.github.io/notes/Data/
-image: oppy.jpg
-draft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+image: always_sunny.jpeg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
+
+::: callout-caution
+This document is incomplete and may contain errors. I will continually make updates to this document when I have available time (almost never).
+:::
 
 # Preface
 
