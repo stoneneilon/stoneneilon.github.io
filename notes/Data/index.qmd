@@ -1279,7 +1279,7 @@ more flexible -
 
 ### Probit Interpretation
 
-### Logit over Probit? 
+### Logit over Probit?
 
 Which one should we use? To be honest, I haven't seemed to find a good answer to this. They are both nearly identical in results. However, the logit is considered the *canonical link function*, and thus has considerably more resources on it. Additionally, the logit uses the log of odds-ratios for interpretation.
 
@@ -1485,7 +1485,7 @@ Lean towards being opinionated
 
 don't hedge.
 
-# Section X: Confidence Intervals 
+# Section X: Confidence Intervals
 
 What are they?
 

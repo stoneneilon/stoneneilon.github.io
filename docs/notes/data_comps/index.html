@@ -346,11 +346,8 @@ window.Quarto = {
 <div class="quarto-title">
 <h1 class="title">Data Comps Prep</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Spring</div>
-    <div class="quarto-category">Fall</div>
-    <div class="quarto-category">2024</div>
     <div class="quarto-category">Methods</div>
-    <div class="quarto-category">2023</div>
+    <div class="quarto-category">2026</div>
   </div>
   </div>
 
@@ -420,9 +417,9 @@ Caution
 <p>Starting a PhD is daunting. It is especially so when people start throwing around words that you do not know or never encountered in your undergraduate education. Much like math notation, the verbiage in the PhD world can feel foreign. To shore this up, I provide a list of some common words that I heard a lot when starting but didn’t fully grasp until much later.</p>
 <table class="table">
 <colgroup>
-<col style="width: 27%">
-<col style="width: 39%">
-<col style="width: 32%">
+<col style="width: 5%">
+<col style="width: 57%">
+<col style="width: 37%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -654,6 +651,7 @@ X_1 - \hat{X_1}=\bar{X}
 <section id="interpretation" class="level4">
 <h4 class="anchored" data-anchor-id="interpretation">Interpretation:</h4>
 <p>A few points about interpreting an interaction. Sometimes you’ll hear <span class="math inline">\(\beta_1\)</span> interpreted as the “main effect” of <span class="math inline">\(x_i\)</span>, and <span class="math inline">\(\beta_3\)</span> being the “interactive effect”. This is <em>incorrect.</em> <span class="math inline">\(\beta_1\)</span> is simply the marginal effect of <span class="math inline">\(x_i\)</span> on <span class="math inline">\(y_i\)</span>, when <span class="math inline">\(z_i=0\)</span>! Note it is the exact same logic for interpreting <span class="math inline">\(\beta_2\)</span>. If we just keep the <span class="math inline">\(z\)</span> as dichotomous, these are actually very simple to interpret.</p>
+<p>TK</p>
 </section>
 <section id="interactions-increase-multicollinearity" class="level4">
 <h4 class="anchored" data-anchor-id="interactions-increase-multicollinearity">Interactions increase multicollinearity</h4>
@@ -714,10 +712,10 @@ p-value definition
 <h2 class="anchored" data-anchor-id="log-transformation-interpretations">Log Transformation Interpretations:</h2>
 <table class="table">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 38%">
-<col style="width: 20%">
+<col style="width: 13%">
+<col style="width: 21%">
+<col style="width: 23%">
+<col style="width: 40%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -855,10 +853,10 @@ p-value definition
 <p>How do we select which statistical model to use for inference? This choice is dependent on our data structure, specifically, our dependent variable. Don’t over think this! We use GLMs when our residuals are <em>not normally distributed</em> (except for linear regression which the GLM is OLS and is normally distributed)<em>.</em></p>
 <table class="table">
 <colgroup>
-<col style="width: 24%">
-<col style="width: 24%">
-<col style="width: 24%">
 <col style="width: 26%">
+<col style="width: 16%">
+<col style="width: 24%">
+<col style="width: 32%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -914,7 +912,7 @@ p-value definition
 <p>The table above is very important, and in my opinion, extremely useful. In a nutshell, all we are doing is figuring out what data we have, and picking which model is associated with that data structure to use for inference and statistical analysis. <strong>THAT IS IT!</strong> On the surface, this is incredibly simple. There is a <em>lot</em> of math under these, BUT don’t worry too much about it. You will be shown what R (or Stata) is doing under the hood in lecture. Don’t let this intimidate you, your professor is just showing how these models operate and really, how they came into existence. Knowing what is going on is still important, but your job as the researcher will really just boil down to knowing your data structure and picking the model associated with that structure.</p>
 <section id="a-not-so-quick-aside" class="level2">
 <h2 class="anchored" data-anchor-id="a-not-so-quick-aside">A Not-So Quick Aside</h2>
-<p>The random components are probability density functions (PDFs).</p>
+<p>The random components are probability density functions (PDFs). TK</p>
 </section>
 <section id="linear-regression" class="level2">
 <h2 class="anchored" data-anchor-id="linear-regression">Linear Regression</h2>
@@ -1499,6 +1497,7 @@ Note:              *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
 <section id="multinomial-logit" class="level3">
 <h3 class="anchored" data-anchor-id="multinomial-logit">Multinomial Logit</h3>
 <p>This isn’t much different, only now we have multiple categories instead of just 0 or 1. So our goal here is to find out what variables predict which category is most likely to be selected. Like with categorical variables on our independent variables, we need to have some sort of baseline. We will do the same here just on our dependent variables. Thus,</p>
+<p><em>Logit gets criticized because it imposes the IIA – independence of irrelevant alternatives. THIS IS BASICALLY ARROWS THEOREM OR SOMETHING LIKE IT. IF A &gt; B &gt; C, the addition of D should not influence the choices!</em></p>
 <section id="interpretation-1" class="level4">
 <h4 class="anchored" data-anchor-id="interpretation-1">Interpretation</h4>
 <p>Regression output from R will be in the log-odds.</p>
@@ -1654,11 +1653,21 @@ ln(\lambda) = \beta_0 +\beta_1x_1+...\beta_ix_i
 <h4 class="anchored" data-anchor-id="overdispersion">Overdispersion</h4>
 <p>Poisson regression assumes that the variance of <span class="math inline">\(y\)</span> equals the mean of <span class="math inline">\(y\)</span>, but in some/many datasets the variance is greater than the mean, which we call “overdispersion”. There is also underdispersion (but is less common) and occurs when the variance is less than the mean. In notation, overdispersion is shown as: <span class="math inline">\(\lambda &lt; Var(Y)\)</span>. If a random variable is overdispersed, it was <em>not</em> generated via a Poisson process. Overdispersion is <em>extremely common and hugely problematic.</em> <strong>Why do we care about overdispersion?</strong> It influences our standard error and thus our standard error is underestimated; the model is assuming lower variance than is actually true. This will in turn, influence our p-value and result in a type 1 error. <strong>What causes overdispersion?</strong> There are predictable variables that we have not included (omitted variable bias), need to look at theory. Or we might have clustering or heterogeneity in the sampled population. Finally, we may more zero values than expected (zero-inflated).</p>
 <p><strong>What do we do with overdispersion?</strong> We can do a <em>quasi-poisson</em>. The quasi-poisson basically takes the raw Poisson model, estimates the dispersion, and adjusts the standard errors for it. OR, we can also do a <em>negative binomial</em>, which is what most people seem to do. The negative binomial models a slightly different distribution with an extra parameter that characterizes the variance, and derives a different likelihood based on that. More on negative binomial below.</p>
-<p><strong>How do we know if we have overdispersion?</strong> <em>We only care about conditional overdispersion, i.e., how much overdispersion is left over once we’ve modeled the conditional mean.</em> A casual (first-cut) test is simply to take the mean and variance of our DV and see how far apart they are. This is not terrible but is also not precise. It might be better to think over overdispersion as a form of specification error.</p>
+<p><strong>How do we know if we have overdispersion?</strong> <em>We only care about conditional overdispersion, i.e., how much overdispersion is left over once we’ve modeled the conditional mean.</em> A casual (first-cut) test is simply to take the mean and variance of our DV and see how far apart they are. This is not terrible but is also not precise. It might be better to think over overdispersion as a form of specification error. Generally, conventional wisdom will just tell you to do both models and compare.</p>
 </section>
 <section id="poisson-issues" class="level4">
 <h4 class="anchored" data-anchor-id="poisson-issues">Poisson Issues</h4>
-<p>As discussed earlier, Poisson makes a critical assumption that the variance and mean are equal. This is commonly not true.</p>
+<p>As discussed earlier, Poisson makes some assumptions and has some limitations. We need to have a good uinderstanding of the what issues may arise as this will help us navigate a more appropriuate model specification/fix. Some common departures from the standard Poisson regression are: (Cameron &amp; Trivedi, 2014)</p>
+<ol type="1">
+<li><strong>Failure of the mean-equals-variance restriction</strong></li>
+<li><strong>Truncation and censoring</strong></li>
+<li><strong>The “excess zeros” or “zero inflation” problem</strong></li>
+<li><strong>Multimodality</strong></li>
+<li><strong>Correlated observations</strong></li>
+<li><strong>Waiting times between event occurrences not exponential</strong></li>
+<li><strong>Trends</strong></li>
+<li><strong>Simultaneity and sample selection</strong></li>
+</ol>
 </section>
 </section>
 <section id="negative-binomial" class="level3">
@@ -1727,14 +1736,14 @@ ln(\lambda) = \beta_0 +\beta_1x_1+...\beta_ix_i
 <div class="cell-output cell-output-stdout">
 <pre><code>netflix.has
    0    1 
-3453 6547 </code></pre>
+3513 6487 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>netflix.poi <span class="ot">&lt;-</span> <span class="fu">rpois</span>(sample<span class="sc">*</span><span class="fu">mean</span>(netflix.has), <span class="at">lambda =</span> <span class="dv">2</span>)</span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(netflix.poi)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>netflix.poi
-   0    1    2    3    4    5    6    7    8   10 
- 908 1803 1735 1180  602  222   69   22    4    1 </code></pre>
+   0    1    2    3    4    5    6    7    8    9   11 
+ 890 1729 1755 1185  581  242   75   22    6    1    1 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>netflix.has[netflix.has <span class="sc">==</span> <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span> <span class="co"># b/c 1 means you're in Poisson </span></span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>netflix.has <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(netflix.has)</span>
@@ -1742,8 +1751,8 @@ ln(\lambda) = \beta_0 +\beta_1x_1+...\beta_ix_i
 <span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(combined)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>combined
-   0    1    2    3    4    5    6    7    8   10 
-4361 1803 1735 1180  602  222   69   22    4    1 </code></pre>
+   0    1    2    3    4    5    6    7    8    9   11 
+4403 1729 1755 1185  581  242   75   22    6    1    1 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1791,7 +1800,7 @@ ln(\lambda) = \beta_0 +\beta_1x_1+...\beta_ix_i
 </div>
 </div>
 </div>
-<p>The DV policy has a large number of zeros.…if we had some suspicion that there was a different DGP producing some of these 0’s, we may want to run a zero-inflated model.</p>
+<p>The DV policy has a large number of zeros….if we had some suspicion that there was a different DGP producing some of these 0’s, we may want to run a zero-inflated model.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>zip <span class="ot">&lt;-</span> <span class="fu">zeroinfl</span>(policy <span class="sc">~</span> margin <span class="sc">+</span> gdem_p_12_ave <span class="sc">+</span> democrat <span class="sc">+</span> ind <span class="sc">+</span> com_pcom, <span class="at">data =</span> us.bills, <span class="at">dist =</span> <span class="fu">c</span>(<span class="st">"poisson"</span>), <span class="at">link =</span> <span class="fu">c</span>(<span class="st">"logit"</span>))</span>
 <span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(zip)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2489,7 +2498,7 @@ X'\Omega X = \Sigma \hat{\epsilon}^2_iX_iX'_i
 <li><p>Multiplying by <span class="math inline">\(\hat{\epsilon}^2_i\)</span> means observations with bigger residuals contribute more to the variance of <span class="math inline">\(\hat{\beta}\)</span>.</p></li>
 <li><p>Conversely, observations with tiny residuals contribute less.</p></li>
 </ul>
-<p>So it's a <strong>weighted sum</strong>, where the "weights" are the squared residuals — intuitively, observations that are more "noisy" increase uncertainty in the coefficient estimates. Classical OLS assumes all residuals have the same variance → every observation contributes equally. Heteroskedasticity breaks that assumption, thus some observations are noisier than others. If an observation has a huge residual, it can affect the slope a lot; we should inflate the variance estimate to reflect that, and vice versa if the observation has a tiny residual.</p>
+<p>So it’s a <strong>weighted sum</strong>, where the “weights” are the squared residuals — intuitively, observations that are more “noisy” increase uncertainty in the coefficient estimates. Classical OLS assumes all residuals have the same variance → every observation contributes equally. Heteroskedasticity breaks that assumption, thus some observations are noisier than others. If an observation has a huge residual, it can affect the slope a lot; we should inflate the variance estimate to reflect that, and vice versa if the observation has a tiny residual.</p>
 <p><em>Note: Robust standard errors maintain 0 values on the off-diagonal, thus no autocorrelation is still an assumption we are making.</em></p>
 </section>
 <section id="the-code-for-robust-standard-errors" class="level3">

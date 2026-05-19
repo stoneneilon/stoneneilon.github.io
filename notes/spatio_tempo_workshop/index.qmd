@@ -1,0 +1,220 @@
+---
+title: "Spatio-Temporal Workshop"
+description: "Three day workshop with Andy and Chinnu"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 07-10-2025
+categories: [Other] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/American_Behavior/
+image: brain.jpg
+draft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Introduction to Temporal Dependence
+
+-   Cross Section Time Series
+
+-   Spatial is built on time series.
+
+-   We assume independent observations -- in time series this is not true.
+
+    -   unemployment this month is related to last month
+
+    -   snow in the rockies this season is related to last season.
+
+-   Non-independence will screw up our assumptions of OLS
+
+-   we want our errors normally distributed
+
+    -   no heteroskedasticity
+
+    -   no autocorrelation
+
+    -   however in time series, often our OLS assumptions are not believable.
+
+        -   error is where we will see this.
+
+            -   im going to see weird things in error -- is there something wrong with my model? or is there a correction?
+
+                -   any time we fail to correctly specify a dynamic process, those omitted variables end up in the error term.
+
+-   Time series is nice because we can usually just use OLS
+
+-   t subscripts instead of i.
+
+-   panel data will be t and i
+
+-   errors may not be independent!
+
+-   Errors may not have constant variance over time! Violate assumption of no heteroskedasticity.
+
+    -   error variance is changing over time.
+
+## Characteristics of Time Series Data
+
+-   Data are sampled consistently
+
+-   order matters; a time variable is required in a time series dataset.
+
+-   Time series is a data generating process.
+
+-   missing data are problematic
+
+## Lags
+
+-   order matters
+
+-   data that are more proximate to one another tend to be more correlated. Time version of Toeblers law.
+
+-   we account for this in our model by using lags: $y_{t-1}, y_{t-2},..$
+
+-   lags will become extremely useful in our models as we will use them to condition for the effect...
+
+-   you lose an observation when you take a lag.
+
+## Difference
+
+-   the difference of a series is another common transformation
+
+-   the first-diff measures the change between t-1 and t of a series. This fundamentally changes our data and possibly underlying relationships.
+
+-   double diff is possible but rare
+
+## Steps:
+
+-   Plot!
+
+-   Diagnose Stationarity
+
+    -   sationarity is very important! Sationarity is when the characteristics are:
+
+        -   mean reverting \~ stable mean
+
+        -   constant variance
+
+        -   constant covariance
+
+    -   i need my data to be stationary!
+
+        -   if you dont, you cant believe the inferences you are showing me.
+
+    -   Autoregression
+
+        -   lags contain past information within in it.
+
+            -   it depends on your question but y_t-1 will contains information from older time periods within it.
+
+    -   Positive $\Phi$ current values of $y_t$ are positively related to past ones.
+
+    -   as $\Phi$ -\> 1 the relationship across periods is stronger.
+
+    -   If $\Phi$ = 0 there is no autocorrelation.
+
+## Unit Root
+
+-   Series with constant mean, variance, and convariance are said to be stationary
+
+-   A unit root means you have violated one of the assumptions of stationarity
+
+    -   usually the variance stationarity.
+
+    -   instead of I(0) it is I(1)
+
+-   if unit root exists just take first difference.
+
+-   hard part is testing for unit roots.
+
+### How to Test for Unit Roots?
+
+-   Dickey-Fuller unit root test is the older and still most popular
+
+-   you subtract $y_{t-1}$ for both sides
+
+-   null hypothesis series contains a unit root
+
+    -   if we reject null then series is stationary
+
+## To Lag or Not to Lag?
+
+-   X appears in multiple places
+
+# Introduction to Spatial Modeling
+
+-   spatial analysis is similar to time.
+
+-   space is more difficult to deal with because space is in multiple directions
+
+-   space as an econometric problem.
+
+-   space is not just geographic
+
+-   space is not a nuissance
+
+-   space = autocorrelation
+
+-   system versus actor centered
+
+-   common exposure is not spatial
+
+-   contagion is.
+
+-   space is substance
+
+    -   dont account then ovb
+
+-   Galton's problem: refers to the importance of determining whether an outcome was caused via an external or internal factor.
+
+-   need to identify spatial autocorrelaiton
+
+## What causes spatial association
+
+-   autocorelation and association is not the same.
+
+-   Common exposure as a cause of spatial association:
+
+    -   when individuals in a subset of the population are exposed commonly to a stimulus
+
+-   Spatial interdependence is DIFFERENT!
+
+-   contagion and common exposure are different BUT they can be intterrelated.
+
+-   contagion is a network process basically
+
+## Modeling space:
+
+### Spatial Error Model
+
+-   classic assumption -- errors are iid
+
+    -   the iid is very important -- nothing systematic in the errors
+
+        -   iid implies randomness
+
+    -   longitudinal data also has this problem
+
+-   allows errors to be correlated
+
+-   we are modelling the error that is iid
+
+    -   and then modelling the error that is spatial in nature.
+
+    -   w is a weight
+
+        -   weighting is theoretical. Closeness may be ideological or geographical
+
+            -   W_i is like a distance measure.
+
+-   W is the connectivity matrix and links outcomes in j to i.
+
+-   spatial error model not used really in political science
+
+    -   what does it mean to say that space matters in error but not in substance?
+
+### Spatial Lag Model
+
+-   spatial autoregressive model

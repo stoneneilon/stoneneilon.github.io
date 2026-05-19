@@ -553,7 +553,7 @@ The elasticities we derived in this meta-analysis may be used to adjust outputs 
 
 -   Madison in Federalist 10 argued that the system of represetnation they proposed would "refine and enlarge the public views, by passing them through the medium of a chosen body of citizens, whose wisdom may best discern the true interest of their country, and whose patriotism and love of justice will be least likely to sacrifice it to temporary or partial considerations. Under such a regulation, it may well happen that the public voice, pronounced by the representatives of the people, will be more consonant to the public good than if pronounced by the people themselves, convened for the purpose."
 
--   Most americans think Democracy means rule by the people, democracy is unambiguously good, and the only possible cure for the ills of democracy is more democracy. This is the folk theory of democracy.
+-   Most americans think Democracy means rule by the people, democracy is unambiguously good, and the only possible cure for the ills of democracy is more democracy. This is the s that theory of democracy.
 
 -   Direct democracy is appealing in emotionally appealing but has some difficulties
 
@@ -1231,7 +1231,7 @@ This article revisits some old issues about institutions and suggests some new c
 
 # 
 
-Hall, Peter and Rosemary Taylor. 1996. "Political Science and the Three New Institutionalisms," Political Studies
+# Hall, Peter and Rosemary Taylor. 1996. "Political Science and the Three New Institutionalisms," Political Studies
 
 ## What is new institutionalism?
 
@@ -2235,7 +2235,7 @@ Over the last ten years or so, an important new approach to the study of organiz
 
 -   There hasn't been much focus on the bureaucracy
 
--   Puprose: provide an overview for political scientist of the new economics of organization
+-   Purpose: provide an overview for political scientist of the new economics of organization
 
 ### The Neoclassical firm
 
@@ -2417,7 +2417,7 @@ Over the last ten years or so, an important new approach to the study of organiz
 
     -   Voters pass relatively easy tests of judging politicians on performance.
 
-        -   when they think politiicans has performed well - they reward
+        -   when they think politicians has performed well - they reward
 
             -   this assume voters can connect action to policy.
 
@@ -2458,3 +2458,231 @@ Over the last ten years or so, an important new approach to the study of organiz
     -   campaigns increase knowledge but it makes it easier for voters to follow not lead.
 
 ## Chapter 2: Rewarding Performance? Priming the Economy
+
+# Why Parties? The Origin and Transformation of Political Parties in America. 1995. John Aldrich.
+
+## Chapter 1:
+
+-   Morris Fiorina: "the only way collective responsibility has ever existed, and can exist, given our institutions, is through the agency of the political party; in American politics, responsibility requires cohesive parties."
+
+-   A lot of literature in the 90s and 2000s comes out in support for parties. but why do they need to do this?
+
+    -   What had emerged from the 70s and 80s was a beleif that parties had become weak. Thus the authors seek rectify this and argue that they are not weak.\
+
+-   **My basic argument is that the major political party is the creature of the politicians, the ambitious office seeker and officeholder. They have created and maintained, used or abused, reformed or ignored the political party when doing so has furthered their goals and ambitions. The political party is thus an "endgenous" institution -- an institution shaped by these political actors."**
+
+    -   party is the instrument for politicians to acheive their goals.
+
+    -   in any sense, parties are useful because they are vehicles for soviling problems that cannot be solved through other means.
+
+    -   fenno: policy ends are realized through the parties!
+
+-   political parties -- result from actors' seeking to realize their goals, choosing within and possibly shaping a given set of institutional arrangements, and so choosing within a given historical context.
+
+-   Chapters 2 and 4 important for my theory.
+
+-   McClosky -- elite perspective, it is the elites role in serving as repositories of the public consciousness and as the carriers of the Creed
+
+-   each party is a coalition of many and diverse groups.
+
+-   There is no small set of fixed interests; there are, rather, many and diverse interests in this extended Republic -- Madison
+
+-   **Parties as diverse coalitions:** A major political party, then, aggregates these many and varied interests sufficiently to appeal to enough voters to form a majority in elections to forge partisan-based, majority coalitions in government.
+
+    -   in this view, parties are intermediaries that connect the public and the government. Parties also aggregate these diverse interests into a relatively cohesive, if typically compromise, platform, and they articulate these variaed interests by representing them in government. The result, in this view, is that parties parlay those compromise positions into policy outcomes, and so they -- a ruling, if non-homogenous and shifting, government majority -- can be held accountable to the public in subsequent elections. **this is the first perspective**
+
+-   Political party in three parts:
+
+    -   party-in-the-electorate
+
+    -   party-in-government
+
+    -   party-as-organization
+
+-   **The Responsible party thesis: (Second view)**
+
+    -   a doctrine
+
+    -   associated with Schattschneider
+
+    -   Woodrow Wilson also part of it
+
+    -   Ranney 1975 -- four criteria that define responsible parties
+
+        -   make policy commitements to the electorate
+
+        -   are willing and able to carry them out when in office
+
+        -   develop alternatives to government policies when out of office
+
+        -   and differ sufficiently between themselves to "provide the electorate with a proper range of choice between alternative actions."
+
+-   **Parties and Electoral Competition (Third view):**
+
+    -   stresses competition
+
+    -   Downs; schumpeter; demsetz
+
+    -   focuses on elites
+
+        -   they want to win elections
+
+    -   For Downs, a party is a "a team seeking to control the governing apparatus by gaining office in a duly constituted election."
+
+        -   the political party therefore is the organization that team uses to realize its goals
+
+        -   Downs: parties formulate policies to win elections rather than winning elections promulgate policies.
+
+    -   office seakers will try to create a strong electoral machine for mobilizing the electorate, but only if competition forces them to do so.
+
+    -   there is a collective interest to work together because it electoral beneficial -- the collective interest must come from a common electoral fate.
+
+-   A Fourth View (Aldrich's contribution)
+
+    -   builds upon the previous three
+
+    -   parties are integral to political life. They structure reasoning and choice of the electorate, through campaigns and all of government.
+
+    -   parties can only be understood in relation to the polity, to the government, and its institutions, and to the historical context of the times.
+
+    -   the study of parties is the study of institutions.
+
+        -   they are non-governmental political institutions
+
+            -   **their basis lies in actions of ambitious politicians that created and maintain them.**
+
+            -   endogenous institutions!
+
+                -   political actors actions create it and it is the actions of political actors that have shaped and altered them over time.
+
+    -   Who are the major actors in shaping the party?
+
+        -   many argue it is the party-in-the-electorate
+
+            -   office-seekers! -- those who seek and those who hold elective office
+
+    -   Parties PRODUCE; Voters CONSUME! popkin 1976
+
+    -   brand name loyalists
+
+    -   politicians create and recreate the party because it is in their interests to do so! - rat choice account
+
+        -   parties are designed as attempts to solve problems that current institutional arrangements do not solve and that politicians have come to believe they cannot solve. These three problems are:
+
+            -   ambition/elective office seeking
+
+            -   making decisions for the party and for the polity
+
+            -   the problem of collective action
+
+    -   politicians turn to their political party -- that is, use its powers, resources, and institutional forms--- when they believe doing so increases their prospects for winning desired outcomes, and they turn from if it does not.
+
+    -   quick aside mentioned about the presidency): The personal president (1985) -- Lowi argues America has come to invest too much power in the office of the president, with the result that the promise of the presidency and the promises of individual presidents go unfulfilled. Why? Because the rest of government has become too unwieldy, complicated, and fragmented for the president to use that power effectively. His solution? Revitalize political parties.
+
+        -   interesting point and i think parts of this are correct...but it actually strengthens the presidency.
+
+## Chapter 2: Why Parties Form
+
+-   found fathers thought parties were bad but also temporary to achieve the constitution.
+
+-   politicians seeking to win -- create parties
+
+-   political parties are collections of individuals -- they provide public goods for their members.
+
+-   develop a reputation -\> cooperation in repeated play
+
+    -   institutions help solve collective action problems -\> party is an institution that helps solve this.
+
+-   Schwartz defines a party as a long coalition
+
+-   the reason to enter a party is to win more, and here that means reducing uncertainty over future outcomes.
+
+-   sophisticated voting -- voters know each other well.
+
+-   What are the Incentives to mobilize the electorate that might lead someone to join or create a party
+
+    -   IMPORTANT!
+
+-   campaigns can be understood as attempts to create supporters and get them to turn out in the face of these two collective action problems.
+
+-   Affiliation with a party provides a candidate with, among other things, a brand name.
+
+    -   In advertising, successful brand names convey a great deal of information cheaply: they cue an established reputation (see Downs 1957)
+
+-   The American Voter (Campbell et al. 1960) popularized the idea that party labels can provide cues and partisan images.
+
+-   "Thus the collective action problem for voters of becoming sufficiently informed to make a (possibly preliminary) determination of whom they favor is is greatly attenuated, given party affiliation and perhaps other reputational cues. This effect is exaggerated to the extent that voters' choices are correlated among candidates of the same party.
+
+-   Affiliation with party brings the candidate a "natural" reputation
+
+-   Party affiliation provides an initial reputation that reduces decision-making costs and provides a core of likely supporters.
+
+-   these reputations are both positive and negative
+
+-   parties reduce uncertainty in repeated elections.
+
+-   a political party is a collective enterprise, subject to significant collection action problems in forming and maintaining it.
+
+-   temporary coalitions cycled -- nice in short term but not so nice in long term.
+
+-   "The argument made here is not that actors turned to parties for the mere purpose of cyclicality. Rather,, it is that the actors had the purpose of winning, and that happens to include buttressing their side from the threat of losing owing to manipulation of cycling by opponents. They seek not just to end the threat of cycling, but to yield particular resolutions that further their particular goals."
+
+-   parties were chosen institutions -- because of their consequences for winning, creating institutional equilibria.
+
+## Part 2: Chapter 3: Founding the First Parties.
+
+-   "Instead of solving problems by vote trades among opposing leaders or by other forms of piecemeal, issue-by-issue compromise, these leaders--first Hamilton, then Jefferson and MAdison-- would strengthen and would widen their scope with respect to both members and issues, to become the first political parties of modern democratic form in this or any nation."
+
+    -   Aldrich this is because of the social choice problem
+
+-   makes a point about these old parties are very different in structure and use from modern parties.
+
+    -   debate about whether these early parties are even parties.
+
+    -   They were strictly parties-in-government
+
+        -   their function was solely to resolve policies to yield a clear pattern of support for the governing partisan's position on the great principle.
+
+-   "They sought to control personalized electoral poiitics in part because the system risked tyranny. The real political parties these institionalists look for did emerge in the Jacksonian era. This new form of party was consciously designed, and its invention was intended to solve a different theoretical problem--that of collective action. They were created to mobilize the electorate, in particular, so that elections in this Jacksonian era of an increasingly diverse democracy nation could be won more often." p.95
+
+## Chapter 4: Jacksonian Democracy: The Mass Party and Collective Action
+
+-   new parties were rooted in the masses.
+
+-   parties as mobilizing efforts.
+
+-   the goal is to mobilize party's supporters to win elections -- not increase turnout in general.
+
+-   the expansion of transportation and communication systems made the mass party technologically feasible at about the same time.
+
+-   the collective action problem in the electorate was solved by creating party organizations to mobilize it.
+
+-   local flexibility in party platform -- party federalism
+
+    -   this has eroded -- see hopkins.
+
+    -   each local unit needed the freedom to establish its own definition of benefits in the collective good. That was essentially a selective incentive for joining the larger organization, required by the nature of collective action.
+
+    -   "Take our popular leader and no controversial policies. We will provide resources to you, so long as you agree to call yourself Democrats, For your part, you can continue to hold to your current policy positions."
+
+## Chapter 5: Whigs and Republicans
+
+-   Van Buren -- new political party was to be more important than the men in it.
+
+-   probability of winning office is dependent on the party.
+
+    -   The two-partys provided reasonably probable access to the office that either party offered the ambitious politician
+
+        -   Perhaps there is some other party that could be formed that could do better, but because the dem and rep parties are so engarained, have so much resources now, the ability to do is unlikely, thus what is left is to steer the party in the direction that it becomes more electorally viable -- a position that in ultimately unknownable. Thus the perception of how to steer the party to become more electorally viable is uncertain, subjective, and debated.
+
+    -   "the realtively broad range of policy stances within each major party made ambitious careerists with policy motivations comfortable wihtin these two parties."
+
+        -   the exception is the slavery issue.
+
+-   Public view of party vs public view of candidate. Party \> candidate
+
+## Part 3: Chapter 6: Party Activists and Partisan Cleavages in Contemporary Elections
+
+# Insecure Majorities: Congress and the Perpetual Campaign. Francis E. Lee.
+
+## The Ins versus the Outs

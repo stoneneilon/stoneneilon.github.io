@@ -8,7 +8,7 @@ author:
     affiliation: PhD student of political science @ The University of Colorado Boulder
     affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
 date: 05-15-2024
-categories: [Spring, Fall, 2024, Methods, 2023] # self-defined categories
+categories: [Methods, 2026] # self-defined categories
 citation: 
   url: https://stoneneilon.github.io/notes/Data_comps/
 image: jordan.jpeg
@@ -50,21 +50,21 @@ I apologize in advance as this section will seem like you are pledging for a fra
 
 Starting a PhD is daunting. It is especially so when people start throwing around words that you do not know or never encountered in your undergraduate education. Much like math notation, the verbiage in the PhD world can feel foreign. To shore this up, I provide a list of some common words that I heard a lot when starting but didn't fully grasp until much later.
 
-| Word           | Definition                                                                                                                                                               | Can you use it in a sentence?                                                                                 |
-|--------------------|-----------------------------|------------------------|
-| Endogenous     | Reverse causality (This word will haunt you).                                                                                                                            | *You have selection/omitted variable bias and your relationship is thus not causal/incorrect.*                |
-| Orthogonal     | Independent/perpendicular (math symbol is $\perp$)                                                                                                                       | *Your treatment is orthogonal to observable and unobservable variables.*                                      |
-| Parametric     | Related to specific probability distributions. Parametric models are defined by some parameter that describes the shape of the probability distribution.                 | *Your regression is a parametric model, meaning the shape of your distribution is defined by two parameters.* |
-| Non-parametric | Your data-generating process is not defined parametrically -- not a probability distribution. Relates to machine learning methods (neural networks and stuff like that)  | *You may be better off using a non-parametric model like a Random Forest.*                                    |
-| Causal         |                                                                                                                                                                          | *Your treatment better be random or (as-if random) it is not a causal effect.*                                |
-| Robust(ness)   |                                                                                                                                                                          |                                                                                                               |
-| Probability    |                                                                                                                                                                          |                                                                                                               |
-| Likelihood     |                                                                                                                                                                          |                                                                                                               |
-| Ambivalence    | Struggling between competing considerations. **It does not mean indifferent.**                                                                                           |                                                                                                               |
-| Panel Data     | Observations in our data observed at different time periods.                                                                                                             |                                                                                                               |
-| Systematic     | Predictable                                                                                                                                                              |                                                                                                               |
-| Observables    |                                                                                                                                                                          |                                                                                                               |
-| Unobservables  |                                                                                                                                                                          |                                                                                                               |
+| Word           | Definition                                                                                                                                                              | Can you use it in a sentence?                                                                                 |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Endogenous     | Reverse causality (This word will haunt you).                                                                                                                           | *You have selection/omitted variable bias and your relationship is thus not causal/incorrect.*                |
+| Orthogonal     | Independent/perpendicular (math symbol is $\perp$)                                                                                                                      | *Your treatment is orthogonal to observable and unobservable variables.*                                      |
+| Parametric     | Related to specific probability distributions. Parametric models are defined by some parameter that describes the shape of the probability distribution.                | *Your regression is a parametric model, meaning the shape of your distribution is defined by two parameters.* |
+| Non-parametric | Your data-generating process is not defined parametrically -- not a probability distribution. Relates to machine learning methods (neural networks and stuff like that) | *You may be better off using a non-parametric model like a Random Forest.*                                    |
+| Causal         |                                                                                                                                                                         | *Your treatment better be random or (as-if random) it is not a causal effect.*                                |
+| Robust(ness)   |                                                                                                                                                                         |                                                                                                               |
+| Probability    |                                                                                                                                                                         |                                                                                                               |
+| Likelihood     |                                                                                                                                                                         |                                                                                                               |
+| Ambivalence    | Struggling between competing considerations. **It does not mean indifferent.**                                                                                          |                                                                                                               |
+| Panel Data     | Observations in our data observed at different time periods.                                                                                                            |                                                                                                               |
+| Systematic     | Predictable                                                                                                                                                             |                                                                                                               |
+| Observables    |                                                                                                                                                                         |                                                                                                               |
+| Unobservables  |                                                                                                                                                                         |                                                                                                               |
 
 # Section X: Ordinary Least Squares (OLS)
 
@@ -271,13 +271,13 @@ Is this relationship (my coefficient I observed) real or due to chance? Remember
 
 You will also here the p-value you described as the "probability of making a Type 1 error (false positive). **When you reject the null hypothesis, you are saying it is highly unlikely to have observed this coefficient by chance, if the true effect was zero.**
 
-### Why is the p-value over-rated? 
+### Why is the p-value over-rated?
 
 For one, R or Stata will calculate the value; however, as researchers we select a p-value threshold to compare the to. If the p-value we got is lower than that threshold, we believe we have a significant relationship. That is, it is weird for us to have observed the value we got, if the true $\beta=0$. Thus, we reject the null hypothesis. As researchers, we choose these thresholds. There is no law that states we must select this p-value.
 
 More importantly, you don't need to report the p-value or even the t/z-stat. Why? Because your coefficient and standard error provides that information already. To get those other values, all you need is the coefficient and the SE. This is why you hardly see econ journals report the t-stat or p-value; because they can calculate themselves and figure out the confidence intervals.
 
-### What the p-value is NOT 
+### What the p-value is NOT
 
 -   It does not tell you if your relationship is causal
 
@@ -293,12 +293,12 @@ In any statistical model, you may see changes to the "functional form". In simpl
 
 Transformations maintain monotinicity - a fancy way to maintain the "ordering" of the data.
 
-### Which Functional Form? 
+### Which Functional Form?
 
-## Log Transformation Interpretations: 
+## Log Transformation Interpretations:
 
 | Model       | Dependent Variable | Independent Variable | Interpretation of $\beta$            |
-|---------------|---------------|----------------------------|---------------|
+|-------------|--------------------|----------------------|--------------------------------------|
 | level-level | $y$                | $x$                  | $\Delta y = \beta \Delta x$          |
 | level-log   | $y$                | $log(x)$             | $\Delta y = (\beta/100)\% \Delta x$  |
 | log-level   | $log(y)$           | $x$                  | $\% \Delta y = (100 \beta) \Delta x$ |
@@ -435,7 +435,7 @@ Logs turn multiplication into addition.
 How do we select which statistical model to use for inference? This choice is dependent on our data structure, specifically, our dependent variable. Don't over think this! We use GLMs when our residuals are *not normally distributed* (except for linear regression which the GLM is OLS and is normally distributed)*.*
 
 |                     |             |                   |                          |
-|------------------|------------------|------------------|-------------------|
+|---------------------|-------------|-------------------|--------------------------|
 | **Model**           | **Random**  | **Link**          | **Systematic Component** |
 | Linear Regression   | Normal      | Identity          | Continuous               |
 | ANOVA               | Normal      | Identity          | Categorical              |
@@ -882,7 +882,9 @@ These models are appropriate for when we have a small number of ordered categori
 
 This isn't much different, only now we have multiple categories instead of just 0 or 1. So our goal here is to find out what variables predict which category is most likely to be selected. Like with categorical variables on our independent variables, we need to have some sort of baseline. We will do the same here just on our dependent variables. Thus,
 
-#### Interpretation 
+*Logit gets criticized because it imposes the IIA -- independence of irrelevant alternatives. THIS IS BASICALLY ARROWS THEOREM OR SOMETHING LIKE IT. IF A \> B \> C, the addition of D should not influence the choices!*
+
+#### Interpretation
 
 Regression output from R will be in the log-odds.
 
@@ -1029,11 +1031,20 @@ Poisson regression assumes that the variance of $y$ equals the mean of $y$, but 
 
 **What do we do with overdispersion?** We can do a *quasi-poisson*. The quasi-poisson basically takes the raw Poisson model, estimates the dispersion, and adjusts the standard errors for it. OR, we can also do a *negative binomial*, which is what most people seem to do. The negative binomial models a slightly different distribution with an extra parameter that characterizes the variance, and derives a different likelihood based on that. More on negative binomial below.
 
-**How do we know if we have overdispersion?** *We only care about conditional overdispersion, i.e., how much overdispersion is left over once we've modeled the conditional mean.* A casual (first-cut) test is simply to take the mean and variance of our DV and see how far apart they are. This is not terrible but is also not precise. It might be better to think over overdispersion as a form of specification error.
+**How do we know if we have overdispersion?** *We only care about conditional overdispersion, i.e., how much overdispersion is left over once we've modeled the conditional mean.* A casual (first-cut) test is simply to take the mean and variance of our DV and see how far apart they are. This is not terrible but is also not precise. It might be better to think over overdispersion as a form of specification error. Generally, conventional wisdom will just tell you to do both models and compare.
 
 #### Poisson Issues
 
-As discussed earlier, Poisson makes a critical assumption that the variance and mean are equal. This is commonly not true.
+As discussed earlier, Poisson makes some assumptions and has some limitations. We need to have a good uinderstanding of the what issues may arise as this will help us navigate a more appropriuate model specification/fix. Some common departures from the standard Poisson regression are: (Cameron & Trivedi, 2014)
+
+1.  **Failure of the mean-equals-variance restriction**
+2.  **Truncation and censoring**
+3.  **The "excess zeros" or "zero inflation" problem**
+4.  **Multimodality**
+5.  **Correlated observations**
+6.  **Waiting times between event occurrences not exponential**
+7.  **Trends**
+8.  **Simultaneity and sample selection**
 
 ### Negative Binomial
 
@@ -1141,11 +1152,11 @@ hist(combined, col = "red", main = "Netflix Shows Binged", sub="with non-subscri
 
 When we are doing a zero-inflated model, we are saying there is a two step process. We are combining a logistic regression with a poisson regression. The logistic regression will be used to predict who gets a zero and any other number. Then, if you didn't have a zero, what is the number that you did have.
 
-#### When do I know you have zero-inflation? 
+#### When do I know you have zero-inflation?
 
 There are tests you can do. In all honesty, just run both models (ZI-Poisson and Poisson) and see if findings change substantively. Compare the AIC/BIC.
 
-#### Code for Zero-Inflated Models 
+#### Code for Zero-Inflated Models
 
 ...and an example to boot! This example will use code from Finocchiaro and Mackenzie 2017. Download \[[here](https://drive.google.com/file/d/13_choKihDD1XQlbbxBGkkWJyDxMDqQTU/view?usp=sharing)\]. Example is provided through Andy Philips.
 
@@ -1155,7 +1166,7 @@ us.bills <- na.omit(us.bills) # remove NAs if needed
 hist(us.bills$policy, main = "No. Bills Introduced (policy)")
 ```
 
-The DV policy has a large number of zeros\....if we had some suspicion that there was a different DGP producing some of these 0's, we may want to run a zero-inflated model.
+The DV policy has a large number of zeros....if we had some suspicion that there was a different DGP producing some of these 0's, we may want to run a zero-inflated model.
 
 ```{r}
 zip <- zeroinfl(policy ~ margin + gdem_p_12_ave + democrat + ind + com_pcom, data = us.bills, dist = c("poisson"), link = c("logit"))
@@ -1180,7 +1191,7 @@ summary(preds)
 
 ```
 
-##### Comparison to Poisson Results: 
+##### Comparison to Poisson Results:
 
 ```{r}
 poi <- glm(policy ~ margin + gdem_p_12_ave + democrat + ind + com_pcom, family = "poisson", data = us.bills)
@@ -1215,17 +1226,17 @@ AIC(zinb)
 AIC(nb)
 ```
 
-#### In Summary: 
+#### In Summary:
 
 Count model (Poisson/Neg-BIN) \-\--\> expected counts if at risk
 
 Zero-inflation model (Logit) \-\--\> probability of structural zero
 
-### Truncated count models 
+### Truncated count models
 
 Recall that truncation means we have values excluded from our sample. This is very similar to the zero-inflated count model but the problem is inversed. That is, we do not observe zeros. This is related to the Heckman selectionn model, in that we have a selection problem. Our data is truncated such that we are not observing observations from a specific group. Usually, truncation at zero.
 
-#### Code for Truncated Counts 
+#### Code for Truncated Counts
 
 Also provided by our lord and savior, Andy Philips:
 
@@ -1260,7 +1271,7 @@ summary(ztp)
 
 Based in part on the truncated models. The assumption is that there is a unique DGP, with Bernoulli distribution, that determines whether we observe either a zero, or a truncated Poisson. It only models positive counts. Basically, you have to pass the hurdle of being a zero or not. If you are not a zero, then you pass the hurdle and get modeled into the count.
 
-#### Code for Hurdle Models: 
+#### Code for Hurdle Models:
 
 **Poisson Hurdle:**
 
@@ -1343,7 +1354,7 @@ Recall standard errors are derived from our errors. In OLS, we make assumptions 
 
 Intuitively clustered standard errors are going to fix our non-independent residual issue.
 
-## Random Effects 
+## Random Effects
 
 For some seemingly unknown reason, you will hear a lot of discussion about random effects in conjunction with fixed effects. They are separate models. Political scientists will claim that they like random effects for reasons described in this section, but then do not teach really anything about it or how to do it or what is going on. You usually just get taught fixed effects. I don't understand why this occurs, but if you are like me you will find this extremely frustrating, as I now have to essentially teach myself what this is and how it differs. Even more annoyingly, random effects can mean different things, isn't that swell!
 
@@ -1521,7 +1532,7 @@ Yes because we are going to lose a lot more variation since we are comparing wit
 
 Note that while not directly asked about it, we usually incorporate clustered standard errors in fixed effects models. This is to correct the standard errors as we have not properly estimated that our errors are correlated in our model. Thus without CSE, our errors are pooled together, resulting in smaller standard errors.
 
-## The Omega Matrix 
+## The Omega Matrix
 
 Confusingly, there is the VCV of our independent variables and a VCV of our errors. For simplicity, the VCV of our errors is called the Omega Matrix.
 
@@ -1531,7 +1542,7 @@ $$
 
 This is just the residuals of each observation into one vector and multiplying it by its transpose.
 
-## The Sandwich Estimator 
+## The Sandwich Estimator
 
 To understand standard errors and their fixes, it is imperative that you understand the sandwich estimator. In fact, we have been using the sandwich estimator this whole time to derive our standard errors already. In classical OLS, we make assumptions about our residuals, which influence how we model the sandwich estimator. Let's walk through the math a bit and break this down.
 
@@ -1617,7 +1628,7 @@ $$
 
 -   Conversely, observations with tiny residuals contribute less.
 
-So it\'s a **weighted sum**, where the \"weights\" are the squared residuals --- intuitively, observations that are more \"noisy\" increase uncertainty in the coefficient estimates. Classical OLS assumes all residuals have the same variance → every observation contributes equally. Heteroskedasticity breaks that assumption, thus some observations are noisier than others. If an observation has a huge residual, it can affect the slope a lot; we should inflate the variance estimate to reflect that, and vice versa if the observation has a tiny residual.
+So it's a **weighted sum**, where the "weights" are the squared residuals --- intuitively, observations that are more "noisy" increase uncertainty in the coefficient estimates. Classical OLS assumes all residuals have the same variance → every observation contributes equally. Heteroskedasticity breaks that assumption, thus some observations are noisier than others. If an observation has a huge residual, it can affect the slope a lot; we should inflate the variance estimate to reflect that, and vice versa if the observation has a tiny residual.
 
 *Note: Robust standard errors maintain 0 values on the off-diagonal, thus no autocorrelation is still an assumption we are making.*
 
@@ -1657,27 +1668,27 @@ TK
 
 Why might we care about multicollinearity? In many cases, we don't. It really is only a problem in some cases but is mostly overblown. However, it can influence our standard errors. **It leads to inefficiency.** If we are, for whatever reason, concerned about variance, then we can use the variance inflation factor (VIF). Recall multillinarity is not a statistical problem, it is a data problem. It goes away as $N -> \infty$. OLS remains BLUE in presence of multicollinearity. **Solution to multicollinearity:** Increase your N; Know your data; present the multicollinearity; live with it.
 
-## Checking for Heteroskedasticity 
+## Checking for Heteroskedasticity
 
 ### Breush-Pagan-Godfrey Test
 
-### White's General Heteroscedasticity 
+### White's General Heteroscedasticity
 
-## Checking for Autocorrelation 
+## Checking for Autocorrelation
 
-### Durbin-Watson Test 
+### Durbin-Watson Test
 
 Durbin-Watson test, the $d$ statistic. Basically, if the $d$ is equal to 2, we have no autocorrelation. If it is not equal then we do. However, what is the threshold? ? This is one of the downsides. Thus, if it strays only a little but from 2, we are probably fine, but if it is 1 or 3, then we are in trouble.
 
 ### Breusch-Godfrey Test
 
-## Common Support 
+## Common Support
 
 This primarily comes up in matching (which I did not cover). This is a data problem.
 
-# Section X: Miscellaneous Other Stuff That Might Be Useful To Know 
+# Section X: Miscellaneous Other Stuff That Might Be Useful To Know
 
-## Bootstrapping 
+## Bootstrapping
 
 We want use our sample to make inferences about the population. Bootstrapping is a way to generate an empirical distribution. This distribution has technically always been there, but it has been theoretical. That is we have our sample and it comes from some theoretical distribution of the samples and we use this to make inferences about the population. Bootstrapping is a method to actually generate that empirical distribution. In short, we take the information from our sample to generate multiple samples.
 
@@ -1685,7 +1696,7 @@ Sampling without replacement v. Sampling with replacement
 
 Imagine you draw an M&M, use it for your sample and then put back that M&M back in the box, then we take another draw. Thus, we have the possibility to select the same M&M again.
 
-### Why use a bootstrap sample? 
+### Why use a bootstrap sample?
 
 It is a powerful way to figure out confidence intervals, when there is no theoretical distribution you can find.
 

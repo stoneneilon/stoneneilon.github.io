@@ -1,0 +1,2226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stone Neilon">
+<meta name="dcterms.date" content="2024-05-15">
+<meta name="description" content="Network Analysis with Anand Sokhey">
+
+<title>Stone Neilon - Networks</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Stone Neilon</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://drive.google.com/file/d/1RgKR73KnxS3K_AP2nqiTiZZzAL-zJZ2N/view?usp=sharing"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#part-1-foundations" id="toc-part-1-foundations" class="nav-link active" data-scroll-target="#part-1-foundations">Part 1: Foundations</a>
+  <ul class="collapse">
+  <li><a href="#week-2-readings" id="toc-week-2-readings" class="nav-link" data-scroll-target="#week-2-readings">Week 2 Readings:</a>
+  <ul class="collapse">
+  <li><a href="#robins-ch.-1-the-difference-with-social-network-research" id="toc-robins-ch.-1-the-difference-with-social-network-research" class="nav-link" data-scroll-target="#robins-ch.-1-the-difference-with-social-network-research">Robins, Ch. 1 – The difference with social network research</a></li>
+  <li><a href="#robins-ch.-2-fundamental-network-concepts-and-ideas" id="toc-robins-ch.-2-fundamental-network-concepts-and-ideas" class="nav-link" data-scroll-target="#robins-ch.-2-fundamental-network-concepts-and-ideas">Robins, Ch. 2 – Fundamental network concepts and ideas</a></li>
+  <li><a href="#scott-ch.-1-what-is-social-network-analysis" id="toc-scott-ch.-1-what-is-social-network-analysis" class="nav-link" data-scroll-target="#scott-ch.-1-what-is-social-network-analysis">Scott, Ch. 1 – What is Social Network Analysis?</a></li>
+  <li><a href="#scott-ch.-2-the-history-of-social-network-analysis" id="toc-scott-ch.-2-the-history-of-social-network-analysis" class="nav-link" data-scroll-target="#scott-ch.-2-the-history-of-social-network-analysis">Scott, Ch. 2 – The History of Social Network Analysis?</a></li>
+  <li><a href="#borgatti-et-al.-2009.-network-analysis-in-the-social-sciences." id="toc-borgatti-et-al.-2009.-network-analysis-in-the-social-sciences." class="nav-link" data-scroll-target="#borgatti-et-al.-2009.-network-analysis-in-the-social-sciences.">Borgatti, et al.&nbsp;2009. “Network Analysis in the Social Sciences.”</a></li>
+  <li><a href="#interpersonal-networks-and-democratic-politics.-sokhey-djupe" id="toc-interpersonal-networks-and-democratic-politics.-sokhey-djupe" class="nav-link" data-scroll-target="#interpersonal-networks-and-democratic-politics.-sokhey-djupe"><strong>Interpersonal Networks and Democratic Politics. Sokhey &amp; Djupe</strong></a></li>
+  <li><a href="#hafner-burton-e-m.-kahler-and-a.h.-montgomery.-2009.-network-analysis-for-international-relations" id="toc-hafner-burton-e-m.-kahler-and-a.h.-montgomery.-2009.-network-analysis-for-international-relations" class="nav-link" data-scroll-target="#hafner-burton-e-m.-kahler-and-a.h.-montgomery.-2009.-network-analysis-for-international-relations">Hafner-Burton, E,, M. Kahler and A.H. Montgomery. 2009. “Network Analysis for International Relations</a></li>
+  <li><a href="#background-1" id="toc-background-1" class="nav-link" data-scroll-target="#background-1">Background</a></li>
+  <li><a href="#patty-j.-and-m.-penn.-2016.-network-theory-and-political-science.-in-the-oxford-handbook-of-political-networks.-jen-victor-and-alex-montgomery" id="toc-patty-j.-and-m.-penn.-2016.-network-theory-and-political-science.-in-the-oxford-handbook-of-political-networks.-jen-victor-and-alex-montgomery" class="nav-link" data-scroll-target="#patty-j.-and-m.-penn.-2016.-network-theory-and-political-science.-in-the-oxford-handbook-of-political-networks.-jen-victor-and-alex-montgomery">Patty, J. and M. Penn. 2016. “Network Theory and Political Science.” In The Oxford Handbook of Political Networks. Jen Victor and Alex Montgomery</a></li>
+  <li><a href="#the-friendship-group-as-a-protective-environment-for-political-deviants.-ada-w.-finifter.-apsr" id="toc-the-friendship-group-as-a-protective-environment-for-political-deviants.-ada-w.-finifter.-apsr" class="nav-link" data-scroll-target="#the-friendship-group-as-a-protective-environment-for-political-deviants.-ada-w.-finifter.-apsr">The Friendship Group as a Protective Environment for Political Deviants. Ada W. Finifter. APSR</a></li>
+  </ul></li>
+  <li><a href="#week-3-readings" id="toc-week-3-readings" class="nav-link" data-scroll-target="#week-3-readings">Week 3 Readings:</a>
+  <ul class="collapse">
+  <li><a href="#relational-concepts-measurement-and-data-collection.-justin-h.-gross-joshua-m.-jansa.-2016" id="toc-relational-concepts-measurement-and-data-collection.-justin-h.-gross-joshua-m.-jansa.-2016" class="nav-link" data-scroll-target="#relational-concepts-measurement-and-data-collection.-justin-h.-gross-joshua-m.-jansa.-2016">Relational Concepts, Measurement, and Data Collection. Justin H. Gross, Joshua M. Jansa. (2016)</a></li>
+  <li><a href="#social-network-analysis-chapter-3" id="toc-social-network-analysis-chapter-3" class="nav-link" data-scroll-target="#social-network-analysis-chapter-3">Social Network Analysis: Chapter 3</a></li>
+  <li><a href="#networks-in-context-the-social-flow-of-political-information.-robert-huckfeldt-john-sprague.-1987" id="toc-networks-in-context-the-social-flow-of-political-information.-robert-huckfeldt-john-sprague.-1987" class="nav-link" data-scroll-target="#networks-in-context-the-social-flow-of-political-information.-robert-huckfeldt-john-sprague.-1987">Networks in Context: The Social Flow of Political Information. Robert Huckfeldt, John Sprague. (1987)</a></li>
+  </ul></li>
+  <li><a href="#week-4-readings" id="toc-week-4-readings" class="nav-link" data-scroll-target="#week-4-readings">Week 4 Readings:</a>
+  <ul class="collapse">
+  <li><a href="#discussion-networks.-scott-mcclurg-casey-klofstad-anand-sokhey" id="toc-discussion-networks.-scott-mcclurg-casey-klofstad-anand-sokhey" class="nav-link" data-scroll-target="#discussion-networks.-scott-mcclurg-casey-klofstad-anand-sokhey">Discussion Networks. Scott McClurg; Casey Klofstad; Anand Sokhey</a></li>
+  <li><a href="#legislative-networks.-nils-ringe-jennifer-nicoll-victor-wendy-tam-cho" id="toc-legislative-networks.-nils-ringe-jennifer-nicoll-victor-wendy-tam-cho" class="nav-link" data-scroll-target="#legislative-networks.-nils-ringe-jennifer-nicoll-victor-wendy-tam-cho">Legislative Networks. Nils Ringe; Jennifer Nicoll Victor; Wendy Tam Cho</a></li>
+  </ul></li>
+  <li><a href="#week-5-readings" id="toc-week-5-readings" class="nav-link" data-scroll-target="#week-5-readings">Week 5 Readings:</a>
+  <ul class="collapse">
+  <li><a href="#scott-chapter-4-organizing-and-analyzing-network-data" id="toc-scott-chapter-4-organizing-and-analyzing-network-data" class="nav-link" data-scroll-target="#scott-chapter-4-organizing-and-analyzing-network-data">Scott Chapter 4: Organizing and Analyzing Network Data</a></li>
+  <li><a href="#turnout-in-a-small-world.-james-fowler.-2005" id="toc-turnout-in-a-small-world.-james-fowler.-2005" class="nav-link" data-scroll-target="#turnout-in-a-small-world.-james-fowler.-2005">Turnout in a Small World. James Fowler. 2005</a></li>
+  <li><a href="#robbins-chapter-4" id="toc-robbins-chapter-4" class="nav-link" data-scroll-target="#robbins-chapter-4">Robbins Chapter 4</a></li>
+  </ul></li>
+  <li><a href="#need-to-read-barry-wellman-for-dissertation-see-scott-book-for-summary" id="toc-need-to-read-barry-wellman-for-dissertation-see-scott-book-for-summary" class="nav-link" data-scroll-target="#need-to-read-barry-wellman-for-dissertation-see-scott-book-for-summary">NEED TO READ: BARRY WELLMAN FOR DISSERTATION! SEE SCOTT BOOK FOR SUMMARY</a></li>
+  <li><a href="#week-6-readings" id="toc-week-6-readings" class="nav-link" data-scroll-target="#week-6-readings">Week 6 ReadIngs</a>
+  <ul class="collapse">
+  <li><a href="#power-and-centrality-a-family-of-measure.-phillip-bonacich" id="toc-power-and-centrality-a-family-of-measure.-phillip-bonacich" class="nav-link" data-scroll-target="#power-and-centrality-a-family-of-measure.-phillip-bonacich">Power and Centrality: A Family of Measure. Phillip Bonacich</a></li>
+  </ul></li>
+  <li><a href="#week7-readings" id="toc-week7-readings" class="nav-link" data-scroll-target="#week7-readings">Week7 Readings:</a>
+  <ul class="collapse">
+  <li><a href="#social-contagion-and-innovation-cohesion-versus-structural-equivalence" id="toc-social-contagion-and-innovation-cohesion-versus-structural-equivalence" class="nav-link" data-scroll-target="#social-contagion-and-innovation-cohesion-versus-structural-equivalence">Social Contagion and Innovation: Cohesion versus Structural Equivalence</a></li>
+  <li><a href="#partisan-webs-information-exchange-and-party-networks" id="toc-partisan-webs-information-exchange-and-party-networks" class="nav-link" data-scroll-target="#partisan-webs-information-exchange-and-party-networks">Partisan Webs: Information Exchange and Party Networks</a></li>
+  </ul></li>
+  <li><a href="#week-8-lecture" id="toc-week-8-lecture" class="nav-link" data-scroll-target="#week-8-lecture">Week 8 Lecture</a></li>
+  </ul></li>
+  <li><a href="#part-2-measures" id="toc-part-2-measures" class="nav-link" data-scroll-target="#part-2-measures">Part 2: Measures</a></li>
+  <li><a href="#part-3-positions-and-sub-structures-visualization" id="toc-part-3-positions-and-sub-structures-visualization" class="nav-link" data-scroll-target="#part-3-positions-and-sub-structures-visualization">Part 3: Positions and (Sub-)Structures; Visualization</a></li>
+  <li><a href="#part-4-hypothesis-testingnetwork-inference-additional-considerationsdirections" id="toc-part-4-hypothesis-testingnetwork-inference-additional-considerationsdirections" class="nav-link" data-scroll-target="#part-4-hypothesis-testingnetwork-inference-additional-considerationsdirections">Part 4: Hypothesis Testing/Network Inference; Additional Considerations/Directions</a>
+  <ul class="collapse">
+  <li><a href="#lecture-after-spring-break" id="toc-lecture-after-spring-break" class="nav-link" data-scroll-target="#lecture-after-spring-break">Lecture after spring break</a></li>
+  <li><a href="#navigating-the-range-of-statistical-tools-for-inferential-network-analysis.-canmer-leifeld-mcclurg-and-rolfe.-2017." id="toc-navigating-the-range-of-statistical-tools-for-inferential-network-analysis.-canmer-leifeld-mcclurg-and-rolfe.-2017." class="nav-link" data-scroll-target="#navigating-the-range-of-statistical-tools-for-inferential-network-analysis.-canmer-leifeld-mcclurg-and-rolfe.-2017.">Navigating the Range of Statistical Tools for Inferential Network Analysis. Canmer, Leifeld, McClurg, and Rolfe. 2017.</a>
+  <ul class="collapse">
+  <li><a href="#abstract-11" id="toc-abstract-11" class="nav-link" data-scroll-target="#abstract-11">Abstract</a></li>
+  <li><a href="#the-problem-of-interdependence" id="toc-the-problem-of-interdependence" class="nav-link" data-scroll-target="#the-problem-of-interdependence">The Problem of Interdependence</a></li>
+  <li><a href="#quadratic-assignment-procedure" id="toc-quadratic-assignment-procedure" class="nav-link" data-scroll-target="#quadratic-assignment-procedure">Quadratic Assignment Procedure</a></li>
+  <li><a href="#exponential-random-graph-models-ergms" id="toc-exponential-random-graph-models-ergms" class="nav-link" data-scroll-target="#exponential-random-graph-models-ergms">Exponential Random Graph Models (ERGMs)</a></li>
+  <li><a href="#latent-space-network-models" id="toc-latent-space-network-models" class="nav-link" data-scroll-target="#latent-space-network-models">Latent Space Network Models</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Networks</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Methods</div>
+    <div class="quarto-category">2026</div>
+    <div class="quarto-category">Spring</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Network Analysis with Anand Sokhey
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://stoneneilon.github.io/">Stone Neilon</a> <a href="https://orcid.org/0009-0006-6026-4384" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colorado.edu/polisci/people/graduate-students/stone-neilon">
+            PhD student of political science @ The University of Colorado Boulder
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 15, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="part-1-foundations" class="level1">
+<h1>Part 1: Foundations</h1>
+<p>What is a network?</p>
+<ul>
+<li><p>Networks are patters of relationships that connect individuals, institutions, or objects. These can also be thought of “actors” – the unit of analysis and the relationships they have between each other.</p></li>
+<li><p>Network analysis: takes into account present and absent ties</p></li>
+<li><p>Network structure: patter or form of the network</p></li>
+</ul>
+<p>We make some assumptions in network analysis:</p>
+<ol type="1">
+<li>structural relations, not attributes</li>
+<li>networks affect perceptions, beliefs, and actions via structural mechanisms. <em>Choice and constraint</em></li>
+<li>Structural relations are dynamics processes</li>
+</ol>
+<p>Actors and Relations</p>
+<ul>
+<li><p>The 2 indispensable elements of any social network</p>
+<ul>
+<li><p>Actors (node or ego or vertex)</p></li>
+<li><p>Relations (edges or arcs)</p>
+<ul>
+<li><p>contact, connect, or tie between a pair of actors</p>
+<ul>
+<li><p>dyad</p></li>
+<li><p>directed, non-directed</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Week 2 Lecture:</p>
+<ul>
+<li><p>We want to be careful in how we talk about networks.</p></li>
+<li><p>Graphs and Key Concepts</p>
+<ul>
+<li><p>Social networks can be represented as graphs. Social networks = graphs.</p></li>
+<li><p>graphs are made up of nodes that are connected by links.</p></li>
+<li><p>graphs contain vertices = nodes and a set of links = edges</p></li>
+<li><p>graph is a mathematical object.</p></li>
+<li><p>node = point, vertex, actor, individual</p></li>
+<li><p>link = line, edge, tie, connection, relationship</p></li>
+<li><p>“adjacent” = they are talking about a connection between nodes/vertices.</p></li>
+<li><p><span class="math inline">\((u,v)\in E(G)\)</span></p>
+<ul>
+<li><p>note the lowercase. We are talking about particular nodes.</p></li>
+<li><p>“incident” = if a to b and a to c, then b and c are incident to a.</p>
+<ul>
+<li>aka degree</li>
+</ul></li>
+</ul></li>
+<li><p>complete graph = all possible ties exist</p></li>
+<li><p>not a complete graph, but a connected graph</p></li>
+<li><p>not a connected graph.</p></li>
+<li><p>Component - the set of all points that constitutes a connected sub-graph within a network</p></li>
+<li><p>main component - the largest component within a network</p></li>
+<li><p>Minor component - a component that is smaller than the main component - there may be many minor components</p></li>
+<li><p>Pendants - a node that only has one link to a network</p></li>
+<li><p>isolate - no nodes.</p></li>
+</ul></li>
+<li><p>Matrices and Network Data: Some Basics –</p>
+<ul>
+<li><p>adjacency matrix</p>
+<ul>
+<li><p>each cell = relationship between actors 0 or 1.</p></li>
+<li><p>row = sender</p></li>
+<li><p>column = receiver</p></li>
+<li><p>a 1 indicates the presence of a link, while a zero indicates the absence of a link.</p></li>
+</ul></li>
+<li><p>symmetric matrices - if matrices are symmetric, they may be represented by upper or lower triangle only.</p>
+<ul>
+<li>the diagonal may be omitted in this case because it is reflexive.</li>
+</ul></li>
+</ul></li>
+<li><p>Mode - a set of nodes</p>
+<ul>
+<li><p>another way to think of a mode is as a class of nodes in a network</p></li>
+<li><p>network analysis typically involves only one mode</p></li>
+<li><p>for example: friendships among a group of students would usually be modeled using one mode.</p></li>
+</ul></li>
+<li><p>Data Collection</p>
+<ul>
+<li><p>boundary specification</p></li>
+<li><p>network sampling</p></li>
+<li><p>measurement of relations</p></li>
+</ul></li>
+<li><p>Where does our network begin and end?</p></li>
+<li><p>Measurement errors</p>
+<ul>
+<li><p>false positive/negative node</p></li>
+<li><p>False positive/negative edge</p></li>
+<li><p>Falsely Aggregated/Disaggregated Node</p></li>
+</ul></li>
+<li><p>varying prompts will cause people to recall different things</p>
+<ul>
+<li><p>people from your church…</p></li>
+<li><p>people from your work…</p></li>
+<li><p>Looking back over the week or two…</p></li>
+</ul></li>
+<li><p>perceptions of network vs actual network</p>
+<ul>
+<li>which one are we more interested in?</li>
+</ul></li>
+<li><p><span class="math inline">\(n(n-1)\)</span> – directed. n = nodes</p></li>
+<li><p><span class="math inline">\(\frac{n(n-1)}{2}\)</span> – undirected</p></li>
+<li><p>number of ties divide by number of possible ties. = density</p></li>
+<li><p>Information bias</p></li>
+<li><p>Validity/Reliability</p></li>
+<li><p>Types of Data files:</p>
+<ul>
+<li><p>excel/grids</p></li>
+<li><p>DL files (data language)</p>
+<ul>
+<li><p>lists</p></li>
+<li><p>text files</p></li>
+</ul></li>
+<li><p>VNA Files</p>
+<ul>
+<li><p>Contains both dyadic and attribute data</p>
+<ul>
+<li>NetDraw</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Scott talks about relational data</p></li>
+<li><p>Think about modes!</p></li>
+<li><p>p.59 of Robbins – good resource</p></li>
+<li><p>Design choices have implications for:</p>
+<ul>
+<li><p>interpretation</p></li>
+<li><p>Validity</p></li>
+<li><p>Feasibility</p></li>
+</ul></li>
+<li><p>Whole network – all nodes</p></li>
+<li><p>Sampling:</p>
+<ul>
+<li><p>snowball</p></li>
+<li><p>respondent driven sampling – hard to reach populations</p></li>
+<li><p>internet crawlers</p></li>
+</ul></li>
+<li><p>Threats from report/Data issues:</p>
+<ul>
+<li><p>omission errors</p></li>
+<li><p>commission errors</p></li>
+<li><p>edge/node attribution errors</p></li>
+<li><p>data collection and retrospective errors</p></li>
+<li><p>data management/entry</p></li>
+<li><p>data aggregation</p></li>
+<li><p>errors in secondary sources/data mining</p></li>
+<li><p>formatting errors</p>
+<ul>
+<li><p>web scraping</p></li>
+<li><p>garbage in, garbage out</p></li>
+</ul></li>
+</ul></li>
+<li><p>Missingness</p></li>
+<li><p>Jaccard’s Coefficient: number of actors nominated by informant at 2 different times/total # of unique nominations for both times.</p>
+<ul>
+<li>basically done because we might be worried about people being unreliable.</li>
+</ul></li>
+<li><p>McPherson - social isolation – core network in the GSS. People weren’t isolated – they just didnt wanted to name them. Look at this and maybe revive for a paper?</p></li>
+<li><p>Keep attributes and adjacency/edge list data separate.</p></li>
+<li><p>A walk – talking about a sequence of nodes and lines – fancy way to say they are connected. Walk length is the number of lines it contains!</p>
+<ul>
+<li><p>trail is a walk of distinct lines.</p>
+<ul>
+<li>trail that begins and ends at the same node is called a circuit.</li>
+</ul></li>
+</ul></li>
+<li><p>path is route from node to another.</p></li>
+<li><p>summarizing a path-length distribution may be as informative as a degree distribution</p>
+<ul>
+<li>Duncan Watts</li>
+</ul></li>
+<li><p>Distance - the length of the shortest path from node to another.</p></li>
+<li><p>Geodesic vs distance - geodesic and distance are highly similar concepts but technicality they are distinct</p>
+<ul>
+<li><p>a geodesic is a path -e.g., DEG</p>
+<ul>
+<li>a distance is a number.</li>
+</ul></li>
+</ul></li>
+<li><p>Degree = property of nodes</p></li>
+<li><p>distance between nodes do not matter.</p></li>
+<li><p>length = number of edges.</p></li>
+<li><p>shortest path between two nodes is a geodesic nodes</p></li>
+<li><p>Centrality:</p>
+<ul>
+<li><p>a property of a node in a graph – that is, the property of an individual or unit under study</p></li>
+<li><p>one way people talk about this: prominence of that on point relative to others.</p></li>
+<li><p>“actor has high degree of involvement in may relations”</p></li>
+<li><p>prestige: actor initiates few relations but receives many directed ties. think citations</p></li>
+<li><p>power is relational</p>
+<ul>
+<li>choices actors can make.</li>
+</ul></li>
+<li><p>CENTRALITY IS NODE LEVEL</p></li>
+</ul></li>
+<li><p>Centralization</p>
+<ul>
+<li><p>NETWORK LEVEL</p></li>
+<li><p>the overall cohesion or integration of the graph</p></li>
+<li><p>compare most central point to all other points. Ratio of the actual sum of differences to the maximum possible sum of differences</p>
+<ul>
+<li>ratio measure.</li>
+</ul></li>
+</ul></li>
+<li><p>Think about centrality and power mean in the network</p>
+<ul>
+<li><p>access to info and ideas?</p></li>
+<li><p>visibility?</p></li>
+<li><p>control the flow of info?</p></li>
+<li><p>ability to act together collectively?</p></li>
+</ul></li>
+<li><p>How to calculate centrality</p>
+<ul>
+<li><p>degree - proportional to the number other nodes to which a node is linked</p></li>
+<li><p>closeness - the sum of geodesic distances (shortest paths) to all other points in the graph</p></li>
+<li><p>betweenness - the extent to which a particular point lies between other points in the graph.</p></li>
+</ul></li>
+<li><p>Eigenvector – neighborhood of nodes around a particular node.</p></li>
+<li><p>the larger the degree the higher the maximum centrality you can have.</p></li>
+</ul>
+<p>Substructures: Components, Cores, and Cliques</p>
+<ul>
+<li><p>components: sub-graphs that are connected within, but disconnected between</p>
+<ul>
+<li><p>digraphs</p>
+<ul>
+<li>weak and strong component</li>
+</ul></li>
+<li><p>Cycles</p>
+<ul>
+<li><p>paths that returns to start point</p>
+<ul>
+<li>bridge, connects two cycles</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>cut-points</p>
+<ul>
+<li><p>divide graphs into blocks</p></li>
+<li><p>we can think of these as “weak” points but these nodes have strong betweeness.</p></li>
+<li><p><code>cutpoint()</code> is a function in <code>statnet</code> to find the cut points</p></li>
+</ul></li>
+<li><p>Why care about sub-structures?</p>
+<ul>
+<li>they become important for inference.</li>
+</ul></li>
+<li><p>Brokers = actors/nodes who facilitate exchange among actors</p></li>
+</ul>
+<p>Layout</p>
+<ul>
+<li><p>three approaches</p>
+<ul>
+<li><p>attribute based scatter plotting</p>
+<ul>
+<li><p>useful when nodal characteristics matter for our story.</p>
+<ul>
+<li>best when attributes are continuous.</li>
+</ul></li>
+</ul></li>
+<li><p>ordination</p>
+<ul>
+<li><p>positions based on multivariate techniques</p></li>
+<li><p>there is a mathematical relationship between the distances and the social proximities of nodes</p>
+<ul>
+<li><p>value</p></li>
+<li><p>binary</p>
+<ul>
+<li>compute geodesic distances</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>graph layout algorithms</p>
+<ul>
+<li><p>three criteria</p>
+<ul>
+<li><p>point distance corresponds to path distance</p></li>
+<li><p>nodes should not obscure one another</p></li>
+<li><p>equal-length lines</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Position and Structure</p>
+<ul>
+<li><p><code>components</code> – function helps with descriptives – subgroups!</p></li>
+<li><p>Diameter – measure of compactness – network efficiency</p></li>
+<li><p>equivalence: why?</p>
+<ul>
+<li><p>important for making generalizations about social behavior and structure</p>
+<ul>
+<li><p>recognizing your position</p></li>
+<li><p>actors adapting to their environment.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Structural analysis: patterns of relations not attributes of actors</p></li>
+</ul></li>
+</ul>
+<section id="week-2-readings" class="level2">
+<h2 class="anchored" data-anchor-id="week-2-readings">Week 2 Readings:</h2>
+<section id="robins-ch.-1-the-difference-with-social-network-research" class="level3">
+<h3 class="anchored" data-anchor-id="robins-ch.-1-the-difference-with-social-network-research">Robins, Ch. 1 – The difference with social network research</h3>
+<ul>
+<li><p>Network science: is a term popularized by burgeoning interest in network research.</p>
+<ul>
+<li><p>encompasses many disciplines.</p></li>
+<li><p>they are unified by a common conceptualization: <strong>an assumption of complex structure among the entities being studied.</strong></p></li>
+<li><p>Network science rests on the theoretical claim that outcomes are affected by a structure of relations among people: dependence among individuals.</p></li>
+</ul></li>
+<li><p>Social networks are importantly distinctive in one major regard: <strong>the actors in the network have intentionality.</strong></p></li>
+<li><p>Nodes = unit of analysis – people, organizations, <em>actors</em></p></li>
+<li><p>lines = edges – they are the tie/relationship between two actors</p></li>
+<li><p>A node with no ties is called an <em>isolate.</em></p></li>
+<li><p>edge = tie</p></li>
+<li><p>actor = node</p></li>
+<li><p>degree = the number of network partners for a node.</p></li>
+<li><p>degree distribution: count of the numbers of nodes with each possible degree</p></li>
+<li><p>centralized = basically a node with a high degree is said to be central in the network. important in the network structure</p></li>
+<li><p>directed edge is called an arc</p></li>
+<li><p>reciprocation – edge has directionality in both ways.</p></li>
+<li><p>observations are not independent! – this is important since we make this assumption in regression.</p></li>
+</ul>
+</section>
+<section id="robins-ch.-2-fundamental-network-concepts-and-ideas" class="level3">
+<h3 class="anchored" data-anchor-id="robins-ch.-2-fundamental-network-concepts-and-ideas">Robins, Ch. 2 – Fundamental network concepts and ideas</h3>
+<ul>
+<li><p><strong>A social network:</strong> comprises a set of social actors and a relationship among them in the form of dyadic relational ties.</p></li>
+<li><p>a network can be represented as a mathematical object known as a graph with nodes and edges.</p></li>
+<li><p>the difference between a social network and a graph – a graph simply has nodes and edges; while a social network has social actors.</p></li>
+<li><p><span class="math inline">\(i,j\)</span> are used to describe an arbitrary pair of actors.</p></li>
+<li><p>a loop which is when someone has a tie with themselves (which is dumb and no one cares about) is denoted as <span class="math inline">\((i, I\)</span>)</p></li>
+<li><p>in a directed network, <span class="math inline">\(i,j\)</span> denotes the sender node is <span class="math inline">\(i\)</span> and the receiver node is <span class="math inline">\(j\)</span>.</p></li>
+<li><p>egocentric network (egonet), or personal network: only includes the ties that a focal actor (called ego) has to network partners (called alters) as well as the ties among alters. An egonet study may include many egos, thereby examining the social environment of a sample of participants.</p></li>
+<li><p><strong>density of a network:</strong> a simple measure of the proportion of ties that are present, a description of how much social activity is occurring the social system.</p></li>
+<li><p>network activity and degrees – density and degree distribution are basic descriptive statistics of the network.</p></li>
+<li><p>two nodes are structurally equivalent if they occupy identical structural positions in the network.</p></li>
+<li><p>weak ties provide connectivity across the network.</p></li>
+<li><p>Multiplexity: Human relationships are not generic or of only one type. Social action invokes different types of relational ties, for different goals or purposes. Multiplex relationships, where dyadic partnerships have multiple types of relational ties, may have qualitatively different properties from uniplex dyadic partnerships. Social network studies often need to consider multiple types of tie, simultaneously.</p></li>
+<li><p>Actors who bridge between different parts of the network are in a position to gain advantage as a network entrepreneur or broker.</p>
+<ul>
+<li>betweeness centrality</li>
+</ul></li>
+</ul>
+</section>
+<section id="scott-ch.-1-what-is-social-network-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="scott-ch.-1-what-is-social-network-analysis">Scott, Ch. 1 – What is Social Network Analysis?</h3>
+<ul>
+<li><p>Social networks include digital and online networks but also face to face relationships, political associations, economic transactions, geopolitical relations, and so on.</p></li>
+<li><p>Important to understand the structure of our data.</p>
+<ul>
+<li>the central assumption when using social network data is <strong><em>relational data.</em></strong></li>
+</ul></li>
+<li><p>The principal types of data used in social science are:</p>
+<ul>
+<li><p>attribute data</p>
+<ul>
+<li>those that relate to the attitudes, opinions and behaviors of agents, in so far as these are regarded as properties, qualities, or characteristics that belong to them as individuals or groups.</li>
+</ul></li>
+<li><p>relational data</p>
+<ul>
+<li>concern the contacts, ties, and connections, and the group attachments and meetings that relate one agent to another and that cannot be reduced to the properties of the individual agents themselves.</li>
+</ul></li>
+<li><p>A third type: ideational data</p>
+<ul>
+<li><p>directly describe the meanings, motives, definitions and typifications involved in actions.</p>
+<ul>
+<li>don’t worry about this.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Social networks is kinda a theory and kinda a method – debate about what it is</p>
+<ul>
+<li>it is both – a theoretically informed method.</li>
+</ul></li>
+</ul>
+</section>
+<section id="scott-ch.-2-the-history-of-social-network-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="scott-ch.-2-the-history-of-social-network-analysis">Scott, Ch. 2 – The History of Social Network Analysis?</h3>
+<ul>
+<li><p>Mainstream social network analysis lineage is broken into three main traditions:</p>
+<ul>
+<li><p>sociometric analyst</p>
+<ul>
+<li>small groups and made technical advancements in methods of graph theory</li>
+</ul></li>
+<li><p>researchers of the 1930s</p>
+<ul>
+<li>explored patterns of interpersonal relations and the formation of cliques</li>
+</ul></li>
+<li><p>social anthropologists</p>
+<ul>
+<li>built on these strands to investigate the structure of community relations in tribal and village societies.</li>
+</ul></li>
+</ul></li>
+<li><p>Gestalt tradition – stresses the organised patterns through which thoughts and perceptions are structured.</p></li>
+<li><p>Moreno a major figure – argued that the construction of sociograms allowed researchers to identify leaders and isolated individuals, to uncover asymmetry and reciprocity, and to map chains of connection</p></li>
+<li><p>a graph is simply a set of lines connecting points, and graph theory consists of a body of mathematical axioms and formulae that describe the properties of the patterns formed by the lines.</p></li>
+<li><p>In an undirected graph, ‘balance’ describes simply the particular pattern of signs attached to the lines that make up the graph.</p></li>
+<li><p>Manchester school emphasizes conflict and change rather than cohesion and integration.</p></li>
+</ul>
+</section>
+<section id="borgatti-et-al.-2009.-network-analysis-in-the-social-sciences." class="level3">
+<h3 class="anchored" data-anchor-id="borgatti-et-al.-2009.-network-analysis-in-the-social-sciences.">Borgatti, et al.&nbsp;2009. “Network Analysis in the Social Sciences.”</h3>
+<section id="abstract" class="level4">
+<h4 class="anchored" data-anchor-id="abstract">Abstract:</h4>
+<p>Over the past decade, there has been an explosion of interest in network research across the physical and social sciences. For social scientists, the theory of networks has been a gold mine, yielding explanations for social phenomena in a wide variety of disciplines from psychology to economics. Here, we review the kinds of things that social scientists have tried to explain using social network analysis and provide a nutshell description of the basic assumptions, goals, and explanatory mechanisms prevalent in the field. We hope to contribute to a dialogue among researchers from across the physical and social sciences who share a common interest in understanding the antecedents and consequences of network phenomena.</p>
+</section>
+<section id="bumper-sticker" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker">Bumper Sticker:</h4>
+<p>We are all in a web of relationships</p>
+</section>
+<section id="history-of-network-science" class="level4">
+<h4 class="anchored" data-anchor-id="history-of-network-science">History of Network Science</h4>
+<ul>
+<li><p>1932, girls were running away at an alarming rate. A Jacob Moreno suggested these instances had less to do with individual factors and more with an underlying social network.</p></li>
+<li><p>Durkheim is an early pioneer of these ideas.</p></li>
+<li><p>focus on the structure of social environments</p></li>
+</ul>
+</section>
+</section>
+<section id="interpersonal-networks-and-democratic-politics.-sokhey-djupe" class="level3">
+<h3 class="anchored" data-anchor-id="interpersonal-networks-and-democratic-politics.-sokhey-djupe"><strong>Interpersonal Networks and Democratic Politics. Sokhey &amp; Djupe</strong></h3>
+<section id="extract" class="level4">
+<h4 class="anchored" data-anchor-id="extract">Extract:</h4>
+<p>Some of the most fundamental concerns about democratic politics involve information—who has access to it, how do individuals get it, and of what quality and type is it? The answers to each of these questions invariably involve other people, and it is for this reason that modern democracy is unthinkable save in terms of social networks.</p>
+<p>Fully understanding democratic politics requires us to wrestle with the choices and constraints that individuals face as they navigate the political world and acquire political information. By “choice,” we refer to the decisions that individuals make about what environments to inhabit—what neighborhood to live in, what church to join, and what people to befriend. Individuals frequently make those choices for reasons unrelated to politics and then live within the “constraints,” or the range of available information defined by those choices. The distribution of politics in socially defined contexts—geographical or otherwise—then limits subsequent political decisions; for example, the neighborhood may be politically homogenous but dissimilar to the individual, and the trusted friend might be ignorant of politics.</p>
+<p>In this article, we consider the choices that individuals make and the constraints that result as we discuss findings from social network research about how citizens (1) form reasoned opinions and attitudes and (2) acquire the resources and motives necessary to participate in public life. We then move beyond the state of the literature to suggest ways to further integrate a networks approach into the study of political behavior. We note the advantages of a more developed networks approach, including linking disparate research traditions, linking different levels of politics, and, ultimately, clarifying what “choice” really means in a democratic society.</p>
+</section>
+<section id="background" class="level4">
+<h4 class="anchored" data-anchor-id="background">Background:</h4>
+<ul>
+<li><p>In short, considerable research has found that individuals do not perfectly self-select agreeable discussion partners, and according to Huckfeldt, Johnson, and Sprague, disagreement is “the modal condition” in the United States</p></li>
+<li><p>we know very little about what is discussed within networks</p></li>
+<li><p>Networks are nested in contexts, and these overlapping environments influence one another through processes of choice and constraint</p></li>
+<li><p>Existing research provides valuable places to begin: information environments affect discussion (Huckfeldt et al.&nbsp;<a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref025">Reference Huckfeldt, Beck, Dalton and Levine1995</a>; Mondak <a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref053">Reference Mondak1995</a>), and individuals use the distribution of opinions in a social context as a heuristic to gauge the opinions of social intimates (Djupe and Gilbert <a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref010">Reference Djupe and Gilbert2009</a>; Huckfeldt, Beck, et al.&nbsp;<a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref026">Reference Huckfeldt, Beck, Dalton, Levine and Morgan1998</a>; Huckfeldt and Sprague <a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref032">Reference Huckfeldt and Sprague1995</a>).</p></li>
+</ul>
+</section>
+</section>
+<section id="hafner-burton-e-m.-kahler-and-a.h.-montgomery.-2009.-network-analysis-for-international-relations" class="level3">
+<h3 class="anchored" data-anchor-id="hafner-burton-e-m.-kahler-and-a.h.-montgomery.-2009.-network-analysis-for-international-relations">Hafner-Burton, E,, M. Kahler and A.H. Montgomery. 2009. “Network Analysis for International Relations</h3>
+<section id="abstract-1" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-1">Abstract</h4>
+<p>International relations research has regarded networks as a particular mode of organization, distinguished from markets or state hierarchies. In contrast, network analysis permits the investigation and measurement of network structures— emergent properties of persistent patterns of relations among agents that can define, enable, and constrain those agents. Network analysis offers both a toolkit for identifying and measuring the structural properties of networks and a set of theories, typically drawn from contexts outside international relations, that relate structures to outcomes. Network analysis challenges conventional views of power in international relations by defining network power in three different ways: access, brokerage, and exit options+ Two issues are particularly important to international relations: the ability of actors to increase their power by enhancing and exploiting their network positions, and the fungibility of network power+ The value of network analysis in international relations has been demonstrated in precise description of international networks, investigation of network effects on key international outcomes, testing of existing network theory in the context of international relations, and development of new sources of data. Partial or faulty incorporation of network analysis, however, risks trivial conclusions, unproven assertions, and measures without meaning. A three-part agenda is proposed for future application of network analysis to international relations: import the toolkit to deepen research on international networks; test existing network theories in the domain of international relations; and test international relations theories using the tools of network analysis.</p>
+</section>
+</section>
+<section id="background-1" class="level3">
+<h3 class="anchored" data-anchor-id="background-1">Background</h3>
+<ul>
+<li><p>IR has not treated networks as structures that can constrain and enable individual agents and influence international outcomes until recently.</p></li>
+<li><p>networks defines structures as emergent properties of persistent patterns of relations among agents that can define, enable, and constrain those agents.</p></li>
+<li><p>actions and beliefs of individuals agents are not independent.</p></li>
+<li><p>Network analysis concerns relationships defined by links among nodes.</p></li>
+<li><p>Focus is on the association of nodes more than the attributes of nodes.</p>
+<ul>
+<li><p>three principles:</p>
+<ul>
+<li><p>nodes and their behaviors are mutually dependent, not autonomous</p></li>
+<li><p>ties between nodes can be channels for transmission of both material and non-material products</p></li>
+<li><p>persistent patterns of association among nodes create structures that can define, enable, or restrict the behavior of nodes.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="measuring-network-properties" class="level4">
+<h4 class="anchored" data-anchor-id="measuring-network-properties">Measuring Network Properties</h4>
+<ul>
+<li><p>strength of tie is a combination of the magnitude and frequency of interaction between two nodes.</p></li>
+<li><p>ties can also be asymmetrical</p></li>
+<li><p>can be both positive and negative ties.</p></li>
+<li><p>degree centrality of a node: the sum of the value of the ties between that node and every other node in the network.</p>
+<ul>
+<li>tells us the access a particular node has to other nodes.</li>
+</ul></li>
+<li><p>Closeness centrality: calculated using the length of the path between a node and every other node.</p></li>
+<li><p>Betweenness centrality: the number of shortest paths in the network that pass through a particular node, and therefor it measures the dependence of a network on a particular node for maintaining connectedness.</p></li>
+<li><p>Eigenvector centrality: thee number of a node’s links and the strength of those ties, but also centrality of those other nodes.</p></li>
+<li><p>Types of cohesion and structural similarity measures:</p>
+<ul>
+<li><p>clique</p>
+<ul>
+<li>a group in which every member has a tie of strength above a certain minimum with every other member.</li>
+</ul></li>
+<li><p>structural equivalence</p>
+<ul>
+<li>a group where every member has ties of similar strength to every other node in the network.</li>
+</ul></li>
+</ul></li>
+<li><p>homophily: tendency for nodes to form ties based on common attributes</p></li>
+<li><p>heterophily: nodes form ties to share strengths and minimize weaknesses.</p></li>
+<li><p>high betweenness centrality == high social capital</p></li>
+<li><p>nodes that are well-connected (high degree or eigenvector centrality) have more resources to draw upon through their network connections.</p></li>
+<li><p>nodes with high closeness or info centrality will also receive information more quickly than marginal nodes.</p></li>
+</ul>
+</section>
+</section>
+<section id="patty-j.-and-m.-penn.-2016.-network-theory-and-political-science.-in-the-oxford-handbook-of-political-networks.-jen-victor-and-alex-montgomery" class="level3">
+<h3 class="anchored" data-anchor-id="patty-j.-and-m.-penn.-2016.-network-theory-and-political-science.-in-the-oxford-handbook-of-political-networks.-jen-victor-and-alex-montgomery">Patty, J. and M. Penn. 2016. “Network Theory and Political Science.” In The Oxford Handbook of Political Networks. Jen Victor and Alex Montgomery</h3>
+<section id="abstract-2" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-2">Abstract</h4>
+<p>This chapter considers the role of network theory in the study of political phenomena, the analytical theoretical basis of network analysis as applied in political science. Using the concepts of centrality, community, and connectivity, it discusses the relationship between the primitives of network theory and their relationship to empirical measurement of political networks. The chapter then discusses one of the most active areas of work on network theory in political science, models of network formation, and offers some concluding thoughts about future directions of network theory in political science. We argue that the deeper theorizing about political networks will complement and improve empirical scholarship on the role of networks in politics.</p>
+</section>
+<section id="background-2" class="level4">
+<h4 class="anchored" data-anchor-id="background-2">Background</h4>
+<ul>
+<li><p>Focus: network theory in political science</p></li>
+<li><p>centrality, community, and connectivity:</p>
+<ul>
+<li><p>centrality: ranking the actors within a network in terms of something akin to “power” or “influence”</p>
+<ul>
+<li><p>the more people you know, the better.</p></li>
+<li><p>the more people you connect, the better.</p></li>
+</ul></li>
+<li><p>community: considers that question of how the network indicates differences and commonalities between the actors.</p></li>
+<li><p>connectivity: link centrality and community by differentiating pairs of actors on the basis of their position within the network.</p>
+<ul>
+<li>bridges!</li>
+</ul></li>
+</ul></li>
+<li><p>Graph = collection of nodes and edges.</p></li>
+</ul>
+</section>
+<section id="measuring-networks" class="level4">
+<h4 class="anchored" data-anchor-id="measuring-networks">Measuring Networks</h4>
+<ul>
+<li><p>networks are messy</p>
+<ul>
+<li>no natural ordering</li>
+</ul></li>
+<li><p>Degree Centrality:</p>
+<ul>
+<li><p>in-degree and out-degree</p>
+<ul>
+<li><p>in-degree: number of nodes <em>from</em> which an edge extend to the node in question</p>
+<ul>
+<li>how many people talk to the actor</li>
+</ul></li>
+<li><p>out-degree: number of nodes to which an edge extends <em>from</em> the node in question</p>
+<ul>
+<li>how many listen to the actor</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Eigenvector Centrality:</p>
+<ul>
+<li><p>the centrality of an actor is positively associated with the centralities of teh actors to whom the actor is connected.</p>
+<ul>
+<li><strong>important people know important people</strong></li>
+</ul></li>
+</ul></li>
+<li><p>Betweenness Centrality:</p>
+<ul>
+<li>how many actors are connected to each other by a given actor.</li>
+</ul></li>
+<li><p>Closeness Centrality:</p>
+<ul>
+<li><p>how many steps it would take to get from one actor to every other actor.</p>
+<ul>
+<li>longer paths require more time to traverse and involve more risk of information loss.</li>
+</ul></li>
+<li><p>assigns all actors equal weight.</p></li>
+</ul></li>
+<li><p>Cliques</p>
+<ul>
+<li><p>notion of a subgroup</p>
+<ul>
+<li><p>a maximally completely connected subgraph within the network or a group of nodes that are directly connected with each other such that there is no other node to which all of the members of the group are each connected as well.</p></li>
+<li><p>generalization of a triadic closure</p></li>
+</ul></li>
+</ul></li>
+<li><p>latent spaces</p>
+<ul>
+<li><p>we can conceive of actors as being embedded in a space that can then be used to define or infer group structures.</p></li>
+<li><p>attempt to describe the nodes as positions in a space such that nodes that are closer to each other in the space are more likely to be connected by an edge.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="models-of-network-formation" class="level4">
+<h4 class="anchored" data-anchor-id="models-of-network-formation">Models of Network formation:</h4>
+<ul>
+<li><p>Random graph theory</p>
+<ul>
+<li><p>random graph theory allows one to establish well-defined likelihoods of encountering any given feature in a network</p></li>
+<li><p>Poisson random graph model - canonical model</p>
+<ul>
+<li><p>parameterized by two numbers: number of nodes and probability of connection</p>
+<ul>
+<li><p>p represents the probability of any pair of distinct nodes being connected by an edge</p>
+<ul>
+<li>independent of any other edge being realized.</li>
+</ul></li>
+<li><p>this model then induces a probability distribution over the set of all graphs on n nodes, <span class="math inline">\(G_n\)</span>.</p></li>
+</ul></li>
+</ul></li>
+<li><p>viewed as a starting point.</p></li>
+</ul></li>
+<li><p>exponential random graph models (ERGMs)</p>
+<ul>
+<li><p>a category of random graph models that provide a richer parameterization than, and thus subsumes, the Poisson random graph model.</p></li>
+<li><p>parameters of ERGM:</p>
+<ul>
+<li><p>structural parameters - characterize the probability of different graph structures without reference to the labels/identities of the actors/nodes themselves.</p>
+<ul>
+<li>measure symmetrical and asymmetrical relationships between nodes.</li>
+</ul></li>
+<li><p>Theory parameters</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="the-friendship-group-as-a-protective-environment-for-political-deviants.-ada-w.-finifter.-apsr" class="level3">
+<h3 class="anchored" data-anchor-id="the-friendship-group-as-a-protective-environment-for-political-deviants.-ada-w.-finifter.-apsr">The Friendship Group as a Protective Environment for Political Deviants. Ada W. Finifter. APSR</h3>
+<section id="bumper-sticker-1" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker-1">Bumper Sticker:</h4>
+<p>Early version of Mutz – cross-pressure.</p>
+</section>
+<section id="backgroundtheory" class="level4">
+<h4 class="anchored" data-anchor-id="backgroundtheory">Background/Theory</h4>
+<ul>
+<li><p>Groups are mediators between individuals and larger society</p>
+<ul>
+<li><p>Sydney Verba</p></li>
+<li><p>Lazarsfeld</p></li>
+</ul></li>
+<li><p>Perspective of the relationship between the individual and group:</p>
+<ul>
+<li><p>the influence of groups on the attitudes and behaviors of members</p></li>
+<li><p>the process by which individuals join together in groups to express and protect their political beliefs.</p></li>
+</ul></li>
+<li><p>“Putnam found that people who are socially well integrated in their communities tend to be much more similar to the community as a whole in their voting patterns than are people who are less well integrated.”</p>
+<ul>
+<li>community influence was found to operate through social interaction in primary friendship groups and secondary associations.</li>
+</ul></li>
+<li><p>individuals are active agents in the construction of their social groups, and that these social groups are formed on the basis of prior attitudinal factors.</p>
+<ul>
+<li>groups may then serve as protective environments for individuals whose attitudes deviate from those of the culture around them.</li>
+</ul></li>
+<li><p>hierarchy of group identification influences political association.</p></li>
+</ul>
+</section>
+<section id="data" class="level4">
+<h4 class="anchored" data-anchor-id="data">Data</h4>
+<ul>
+<li><p>Work groups in the large automobile plants in the Detroit area</p></li>
+<li><p>Western Greater Detroit Region of the United Auto Workers union</p></li>
+<li><p>N = 419</p></li>
+<li><p>During Kennedy-Nixon presidential campaign.</p></li>
+</ul>
+</section>
+<section id="operationalization" class="level4">
+<h4 class="anchored" data-anchor-id="operationalization">Operationalization</h4>
+<ul>
+<li><p>Group cohesiveness was conceptualized as the strength of interpersonal ties among group members.</p>
+<ul>
+<li>individual integration = extent to which he interacted with other group members.</li>
+</ul></li>
+<li><p>“Of the people who work under your foreman, which five would you say you are most friendly with?”</p></li>
+<li><p>Battery asks about political communication within the network</p></li>
+</ul>
+</section>
+<section id="hypothesis" class="level4">
+<h4 class="anchored" data-anchor-id="hypothesis">Hypothesis:</h4>
+<ul>
+<li><p>The more integrated an individual is into his work site primary group, the more subject he is to its political influence.</p>
+<ul>
+<li>we need to ask with which larger social group or organization will a given primary group associate itself as a source for its political norms? – people live in a pluralistic society!</li>
+</ul></li>
+<li><p>Since workers are overwhelmingly Democratic. In the absence of opposing attitudes, primary group integration should therefore increase support for these consensual norms.</p>
+<ul>
+<li>the secondary group was democratic</li>
+</ul></li>
+<li><p>“I hypothesized that the level of friendship integration in the primary group would be positively associated with pro-Democratic attitudes.</p></li>
+<li><p><strong>Political deviance is what leads to an intensified motivation for friendships in the work group, then, for each of the social classifications mentioned above, the relationship between political attitudes and friendship integration should be stronger in those subgroups that have the stronger democratic norm.</strong></p></li>
+</ul>
+</section>
+<section id="dvs" class="level4">
+<h4 class="anchored" data-anchor-id="dvs">DVs:</h4>
+<ul>
+<li>1960 presidential, gubernatorial, and senatorial candidates of dem party</li>
+</ul>
+</section>
+<section id="results" class="level4">
+<h4 class="anchored" data-anchor-id="results">Results</h4>
+<ul>
+<li><p>Fail to support hypothesis</p></li>
+<li><p>indicates an opposite effect – that is, that friuendship integration was associated with <strong>decreasing</strong> suppoirt for the Democratic candidates.</p>
+<ul>
+<li>workers with higher levels of friendship integration were simply more likely to be REpublicans than were the less integrated workers.</li>
+</ul></li>
+<li><p>friendship integration was negatively related to identification with the Democratic party.</p></li>
+<li><p>“If attitudes do serve to unite individuals to groups in their environment, this function clearly cannot be served by a Republican or Independent stance in an environment where most people are strongly Democratic. Republicans in such a situation may therefore have little political con tact outside the work group and may attempt to compensate for this by increasing work group friendships. This seems somewhat par adoxical because the work group itself, of course, is made up predominantly of Demo crats. Yet it is a social situation in which people are together for long periods of time with extended opportunities for interaction, and therefore one in which individuals may exert special efforts to serve a variety of personal needs”</p></li>
+</ul>
+</section>
+<section id="theory-pt.2" class="level4">
+<h4 class="anchored" data-anchor-id="theory-pt.2">Theory pt.2</h4>
+<ul>
+<li><p>Why should deviants be more motivated than conformers to seek friends in their work groups:</p>
+<ul>
+<li><p>1) Deviating from group norms increases anxiety and a sense of isolation because the deviant is rejected by the group. He therefore seeks relationships in other groups to reduce anxiety and isolation to increase social support.</p></li>
+<li><p>2) Deviance from a group norm leads the person to question his opinions, and motivates, an evaluation of them. Evaluation is achieved through comparison of one’s own opinions with those of other people. Therefore, the need for evaluation motivates affiliated behavior.</p></li>
+<li><p>3) Deviance from a group norm arouses cognitive dissonance. One way of reducing dissonance is to seek additional social support for the deviant opinions, thereby adding new information consonant with one’s opinion.s New cognition to bolster deviant opinions might be found by increased interaction with others who hold similar attitudes.</p></li>
+</ul></li>
+<li><p>Author argues/thinks Democrats in the sample hold the work group as less politically and psychologically important. Whereas Republicans hold greater importance to the work group out of necessity in the broader information environment where they may feel less integrated into. Thus establishing friendship relations to reduce social anxiety and in express feelings in a setting where they feel “safe”.</p>
+<ul>
+<li>MY THOUGHTS: Authors are making the point about Republicans out of necessity because they are restricted by their environment -&gt; forces them to engage within local. pluralistic group. But NOW, they are not required to do so because the information environment in which they participate with is now flexible.</li>
+</ul></li>
+<li><p>deviance motivates friendship support in other groups. In this instance, the work group.</p></li>
+</ul>
+</section>
+<section id="main-finding" class="level4">
+<h4 class="anchored" data-anchor-id="main-finding">Main Finding:</h4>
+<ul>
+<li><p>The major finding of this paper is not that partisans tend to choose each other as friends, but that deviant partisans both have more friends and choose attitudinally similar friends much more often than conforming partisans.</p></li>
+<li><p>deviants recognize their deviance and increase engagement within trusted relationships -&gt; explaining why they have more friendships and ties within the group -&gt; mechanism is a fear of anxiety and isolation -&gt; become more motivated to “shelter” in a trusted group.</p>
+<ul>
+<li><p>Political deviants recognize their deviation from dominant norms, which creates anxiety and fear of social isolation. This motivates them to increase engagement within trusted relationships, using friendship groups as protective environments. As a result, deviants often exhibit higher levels of friendship integration within the group despite their macro-level marginality.</p>
+<ul>
+<li>this isn’t necesarrily something people do consciously/strategically.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="week-3-readings" class="level2">
+<h2 class="anchored" data-anchor-id="week-3-readings">Week 3 Readings:</h2>
+<section id="relational-concepts-measurement-and-data-collection.-justin-h.-gross-joshua-m.-jansa.-2016" class="level3">
+<h3 class="anchored" data-anchor-id="relational-concepts-measurement-and-data-collection.-justin-h.-gross-joshua-m.-jansa.-2016">Relational Concepts, Measurement, and Data Collection. Justin H. Gross, Joshua M. Jansa. (2016)</h3>
+<section id="abstract-3" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-3">Abstract</h4>
+<p>Political phenomena are inherently relational, so it is natural that network analysis should come to play an important role in the study of politics. And yet relational data present special practical and methodological problems. The network data scholars would like to collect are often incomplete or altogether inaccessible. It is tempting to take whatever data are available and treat these as a proxy for the desired variables. This chapter reviews the most prominent relational concepts in political science and the operationalization strategies and data collection techniques typically employed. It then examines common practices for handling missing data and identi es recent innovations in this area. Finally, the chapter recommends that political scientists give more consideration to the concept development and measurement phases of research design and proposes possible directions for the development of network measurement models.</p>
+</section>
+<section id="bumper-sticker-2" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker-2">Bumper Sticker</h4>
+<p>Lit Review of SNA</p>
+</section>
+<section id="backgroundtheoryliterature-review" class="level4">
+<h4 class="anchored" data-anchor-id="backgroundtheoryliterature-review">Background/Theory/Literature Review</h4>
+<ul>
+<li><p>political life is relational</p></li>
+<li><p>Politics is the product of relations between humans within institutions and in society, and political outcomes are thus rooted in human relations.</p></li>
+<li><p>egocentric/personal network – the local subnetwork as provided through the respondent’s point of view—on particular political behaviors</p></li>
+<li><p>studies of mass networks are somewhat restricted by egonets – there is measurement error in these. Cant capture the entire complexity of someones network.</p></li>
+<li><p>defining boundaries of the network of interest is important because then you can capture the complexity and entirety of the network – such as relationships among legislators in a single session</p></li>
+<li><p>networks is just a method to study autocorrelation</p></li>
+<li><p>As long as a researcher is willing to make the assumptions that the individual ego-nets are independent and that the nonresponse mechanism is related only to variables collected, that researcher is on fairly solid methodological ground. For the independence assumption to be reasonable, at the very least it must be true that no alters should appear as egos in the study</p></li>
+<li><p>directed or undirected?</p></li>
+<li><p>one-mode (or unipartite): networks include those based on surveys in which actors identify alters with whom they share some relation (friendship, trust, animosity)</p></li>
+<li><p>two-mode: network is one based on shared af liations (e.g., memberships, attendance at social functions).</p></li>
+</ul>
+</section>
+<section id="measurement-error-validity-reliability-missing-data" class="level4">
+<h4 class="anchored" data-anchor-id="measurement-error-validity-reliability-missing-data">Measurement Error: Validity, Reliability, Missing Data</h4>
+<ul>
+<li><p>six types:</p>
+<ul>
+<li><p>false negative/positive nodes</p>
+<ul>
+<li><p>non-response can lead to false negative</p></li>
+<li><p>false pos example: Including a Democrat in a Republican fundraising network</p></li>
+<li><p>false neg example: Excluding a legislator from the cosponsorship network</p></li>
+</ul></li>
+<li><p>false negative/positive edges</p>
+<ul>
+<li><p>non-response can lead to false negative</p></li>
+<li><p>False pos example: Inferring a policy difusion path that did not really occur</p></li>
+<li><p>False neg example: Legislative o ices failing to report joint policy meeting</p></li>
+</ul></li>
+<li><p>falsely aggregated/disaggregated nodes</p>
+<ul>
+<li><p>false agg: Counting Bill Nelson (D-FL) and Ben Nelson (D-NE) as the same node</p></li>
+<li><p>false neg: Counting Al Franken and Alfred Stuart Franken as two di erent nodes</p></li>
+</ul></li>
+</ul></li>
+<li><p>ideal network: true network</p></li>
+<li><p>the clean network: the encoded network data in the absence of measurement error</p></li>
+<li><p>observed network: which the researcher actually gets to see</p></li>
+<li><p>persistence vs fleeting ties</p></li>
+<li><p>Modern approaches to handling missing observations in statistical inference rely heavily on the assumption that individual observations are independent</p></li>
+<li><p>The bottom line is that in contrast to node attribute estimation on independent observations, no broadly applicable sampling theory for networks exists</p></li>
+</ul>
+</section>
+</section>
+<section id="social-network-analysis-chapter-3" class="level3">
+<h3 class="anchored" data-anchor-id="social-network-analysis-chapter-3">Social Network Analysis: Chapter 3</h3>
+<ul>
+<li><p>Rosters in network analysis</p>
+<ul>
+<li><p>measurement error if list is not complete</p></li>
+<li><p>Thus, researchers tend to like an open nomination method.</p></li>
+</ul></li>
+<li><p>Boundedness in the digital era!?</p></li>
+<li><p>positional approach: researcher samples from among the occupants of particular formally defined positions or group memberships.</p>
+<ul>
+<li>what positions to include?</li>
+</ul></li>
+<li><p>snowball procedure</p>
+<ul>
+<li><p>somewhat dangerous to do.</p></li>
+<li><p>assumes the connnected segment of the network that forms the sample network is representative of all other segments of the network.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="networks-in-context-the-social-flow-of-political-information.-robert-huckfeldt-john-sprague.-1987" class="level3">
+<h3 class="anchored" data-anchor-id="networks-in-context-the-social-flow-of-political-information.-robert-huckfeldt-john-sprague.-1987">Networks in Context: The Social Flow of Political Information. Robert Huckfeldt, John Sprague. (1987)</h3>
+<section id="abstract-4" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-4">Abstract</h4>
+<p>We examine the effects of individual political preferences and the distribution of such preferences on the social transmission of political information. Our data base combines a 1984 election survey of citizens in South Bend, Indiana with a subsequent survey of people with whom these citizens discuss politics. Several findings emerge from the effort. First, individuals do purposefully construct informational networks corresponding to their own political preferences, and they also selectively misperceive socially supplied political information. More important, both of these individual-level processes are shown to be conditioned by constraints imposed due to the distribution of political preferences in the social context. Thus, individual control over socially supplied political information is partial and incomplete. Finally, these information-transmitting processes interact with the social context in a manner that favors partisan majorities while undermining political minorities.</p>
+</section>
+<section id="bumper-sticker-3" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker-3">Bumper Sticker</h4>
+<p>Difference in perceptions depending on minority/majority status</p>
+</section>
+<section id="questions" class="level4">
+<h4 class="anchored" data-anchor-id="questions">Questions:</h4>
+<ul>
+<li><p>Does political preference determine the supply of information, or does the supply of information determine political preference?</p>
+<ul>
+<li><p>almost certainly runs both ways.</p></li>
+<li><p>Focus:</p>
+<ul>
+<li><p>the informational networks through which individuals send and receive political information</p></li>
+<li><p>and the larger but still very immediate contexts within which individuals reside.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Are the main respondents’ perceptions of discussion partners affect by the political preferences of, andby the political preferences surrounding, the main respondents?</p></li>
+<li><p>Are main respondents likely to have discussion partners whose objectively defined (Self-reported) preferences correspond to the political preferences of, and the political preferences surrounding, the main respondents (in this instance the social context becomes important as it affects the supply of particular political preferences and, thus, the opportunities for discussion with people holding particular preferences)?</p></li>
+<li><p>Do the main respondents systematically misperceive discussant preferences a function of their own preferences as a function of the preferences surrounding them?</p></li>
+<li><p>How powerful are your preferences and the preferences that surround you in determining the likelihood that you will have a discussion partner who reports a particular preference?</p></li>
+</ul>
+</section>
+<section id="backgroundtheory-1" class="level4">
+<h4 class="anchored" data-anchor-id="backgroundtheory-1">Background/Theory</h4>
+<ul>
+<li><p>“Politics is a social activity embedded within structured patterns of social interaction”</p></li>
+<li><p>Political information is a social process!</p></li>
+<li><p>“Political behavior may be understood in terms of individuals tied together by, and located within, networks, groups, and other social formations that largely determine their opportuntities for the exchange of meaningful political information. In short, environment plays a crucial role in affecting the social flow of political information.”</p></li>
+<li><p>The environment bounds the conversation!</p></li>
+<li><p>Downs: fully rational for individuals to reduce information costs by obtaining political information from personal contacts.</p></li>
+<li><p>If individuals selectively screen the political information they receive through social interaction, they may also systematically misperceive its content.</p>
+<ul>
+<li><p>measurement artifact.</p></li>
+<li><p>misperception on the individuals part is possible because they recollecting interactions.</p></li>
+</ul></li>
+<li><p>Three individual level factors undermine the potential impact of socially transmitted information:</p>
+<ul>
+<li><p>1) citizens choose with whom to discuss politics</p></li>
+<li><p>2) they reinterpret dissonance-producing information</p></li>
+<li><p>3) they may deliberately misprepresent their true opinions.</p></li>
+</ul></li>
+<li><p>People don’t think or determine a lot of decisions on politics, but it does matter!</p></li>
+<li><p>Thus, individual choice regarding associational patterns and political discus sions may be seen as operating within the opportunities and constraints imposed by a given social context</p></li>
+</ul>
+<pre><code>-   stochastic process</code></pre>
+<ul>
+<li><p>Finifter and Berger show examples of certain groups isolating from the larger network structure.</p></li>
+<li><p>Talks about nationalization of political information</p>
+<ul>
+<li><p>argues this should actually strengthen the role of socially transmitted new information. INTERESTING!</p>
+<ul>
+<li>“Hence, readily available political information from the modern mass media may, because of its increased uniformity and homogeneity, increase rather than decrease the political influence potential of the social context.”</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Contexts:</strong> structurally imposed. External!</p></li>
+<li><p><strong>Networks</strong>: individually constructed.</p></li>
+</ul>
+</section>
+<section id="data-1" class="level4">
+<h4 class="anchored" data-anchor-id="data-1">Data</h4>
+<ul>
+<li><p>South Bend, Indiana</p></li>
+<li><p>1984 presidential election</p></li>
+<li><p>Purpose: locate mass political behavior – political attitudes, candidate preferences, party preferences, policy positions, and political activities – within the social patterns of everyday life.</p></li>
+<li><p>three wave</p></li>
+<li><p>1500 respondents during summer and fall of 1984</p></li>
+<li><p>16 different South Bend-area neighborhoods</p>
+<ul>
+<li><p>maximize social homogeneity within the neighborhoods.</p></li>
+<li><p>and maximize BETWEEN the neighborhoods.</p></li>
+<li><p>neighborhoods vary considerably.</p></li>
+</ul></li>
+<li><p>defined geographically</p>
+<ul>
+<li>social context is more broad and ambiguous.</li>
+</ul></li>
+<li><p>Networks measured from that of the main respondent AND the political discussant named by the main respondent.</p></li>
+<li><p>names of three people with whom they were most. likely to have discussions about politics with.</p>
+<ul>
+<li>if couldn’t name anyone, respondents were asked with whom they were likely to have informal conversations with.</li>
+</ul></li>
+<li><p>CONTEXTS create opportunities for social interaction which are not necessarily bounded by the original context.</p></li>
+<li><p>1) examine the objective correspondence between the preferences of main respondents and their discussants</p></li>
+<li><p>2) examine the perceptions of the political preferneces of discussants held by main respondents</p></li>
+<li><p>3) examine the accuracy of these perceptions.</p></li>
+<li><p>LOGIT</p></li>
+</ul>
+</section>
+<section id="dependent-variable" class="level4">
+<h4 class="anchored" data-anchor-id="dependent-variable">Dependent Variable:</h4>
+<ul>
+<li><p>Reagan discussant or not</p></li>
+<li><p>perceived Reagan discussant or not</p></li>
+</ul>
+</section>
+<section id="results-1" class="level4">
+<h4 class="anchored" data-anchor-id="results-1">Results</h4>
+<ul>
+<li><p>Citizens who live in contexts dominated by Reagan supporters more likely to perceive their discussion partners as Reagan voters, but these citizens are also more likely to have discussion partners who are Reagan voters.</p></li>
+<li><p>voters tend to be accurate in their perceptions of discussion partners who agree with their own preferences: Reagan voters tend to recognize other Reagan voters, and Mondale voters tend to recognize other Mondale voters.</p></li>
+<li><p>In both instances the social context has at least a modest effect upon perceptual accuracy. But now examine disagreeing dyads.</p></li>
+<li><p>The greatest opportunity for contextual effects upon perceptual accuracy arises in discussion dyads that involve heterogeneous preferences.</p></li>
+<li><p><strong>Reagan voters are more likely to perceive Mondale discussants accurately in Mondal contexts and less likely to perceive them accurately in Reagan contexts.</strong></p></li>
+<li><p>majority versus minority status for a particular political preference in the social context emerges as a crucial consideration in cases where there is objective political disagreement between discussion partners.</p></li>
+<li><p>holders of a minority preference are more likely to perceive the majority preference accurately: they are more likely to perceive their discussion partner’s political preference correctly if disagreement is present within the dyad. Social context transforms the nature of discussion dyads even between discussion partners who share the same preference.</p></li>
+</ul>
+</section>
+<section id="discussion" class="level4">
+<h4 class="anchored" data-anchor-id="discussion">Discussion:</h4>
+<ul>
+<li><p>politically supportive social context sustains the receiver’s misperception of dissonance-producing, socially transmitted political information</p></li>
+<li><p>members of the political minority accurately perceive members of the majority, while members of the majority do not accurately perceive members of the minority.</p></li>
+<li><p>minorities are aware of their own minority status!</p></li>
+<li><p>dissonant information is frequently ignored by members of the majority.</p></li>
+<li><p>individuals do purposefully attempt to construct informational networks corresponding to their own political preferences. HOWEVER, it is not independent from socially determined conditions of supply. – from the contextually imposed opportunity (or lack of opportunity) for social interaction with people who hold various political preferences.</p></li>
+<li><p>Minorities can perceive they are a minority.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="week-4-readings" class="level2">
+<h2 class="anchored" data-anchor-id="week-4-readings">Week 4 Readings:</h2>
+<section id="discussion-networks.-scott-mcclurg-casey-klofstad-anand-sokhey" class="level3">
+<h3 class="anchored" data-anchor-id="discussion-networks.-scott-mcclurg-casey-klofstad-anand-sokhey">Discussion Networks. Scott McClurg; Casey Klofstad; Anand Sokhey</h3>
+<section id="abstract-5" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-5">Abstract:</h4>
+<p>While political network research is often a holistic enterprise, the network paradigm can also be used to study individual behavior. Speci cally, rather than focusing on full network structures, a well-established area of research considers individuals’ “core” networks, their perceptions of interpersonal connections, and the consequences of said micro-social environments for myriad political outcomes and processes. This chapter examines this research tradition, tracing the history of its use in the study of political behavior. It begins with discussion of network research, paying speci c attention to “egocentric” network name generator techniques. It then outlines several challenges to this research paradigm: (1) the dif culty of making causal inferences, (2) debates over concept and measurement, and (3) questions about mechanisms of in uence. The chapter concludes by reviewing advances in the eld that have developed from these challenges and points toward next steps in this research agenda, focused on the connected citizenry.</p>
+</section>
+<section id="bumper-sticker-4" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker-4">Bumper Sticker:</h4>
+<p>Networks matter in politics at multiple levels of analysis.</p>
+</section>
+<section id="backgroundtheory-2" class="level4">
+<h4 class="anchored" data-anchor-id="backgroundtheory-2">Background/Theory:</h4>
+<ul>
+<li><p>Egocentric networks - small group of individuals to which a person is (often closely) connected–and (2) the impacts of such networks on individuals’ attitudes and behaviors.</p></li>
+<li><p>Research organized around two points:</p>
+<ul>
+<li><p>1) work in this vein argues that individuals’ political choices are a product of both their own traits and their surroundings – huckfeldt and Sprague</p>
+<ul>
+<li>constrained by social context</li>
+</ul></li>
+<li><p>2) work tended to assume that observed network influences are indeed causal.</p></li>
+</ul></li>
+<li><p>Three main challenges of egocentric studies: 1) causal inference, 2) measurement, and 3) mechanisms of influence.</p></li>
+</ul>
+</section>
+<section id="history" class="level4">
+<h4 class="anchored" data-anchor-id="history">History:</h4>
+<ul>
+<li><p>Roots in Columbia school. – foundational study for networks without specifically discussing networks per se.</p></li>
+<li><p>Networks are not contexts.</p></li>
+<li><p>Huckfeldt and Sprague: these scholars found a relationship between network formation (i.e., discussant selection) and social context (i.e., the supply of possible discussion partners in an environment)</p>
+<ul>
+<li><p>Second, they demonstrated that political preferences communicated via discussion networks were related to observed variance in political behavior</p>
+<ul>
+<li>third, they used and adapted name generators.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="measurement" class="level4">
+<h4 class="anchored" data-anchor-id="measurement">Measurement</h4>
+<ul>
+<li><p>Name Generators</p>
+<ul>
+<li><p>1985 in GSS – first standard discussion network question:</p>
+<ul>
+<li><p>“From time to time, most people discuss important matters with other people. Looking back over the last six months–who are the people with whom you discussed matters important to you. Just tell me their first names or initials.”</p>
+<ul>
+<li>respondents list “alters” – and then asked to describe those alters.</li>
+</ul></li>
+</ul></li>
+<li><p>Huckfeldt and Sprague – South Bend study adapted name generator – “compound name generator”:</p>
+<ul>
+<li><p>“We are interested in the sort of political information and opinions people get from each other. Can you give me the FIRST names of the three people you talked with most about the events of the past election cycle? These people might be from your family, from work, from the neighborhood, from church, from some other organizations you belong to, or they might be somewhere else.”</p>
+<ul>
+<li>compound name generators generally perform well when it comes to sampling individuals’ political networks. Names generated by important matters and political matters are largely the same!</li>
+</ul></li>
+</ul></li>
+<li><p>some problems – what constitutes “important matters”?</p>
+<ul>
+<li>name generators under-report disagreement about politics.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="causality" class="level4">
+<h4 class="anchored" data-anchor-id="causality">Causality:</h4>
+<ul>
+<li><p>name generators take a long time and thuse are rarely used in multiple waves of longitudinal surveys.</p></li>
+<li><p>exposure to political discussion leads individuals to become more active in politics.</p>
+<ul>
+<li><p>strong evidence but causal inference is skeptical</p>
+<ul>
+<li><p>1) rather than discussion leading to participation, participating in politicas may cause one to talk about politics</p></li>
+<li><p>2) individuals who choose to be politically active might also choose to associate with people who are also politically active and thus interested in talking about politics</p></li>
+<li><p>3) a factor that has yet to be accounted for, or that cannot be accounted for, may explain the relationship between discussion and participation.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="general-findings" class="level4">
+<h4 class="anchored" data-anchor-id="general-findings">General findings:</h4>
+<ul>
+<li><p>networks are heuristics that are grounded in the political preferences of network members.</p></li>
+<li><p>some work indicates that the influence of alters’ preferences depends on how clearly egos perceive them – huckfeldt.</p></li>
+<li><p>Socially supplied to individual political behavior</p>
+<ul>
+<li><p>1) learning models – explicit information exchange the idea is that information can change choices and behaviors, and that individuals are influenced by the network providing such resources via interpersonal interaction.</p></li>
+<li><p>2) information shortcut models – need not involve explicit interaction processes. Rather, an individual may perceive the network and adjust his or her behavior in response.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="future-directions" class="level4">
+<h4 class="anchored" data-anchor-id="future-directions">Future Directions:</h4>
+<ul>
+<li><p>experimental methods to demonstrate causality</p></li>
+<li><p>panel surveys</p></li>
+<li><p>Three theoretical questions:</p>
+<ul>
+<li><p>1) there has been little attention given to basic/underlying concepts</p></li>
+<li><p>2) theory and measuremnet</p>
+<ul>
+<li><p>there is little work that examines the differences between an ego’s perceptions of the network and the actual information being exchanged between egos and alters</p>
+<ul>
+<li>this is hard to do.</li>
+</ul></li>
+<li><p>Data is limited in many ways — most of the time we just have counts of the number of “democrats” in our network - what does this actually tell us?</p></li>
+</ul></li>
+<li><p>3) structural considerations</p></li>
+</ul></li>
+<li><p>Less attention has been given to online networks and the connection between the two!</p>
+<ul>
+<li>Are online versus in person interactions in competition?</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="legislative-networks.-nils-ringe-jennifer-nicoll-victor-wendy-tam-cho" class="level3">
+<h3 class="anchored" data-anchor-id="legislative-networks.-nils-ringe-jennifer-nicoll-victor-wendy-tam-cho">Legislative Networks. Nils Ringe; Jennifer Nicoll Victor; Wendy Tam Cho</h3>
+<section id="abstract-6" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-6">Abstract:</h4>
+<p>Legislatures are naturally interactive institutions. Creating laws, engaging in representation and oversight, and serving constituents are social processes. Legislators have many connections with each other, some preexisting or natural and some created while in office. This chapter explores various ways to understand legislative politics through a relational lens. Legislators rely on networks for a variety of functions, including collaboration, information diffusion, policy coordination, coalition building, and voting. Relationships are a fundamental aspect of how legislators, and those who interact with them, function. The chapter examines the history of how networks have been studied in legislatures and describes various challenges this field of study has recently overcome, as well as other challenges yet to be solved in studying legislative politics using networks. It relays the dominant existing applications and methods in this subfield and suggests several fruitful avenues for future research.</p>
+</section>
+<section id="bumper-sticker-5" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker-5">Bumper Sticker:</h4>
+</section>
+<section id="background-3" class="level4">
+<h4 class="anchored" data-anchor-id="background-3">Background:</h4>
+<ul>
+<li><p>legislators develop personal relationships with one another – which can affect politically relevant behavior.</p></li>
+<li><p>How do lawmakers choose to connect themselves to others, given the institutional structures they find themselves in?</p>
+<ul>
+<li>And how do other features of legislatures, like their size or the number of legislative parties, shape those patterns?</li>
+</ul></li>
+</ul>
+</section>
+<section id="early-history-of-networks-and-legislature" class="level4">
+<h4 class="anchored" data-anchor-id="early-history-of-networks-and-legislature">Early History of Networks and Legislature</h4>
+<ul>
+<li><p>Routt: personal contacts between human beings lie at the very heart of all problems of government and society”</p>
+<ul>
+<li>basic political prerequisite…necessary for survival in public office</li>
+</ul></li>
+<li><p>Samuel Patterson looked at interpseronsal contacts between members of the Wisconsin Assembly.</p></li>
+<li><p>I wonder what a ego network would look like among legislators – NOT asking within the legislator</p>
+<ul>
+<li>like just applying an egonet to a sample of legislators. Like a Fenno type study!</li>
+</ul></li>
+<li><p>friendship provides the oil that lubricates the legislative process</p></li>
+</ul>
+</section>
+<section id="challenges" class="level4">
+<h4 class="anchored" data-anchor-id="challenges">Challenges:</h4>
+<ul>
+<li><p>which mode?</p></li>
+<li><p>most are two mode in legislative network data.</p>
+<ul>
+<li>where some object or actor, i, is connected with some other object or actor j</li>
+</ul></li>
+<li><p>relies on proxies for interpersonal relationships</p>
+<ul>
+<li>information is more guarded now</li>
+</ul></li>
+<li><p>Some benefits:</p>
+<ul>
+<li><p>finite total population of members</p></li>
+<li><p>can identify all possible nodes – boundary is clearly specified.</p></li>
+</ul></li>
+<li><p>observed ties and networks are endogenous</p>
+<ul>
+<li>whether an observed commonality between actors is the product of shared characteristics (homophily) or because of some causal peer effect.</li>
+</ul></li>
+</ul>
+</section>
+<section id="measuring-ties" class="level4">
+<h4 class="anchored" data-anchor-id="measuring-ties">Measuring Ties</h4>
+<ul>
+<li>cosponsorpship</li>
+</ul>
+</section>
+<section id="information" class="level4">
+<h4 class="anchored" data-anchor-id="information">Information</h4>
+<ul>
+<li><p>Weak ties briding structural holes</p></li>
+<li><p>weak ties can increase legislative success among legislators</p></li>
+<li><p>Masket finds spatial proximity increases the likelihood that two legislators cast like-votes because, he argues, lawmakers take cues from those closest to them geographically.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="week-5-readings" class="level2">
+<h2 class="anchored" data-anchor-id="week-5-readings">Week 5 Readings:</h2>
+<section id="scott-chapter-4-organizing-and-analyzing-network-data" class="level3">
+<h3 class="anchored" data-anchor-id="scott-chapter-4-organizing-and-analyzing-network-data">Scott Chapter 4: Organizing and Analyzing Network Data</h3>
+<section id="matrices-and-relational-data" class="level4">
+<h4 class="anchored" data-anchor-id="matrices-and-relational-data">Matrices and Relational Data</h4>
+<ul>
+<li>rows are FROM and columns are affiliations (to)</li>
+</ul>
+</section>
+</section>
+<section id="turnout-in-a-small-world.-james-fowler.-2005" class="level3">
+<h3 class="anchored" data-anchor-id="turnout-in-a-small-world.-james-fowler.-2005">Turnout in a Small World. James Fowler. 2005</h3>
+<section id="abstract-7" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-7">Abstract:</h4>
+<p>This paper investigates between-voter interactions in a social network model of turnout. It shows that if 1) there is a small probability that voters imitate the behavior of one of their acquaintances, and 2) individuals are closely connected to others in a population (the “smallworld” effect), then a single voting decision may affect dozens of other voters in a “turnout cascade.” If people tend to be ideologically similar to other people they are connected to, then these turnout cascades will produce net favorable results for their favorite candidate. By changing more than one vote with one’s own turnout decision, the turnout incentive is thus substantially larger than previously thought. We analyze conditions that are favorable to turnout cascades and show that the effect is consistent with real social network data from Huckfeldt and Sprague’s South Bend and Indianapolis-St.&nbsp;Louis election surveys. We also suggest that turnout cascades may help explain over-reporting of turnout and the ubiquitous belief in a duty to vote.</p>
+</section>
+<section id="bumper-sticker-6" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker-6">Bumper Sticker:</h4>
+<p>Early version of Rolfe</p>
+</section>
+<section id="background-4" class="level4">
+<h4 class="anchored" data-anchor-id="background-4">Background</h4>
+<ul>
+<li><p>“I develop a model of turnout that suggests a single person’s decision to vote can affect the turnout decision of several other people.”</p></li>
+<li><p>large scale social networks tend to exhibit the small world phenomenon.</p>
+<ul>
+<li>in spite of the large number of people in the network, there is a relatively short average path length connecting any two people through intermediaries.</li>
+</ul></li>
+<li><p>large scale networks tend to be sparse, lower average degree than smaller networks. Clustered.</p>
+<ul>
+<li><p>The clustering coefficient is a measure of this property, giving the probability that any two individuals to which a person is tied also have a tie between them (in other words, how likely is it that your friend’s friend is also your friend?)</p></li>
+<li><p>short average path.</p></li>
+</ul></li>
+<li><p>I also make the assumption that ties are bilateral so that influence can run equally in either direction. This is contrary to another finding by Huckfeldt and Sprague (1991). When asked to name other people with whom they discuss politics, many people do not name the people who originally named them as discussants (even between husbands and wives!). However, their survey design may be responsible in this case since discussants were not asked directly if they knew or spoke with the person who named them.</p></li>
+</ul>
+</section>
+<section id="results-2" class="level4">
+<h4 class="anchored" data-anchor-id="results-2">Results:</h4>
+<ul>
+<li><p>The high concentration of shared interests in social networks may magnify the incentive to participate</p></li>
+<li><p>In the language of Granovetter (1973), people with a mix of “weak” and “strong” ties can initiate larger turnout cascades than people with all weak or all strong ties, and they therefore have a greater incentive to vote and to influence others to do the same.</p></li>
+<li><p>This finding has important implications for the literature on social capital (e.g.&nbsp;Putnam 2000). This literature argues that civic engagement will be higher in societies with more clustered social ties. The model suggests that this is true, but only up to a certain point. When relationships become too clustered, individuals lose touch with the rest of the social network and are less able to influence participation beyond their circle of acquaintances.</p>
+<ul>
+<li>interesting! cant be too fractured!</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="robbins-chapter-4" class="level3">
+<h3 class="anchored" data-anchor-id="robbins-chapter-4">Robbins Chapter 4</h3>
+<section id="snowball-samples" class="level4">
+<h4 class="anchored" data-anchor-id="snowball-samples">Snowball samples:</h4>
+<ul>
+<li><p>start with seed of actors</p>
+<ul>
+<li>then ask about those they list.</li>
+</ul></li>
+<li><p>snowball good because inferences applicable to the whole network using just the snowball data.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="need-to-read-barry-wellman-for-dissertation-see-scott-book-for-summary" class="level2">
+<h2 class="anchored" data-anchor-id="need-to-read-barry-wellman-for-dissertation-see-scott-book-for-summary">NEED TO READ: BARRY WELLMAN FOR DISSERTATION! SEE SCOTT BOOK FOR SUMMARY</h2>
+</section>
+<section id="week-6-readings" class="level2">
+<h2 class="anchored" data-anchor-id="week-6-readings">Week 6 ReadIngs</h2>
+<section id="power-and-centrality-a-family-of-measure.-phillip-bonacich" class="level3">
+<h3 class="anchored" data-anchor-id="power-and-centrality-a-family-of-measure.-phillip-bonacich">Power and Centrality: A Family of Measure. Phillip Bonacich</h3>
+<section id="abstract-8" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-8">Abstract:</h4>
+<p>Although network centrality is generally assumed to produce power, recent research shows that this is not the case in exchange networks. This paper proposes a generalization of the conept of centrality that accounts for both the usual positive relationship between power And centrality and Cook et al.’s recetn exceptional results.</p>
+</section>
+<section id="background-5" class="level4">
+<h4 class="anchored" data-anchor-id="background-5">Background</h4>
+<ul>
+<li><p>Previous lit says most central = most power</p>
+<ul>
+<li>this is suspect.</li>
+</ul></li>
+<li><p>Author argues it is advantageous to be connected to those who have few options; power comes from being connected to those who are powerless.</p>
+<ul>
+<li><p>being connected to powerful others who have many potential trading partners reduces one’s bargaining power.</p>
+<ul>
+<li>we are talking about bargaining situations.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="week7-readings" class="level2">
+<h2 class="anchored" data-anchor-id="week7-readings">Week7 Readings:</h2>
+<section id="social-contagion-and-innovation-cohesion-versus-structural-equivalence" class="level3">
+<h3 class="anchored" data-anchor-id="social-contagion-and-innovation-cohesion-versus-structural-equivalence">Social Contagion and Innovation: Cohesion versus Structural Equivalence</h3>
+<section id="abstract-9" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-9">Abstract</h4>
+<p>Two classes of network models are used to reanalyze a sociological classic often cited as evidence of social contagion in the diffusion of technological innovation: Medical Innovation. Debate between the cohesion and structural equivalence models poses the following question for study: Did the physicians resolve the uncertainty of adopting the new drug through conversations with colleagues (cohe sion) or through their perception of the action proper for an occu pant of their position in the social structure of colleagues (structural equivalence)? The alternative models are defined, compared, and tested. Four conclusions are drawn: (a) Contagion was not the dominant factor driving tetracycline’s diffusion. Where there is evidence of contagion, there is evidence of personal preferences at work.</p>
+</section>
+<section id="bumper-sticker-7" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker-7">Bumper Sticker</h4>
+<p>Structural Equivalence = contagion.</p>
+</section>
+<section id="question" class="level4">
+<h4 class="anchored" data-anchor-id="question">Question</h4>
+<p>Does structural equivalence or cohesion predict contagion?</p>
+</section>
+<section id="backgroundtheory-3" class="level4">
+<h4 class="anchored" data-anchor-id="backgroundtheory-3">Background/Theory</h4>
+<ul>
+<li><p>Physical proximity alone has some capacity to cause social contagion. The closer the physical contact is between ego and alter, the more likely that alter’s adoption will trigger ego’s.</p>
+<ul>
+<li>some geography work on social contagion: Cliff et al.&nbsp;1981; and epidemiology Bailey 1976 and social network analysis – White, Burton, and Dow 1981</li>
+</ul></li>
+<li><p>Cohesion</p>
+<ul>
+<li><p>focuses on socialization between ego and alter. The more frequent and empathic the communication is between ego and alter, the more likely that alter’s adoption will trigger ego’s.</p></li>
+<li><p>Homan 1950 <em>The Human Group</em></p></li>
+<li><p>Festinger, Schachter, and Black (1950) study of housing, friendship, and involvement in a voluntary association provides a research exemplar</p></li>
+<li><p>Sherif 1935 – experimental studies of interpersonal influences created by physical proximity between socially similar people.</p></li>
+<li><p>” Confronted with the need to make a decision in an ambiguous situation–a situation that does not speak for itself–people turn to each other for cues as to the structure of the situation.</p></li>
+</ul></li>
+<li><p>Structural Equivalence</p>
+<ul>
+<li>this model highlights the competition between ego and alter.</li>
+</ul></li>
+</ul>
+</section>
+<section id="findings" class="level4">
+<h4 class="anchored" data-anchor-id="findings">Findings</h4>
+<ul>
+<li><p>two factors drove the diffusion process: personal predispositions and contagion by structural equivalence.</p></li>
+<li><p>structural equivalence is the principle more likely to generate social pressure.</p></li>
+<li><p>cohesion is much weaker in the aggregate than SE.</p></li>
+</ul>
+</section>
+</section>
+<section id="partisan-webs-information-exchange-and-party-networks" class="level3">
+<h3 class="anchored" data-anchor-id="partisan-webs-information-exchange-and-party-networks">Partisan Webs: Information Exchange and Party Networks</h3>
+<section id="abstract-10" class="level4">
+<h4 class="anchored" data-anchor-id="abstract-10">Abstract</h4>
+<p>What is a party? We argue that the formal party apparatus is only one part of an extended network of interest groups, media, 527s, and candidates. We systematically measure a portion of this network by tracking transfers of names between political organizations. Our analysis reveals two distinct and polarized networks corresponding to a more liberal Democratic group and a more conservative Republican group. Formal party organizations, like the Democratic National Committee and the Republican National Committee, tend to receive information within their respective networks, which suggests that other groups serve to funnel information toward the formal party.</p>
+</section>
+<section id="bumper-sticker-8" class="level4">
+<h4 class="anchored" data-anchor-id="bumper-sticker-8">Bumper Sticker</h4>
+<p>formal party orgs are info receivers</p>
+<ul>
+<li>they are not the whole party but important players.</li>
+</ul>
+</section>
+<section id="backgroundtheory-4" class="level4">
+<h4 class="anchored" data-anchor-id="backgroundtheory-4">Background/Theory</h4>
+<ul>
+<li><p>Parties as networks of cooperating actors</p>
+<ul>
+<li>a party is broadly defined to include its candidates and officeholders; its formal apparatus; loyal donors, campaign workers, and activists; allied interest groups; and friendly media outlets.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="week-8-lecture" class="level2">
+<h2 class="anchored" data-anchor-id="week-8-lecture">Week 8 Lecture</h2>
+<ul>
+<li><p>Equivalence</p>
+<ul>
+<li><p>lots of definitions, based on relations</p>
+<ul>
+<li><p>structural</p></li>
+<li><p>automorphic</p>
+<ul>
+<li>relaxed version</li>
+</ul></li>
+<li><p>regular</p></li>
+</ul></li>
+<li><p>looking for equivalence</p>
+<ul>
+<li><p>relies on understanding the similarity/dissimilarity of actors</p></li>
+<li><p>searching for patterns</p></li>
+<li></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="part-2-measures" class="level1">
+<h1>Part 2: Measures</h1>
+</section>
+<section id="part-3-positions-and-sub-structures-visualization" class="level1">
+<h1>Part 3: Positions and (Sub-)Structures; Visualization</h1>
+</section>
+<section id="part-4-hypothesis-testingnetwork-inference-additional-considerationsdirections" class="level1">
+<h1>Part 4: Hypothesis Testing/Network Inference; Additional Considerations/Directions</h1>
+<section id="lecture-after-spring-break" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-after-spring-break">Lecture after spring break</h2>
+<ul>
+<li><p>Inference:</p>
+<ul>
+<li><p>generalizability/reproducibility</p></li>
+<li><p>testing hypotheses</p></li>
+</ul></li>
+<li><p>Problem in network approaches</p>
+<ul>
+<li><p>non-independent sampling</p></li>
+<li><p>work out probability distributions</p></li>
+</ul></li>
+<li><p>Randomization inference</p>
+<ul>
+<li><p>important</p></li>
+<li></li>
+</ul></li>
+</ul>
+</section>
+<section id="navigating-the-range-of-statistical-tools-for-inferential-network-analysis.-canmer-leifeld-mcclurg-and-rolfe.-2017." class="level2">
+<h2 class="anchored" data-anchor-id="navigating-the-range-of-statistical-tools-for-inferential-network-analysis.-canmer-leifeld-mcclurg-and-rolfe.-2017.">Navigating the Range of Statistical Tools for Inferential Network Analysis. Canmer, Leifeld, McClurg, and Rolfe. 2017.</h2>
+<section id="abstract-11" class="level3">
+<h3 class="anchored" data-anchor-id="abstract-11">Abstract</h3>
+<p>The last decade has seen substantial advances in statistical techniques for the analysis of network data, as well as a major increase in the frequency with which these tools are used. These techniques are designed to accomplish the same broad goal, statistically valid inference in the presence of highly interdependent relationships, but important differences remain between them. We review three approaches commonly used for inferential network analysis—the quadratic assignment procedure, exponential random graph models, and latent space network models—highlighting the strengths and weaknesses of the techniques relative to one another. An illustrative example using climate change policy network data shows that all three network models outperform standard logit estimates on multiple criteria. This article introduces political scientists to a class of network techniques beyond simple descriptive measures of network structure, and it helps researchers choose which model to use in their own research.</p>
+</section>
+<section id="the-problem-of-interdependence" class="level3">
+<h3 class="anchored" data-anchor-id="the-problem-of-interdependence">The Problem of Interdependence</h3>
+<ul>
+<li><p>An assumption we make in regression is that observations are iid - independent and identically distributed.</p>
+<ul>
+<li><p>There is no interdependence between observations</p>
+<ul>
+<li>this is a strong assumption in many cases and we need to understand how to deal with it when we believe it does not hold</li>
+</ul></li>
+</ul></li>
+<li><p>It is impossible to describe political and social activity without descirbing how actors interact with, react to, adapt to, and influence one another in complex and dynamic ways.</p></li>
+<li><p>when independence is violated, the joint likelihood of a logit has bias.</p></li>
+</ul>
+</section>
+<section id="quadratic-assignment-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="quadratic-assignment-procedure">Quadratic Assignment Procedure</h3>
+<ul>
+<li><p>nonparametric test for the significance of an association between two matrices with complex dependencies.</p></li>
+<li><p>MRQAP can be interpreted the same as regular regression.</p></li>
+</ul>
+</section>
+<section id="exponential-random-graph-models-ergms" class="level3">
+<h3 class="anchored" data-anchor-id="exponential-random-graph-models-ergms">Exponential Random Graph Models (ERGMs)</h3>
+<ul>
+<li><p>ERGMs require two assumptions:</p>
+<ul>
+<li><p>one must assume that there is equal probability of observing any two networks with the same values of the statistics included in the specification.</p>
+<ul>
+<li>assume the model is correctly specified.</li>
+</ul></li>
+<li><p>the observed network exhibits the average value of those satistics over the networks that could have been observed.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="latent-space-network-models" class="level3">
+<h3 class="anchored" data-anchor-id="latent-space-network-models">Latent Space Network Models</h3>
+<ul>
+<li><p>ties can be transitive.</p></li>
+<li><p>less flexible than ERGM because substantive theory related ot the dependencies cannot be tested.</p></li>
+<li><p>attractive if low amount of isolates, if parsimony is not of primary importance, not enough observations, interdependencies are not theoretically interesting, and situations where it makes sense to visualize and interpret the latent positions.</p></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2024,
+  author = {Neilon, Stone},
+  title = {Networks},
+  date = {2024-05-15},
+  url = {https://stoneneilon.github.io/notes/Data_comps/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-neilon2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Neilon, Stone. 2024. <span>“Networks.”</span> May 15, 2024. <a href="https://stoneneilon.github.io/notes/Data_comps/">https://stoneneilon.github.io/notes/Data_comps/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

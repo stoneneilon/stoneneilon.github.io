@@ -1,0 +1,1458 @@
+---
+title: "Networks"
+description: "Network Analysis with Anand Sokhey"
+author:
+  - name: Stone Neilon
+    url: https://stoneneilon.github.io/
+    orcid: 0009-0006-6026-4384
+    affiliation: PhD student of political science @ The University of Colorado Boulder
+    affiliation-url: https://www.colorado.edu/polisci/people/graduate-students/stone-neilon
+date: 05-15-2024
+categories: [Methods, 2026, Spring] # self-defined categories
+citation: 
+  url: https://stoneneilon.github.io/notes/Data_comps/
+image: jordan.jpeg
+draft: true # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+# Part 1: Foundations
+
+What is a network?
+
+-   Networks are patters of relationships that connect individuals, institutions, or objects. These can also be thought of "actors" -- the unit of analysis and the relationships they have between each other.
+
+-   Network analysis: takes into account present and absent ties
+
+-   Network structure: patter or form of the network
+
+We make some assumptions in network analysis:
+
+1.  structural relations, not attributes
+2.  networks affect perceptions, beliefs, and actions via structural mechanisms. *Choice and constraint*
+3.  Structural relations are dynamics processes
+
+Actors and Relations
+
+-   The 2 indispensable elements of any social network
+
+    -   Actors (node or ego or vertex)
+
+    -   Relations (edges or arcs)
+
+        -   contact, connect, or tie between a pair of actors
+
+            -   dyad
+
+            -   directed, non-directed
+
+Week 2 Lecture:
+
+-   We want to be careful in how we talk about networks.
+
+-   Graphs and Key Concepts
+
+    -   Social networks can be represented as graphs. Social networks = graphs.
+
+    -   graphs are made up of nodes that are connected by links.
+
+    -   graphs contain vertices = nodes and a set of links = edges
+
+    -   graph is a mathematical object.
+
+    -   node = point, vertex, actor, individual
+
+    -   link = line, edge, tie, connection, relationship
+
+    -   "adjacent" = they are talking about a connection between nodes/vertices.
+
+    -   $(u,v)\in E(G)$
+
+        -   note the lowercase. We are talking about particular nodes.
+
+        -   "incident" = if a to b and a to c, then b and c are incident to a.
+
+            -   aka degree
+
+    -   complete graph = all possible ties exist
+
+    -   not a complete graph, but a connected graph
+
+    -   not a connected graph.
+
+    -   Component - the set of all points that constitutes a connected sub-graph within a network
+
+    -   main component - the largest component within a network
+
+    -   Minor component - a component that is smaller than the main component - there may be many minor components
+
+    -   Pendants - a node that only has one link to a network
+
+    -   isolate - no nodes.
+
+-   Matrices and Network Data: Some Basics --
+
+    -   adjacency matrix
+
+        -   each cell = relationship between actors 0 or 1.
+
+        -   row = sender
+
+        -   column = receiver
+
+        -   a 1 indicates the presence of a link, while a zero indicates the absence of a link.
+
+    -   symmetric matrices - if matrices are symmetric, they may be represented by upper or lower triangle only.
+
+        -   the diagonal may be omitted in this case because it is reflexive.
+
+-   Mode - a set of nodes
+
+    -   another way to think of a mode is as a class of nodes in a network
+
+    -   network analysis typically involves only one mode
+
+    -   for example: friendships among a group of students would usually be modeled using one mode.
+
+-   Data Collection
+
+    -   boundary specification
+
+    -   network sampling
+
+    -   measurement of relations
+
+-   Where does our network begin and end?
+
+-   Measurement errors
+
+    -   false positive/negative node
+
+    -   False positive/negative edge
+
+    -   Falsely Aggregated/Disaggregated Node
+
+-   varying prompts will cause people to recall different things
+
+    -   people from your church...
+
+    -   people from your work...
+
+    -   Looking back over the week or two...
+
+-   perceptions of network vs actual network
+
+    -   which one are we more interested in?
+
+-   $n(n-1)$ -- directed. n = nodes
+
+-   $\frac{n(n-1)}{2}$ -- undirected
+
+-   number of ties divide by number of possible ties. = density
+
+-   Information bias
+
+-   Validity/Reliability
+
+-   Types of Data files:
+
+    -   excel/grids
+
+    -   DL files (data language)
+
+        -   lists
+
+        -   text files
+
+    -   VNA Files
+
+        -   Contains both dyadic and attribute data
+
+            -   NetDraw
+
+-   Scott talks about relational data
+
+-   Think about modes!
+
+-   p.59 of Robbins -- good resource
+
+-   Design choices have implications for:
+
+    -   interpretation
+
+    -   Validity
+
+    -   Feasibility
+
+-   Whole network -- all nodes
+
+-   Sampling:
+
+    -   snowball
+
+    -   respondent driven sampling -- hard to reach populations
+
+    -   internet crawlers
+
+-   Threats from report/Data issues:
+
+    -   omission errors
+
+    -   commission errors
+
+    -   edge/node attribution errors
+
+    -   data collection and retrospective errors
+
+    -   data management/entry
+
+    -   data aggregation
+
+    -   errors in secondary sources/data mining
+
+    -   formatting errors
+
+        -   web scraping
+
+        -   garbage in, garbage out
+
+-   Missingness
+
+-   Jaccard's Coefficient: number of actors nominated by informant at 2 different times/total \# of unique nominations for both times.
+
+    -   basically done because we might be worried about people being unreliable.
+
+-   McPherson - social isolation -- core network in the GSS. People weren't isolated -- they just didnt wanted to name them. Look at this and maybe revive for a paper?
+
+-   Keep attributes and adjacency/edge list data separate.
+
+-   A walk -- talking about a sequence of nodes and lines -- fancy way to say they are connected. Walk length is the number of lines it contains!
+
+    -   trail is a walk of distinct lines.
+
+        -   trail that begins and ends at the same node is called a circuit.
+
+-   path is route from node to another.
+
+-   summarizing a path-length distribution may be as informative as a degree distribution
+
+    -   Duncan Watts
+
+-   Distance - the length of the shortest path from node to another.
+
+-   Geodesic vs distance - geodesic and distance are highly similar concepts but technicality they are distinct
+
+    -   a geodesic is a path -e.g., DEG
+
+        -   a distance is a number.
+
+-   Degree = property of nodes
+
+-   distance between nodes do not matter.
+
+-   length = number of edges.
+
+-   shortest path between two nodes is a geodesic nodes
+
+-   Centrality:
+
+    -   a property of a node in a graph -- that is, the property of an individual or unit under study
+
+    -   one way people talk about this: prominence of that on point relative to others.
+
+    -   "actor has high degree of involvement in may relations"
+
+    -   prestige: actor initiates few relations but receives many directed ties. think citations
+
+    -   power is relational
+
+        -   choices actors can make.
+
+    -   CENTRALITY IS NODE LEVEL
+
+-   Centralization
+
+    -   NETWORK LEVEL
+
+    -   the overall cohesion or integration of the graph
+
+    -   compare most central point to all other points. Ratio of the actual sum of differences to the maximum possible sum of differences
+
+        -   ratio measure.
+
+-   Think about centrality and power mean in the network
+
+    -   access to info and ideas?
+
+    -   visibility?
+
+    -   control the flow of info?
+
+    -   ability to act together collectively?
+
+-   How to calculate centrality
+
+    -   degree - proportional to the number other nodes to which a node is linked
+
+    -   closeness - the sum of geodesic distances (shortest paths) to all other points in the graph
+
+    -   betweenness - the extent to which a particular point lies between other points in the graph.
+
+-   Eigenvector -- neighborhood of nodes around a particular node.
+
+-   the larger the degree the higher the maximum centrality you can have.
+
+Substructures: Components, Cores, and Cliques
+
+-   components: sub-graphs that are connected within, but disconnected between
+
+    -   digraphs
+
+        -   weak and strong component
+
+    -   Cycles
+
+        -   paths that returns to start point
+
+            -   bridge, connects two cycles
+
+-   cut-points
+
+    -   divide graphs into blocks
+
+    -   we can think of these as "weak" points but these nodes have strong betweeness.
+
+    -   `cutpoint()` is a function in `statnet` to find the cut points
+
+-   Why care about sub-structures?
+
+    -   they become important for inference.
+
+-   Brokers = actors/nodes who facilitate exchange among actors
+
+Layout
+
+-   three approaches
+
+    -   attribute based scatter plotting
+
+        -   useful when nodal characteristics matter for our story.
+
+            -   best when attributes are continuous.
+
+    -   ordination
+
+        -   positions based on multivariate techniques
+
+        -   there is a mathematical relationship between the distances and the social proximities of nodes
+
+            -   value
+
+            -   binary
+
+                -   compute geodesic distances
+
+    -   graph layout algorithms
+
+        -   three criteria
+
+            -   point distance corresponds to path distance
+
+            -   nodes should not obscure one another
+
+            -   equal-length lines
+
+-   Position and Structure
+
+    -   `components` -- function helps with descriptives -- subgroups!
+
+    -   Diameter -- measure of compactness -- network efficiency
+
+    -   equivalence: why?
+
+        -   important for making generalizations about social behavior and structure
+
+            -   recognizing your position
+
+            -   actors adapting to their environment.
+
+    -   Structural analysis: patterns of relations not attributes of actors
+
+## Week 2 Readings:
+
+### Robins, Ch. 1 -- The difference with social network research
+
+-   Network science: is a term popularized by burgeoning interest in network research.
+
+    -   encompasses many disciplines.
+
+    -   they are unified by a common conceptualization: **an assumption of complex structure among the entities being studied.**
+
+    -   Network science rests on the theoretical claim that outcomes are affected by a structure of relations among people: dependence among individuals.
+
+-   Social networks are importantly distinctive in one major regard: **the actors in the network have intentionality.**
+
+-   Nodes = unit of analysis -- people, organizations, *actors*
+
+-   lines = edges -- they are the tie/relationship between two actors
+
+-   A node with no ties is called an *isolate.*
+
+-   edge = tie
+
+-   actor = node
+
+-   degree = the number of network partners for a node.
+
+-   degree distribution: count of the numbers of nodes with each possible degree
+
+-   centralized = basically a node with a high degree is said to be central in the network. important in the network structure
+
+-   directed edge is called an arc
+
+-   reciprocation -- edge has directionality in both ways.
+
+-   observations are not independent! -- this is important since we make this assumption in regression.
+
+### Robins, Ch. 2 -- Fundamental network concepts and ideas
+
+-   **A social network:** comprises a set of social actors and a relationship among them in the form of dyadic relational ties.
+
+-   a network can be represented as a mathematical object known as a graph with nodes and edges.
+
+-   the difference between a social network and a graph -- a graph simply has nodes and edges; while a social network has social actors.
+
+-   $i,j$ are used to describe an arbitrary pair of actors.
+
+-   a loop which is when someone has a tie with themselves (which is dumb and no one cares about) is denoted as $(i, I$)
+
+-   in a directed network, $i,j$ denotes the sender node is $i$ and the receiver node is $j$.
+
+-   egocentric network (egonet), or personal network: only includes the ties that a focal actor (called ego) has to network partners (called alters) as well as the ties among alters. An egonet study may include many egos, thereby examining the social environment of a sample of participants.
+
+-   **density of a network:** a simple measure of the proportion of ties that are present, a description of how much social activity is occurring the social system.
+
+-   network activity and degrees -- density and degree distribution are basic descriptive statistics of the network.
+
+-   two nodes are structurally equivalent if they occupy identical structural positions in the network.
+
+-   weak ties provide connectivity across the network.
+
+-   Multiplexity: Human relationships are not generic or of only one type. Social action invokes different types of relational ties, for different goals or purposes. Multiplex relationships, where dyadic partnerships have multiple types of relational ties, may have qualitatively different properties from uniplex dyadic partnerships. Social network studies often need to consider multiple types of tie, simultaneously.
+
+-   Actors who bridge between different parts of the network are in a position to gain advantage as a network entrepreneur or broker.
+
+    -   betweeness centrality
+
+### Scott, Ch. 1 -- What is Social Network Analysis?
+
+-   Social networks include digital and online networks but also face to face relationships, political associations, economic transactions, geopolitical relations, and so on.
+
+-   Important to understand the structure of our data.
+
+    -   the central assumption when using social network data is ***relational data.***
+
+-   The principal types of data used in social science are:
+
+    -   attribute data
+
+        -   those that relate to the attitudes, opinions and behaviors of agents, in so far as these are regarded as properties, qualities, or characteristics that belong to them as individuals or groups.
+
+    -   relational data
+
+        -   concern the contacts, ties, and connections, and the group attachments and meetings that relate one agent to another and that cannot be reduced to the properties of the individual agents themselves.
+
+    -   A third type: ideational data
+
+        -   directly describe the meanings, motives, definitions and typifications involved in actions.
+
+            -   don't worry about this.
+
+-   Social networks is kinda a theory and kinda a method -- debate about what it is
+
+    -   it is both -- a theoretically informed method.
+
+### Scott, Ch. 2 -- The History of Social Network Analysis?
+
+-   Mainstream social network analysis lineage is broken into three main traditions:
+
+    -   sociometric analyst
+
+        -   small groups and made technical advancements in methods of graph theory
+
+    -   researchers of the 1930s
+
+        -   explored patterns of interpersonal relations and the formation of cliques
+
+    -   social anthropologists
+
+        -   built on these strands to investigate the structure of community relations in tribal and village societies.
+
+-   Gestalt tradition -- stresses the organised patterns through which thoughts and perceptions are structured.
+
+-   Moreno a major figure -- argued that the construction of sociograms allowed researchers to identify leaders and isolated individuals, to uncover asymmetry and reciprocity, and to map chains of connection
+
+-   a graph is simply a set of lines connecting points, and graph theory consists of a body of mathematical axioms and formulae that describe the properties of the patterns formed by the lines.
+
+-   In an undirected graph, 'balance' describes simply the particular pattern of signs attached to the lines that make up the graph.
+
+-   Manchester school emphasizes conflict and change rather than cohesion and integration.
+
+### Borgatti, et al. 2009. "Network Analysis in the Social Sciences."
+
+#### Abstract:
+
+Over the past decade, there has been an explosion of interest in network research across the physical and social sciences. For social scientists, the theory of networks has been a gold mine, yielding explanations for social phenomena in a wide variety of disciplines from psychology to economics. Here, we review the kinds of things that social scientists have tried to explain using social network analysis and provide a nutshell description of the basic assumptions, goals, and explanatory mechanisms prevalent in the field. We hope to contribute to a dialogue among researchers from across the physical and social sciences who share a common interest in understanding the antecedents and consequences of network phenomena.
+
+#### Bumper Sticker:
+
+We are all in a web of relationships
+
+#### History of Network Science
+
+-   1932, girls were running away at an alarming rate. A Jacob Moreno suggested these instances had less to do with individual factors and more with an underlying social network.
+
+-   Durkheim is an early pioneer of these ideas.
+
+-   focus on the structure of social environments
+
+### **Interpersonal Networks and Democratic Politics. Sokhey & Djupe**
+
+#### Extract:
+
+Some of the most fundamental concerns about democratic politics involve information---who has access to it, how do individuals get it, and of what quality and type is it? The answers to each of these questions invariably involve other people, and it is for this reason that modern democracy is unthinkable save in terms of social networks.
+
+Fully understanding democratic politics requires us to wrestle with the choices and constraints that individuals face as they navigate the political world and acquire political information. By "choice," we refer to the decisions that individuals make about what environments to inhabit---what neighborhood to live in, what church to join, and what people to befriend. Individuals frequently make those choices for reasons unrelated to politics and then live within the "constraints," or the range of available information defined by those choices. The distribution of politics in socially defined contexts---geographical or otherwise---then limits subsequent political decisions; for example, the neighborhood may be politically homogenous but dissimilar to the individual, and the trusted friend might be ignorant of politics.
+
+In this article, we consider the choices that individuals make and the constraints that result as we discuss findings from social network research about how citizens (1) form reasoned opinions and attitudes and (2) acquire the resources and motives necessary to participate in public life. We then move beyond the state of the literature to suggest ways to further integrate a networks approach into the study of political behavior. We note the advantages of a more developed networks approach, including linking disparate research traditions, linking different levels of politics, and, ultimately, clarifying what "choice" really means in a democratic society.
+
+#### Background:
+
+-   In short, considerable research has found that individuals do not perfectly self-select agreeable discussion partners, and according to Huckfeldt, Johnson, and Sprague, disagreement is "the modal condition" in the United States
+
+-   we know very little about what is discussed within networks
+
+-   Networks are nested in contexts, and these overlapping environments influence one another through processes of choice and constraint
+
+-   Existing research provides valuable places to begin: information environments affect discussion (Huckfeldt et al. [Reference Huckfeldt, Beck, Dalton and Levine1995](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref025); Mondak [Reference Mondak1995](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref053)), and individuals use the distribution of opinions in a social context as a heuristic to gauge the opinions of social intimates (Djupe and Gilbert [Reference Djupe and Gilbert2009](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref010); Huckfeldt, Beck, et al. [Reference Huckfeldt, Beck, Dalton, Levine and Morgan1998](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref026); Huckfeldt and Sprague [Reference Huckfeldt and Sprague1995](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/interpersonal-networks-and-democratic-politics/C8E3C24D0D1DB5C86E0701B2B337ECF1#ref032)).
+
+### Hafner-Burton, E,, M. Kahler and A.H. Montgomery. 2009. "Network Analysis for International Relations
+
+#### Abstract
+
+International relations research has regarded networks as a particular mode of organization, distinguished from markets or state hierarchies. In contrast, network analysis permits the investigation and measurement of network structures--- emergent properties of persistent patterns of relations among agents that can define, enable, and constrain those agents. Network analysis offers both a toolkit for identifying and measuring the structural properties of networks and a set of theories, typically drawn from contexts outside international relations, that relate structures to outcomes. Network analysis challenges conventional views of power in international relations by defining network power in three different ways: access, brokerage, and exit options+ Two issues are particularly important to international relations: the ability of actors to increase their power by enhancing and exploiting their network positions, and the fungibility of network power+ The value of network analysis in international relations has been demonstrated in precise description of international networks, investigation of network effects on key international outcomes, testing of existing network theory in the context of international relations, and development of new sources of data. Partial or faulty incorporation of network analysis, however, risks trivial conclusions, unproven assertions, and measures without meaning. A three-part agenda is proposed for future application of network analysis to international relations: import the toolkit to deepen research on international networks; test existing network theories in the domain of international relations; and test international relations theories using the tools of network analysis.
+
+### Background
+
+-   IR has not treated networks as structures that can constrain and enable individual agents and influence international outcomes until recently.
+
+-   networks defines structures as emergent properties of persistent patterns of relations among agents that can define, enable, and constrain those agents.
+
+-   actions and beliefs of individuals agents are not independent.
+
+-   Network analysis concerns relationships defined by links among nodes.
+
+-   Focus is on the association of nodes more than the attributes of nodes.
+
+    -   three principles:
+
+        -   nodes and their behaviors are mutually dependent, not autonomous
+
+        -   ties between nodes can be channels for transmission of both material and non-material products
+
+        -   persistent patterns of association among nodes create structures that can define, enable, or restrict the behavior of nodes.
+
+#### Measuring Network Properties
+
+-   strength of tie is a combination of the magnitude and frequency of interaction between two nodes.
+
+-   ties can also be asymmetrical
+
+-   can be both positive and negative ties.
+
+-   degree centrality of a node: the sum of the value of the ties between that node and every other node in the network.
+
+    -   tells us the access a particular node has to other nodes.
+
+-   Closeness centrality: calculated using the length of the path between a node and every other node.
+
+-   Betweenness centrality: the number of shortest paths in the network that pass through a particular node, and therefor it measures the dependence of a network on a particular node for maintaining connectedness.
+
+-   Eigenvector centrality: thee number of a node's links and the strength of those ties, but also centrality of those other nodes.
+
+-   Types of cohesion and structural similarity measures:
+
+    -   clique
+
+        -   a group in which every member has a tie of strength above a certain minimum with every other member.
+
+    -   structural equivalence
+
+        -   a group where every member has ties of similar strength to every other node in the network.
+
+-   homophily: tendency for nodes to form ties based on common attributes
+
+-   heterophily: nodes form ties to share strengths and minimize weaknesses.
+
+-   high betweenness centrality == high social capital
+
+-   nodes that are well-connected (high degree or eigenvector centrality) have more resources to draw upon through their network connections.
+
+-   nodes with high closeness or info centrality will also receive information more quickly than marginal nodes.
+
+### Patty, J. and M. Penn. 2016. "Network Theory and Political Science." In The Oxford Handbook of Political Networks. Jen Victor and Alex Montgomery
+
+#### Abstract
+
+This chapter considers the role of network theory in the study of political phenomena, the analytical theoretical basis of network analysis as applied in political science. Using the concepts of centrality, community, and connectivity, it discusses the relationship between the primitives of network theory and their relationship to empirical measurement of political networks. The chapter then discusses one of the most active areas of work on network theory in political science, models of network formation, and offers some concluding thoughts about future directions of network theory in political science. We argue that the deeper theorizing about political networks will complement and improve empirical scholarship on the role of networks in politics.
+
+#### Background
+
+-   Focus: network theory in political science
+
+-   centrality, community, and connectivity:
+
+    -   centrality: ranking the actors within a network in terms of something akin to "power" or "influence"
+
+        -   the more people you know, the better.
+
+        -   the more people you connect, the better.
+
+    -   community: considers that question of how the network indicates differences and commonalities between the actors.
+
+    -   connectivity: link centrality and community by differentiating pairs of actors on the basis of their position within the network.
+
+        -   bridges!
+
+-   Graph = collection of nodes and edges.
+
+#### Measuring Networks
+
+-   networks are messy
+
+    -   no natural ordering
+
+-   Degree Centrality:
+
+    -   in-degree and out-degree
+
+        -   in-degree: number of nodes *from* which an edge extend to the node in question
+
+            -   how many people talk to the actor
+
+        -   out-degree: number of nodes to which an edge extends *from* the node in question
+
+            -   how many listen to the actor
+
+-   Eigenvector Centrality:
+
+    -   the centrality of an actor is positively associated with the centralities of teh actors to whom the actor is connected.
+
+        -   **important people know important people**
+
+-   Betweenness Centrality:
+
+    -   how many actors are connected to each other by a given actor.
+
+-   Closeness Centrality:
+
+    -   how many steps it would take to get from one actor to every other actor.
+
+        -   longer paths require more time to traverse and involve more risk of information loss.
+
+    -   assigns all actors equal weight.
+
+-   Cliques
+
+    -   notion of a subgroup
+
+        -   a maximally completely connected subgraph within the network or a group of nodes that are directly connected with each other such that there is no other node to which all of the members of the group are each connected as well.
+
+        -   generalization of a triadic closure
+
+-   latent spaces
+
+    -   we can conceive of actors as being embedded in a space that can then be used to define or infer group structures.
+
+    -   attempt to describe the nodes as positions in a space such that nodes that are closer to each other in the space are more likely to be connected by an edge.
+
+#### Models of Network formation:
+
+-   Random graph theory
+
+    -   random graph theory allows one to establish well-defined likelihoods of encountering any given feature in a network
+
+    -   Poisson random graph model - canonical model
+
+        -   parameterized by two numbers: number of nodes and probability of connection
+
+            -   p represents the probability of any pair of distinct nodes being connected by an edge
+
+                -   independent of any other edge being realized.
+
+            -   this model then induces a probability distribution over the set of all graphs on n nodes, $G_n$.
+
+    -   viewed as a starting point.
+
+-   exponential random graph models (ERGMs)
+
+    -   a category of random graph models that provide a richer parameterization than, and thus subsumes, the Poisson random graph model.
+
+    -   parameters of ERGM:
+
+        -   structural parameters - characterize the probability of different graph structures without reference to the labels/identities of the actors/nodes themselves.
+
+            -   measure symmetrical and asymmetrical relationships between nodes.
+
+        -   Theory parameters
+
+### The Friendship Group as a Protective Environment for Political Deviants. Ada W. Finifter. APSR
+
+#### Bumper Sticker:
+
+Early version of Mutz -- cross-pressure.
+
+#### Background/Theory
+
+-   Groups are mediators between individuals and larger society
+
+    -   Sydney Verba
+
+    -   Lazarsfeld
+
+-   Perspective of the relationship between the individual and group:
+
+    -   the influence of groups on the attitudes and behaviors of members
+
+    -   the process by which individuals join together in groups to express and protect their political beliefs.
+
+-   "Putnam found that people who are socially well integrated in their communities tend to be much more similar to the community as a whole in their voting patterns than are people who are less well integrated."
+
+    -   community influence was found to operate through social interaction in primary friendship groups and secondary associations.
+
+-   individuals are active agents in the construction of their social groups, and that these social groups are formed on the basis of prior attitudinal factors.
+
+    -   groups may then serve as protective environments for individuals whose attitudes deviate from those of the culture around them.
+
+-   hierarchy of group identification influences political association.
+
+#### Data
+
+-   Work groups in the large automobile plants in the Detroit area
+
+-   Western Greater Detroit Region of the United Auto Workers union
+
+-   N = 419
+
+-   During Kennedy-Nixon presidential campaign.
+
+#### Operationalization
+
+-   Group cohesiveness was conceptualized as the strength of interpersonal ties among group members.
+
+    -   individual integration = extent to which he interacted with other group members.
+
+-   "Of the people who work under your foreman, which five would you say you are most friendly with?"
+
+-   Battery asks about political communication within the network
+
+#### Hypothesis:
+
+-   The more integrated an individual is into his work site primary group, the more subject he is to its political influence.
+
+    -   we need to ask with which larger social group or organization will a given primary group associate itself as a source for its political norms? -- people live in a pluralistic society!
+
+-   Since workers are overwhelmingly Democratic. In the absence of opposing attitudes, primary group integration should therefore increase support for these consensual norms.
+
+    -   the secondary group was democratic
+
+-   "I hypothesized that the level of friendship integration in the primary group would be positively associated with pro-Democratic attitudes.
+
+-   **Political deviance is what leads to an intensified motivation for friendships in the work group, then, for each of the social classifications mentioned above, the relationship between political attitudes and friendship integration should be stronger in those subgroups that have the stronger democratic norm.**
+
+#### DVs:
+
+-   1960 presidential, gubernatorial, and senatorial candidates of dem party
+
+#### Results
+
+-   Fail to support hypothesis
+
+-   indicates an opposite effect -- that is, that friuendship integration was associated with **decreasing** suppoirt for the Democratic candidates.
+
+    -   workers with higher levels of friendship integration were simply more likely to be REpublicans than were the less integrated workers.
+
+-   friendship integration was negatively related to identification with the Democratic party.
+
+-   "If attitudes do serve to unite individuals to groups in their environment, this function clearly cannot be served by a Republican or Independent stance in an environment where most people are strongly Democratic. Republicans in such a situation may therefore have little political con tact outside the work group and may attempt to compensate for this by increasing work group friendships. This seems somewhat par adoxical because the work group itself, of course, is made up predominantly of Demo crats. Yet it is a social situation in which people are together for long periods of time with extended opportunities for interaction, and therefore one in which individuals may exert special efforts to serve a variety of personal needs"
+
+#### Theory pt.2
+
+-   Why should deviants be more motivated than conformers to seek friends in their work groups:
+
+    -   1\) Deviating from group norms increases anxiety and a sense of isolation because the deviant is rejected by the group. He therefore seeks relationships in other groups to reduce anxiety and isolation to increase social support.
+
+    -   2\) Deviance from a group norm leads the person to question his opinions, and motivates, an evaluation of them. Evaluation is achieved through comparison of one's own opinions with those of other people. Therefore, the need for evaluation motivates affiliated behavior.
+
+    -   3\) Deviance from a group norm arouses cognitive dissonance. One way of reducing dissonance is to seek additional social support for the deviant opinions, thereby adding new information consonant with one's opinion.s New cognition to bolster deviant opinions might be found by increased interaction with others who hold similar attitudes.
+
+-   Author argues/thinks Democrats in the sample hold the work group as less politically and psychologically important. Whereas Republicans hold greater importance to the work group out of necessity in the broader information environment where they may feel less integrated into. Thus establishing friendship relations to reduce social anxiety and in express feelings in a setting where they feel "safe".
+
+    -   MY THOUGHTS: Authors are making the point about Republicans out of necessity because they are restricted by their environment -\> forces them to engage within local. pluralistic group. But NOW, they are not required to do so because the information environment in which they participate with is now flexible.
+
+-   deviance motivates friendship support in other groups. In this instance, the work group.
+
+#### Main Finding:
+
+-   The major finding of this paper is not that partisans tend to choose each other as friends, but that deviant partisans both have more friends and choose attitudinally similar friends much more often than conforming partisans.
+
+-   deviants recognize their deviance and increase engagement within trusted relationships -\> explaining why they have more friendships and ties within the group -\> mechanism is a fear of anxiety and isolation -\> become more motivated to "shelter" in a trusted group.
+
+    -   Political deviants recognize their deviation from dominant norms, which creates anxiety and fear of social isolation. This motivates them to increase engagement within trusted relationships, using friendship groups as protective environments. As a result, deviants often exhibit higher levels of friendship integration within the group despite their macro-level marginality.
+
+        -   this isn't necesarrily something people do consciously/strategically.
+
+## Week 3 Readings:
+
+### Relational Concepts, Measurement, and Data Collection. Justin H. Gross, Joshua M. Jansa. (2016)
+
+#### Abstract
+
+Political phenomena are inherently relational, so it is natural that network analysis should come to play an important role in the study of politics. And yet relational data present special practical and methodological problems. The network data scholars would like to collect are often incomplete or altogether inaccessible. It is tempting to take whatever data are available and treat these as a proxy for the desired variables. This chapter reviews the most prominent relational concepts in political science and the operationalization strategies and data collection techniques typically employed. It then examines common practices for handling missing data and identi es recent innovations in this area. Finally, the chapter recommends that political scientists give more consideration to the concept development and measurement phases of research design and proposes possible directions for the development of network measurement models.
+
+#### Bumper Sticker
+
+Lit Review of SNA
+
+#### Background/Theory/Literature Review
+
+-   political life is relational
+
+-   Politics is the product of relations between humans within institutions and in society, and political outcomes are thus rooted in human relations.
+
+-   egocentric/personal network -- the local subnetwork as provided through the respondent's point of view---on particular political behaviors
+
+-   studies of mass networks are somewhat restricted by egonets -- there is measurement error in these. Cant capture the entire complexity of someones network.
+
+-   defining boundaries of the network of interest is important because then you can capture the complexity and entirety of the network -- such as relationships among legislators in a single session
+
+-   networks is just a method to study autocorrelation
+
+-   As long as a researcher is willing to make the assumptions that the individual ego-nets are independent and that the nonresponse mechanism is related only to variables collected, that researcher is on fairly solid methodological ground. For the independence assumption to be reasonable, at the very least it must be true that no alters should appear as egos in the study
+
+-   directed or undirected?
+
+-   one-mode (or unipartite): networks include those based on surveys in which actors identify alters with whom they share some relation (friendship, trust, animosity)
+
+-   two-mode: network is one based on shared af liations (e.g., memberships, attendance at social functions).
+
+#### Measurement Error: Validity, Reliability, Missing Data
+
+-   six types:
+
+    -   false negative/positive nodes
+
+        -   non-response can lead to false negative
+
+        -   false pos example: Including a Democrat in a Republican fundraising network
+
+        -   false neg example: Excluding a legislator from the cosponsorship network
+
+    -   false negative/positive edges
+
+        -   non-response can lead to false negative
+
+        -   False pos example: Inferring a policy difusion path that did not really occur
+
+        -   False neg example: Legislative o ices failing to report joint policy meeting
+
+    -   falsely aggregated/disaggregated nodes
+
+        -   false agg: Counting Bill Nelson (D-FL) and Ben Nelson (D-NE) as the same node
+
+        -   false neg: Counting Al Franken and Alfred Stuart Franken as two di erent nodes
+
+-   ideal network: true network
+
+-   the clean network: the encoded network data in the absence of measurement error
+
+-   observed network: which the researcher actually gets to see
+
+-   persistence vs fleeting ties
+
+-   Modern approaches to handling missing observations in statistical inference rely heavily on the assumption that individual observations are independent
+
+-   The bottom line is that in contrast to node attribute estimation on independent observations, no broadly applicable sampling theory for networks exists
+
+### Social Network Analysis: Chapter 3
+
+-   Rosters in network analysis
+
+    -   measurement error if list is not complete
+
+    -   Thus, researchers tend to like an open nomination method.
+
+-   Boundedness in the digital era!?
+
+-   positional approach: researcher samples from among the occupants of particular formally defined positions or group memberships.
+
+    -   what positions to include?
+
+-   snowball procedure
+
+    -   somewhat dangerous to do.
+
+    -   assumes the connnected segment of the network that forms the sample network is representative of all other segments of the network.
+
+### Networks in Context: The Social Flow of Political Information. Robert Huckfeldt, John Sprague. (1987)
+
+#### Abstract
+
+We examine the effects of individual political preferences and the distribution of such preferences on the social transmission of political information. Our data base combines a 1984 election survey of citizens in South Bend, Indiana with a subsequent survey of people with whom these citizens discuss politics. Several findings emerge from the effort. First, individuals do purposefully construct informational networks corresponding to their own political preferences, and they also selectively misperceive socially supplied political information. More important, both of these individual-level processes are shown to be conditioned by constraints imposed due to the distribution of political preferences in the social context. Thus, individual control over socially supplied political information is partial and incomplete. Finally, these information-transmitting processes interact with the social context in a manner that favors partisan majorities while undermining political minorities.
+
+#### Bumper Sticker
+
+Difference in perceptions depending on minority/majority status
+
+#### Questions:
+
+-   Does political preference determine the supply of information, or does the supply of information determine political preference?
+
+    -   almost certainly runs both ways.
+
+    -   Focus:
+
+        -   the informational networks through which individuals send and receive political information
+
+        -   and the larger but still very immediate contexts within which individuals reside.
+
+-   Are the main respondents' perceptions of discussion partners affect by the political preferences of, andby the political preferences surrounding, the main respondents?
+
+-   Are main respondents likely to have discussion partners whose objectively defined (Self-reported) preferences correspond to the political preferences of, and the political preferences surrounding, the main respondents (in this instance the social context becomes important as it affects the supply of particular political preferences and, thus, the opportunities for discussion with people holding particular preferences)?
+
+-   Do the main respondents systematically misperceive discussant preferences a function of their own preferences as a function of the preferences surrounding them?
+
+-   How powerful are your preferences and the preferences that surround you in determining the likelihood that you will have a discussion partner who reports a particular preference?
+
+#### Background/Theory
+
+-   "Politics is a social activity embedded within structured patterns of social interaction"
+
+-   Political information is a social process!
+
+-   "Political behavior may be understood in terms of individuals tied together by, and located within, networks, groups, and other social formations that largely determine their opportuntities for the exchange of meaningful political information. In short, environment plays a crucial role in affecting the social flow of political information."
+
+-   The environment bounds the conversation!
+
+-   Downs: fully rational for individuals to reduce information costs by obtaining political information from personal contacts.
+
+-   If individuals selectively screen the political information they receive through social interaction, they may also systematically misperceive its content.
+
+    -   measurement artifact.
+
+    -   misperception on the individuals part is possible because they recollecting interactions.
+
+-   Three individual level factors undermine the potential impact of socially transmitted information:
+
+    -   1\) citizens choose with whom to discuss politics
+
+    -   2\) they reinterpret dissonance-producing information
+
+    -   3\) they may deliberately misprepresent their true opinions.
+
+-   People don't think or determine a lot of decisions on politics, but it does matter!
+
+-   Thus, individual choice regarding associational patterns and political discus sions may be seen as operating within the opportunities and constraints imposed by a given social context
+
+```         
+-   stochastic process
+```
+
+-   Finifter and Berger show examples of certain groups isolating from the larger network structure.
+
+-   Talks about nationalization of political information
+
+    -   argues this should actually strengthen the role of socially transmitted new information. INTERESTING!
+
+        -   "Hence, readily available political information from the modern mass media may, because of its increased uniformity and homogeneity, increase rather than decrease the political influence potential of the social context."
+
+-   **Contexts:** structurally imposed. External!
+
+-   **Networks**: individually constructed.
+
+#### Data
+
+-   South Bend, Indiana
+
+-   1984 presidential election
+
+-   Purpose: locate mass political behavior -- political attitudes, candidate preferences, party preferences, policy positions, and political activities -- within the social patterns of everyday life.
+
+-   three wave
+
+-   1500 respondents during summer and fall of 1984
+
+-   16 different South Bend-area neighborhoods
+
+    -   maximize social homogeneity within the neighborhoods.
+
+    -   and maximize BETWEEN the neighborhoods.
+
+    -   neighborhoods vary considerably.
+
+-   defined geographically
+
+    -   social context is more broad and ambiguous.
+
+-   Networks measured from that of the main respondent AND the political discussant named by the main respondent.
+
+-   names of three people with whom they were most. likely to have discussions about politics with.
+
+    -   if couldn't name anyone, respondents were asked with whom they were likely to have informal conversations with.
+
+-   CONTEXTS create opportunities for social interaction which are not necessarily bounded by the original context.
+
+-   1\) examine the objective correspondence between the preferences of main respondents and their discussants
+
+-   2\) examine the perceptions of the political preferneces of discussants held by main respondents
+
+-   3\) examine the accuracy of these perceptions.
+
+-   LOGIT
+
+#### Dependent Variable:
+
+-   Reagan discussant or not
+
+-   perceived Reagan discussant or not
+
+#### Results
+
+-   Citizens who live in contexts dominated by Reagan supporters more likely to perceive their discussion partners as Reagan voters, but these citizens are also more likely to have discussion partners who are Reagan voters.
+
+-   voters tend to be accurate in their perceptions of discussion partners who agree with their own preferences: Reagan voters tend to recognize other Reagan voters, and Mondale voters tend to recognize other Mondale voters.
+
+-   In both instances the social context has at least a modest effect upon perceptual accuracy. But now examine disagreeing dyads.
+
+-   The greatest opportunity for contextual effects upon perceptual accuracy arises in discussion dyads that involve heterogeneous preferences.
+
+-   **Reagan voters are more likely to perceive Mondale discussants accurately in Mondal contexts and less likely to perceive them accurately in Reagan contexts.**
+
+-   majority versus minority status for a particular political preference in the social context emerges as a crucial consideration in cases where there is objective political disagreement between discussion partners.
+
+-   holders of a minority preference are more likely to perceive the majority preference accurately: they are more likely to perceive their discussion partner's political preference correctly if disagreement is present within the dyad. Social context transforms the nature of discussion dyads even between discussion partners who share the same preference.
+
+#### Discussion:
+
+-   politically supportive social context sustains the receiver's misperception of dissonance-producing, socially transmitted political information
+
+-   members of the political minority accurately perceive members of the majority, while members of the majority do not accurately perceive members of the minority.
+
+-   minorities are aware of their own minority status!
+
+-   dissonant information is frequently ignored by members of the majority.
+
+-   individuals do purposefully attempt to construct informational networks corresponding to their own political preferences. HOWEVER, it is not independent from socially determined conditions of supply. -- from the contextually imposed opportunity (or lack of opportunity) for social interaction with people who hold various political preferences.
+
+-   Minorities can perceive they are a minority.
+
+## Week 4 Readings:
+
+### Discussion Networks. Scott McClurg; Casey Klofstad; Anand Sokhey
+
+#### Abstract:
+
+While political network research is often a holistic enterprise, the network paradigm can also be used to study individual behavior. Speci cally, rather than focusing on full network structures, a well-established area of research considers individuals' "core" networks, their perceptions of interpersonal connections, and the consequences of said micro-social environments for myriad political outcomes and processes. This chapter examines this research tradition, tracing the history of its use in the study of political behavior. It begins with discussion of network research, paying speci c attention to "egocentric" network name generator techniques. It then outlines several challenges to this research paradigm: (1) the dif culty of making causal inferences, (2) debates over concept and measurement, and (3) questions about mechanisms of in uence. The chapter concludes by reviewing advances in the eld that have developed from these challenges and points toward next steps in this research agenda, focused on the connected citizenry.
+
+#### Bumper Sticker:
+
+Networks matter in politics at multiple levels of analysis.
+
+#### Background/Theory:
+
+-   Egocentric networks - small group of individuals to which a person is (often closely) connected--and (2) the impacts of such networks on individuals' attitudes and behaviors.
+
+-   Research organized around two points:
+
+    -   1\) work in this vein argues that individuals' political choices are a product of both their own traits and their surroundings -- huckfeldt and Sprague
+
+        -   constrained by social context
+
+    -   2\) work tended to assume that observed network influences are indeed causal.
+
+-   Three main challenges of egocentric studies: 1) causal inference, 2) measurement, and 3) mechanisms of influence.
+
+#### History:
+
+-   Roots in Columbia school. -- foundational study for networks without specifically discussing networks per se.
+
+-   Networks are not contexts.
+
+-   Huckfeldt and Sprague: these scholars found a relationship between network formation (i.e., discussant selection) and social context (i.e., the supply of possible discussion partners in an environment)
+
+    -   Second, they demonstrated that political preferences communicated via discussion networks were related to observed variance in political behavior
+
+        -   third, they used and adapted name generators.
+
+#### Measurement
+
+-   Name Generators
+
+    -   1985 in GSS -- first standard discussion network question:
+
+        -   "From time to time, most people discuss important matters with other people. Looking back over the last six months--who are the people with whom you discussed matters important to you. Just tell me their first names or initials."
+
+            -   respondents list "alters" -- and then asked to describe those alters.
+
+    -   Huckfeldt and Sprague -- South Bend study adapted name generator -- "compound name generator":
+
+        -   "We are interested in the sort of political information and opinions people get from each other. Can you give me the FIRST names of the three people you talked with most about the events of the past election cycle? These people might be from your family, from work, from the neighborhood, from church, from some other organizations you belong to, or they might be somewhere else."
+
+            -   compound name generators generally perform well when it comes to sampling individuals' political networks. Names generated by important matters and political matters are largely the same!
+
+    -   some problems -- what constitutes "important matters"?
+
+        -   name generators under-report disagreement about politics.
+
+#### Causality:
+
+-   name generators take a long time and thuse are rarely used in multiple waves of longitudinal surveys.
+
+-   exposure to political discussion leads individuals to become more active in politics.
+
+    -   strong evidence but causal inference is skeptical
+
+        -   1\) rather than discussion leading to participation, participating in politicas may cause one to talk about politics
+
+        -   2\) individuals who choose to be politically active might also choose to associate with people who are also politically active and thus interested in talking about politics
+
+        -   3\) a factor that has yet to be accounted for, or that cannot be accounted for, may explain the relationship between discussion and participation.
+
+#### General findings:
+
+-   networks are heuristics that are grounded in the political preferences of network members.
+
+-   some work indicates that the influence of alters' preferences depends on how clearly egos perceive them -- huckfeldt.
+
+-   Socially supplied to individual political behavior
+
+    -   1\) learning models -- explicit information exchange the idea is that information can change choices and behaviors, and that individuals are influenced by the network providing such resources via interpersonal interaction.
+
+    -   2\) information shortcut models -- need not involve explicit interaction processes. Rather, an individual may perceive the network and adjust his or her behavior in response.
+
+#### Future Directions:
+
+-   experimental methods to demonstrate causality
+
+-   panel surveys
+
+-   Three theoretical questions:
+
+    -   1\) there has been little attention given to basic/underlying concepts
+
+    -   2\) theory and measuremnet
+
+        -   there is little work that examines the differences between an ego's perceptions of the network and the actual information being exchanged between egos and alters
+
+            -   this is hard to do.
+
+        -   Data is limited in many ways --- most of the time we just have counts of the number of "democrats" in our network - what does this actually tell us?
+
+    -   3\) structural considerations
+
+-   Less attention has been given to online networks and the connection between the two!
+
+    -   Are online versus in person interactions in competition?
+
+### Legislative Networks. Nils Ringe; Jennifer Nicoll Victor; Wendy Tam Cho
+
+#### Abstract:
+
+Legislatures are naturally interactive institutions. Creating laws, engaging in representation and oversight, and serving constituents are social processes. Legislators have many connections with each other, some preexisting or natural and some created while in office. This chapter explores various ways to understand legislative politics through a relational lens. Legislators rely on networks for a variety of functions, including collaboration, information diffusion, policy coordination, coalition building, and voting. Relationships are a fundamental aspect of how legislators, and those who interact with them, function. The chapter examines the history of how networks have been studied in legislatures and describes various challenges this field of study has recently overcome, as well as other challenges yet to be solved in studying legislative politics using networks. It relays the dominant existing applications and methods in this subfield and suggests several fruitful avenues for future research.
+
+#### Bumper Sticker:
+
+#### Background:
+
+-   legislators develop personal relationships with one another -- which can affect politically relevant behavior.
+
+-   How do lawmakers choose to connect themselves to others, given the institutional structures they find themselves in?
+
+    -   And how do other features of legislatures, like their size or the number of legislative parties, shape those patterns?
+
+#### Early History of Networks and Legislature
+
+-   Routt: personal contacts between human beings lie at the very heart of all problems of government and society"
+
+    -   basic political prerequisite...necessary for survival in public office
+
+-   Samuel Patterson looked at interpseronsal contacts between members of the Wisconsin Assembly.
+
+-   I wonder what a ego network would look like among legislators -- NOT asking within the legislator
+
+    -   like just applying an egonet to a sample of legislators. Like a Fenno type study!
+
+-   friendship provides the oil that lubricates the legislative process
+
+#### Challenges:
+
+-   which mode?
+
+-   most are two mode in legislative network data.
+
+    -   where some object or actor, i, is connected with some other object or actor j
+
+-   relies on proxies for interpersonal relationships
+
+    -   information is more guarded now
+
+-   Some benefits:
+
+    -   finite total population of members
+
+    -   can identify all possible nodes -- boundary is clearly specified.
+
+-   observed ties and networks are endogenous
+
+    -   whether an observed commonality between actors is the product of shared characteristics (homophily) or because of some causal peer effect.
+
+#### Measuring Ties
+
+-   cosponsorpship
+
+#### Information
+
+-   Weak ties briding structural holes
+
+-   weak ties can increase legislative success among legislators
+
+-   Masket finds spatial proximity increases the likelihood that two legislators cast like-votes because, he argues, lawmakers take cues from those closest to them geographically.
+
+## Week 5 Readings:
+
+### Scott Chapter 4: Organizing and Analyzing Network Data
+
+#### Matrices and Relational Data
+
+-   rows are FROM and columns are affiliations (to)
+
+### Turnout in a Small World. James Fowler. 2005
+
+#### Abstract:
+
+This paper investigates between-voter interactions in a social network model of turnout. It shows that if 1) there is a small probability that voters imitate the behavior of one of their acquaintances, and 2) individuals are closely connected to others in a population (the "smallworld" effect), then a single voting decision may affect dozens of other voters in a "turnout cascade." If people tend to be ideologically similar to other people they are connected to, then these turnout cascades will produce net favorable results for their favorite candidate. By changing more than one vote with one's own turnout decision, the turnout incentive is thus substantially larger than previously thought. We analyze conditions that are favorable to turnout cascades and show that the effect is consistent with real social network data from Huckfeldt and Sprague's South Bend and Indianapolis-St. Louis election surveys. We also suggest that turnout cascades may help explain over-reporting of turnout and the ubiquitous belief in a duty to vote.
+
+#### Bumper Sticker:
+
+Early version of Rolfe
+
+#### Background
+
+-   "I develop a model of turnout that suggests a single person's decision to vote can affect the turnout decision of several other people."
+
+-   large scale social networks tend to exhibit the small world phenomenon.
+
+    -   in spite of the large number of people in the network, there is a relatively short average path length connecting any two people through intermediaries.
+
+-   large scale networks tend to be sparse, lower average degree than smaller networks. Clustered.
+
+    -   The clustering coefficient is a measure of this property, giving the probability that any two individuals to which a person is tied also have a tie between them (in other words, how likely is it that your friend's friend is also your friend?)
+
+    -   short average path.
+
+-   I also make the assumption that ties are bilateral so that influence can run equally in either direction. This is contrary to another finding by Huckfeldt and Sprague (1991). When asked to name other people with whom they discuss politics, many people do not name the people who originally named them as discussants (even between husbands and wives!). However, their survey design may be responsible in this case since discussants were not asked directly if they knew or spoke with the person who named them.
+
+#### Results:
+
+-   The high concentration of shared interests in social networks may magnify the incentive to participate
+
+-   In the language of Granovetter (1973), people with a mix of "weak" and "strong" ties can initiate larger turnout cascades than people with all weak or all strong ties, and they therefore have a greater incentive to vote and to influence others to do the same.
+
+-   This finding has important implications for the literature on social capital (e.g. Putnam 2000). This literature argues that civic engagement will be higher in societies with more clustered social ties. The model suggests that this is true, but only up to a certain point. When relationships become too clustered, individuals lose touch with the rest of the social network and are less able to influence participation beyond their circle of acquaintances.
+
+    -   interesting! cant be too fractured!
+
+### Robbins Chapter 4
+
+#### Snowball samples:
+
+-   start with seed of actors
+
+    -   then ask about those they list.
+
+-   snowball good because inferences applicable to the whole network using just the snowball data.
+
+## NEED TO READ: BARRY WELLMAN FOR DISSERTATION! SEE SCOTT BOOK FOR SUMMARY
+
+## Week 6 ReadIngs
+
+### Power and Centrality: A Family of Measure. Phillip Bonacich
+
+#### Abstract:
+
+Although network centrality is generally assumed to produce power, recent research shows that this is not the case in exchange networks. This paper proposes a generalization of the conept of centrality that accounts for both the usual positive relationship between power And centrality and Cook et al.'s recetn exceptional results.
+
+#### Background
+
+-   Previous lit says most central = most power
+
+    -   this is suspect.
+
+-   Author argues it is advantageous to be connected to those who have few options; power comes from being connected to those who are powerless.
+
+    -   being connected to powerful others who have many potential trading partners reduces one's bargaining power.
+
+        -   we are talking about bargaining situations.
+
+## Week7 Readings:
+
+### Social Contagion and Innovation: Cohesion versus Structural Equivalence
+
+#### Abstract
+
+Two classes of network models are used to reanalyze a sociological classic often cited as evidence of social contagion in the diffusion of technological innovation: Medical Innovation. Debate between the cohesion and structural equivalence models poses the following question for study: Did the physicians resolve the uncertainty of adopting the new drug through conversations with colleagues (cohe sion) or through their perception of the action proper for an occu pant of their position in the social structure of colleagues (structural equivalence)? The alternative models are defined, compared, and tested. Four conclusions are drawn: (a) Contagion was not the dominant factor driving tetracycline's diffusion. Where there is evidence of contagion, there is evidence of personal preferences at work.
+
+#### Bumper Sticker
+
+Structural Equivalence = contagion.
+
+#### Question
+
+Does structural equivalence or cohesion predict contagion?
+
+#### Background/Theory
+
+-   Physical proximity alone has some capacity to cause social contagion. The closer the physical contact is between ego and alter, the more likely that alter's adoption will trigger ego's.
+
+    -   some geography work on social contagion: Cliff et al. 1981; and epidemiology Bailey 1976 and social network analysis -- White, Burton, and Dow 1981
+
+-   Cohesion
+
+    -   focuses on socialization between ego and alter. The more frequent and empathic the communication is between ego and alter, the more likely that alter's adoption will trigger ego's.
+
+    -   Homan 1950 *The Human Group*
+
+    -   Festinger, Schachter, and Black (1950) study of housing, friendship, and involvement in a voluntary association provides a research exemplar
+
+    -   Sherif 1935 -- experimental studies of interpersonal influences created by physical proximity between socially similar people.
+
+    -   " Confronted with the need to make a decision in an ambiguous situation--a situation that does not speak for itself--people turn to each other for cues as to the structure of the situation.
+
+-   Structural Equivalence
+
+    -   this model highlights the competition between ego and alter.
+
+#### Findings
+
+-   two factors drove the diffusion process: personal predispositions and contagion by structural equivalence.
+
+-   structural equivalence is the principle more likely to generate social pressure.
+
+-   cohesion is much weaker in the aggregate than SE.
+
+### Partisan Webs: Information Exchange and Party Networks
+
+#### Abstract
+
+What is a party? We argue that the formal party apparatus is only one part of an extended network of interest groups, media, 527s, and candidates. We systematically measure a portion of this network by tracking transfers of names between political organizations. Our analysis reveals two distinct and polarized networks corresponding to a more liberal Democratic group and a more conservative Republican group. Formal party organizations, like the Democratic National Committee and the Republican National Committee, tend to receive information within their respective networks, which suggests that other groups serve to funnel information toward the formal party.
+
+#### Bumper Sticker
+
+formal party orgs are info receivers
+
+-   they are not the whole party but important players.
+
+#### Background/Theory
+
+-   Parties as networks of cooperating actors
+
+    -   a party is broadly defined to include its candidates and officeholders; its formal apparatus; loyal donors, campaign workers, and activists; allied interest groups; and friendly media outlets.
+
+## Week 8 Lecture
+
+-   Equivalence
+
+    -   lots of definitions, based on relations
+
+        -   structural
+
+        -   automorphic
+
+            -   relaxed version
+
+        -   regular
+
+    -   looking for equivalence
+
+        -   relies on understanding the similarity/dissimilarity of actors
+
+        -   searching for patterns
+
+        -   
+
+# Part 2: Measures
+
+# Part 3: Positions and (Sub-)Structures; Visualization
+
+# Part 4: Hypothesis Testing/Network Inference; Additional Considerations/Directions
+
+## Lecture after spring break
+
+-   Inference:
+
+    -   generalizability/reproducibility
+
+    -   testing hypotheses
+
+-   Problem in network approaches
+
+    -   non-independent sampling
+
+    -   work out probability distributions
+
+-   Randomization inference
+
+    -   important
+
+    -   
+
+## Navigating the Range of Statistical Tools for Inferential Network Analysis. Canmer, Leifeld, McClurg, and Rolfe. 2017.
+
+### Abstract
+
+The last decade has seen substantial advances in statistical techniques for the analysis of network data, as well as a major increase in the frequency with which these tools are used. These techniques are designed to accomplish the same broad goal, statistically valid inference in the presence of highly interdependent relationships, but important differences remain between them. We review three approaches commonly used for inferential network analysis---the quadratic assignment procedure, exponential random graph models, and latent space network models---highlighting the strengths and weaknesses of the techniques relative to one another. An illustrative example using climate change policy network data shows that all three network models outperform standard logit estimates on multiple criteria. This article introduces political scientists to a class of network techniques beyond simple descriptive measures of network structure, and it helps researchers choose which model to use in their own research.
+
+### The Problem of Interdependence
+
+-   An assumption we make in regression is that observations are iid - independent and identically distributed.
+
+    -   There is no interdependence between observations
+
+        -   this is a strong assumption in many cases and we need to understand how to deal with it when we believe it does not hold
+
+-   It is impossible to describe political and social activity without descirbing how actors interact with, react to, adapt to, and influence one another in complex and dynamic ways.
+
+-   when independence is violated, the joint likelihood of a logit has bias.
+
+### Quadratic Assignment Procedure
+
+-   nonparametric test for the significance of an association between two matrices with complex dependencies.
+
+-   MRQAP can be interpreted the same as regular regression.
+
+### Exponential Random Graph Models (ERGMs)
+
+-   ERGMs require two assumptions:
+
+    -   one must assume that there is equal probability of observing any two networks with the same values of the statistics included in the specification.
+
+        -   assume the model is correctly specified.
+
+    -   the observed network exhibits the average value of those satistics over the networks that could have been observed.
+
+### Latent Space Network Models
+
+-   ties can be transitive.
+
+-   less flexible than ERGM because substantive theory related ot the dependencies cannot be tested.
+
+-   attractive if low amount of isolates, if parsimony is not of primary importance, not enough observations, interdependencies are not theoretically interesting, and situations where it makes sense to visualize and interpret the latent positions.

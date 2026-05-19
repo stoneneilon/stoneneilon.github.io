@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Stone Neilon">
+<meta name="dcterms.date" content="2025-07-10">
+<meta name="description" content="Three day workshop with Andy and Chinnu">
 
-<title>Stone Neilon - Welcome!</title>
+<title>Stone Neilon - Spatio-Temporal Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,8 +72,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Stone Neilon</span>
     </a>
   </div>
@@ -94,15 +127,15 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
+    <a class="nav-link" href="../../notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
@@ -120,71 +153,291 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#affiliation-and-fellowship" id="toc-affiliation-and-fellowship" class="nav-link" data-scroll-target="#affiliation-and-fellowship">Affiliation and Fellowship</a></li>
+  <li><a href="#introduction-to-temporal-dependence" id="toc-introduction-to-temporal-dependence" class="nav-link active" data-scroll-target="#introduction-to-temporal-dependence">Introduction to Temporal Dependence</a>
+  <ul class="collapse">
+  <li><a href="#characteristics-of-time-series-data" id="toc-characteristics-of-time-series-data" class="nav-link" data-scroll-target="#characteristics-of-time-series-data">Characteristics of Time Series Data</a></li>
+  <li><a href="#lags" id="toc-lags" class="nav-link" data-scroll-target="#lags">Lags</a></li>
+  <li><a href="#difference" id="toc-difference" class="nav-link" data-scroll-target="#difference">Difference</a></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps:</a></li>
+  <li><a href="#unit-root" id="toc-unit-root" class="nav-link" data-scroll-target="#unit-root">Unit Root</a>
+  <ul class="collapse">
+  <li><a href="#how-to-test-for-unit-roots" id="toc-how-to-test-for-unit-roots" class="nav-link" data-scroll-target="#how-to-test-for-unit-roots">How to Test for Unit Roots?</a></li>
+  </ul></li>
+  <li><a href="#to-lag-or-not-to-lag" id="toc-to-lag-or-not-to-lag" class="nav-link" data-scroll-target="#to-lag-or-not-to-lag">To Lag or Not to Lag?</a></li>
+  </ul></li>
+  <li><a href="#introduction-to-spatial-modeling" id="toc-introduction-to-spatial-modeling" class="nav-link" data-scroll-target="#introduction-to-spatial-modeling">Introduction to Spatial Modeling</a>
+  <ul class="collapse">
+  <li><a href="#what-causes-spatial-association" id="toc-what-causes-spatial-association" class="nav-link" data-scroll-target="#what-causes-spatial-association">What causes spatial association</a></li>
+  <li><a href="#modeling-space" id="toc-modeling-space" class="nav-link" data-scroll-target="#modeling-space">Modeling space:</a>
+  <ul class="collapse">
+  <li><a href="#spatial-error-model" id="toc-spatial-error-model" class="nav-link" data-scroll-target="#spatial-error-model">Spatial Error Model</a></li>
+  <li><a href="#spatial-lag-model" id="toc-spatial-lag-model" class="nav-link" data-scroll-target="#spatial-lag-model">Spatial Lag Model</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="IMG_6311.jpeg" class="about-image
-  rounded " style="width: 20em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome!</h1>
+<h1 class="title">Spatio-Temporal Workshop</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Other</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Three day workshop with Andy and Chinnu
+  </div>
 </div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://stoneneilon.github.io/">Stone Neilon</a> <a href="https://orcid.org/0009-0006-6026-4384" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colorado.edu/polisci/people/graduate-students/stone-neilon">
+            PhD student of political science @ The University of Colorado Boulder
+            </a>
+          </p>
+      </div>
+  </div>
+
 <div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 10, 2025</p>
+    </div>
   </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://www.linkedin.com/in/stone-neilon/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/stoneneilon" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://bsky.app/profile/stoneneilon.bsky.social" class="about-link" rel="" target="">
-    <i class="bi bi-bluesky"></i>
-     <span class="about-link-text">Bluesky</span>
-  </a>
-  <a href="mailto:stone.neilon@colorado.edu" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-
-<section id="about-me" class="level2">
-<h2 data-anchor-id="about-me">About Me</h2>
-<p>I am a political science PhD candidate at the University of Colorado Boulder, specializing in American politics and methodology. My primary research examines the political implications of the built environment — specifically, how physical spaces shape political networks, participation, and deliberation in both online and offline contexts.</p>
-<p>In 2025, I was one of six political science graduate students to be awarded the National Science Foundation’s Graduate Research Fellowship (GRF). The GRF provides $169,000 in total funding over three years.</p>
-<p>When I’m not working or studying, you can find me back home relaxing in La Quinta, CA; at a music festival; building Lego; or attempting to stay fit.</p>
-</section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p>University of Colorado Boulder | Boulder, CO | PhD Student in Political Science | August 2023 - Present</p>
-<p>University of Colorado Boulder | Boulder, CO | M.A.&nbsp;in Political Science | August 2023 - 2025</p>
-<p>University of California, Los Angeles | Los Angeles, CA | B.A. in Political Science | Graduated December 2020</p>
-<p>College of the Desert | Palm Desert, CA | AA-T in Political Science | Graduated May 2018</p>
-</section>
-<section id="affiliation-and-fellowship" class="level2">
-<h2 data-anchor-id="affiliation-and-fellowship">Affiliation and Fellowship</h2>
-<p>NSF Graduate Research Fellow | 2025 - Present</p>
-<p>Institute of Behavioral Science | 2024 - Present</p>
-<p>Barney Ford Lab for Civic Thought and Engagement | 2024 - Present</p>
-<p>American Political Research Lab (APRL) | 2023 - Present</p>
 
 
+<section id="introduction-to-temporal-dependence" class="level1">
+<h1>Introduction to Temporal Dependence</h1>
+<ul>
+<li><p>Cross Section Time Series</p></li>
+<li><p>Spatial is built on time series.</p></li>
+<li><p>We assume independent observations – in time series this is not true.</p>
+<ul>
+<li><p>unemployment this month is related to last month</p></li>
+<li><p>snow in the rockies this season is related to last season.</p></li>
+</ul></li>
+<li><p>Non-independence will screw up our assumptions of OLS</p></li>
+<li><p>we want our errors normally distributed</p>
+<ul>
+<li><p>no heteroskedasticity</p></li>
+<li><p>no autocorrelation</p></li>
+<li><p>however in time series, often our OLS assumptions are not believable.</p>
+<ul>
+<li><p>error is where we will see this.</p>
+<ul>
+<li><p>im going to see weird things in error – is there something wrong with my model? or is there a correction?</p>
+<ul>
+<li>any time we fail to correctly specify a dynamic process, those omitted variables end up in the error term.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Time series is nice because we can usually just use OLS</p></li>
+<li><p>t subscripts instead of i.</p></li>
+<li><p>panel data will be t and i</p></li>
+<li><p>errors may not be independent!</p></li>
+<li><p>Errors may not have constant variance over time! Violate assumption of no heteroskedasticity.</p>
+<ul>
+<li>error variance is changing over time.</li>
+</ul></li>
+</ul>
+<section id="characteristics-of-time-series-data" class="level2">
+<h2 class="anchored" data-anchor-id="characteristics-of-time-series-data">Characteristics of Time Series Data</h2>
+<ul>
+<li><p>Data are sampled consistently</p></li>
+<li><p>order matters; a time variable is required in a time series dataset.</p></li>
+<li><p>Time series is a data generating process.</p></li>
+<li><p>missing data are problematic</p></li>
+</ul>
 </section>
-</main></div>
-</div>
- <!-- /main -->
+<section id="lags" class="level2">
+<h2 class="anchored" data-anchor-id="lags">Lags</h2>
+<ul>
+<li><p>order matters</p></li>
+<li><p>data that are more proximate to one another tend to be more correlated. Time version of Toeblers law.</p></li>
+<li><p>we account for this in our model by using lags: <span class="math inline">\(y_{t-1}, y_{t-2},..\)</span></p></li>
+<li><p>lags will become extremely useful in our models as we will use them to condition for the effect…</p></li>
+<li><p>you lose an observation when you take a lag.</p></li>
+</ul>
+</section>
+<section id="difference" class="level2">
+<h2 class="anchored" data-anchor-id="difference">Difference</h2>
+<ul>
+<li><p>the difference of a series is another common transformation</p></li>
+<li><p>the first-diff measures the change between t-1 and t of a series. This fundamentally changes our data and possibly underlying relationships.</p></li>
+<li><p>double diff is possible but rare</p></li>
+</ul>
+</section>
+<section id="steps" class="level2">
+<h2 class="anchored" data-anchor-id="steps">Steps:</h2>
+<ul>
+<li><p>Plot!</p></li>
+<li><p>Diagnose Stationarity</p>
+<ul>
+<li><p>sationarity is very important! Sationarity is when the characteristics are:</p>
+<ul>
+<li><p>mean reverting ~ stable mean</p></li>
+<li><p>constant variance</p></li>
+<li><p>constant covariance</p></li>
+</ul></li>
+<li><p>i need my data to be stationary!</p>
+<ul>
+<li>if you dont, you cant believe the inferences you are showing me.</li>
+</ul></li>
+<li><p>Autoregression</p>
+<ul>
+<li><p>lags contain past information within in it.</p>
+<ul>
+<li>it depends on your question but y_t-1 will contains information from older time periods within it.</li>
+</ul></li>
+</ul></li>
+<li><p>Positive <span class="math inline">\(\Phi\)</span> current values of <span class="math inline">\(y_t\)</span> are positively related to past ones.</p></li>
+<li><p>as <span class="math inline">\(\Phi\)</span> -&gt; 1 the relationship across periods is stronger.</p></li>
+<li><p>If <span class="math inline">\(\Phi\)</span> = 0 there is no autocorrelation.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="unit-root" class="level2">
+<h2 class="anchored" data-anchor-id="unit-root">Unit Root</h2>
+<ul>
+<li><p>Series with constant mean, variance, and convariance are said to be stationary</p></li>
+<li><p>A unit root means you have violated one of the assumptions of stationarity</p>
+<ul>
+<li><p>usually the variance stationarity.</p></li>
+<li><p>instead of I(0) it is I(1)</p></li>
+</ul></li>
+<li><p>if unit root exists just take first difference.</p></li>
+<li><p>hard part is testing for unit roots.</p></li>
+</ul>
+<section id="how-to-test-for-unit-roots" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-test-for-unit-roots">How to Test for Unit Roots?</h3>
+<ul>
+<li><p>Dickey-Fuller unit root test is the older and still most popular</p></li>
+<li><p>you subtract <span class="math inline">\(y_{t-1}\)</span> for both sides</p></li>
+<li><p>null hypothesis series contains a unit root</p>
+<ul>
+<li>if we reject null then series is stationary</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="to-lag-or-not-to-lag" class="level2">
+<h2 class="anchored" data-anchor-id="to-lag-or-not-to-lag">To Lag or Not to Lag?</h2>
+<ul>
+<li>X appears in multiple places</li>
+</ul>
+</section>
+</section>
+<section id="introduction-to-spatial-modeling" class="level1">
+<h1>Introduction to Spatial Modeling</h1>
+<ul>
+<li><p>spatial analysis is similar to time.</p></li>
+<li><p>space is more difficult to deal with because space is in multiple directions</p></li>
+<li><p>space as an econometric problem.</p></li>
+<li><p>space is not just geographic</p></li>
+<li><p>space is not a nuissance</p></li>
+<li><p>space = autocorrelation</p></li>
+<li><p>system versus actor centered</p></li>
+<li><p>common exposure is not spatial</p></li>
+<li><p>contagion is.</p></li>
+<li><p>space is substance</p>
+<ul>
+<li>dont account then ovb</li>
+</ul></li>
+<li><p>Galton’s problem: refers to the importance of determining whether an outcome was caused via an external or internal factor.</p></li>
+<li><p>need to identify spatial autocorrelaiton</p></li>
+</ul>
+<section id="what-causes-spatial-association" class="level2">
+<h2 class="anchored" data-anchor-id="what-causes-spatial-association">What causes spatial association</h2>
+<ul>
+<li><p>autocorelation and association is not the same.</p></li>
+<li><p>Common exposure as a cause of spatial association:</p>
+<ul>
+<li>when individuals in a subset of the population are exposed commonly to a stimulus</li>
+</ul></li>
+<li><p>Spatial interdependence is DIFFERENT!</p></li>
+<li><p>contagion and common exposure are different BUT they can be intterrelated.</p></li>
+<li><p>contagion is a network process basically</p></li>
+</ul>
+</section>
+<section id="modeling-space" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-space">Modeling space:</h2>
+<section id="spatial-error-model" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-error-model">Spatial Error Model</h3>
+<ul>
+<li><p>classic assumption – errors are iid</p>
+<ul>
+<li><p>the iid is very important – nothing systematic in the errors</p>
+<ul>
+<li>iid implies randomness</li>
+</ul></li>
+<li><p>longitudinal data also has this problem</p></li>
+</ul></li>
+<li><p>allows errors to be correlated</p></li>
+<li><p>we are modelling the error that is iid</p>
+<ul>
+<li><p>and then modelling the error that is spatial in nature.</p></li>
+<li><p>w is a weight</p>
+<ul>
+<li><p>weighting is theoretical. Closeness may be ideological or geographical</p>
+<ul>
+<li>W_i is like a distance measure.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>W is the connectivity matrix and links outcomes in j to i.</p></li>
+<li><p>spatial error model not used really in political science</p>
+<ul>
+<li>what does it mean to say that space matters in error but not in substance?</li>
+</ul></li>
+</ul>
+</section>
+<section id="spatial-lag-model" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-lag-model">Spatial Lag Model</h3>
+<ul>
+<li>spatial autoregressive model</li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{neilon2025,
+  author = {Neilon, Stone},
+  title = {Spatio-Temporal {Workshop}},
+  date = {2025-07-10},
+  url = {https://stoneneilon.github.io/notes/American_Behavior/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-neilon2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Neilon, Stone. 2025. <span>“Spatio-Temporal Workshop.”</span> July 10,
+2025. <a href="https://stoneneilon.github.io/notes/American_Behavior/">https://stoneneilon.github.io/notes/American_Behavior/</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -349,6 +602,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

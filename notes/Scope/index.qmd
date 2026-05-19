@@ -74,13 +74,13 @@ Our goal is to learn about systematic features of the random variables Y_1...,Y_
 
 Random variation exists in nature and the social and political worlds and can never be eliminated. Even if we measured all variables without error, collected a census (rather than only a sample) of data, and included every conceivable explanatory variable, our analysis would still never generate perfect predictions. A researcher can divide the world into apparently systematic and apparently nonsystematic components and often improve on predictions, but nothing a researcher does to analyze data can have any effect on reducing the fundamental amount of nonsystematic variation existing in various parts of the empirical world.
 
-#### Perspective 2: A deterministic world 
+#### Perspective 2: A deterministic world
 
 Random variation is only that portion of the world for which we have no explanation. The division between systematic and stochastic variation is imposed by the analyst and depends on what explanatory variables are available and included in the analysis. Given the right explanatory variables, the world is entirely predictable.
 
 ## Causality
 
-### What is causality? 
+### What is causality?
 
 When you are thinking through a casual relationship, I find it helpful to think about your variable of interest (your treatment) as a *pill*. While we do not deal with medicine as social scientist (unless you are on a healthy dose of Adderall) I find thinking about your treatment as a pill helps orient you back in an a useful experimental framework. Once you recognize your variable as a "pill", you will naturally start thinking about how that pill is assigned. Who is my sample? Who got the pill and who got the placebo?
 
@@ -98,23 +98,23 @@ While you may wish to be god and observe how events may unfolded in a different 
 
 Counterfactuals can feel abstract. Especially if the counterfactual is something like, America if the Revolutionary War didn't exist. Sure, that is theoretically a counterfactual, but is so ridiculous and unknowable it is a pointless avenue to take. Nonetheless, counterfactuals take that form but vary considerably in their "believability". The point of a counterfactual is to identify the causal effect of some *parameter.* When your counterfactual is America without the Revolutionary War, you are basically trying to understand what is the causal effect of the Revolutionary War, which again, is a rather silly exercise. Now of course, that alternate reality, where the Revolutionary War did not happen, does not exist. So you need to find a similar State, that is similar to the United States in almost every way except they differ in experiencing the Revolutionary War. The closest would be Canada, but again this is still problematic for a myriad of reasons and thus, is not a good counterfactual. However, this exercise still illustrates how we will use the counterfactual to make causal claims about the world. In short, *your counterfactual needs to be reasonable.*
 
-### Example 
+### Example
 
 From KKV: Congress passes a tax bill that is intended to have a particular consequence-lead to particular investment, increase revenue by a certain amount, and change consumption patterns. Does it have this effect? We can observe what happens after the tax is passed to see if the intended consequences appear; but even if they do, it is never certain that they result from the law. The change in investment policy might have happened anyway. If we could rerun history with and without the new regulation, then we would have much more leverage in estimating the causal effect of this law. Of course, we cannot do this. But the logic will help us design research to give us an approximate answer to our question.
 
-### Causal Mechanisms 
+### Causal Mechanisms
 
 While causality is now defined, we need to tackle some nuances of the definition and open up the can of worms a little bit more. A causal mechanism is one of these worms. In a nutshell when we are estimating a causal effect, a causal mechanism is the "vehicle" in which that our variable influences the outcome. In our tax bill example, we are attempting to estimate the causal effect on consumption patterns. But how is it doing that? What is the vehicle in which this bill is causing change in consumption patterns? The answer to that is our causal estimate. **Any coherent account of causality needs to specify how its effects are exerted.** Much of this part requires detailing extensively in your theory section.
 
-### Multiple Causality 
+### Multiple Causality
 
 Almost nothing in social sciences has one "cause". In short, multiple causality refers to the phenomenon under investigation has alternative determinants. In essence, different explanatory variables can account for the same outcome on a dependent variable. We address these through the use of interactions. What this requires of the researcher is to more clearly define what our counterfactual is. We don't need to identify all causal effects, we just need to focus on the one effect of interest, make conclusions, and then move onto others.
 
-### Systematic and Asymetric Causality 
+### Systematic and Asymetric Causality
 
 Causal effects aren't always linear, the effect may change at different values of X. If the causal relationship between $X_1$ and $Y$ is symmetrical or truly reversible, then the effect on $Y$ of an increase in $X_1$ will disappear if $X_1$ shifts back to its earlier level (assuming that all other conditions are constant).
 
-### Causal Notation & Estimands 
+### Causal Notation & Estimands
 
 # Section 2: The Experiment
 
@@ -159,17 +159,17 @@ To make causal claims about the world we must satisfy, or at least, argue that w
 
 The fourth point is rather obvious, there needs to be a logical connection for X to cause Y. Given the obviousness of this point, I will not focus on it for this section. Instead I want to focus on the first three points. Combined, these are the critical assumptions we make for causal inference. The latter two (points 2 and 3) are what we need to support ***the conditional independence assumption (CIA)***. If you want to make causal claims, then you must be able to provide support that you have satisfied the CIA.
 
-## Unit Homogeneity 
+## Unit Homogeneity
 
 We cannot rerun history at the same time and place with different values to yield the causal estimate - this is the fundamental problem of casual inference. So what can we do? We can make our second-best assumption: we can rerun our experiment in two different units that are "homogeneous". However, humans are infinitely complex, how is it possible that two people can be the same? They aren't, and stating that is not what we refer to in unit homogeneity. When we say two units are homogeneous, we mean: *the expected values of the dependent variables from each unit are the same when our explanatory variable takes on a particular value.* Unit homogeneity in fundamentally an *assumption* - all units with the same value of the explanatory variables have the same expected value of the dependent variable. It is what we base our counterfactual on, since we cannot observe two different dimensions, we must find units that are similar in every observable way but differ only in our variable of interest.
 
 **Remember:** Unit homogeneity is an assumption. It is ultimately untestable. So long as we are explicit and clear about our units and how they relate/do not relate, we can strengthen the causal inferences we might make.
 
-## Conditional Independence Assumption (CIA) 
+## Conditional Independence Assumption (CIA)
 
 This assumption is critical and must be understood when you attempt to make a causal inference. To be clear, you may have already been exposed to this assumption in its more jargony form: "your $X$'s are correlated with your error ($\epsilon$)". When you hear this statement, it is equivalent to saying that the reviewer does not believe you have satisfied the conditional independence assumption.
 
-### What is the CIA? 
+### What is the CIA?
 
 It is the assumption that values are assigned to explanatory variables independently of the values taken by the dependent variable. In simple terms, your treatment variable is assigned as-if randomly. The CIA is the reason we start learning about randomization and experiments first as they represent the gold standard of research design. But as we discussed earlier, we cannot always run an experiment and randomly assign people to different treatments. Thus, to yield a causal estimate when we are using observational data, we need to lean on the CIA and sometimes be creative to help support this assumption. Like unit homogeneity, the CIA is an *assumption,* we cannot prove it.
 
@@ -181,11 +181,11 @@ Again, the CIA refers to our treatment variable being assigned *independently* o
 
 When you can argue (not prove) that you have accounted for these forms of bias, then you can begin to make causal claims about your phenomenon. In math notation, the CIA looks as such:
 
-$$
+\$\$
 
-$$
+\$\$
 
-### (Conditionally) Conditional Independence 
+### (Conditionally) Conditional Independence
 
 While I stated above that we need to get as-if randomization to make causal inference, that should not be interpreted as that we must have something be assigned randomly in the world (this of course would help and is the basis for a natural experiment). Much of what we study is *not random*. However, it might be random, conditional on other variables. If we know what those variables are, we can control for them. In doing so, we are arguing that our treatment is as-if random, when accounting for these other variables. Students familiar with regression or any other statistical estimator may start to realize how this seems similar to the concept of omitted variable bias (OVB) and that is because it is!
 
@@ -424,9 +424,9 @@ $$
 
 meaning that $b$ is an unbiased estimator of $\beta$.
 
-### Statistical Bias 
+### Statistical Bias
 
-### Substantive Bias 
+### Substantive Bias
 
 ### Types of Bias
 
@@ -444,7 +444,7 @@ Omitted variable bias (OVB) refers to the exclusion of some control variable tha
 
 For you to have OVB, your confounding variable must influence $Y$ and correlate with $X_1$
 
-##### Signing OVB Table 
+##### Signing OVB Table
 
 |             |                   |                   |
 |-------------|-------------------|-------------------|
@@ -458,15 +458,15 @@ We need to always account for OVB, of course, there may be times we cannot. Perh
 
 Concern for OVB should not lead us to automatically include every variable with these conditions. In general, we should not control for an explanatory variable that is in part a consequence of our key causal variable.
 
-### Other Causes of Bias 
+### Other Causes of Bias
 
-#### Truncation 
+#### Truncation
 
 Truncation is a problem with our sampling (some observations are not sampled).
 
 Truncation can attenuate bias
 
-#### Censoring 
+#### Censoring
 
 Censoring can also attenuate bias. Remember that censoring is a problem with our measurement (some observations are measured inaccurately
 
@@ -486,7 +486,7 @@ We lose efficiency if we include a control variable that does not influence the 
 
 We can borrow KKV's example, suppose we are interested in estimating the average level of conflict between Palestinians and Israelis in the West bank and are evaluating two methods: a single observation of one community, chosen to be typical, and similar observations of, for example, twenty-five communities. Efficiency provides us the ability to compare the estimators of these two and which is better. IF applied properly, both estimators should be unbiased, that is, they should center on truth and are not systematically predicted. When we calculate the variance of these estimators, the estimator with one observation will just provide the variance. However, the estimator with 25 observations will be that variance divided by 25, yielding a smaller number. This smaller number translates to a smaller variance and thus a more efficient estimate. There is less *variability* in our estimator. If we were to conduct the test again, we would likely get a different estimate (due to random error) but, because our variance is low, our estimate is likely to be very close to that original estimator.
 
-### Efficiency Formally: 
+### Efficiency Formally:
 
 ## Bias and Efficiency Trade-off
 
@@ -504,7 +504,7 @@ The goal is more information relevant to our hypothesis: we need to make judgmen
 
 The formal way to evaluate the bias-efficiency trade-off is through the calculation of the mean square error (MSE).
 
-## Measurement Error 
+## Measurement Error
 
 At first glance, this section may seem out of place. However, measurement (and subsequently measurement error) have important implications for bias and efficiency.
 
@@ -521,7 +521,7 @@ We should always strive to maximize the **validity** of our measurements. Validi
 
 We should always strive to ensure that data-collection methods are **reliable.** Reliability means that applying the same procedure in the same way will always produce the same measure. A reliable measure should produce the same results when applied by different researchers.
 
-### Systematic Measurement Error 
+### Systematic Measurement Error
 
 Systematic measurement error, such as a measure being a consistent overestimate for certain type of units, can sometimes cause bias and inconsistency in estimating causal effects. *Any systematic measurement error will bias descriptive inferences.* Systematic measurement error which affects *all units* by the same constant amount causes no bias in causal inference. If everyone in the survey over reports their income earned, the causal estimate of our variable of interest will be the exact same since the error is present across all observations.
 
@@ -531,7 +531,7 @@ But what if there is systematic measurement error *in one part of the sample*? T
 
 Random measurement error does not bias the variable's measurement. Random measurement error means that values are sometimes too high and sometimes too low but correct on average, which can lead to obvious inefficiencies but not bias in *descriptive inference.* For causal inference, random measurement error can lead to different effects depending on where it is.
 
-#### Nonsystematic Measurement Error in the Dependent Variable 
+#### Nonsystematic Measurement Error in the Dependent Variable
 
 Random measurement error in the dependent variable reduces the **efficiency** of the causal estimate but does not bias it. This will lead to causal estimates that are sometimes too large and sometimes too small. *The result is that random measurement error in the dependent variable produces estimates of causal effects that are less efficient and more uncertain.*
 
@@ -539,7 +539,7 @@ To overcome this, we can improve efficiency by 1) increasing the accuracy of our
 
 influences vertical deviations of line!
 
-##### Formalized Example: 
+##### Formalized Example:
 
 #### Nonsystematic Measurement Error in the Explanatory Variable
 

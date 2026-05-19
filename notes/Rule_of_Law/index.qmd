@@ -24,11 +24,254 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 ## [Carothers, Thomas. 1998. "The Rule of Law Revival", *Foreign Affairs*](https://drive.google.com/file/d/167Uf5kKVGd_xRjBLebiiqVXbvVsaO6gR/view?usp=sharing)
 
+### Bumper sticker:
+
+Rule of law promises to remove all the chief obstacles on the path to democracy and market economics
+
+### Definitions:
+
+-   Rule of law: a system in which the laws are public knowledge, are clear in meaning, and apply equally to everyone; they enshrine and uphold the political and civil liberties that have gained status as universal human rights over the last half-century
+
+-   Asian style democracy: law exists not to limit the state but serve its power
+
+### General notes
+
+-   The rule of law promises to move countries past beginnings of political and economic liberalization to a deeper level of reform
+
+-   Rule of law reform will succeed only if it gets at the fundamental problem of leaders who refuse to be ruled by the law "even new gen of politicians arising out of the political transitions of recent years are reluctant to support reforms that create competing centers of authority beyond their control"
+
+-   Countries in transition to democracy must first want to reform and must then be thorough and patient in their legal makeovers
+
+-   Doners must learn to spend their reform dollars where they will do the most good and expect few miracles and little leverage in return
+
+-   Heavily links rule of law to liberal democracy - says the relationship is profound
+
+-   rule of law makes possible individual rights, which are the core of democracy
+
+-   democracy includes institutions and processes that stem from the rule of law; without the rule of law major economic institutions would be unfair, inefficient and opaque
+
+-   Says transitional countries are backsliding because of rule of law essentially
+
+-   Two phases of market reform:
+
+    -   first is large scale policy decisions by small band of top officials
+
+    -   second is building institutions like tax agencies, customs services, and antitrust agencies; strengthening the rule of law is important here
+
+    -   In Latin America but also Asian countries with economic progress
+
+-   Economic globalization is feeding into rule of law by putting pressure on governments to offer the stability, transparency, and accountability that international investors demand
+
+-   Says rule of law helps corruption and crime which are common in transitional countries
+
+    -   But also non-transitional countries (my thought)
+
+-   3 types of reform:
+
+    -   revising laws or whole codes to weed out antiquated provisions
+
+    -   strengthening of law-related institutions, usually to make them more competent, efficient, and accountable
+
+    -   aim at a deeper goal of increasing governments compliance with law. '
+
+-   The 3 reforms depend on leadership and changes in values and attitudes of those in power; top down but citizen driven human-rights and anti-corruption campaigns can help too.
+
 ## [Waldron, Jeremy. 2011. "The Rule of Law and the Importance of Procedure," *Nomos*](https://drive.google.com/file/d/1Q3G_WQWMFGPd6J49w447U2wbczkkT8zo/view?usp=sharing)
+
+### General Notes
+
+-   explores the significance of legal procedures in upholding the rule of law
+
+-   Waldron argues that the rule of law is not merely about having clear and just laws but also about having fair and transparent procedures in place for implementing and enforcing those laws
+
+-   emphasizes that procedural fairness is essential for maintaining the legitimacy of legal systems
+
+-   discusses how procedures ensure that individuals are treated fairly and consistently, regardless of their status or power
+
+-   explores the role of procedural justice in preventing arbitrary exercise of governmental power.
+
+-   delves into the intersection of the rule of law and the importance of procedural fairness, highlighting how proper legal procedures contribute to a just and legitimate legal system
+
+-   8 formal principles of Lon Fuller's "inner morality of law" from Lon Fuller
+
+    -   Generality
+
+    -   Publicity
+
+    -   Prospectivity
+
+    -   Inteligibility
+
+    -   Consistency
+
+    -   Practicability
+
+    -   Stability
+
+    -   Congruence
+
+-   His are on page 4
+
+-   philosophers emphasize formal elements to Rule of Law
+
+    -   pg 2
+
+-   Author has in mind elements of legal procedure and the institutions like courts that embody them
+
+-   Author wants to bring the two concepts together: the concept of law and the concept of legality or the Rule of Law
+
+-   to him legality = rule of law.
+
+-   Procedural list: Author says we misrepresent the debate about whether the rule of law has also a substantive dimension if we do not contrast a possible list of substantive items such as: respect for private property, prohibitions on torture and brutality, a presumption of liberty, and democratic enfranchisement
+
+-   Rule of law is violated when due attention is not paid to these procedural matters or when the institutions that are supposed to embody these procedures are undetermined or interfered with
+
+-   Little attention paid to procedural demands - he is mainly coming for FA Hayek: says he is concerned with the relation between formal characteristics like abstraction and generality and individual freedom: do not talk about procedures of the courts
+
+-   Fuller puts little on due process or court room procedures
+
+-   Author says can usefully pursue procedural and institutional dimension of the rule of law as well as a formal dimension, and distinguish both of them (separately as well as jointly) from a more substantive conception
+
+-   Beats on that there's so little about courts in modern
+
+-   Procdure is more than merely functional, also structural and includes Martin Shapiros idea of the triad structure: a first party, a second opposing party, and above them a separate impartial officer with the authority to make determination
+
+    -   its procedural: the operation of the court involves a way of proceeding that offers those who are immeditatlet concerned in the dipute or in the application of the norm
+
+-   **Procedural Justice and Rule of Law:** Waldron argues that the rule of law is not solely about the content of laws but equally about the fairness and transparency of legal procedures. He contends that proper procedures are essential for upholding the legitimacy of legal systems.
+
+-   **Preventing Arbitrary Power:** The essay likely explores how procedural fairness serves as a safeguard against the arbitrary exercise of governmental power. By establishing clear and just procedures, Waldron suggests that legal systems can mitigate the risk of abuses of power.
+
+-   **Equality and Fair Treatment:** A central theme might be the role of procedures in ensuring equality and fair treatment for individuals within the legal system. Waldron may discuss how procedural justice contributes to treating all individuals consistently, regardless of their status or influence.
+
+-   **Legitimacy of Legal Systems:** Waldron likely discusses how adherence to proper procedures enhances the legitimacy of legal systems. Legal processes that are perceived as fair and just are more likely to be accepted by individuals and the broader society.
+
+-   **Balancing Rules and Procedures:** There may be an exploration of the delicate balance between having clear rules and the importance of flexible procedures. Waldron might argue for the necessity of procedures that can adapt to the complexities of specific cases while still adhering to overarching legal principles.
+
+-   **Social and Political Implications**: The essay might touch on the broader social and political implications of procedural justice. Waldron may discuss how the absence of fair procedures can lead to social unrest and a lack of trust in legal and political institutions.
 
 ## [Weingast, Barry. 1997. "The Political Foundations of Democracy and the Rule of Law", *American Political Science Review*](https://drive.google.com/file/d/1KqxGCwwOcQlyMuT47ZdPkAMo4RYGZnFR/view?usp=sharing)
 
+### Bumper Sticker:
+
+The survival of democracy and rule of law requires that political officials have incentives to honor a range of limits on their behavior; in other words these limits must be self-enforcing.
+
+### General Notes:
+
+-   Enforcement is at the heart of 3 of the puzzles in literature of democracy
+
+    -   the uncertain relationship between interests and values in democratic stability
+
+    -   the problematic nature of ethnic divisions for democratic stability
+
+    -   the role of elite pacts
+
+-   model suggests that understanding democratic stability requires three components: anaylsis of institutions, citizen values behaviro, and elite behavior
+
+    -   existing literature does not explain how elite and mass behavior fit together; why divided societies cause difficulty for democratic stability; how elite pacts lead to democracy
+
+    -   he wants to present a new approach to the political foundations of democracy -\> he puts these three puzzles together.
+
+    -   **democratic survival requires that political officials observe limits on their behavior**
+
+    -   Makes two assumptions:
+
+        -   all citizens have preferences and values about the appropriate limits on government
+
+        -   each citizen based on his or her preferences and values is able to classify state actions into two mutually exclusive categories:
+
+            -   legitimate actions
+
+            -   fundamental transgressions
+
+                -   these both do not assume societal consensus but individual.
+
+-   **Theory: is that self-enforcing limits on the state result when members of a society resolve their coordination dilemmas about the appropriate limits on the state**
+
+    -   these limits include respecting not only election results but also the rules governing electoral competitions and public policymaking
+
+    -   theory also stresses the importance of the interaction of formal institutions, elites and citizens for democratic stability.
+
+-   Findings:
+
+    -   Barry was correct to criticize the causal link in AV but wrong to dismiss their association of democratic stability with a citizen consensus over values
+
+    -   Democratic stability happens when citizens and elites contract a focal solution that resolves their coordination dilemmas about limits on the state
+
+        -   focal solution results in a set of mass behaviors that create a civic culture
+
+    -   finds that when consensus over values exists, elites face difference incentives than when non exists, much as AV and putnam find.
+
+    -   Finds that instability plagues democracy in most divided societies because ethnic divisions impede resolution of the coordination dilemma about the appropriate role of the state.
+
+    -   finds that successful pacts like the Glorious REvolution in the 17th century England, the Missouri Comp of 1820, and the Colombian pact of the 1950s create a focal solution that resolves the coordination dilemmas confronting elites and citizens.
+
+        -   pacts must be self enforcing, and the literature neglects this topic.
+
+    -   Glorious Revolution shows thus: based on elite pact, initiating new consensus about the limits on government
+
+        -   following the revolution, the crown's respect for political limits on its behavior became self-enforcing.
+
+### Overall
+
+-   Maintaining limits on the state is problematic because of a massive *social coordination problem.*
+
+    -   they dont think in contact, the patter is most likely an equililbrium and prevents society from maintaining universalistic limits on the state and hence from sustaining the rule of law.
+
+-   The successful transition to stable democracy **requires** the construction of coordination device that specfies widely accepted and unambiguous limits on the state
+
+    -   two means of constructing limits are elite pacts and the writing of the constitution
+
+-   When the state and its supporters benefit from the transgressions against other citizens, this pattern is a stable equilibrium and breaking it is hard and needs something exogenous for the model (like economic or demographic changes)
+
+-   Model suggests that citizens in stable democracies not only must value democracy but also be willing to take costly action to defend democratic institions against potential violations.
+
+-   **Mass behavior is relevant to elite choice because it determines part of elite incentives.**
+
+    -   in society with no coordination problems the public can threaten to take away elite power
+
+    -   citizen values and elite interests are complementary aspects of democratic stability
+
+    -   relationship between citizen values and democratic stability is not a causal one with values as IV and democratic stability as DV nor is it reversed.
+
+    -   failing to solve dilemma implies a diversity of citizen attitudes and the lack of democratic stability.
+
+-   Democratic stability comes from elite pacts
+
+-   Rule of law requires that limits on political officials be self-enforcing
+
+    -   **self enforcement of limits depends on the complementary combinations of attitudes and reactions of citizens as well as institutional restrictions.**
+
+### Summary of Key Points:
+
+1.  **Incentives for Political Order:** Weingast argues that the establishment of democracy and the rule of law is contingent on creating incentives for political order. He contends that societies need to develop institutions that align the interests of political elites with those of the broader population
+2.  **Self-enforcing democracy:** Weingast introduces the concept of self-enforcing democracy -- suggesting that successful democracies are those in which political elites have incentives to cooperate and adhere to democratic principles without external enforcement. This self-enforcement is crucial for the stability of democratic institutions.
+3.  **Decentralization and Rule of Law:** The article emphasizes the role of decentralization in supporting the rule of law. Weingast argues that dispersing political power across different levels of government can serve as a check against potential abuses of power, contributing to the establishment of the rule of law.
+4.  **Constraining Government Power:** Weingast discusses the importance of constiutional structures and checks on government power as essential elements for both democracy and rule of law. These mechanisms are seen as necessary to prevent concentration of power and potential authoritarianism.
+5.  **Economic Foundations:** The article explores the economic foundations of democracy and the rule of law, suggesting that economic development can create conditions favorable to political stability and the establishment of democratic institutions.
+6.  **Historical Perspective:** Weingast provides historical exampels and case studies to illustrate his arguments, drawing on instance where political institions have either succeeded or failed in fostering democracy and the rule of law.
+
+**In summary:** Weingast's article examines the political foundations necessary for the establishment of democracy and the rule of law, emphasizing the role of incentives, self-enforcement, decentralization, and checks on government power. The analysis is grounded in both theoretical considerations and empirical observations.
+
 ## [Shaprio, Martin. 1981. *Courts: A Comparative and Political Analysis*, Ch. 1](https://drive.google.com/file/d/1S4lh_YHPNj3PTKOV1DSz17iDUVmYQXwA/view?usp=sharing)
+
+Martin Shapiro's book "Courts: A Comparative and Political Analysis," published in 1981, provides a comprehensive examination of the role of courts in different political systems. The book engages in a comparative analysis, exploring how courts function and influence politics across various countries. Here is a summary of key themes and points from the book:
+
+1.  **Comparative Approach:** Shapiro takes a comparative approach, examining the role of courts in different political contexts. By analyzing diverse legal systems, he aims to identify patterns and variations in the functioning of courts.
+
+2.  **Political Significance of Courts:** The book emphasizes the political significance of courts and their impact on the distribution and exercise of political power. Shapiro explores how courts, through their decisions, contribute to shaping public policy and influencing the political landscape.
+
+3.  **Legal Systems and Political Orders:** Shapiro examines the relationship between legal systems and the broader political order. He considers how the structure of legal institutions and the legal process interact with political institutions, providing insights into the dynamics of governance.
+
+4.  **Judicial Independence:** The concept of judicial independence is a central theme. Shapiro explores the conditions that support or undermine the independence of the judiciary, recognizing its crucial role in upholding the rule of law and protecting individual rights.
+
+5.  **Policy Implementation:** The book delves into the role of courts in implementing and interpreting policies. Shapiro considers how courts contribute to the enforcement of laws and policies, examining the mechanisms through which legal decisions are translated into action.
+
+6.  **Comparative Legal Cultures**: Shapiro pays attention to the cultural and historical factors that shape legal systems. He discusses how legal cultures influence the role and functioning of courts, contributing to variations in legal practices and outcomes.
+
+7.  **Theoretical Framework:** The book provides a theoretical framework for understanding the role of courts in politics. Shapiro's analysis incorporates political science, sociology, and legal studies, offering a multidisciplinary perspective on the subject.
+
+In summary, "Courts: A Comparative and Political Analysis" by Martin Shapiro explores the political dimensions of courts across different countries. It examines the role of courts in shaping political outcomes, the relationship between legal and political institutions, and the factors influencing judicial independence. The book provides a rich and insightful analysis for those interested in the intersection of law and politics.
 
 # Week 3: Judicial Independence
 

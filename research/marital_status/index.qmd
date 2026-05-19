@@ -1,0 +1,92 @@
+---
+title: "Marital Transitions and Political Behavior"
+date: 2026-04-23
+engine: knitr
+freeze: false
+cv:
+  pdf: "Paper__Political_Implications_of_Divorce (1).pdf"
+categories: [Paper, Poster, Spring, Summer 2026] 
+author:
+  - name: Stone Neilon
+    id: sn
+    orcid: 0009-0006-6026-4384
+    email: stone.neilon@colorado.edu
+    affiliation: 
+      - name: University of Colorado Boulder
+        city: Boulder
+        state: CO
+        url: https://www.colorado.edu/
+  - name: Anand E. Sokhey
+    id: sn
+    orcid: 0000-0002-3403-0967
+    email: anand.sokhey@colorado.edu
+    affiliation:
+      - name: University of Colorado Boulder
+        city: Boulder
+        state: CO
+        url: https://www.colorado.edu/
+  - name: Matthew T. Pietryka
+    id: sn
+    orcid: 0000-0002-0347-1110
+    email: matthew.pietryka@gmail.com
+    affiliation:
+      - name: University of Wisconsin-Madison
+        city: Madison
+        state: WI
+        url: https://www.wisc.edu/
+abstract: > 
+
+keywords:
+  - Social Networks
+  - Marital Status
+license: "CC BY"
+copyright: 
+  holder: Stone Neilon
+  year: 2026
+link-citations: true
+draft: false
+citation: 
+  url: https://stoneneilon.github.io/research/marital_status
+---
+
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
+
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
+
+# Paper for WPSA & MPSA
+
+```{=html}
+<iframe src="`r rmarkdown::metadata$cv$pdf`" 
+        width="100%" 
+        height="1000px"
+        style="border: 0.5px">
+</iframe>
+```
+# Poster for EPVOB
+
+insert here.
