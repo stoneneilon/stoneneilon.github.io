@@ -1614,7 +1614,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 11, 2025\n\n\nWalkability and Voter Turnout\n\n\nStone Neilon, Anand Edward Sokhey\n\n\n\n\nApr 23, 2026\n\n\nMarital Transitions and Political Behavior\n\n\nStone Neilon, Anand E. Sokhey, Matthew T. Pietryka\n\n\n\n\nAug 12, 2025\n\n\nHow Do Environments Shape the Presence and Degree of Interpersonal Political Interactions?\n\n\nStone Neilon, Anand E. Sokhey, Matthew T. Pietryka\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 11, 2025\n\n\nWalkability and Voter Turnout\n\n\nStone Neilon, Anand Edward Sokhey\n\n\n\n\nApr 23, 2026\n\n\nMarital Transitions and Political Behavior\n\n\nStone Neilon, Anand E. Sokhey, Matthew T. Pietryka\n\n\n\n\nApr 19, 2026\n\n\nHow Group Meta-Perceptions Shape Political Party Evolution\n\n\nStone Neilon\n\n\n\n\nAug 12, 2025\n\n\nHow Do Environments Shape the Presence and Degree of Interpersonal Political Interactions?\n\n\nStone Neilon, Anand E. Sokhey, Matthew T. Pietryka\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "teaching.html",
@@ -5717,5 +5717,12 @@
     "title": "Marital Transitions and Political Behavior",
     "section": "",
     "text": "Paper for WPSA & MPSA\n\n\n\n\nPoster for EPVOB\n\n\n\n\n\n\nReuseCC BY 4.0CitationBibTeX citation:@online{neilon2026,\n  author = {Neilon, Stone and E. Sokhey, Anand and T. Pietryka, Matthew},\n  title = {Marital {Transitions} and {Political} {Behavior}},\n  date = {2026-04-23},\n  url = {https://stoneneilon.github.io/research/marital_status},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nNeilon, Stone, Anand E. Sokhey, and Matthew T. Pietryka. 2026.\n“Marital Transitions and Political Behavior.” April 23,\n2026. https://stoneneilon.github.io/research/marital_status."
+  },
+  {
+    "objectID": "research/meta_perceptions/index.html",
+    "href": "research/meta_perceptions/index.html",
+    "title": "How Group Meta-Perceptions Shape Political Party Evolution",
+    "section": "",
+    "text": "ReuseCC BY 4.0CitationBibTeX citation:@online{neilon2026,\n  author = {Neilon, Stone},\n  title = {How {Group} {Meta-Perceptions} {Shape} {Political} {Party}\n    {Evolution}},\n  date = {2026-04-19},\n  url = {https://stoneneilon.github.io/research/meta_perceptions},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nNeilon, Stone. 2026. “How Group Meta-Perceptions Shape Political\nParty Evolution.” April 19, 2026. https://stoneneilon.github.io/research/meta_perceptions."
   }
 ]
