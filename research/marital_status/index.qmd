@@ -5,6 +5,7 @@ engine: knitr
 freeze: false
 cv:
   pdf: "Paper__Political_Implications_of_Divorce (1).pdf"
+  poster: "EPVOB_2026_Poster (1).pdf"
 categories: [Paper, Poster, Spring, Summer 2026] 
 author:
   - name: Stone Neilon
@@ -89,4 +90,10 @@ citation:
 ```
 # Poster for EPVOB
 
-insert here.
+```{=html}
+<iframe src="`r rmarkdown::metadata$cv$poster`"
+        width="100%"
+        height="1000px"
+        style="border: 0.5px">
+</iframe>
+```
